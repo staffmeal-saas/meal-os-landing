@@ -448,11 +448,38 @@
                         mauvaise foi. Apprenez l'art de la réponse passive-agressive polie.</p>
                 </a>
                 <a href="#"
-                    class="card-retro bg-[#FAF2D7] p-6 border-dashed border-4 border-foreground/30 hover:bg-white hover:-translate-y-2 hover:border-solid hover:border-foreground transition-all group flex flex-col items-center justify-center text-center">
+                    class="card-retro bg-[#FAF2D7] p-6 border-dashed border-4 border-foreground/30 hover:bg-white hover:-translate-y-2 hover:border-solid hover:border-foreground transition-all group flex flex-col items-center justify-center text-center relative z-10">
                     <i data-lucide="mail-plus"
                         class="w-10 h-10 mb-4 text-foreground/50 group-hover:text-olive transition-colors"></i>
                     <h4 class="font-display font-black text-xl leading-snug mb-3">Recevoir les prochains articles</h4>
                     <span class="btn-retro alt py-1 px-4 text-xs mt-2">S'inscrire (gratuit)</span>
+                </a>
+            </div>
+
+            <!-- Comparatifs -->
+            <div class="flex items-center gap-4 border-b-3 border-foreground pb-4 mt-16 mb-8 reveal">
+                <i data-lucide="git-compare" class="w-8 h-8 text-mustard"></i>
+                <h2 class="text-chunky text-3xl">Comparatifs & Alternatives</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 reveal delay-1">
+                <a href="meal-os-vs-skello.html"
+                    class="card-retro bg-white p-6 hover:-translate-y-2 transition-transform group">
+                    <span class="text-olive font-sans font-black text-xs uppercase tracking-wider mb-2 block">Planning & RH</span>
+                    <h4 class="font-display font-black text-xl leading-snug mb-3">Skello vs Meal OS : La Meilleure Alternative (2026)</h4>
+                    <p class="font-sans font-medium opacity-80 text-sm line-clamp-2">Pourquoi payer pour deux outils quand Meal OS fait planning, RH et hygiène ?</p>
+                </a>
+                <a href="meal-os-vs-koust.html"
+                    class="card-retro bg-white p-6 hover:-translate-y-2 transition-transform group">
+                    <span class="text-accent font-sans font-black text-xs uppercase tracking-wider mb-2 block">Food Cost</span>
+                    <h4 class="font-display font-black text-xl leading-snug mb-3">Koust vs Meal OS : Simplifiez vos fiches recettes</h4>
+                    <p class="font-sans font-medium opacity-80 text-sm line-clamp-2">L'alternative terrain à Koust. Contrôlez vos rendements et marges simplement.</p>
+                </a>
+                <a href="meal-os-vs-combo.html"
+                    class="card-retro bg-white p-6 hover:-translate-y-2 transition-transform group">
+                    <span class="text-mustard font-sans font-black text-xs uppercase tracking-wider mb-2 block">Opérations</span>
+                    <h4 class="font-display font-black text-xl leading-snug mb-3">Combo vs Meal OS : Outils Opérationnels</h4>
+                    <p class="font-sans font-medium opacity-80 text-sm line-clamp-2">L'alternative idéale à Combo (Snapshift). Intégrez l'HACCP et le suivi opérationnel.</p>
                 </a>
             </div>
 
@@ -486,14 +513,25 @@
                     class="logo-handwritten text-[4.5rem] md:text-[5.5rem] leading-none transform -rotate-3 pl-2 pr-4 pb-1">meal
                     os</span>
             </a>
-            <div class="flex flex-wrap justify-center gap-6 font-sans font-bold text-sm">
-                
-                <a href="resources.html"
-                    class="hover:text-accent border-b-2 border-transparent hover:border-accent pb-1">Ressources</a>
-                <a href="evenements.html"
-                    class="hover:text-accent border-b-2 border-transparent hover:border-accent pb-1">Événements</a>
-                <a href="#"
-                    class="hover:text-accent border-b-2 border-transparent hover:border-accent pb-1">info@mealos.com</a>
+            <div class="flex flex-col md:flex-row gap-8 md:gap-16 font-sans font-bold text-sm items-center md:items-start text-center md:text-left">
+                <div class="flex flex-col items-center md:items-start gap-3">
+                    <span class="text-mustard uppercase tracking-widest text-xs">Navigation</span>
+                    <a href="resources.html" class="hover:text-accent border-b-2 border-transparent hover:border-accent pb-1 inline-block w-max">Ressources</a>
+                    <a href="evenements.html" class="hover:text-accent border-b-2 border-transparent hover:border-accent pb-1 inline-block w-max">Événements</a>
+                    <a href="guide-restaurant.html" class="hover:text-accent border-b-2 border-transparent hover:border-accent pb-1 inline-block w-max">Le Guide Complet</a>
+                </div>
+                <div class="flex flex-col items-center md:items-start gap-3">
+                    <span class="text-accent uppercase tracking-widest text-xs">Comparatifs</span>
+                    <a href="meal-os-vs-skello.html" class="hover:text-accent border-b-2 border-transparent hover:border-accent pb-1 inline-block w-max">Meal OS vs Skello</a>
+                    <a href="meal-os-vs-koust.html" class="hover:text-accent border-b-2 border-transparent hover:border-accent pb-1 inline-block w-max">Meal OS vs Koust</a>
+                    <a href="meal-os-vs-combo.html" class="hover:text-accent border-b-2 border-transparent hover:border-accent pb-1 inline-block w-max">Meal OS vs Combo</a>
+                </div>
+                <div class="flex flex-col items-center md:items-start gap-3">
+                    <span class="text-olive uppercase tracking-widest text-xs">Légal & Contact</span>
+                    <a href="#" class="hover:text-accent border-b-2 border-transparent hover:border-accent pb-1 inline-block w-max">info@mealos.com</a>
+                    <a href="#" class="hover:text-accent border-b-2 border-transparent hover:border-accent pb-1 inline-block w-max">Instagram</a>
+                    <a href="#" class="hover:text-accent border-b-2 border-transparent hover:border-accent pb-1 inline-block w-max">Mentions Légales</a>
+                </div>
             </div>
             <div class="font-sans text-sm font-medium opacity-60">
                 &copy; 2026 Meal OS. Designed for Chefs.

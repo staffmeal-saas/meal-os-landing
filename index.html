@@ -520,31 +520,64 @@
             </div>
         </section>
 
-        <!-- SECTION 5: METRICS (Badges style) -->
-        <section class="max-w-6xl mx-auto px-4 md:px-12 py-24">
-            <div class="grid md:grid-cols-3 gap-8">
+        <!-- SECTION 5: CALCULATEUR ROI -->
+        <section id="roi-calculator" class="max-w-6xl mx-auto px-4 md:px-12 py-24">
+            <div class="text-center mb-16 reveal">
+                <h2 class="font-script text-mustard text-4xl mb-2 transform -rotate-2">arrêtez de deviner</h2>
+                <h3 class="text-chunky text-5xl md:text-6xl text-foreground">calculez vos gains réels.</h3>
+            </div>
 
-                <div class="card-retro bg-mustard text-center p-8 reveal">
-                    <div class="font-display font-black text-6xl mb-2">+15%</div>
-                    <div
-                        class="font-sans font-bold uppercase tracking-wider text-sm border-t-2 border-foreground pt-4 mx-4">
-                        Marge<br>Additionnelle</div>
+            <div class="card-retro bg-white p-8 md:p-12 reveal delay-1 border-t-8 border-t-mustard grid md:grid-cols-2 gap-12 items-center">
+                <!-- Inputs Section -->
+                <div>
+                    <h4 class="font-sans font-black text-2xl mb-6">Vos données actuelles</h4>
+                    
+                    <div class="space-y-6">
+                        <div>
+                            <label class="font-sans font-bold text-sm uppercase tracking-wider mb-2 flex justify-between">
+                                <span>Chiffre d'Affaires Mensuel</span>
+                                <span id="ca-val" class="text-mustard font-black text-lg">50 000 €</span>
+                            </label>
+                            <input type="range" id="roi-ca" min="10000" max="250000" step="5000" value="50000" class="w-full h-2 bg-foreground/10 rounded-lg appearance-none cursor-pointer accent-mustard focus:outline-none">
+                        </div>
+
+                        <div>
+                            <label class="font-sans font-bold text-sm uppercase tracking-wider mb-2 flex justify-between">
+                                <span>Food Cost Actuel (%)</span>
+                                <span id="fc-val" class="text-olive font-black text-lg">35%</span>
+                            </label>
+                            <input type="range" id="roi-fc" min="25" max="45" step="1" value="35" class="w-full h-2 bg-foreground/10 rounded-lg appearance-none cursor-pointer accent-olive focus:outline-none">
+                        </div>
+                    </div>
+
+                    <div class="mt-8 pt-6 border-t-2 border-foreground/10">
+                        <p class="font-sans font-medium text-sm text-foreground/70 italic">
+                            Meal OS réduit en moyenne le Food Cost de 4 points et fait gagner 20h/mois par établissement.
+                        </p>
+                    </div>
                 </div>
 
-                <div class="card-retro bg-olive text-center p-8 reveal delay-1 text-foreground">
-                    <div class="font-display font-black text-5xl md:text-6xl mb-2">20h</div>
-                    <div
-                        class="font-sans font-bold uppercase tracking-wider text-sm border-t-2 border-foreground pt-4 mx-4 text-foreground">
-                        Économisées<br>Par Mois</div>
-                </div>
+                <!-- Results Section -->
+                <div class="bg-foreground text-background p-8 rounded-3xl relative overflow-hidden border-retro">
+                    <div class="absolute inset-0 opacity-5" style="background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #FAF2D7 10px), repeating-linear-gradient(#FAF2D755, #FAF2D7); background-size: 20px 20px;"></div>
+                    
+                    <div class="relative z-10 text-center space-y-8">
+                        <div>
+                            <div class="font-sans font-bold text-xs uppercase tracking-widest text-[#FAF2D7]/70 mb-1">Économies Matières / an</div>
+                            <div id="res-matiere" class="font-display font-black text-4xl text-mustard">+ 24 000 €</div>
+                        </div>
 
-                <div class="card-retro bg-accent text-center p-8 reveal delay-2 text-foreground">
-                    <div class="font-display font-black text-5xl md:text-6xl mb-2">-20%</div>
-                    <div
-                        class="font-sans font-bold uppercase tracking-wider text-sm border-t-2 border-foreground pt-4 mx-4 text-foreground">
-                        De Pertes<br>Matières</div>
-                </div>
+                        <div>
+                            <div class="font-sans font-bold text-xs uppercase tracking-widest text-[#FAF2D7]/70 mb-1">Temps Sauvé / an</div>
+                            <div id="res-temps" class="font-display font-black text-4xl text-olive">240 h</div>
+                        </div>
 
+                        <div class="pt-6 border-t-2 border-background/20 mt-6 !mt-8">
+                            <div class="font-script text-accent text-3xl mb-1 transform rotate-[-2deg]">Nouveau Bénéfice</div>
+                            <div id="res-total" class="text-chunky text-5xl md:text-6xl text-white">+ 24 000 €</div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <!-- TESTIMONIAL INSERT -->
@@ -878,13 +911,19 @@
                 </div>
             </a>
 
-            <div class="flex flex-wrap justify-center gap-6 font-sans font-bold text-sm">
-                <a href="#"
-                    class="hover:text-accent border-b-2 border-transparent hover:border-accent pb-1">info@mealos.com</a>
-                <a href="#"
-                    class="hover:text-accent border-b-2 border-transparent hover:border-accent pb-1">Instagram</a>
-                <a href="#" class="hover:text-accent border-b-2 border-transparent hover:border-accent pb-1">Mentions
-                    Légales</a>
+            <div class="flex flex-col md:flex-row gap-8 md:gap-16 font-sans font-bold text-sm items-center md:items-start text-center md:text-left">
+                <div class="flex flex-col items-center md:items-start gap-3">
+                    <span class="text-mustard uppercase tracking-widest text-xs">Comparatifs</span>
+                    <a href="meal-os-vs-skello.html" class="hover:text-accent border-b-2 border-transparent hover:border-accent pb-1 inline-block w-max">Meal OS vs Skello</a>
+                    <a href="meal-os-vs-koust.html" class="hover:text-accent border-b-2 border-transparent hover:border-accent pb-1 inline-block w-max">Meal OS vs Koust</a>
+                    <a href="meal-os-vs-combo.html" class="hover:text-accent border-b-2 border-transparent hover:border-accent pb-1 inline-block w-max">Meal OS vs Combo</a>
+                </div>
+                <div class="flex flex-col items-center md:items-start gap-3">
+                    <span class="text-olive uppercase tracking-widest text-xs">Légal & Contact</span>
+                    <a href="#" class="hover:text-accent border-b-2 border-transparent hover:border-accent pb-1 inline-block w-max">info@mealos.com</a>
+                    <a href="#" class="hover:text-accent border-b-2 border-transparent hover:border-accent pb-1 inline-block w-max">Instagram</a>
+                    <a href="#" class="hover:text-accent border-b-2 border-transparent hover:border-accent pb-1 inline-block w-max">Mentions Légales</a>
+                </div>
             </div>
 
             <div class="font-sans text-sm font-medium opacity-60">
@@ -984,6 +1023,41 @@
         document.querySelectorAll('.mobile-menu-link').forEach(link => {
             link.addEventListener('click', closeMobileMenu);
         });
+
+        // ROI Calculator Logic
+        const roiCaInput = document.getElementById('roi-ca');
+        const roiFcInput = document.getElementById('roi-fc');
+        const caValDisplay = document.getElementById('ca-val');
+        const fcValDisplay = document.getElementById('fc-val');
+        
+        const resMatiere = document.getElementById('res-matiere');
+        const resTemps = document.getElementById('res-temps');
+        const resTotal = document.getElementById('res-total');
+
+        function updateROI() {
+            if (!roiCaInput || !roiFcInput) return;
+            const ca = parseInt(roiCaInput.value);
+            const fc = parseInt(roiFcInput.value);
+
+            // Formatting
+            caValDisplay.innerText = new Intl.NumberFormat('fr-FR').format(ca) + ' €';
+            fcValDisplay.innerText = fc + '%';
+
+            // Assumptions: Meal OS saves 4 points of Food Cost (0.04 * CA * 12)
+            const economyMatiereYear = ca * 0.04 * 12;
+            const timeSavedYear = 20 * 12; // 240 hours
+            
+            resMatiere.innerText = '+ ' + new Intl.NumberFormat('fr-FR').format(economyMatiereYear) + ' €';
+            // Time is fixed for now but could be dynamic
+            resTemps.innerText = timeSavedYear + ' h';
+            resTotal.innerText = '+ ' + new Intl.NumberFormat('fr-FR').format(economyMatiereYear) + ' €';
+        }
+
+        if (roiCaInput && roiFcInput) {
+            roiCaInput.addEventListener('input', updateROI);
+            roiFcInput.addEventListener('input', updateROI);
+            updateROI(); // init
+        }
     </script>
 
     <script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js" defer></script>

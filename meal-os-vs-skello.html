@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+
+<head>
+    <!-- CORE ASSET PRELOADING -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link rel="preload"
+        href="https://images.unsplash.com/photo-1578474846511-04ba529f0b88?fit=crop&w=800&h=1000&q=80&format=webp"
+        as="image" fetchpriority="high">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..900;1,9..144,400..900&family=Outfit:wght@300;400;500;600;700&family=Caveat:wght@700&display=swap">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skello vs Meal OS : La Meilleure Alternative (2026)</title>
+    <meta name="description"
+        content="Découvrez pourquoi Meal OS est la meilleure alternative à Skello. Gérez vos plannings, vos normes HACCP et vos équipes avec un seul outil tout-en-un.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.mealos.com/meal-os-vs-skello.html">
+    <meta property="og:title" content="Skello vs Meal OS : La Meilleure Alternative (2026)">
+    <meta property="og:description"
+        content="Découvrez pourquoi Meal OS est la meilleure alternative à Skello. Gérez vos plannings, vos normes HACCP et vos équipes avec un seul outil tout-en-un.">
+    <meta property="og:image" content="https://www.mealos.com/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.mealos.com/meal-os-vs-skello.html">
+    <meta property="twitter:title" content="Skello vs Meal OS : La Meilleure Alternative (2026)">
+    <meta property="twitter:description"
+        content="Découvrez pourquoi Meal OS est la meilleure alternative à Skello. Gérez vos plannings, vos normes HACCP et vos équipes avec un seul outil tout-en-un.">
+    <meta property="twitter:image" content="https://www.mealos.com/twitter-image.jpg">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.mealos.com/meal-os-vs-skello.html">
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Meal OS",
+      "operatingSystem": "Web",
+      "applicationCategory": "BusinessApplication",
+      "offers": {
+        "@type": "Offer",
+        "price": "200.00",
+        "priceCurrency": "EUR"
+      },
+      "description": "Le système d'exploitation complet pour les restaurateurs incluant planning, standards HACCP, maintenance et communication interne.",
+      "url": "https://www.mealos.com/"
+    }
+    </script>
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://unpkg.com">
+
+    <!-- Tailwind CSS (Moved to a safer version) -->
+
+
+    <!-- Tailwind Config -->
+
+
+    <!-- Custom CSS -->
+</head>
+
+<body class="selection:bg-olive selection:text-background relative">
+
+    <div class="noise-overlay"></div>
+
+    <!-- HEADER -->
+    <header id="navbar"
+        class="fixed w-full top-0 z-50 transition-all duration-300 py-4 px-4 md:px-12 flex justify-between items-center">
+        <!-- Logo replicating the "sol" layout -->
+        <a href="#" class="relative inline-flex flex-col items-center hover:opacity-80 transition-opacity mt-2">
+            <!-- "the" at top right -->
+            <span
+                class="absolute -top-1 -right-2 font-sans font-bold text-[0.6rem] lowercase tracking-wide opacity-70">the</span>
+
+            <!-- main word -->
+            <span
+                class="logo-handwritten text-[5rem] md:text-[6rem] leading-none transform -rotate-3 pl-2 pr-4 pb-1">meal <span class="text-[0.7em] ml-1">OS</span></span>
+
+            <!-- subtext like "fresh & tasty" -->
+            <div class="flex gap-4 font-sans text-[0.55rem] uppercase font-bold tracking-[0.2em] opacity-80 mt-1 ml-2">
+                <span>👋 l'outil ultime</span>
+            </div>
+        </a>
+
+        <!-- Nav -->
+        <nav class="hidden md:flex items-center gap-8 font-sans font-bold text-sm lowercase tracking-wider">
+            
+            
+            <a href="resources.html" class="hover:text-accent transition-colors">ressources</a>
+            <a href="evenements.html" class="hover:text-accent transition-colors">événements</a>
+            
+            <a href="#faq" class="hover:text-accent transition-colors">questions ?</a>
+        </nav>
+
+        <!-- CTA -->
+        <div class="hidden md:block">
+            <a href="#demo" class="btn-retro alt py-2 px-6 text-sm">
+                postuler (50 places)
+            </a>
+        </div>
+
+        <!-- Mobile Menu Toggle -->
+        <button id="mobileMenuBtn" aria-label="Menu" class="md:hidden text-foreground z-50">
+            <i data-lucide="menu" class="w-8 h-8"></i>
+        </button>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobileMenu" class="fixed inset-0 z-[60] pointer-events-none" style="visibility: hidden;">
+        <!-- Backdrop -->
+        <div id="mobileMenuBackdrop" class="absolute inset-0 bg-foreground/80 opacity-0 transition-opacity duration-300"></div>
+        <!-- Panel -->
+        <div id="mobileMenuPanel" class="absolute top-0 right-0 w-4/5 max-w-sm h-full bg-background border-l-3 border-foreground p-8 pt-24 flex flex-col gap-6 transform translate-x-full transition-transform duration-300 ease-out">
+            <button id="mobileMenuClose" class="absolute top-6 right-6 text-foreground" aria-label="Fermer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+            <nav class="flex flex-col gap-4 font-sans font-bold text-lg lowercase tracking-wider">
+                
+                
+                <a href="resources.html" class="mobile-menu-link py-3 border-b-2 border-foreground/10 hover:text-accent transition-colors">ressources</a>
+                <a href="evenements.html" class="mobile-menu-link py-3 border-b-2 border-foreground/10 hover:text-accent transition-colors">événements</a>
+                <a href="boite-a-outils-dashboard.html" class="mobile-menu-link py-3 border-b-2 border-foreground/10 hover:text-accent transition-colors">boîte à outils</a>
+                <a href="#faq" class="mobile-menu-link py-3 border-b-2 border-foreground/10 hover:text-accent transition-colors">questions ?</a>
+            </nav>
+            <div class="mt-auto">
+                <a href="#demo" class="mobile-menu-link btn-retro w-full text-center">postuler (50 places)</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <section class="relative min-h-[70vh] flex items-center justify-center pt-32 pb-20 px-4 md:px-12 bg-background overflow-hidden border-b-3 border-foreground">
+            <div class="blob-1" style="top: 20%; right: 10%;"></div>
+            <div class="max-w-4xl mx-auto w-full text-center relative z-10 reveal">
+                <div class="inline-flex items-center gap-2 bg-[#fce5cd] border-2 border-foreground rounded-full px-4 py-2 mb-6 transform -rotate-2 shadow-[2px_2px_0px_#111111]">
+                    <span class="font-sans font-bold text-sm tracking-wide">Comparatif 2026 : Logiciels RH Restauration</span>
+                </div>
+                <h1 class="text-chunky text-5xl md:text-7xl mb-6 mt-4">Skello <span class="text-mustard font-display mx-2">VS</span> Meal OS</h1>
+                <p class="font-display italic font-bold text-3xl mb-8">L'alternative tout-en-un pour vos opérations.</p>
+                <p class="font-sans font-medium text-lg max-w-2xl mx-auto leading-snug mb-10 opacity-80">
+                    Skello est le spécialiste du planning. Meal OS est le spécialiste du restaurant. Pourquoi multiplier les abonnements quand une seule plateforme peut gérer vos plannings, centraliser vos fiches techniques, automatiser l'HACCP et garantir votre communication interne ?
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#demo" class="btn-retro">Tester Meal OS (50 places)</a>
+                </div>
+            </div>
+        </section>
+        
+        <section class="max-w-5xl mx-auto px-4 md:px-12 py-16 reveal delay-1">
+            <h2 class="text-center font-display font-black text-3xl md:text-4xl mb-12">Au-delà du planning...</h2>
+            <div class="card-retro overflow-hidden bg-white">
+                <div class="grid grid-cols-2 lg:grid-cols-3 bg-foreground text-background p-4 text-center font-sans font-bold text-lg uppercase tracking-wider">
+                    <div class="hidden lg:block border-r-2 border-background/20">Fonctionnalités Clés</div>
+                    <div class="text-[#FAF2D7]/60 border-r-2 border-background/20">Skello</div>
+                    <div class="text-mustard">Meal OS</div>
+                </div>
+                <div class="divide-y-2 divide-foreground/10 font-sans font-medium text-lg">
+                    <div class="grid grid-cols-2 lg:grid-cols-3 p-4 md:p-6 text-center lg:text-left items-center"><div class="hidden lg:block font-bold">Plannings & RH</div><div class="text-olive flex justify-center"><i data-lucide="check" class="w-6 h-6"></i></div><div class="text-olive flex justify-center"><i data-lucide="check" class="w-6 h-6"></i></div></div>
+                    <div class="grid grid-cols-2 lg:grid-cols-3 p-4 md:p-6 bg-[#fce5cd] text-center lg:text-left items-center"><div class="hidden lg:block font-bold">Standardisation HACCP</div><div class="text-accent/50 flex justify-center"><i data-lucide="x" class="w-6 h-6"></i></div><div class="font-bold text-olive flex justify-center"><i data-lucide="check" class="w-6 h-6"></i></div></div>
+                    <div class="grid grid-cols-2 lg:grid-cols-3 p-4 md:p-6 bg-[#fce5cd] text-center lg:text-left items-center"><div class="hidden lg:block font-bold">Rendements & Recettes</div><div class="text-accent/50 flex justify-center"><i data-lucide="x" class="w-6 h-6"></i></div><div class="font-bold text-olive flex justify-center"><i data-lucide="check" class="w-6 h-6"></i></div></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="demo" class="py-24 px-4 md:px-12 bg-foreground border-t-3 border-foreground">
+            <div class="max-w-5xl mx-auto card-retro bg-white md:p-0 flex flex-col md:flex-row overflow-hidden reveal">
+                <div class="md:w-5/12 bg-accent text-background p-10 md:p-12 relative border-b-3 md:border-b-0 md:border-r-3 border-foreground border-dashed flex flex-col justify-center">
+                    <div class="absolute inset-0 bg-black opacity-5" style="background-image: radial-gradient(circle, #000 2px, transparent 2px); background-size: 10px 10px;"></div>
+                    <div class="relative z-10">
+                        <p class="font-script text-mustard text-3xl mb-2 transform -rotate-3">Ne payez plus 5 fois</p>
+                        <h2 class="text-chunky text-4xl mb-6">Passez à<br>l'étape supérieure.</h2>
+                        <p class="font-sans font-medium opacity-90 mb-8">
+                            Rejoignez la bêta de Meal OS. L'outil ultime.
+                        </p>
+                    </div>
+                </div>
+                <div class="md:w-7/12 p-10 md:p-16 bg-background flex items-center justify-center">
+                    <form class="space-y-6 w-full max-w-sm">
+                        <!-- Same form -->
+                        <div>
+                            <label class="font-sans font-bold text-sm uppercase tracking-wider mb-2 block ml-2">Nom de l'établissement</label>
+                            <input type="text" class="input-retro" placeholder="ex: Le Petit Bistro">
+                        </div>
+                        <div>
+                            <label class="font-sans font-bold text-sm uppercase tracking-wider mb-2 block ml-2">Téléphone</label>
+                            <input type="text" class="input-retro" placeholder="06 00 00 00 00">
+                        </div>
+                        <div>
+                            <label class="font-sans font-bold text-sm uppercase tracking-wider mb-2 block ml-2">Email</label>
+                            <input type="email" class="input-retro" placeholder="chef@restaurant.com">
+                        </div>
+                        <div class="pt-4">
+                            <button type="submit" class="btn-retro w-full hover:bg-olive hover:text-white transition-colors">Postuler (2 min)</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="border-t-3 border-foreground py-12 px-4 md:px-12 bg-white">
+        <div
+            class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8 text-center md:text-left">
+
+            <!-- Logo matching Header -->
+            <a href="#" class="relative inline-flex flex-col items-center hover:opacity-80 transition-opacity">
+                <!-- "the" at top right -->
+                <span
+                    class="absolute -top-1 -right-2 font-sans font-bold text-[0.6rem] lowercase tracking-wide opacity-70">the</span>
+                <!-- main word -->
+                <span
+                    class="logo-handwritten text-[4.5rem] md:text-[5.5rem] leading-none transform -rotate-3 pl-2 pr-4 pb-1">meal
+                    os</span>
+                <!-- subtext -->
+                <div
+                    class="flex gap-4 font-sans text-[0.45rem] uppercase font-bold tracking-[0.2em] opacity-80 mt-1 ml-2">
+                    <span>👋 l'outil ultime</span>
+                </div>
+            </a>
+
+            <div class="flex flex-col md:flex-row gap-8 md:gap-16 font-sans font-bold text-sm items-center md:items-start text-center md:text-left">
+                <div class="flex flex-col items-center md:items-start gap-3">
+                    <span class="text-mustard uppercase tracking-widest text-xs">Comparatifs</span>
+                    <a href="meal-os-vs-skello.html" class="hover:text-accent border-b-2 border-transparent hover:border-accent pb-1 inline-block w-max">Meal OS vs Skello</a>
+                    <a href="meal-os-vs-koust.html" class="hover:text-accent border-b-2 border-transparent hover:border-accent pb-1 inline-block w-max">Meal OS vs Koust</a>
+                    <a href="meal-os-vs-combo.html" class="hover:text-accent border-b-2 border-transparent hover:border-accent pb-1 inline-block w-max">Meal OS vs Combo</a>
+                </div>
+                <div class="flex flex-col items-center md:items-start gap-3">
+                    <span class="text-olive uppercase tracking-widest text-xs">Légal & Contact</span>
+                    <a href="#" class="hover:text-accent border-b-2 border-transparent hover:border-accent pb-1 inline-block w-max">info@mealos.com</a>
+                    <a href="#" class="hover:text-accent border-b-2 border-transparent hover:border-accent pb-1 inline-block w-max">Instagram</a>
+                    <a href="#" class="hover:text-accent border-b-2 border-transparent hover:border-accent pb-1 inline-block w-max">Mentions Légales</a>
+                </div>
+            </div>
+
+            <div class="font-sans text-sm font-medium opacity-60">
+                &copy; 2026 Meal OS. Designed for Chefs.
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+
+    <script>
+        // Initialize Lucide Icons
+
+
+        // Header Scroll Effect - Optimized to prevent forced reflow
+        const header = document.getElementById('navbar');
+        let isScrolled = false;
+        window.addEventListener('scroll', () => {
+            const scrolled = window.scrollY > 20;
+            if (scrolled !== isScrolled) {
+                isScrolled = scrolled;
+                if (isScrolled) {
+                    header.classList.add('glass-header', 'header-scrolled');
+                } else {
+                    header.classList.remove('glass-header', 'header-scrolled');
+                }
+            }
+        }, { passive: true });
+
+        // Intersection Observer for Scroll Animations
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.15
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('revealed');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal, .text-reveal-wrapper, .svg-draw, .bento-panel').forEach((el) => {
+            observer.observe(el);
+            if (!el.classList.contains('reveal') && (el.classList.contains('text-reveal-wrapper') || el.classList.contains('svg-draw'))) {
+                el.classList.add('reveal');
+            }
+        });
+
+        // FAQ Accordion
+        const faqItems = document.querySelectorAll('.faq-item');
+        faqItems.forEach(item => {
+            item.addEventListener('click', () => {
+                item.classList.toggle('active');
+            });
+        });
+
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileMenuBackdrop = document.getElementById('mobileMenuBackdrop');
+        const mobileMenuPanel = document.getElementById('mobileMenuPanel');
+        const mobileMenuClose = document.getElementById('mobileMenuClose');
+
+        function openMobileMenu() {
+            mobileMenu.style.visibility = 'visible';
+            mobileMenu.classList.remove('pointer-events-none');
+            mobileMenu.classList.add('pointer-events-auto');
+            requestAnimationFrame(() => {
+                mobileMenuBackdrop.classList.remove('opacity-0');
+                mobileMenuBackdrop.classList.add('opacity-100');
+                mobileMenuPanel.classList.remove('translate-x-full');
+                mobileMenuPanel.classList.add('translate-x-0');
+            });
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeMobileMenu() {
+            mobileMenuBackdrop.classList.remove('opacity-100');
+            mobileMenuBackdrop.classList.add('opacity-0');
+            mobileMenuPanel.classList.remove('translate-x-0');
+            mobileMenuPanel.classList.add('translate-x-full');
+            document.body.style.overflow = '';
+            setTimeout(() => {
+                mobileMenu.style.visibility = 'hidden';
+                mobileMenu.classList.remove('pointer-events-auto');
+                mobileMenu.classList.add('pointer-events-none');
+            }, 300);
+        }
+
+        if (mobileMenuBtn) mobileMenuBtn.addEventListener('click', openMobileMenu);
+        if (mobileMenuClose) mobileMenuClose.addEventListener('click', closeMobileMenu);
+        if (mobileMenuBackdrop) mobileMenuBackdrop.addEventListener('click', closeMobileMenu);
+        document.querySelectorAll('.mobile-menu-link').forEach(link => {
+            link.addEventListener('click', closeMobileMenu);
+        });
+
+        // ROI Calculator Logic
+        const roiCaInput = document.getElementById('roi-ca');
+        const roiFcInput = document.getElementById('roi-fc');
+        const caValDisplay = document.getElementById('ca-val');
+        const fcValDisplay = document.getElementById('fc-val');
+        
+        const resMatiere = document.getElementById('res-matiere');
+        const resTemps = document.getElementById('res-temps');
+        const resTotal = document.getElementById('res-total');
+
+        function updateROI() {
+            if (!roiCaInput || !roiFcInput) return;
+            const ca = parseInt(roiCaInput.value);
+            const fc = parseInt(roiFcInput.value);
+
+            // Formatting
+            caValDisplay.innerText = new Intl.NumberFormat('fr-FR').format(ca) + ' €';
+            fcValDisplay.innerText = fc + '%';
+
+            // Assumptions: Meal OS saves 4 points of Food Cost (0.04 * CA * 12)
+            const economyMatiereYear = ca * 0.04 * 12;
+            const timeSavedYear = 20 * 12; // 240 hours
+            
+            resMatiere.innerText = '+ ' + new Intl.NumberFormat('fr-FR').format(economyMatiereYear) + ' €';
+            // Time is fixed for now but could be dynamic
+            resTemps.innerText = timeSavedYear + ' h';
+            resTotal.innerText = '+ ' + new Intl.NumberFormat('fr-FR').format(economyMatiereYear) + ' €';
+        }
+
+        if (roiCaInput && roiFcInput) {
+            roiCaInput.addEventListener('input', updateROI);
+            roiFcInput.addEventListener('input', updateROI);
+            updateROI(); // init
+        }
+    </script>
+
+    <script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js" defer></script>
+    <script>
+        window.addEventListener('load', () => {
+            if (typeof lucide !== 'undefined') lucide.createIcons();
+        });
+    </script>
+</body>
+
+</html>
