@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Performance-first Asset Loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://unpkg.com">
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..900;1,9..144,400..900&family=Outfit:wght@300;400;500;600;700&family=Caveat:wght@700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..900;1,9..144,400..900&family=Outfit:wght@300;400;500;600;700&family=Caveat:wght@700&display=swap"></noscript>
+    <title>Accès Boîte à Outils | Meal OS</title>
+
+    <!-- Preconnect -->
+    
+    
+    <link rel="preconnect" href="https://unpkg.com">
+
+    <!-- Fonts with display=swap -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..900;1,9..144,400..900&family=Outfit:wght@300;400;500;600;700&family=Caveat:wght@700&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS (Performance Optimized) -->
+    
+
+    <!-- Tailwind Config -->
+    
+
+    <style>
+        body {
+            background-color: theme('colors.background');
+            color: theme('colors.foreground');
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .logo-handwritten {
+            font-family: theme('fontFamily.script');
+            text-transform: lowercase;
+            letter-spacing: -0.02em;
+            line-height: 0.8;
+            color: #111111;
+        }
+
+        .text-chunky {
+            font-family: theme('fontFamily.display');
+            font-weight: 900;
+            line-height: 0.95;
+            letter-spacing: -0.03em;
+        }
+
+        .btn-retro {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: theme('colors.accent');
+            color: white;
+            font-family: theme('fontFamily.sans');
+            font-weight: 900;
+            text-transform: uppercase;
+            padding: 0.875rem 2rem;
+            border-radius: 9999px;
+            box-shadow: theme('boxShadow.retro');
+            transition: all 0.2s;
+            border: 2px solid theme('colors.foreground');
+            cursor: pointer;
+            width: 100%;
+            font-size: 1.125rem;
+        }
+
+        .btn-retro:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 6px 6px 0px 0px theme("colors.foreground");
+        }
+
+        .btn-retro:active {
+            transform: translate(2px, 2px);
+            box-shadow: 0px 0px 0px 0px theme("colors.foreground");
+        }
+
+        .input-retro {
+            width: 100%;
+            border: 2px solid theme('colors.foreground');
+            padding: 0.75rem 1rem;
+            border-radius: 0.5rem;
+            font-family: theme('fontFamily.sans');
+            font-weight: 600;
+            background-color: white;
+            outline: none;
+            transition: all 0.2s;
+            margin-top: 0.25rem;
+        }
+
+        .input-retro:focus {
+            box-shadow: theme('boxShadow.retro');
+            transform: translate(-2px, -2px);
+        }
+
+        .card-retro {
+            border: 4px solid theme('colors.foreground');
+            border-radius: 1.5rem;
+            box-shadow: theme('boxShadow.retro');
+        }
+    </style>
+    <link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="style.css"></noscript>
+</head>
+
+<body
+    class="selection:bg-foreground selection:text-background font-sans min-h-screen flex items-center justify-center p-4 py-10">
+
+    <!-- Logic Script: Redirect if already logged in -->
+    <script>
+        if (localStorage.getItem('mealos_tools_user')) {
+            window.location.href = 'boite-a-outils-dashboard.html';
+        }
+    </script>
+
+    <div class="max-w-4xl w-full grid md:grid-cols-2 gap-0 card-retro bg-white">
+
+        <!-- Left Side: Visual / Value Prop -->
+        <div
+            class="bg-foreground text-background p-10 flex flex-col justify-between relative overflow-hidden hidden md:flex">
+            <!-- Decorative icon -->
+            <i data-lucide="wrench" class="absolute -right-12 -bottom-12 w-64 h-64 text-background opacity-5"></i>
+
+            <div>
+                <a href="index.html"
+                    class="logo-handwritten text-[4rem] text-background inline-block transform -rotate-3 mb-8">meal
+                    os</a>
+                <h1 class="text-chunky text-4xl mb-4 text-mustard">La Boîte à Outils.</h1>
+                <p class="font-sans font-medium opacity-90 text-lg leading-relaxed mb-8">
+                    Accédez gratuitement à l'écosystème d'outils Meal OS réservé aux restaurateurs ambitieux.
+                </p>
+
+                <ul class="space-y-4 font-sans font-bold opacity-80">
+                    <li class="flex items-center gap-3"><i data-lucide="check-circle-2"
+                            class="text-mustard w-5 h-5"></i> Calculateur Food Cost</li>
+                    <li class="flex items-center gap-3"><i data-lucide="check-circle-2"
+                            class="text-mustard w-5 h-5"></i> Simulateur Prime Cost</li>
+                    <li class="flex items-center gap-3"><i data-lucide="check-circle-2"
+                            class="text-mustard w-5 h-5"></i> Générateur de Fiches Techniques</li>
+                    <li class="flex items-center gap-3"><i data-lucide="check-circle-2"
+                            class="text-mustard w-5 h-5"></i> Matrice Menu Engineering</li>
+                    <li class="flex items-center gap-3"><i data-lucide="check-circle-2"
+                            class="text-mustard w-5 h-5"></i> Assistant Avis Google</li>
+                </ul>
+            </div>
+
+            <div class="mt-12 text-sm font-bold opacity-50 uppercase tracking-widest flex items-center gap-2">
+                <i data-lucide="lock" class="w-4 h-4"></i> Accès 100% Gratuit
+            </div>
+        </div>
+
+        <!-- Right Side: The Form -->
+        <div class="p-8 md:p-10 flex flex-col justify-center bg-white relative">
+            <a href="resources.html"
+                class="absolute top-6 right-6 text-foreground/50 hover:text-foreground transition-colors"><i
+                    data-lucide="x" class="w-6 h-6"></i></a>
+
+            <div class="md:hidden text-center mb-6 border-b-2 border-foreground/10 pb-4">
+                <h1 class="text-chunky text-3xl mb-1">Accès Outils</h1>
+                <p class="text-sm font-bold opacity-60">Matrice, Calculateur Food Cost...</p>
+            </div>
+
+            <h2 class="font-display font-black text-2xl mb-6">Créez votre accès</h2>
+
+            <form id="toolsLoginForm" class="space-y-5">
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <label class="block font-bold text-xs uppercase tracking-wider text-foreground">Prénom</label>
+                        <input type="text" id="fname" class="input-retro" required placeholder="Jean">
+                    </div>
+                    <div>
+                        <label class="block font-bold text-xs uppercase tracking-wider text-foreground">Nom</label>
+                        <input type="text" id="lname" class="input-retro" required placeholder="Dupont">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block font-bold text-xs uppercase tracking-wider text-foreground">Téléphone <span
+                            class="opacity-50 normal-case font-medium text-[10px]">(Pour la démo Bêta)</span></label>
+                    <input type="tel" id="phone" class="input-retro" required placeholder="06 12 34 56 78">
+                </div>
+
+                <div>
+                    <label class="block font-bold text-xs uppercase tracking-wider text-foreground">Nom du
+                        Restaurant</label>
+                    <input type="text" id="restaurant" class="input-retro" required placeholder="Le Bouillon">
+                </div>
+
+                <div>
+                    <label class="block font-bold text-xs uppercase tracking-wider text-foreground">Rôle</label>
+                    <select id="role" class="input-retro cursor-pointer bg-white" required>
+                        <option value="" disabled selected>Sélectionnez votre poste</option>
+                        <option value="Proprietaire / Gérant">Propriétaire / Gérant</option>
+                        <option value="Chef de Cuisine">Chef de Cuisine</option>
+                        <option value="Directeur de Salle">Directeur de Salle</option>
+                        <option value="Porteur de Projet">Porteur de Projet (Création)</option>
+                        <option value="Autre">Autre</option>
+                    </select>
+                </div>
+
+                <div class="pt-4">
+                    <button type="submit" class="btn-retro group">
+                        Accéder aux Outils <i data-lucide="arrow-right"
+                            class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform"></i>
+                    </button>
+                    <p class="text-center text-xs font-bold opacity-50 mt-4 flex items-center justify-center gap-1">
+                        <i data-lucide="shield-check" class="w-3 h-3"></i> Vos données restent strictement
+                        confidentielles.
+                    </p>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    
+    <script>
+        
+
+        document.getElementById('toolsLoginForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Gather data
+            const userProfile = {
+                firstName: document.getElementById('fname').value,
+                lastName: document.getElementById('lname').value,
+                phone: document.getElementById('phone').value,
+                restaurant: document.getElementById('restaurant').value,
+                role: document.getElementById('role').value,
+                registeredAt: new Date().toISOString()
+            };
+
+            // Store in localStorage (acts as our persistent session)
+            localStorage.setItem('mealos_tools_user', JSON.stringify(userProfile));
+
+            // Redirect to the App Dashboard
+            window.location.href = 'boite-a-outils-dashboard.html';
+        });
+    </script>
+
+    <script src="https://unpkg.com/lucide@latest" defer></script>
+    <script>if(typeof lucide !== "undefined") { lucide.createIcons(); } else { document.addEventListener("DOMContentLoaded", () => { if(typeof lucide !== "undefined") lucide.createIcons(); }); }</script>
+</body>
+
+</html>

@@ -1,0 +1,351 @@
+@tailwind base;
+@tailwind components;
+
+/* Font fallback metrics to prevent CLS */
+        @font-face {
+            font-family: 'Outfit-fallback';
+            src: local('Arial');
+            size-adjust: 100%;
+            ascent-override: 96%;
+            descent-override: 24%;
+            line-gap-override: 0%;
+        }
+        @font-face {
+            font-family: 'Fraunces-fallback';
+            src: local('Georgia');
+            size-adjust: 110%;
+            ascent-override: 90%;
+            descent-override: 25%;
+            line-gap-override: 0%;
+        }
+        @font-face {
+            font-family: 'Caveat-fallback';
+            src: local('Comic Sans MS'), local('Segoe Script'), local('cursive');
+            size-adjust: 105%;
+            ascent-override: 95%;
+            descent-override: 30%;
+            line-gap-override: 0%;
+        }
+
+        body {
+            background-color: #FAF2D7;
+            color: #382512;
+            overflow-x: hidden;
+            font-family: Outfit, 'Outfit-fallback', sans-serif;
+            font-feature-settings: "liga", "kern";
+            -webkit-font-smoothing: antialiased;
+        }
+
+        ::selection {
+            background-color: #382512;
+            color: #FAF2D7;
+        }
+
+        /* Logo Styling */
+        .logo-handwritten {
+            font-family: Caveat, 'Caveat-fallback', cursive;
+            letter-spacing: -0.02em;
+            line-height: 0.8;
+            color: #111111;
+        }
+
+        /* Border Utility */
+        .border-retro {
+            border: 3px solid theme('colors.foreground');
+        }
+
+        /* Glass Header (tinted retro) */
+        .glass-header {
+            background: rgba(250, 242, 215, 0.95);
+            border-bottom: 3px solid theme('colors.foreground');
+            transition: padding 0.3s ease;
+        }
+
+        .header-scrolled {
+            padding-top: 1rem !important;
+            padding-bottom: 1rem !important;
+        }
+
+        /* Typography Utilities */
+        .text-chunky {
+            font-family: theme('fontFamily.display');
+            line-height: 0.95;
+            letter-spacing: -0.04em;
+            font-weight: 800;
+        }
+
+        .text-pill {
+            font-family: theme('fontFamily.sans');
+            font-size: 0.75rem;
+            text-transform: lowercase;
+            letter-spacing: 0.05em;
+            font-weight: 700;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            border: 2px solid theme('colors.foreground');
+            display: inline-flex;
+            align-items: center;
+        }
+
+        /* Image treatment */
+        .img-retro {
+            border: 3px solid theme('colors.foreground');
+            filter: sepia(0.2) contrast(1.1);
+        }
+
+        /* Animations */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.85, 0, 0.15, 1);
+        }
+
+        .reveal.revealed {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Text Reveal Effect */
+        .text-reveal-wrapper {
+            overflow: hidden;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .text-reveal-inner {
+            display: inline-block;
+            transform: translateY(110%);
+            transition: transform 0.8s cubic-bezier(0.85, 0, 0.15, 1);
+        }
+
+        .reveal.revealed .text-reveal-inner {
+            transform: translateY(0);
+        }
+
+        /* SVG Scribble Draw */
+        .svg-draw path {
+            stroke-dasharray: 1000;
+            stroke-dashoffset: 1000;
+            transition: stroke-dashoffset 1.5s cubic-bezier(0.65, 0, 0.35, 1) 0.5s;
+        }
+
+        .reveal.revealed .svg-draw path {
+            stroke-dashoffset: 0;
+        }
+
+        .delay-1 {
+            transition-delay: 100ms;
+        }
+
+        .delay-2 {
+            transition-delay: 200ms;
+        }
+
+        .delay-3 {
+            transition-delay: 300ms;
+        }
+
+        /* Marquee */
+        .marquee {
+            white-space: nowrap;
+            overflow: hidden;
+            display: flex;
+            background-color: theme('colors.mustard');
+            border-bottom: 3px solid theme('colors.foreground');
+            border-top: 3px solid theme('colors.foreground');
+            padding: 1rem 0;
+            color: theme('colors.foreground');
+            transform: rotate(-1deg) scale(1.02);
+            position: relative;
+            z-index: 20;
+        }
+
+        .marquee-content {
+            display: flex;
+            animation: marquee 20s linear infinite;
+            font-family: theme('fontFamily.display');
+            font-weight: 700;
+            font-style: italic;
+            font-size: 1.5rem;
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        /* FAQ */
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.4s ease;
+            opacity: 0;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 400px;
+            opacity: 1;
+            padding-bottom: 1.5rem;
+            padding-top: 0.5rem;
+        }
+
+        .faq-icon {
+            transition: transform 0.3s ease;
+            background: theme('colors.foreground');
+            color: theme('colors.background');
+            border-radius: 50%;
+            padding: 4px;
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(45deg);
+            background: theme('colors.accent');
+        }
+
+        /* Buttons matching the style */
+        .btn-retro {
+            background-color: theme('colors.accent');
+            color: theme('colors.background');
+            border: 3px solid theme('colors.foreground');
+            border-radius: 12px;
+            padding: 1rem 2rem;
+            font-family: theme('fontFamily.sans');
+            font-weight: 800;
+            font-size: 1.125rem;
+            box-shadow: 4px 4px 0px 0px theme("colors.foreground");
+            transition: all 0.2s ease;
+            text-transform: lowercase;
+            letter-spacing: 0.02em;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn-retro:hover {
+            transform: translate(2px, 2px);
+            box-shadow: 2px 2px 0px 0px theme("colors.foreground");
+        }
+
+        .btn-retro.alt {
+            background-color: theme('colors.background');
+            color: theme('colors.foreground');
+        }
+
+        /* Card styles */
+        .card-retro {
+            background-color: white;
+            border: 3px solid theme('colors.foreground');
+            border-radius: 24px;
+            box-shadow: 8px 8px 0px 0px rgba(56, 37, 18, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card-retro:hover {
+            transform: translateY(-4px);
+            box-shadow: 12px 12px 0px 0px theme('colors.mustard');
+        }
+
+        /* Input */
+        .input-retro {
+            width: 100%;
+            background: white;
+            border: 3px solid theme('colors.foreground');
+            border-radius: 12px;
+            padding: 1rem 1.5rem;
+            font-family: theme('fontFamily.sans');
+            font-weight: 500;
+            color: theme('colors.foreground');
+            outline: none;
+            box-shadow: inset 4px 4px 0px 0px rgba(56, 37, 18, 0.05);
+        }
+
+        .input-retro:focus {
+            border-color: theme('colors.accent');
+        }
+
+        /* Abstract shapes */
+        .blob-1 {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background-color: theme('colors.mustard');
+            border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+            z-index: -1;
+            opacity: 0.7;
+            animation: amorphous 15s ease-in-out infinite alternate, spin-slow 30s linear infinite;
+        }
+
+        @keyframes amorphous {
+            0% {
+                border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+            }
+
+            50% {
+                border-radius: 60% 40% 30% 70% / 50% 60% 40% 50%;
+            }
+
+            100% {
+                border-radius: 30% 70% 50% 50% / 60% 40% 70% 30%;
+            }
+        }
+
+        @keyframes spin-slow {
+            0% {
+                transform: rotate(0deg) scale(1);
+            }
+
+            50% {
+                transform: rotate(180deg) scale(1.05);
+            }
+
+            100% {
+                transform: rotate(360deg) scale(1);
+            }
+        }
+
+        /* Slow Image Scale */
+        .img-breathe {
+            animation: breathe 10s ease-in-out infinite alternate;
+            transform-origin: center center;
+        }
+
+        @keyframes breathe {
+            0% {
+                transform: scale(1);
+            }
+
+            100% {
+                transform: scale(1.08);
+            }
+        }
+
+        /* Noise texture overlay - GPU optimized */
+        .noise-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 100;
+            opacity: 0.15;
+            will-change: auto;
+            contain: strict;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+        }
+
+        /* Reserve space for elements to prevent CLS */
+        .text-chunky {
+            font-family: Fraunces, 'Fraunces-fallback', serif;
+        }
+        .font-script, [class*="font-script"] {
+            font-family: Caveat, 'Caveat-fallback', cursive;
+        }
+@tailwind utilities;

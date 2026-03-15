@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Auth Guard -->
+    
+
+    <!-- Icons -->
+    
+
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-color: theme('colors.background');
+            color: theme('colors.foreground');
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .logo-handwritten {
+            font-family: theme('fontFamily.script');
+            text-transform: lowercase;
+            letter-spacing: -0.02em;
+            line-height: 0.8;
+            color: #111111;
+        }
+
+        .glass-header {
+            background: rgba(250, 242, 215, 0.95);
+            border-bottom: 3px solid theme('colors.foreground');
+            backdrop-filter: blur(8px);
+        }
+
+        .text-chunky {
+            font-family: theme('fontFamily.display');
+            font-weight: 900;
+            line-height: 0.95;
+            letter-spacing: -0.03em;
+        }
+
+        .btn-retro {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: theme('colors.foreground');
+            color: theme('colors.background');
+            font-family: theme('fontFamily.sans');
+            font-weight: 900;
+            text-transform: uppercase;
+            padding: 0.75rem 1.5rem;
+            border-radius: 9999px;
+            box-shadow: theme('boxShadow.retro');
+            transition: all 0.2s;
+            border: 2px solid theme('colors.foreground');
+            cursor: pointer;
+        }
+
+        .btn-retro:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 6px 6px 0px 0px theme("colors.foreground");
+        }
+
+        .btn-retro:active {
+            transform: translate(2px, 2px);
+            box-shadow: 0px 0px 0px 0px theme("colors.foreground");
+        }
+
+        .btn-retro.alt {
+            background-color: white;
+            color: theme('colors.foreground');
+        }
+
+        .btn-retro.disabled {
+            opacity: 0.5;
+            pointer-events: none;
+        }
+
+        .input-retro {
+            width: 100%;
+            border: 2px solid theme('colors.foreground');
+            padding: 0.5rem 0.75rem;
+            border-radius: 0.25rem;
+            font-family: theme('fontFamily.sans');
+            font-weight: 600;
+            background-color: white;
+            outline: none;
+            transition: all 0.2s;
+            font-size: 0.875rem;
+        }
+
+        .input-retro:focus {
+            box-shadow: theme('boxShadow.retro');
+            transform: translate(-2px, -2px);
+        }
+
+        .card-retro {
+            border: 3px solid theme('colors.foreground');
+            border-radius: 1.5rem;
+            box-shadow: theme('boxShadow.retro');
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease-out;
+        }
+
+        .reveal.revealed {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @media print {
+            body {
+                background: white;
+            }
+
+            #navbar,
+            .no-print {
+                display: none !important;
+            }
+
+            main {
+                padding-top: 0 !important;
+            }
+
+            .card-retro {
+                border: 2px solid black;
+                box-shadow: none;
+                border-radius: 0;
+                margin: 0;
+                padding: 0;
+            }
+
+            .print-layout {
+                display: block !important;
+            }
+
+            /* Hide the form completely */
+            #editorSection {
+                display: none !important;
+            }
+
+            #previewSection {
+                width: 100% !important;
+                max-width: 100% !important;
+                border: none;
+                box-shadow: none;
+            }
+        }
+
+        /* Dashboard App specific layout */
+        .sidebar {
+            width: 260px;
+            height: 100vh;
+            position: fixed;
+            left: 0;
+            top: 0;
+            background: white;
+            border-right: 3px solid theme('colors.foreground');
+            padding: 2rem 1.5rem;
+            display: flex;
+            flex-direction: column;
+            z-index: 100;
+        }
+
+        .app-main {
+            margin-left: 260px;
+            padding: 2rem;
+            min-height: 100vh;
+            padding-top: 2rem;
+        }
+
+        @media (max-width: 1024px) {
+            .sidebar {
+                transform: translateX(-100%);
+                z-index: 100;
+                transition: transform 0.3s ease;
+            }
+
+            .sidebar.open {
+                transform: translateX(0);
+            }
+
+            .app-main {
+                margin-left: 0;
+                padding: 1.5rem;
+                padding-top: 5rem;
+            }
+        }
+
+        .nav-link {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.75rem 1rem;
+            border-radius: 0.5rem;
+            font-family: theme('fontFamily.sans');
+            font-weight: 700;
+            opacity: 0.7;
+            transition: all 0.2s;
+            border: 2px solid transparent;
+        }
+
+        .nav-link:hover {
+            opacity: 1;
+            background: rgba(0, 0, 0, 0.05);
+        }
+
+        .nav-link.active {
+            opacity: 1;
+            background: theme('colors.mustard');
+            border-color: theme('colors.foreground');
+            color: theme('colors.foreground');
+            box-shadow: 2px 2px 0px 0px theme('colors.foreground');
+        }
+
+        @media print {
+
+            .sidebar,
+            .lg\:hidden {
+                display: none !important;
+            }
+
+            .app-main {
+                margin-left: 0 !important;
+                padding: 0 !important;
+            }
+        }
+    </style>
+    <link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="style.css"></noscript>
+</head>
+
+<body class="selection:bg-foreground selection:text-background font-sans flex flex-col min-h-screen">
+    <script>if(!localStorage.getItem("mealos_tools_user")){window.location.href="boite-a-outils-login.html";}</script>
+
+
+
+    
+    
+    
+    <!-- Mobile Header -->
+    <div class="lg:hidden fixed top-0 w-full left-0 bg-white border-b-3 border-foreground px-4 py-3 flex items-center justify-between z-40 no-print" style="box-shadow: 4px 4px 0px 0px #382512;">
+        <a href="boite-a-outils-dashboard.html" class="logo-handwritten text-3xl">meal <span class="text-[0.7em] ml-1">OS</span></a>
+        <button id="menuToggle" class="p-2"><i data-lucide="menu"></i></button>
+    </div>
+
+    <!-- Sidebar -->
+    <aside class="sidebar bg-background no-print" id="sidebar">
+        <div class="flex items-center justify-between mb-10">
+            <a href="boite-a-outils-dashboard.html" class="logo-handwritten text-4xl">meal <span class="text-[0.7em] ml-1">OS</span></a>
+            <button id="closeMenu" class="lg:hidden"><i data-lucide="x"></i></button>
+        </div>
+
+        <nav class="space-y-2 flex-grow overflow-y-auto pb-4">
+            <div class="text-xs font-black uppercase tracking-widest opacity-40 mb-3 px-3">Espace Restaurant</div>
+            <a href="boite-a-outils-dashboard.html" class="nav-link active">
+                <i data-lucide="layout-grid" class="w-5 h-5"></i> Outils Gratuits
+            </a>
+            
+            <div class="pt-6 mt-6 border-t-2 border-foreground/10">
+                <div class="text-xs font-black uppercase tracking-widest opacity-40 mb-3 px-3 flex items-center justify-between">
+                    Meal OS Complet <span class="bg-accent text-white text-[8px] px-1 py-0.5 rounded uppercase">Pro</span>
+                </div>
+                <a href="#" class="nav-link flex items-center justify-between group pro-link" data-pro-module="haccp" style="opacity: 0.5;">
+                    <div class="flex items-center gap-3"><i data-lucide="clipboard-check" class="w-5 h-5"></i> Audit HACCP</div>
+                    <i data-lucide="lock" class="w-3 h-3 opacity-30 group-hover:text-accent group-hover:opacity-100 transition-colors"></i>
+                </a>
+                <a href="#" class="nav-link flex items-center justify-between group pro-link" data-pro-module="ops" style="opacity: 0.5;">
+                    <div class="flex items-center gap-3"><i data-lucide="book" class="w-5 h-5"></i> Manuel OPS</div>
+                    <i data-lucide="lock" class="w-3 h-3 opacity-30 group-hover:text-accent group-hover:opacity-100 transition-colors"></i>
+                </a>
+                <a href="#" class="nav-link flex items-center justify-between group pro-link" data-pro-module="rh" style="opacity: 0.5;">
+                    <div class="flex items-center gap-3"><i data-lucide="users" class="w-5 h-5"></i> Gestion RH</div>
+                    <i data-lucide="lock" class="w-3 h-3 opacity-30 group-hover:text-accent group-hover:opacity-100 transition-colors"></i>
+                </a>
+                <a href="#" class="nav-link flex items-center justify-between group pro-link" data-pro-module="maintenance" style="opacity: 0.5;">
+                    <div class="flex items-center gap-3"><i data-lucide="wrench" class="w-5 h-5"></i> Maintenance</div>
+                    <i data-lucide="lock" class="w-3 h-3 opacity-30 group-hover:text-accent group-hover:opacity-100 transition-colors"></i>
+                </a>
+            </div>
+
+            <div class="pt-6 mt-6 border-t-2 border-foreground/10">
+                <div class="text-xs font-black uppercase tracking-widest opacity-40 mb-3 px-3">Ressources</div>
+                <a href="resources.html" class="nav-link">
+                    <i data-lucide="book-open" class="w-5 h-5"></i> Articles & Guides
+                </a>
+            </div>
+        </nav>
+
+        <div class="mt-auto border-t-2 border-foreground/10 pt-6">
+            <div class="flex items-center gap-3 px-2">
+                <div class="w-10 h-10 rounded-full bg-foreground text-background flex items-center justify-center font-display font-black text-xl" id="avatarInitials">U</div>
+                <div class="overflow-hidden">
+                    <div class="font-bold text-sm truncate w-full" id="sidebarName">Utilisateur</div>
+                    <div class="text-xs opacity-60 truncate w-full" id="sidebarRestaurant">Restaurant</div>
+                </div>
+            </div>
+            <a href="index.html" class="mt-4 text-xs font-bold uppercase tracking-wider text-accent hover:underline px-2 flex items-center gap-1 w-full justify-start"><i data-lucide="arrow-left" class="w-3 h-3"></i> Retour au site</a>
+        </div>
+    </aside>
+
+    <!-- Soft Paywall Modal -->
+    <div id="proModalOverlay" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4">
+        <!-- Backdrop blur -->
+        <div class="absolute inset-0 bg-background/60 backdrop-blur-md transition-opacity duration-300"></div>
+        
+        <!-- Modal Card -->
+        <div class="card-retro bg-white p-8 max-w-lg w-full relative z-10 transform transition-all duration-300 scale-95 opacity-0" id="proModalCard">
+            <button id="closeProModal" class="absolute top-4 right-4 p-2 opacity-50 hover:opacity-100 transition-opacity">
+                <i data-lucide="x" class="w-6 h-6"></i>
+            </button>
+            
+            <div class="mb-6 flex items-center justify-center w-16 h-16 rounded-full bg-accent/10 border-2 border-accent text-accent mx-auto">
+                <i data-lucide="lock" class="w-8 h-8" id="proModalIcon"></i>
+            </div>
+            
+            <h2 class="font-display font-black text-3xl mb-3 text-center" id="proModalTitle">Fonctionnalité Premium</h2>
+            <p class="font-sans text-center font-medium opacity-80 mb-6" id="proModalDesc">Découvrez la puissance de Meal OS Pro.</p>
+            
+            <div class="bg-mustard/20 border-2 border-mustard rounded-lg p-4 mb-8 text-sm font-medium text-center">
+                <span class="font-black uppercase tracking-wider text-xs block mb-1">🎁 Accès exclusif</span>
+                Réservé aux établissements partenaires Meal OS.
+            </div>
+            
+            <div class="flex flex-col gap-3">
+                <!-- Calendly Link -->
+                <a href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/mealos/15min'});return false;" class="btn-retro w-full group text-center">
+                    Voir ce module en action <i data-lucide="arrow-right" class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform"></i>
+                </a>
+                <button id="cancelProModal" class="btn-retro alt w-full border-transparent hover:border-transparent hover:bg-black/5 shadow-none group-hover:translate-y-0 text-sm opacity-70">
+                    Non merci, je reste sur l'outil gratuit
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Calendly link widget begin -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    <!-- Calendly link widget end -->
+
+    <!-- Pro Modal Logic -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const proModalOverlay = document.getElementById('proModalOverlay');
+            const proModalCard = document.getElementById('proModalCard');
+            const proModalTitle = document.getElementById('proModalTitle');
+            const proModalDesc = document.getElementById('proModalDesc');
+            const proModalIcon = document.getElementById('proModalIcon');
+            
+            const proTitles = {
+                'haccp': { title: "Fini la panique lors des contrôles.", desc: "Digitalisez vos relevés de températures et vos protocoles de nettoyage. Soyez 100% prêt à tout moment.", icon: "clipboard-check" },
+                'ops': { title: "Vos standards, respectés par tous.", desc: "Créez vos checklists d'ouverture et de fermeture. Fini les petites erreurs du quotidien.", icon: "book" },
+                'rh': { title: "Vos plannings créés en 3 min.", desc: "Centralisez les plannings, absences et documents RH de toute votre équipe en un seul endroit.", icon: "users" },
+                'maintenance': { title: "Ne laissez plus vos machines vous lâcher.", desc: "Anticipez les pannes et planifiez les interventions pour protéger votre précieux matériel.", icon: "wrench" },
+            };
+
+            function openProModal(moduleKey) {
+                if(proTitles[moduleKey]) {
+                    proModalTitle.textContent = proTitles[moduleKey].title;
+                    proModalDesc.textContent = proTitles[moduleKey].desc;
+                    proModalIcon.setAttribute('data-lucide', proTitles[moduleKey].icon);
+                    if(typeof lucide !== 'undefined') lucide.createIcons();
+                }
+                
+                proModalOverlay.classList.remove('hidden');
+                setTimeout(() => {
+                    proModalCard.classList.remove('scale-95', 'opacity-0');
+                }, 10);
+            }
+
+            function closeProModalFunc() {
+                proModalCard.classList.add('scale-95', 'opacity-0');
+                setTimeout(() => {
+                    proModalOverlay.classList.add('hidden');
+                }, 300);
+            }
+
+            document.querySelectorAll('.pro-link').forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    openProModal(link.getAttribute('data-pro-module'));
+                });
+            });
+
+            document.getElementById('closeProModal').addEventListener('click', closeProModalFunc);
+            document.getElementById('cancelProModal').addEventListener('click', closeProModalFunc);
+        });
+    </script>
+
+    <main class="app-main">
+
+
+
+
+
+
+        <div class="text-center mb-10 reveal no-print">
+            <div
+                class="bg-olive text-white border-2 border-foreground rounded-full px-3 py-1 font-bold text-xs inline-flex items-center gap-2 mb-4 transform -rotate-2 shadow-[2px_2px_0px_#111]">
+                <i data-lucide="chef-hat" class="w-4 h-4"></i> Outil Cuisine
+            </div>
+            <h1 class="text-chunky text-4xl md:text-5xl mb-4">Générateur de <span
+                    class="text-olive underline decoration-4 underline-offset-8">Fiche Technique</span>.</h1>
+            <p class="font-sans font-medium text-lg opacity-80 max-w-2xl mx-auto">Calculez le coût réel de votre plat
+                jour en deux minutes et imprimez la fiche propre pour la brigade. Fini les usines à gaz sur Excel.</p>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-8 items-start">
+
+            <!-- Left: Editor (Hidden on Print) -->
+            <div id="editorSection" class="bg-white p-6 md:p-8 card-retro border-b-8 reveal no-print">
+                <h2
+                    class="font-display font-black text-2xl mb-6 flex items-center gap-2 border-b-2 border-foreground/10 pb-4">
+                    <i data-lucide="pen-tool" class="w-6 h-6"></i> Éditer la recette
+                </h2>
+
+                <div class="space-y-6">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="col-span-2">
+                            <label class="block font-bold text-xs uppercase tracking-wider mb-1">Nom du Plat</label>
+                            <input type="text" id="recipeName" class="input-retro"
+                                placeholder="ex: Tartare de Bœuf Charolais au Couteau">
+                        </div>
+                        <div>
+                            <label class="block font-bold text-xs uppercase tracking-wider mb-1">Portions</label>
+                            <input type="number" id="recipePortions" class="input-retro" value="1" min="1">
+                        </div>
+                        <div>
+                            <label class="block font-bold text-xs uppercase tracking-wider mb-1">Cible Food Cost
+                                (%)</label>
+                            <input type="number" id="targetFc" class="input-retro" value="30">
+                        </div>
+                    </div>
+
+                    <div class="border-t-2 border-foreground/10 pt-6">
+                        <h3 class="font-bold text-sm uppercase tracking-wider mb-4 flex justify-between items-center">
+                            Ingrédients
+                            <span class="text-xs opacity-50 normal-case font-medium">Prix HT</span>
+                        </h3>
+
+                        <div id="ingredientsList" class="space-y-2">
+                            <!-- JS Populated Rows here -->
+                        </div>
+
+                        <button id="addIngBtn"
+                            class="mt-4 font-bold text-xs flex items-center gap-1 text-olive hover:text-foreground transition-colors uppercase tracking-wider">
+                            <i data-lucide="plus" class="w-4 h-4 rounded-full border border-current"></i> Ajouter un
+                            Ingrédient
+                        </button>
+                    </div>
+
+                    <div class="border-t-2 border-foreground/10 pt-6">
+                        <label class="block font-bold text-xs uppercase tracking-wider mb-2">Instructions de dressage
+                            (Optionnel)</label>
+                        <textarea id="recipeInstructions" class="input-retro min-h-[100px] resize-y"
+                            placeholder="- Déposer la viande au centre avec l'emporte-pièce&#10;- Ajouter un trait d'huile d'olive en cercle&#10;..."></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: Preview (Shown on Print) -->
+            <div id="previewSection"
+                class="bg-white p-8 card-retro border-b-8 reveal delay-1 sticky top-28 print-layout min-h-[297mm]">
+
+                <!-- Print Header -->
+                <div class="border-b-4 border-foreground pb-6 mb-6">
+                    <div class="flex justify-between items-start mb-4">
+                        <h1 id="outName"
+                            class="font-display font-black text-3xl md:text-4xl text-foreground break-words w-3/4 leading-tight">
+                            Nom du Plat</h1>
+                        <div
+                            class="text-right border-2 border-foreground p-2 rounded-lg bg-background hidden print:block">
+                            <div class="font-bold text-[0.6rem] uppercase tracking-wider">Mise à jour le</div>
+                            <div class="font-sans font-bold" id="outDate"></div>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap gap-4 font-sans font-bold text-sm uppercase tracking-wider opacity-80">
+                        <div class="bg-foreground/5 px-3 py-1 rounded">Portions: <span id="outPortions"
+                                class="text-foreground">1</span></div>
+                        <div class="bg-mustard/20 text-foreground px-3 py-1 rounded border border-mustard hidden"
+                            id="pillWarning">Alerte Marge</div>
+                    </div>
+                </div>
+
+                <!-- Financial Summary Box -->
+                <div
+                    class="grid grid-cols-3 divide-x-2 divide-foreground border-2 border-foreground rounded-xl overflow-hidden mb-8 shadow-[4px_4px_0px_#111]">
+                    <div class="p-4 bg-background text-center">
+                        <div class="font-bold text-[0.65rem] uppercase tracking-wider opacity-60 mb-1">Coût par Portion
+                            (HT)</div>
+                        <div class="font-display text-2xl" id="outCost">0.00 €</div>
+                    </div>
+                    <div class="p-4 bg-white text-center">
+                        <div class="font-bold text-[0.65rem] uppercase tracking-wider opacity-60 mb-1">Ratio Actuel
+                        </div>
+                        <div class="font-display text-2xl" id="outRatio">0 %</div>
+                    </div>
+                    <div class="p-4 bg-foreground text-background text-center">
+                        <div class="font-bold text-[0.65rem] uppercase tracking-wider opacity-80 mb-1">Prix de Vente
+                            Conseillé</div>
+                        <div class="font-display text-2xl text-mustard" id="outSuggested">0.00 €</div>
+                        <div class="text-[0.6rem] opacity-70 mt-1">Pour atteindre <span id="outTargetParam">30</span>%
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ingredients Table -->
+                <div class="mb-8 font-sans">
+                    <h3 class="font-bold text-sm uppercase tracking-wider border-b-2 border-foreground pb-2 mb-4">
+                        Matières Premières</h3>
+                    <table class="w-full text-left text-sm">
+                        <thead>
+                            <tr class="opacity-50 text-xs border-b border-foreground/20">
+                                <th class="pb-2 font-medium">Ingrédient</th>
+                                <th class="pb-2 font-medium">Qté Brute</th>
+                                <th class="pb-2 font-medium text-right">Coût Partiel</th>
+                            </tr>
+                        </thead>
+                        <tbody id="outIngredients">
+                            <!-- Populated via JS -->
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Instructions -->
+                <div class="font-sans mb-12">
+                    <h3 class="font-bold text-sm uppercase tracking-wider border-b-2 border-foreground pb-2 mb-4">
+                        Dressage / Remarques</h3>
+                    <div id="outInstructions"
+                        class="whitespace-pre-wrap text-sm leading-relaxed opacity-80 min-h-[100px] border border-dashed border-foreground/20 p-4 rounded-lg bg-black/5">
+                    </div>
+                </div>
+
+                <!-- Ad CTA (Hidden on print) -->
+                <div class="mt-auto bg-[#e3ecd4] border-t-2 border-olive p-4 text-center rounded-b-xl -mx-8 -mb-8 no-print cursor-pointer hover:bg-olive hover:text-white transition-colors group"
+                    onclick="window.location.href='index.html#demo'">
+                    <i data-lucide="refresh-cw"
+                        class="w-6 h-6 mx-auto mb-2 text-olive group-hover:text-white transition-colors"></i>
+                    <h4 class="font-sans font-bold text-sm leading-snug">Fatigué de mettre à jour les prix manuellement
+                        ?</h4>
+                    <p class="text-xs opacity-80 mt-1">L'application Meal OS met à jour automatiquement le prix de vos
+                        fiches techniques via les factures fournisseurs.</p>
+                </div>
+
+                <!-- Floating Print Button -->
+                <button onclick="window.print()"
+                    class="absolute bottom-6 right-6 btn-retro text-xs py-2 px-4 shadow-[4px_4px_0px_#111] flex hidden md:flex no-print hover:bg-olive hover:text-white group z-10">
+                    <i data-lucide="printer" class="w-4 h-4 mr-2"></i> Imprimer la fiche
+                </button>
+
+                <!-- Watermark -->
+                <div
+                    class="hidden print:block text-center mt-12 pt-4 border-t-2 border-foreground/20 text-xs font-bold opacity-60 uppercase tracking-widest text-foreground">
+                    Outil 100% gratuit par Meal OS. Plus de rentabilité sur www.mealos.com
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <div class="text-center pb-8 no-print lg:hidden mt-4">
+        <button onclick="window.print()" class="btn-retro text-xs py-3 px-8 shadow-[4px_4px_0px_#111]">
+            <i data-lucide="printer" class="w-4 h-4 mr-2"></i> Imprimer (Générer PDF)
+        </button>
+    </div>
+
+    <script>
+        // Load Lucide
+        const script = document.createElement("script");
+        script.src = "https://unpkg.com/lucide@latest";
+        script.onload = () => 
+        document.body.appendChild(script);;
+        document.querySelectorAll('.reveal').forEach(el => new IntersectionObserver((es) => es.forEach(e => { if (e.isIntersecting) e.target.classList.add('revealed'); })).observe(el));
+
+        // Elements
+        const iName = document.getElementById('recipeName');
+        const iPortions = document.getElementById('recipePortions');
+        const iTargetFc = document.getElementById('targetFc');
+        const iInstructions = document.getElementById('recipeInstructions');
+        const ingList = document.getElementById('ingredientsList');
+        const addIngBtn = document.getElementById('addIngBtn');
+
+        const oName = document.getElementById('outName');
+        const oPortions = document.getElementById('outPortions');
+        const oTargetParam = document.getElementById('outTargetParam');
+        const oCost = document.getElementById('outCost');
+        const oSuggested = document.getElementById('outSuggested');
+        const oRatio = document.getElementById('outRatio');
+        const oIngredients = document.getElementById('outIngredients');
+        const oInstructions = document.getElementById('outInstructions');
+        const pillWarning = document.getElementById('pillWarning');
+
+        document.getElementById('outDate').innerText = new Date().toLocaleDateString('fr-FR');
+
+        function createIngRow() {
+            const div = document.createElement('div');
+            div.className = 'grid grid-cols-12 gap-2 items-center ing-row';
+            div.innerHTML = `
+                <div class="col-span-5"><input type="text" class="input-retro text-xs ing-name" placeholder="Nom"></div>
+                <div class="col-span-3 flex"><input type="number" step="0.1" class="input-retro text-xs rounded-r-none border-r-0 ing-qty" placeholder="0"><select class="input-retro text-xs rounded-l-none bg-black/5 px-1 ing-unit" style="appearance: none; text-align:center;"><option>kg</option><option>L</option><option>pièce</option><option>g</option></select></div>
+                <div class="col-span-3 flex items-center relative"><span class="absolute left-2 text-xs opacity-50">€/U</span><input type="number" step="0.1" class="input-retro text-xs pl-8 text-right bg-accent/10 border-accent/30 focus:border-accent ing-price" placeholder="Prix Unité"></div>
+                <div class="col-span-1 text-center"><button class="text-foreground/30 hover:text-accent p-1" onclick="this.closest('.ing-row').remove(); calculate();"><i data-lucide="x" class="w-4 h-4"></i></button></div>
+            `;
+            ingList.appendChild(div);
+            lucide.createIcons({ root: div });
+
+            // Add listeners to new inputs
+            div.querySelectorAll('input').forEach(inp => inp.addEventListener('input', calculate));
+        }
+
+        function calculate() {
+            // Update Headers
+            oName.textContent = iName.value || "Nouvelle Recette";
+            oPortions.textContent = iPortions.value || 1;
+            oTargetParam.textContent = iTargetFc.value || 30;
+            oInstructions.textContent = iInstructions.value || "Aucune consigne de dressage spécifique.";
+
+            const portions = parseInt(iPortions.value) || 1;
+            const targetRatio = parseFloat(iTargetFc.value) / 100 || 0.3;
+
+            let totalCost = 0;
+            oIngredients.innerHTML = '';
+
+            const rows = document.querySelectorAll('.ing-row');
+            rows.forEach(row => {
+                const name = row.querySelector('.ing-name').value;
+                const qtyVal = parseFloat(row.querySelector('.ing-qty').value) || 0;
+                const unit = row.querySelector('.ing-unit').value;
+                const pricePerUnit = parseFloat(row.querySelector('.ing-price').value) || 0;
+
+                if (name || qtyVal > 0) {
+                    let cost = 0;
+                    if (unit === 'g') {
+                        cost = (qtyVal / 1000) * pricePerUnit; // assuming price is per kg if g is selected (common shortcut), or we treat unit price as price per stated unit. Let's treat Price as per Stated Unit to keep it simple.
+                    } else {
+                        cost = qtyVal * pricePerUnit;
+                    }
+                    totalCost += cost;
+
+                    // Row inside preview
+                    oIngredients.innerHTML += `
+                        <tr class="border-b border-foreground/5 last:border-0">
+                            <td class="py-2 font-medium text-foreground">${name || '---'}</td>
+                            <td class="py-2 opacity-80">${qtyVal} ${unit}</td>
+                            <td class="py-2 text-right font-medium">${cost > 0 ? cost.toFixed(2) + ' €' : '-'}</td>
+                        </tr>
+                    `;
+                }
+            });
+
+            const costPerPortionCents = (totalCost / portions) * 100; // in cents
+            // Prevent dividing by zero
+            // Multiply by 0.XX logic: Selling Price = Cost / TargetRatio
+            const targetPriceCents = targetRatio > 0 ? costPerPortionCents / targetRatio : 0;
+
+            // Round nicely for restaurant prices (e.g. 14.90 instead of 14.81)
+            let roundedSellingPrice = targetPriceCents / 100;
+            // Let's just output raw required price for accuracy of the tool
+
+            if (portions > 0) {
+                oCost.textContent = (costPerPortionCents / 100).toFixed(2) + ' €';
+                oSuggested.textContent = roundedSellingPrice.toFixed(2) + ' €';
+            } else {
+                oCost.textContent = '0.00 €';
+                oSuggested.textContent = '0.00 €';
+            }
+        }
+
+        // Init
+        addIngBtn.addEventListener('click', createIngRow);
+        [iName, iPortions, iTargetFc, iInstructions].forEach(inp => inp.addEventListener('input', calculate));
+
+        // Setup initial default row
+        createIngRow();
+        createIngRow();
+        calculate();
+
+    </script>
+
+    <!-- App Shell Logic -->
+    <script>
+        const menuToggleApp = document.getElementById('menuToggle');
+        const closeMenuApp = document.getElementById('closeMenu');
+        const sidebarApp = document.getElementById('sidebar');
+
+        if (menuToggleApp) menuToggleApp.addEventListener('click', () => sidebarApp.classList.add('open'));
+        if (closeMenuApp) closeMenuApp.addEventListener('click', () => sidebarApp.classList.remove('open'));
+
+        const userAppStr = localStorage.getItem('mealos_tools_user');
+        if (userAppStr) {
+            const userApp = JSON.parse(userAppStr);
+            if (document.getElementById('sidebarName')) document.getElementById('sidebarName').textContent = userApp.firstName + ' ' + userApp.lastName;
+            if (document.getElementById('sidebarRestaurant')) document.getElementById('sidebarRestaurant').textContent = userApp.restaurant;
+            if (document.getElementById('avatarInitials')) document.getElementById('avatarInitials').textContent = userApp.firstName ? userApp.firstName.charAt(0).toUpperCase() : 'U';
+        }
+    </script>
+
+    <script src="https://unpkg.com/lucide@latest" defer></script>
+    <script>if(typeof lucide !== "undefined") { lucide.createIcons(); } else { document.addEventListener("DOMContentLoaded", () => { if(typeof lucide !== "undefined") lucide.createIcons(); }); }</script>
+</body>
+
+
+</html>

@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Performance-first Asset Loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://unpkg.com">
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..900;1,9..144,400..900&family=Outfit:wght@300;400;500;600;700&family=Caveat:wght@700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..900;1,9..144,400..900&family=Outfit:wght@300;400;500;600;700&family=Caveat:wght@700&display=swap"></noscript>
+    <title>Dashboard Boîte à Outils | Meal OS</title>
+
+    <!-- Preconnect -->
+    
+    
+    <link rel="preconnect" href="https://unpkg.com">
+
+    <!-- Fonts with display=swap -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..900;1,9..144,400..900&family=Outfit:wght@300;400;500;600;700&family=Caveat:wght@700&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS (Performance Optimized) -->
+    
+
+    <!-- Tailwind Config -->
+    
+
+    <style>
+        body {
+            background-color: theme('colors.background');
+            color: theme('colors.foreground');
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .logo-handwritten {
+            font-family: theme('fontFamily.script');
+            text-transform: lowercase;
+            letter-spacing: -0.02em;
+            line-height: 0.8;
+            color: #111111;
+        }
+
+        .text-chunky {
+            font-family: theme('fontFamily.display');
+            font-weight: 900;
+            line-height: 0.95;
+            letter-spacing: -0.03em;
+        }
+
+        .btn-retro {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: theme('colors.foreground');
+            color: theme('colors.background');
+            font-family: theme('fontFamily.sans');
+            font-weight: 900;
+            text-transform: uppercase;
+            padding: 0.5rem 1rem;
+            border-radius: 9999px;
+            box-shadow: theme('boxShadow.retro');
+            transition: all 0.2s;
+            border: 2px solid theme('colors.foreground');
+            cursor: pointer;
+        }
+
+        .btn-retro:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 6px 6px 0px 0px theme("colors.foreground");
+        }
+
+        .btn-retro:active {
+            transform: translate(2px, 2px);
+            box-shadow: 0px 0px 0px 0px theme("colors.foreground");
+        }
+
+        .btn-retro.alt {
+            background-color: white;
+            color: theme('colors.foreground');
+        }
+
+        .card-retro {
+            border: 3px solid theme('colors.foreground');
+            border-radius: 1rem;
+            box-shadow: theme('boxShadow.retro');
+        }
+
+        /* Dashboard App specific layout */
+        .sidebar {
+            width: 260px;
+            height: 100vh;
+            position: fixed;
+            left: 0;
+            top: 0;
+            background: white;
+            border-right: 3px solid theme('colors.foreground');
+            padding: 2rem 1.5rem;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .app-main {
+            margin-left: 260px;
+            padding: 3rem;
+            min-height: 100vh;
+        }
+
+        @media (max-width: 1024px) {
+            .sidebar {
+                transform: translateX(-100%);
+                z-index: 50;
+                transition: transform 0.3s ease;
+            }
+
+            .sidebar.open {
+                transform: translateX(0);
+            }
+
+            .app-main {
+                margin-left: 0;
+                padding: 1.5rem;
+                padding-top: 5rem;
+            }
+        }
+
+        .nav-link {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.75rem 1rem;
+            border-radius: 0.5rem;
+            font-family: theme('fontFamily.sans');
+            font-weight: 700;
+            opacity: 0.7;
+            transition: all 0.2s;
+            border: 2px solid transparent;
+        }
+
+        .nav-link:hover {
+            opacity: 1;
+            background: rgba(0, 0, 0, 0.05);
+        }
+
+        .nav-link.active {
+            opacity: 1;
+            background: theme('colors.mustard');
+            border-color: theme('colors.foreground');
+            color: theme('colors.foreground');
+            box-shadow: 2px 2px 0px 0px theme('colors.foreground');
+        }
+    </style>
+    <link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="style.css"></noscript>
+</head>
+
+<body class="selection:bg-foreground selection:text-background font-sans">
+
+    <!-- Auth Guard: Redirect to login if user object is not in local storage -->
+    <script>
+        const userJson = localStorage.getItem('mealos_tools_user');
+        if (!userJson) {
+            window.location.href = 'boite-a-outils-login.html';
+        }
+
+        const user = JSON.parse(userJson);
+        // We will populate user names via JS after HTML loads to prevent flickering if possible, or just wait for DOM.
+    </script>
+
+    <!-- Mobile Header -->
+    <div
+        class="lg:hidden fixed top-0 w-full left-0 bg-white border-b-3 border-foreground px-4 py-3 flex items-center justify-between z-40 shadow-retro">
+        <a href="index.html" class="logo-handwritten text-3xl">meal <span class="text-[0.7em] ml-1">OS</span></a>
+        <button aria-label="Menu" id="menuToggle" class="p-2"><i data-lucide="menu"></i></button>
+    </div>
+
+    <!-- Sidebar -->
+    <aside class="sidebar bg-background" id="sidebar">
+        <div class="flex items-center justify-between mb-10">
+            <a href="index.html" class="logo-handwritten text-4xl">meal <span class="text-[0.7em] ml-1">OS</span></a>
+            <button aria-label="Fermer" id="closeMenu" class="lg:hidden"><i data-lucide="x"></i></button>
+        </div>
+
+        <nav class="space-y-2 flex-grow overflow-y-auto pb-4">
+            <div class="text-xs font-black uppercase tracking-widest opacity-40 mb-3 px-3">Espace Restaurant</div>
+            <a href="boite-a-outils-dashboard.html" class="nav-link active">
+                <i data-lucide="layout-grid" class="w-5 h-5"></i> Outils Gratuits
+            </a>
+
+            <div class="pt-6 mt-6 border-t-2 border-foreground/10">
+                <div
+                    class="text-xs font-black uppercase tracking-widest opacity-40 mb-3 px-3 flex items-center justify-between">
+                    Meal OS Complet <span
+                        class="bg-accent text-white text-[8px] px-1 py-0.5 rounded uppercase">Pro</span>
+                </div>
+                <a href="#" class="nav-link flex items-center justify-between group pro-link" data-pro-module="haccp"
+                    style="opacity: 0.5;">
+                    <div class="flex items-center gap-3"><i data-lucide="clipboard-check" class="w-5 h-5"></i> Audit HACCP
+                    </div>
+                    <i data-lucide="lock"
+                        class="w-3 h-3 opacity-30 group-hover:text-accent group-hover:opacity-100 transition-colors"></i>
+                </a>
+                <a href="#" class="nav-link flex items-center justify-between group pro-link" data-pro-module="ops"
+                    style="opacity: 0.5;">
+                    <div class="flex items-center gap-3"><i data-lucide="book" class="w-5 h-5"></i> Manuel OPS
+                    </div>
+                    <i data-lucide="lock"
+                        class="w-3 h-3 opacity-30 group-hover:text-accent group-hover:opacity-100 transition-colors"></i>
+                </a>
+                <a href="#" class="nav-link flex items-center justify-between group pro-link" data-pro-module="rh"
+                    style="opacity: 0.5;">
+                    <div class="flex items-center gap-3"><i data-lucide="users" class="w-5 h-5"></i> Gestion RH</div>
+                    <i data-lucide="lock"
+                        class="w-3 h-3 opacity-30 group-hover:text-accent group-hover:opacity-100 transition-colors"></i>
+                </a>
+                <a href="#" class="nav-link flex items-center justify-between group pro-link" data-pro-module="maintenance"
+                    style="opacity: 0.5;">
+                    <div class="flex items-center gap-3"><i data-lucide="wrench" class="w-5 h-5"></i> Maintenance
+                    </div>
+                    <i data-lucide="lock"
+                        class="w-3 h-3 opacity-30 group-hover:text-accent group-hover:opacity-100 transition-colors"></i>
+                </a>
+            </div>
+
+            <div class="pt-6 mt-6 border-t-2 border-foreground/10">
+                <div class="text-xs font-black uppercase tracking-widest opacity-40 mb-3 px-3">Ressources</div>
+                <a href="resources.html" class="nav-link">
+                    <i data-lucide="book-open" class="w-5 h-5"></i> Articles & Guides
+                </a>
+            </div>
+        </nav>
+
+        <div class="mt-auto border-t-2 border-foreground/10 pt-6">
+            <div class="flex items-center gap-3 px-2">
+                <div class="w-10 h-10 rounded-full bg-foreground text-background flex items-center justify-center font-display font-black text-xl"
+                    id="avatarInitials">U</div>
+                <div class="overflow-hidden">
+                    <div class="font-bold text-sm truncate w-full" id="sidebarName">Utilisateur</div>
+                    <div class="text-xs opacity-60 truncate w-full" id="sidebarRestaurant">Restaurant</div>
+                </div>
+            </div>
+            <a href="index.html"
+                class="mt-4 text-xs font-bold uppercase tracking-wider text-accent hover:underline px-2 flex items-center gap-1 w-full justify-start"><i
+                    data-lucide="arrow-left" class="w-3 h-3"></i> Retour au site</a>
+        </div>
+    </aside>
+
+    <!-- Main Dashboard Area -->
+    <main class="app-main">
+        <div class="max-w-6xl mx-auto">
+
+            <!-- Welcome Banner -->
+            <div
+                class="card-retro bg-white p-6 md:p-8 mb-8 flex flex-col md:flex-row items-center justify-between gap-6 border-b-8">
+                <div>
+                    <h1 class="font-display font-black text-3xl md:text-4xl mb-2">Bonjour, <span id="welcomeName"
+                            class="text-mustard">Chef</span> ! 👋</h1>
+                    <p class="font-sans font-medium text-lg opacity-80">Bienvenue dans votre cockpit. Que souhaitez-vous
+                        optimiser chez <strong id="welcomeResto">votre établissement</strong> aujourd'hui ?</p>
+                </div>
+                <!-- Banner decorative -->
+                <div
+                    class="w-24 h-24 shrink-0 rounded-full border-4 border-foreground bg-mustard flex items-center justify-center shadow-retro hidden md:flex rotate-12">
+                    <i data-lucide="wrench" class="w-10 h-10 text-foreground"></i>
+                </div>
+            </div>
+
+            <!-- Dashboard Modules (The Tools) -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- Tool: Food Cost -->
+                <a href="food-cost-calculator.html"
+                    class="card-retro bg-white p-6 group hover:bg-mustard transition-colors flex flex-col h-full cursor-pointer">
+                    <div class="flex justify-between items-start mb-4">
+                        <div
+                            class="w-12 h-12 rounded-lg border-2 border-foreground flex items-center justify-center bg-background">
+                            <i data-lucide="calculator" class="w-6 h-6 text-foreground"></i>
+                        </div>
+                        <span
+                            class="bg-foreground text-background text-[10px] uppercase font-bold px-2 py-1 rounded">Finance</span>
+                    </div>
+                    <h3 class="font-display font-black text-xl mb-2">Ratio Food Cost</h3>
+                    <p class="font-sans text-sm font-medium opacity-80 mb-6 flex-grow">Calculez la rentabilité de vos
+                        assiettes avec précision (Cible: 25-30%).</p>
+                    <div class="font-bold text-xs uppercase flex items-center gap-2 group-hover:underline">Lancer
+                        l'outil <i data-lucide="arrow-right" class="w-3 h-3"></i></div>
+                </a>
+
+                <!-- Tool: Menu Engineering -->
+                <a href="matrice-menu-engineering.html"
+                    class="card-retro bg-white p-6 group hover:bg-mustard transition-colors flex flex-col h-full cursor-pointer">
+                    <div class="flex justify-between items-start mb-4">
+                        <div
+                            class="w-12 h-12 rounded-lg border-2 border-foreground flex items-center justify-center bg-background">
+                            <i data-lucide="grid" class="w-6 h-6 text-foreground"></i>
+                        </div>
+                        <span
+                            class="bg-foreground text-background text-[10px] uppercase font-bold px-2 py-1 rounded">Menu</span>
+                    </div>
+                    <h3 class="font-display font-black text-xl mb-2">Matrice BCG</h3>
+                    <p class="font-sans text-sm font-medium opacity-80 mb-6 flex-grow">Identifiez vos plats Étoiles et
+                        vos Poids Morts pour optimiser la carte.</p>
+                    <div class="font-bold text-xs uppercase flex items-center gap-2 group-hover:underline">Ouvrir la
+                        matrice <i data-lucide="arrow-right" class="w-3 h-3"></i></div>
+                </a>
+
+                <!-- Tool: Gaspillage -->
+                <a href="calculateur-gaspillage-alimentaire.html"
+                    class="card-retro bg-white p-6 group border-accent/30 hover:border-foreground hover:bg-accent hover:text-white transition-colors flex flex-col h-full cursor-pointer">
+                    <div class="flex justify-between items-start mb-4">
+                        <div
+                            class="w-12 h-12 rounded-lg border-2 border-foreground flex items-center justify-center bg-background text-accent group-hover:text-foreground">
+                            <i data-lucide="trash-2" class="w-6 h-6"></i>
+                        </div>
+                        <span
+                            class="bg-accent text-white group-hover:bg-foreground text-[10px] uppercase font-bold px-2 py-1 rounded">Pertes</span>
+                    </div>
+                    <h3 class="font-display font-black text-xl mb-2">Impact Gaspillage</h3>
+                    <p class="font-sans text-sm font-medium opacity-80 mb-6 flex-grow">Découvrez l'hémorragie financière
+                        causée par vos poubelles.</p>
+                    <div class="font-bold text-xs uppercase flex items-center gap-2 group-hover:underline">Tester mon
+                        impact <i data-lucide="arrow-right" class="w-3 h-3"></i></div>
+                </a>
+
+                <!-- Tool: Fiche Tech -->
+                <a href="generateur-fiche-technique.html"
+                    class="card-retro bg-white p-6 group hover:bg-olive hover:text-white transition-colors flex flex-col h-full cursor-pointer">
+                    <div class="flex justify-between items-start mb-4">
+                        <div
+                            class="w-12 h-12 rounded-lg border-2 border-foreground flex items-center justify-center bg-background text-olive group-hover:text-foreground">
+                            <i data-lucide="chef-hat" class="w-6 h-6"></i>
+                        </div>
+                        <span
+                            class="bg-olive text-white group-hover:bg-foreground text-[10px] uppercase font-bold px-2 py-1 rounded">Cuisine</span>
+                    </div>
+                    <h3 class="font-display font-black text-xl mb-2">Fiches Techniques</h3>
+                    <p class="font-sans text-sm font-medium opacity-80 mb-6 flex-grow">Générez et imprimez l'historique
+                        coût/prix de vos recettes instantanément.</p>
+                    <div class="font-bold text-xs uppercase flex items-center gap-2 group-hover:underline">Créer une FT
+                        <i data-lucide="arrow-right" class="w-3 h-3"></i>
+                    </div>
+                </a>
+
+                <!-- Tool: Google Reviews -->
+                <a href="generateur-reponse-avis-google.html"
+                    class="card-retro bg-white p-6 group hover:bg-black/5 transition-colors flex flex-col h-full cursor-pointer">
+                    <div class="flex justify-between items-start mb-4">
+                        <div
+                            class="w-12 h-12 rounded-lg border-2 border-foreground flex items-center justify-center bg-background">
+                            <i data-lucide="star" class="w-6 h-6 text-mustard fill-mustard"></i>
+                        </div>
+                        <span
+                            class="bg-foreground text-background text-[10px] uppercase font-bold px-2 py-1 rounded">Marketing</span>
+                    </div>
+                    <h3 class="font-display font-black text-xl mb-2">Réponses Avis 1★</h3>
+                    <p class="font-sans text-sm font-medium opacity-80 mb-6 flex-grow">Désamorcez les plaintes clients
+                        avec ce générateur de réponses polies.</p>
+                    <div class="font-bold text-xs uppercase flex items-center gap-2 group-hover:underline">Générer texte
+                        <i data-lucide="arrow-right" class="w-3 h-3"></i>
+                    </div>
+                </a>
+
+                <!-- Tool: Prime Cost -->
+                <a href="prime-cost-calculator.html"
+                    class="card-retro bg-white p-6 group hover:bg-black/5 transition-colors flex flex-col h-full cursor-pointer">
+                    <div class="flex justify-between items-start mb-4">
+                        <div
+                            class="w-12 h-12 rounded-lg border-2 border-foreground flex items-center justify-center bg-background">
+                            <i data-lucide="users" class="w-6 h-6 text-foreground"></i>
+                        </div>
+                        <span class="bg-foreground text-background text-[10px] uppercase font-bold px-2 py-1 rounded">HR
+                            & Marge</span>
+                    </div>
+                    <h3 class="font-display font-black text-xl mb-2">Simulateur Prime Cost</h3>
+                    <p class="font-sans text-sm font-medium opacity-80 mb-6 flex-grow">Additionnez matières premières et
+                        salaires pour connaître votre VRAIE marge brute.</p>
+                    <div class="font-bold text-xs uppercase flex items-center gap-2 group-hover:underline">Simuler <i
+                            data-lucide="arrow-right" class="w-3 h-3"></i></div>
+                </a>
+
+            </div>
+
+            <!-- Upsell Banner -->
+            <div
+                class="card-retro bg-[#e3ecd4] p-8 mt-12 flex flex-col md:flex-row items-center justify-between text-center md:text-left gap-6 border-olive border-4 border-b-8">
+                <div>
+                    <h3 class="font-display font-black text-2xl mb-2 text-olive">Vous recopiez encore vos prix à la main
+                        ?</h3>
+                    <p class="font-sans font-medium opacity-90">Meal OS rassemble et automatise l'ensemble de ces
+                        fonctionnalités (et bien plus). Nous scannons vos factures pour vous donner la marge exacte, en
+                        temps réel.</p>
+                </div>
+                <button onclick="window.location.href='index.html#demo'"
+                    class="btn-retro shrink-0 border-olive hover:bg-olive whitespace-nowrap">Passer à l'automatisation
+                    totale <i data-lucide="lock-open" class="w-4 h-4 ml-2"></i></button>
+            </div>
+
+            <!-- Share / Viral Banner -->
+            <div class="card-retro bg-white p-6 md:p-8 mt-6 flex flex-col md:flex-row items-center justify-between text-center md:text-left gap-6 border-foreground border-2 border-b-8 group cursor-pointer"
+                onclick="alert('Lien copié dans le presse-papier !')">
+                <div class="flex items-center gap-4">
+                    <div
+                        class="bg-foreground text-background p-4 rounded-full hidden md:block group-hover:scale-110 transition-transform">
+                        <i data-lucide="share-2" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-display font-black text-xl mb-1 text-foreground">Inviter un chef ou associé</h3>
+                        <p class="font-sans font-medium opacity-70 text-sm">Ce hub gratuit est utile ? Partagez l'accès
+                            en 1 clic à votre équipe ou comptable.</p>
+                    </div>
+                </div>
+                <button
+                    class="btn-retro shrink-0 bg-white text-foreground border-foreground hover:bg-foreground hover:text-white text-sm py-2">Partager
+                    l'accès <i data-lucide="user-plus" class="w-4 h-4 ml-2"></i></button>
+            </div>
+
+            <!-- Soft Paywall Modal -->
+            <div id="proModalOverlay" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4">
+                <!-- Backdrop blur -->
+                <div class="absolute inset-0 bg-background/60 backdrop-blur-md transition-opacity duration-300"></div>
+                
+                <!-- Modal Card -->
+                <div class="card-retro bg-white p-8 max-w-lg w-full relative z-10 transform transition-all duration-300 scale-95 opacity-0" id="proModalCard">
+                    <button id="closeProModal" class="absolute top-4 right-4 p-2 opacity-50 hover:opacity-100 transition-opacity">
+                        <i data-lucide="x" class="w-6 h-6"></i>
+                    </button>
+                    
+                    <div class="mb-6 flex items-center justify-center w-16 h-16 rounded-full bg-accent/10 border-2 border-accent text-accent mx-auto">
+                        <i data-lucide="lock" class="w-8 h-8" id="proModalIcon"></i>
+                    </div>
+                    
+                    <h2 class="font-display font-black text-3xl mb-3 text-center" id="proModalTitle">Fonctionnalité Premium</h2>
+                    <p class="font-sans text-center font-medium opacity-80 mb-6" id="proModalDesc">Découvrez la puissance de Meal OS Pro.</p>
+                    
+                    <div class="bg-mustard/20 border-2 border-mustard rounded-lg p-4 mb-8 text-sm font-medium text-center">
+                        <span class="font-black uppercase tracking-wider text-xs block mb-1">🎁 Accès exclusif</span>
+                        Réservé aux établissements partenaires Meal OS.
+                    </div>
+                    
+                    <div class="flex flex-col gap-3">
+                        <!-- Calendly Link -->
+                        <a href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/mealos/15min'});return false;" class="btn-retro w-full group text-center">
+                            Voir ce module en action <i data-lucide="arrow-right" class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                        <button id="cancelProModal" class="btn-retro alt w-full border-transparent hover:border-transparent hover:bg-black/5 shadow-none group-hover:translate-y-0 text-sm opacity-70">
+                            Non merci, je reste sur l'outil gratuit
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    
+    <script>
+        
+
+        // Mobile Menu
+        const menuToggle = document.getElementById('menuToggle');
+        const closeMenu = document.getElementById('closeMenu');
+        const sidebar = document.getElementById('sidebar');
+
+        menuToggle.addEventListener('click', () => sidebar.classList.add('open'));
+        closeMenu.addEventListener('click', () => sidebar.classList.remove('open'));
+
+        // Populate User Data
+        if (user) {
+            document.getElementById('welcomeName').textContent = user.firstName;
+            document.getElementById('welcomeResto').textContent = user.restaurant;
+
+            document.getElementById('sidebarName').textContent = user.firstName + ' ' + user.lastName;
+            document.getElementById('sidebarRestaurant').textContent = user.restaurant;
+
+            // Set Avatar Initials
+            const initial = user.firstName ? user.firstName.charAt(0).toUpperCase() : 'U';
+            document.getElementById('avatarInitials').textContent = initial;
+        }
+
+        // Logout
+        window.logout = function () {
+            localStorage.removeItem('mealos_tools_user');
+            window.location.href = 'boite-a-outils-login.html';
+        }
+
+    </script>
+
+    <script src="https://unpkg.com/lucide@latest" defer></script>
+    <script>if(typeof lucide !== "undefined") { lucide.createIcons(); } else { document.addEventListener("DOMContentLoaded", () => { if(typeof lucide !== "undefined") lucide.createIcons(); }); }</script>
+
+    <!-- Calendly link widget begin -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    <!-- Calendly link widget end -->
+
+    <!-- Pro Modal Logic -->
+    <script>
+        const proModalOverlay = document.getElementById('proModalOverlay');
+        const proModalCard = document.getElementById('proModalCard');
+        const proModalTitle = document.getElementById('proModalTitle');
+        const proModalDesc = document.getElementById('proModalDesc');
+        const proModalIcon = document.getElementById('proModalIcon');
+        
+        const proTitles = {
+            'haccp': { title: "Fini la panique lors des contrôles.", desc: "Digitalisez vos relevés de températures et vos protocoles de nettoyage. Soyez 100% prêt à tout moment.", icon: "clipboard-check" },
+            'ops': { title: "Vos standards, respectés par tous.", desc: "Créez vos checklists d'ouverture et de fermeture. Fini les petites erreurs du quotidien.", icon: "book" },
+            'rh': { title: "Vos plannings créés en 3 min.", desc: "Centralisez les plannings, absences et documents RH de toute votre équipe en un seul endroit.", icon: "users" },
+            'maintenance': { title: "Ne laissez plus vos machines vous lâcher.", desc: "Anticipez les pannes et planifiez les interventions pour protéger votre précieux matériel.", icon: "wrench" },
+        };
+
+        function openProModal(moduleKey) {
+            if(proTitles[moduleKey]) {
+                proModalTitle.textContent = proTitles[moduleKey].title;
+                proModalDesc.textContent = proTitles[moduleKey].desc;
+                proModalIcon.setAttribute('data-lucide', proTitles[moduleKey].icon);
+                if(typeof lucide !== 'undefined') lucide.createIcons();
+            }
+            
+            proModalOverlay.classList.remove('hidden');
+            setTimeout(() => {
+                proModalCard.classList.remove('scale-95', 'opacity-0');
+            }, 10);
+        }
+
+        function closeProModalFunc() {
+            proModalCard.classList.add('scale-95', 'opacity-0');
+            setTimeout(() => {
+                proModalOverlay.classList.add('hidden');
+            }, 300);
+        }
+
+        document.querySelectorAll('.pro-link').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                openProModal(link.getAttribute('data-pro-module'));
+            });
+        });
+
+        document.getElementById('closeProModal').addEventListener('click', closeProModalFunc);
+        document.getElementById('cancelProModal').addEventListener('click', closeProModalFunc);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Auth Guard -->
+    
+
+    <!-- Icons -->
+    
+
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-color: theme('colors.background');
+            color: theme('colors.foreground');
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .logo-handwritten {
+            font-family: theme('fontFamily.script');
+            text-transform: lowercase;
+            letter-spacing: -0.02em;
+            line-height: 0.8;
+            color: #111111;
+        }
+
+        .glass-header {
+            background: rgba(250, 242, 215, 0.95);
+            border-bottom: 3px solid theme('colors.foreground');
+            backdrop-filter: blur(8px);
+        }
+
+        .text-chunky {
+            font-family: theme('fontFamily.display');
+            font-weight: 900;
+            line-height: 0.95;
+            letter-spacing: -0.03em;
+        }
+
+        .btn-retro {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: theme('colors.foreground');
+            color: theme('colors.background');
+            font-family: theme('fontFamily.sans');
+            font-weight: 900;
+            text-transform: uppercase;
+            padding: 0.75rem 1.5rem;
+            border-radius: 9999px;
+            box-shadow: theme('boxShadow.retro');
+            transition: all 0.2s;
+            border: 2px solid theme('colors.foreground');
+            cursor: pointer;
+        }
+
+        .btn-retro:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 6px 6px 0px 0px theme("colors.foreground");
+        }
+
+        .btn-retro:active {
+            transform: translate(2px, 2px);
+            box-shadow: 0px 0px 0px 0px theme("colors.foreground");
+        }
+
+        .btn-retro.alt {
+            background-color: white;
+            color: theme('colors.foreground');
+        }
+
+        .btn-retro.disabled {
+            opacity: 0.5;
+            pointer-events: none;
+        }
+
+        .input-retro {
+            width: 100%;
+            border: 2px solid theme('colors.foreground');
+            padding: 0.5rem 0.75rem;
+            border-radius: 0.5rem;
+            font-family: theme('fontFamily.sans');
+            font-weight: 600;
+            background-color: white;
+            outline: none;
+            transition: all 0.2s;
+            font-size: 0.875rem;
+        }
+
+        .input-retro:focus {
+            box-shadow: theme('boxShadow.retro');
+            transform: translate(-2px, -2px);
+        }
+
+        .card-retro {
+            border: 3px solid theme('colors.foreground');
+            border-radius: 1.5rem;
+            box-shadow: theme('boxShadow.retro');
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease-out;
+        }
+
+        .reveal.revealed {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Matrix Matrix specific styles */
+        .matrix-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 0.5rem;
+            position: relative;
+            width: 100%;
+            aspect-ratio: 1/1;
+        }
+
+        .matrix-quad {
+            border: 2px solid rgba(56, 37, 18, 0.2);
+            border-radius: 1rem;
+            padding: 1rem;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .matrix-quad-label {
+            opacity: 0.2;
+            font-family: theme('fontFamily.display');
+            font-size: 3rem;
+            font-weight: 900;
+            line-height: 1;
+            position: absolute;
+            bottom: 0.5rem;
+            right: 0.5rem;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .item-dot {
+            background-color: theme('colors.foreground');
+            color: theme('colors.background');
+            font-weight: bold;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.7rem;
+            box-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
+            cursor: help;
+            position: relative;
+            z-index: 10;
+            flex-shrink: 0;
+        }
+
+        /* Dashboard App specific layout */
+        .sidebar {
+            width: 260px;
+            height: 100vh;
+            position: fixed;
+            left: 0;
+            top: 0;
+            background: white;
+            border-right: 3px solid theme('colors.foreground');
+            padding: 2rem 1.5rem;
+            display: flex;
+            flex-direction: column;
+            z-index: 100;
+        }
+
+        .app-main {
+            margin-left: 260px;
+            padding: 2rem;
+            min-height: 100vh;
+            padding-top: 2rem;
+        }
+
+        @media (max-width: 1024px) {
+            .sidebar {
+                transform: translateX(-100%);
+                z-index: 100;
+                transition: transform 0.3s ease;
+            }
+
+            .sidebar.open {
+                transform: translateX(0);
+            }
+
+            .app-main {
+                margin-left: 0;
+                padding: 1.5rem;
+                padding-top: 5rem;
+            }
+        }
+
+        .nav-link {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.75rem 1rem;
+            border-radius: 0.5rem;
+            font-family: theme('fontFamily.sans');
+            font-weight: 700;
+            opacity: 0.7;
+            transition: all 0.2s;
+            border: 2px solid transparent;
+        }
+
+        .nav-link:hover {
+            opacity: 1;
+            background: rgba(0, 0, 0, 0.05);
+        }
+
+        .nav-link.active {
+            opacity: 1;
+            background: theme('colors.mustard');
+            border-color: theme('colors.foreground');
+            color: theme('colors.foreground');
+            box-shadow: 2px 2px 0px 0px theme('colors.foreground');
+        }
+
+        @media print {
+
+            .sidebar,
+            .lg\:hidden {
+                display: none !important;
+            }
+
+            .app-main {
+                margin-left: 0 !important;
+                padding: 0 !important;
+            }
+        }
+    </style>
+    <link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="style.css"></noscript>
+</head>
+
+<body class="selection:bg-foreground selection:text-background font-sans flex flex-col min-h-screen">
+    <script>if(!localStorage.getItem("mealos_tools_user")){window.location.href="boite-a-outils-login.html";}</script>
+
+
+
+    
+    
+    
+    <!-- Mobile Header -->
+    <div class="lg:hidden fixed top-0 w-full left-0 bg-white border-b-3 border-foreground px-4 py-3 flex items-center justify-between z-40 no-print" style="box-shadow: 4px 4px 0px 0px #382512;">
+        <a href="boite-a-outils-dashboard.html" class="logo-handwritten text-3xl">meal <span class="text-[0.7em] ml-1">OS</span></a>
+        <button id="menuToggle" class="p-2"><i data-lucide="menu"></i></button>
+    </div>
+
+    <!-- Sidebar -->
+    <aside class="sidebar bg-background no-print" id="sidebar">
+        <div class="flex items-center justify-between mb-10">
+            <a href="boite-a-outils-dashboard.html" class="logo-handwritten text-4xl">meal <span class="text-[0.7em] ml-1">OS</span></a>
+            <button id="closeMenu" class="lg:hidden"><i data-lucide="x"></i></button>
+        </div>
+
+        <nav class="space-y-2 flex-grow overflow-y-auto pb-4">
+            <div class="text-xs font-black uppercase tracking-widest opacity-40 mb-3 px-3">Espace Restaurant</div>
+            <a href="boite-a-outils-dashboard.html" class="nav-link active">
+                <i data-lucide="layout-grid" class="w-5 h-5"></i> Outils Gratuits
+            </a>
+            
+            <div class="pt-6 mt-6 border-t-2 border-foreground/10">
+                <div class="text-xs font-black uppercase tracking-widest opacity-40 mb-3 px-3 flex items-center justify-between">
+                    Meal OS Complet <span class="bg-accent text-white text-[8px] px-1 py-0.5 rounded uppercase">Pro</span>
+                </div>
+                <a href="#" class="nav-link flex items-center justify-between group pro-link" data-pro-module="haccp" style="opacity: 0.5;">
+                    <div class="flex items-center gap-3"><i data-lucide="clipboard-check" class="w-5 h-5"></i> Audit HACCP</div>
+                    <i data-lucide="lock" class="w-3 h-3 opacity-30 group-hover:text-accent group-hover:opacity-100 transition-colors"></i>
+                </a>
+                <a href="#" class="nav-link flex items-center justify-between group pro-link" data-pro-module="ops" style="opacity: 0.5;">
+                    <div class="flex items-center gap-3"><i data-lucide="book" class="w-5 h-5"></i> Manuel OPS</div>
+                    <i data-lucide="lock" class="w-3 h-3 opacity-30 group-hover:text-accent group-hover:opacity-100 transition-colors"></i>
+                </a>
+                <a href="#" class="nav-link flex items-center justify-between group pro-link" data-pro-module="rh" style="opacity: 0.5;">
+                    <div class="flex items-center gap-3"><i data-lucide="users" class="w-5 h-5"></i> Gestion RH</div>
+                    <i data-lucide="lock" class="w-3 h-3 opacity-30 group-hover:text-accent group-hover:opacity-100 transition-colors"></i>
+                </a>
+                <a href="#" class="nav-link flex items-center justify-between group pro-link" data-pro-module="maintenance" style="opacity: 0.5;">
+                    <div class="flex items-center gap-3"><i data-lucide="wrench" class="w-5 h-5"></i> Maintenance</div>
+                    <i data-lucide="lock" class="w-3 h-3 opacity-30 group-hover:text-accent group-hover:opacity-100 transition-colors"></i>
+                </a>
+            </div>
+
+            <div class="pt-6 mt-6 border-t-2 border-foreground/10">
+                <div class="text-xs font-black uppercase tracking-widest opacity-40 mb-3 px-3">Ressources</div>
+                <a href="resources.html" class="nav-link">
+                    <i data-lucide="book-open" class="w-5 h-5"></i> Articles & Guides
+                </a>
+            </div>
+        </nav>
+
+        <div class="mt-auto border-t-2 border-foreground/10 pt-6">
+            <div class="flex items-center gap-3 px-2">
+                <div class="w-10 h-10 rounded-full bg-foreground text-background flex items-center justify-center font-display font-black text-xl" id="avatarInitials">U</div>
+                <div class="overflow-hidden">
+                    <div class="font-bold text-sm truncate w-full" id="sidebarName">Utilisateur</div>
+                    <div class="text-xs opacity-60 truncate w-full" id="sidebarRestaurant">Restaurant</div>
+                </div>
+            </div>
+            <a href="index.html" class="mt-4 text-xs font-bold uppercase tracking-wider text-accent hover:underline px-2 flex items-center gap-1 w-full justify-start"><i data-lucide="arrow-left" class="w-3 h-3"></i> Retour au site</a>
+        </div>
+    </aside>
+
+    <!-- Soft Paywall Modal -->
+    <div id="proModalOverlay" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4">
+        <!-- Backdrop blur -->
+        <div class="absolute inset-0 bg-background/60 backdrop-blur-md transition-opacity duration-300"></div>
+        
+        <!-- Modal Card -->
+        <div class="card-retro bg-white p-8 max-w-lg w-full relative z-10 transform transition-all duration-300 scale-95 opacity-0" id="proModalCard">
+            <button id="closeProModal" class="absolute top-4 right-4 p-2 opacity-50 hover:opacity-100 transition-opacity">
+                <i data-lucide="x" class="w-6 h-6"></i>
+            </button>
+            
+            <div class="mb-6 flex items-center justify-center w-16 h-16 rounded-full bg-accent/10 border-2 border-accent text-accent mx-auto">
+                <i data-lucide="lock" class="w-8 h-8" id="proModalIcon"></i>
+            </div>
+            
+            <h2 class="font-display font-black text-3xl mb-3 text-center" id="proModalTitle">Fonctionnalité Premium</h2>
+            <p class="font-sans text-center font-medium opacity-80 mb-6" id="proModalDesc">Découvrez la puissance de Meal OS Pro.</p>
+            
+            <div class="bg-mustard/20 border-2 border-mustard rounded-lg p-4 mb-8 text-sm font-medium text-center">
+                <span class="font-black uppercase tracking-wider text-xs block mb-1">🎁 Accès exclusif</span>
+                Réservé aux établissements partenaires Meal OS.
+            </div>
+            
+            <div class="flex flex-col gap-3">
+                <!-- Calendly Link -->
+                <a href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/mealos/15min'});return false;" class="btn-retro w-full group text-center">
+                    Voir ce module en action <i data-lucide="arrow-right" class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform"></i>
+                </a>
+                <button id="cancelProModal" class="btn-retro alt w-full border-transparent hover:border-transparent hover:bg-black/5 shadow-none group-hover:translate-y-0 text-sm opacity-70">
+                    Non merci, je reste sur l'outil gratuit
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Calendly link widget begin -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    <!-- Calendly link widget end -->
+
+    <!-- Pro Modal Logic -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const proModalOverlay = document.getElementById('proModalOverlay');
+            const proModalCard = document.getElementById('proModalCard');
+            const proModalTitle = document.getElementById('proModalTitle');
+            const proModalDesc = document.getElementById('proModalDesc');
+            const proModalIcon = document.getElementById('proModalIcon');
+            
+            const proTitles = {
+                'haccp': { title: "Fini la panique lors des contrôles.", desc: "Digitalisez vos relevés de températures et vos protocoles de nettoyage. Soyez 100% prêt à tout moment.", icon: "clipboard-check" },
+                'ops': { title: "Vos standards, respectés par tous.", desc: "Créez vos checklists d'ouverture et de fermeture. Fini les petites erreurs du quotidien.", icon: "book" },
+                'rh': { title: "Vos plannings créés en 3 min.", desc: "Centralisez les plannings, absences et documents RH de toute votre équipe en un seul endroit.", icon: "users" },
+                'maintenance': { title: "Ne laissez plus vos machines vous lâcher.", desc: "Anticipez les pannes et planifiez les interventions pour protéger votre précieux matériel.", icon: "wrench" },
+            };
+
+            function openProModal(moduleKey) {
+                if(proTitles[moduleKey]) {
+                    proModalTitle.textContent = proTitles[moduleKey].title;
+                    proModalDesc.textContent = proTitles[moduleKey].desc;
+                    proModalIcon.setAttribute('data-lucide', proTitles[moduleKey].icon);
+                    if(typeof lucide !== 'undefined') lucide.createIcons();
+                }
+                
+                proModalOverlay.classList.remove('hidden');
+                setTimeout(() => {
+                    proModalCard.classList.remove('scale-95', 'opacity-0');
+                }, 10);
+            }
+
+            function closeProModalFunc() {
+                proModalCard.classList.add('scale-95', 'opacity-0');
+                setTimeout(() => {
+                    proModalOverlay.classList.add('hidden');
+                }, 300);
+            }
+
+            document.querySelectorAll('.pro-link').forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    openProModal(link.getAttribute('data-pro-module'));
+                });
+            });
+
+            document.getElementById('closeProModal').addEventListener('click', closeProModalFunc);
+            document.getElementById('cancelProModal').addEventListener('click', closeProModalFunc);
+        });
+    </script>
+
+    <main class="app-main">
+
+
+
+
+
+        <div class="max-w-7xl mx-auto">
+
+            <div class="text-center mb-12 reveal">
+                <div
+                    class="bg-mustard text-foreground border-2 border-foreground rounded-full px-3 py-1 font-bold text-xs inline-flex items-center gap-2 mb-4 transform -rotate-2 shadow-[2px_2px_0px_#111]">
+                    <i data-lucide="grid" class="w-4 h-4"></i> Outil de Consultant
+                </div>
+                <h1 class="text-chunky text-5xl md:text-6xl mb-4">La Matrice <span
+                        class="text-mustard underline decoration-4 underline-offset-8">Menu Engineering</span>.</h1>
+                <p class="font-sans font-medium text-lg opacity-80 max-w-2xl mx-auto">Quels plats vous rapportent le
+                    plus ? Entrez les données de vos 5 meilleures ventes (ou pires) du mois, et la matrice classera
+                    instantanément vos plats pour vous dire lesquels supprimer ou mettre en avant.</p>
+            </div>
+
+            <div class="grid lg:grid-cols-12 gap-8 items-start">
+
+                <!-- Left: Form -->
+                <div class="lg:col-span-7 bg-white p-6 md:p-8 card-retro border-b-8 reveal">
+                    <h2
+                        class="font-display font-black text-2xl mb-6 flex items-center gap-2 border-b-2 border-foreground/10 pb-4">
+                        <span
+                            class="bg-foreground text-background w-8 h-8 rounded-full flex items-center justify-center text-sm"><i
+                                data-lucide="list" class="w-4 h-4"></i></span> Vos Plats (Données du mois)
+                    </h2>
+
+                    <div class="overflow-x-auto pb-4">
+                        <table class="w-full text-left min-w-[500px]">
+                            <thead>
+                                <tr
+                                    class="font-sans font-bold text-xs uppercase tracking-wider opacity-60 border-b-2 border-foreground/10">
+                                    <th class="pb-2 w-8">#</th>
+                                    <th class="pb-2 w-1/3">Nom du Plat</th>
+                                    <th class="pb-2">Prix Vente (€)</th>
+                                    <th class="pb-2">Coût Revient (€)</th>
+                                    <th class="pb-2">Qté Vendues</th>
+                                    <th class="pb-2 w-8"></th>
+                                </tr>
+                            </thead>
+                            <tbody id="dishesList" class="space-y-2">
+                                <!-- JS Populated -->
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div
+                        class="mt-4 flex flex-wrap gap-4 justify-between items-center border-t-2 border-foreground/10 pt-4">
+                        <button id="addDishBtn"
+                            class="font-bold text-sm flex items-center gap-1 text-mustard hover:text-foreground transition-colors">
+                            <i data-lucide="plus"
+                                class="w-5 h-5 bg-background border-2 border-foreground rounded-full"></i> Ajouter un
+                            plat (Max 8)
+                        </button>
+                        <button id="generateBtn" class="btn-retro text-sm py-2 px-6 disabled">Calculer la
+                            Matrice</button>
+                    </div>
+                </div>
+
+                <!-- Right: Matrix Dashboard -->
+                <div class="lg:col-span-5 space-y-6 reveal delay-1 sticky top-28">
+
+                    <div class="card-retro bg-background border-4 border-foreground p-6 shadow-retro relative">
+                        <h3 class="font-display font-black text-xl mb-4 text-center">Votre Matrice de Rentabilité</h3>
+
+                        <!-- The Matrix Grid -->
+                        <div class="matrix-grid bg-white p-2 rounded-xl border-4 border-foreground"
+                            id="matrixContainer">
+                            <!-- Top Left: Stars (High Profit, High Popularity) -->
+                            <div class="matrix-quad bg-green-50/50" id="quad-stars">
+                                <span class="matrix-quad-label text-olive">Étoiles</span>
+                                <div class="font-bold text-xs mb-2 opacity-60 text-olive">Très Rentables, Très
+                                    Populaires</div>
+                                <div class="flex flex-wrap gap-1 z-10" id="list-stars"></div>
+                            </div>
+
+                            <!-- Top Right: Plowhorses (Low Profit, High Popularity) -->
+                            <div class="matrix-quad bg-blue-50/50" id="quad-plowhorses">
+                                <span class="matrix-quad-label text-blue-600">Vaches à lait</span>
+                                <div class="font-bold text-xs mb-2 opacity-60 text-blue-600">Faible Marge, Très
+                                    Populaires</div>
+                                <div class="flex flex-wrap gap-1 z-10" id="list-plowhorses"></div>
+                            </div>
+
+                            <!-- Bottom Left: Puzzles (High Profit, Low Popularity) -->
+                            <div class="matrix-quad bg-purple-50/50" id="quad-puzzles">
+                                <span class="matrix-quad-label text-purple-600">Énigmes</span>
+                                <div class="font-bold text-xs mb-2 opacity-60 text-purple-600">Très Rentables, Peu
+                                    Ventes</div>
+                                <div class="flex flex-wrap gap-1 z-10" id="list-puzzles"></div>
+                            </div>
+
+                            <!-- Bottom Right: Dogs (Low Profit, Low Popularity) -->
+                            <div class="matrix-quad bg-red-50/50" id="quad-dogs">
+                                <span class="matrix-quad-label text-accent">Poids Morts</span>
+                                <div class="font-bold text-xs mb-2 opacity-60 text-accent">Faible Marge, Peu Ventes
+                                </div>
+                                <div class="flex flex-wrap gap-1 z-10" id="list-dogs"></div>
+                            </div>
+                        </div>
+
+                        <!-- Analysis Output -->
+                        <div id="analysisText"
+                            class="mt-6 bg-white p-4 rounded-xl border-2 border-foreground text-sm font-medium leading-relaxed hidden">
+                            <!-- Filled by JS -->
+                        </div>
+                    </div>
+
+                    <div class="mt-8 text-center bg-[#e3ecd4] p-4 border-2 border-olive rounded-xl text-olive flex items-center justify-center gap-3 no-print cursor-pointer hover:bg-olive hover:text-white transition-colors group"
+                        onclick="window.location.href='index.html#demo'">
+                        <i data-lucide="lock" class="w-6 h-6 group-hover:text-white"></i>
+                        <p class="font-sans font-bold text-sm text-left leading-snug">Meal OS se connecte à votre caisse
+                            <br><span class="opacity-80 font-medium">et trace cette matrice automatiquement en direct
+                                !</span></p>
+                    </div>
+
+                    <!-- Watermark -->
+                    <div
+                        class="hidden print:block text-center mt-12 pt-4 border-t-2 border-foreground/20 text-xs font-bold opacity-60 uppercase tracking-widest text-foreground">
+                        Matrice générée sur Meal OS. Plus de rentabilité sur www.mealos.com
+                    </div>
+                    <div class="card-retro bg-[#e3ecd4] border-olive text-foreground p-6 text-center transform hover:-translate-y-1 transition-transform cursor-pointer"
+                        onclick="window.location.href='index.html#demo'">
+                        <i data-lucide="trending-up" class="w-8 h-8 mx-auto mb-3 text-olive"></i>
+                        <h4 class="font-display font-black text-lg mb-2">Passez au niveau supérieur.</h4>
+                        <p class="font-sans text-xs font-medium opacity-80 mb-4">Avec Meal OS, vos fiches techniques
+                            sont connectées à vos ventes. La matrice se génère automatiquement en temps réel à chaque
+                            fin de service.</p>
+                        <span class="font-bold text-xs uppercase underline underline-offset-4 text-olive">Découvrir le
+                            module Finance</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="border-t-3 border-foreground py-8 px-4 text-center bg-white mt-auto">
+        <a href="index.html" class="logo-handwritten text-4xl inline-block mb-2">meal <span class="text-[0.7em] ml-1">OS</span></a>
+    </footer>
+
+
+    <script>
+        // Load Lucide
+        const script = document.createElement("script");
+        script.src = "https://unpkg.com/lucide@latest";
+        script.onload = () => 
+        document.body.appendChild(script);;
+        document.querySelectorAll('.reveal').forEach(el => new IntersectionObserver((es) => es.forEach(e => { if (e.isIntersecting) e.target.classList.add('revealed'); })).observe(el));
+
+        const dishesList = document.getElementById('dishesList');
+        const addDishBtn = document.getElementById('addDishBtn');
+        const generateBtn = document.getElementById('generateBtn');
+        const analysisText = document.getElementById('analysisText');
+        const MAX_DISHES = 8;
+        let dishIdSeq = 0;
+
+        const defaultData = [
+            { name: "Burger Maison", price: 18, cost: 4.5, qty: 350 },
+            { name: "Salade César", price: 15, cost: 4.0, qty: 120 },
+            { name: "Entrecôte Frites", price: 28, cost: 11, qty: 80 },
+            { name: "Pâtes Truffe", price: 22, cost: 3.5, qty: 280 },
+            { name: "Tarte Citron", price: 8, cost: 2.5, qty: 50 }
+        ];
+
+        function createRow(data = null) {
+            if (dishesList.children.length >= MAX_DISHES) return;
+            dishIdSeq++;
+            const id = dishIdSeq;
+
+            const tr = document.createElement('tr');
+            tr.className = 'border-b border-foreground/10 last:border-0 hover:bg-black/5 transition-colors dish-row';
+            tr.dataset.id = id;
+
+            tr.innerHTML = `
+                <td class="py-2"><div class="item-dot">${id}</div></td>
+                <td class="py-2 pr-2"><input type="text" class="input-retro dish-name" placeholder="Nom du plat" value="${data ? data.name : ''}"></td>
+                <td class="py-2 pr-2"><input type="number" step="0.5" class="input-retro text-right dish-price" value="${data ? data.price : ''}" placeholder="15"></td>
+                <td class="py-2 pr-2"><input type="number" step="0.5" class="input-retro text-right dish-cost text-accent" value="${data ? data.cost : ''}" placeholder="4.5"></td>
+                <td class="py-2 pr-2"><input type="number" class="input-retro text-right dish-qty text-olive" value="${data ? data.qty : ''}" placeholder="50"></td>
+                <td class="py-2 text-right">
+                    <button onclick="this.closest('tr').remove(); validateForm();" class="p-2 text-foreground/50 hover:text-accent rounded-full hover:bg-accent/10 transition-colors" title="Supprimer">
+                        <i data-lucide="x" class="w-4 h-4"></i>
+                    </button>
+                </td>
+            `;
+            dishesList.appendChild(tr);
+            lucide.createIcons({ root: tr });
+            validateForm();
+        }
+
+        function validateForm() {
+            const rows = document.querySelectorAll('.dish-row');
+            if (rows.length >= MAX_DISHES) {
+                addDishBtn.classList.add('opacity-50', 'pointer-events-none');
+            } else {
+                addDishBtn.classList.remove('opacity-50', 'pointer-events-none');
+            }
+
+            const canGenerate = rows.length >= 2;
+            if (canGenerate) {
+                generateBtn.classList.remove('disabled');
+            } else {
+                generateBtn.classList.add('disabled');
+            }
+        }
+
+        function processMatrix() {
+            const rows = document.querySelectorAll('.dish-row');
+            const dishes = [];
+
+            let totalVolume = 0;
+            let totalMarginPoints = 0;
+
+            rows.forEach(tr => {
+                const id = tr.dataset.id;
+                const name = tr.querySelector('.dish-name').value || `Plat #${id}`;
+                const price = parseFloat(tr.querySelector('.dish-price').value) || 0;
+                const cost = parseFloat(tr.querySelector('.dish-cost').value) || 0;
+                const qty = parseFloat(tr.querySelector('.dish-qty').value) || 0;
+
+                if (price > 0 && qty > 0) {
+                    const margin = price - cost;
+                    dishes.push({ id, name, margin, qty });
+                    totalVolume += qty;
+                    totalMarginPoints += margin; // sum of margins for avg
+                }
+            });
+
+            if (dishes.length < 2) return;
+
+            // Calculate averages to set the matrix crosshairs
+            const avgVolume = totalVolume / dishes.length;
+            const avgMargin = totalMarginPoints / dishes.length;
+
+            // Clear quads
+            document.getElementById('list-stars').innerHTML = '';
+            document.getElementById('list-plowhorses').innerHTML = '';
+            document.getElementById('list-puzzles').innerHTML = '';
+            document.getElementById('list-dogs').innerHTML = '';
+
+            let strAnalysis = "";
+            let starCount = 0;
+            let dogCount = 0;
+
+            dishes.forEach(d => {
+                const isHighVol = d.qty >= avgVolume;
+                const isHighMargin = d.margin >= avgMargin;
+                let targetQuad = '';
+
+                const dotHtml = `<div class="item-dot" title="${d.name} (Marge: ${d.margin.toFixed(2)}€, Qté: ${d.qty})">${d.id}</div>`;
+
+                if (isHighVol && isHighMargin) {
+                    targetQuad = 'list-stars';
+                    starCount++;
+                } else if (isHighVol && !isHighMargin) {
+                    targetQuad = 'list-plowhorses';
+                } else if (!isHighVol && isHighMargin) {
+                    targetQuad = 'list-puzzles';
+                } else {
+                    targetQuad = 'list-dogs';
+                    dogCount++;
+                }
+
+                document.getElementById(targetQuad).innerHTML += dotHtml;
+            });
+
+            analysisText.classList.remove('hidden');
+            if (starCount > 0 && dogCount > 0) {
+                analysisText.innerHTML = `Analyses de vos données : Vous avez <strong>${starCount} Étoile(s)</strong> à sur-valoriser sur le menu (ex: photo, gras). Attention, vous traînez <strong>${dogCount} Poids Mort(s)</strong> qui vampirisent votre inventaire et compliquent votre gestion.`;
+            } else if (starCount > 0) {
+                analysisText.innerHTML = `Excellent ! Vous avez de très bonnes locomotives (<strong>${starCount} Étoiles</strong>). Essayez maintenant de transformer vos "Énigmes" en Etoiles en demandant à vos serveurs de les vendre à la table.`;
+            } else {
+                analysisText.innerHTML = `Alerte : Votre carte manque de rentabilité star. Vos plats les plus vendus "Vaches à Lait" ont des marges trop minces. Envisagez de réduire légèrement les portions ou d'augmenter le prix de 5%.`;
+            }
+        }
+
+        addDishBtn.addEventListener('click', () => createRow());
+        generateBtn.addEventListener('click', processMatrix);
+
+        // Listen to changes in inputs to re-evaluate if wanted (optional)
+        document.getElementById('dishesList').addEventListener('input', () => { /* don't auto-calc to avoid jumping */ });
+
+        // Init
+        defaultData.forEach(d => createRow(d));
+    </script>
+
+    <!-- App Shell Logic -->
+    <script>
+        const menuToggleApp = document.getElementById('menuToggle');
+        const closeMenuApp = document.getElementById('closeMenu');
+        const sidebarApp = document.getElementById('sidebar');
+
+        if (menuToggleApp) menuToggleApp.addEventListener('click', () => sidebarApp.classList.add('open'));
+        if (closeMenuApp) closeMenuApp.addEventListener('click', () => sidebarApp.classList.remove('open'));
+
+        const userAppStr = localStorage.getItem('mealos_tools_user');
+        if (userAppStr) {
+            const userApp = JSON.parse(userAppStr);
+            if (document.getElementById('sidebarName')) document.getElementById('sidebarName').textContent = userApp.firstName + ' ' + userApp.lastName;
+            if (document.getElementById('sidebarRestaurant')) document.getElementById('sidebarRestaurant').textContent = userApp.restaurant;
+            if (document.getElementById('avatarInitials')) document.getElementById('avatarInitials').textContent = userApp.firstName ? userApp.firstName.charAt(0).toUpperCase() : 'U';
+        }
+    </script>
+
+    <script src="https://unpkg.com/lucide@latest" defer></script>
+    <script>if(typeof lucide !== "undefined") { lucide.createIcons(); } else { document.addEventListener("DOMContentLoaded", () => { if(typeof lucide !== "undefined") lucide.createIcons(); }); }</script>
+</body>
+
+
+</html>

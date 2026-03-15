@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Auth Guard -->
+    
+
+    <!-- Icons -->
+    
+
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-color: theme('colors.background');
+            color: theme('colors.foreground');
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .logo-handwritten {
+            font-family: theme('fontFamily.script');
+            text-transform: lowercase;
+            letter-spacing: -0.02em;
+            line-height: 0.8;
+            color: #111111;
+        }
+
+        .glass-header {
+            background: rgba(250, 242, 215, 0.95);
+            border-bottom: 3px solid theme('colors.foreground');
+            backdrop-filter: blur(8px);
+        }
+
+        .text-chunky {
+            font-family: theme('fontFamily.display');
+            font-weight: 900;
+            line-height: 0.95;
+            letter-spacing: -0.03em;
+        }
+
+        .btn-retro {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: theme('colors.foreground');
+            color: theme('colors.background');
+            font-family: theme('fontFamily.sans');
+            font-weight: 900;
+            text-transform: uppercase;
+            padding: 0.75rem 1.5rem;
+            border-radius: 9999px;
+            box-shadow: theme('boxShadow.retro');
+            transition: all 0.2s;
+            border: 2px solid theme('colors.foreground');
+            cursor: pointer;
+        }
+
+        .btn-retro:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 6px 6px 0px 0px theme("colors.foreground");
+        }
+
+        .btn-retro:active {
+            transform: translate(2px, 2px);
+            box-shadow: 0px 0px 0px 0px theme("colors.foreground");
+        }
+
+        .btn-retro.alt {
+            background-color: white;
+            color: theme('colors.foreground');
+        }
+
+        .input-retro {
+            width: 100%;
+            border: 2px solid theme('colors.foreground');
+            padding: 0.75rem 1rem;
+            border-radius: 0.5rem;
+            font-family: theme('fontFamily.sans');
+            font-weight: 600;
+            background-color: white;
+            outline: none;
+            transition: all 0.2s;
+            font-size: 1.125rem;
+        }
+
+        .input-retro:focus {
+            box-shadow: theme('boxShadow.retro');
+            transform: translate(-2px, -2px);
+        }
+
+        .card-retro {
+            border: 3px solid theme('colors.foreground');
+            border-radius: 1.5rem;
+            box-shadow: theme('boxShadow.retro');
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease-out;
+        }
+
+        .reveal.revealed {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .number-choc {
+            font-family: theme('fontFamily.display');
+        }
+
+        input[type=range] {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 100%;
+            background: transparent;
+            margin-top: 1rem;
+        }
+
+        input[type=range]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            height: 24px;
+            width: 24px;
+            border-radius: 50%;
+            background: theme('colors.accent');
+            border: 2px solid theme('colors.foreground');
+            cursor: pointer;
+            margin-top: -10px;
+            box-shadow: 2px 2px 0px theme('colors.foreground');
+        }
+
+        input[type=range]::-webkit-slider-runnable-track {
+            width: 100%;
+            height: 6px;
+            cursor: pointer;
+            background: theme('colors.foreground');
+            border-radius: 3px;
+            border: 1px solid theme('colors.foreground');
+        }
+    
+        /* Dashboard App specific layout */
+        .sidebar { width: 260px; height: 100vh; position: fixed; left: 0; top: 0; background: white; border-right: 3px solid theme('colors.foreground'); padding: 2rem 1.5rem; display: flex; flex-direction: column; z-index: 100;}
+        .app-main { margin-left: 260px; padding: 2rem; min-height: 100vh; padding-top: 2rem; }
+        
+        @media (max-width: 1024px) {
+            .sidebar { transform: translateX(-100%); z-index: 100; transition: transform 0.3s ease; }
+            .sidebar.open { transform: translateX(0); }
+            .app-main { margin-left: 0; padding: 1.5rem; padding-top: 5rem;}
+        }
+
+        .nav-link { display: flex; align-items: center; gap: 0.75rem; padding: 0.75rem 1rem; border-radius: 0.5rem; font-family: theme('fontFamily.sans'); font-weight: 700; opacity: 0.7; transition: all 0.2s; border: 2px solid transparent;}
+        .nav-link:hover { opacity: 1; background: rgba(0,0,0,0.05); }
+        .nav-link.active { opacity: 1; background: theme('colors.mustard'); border-color: theme('colors.foreground'); color: theme('colors.foreground'); box-shadow: 2px 2px 0px 0px theme('colors.foreground');}
+        
+        @media print {
+            .sidebar, .lg\:hidden { display: none !important; }
+            .app-main { margin-left: 0 !important; padding: 0 !important; }
+        }
+
+    </style>
+    <link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="style.css"></noscript>
+</head>
+
+<body class="selection:bg-foreground selection:text-background font-sans flex flex-col min-h-screen">
+    <script>if(!localStorage.getItem("mealos_tools_user")){window.location.href="boite-a-outils-login.html";}</script>
+
+    
+    
+    
+    
+    
+    <!-- Mobile Header -->
+    <div class="lg:hidden fixed top-0 w-full left-0 bg-white border-b-3 border-foreground px-4 py-3 flex items-center justify-between z-40 no-print" style="box-shadow: 4px 4px 0px 0px #382512;">
+        <a href="boite-a-outils-dashboard.html" class="logo-handwritten text-3xl">meal <span class="text-[0.7em] ml-1">OS</span></a>
+        <button id="menuToggle" class="p-2"><i data-lucide="menu"></i></button>
+    </div>
+
+    <!-- Sidebar -->
+    <aside class="sidebar bg-background no-print" id="sidebar">
+        <div class="flex items-center justify-between mb-10">
+            <a href="boite-a-outils-dashboard.html" class="logo-handwritten text-4xl">meal <span class="text-[0.7em] ml-1">OS</span></a>
+            <button id="closeMenu" class="lg:hidden"><i data-lucide="x"></i></button>
+        </div>
+
+        <nav class="space-y-2 flex-grow overflow-y-auto pb-4">
+            <div class="text-xs font-black uppercase tracking-widest opacity-40 mb-3 px-3">Espace Restaurant</div>
+            <a href="boite-a-outils-dashboard.html" class="nav-link active">
+                <i data-lucide="layout-grid" class="w-5 h-5"></i> Outils Gratuits
+            </a>
+            
+            <div class="pt-6 mt-6 border-t-2 border-foreground/10">
+                <div class="text-xs font-black uppercase tracking-widest opacity-40 mb-3 px-3 flex items-center justify-between">
+                    Meal OS Complet <span class="bg-accent text-white text-[8px] px-1 py-0.5 rounded uppercase">Pro</span>
+                </div>
+                <a href="#" class="nav-link flex items-center justify-between group pro-link" data-pro-module="haccp" style="opacity: 0.5;">
+                    <div class="flex items-center gap-3"><i data-lucide="clipboard-check" class="w-5 h-5"></i> Audit HACCP</div>
+                    <i data-lucide="lock" class="w-3 h-3 opacity-30 group-hover:text-accent group-hover:opacity-100 transition-colors"></i>
+                </a>
+                <a href="#" class="nav-link flex items-center justify-between group pro-link" data-pro-module="ops" style="opacity: 0.5;">
+                    <div class="flex items-center gap-3"><i data-lucide="book" class="w-5 h-5"></i> Manuel OPS</div>
+                    <i data-lucide="lock" class="w-3 h-3 opacity-30 group-hover:text-accent group-hover:opacity-100 transition-colors"></i>
+                </a>
+                <a href="#" class="nav-link flex items-center justify-between group pro-link" data-pro-module="rh" style="opacity: 0.5;">
+                    <div class="flex items-center gap-3"><i data-lucide="users" class="w-5 h-5"></i> Gestion RH</div>
+                    <i data-lucide="lock" class="w-3 h-3 opacity-30 group-hover:text-accent group-hover:opacity-100 transition-colors"></i>
+                </a>
+                <a href="#" class="nav-link flex items-center justify-between group pro-link" data-pro-module="maintenance" style="opacity: 0.5;">
+                    <div class="flex items-center gap-3"><i data-lucide="wrench" class="w-5 h-5"></i> Maintenance</div>
+                    <i data-lucide="lock" class="w-3 h-3 opacity-30 group-hover:text-accent group-hover:opacity-100 transition-colors"></i>
+                </a>
+            </div>
+
+            <div class="pt-6 mt-6 border-t-2 border-foreground/10">
+                <div class="text-xs font-black uppercase tracking-widest opacity-40 mb-3 px-3">Ressources</div>
+                <a href="resources.html" class="nav-link">
+                    <i data-lucide="book-open" class="w-5 h-5"></i> Articles & Guides
+                </a>
+            </div>
+        </nav>
+
+        <div class="mt-auto border-t-2 border-foreground/10 pt-6">
+            <div class="flex items-center gap-3 px-2">
+                <div class="w-10 h-10 rounded-full bg-foreground text-background flex items-center justify-center font-display font-black text-xl" id="avatarInitials">U</div>
+                <div class="overflow-hidden">
+                    <div class="font-bold text-sm truncate w-full" id="sidebarName">Utilisateur</div>
+                    <div class="text-xs opacity-60 truncate w-full" id="sidebarRestaurant">Restaurant</div>
+                </div>
+            </div>
+            <a href="index.html" class="mt-4 text-xs font-bold uppercase tracking-wider text-accent hover:underline px-2 flex items-center gap-1 w-full justify-start"><i data-lucide="arrow-left" class="w-3 h-3"></i> Retour au site</a>
+        </div>
+    </aside>
+
+    <!-- Soft Paywall Modal -->
+    <div id="proModalOverlay" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4">
+        <!-- Backdrop blur -->
+        <div class="absolute inset-0 bg-background/60 backdrop-blur-md transition-opacity duration-300"></div>
+        
+        <!-- Modal Card -->
+        <div class="card-retro bg-white p-8 max-w-lg w-full relative z-10 transform transition-all duration-300 scale-95 opacity-0" id="proModalCard">
+            <button id="closeProModal" class="absolute top-4 right-4 p-2 opacity-50 hover:opacity-100 transition-opacity">
+                <i data-lucide="x" class="w-6 h-6"></i>
+            </button>
+            
+            <div class="mb-6 flex items-center justify-center w-16 h-16 rounded-full bg-accent/10 border-2 border-accent text-accent mx-auto">
+                <i data-lucide="lock" class="w-8 h-8" id="proModalIcon"></i>
+            </div>
+            
+            <h2 class="font-display font-black text-3xl mb-3 text-center" id="proModalTitle">Fonctionnalité Premium</h2>
+            <p class="font-sans text-center font-medium opacity-80 mb-6" id="proModalDesc">Découvrez la puissance de Meal OS Pro.</p>
+            
+            <div class="bg-mustard/20 border-2 border-mustard rounded-lg p-4 mb-8 text-sm font-medium text-center">
+                <span class="font-black uppercase tracking-wider text-xs block mb-1">🎁 Accès exclusif</span>
+                Réservé aux établissements partenaires Meal OS.
+            </div>
+            
+            <div class="flex flex-col gap-3">
+                <!-- Calendly Link -->
+                <a href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/mealos/15min'});return false;" class="btn-retro w-full group text-center">
+                    Voir ce module en action <i data-lucide="arrow-right" class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform"></i>
+                </a>
+                <button id="cancelProModal" class="btn-retro alt w-full border-transparent hover:border-transparent hover:bg-black/5 shadow-none group-hover:translate-y-0 text-sm opacity-70">
+                    Non merci, je reste sur l'outil gratuit
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Calendly link widget begin -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    <!-- Calendly link widget end -->
+
+    <!-- Pro Modal Logic -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const proModalOverlay = document.getElementById('proModalOverlay');
+            const proModalCard = document.getElementById('proModalCard');
+            const proModalTitle = document.getElementById('proModalTitle');
+            const proModalDesc = document.getElementById('proModalDesc');
+            const proModalIcon = document.getElementById('proModalIcon');
+            
+            const proTitles = {
+                'haccp': { title: "Fini la panique lors des contrôles.", desc: "Digitalisez vos relevés de températures et vos protocoles de nettoyage. Soyez 100% prêt à tout moment.", icon: "clipboard-check" },
+                'ops': { title: "Vos standards, respectés par tous.", desc: "Créez vos checklists d'ouverture et de fermeture. Fini les petites erreurs du quotidien.", icon: "book" },
+                'rh': { title: "Vos plannings créés en 3 min.", desc: "Centralisez les plannings, absences et documents RH de toute votre équipe en un seul endroit.", icon: "users" },
+                'maintenance': { title: "Ne laissez plus vos machines vous lâcher.", desc: "Anticipez les pannes et planifiez les interventions pour protéger votre précieux matériel.", icon: "wrench" },
+            };
+
+            function openProModal(moduleKey) {
+                if(proTitles[moduleKey]) {
+                    proModalTitle.textContent = proTitles[moduleKey].title;
+                    proModalDesc.textContent = proTitles[moduleKey].desc;
+                    proModalIcon.setAttribute('data-lucide', proTitles[moduleKey].icon);
+                    if(typeof lucide !== 'undefined') lucide.createIcons();
+                }
+                
+                proModalOverlay.classList.remove('hidden');
+                setTimeout(() => {
+                    proModalCard.classList.remove('scale-95', 'opacity-0');
+                }, 10);
+            }
+
+            function closeProModalFunc() {
+                proModalCard.classList.add('scale-95', 'opacity-0');
+                setTimeout(() => {
+                    proModalOverlay.classList.add('hidden');
+                }, 300);
+            }
+
+            document.querySelectorAll('.pro-link').forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    openProModal(link.getAttribute('data-pro-module'));
+                });
+            });
+
+            document.getElementById('closeProModal').addEventListener('click', closeProModalFunc);
+            document.getElementById('cancelProModal').addEventListener('click', closeProModalFunc);
+        });
+    </script>
+
+    <main class="app-main">
+
+
+
+
+
+        <div class="max-w-5xl mx-auto">
+
+            <div class="text-center mb-12 reveal">
+                <div
+                    class="bg-foreground text-background border-2 border-foreground rounded-full px-3 py-1 font-bold text-xs inline-flex items-center gap-2 mb-4 transform -rotate-2 shadow-[2px_2px_0px_theme('colors.accent')]">
+                    <i data-lucide="trash-2" class="w-4 h-4"></i> Outil Impact Financier
+                </div>
+                <h1 class="text-chunky text-5xl md:text-6xl mb-4">Calculateur <span
+                        class="text-accent underline decoration-4 underline-offset-8">d'Hémorragie</span>.</h1>
+                <p class="font-sans font-medium text-lg opacity-80 max-w-2xl mx-auto">La moyenne nationale de gaspillage
+                    en restauration est de 5 à 7%. Découvrez combien de milliers d'euros vous jetez littéralement à la
+                    poubelle chaque année.</p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-8 items-stretch">
+
+                <!-- Left: Form -->
+                <div class="bg-white p-6 md:p-8 card-retro border-b-8 reveal flex flex-col">
+                    <h2 class="font-display font-black text-2xl mb-8 flex items-center gap-2">
+                        <span
+                            class="bg-accent text-white w-8 h-8 rounded-full flex items-center justify-center text-sm"><i
+                                data-lucide="calculator" class="w-4 h-4"></i></span> Vos Chiffres
+                    </h2>
+
+                    <div class="space-y-8 flex-grow">
+                        <!-- CA Input -->
+                        <div>
+                            <label class="block font-bold text-sm uppercase tracking-wider mb-2">Chiffre d'Affaires
+                                Mensuel (HT)</label>
+                            <div class="relative">
+                                <input type="number" id="caInput" class="input-retro pl-10" placeholder="ex: 50000"
+                                    value="50000">
+                                <span
+                                    class="absolute left-4 top-1/2 transform -translate-y-1/2 font-bold opacity-50">€</span>
+                            </div>
+                        </div>
+
+                        <!-- Food Cost Input -->
+                        <div>
+                            <label class="block font-bold text-sm uppercase tracking-wider mb-2">Matière Première (% du
+                                CA)</label>
+                            <div class="flex items-center gap-4">
+                                <span
+                                    class="font-bold flex-1 text-center bg-background py-3 rounded-lg border-2 border-foreground">
+                                    <span id="fcVal">30</span>%
+                                </span>
+                            </div>
+                            <input type="range" id="fcRange" min="20" max="45" value="30">
+                            <div class="flex justify-between text-xs font-bold opacity-50 mt-1 px-1">
+                                <span>20% (Excellent)</span>
+                                <span>30% (Standard)</span>
+                                <span>45% (Critique)</span>
+                            </div>
+                        </div>
+
+                        <!-- Waste Input -->
+                        <div>
+                            <label class="block font-bold text-sm uppercase tracking-wider mb-2 text-accent">Taux de
+                                Gaspillage Estimé (%)</label>
+                            <p class="text-xs opacity-70 mb-2 font-medium">Inclut les DLC dépassées, les erreurs de
+                                commande, et les retours assiettes non touchés.</p>
+                            <div class="flex items-center gap-4">
+                                <span
+                                    class="font-bold flex-1 text-center bg-red-50 text-accent py-3 rounded-lg border-2 border-accent shadow-[2px_2px_0px_theme('colors.accent')]">
+                                    <span id="wasteVal">6</span>%
+                                </span>
+                            </div>
+                            <input type="range" id="wasteRange" min="1" max="15" value="6" step="0.5">
+                            <div class="flex justify-between text-xs font-bold opacity-50 mt-1 px-1">
+                                <span>1% (Exceptionnel)</span>
+                                <span>6% (Moyenne FR)</span>
+                                <span>15% (Alerte)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Output -->
+                <div class="space-y-6 reveal delay-1 flex flex-col justify-between">
+
+                    <div
+                        class="card-retro bg-foreground text-white p-6 md:p-8 flex-grow flex flex-col justify-center relative overflow-hidden">
+
+                        <!-- Background decoration -->
+                        <div class="absolute -right-12 -bottom-12 opacity-5 pointer-events-none">
+                            <i data-lucide="triangle-alert" class="w-64 h-64 text-accent"></i>
+                        </div>
+
+                        <h3
+                            class="font-display font-black text-xl mb-6 text-center text-mustard uppercase tracking-widest border-b-2 border-white/20 pb-4">
+                            Le verdict de vos poubelles</h3>
+
+                        <div class="space-y-8 z-10">
+                            <div class="text-center">
+                                <div class="text-sm font-bold opacity-80 uppercase tracking-widest line-through">Vous
+                                    jetez par mois :</div>
+                                <div class="number-choc text-5xl md:text-6xl text-accent mt-2"><span
+                                        id="perteMois">0</span> €</div>
+                            </div>
+
+                            <div class="bg-white/10 p-4 rounded-xl border border-white/20">
+                                <div class="text-sm font-bold opacity-80">Sur une année pleine, cela représente :</div>
+                                <div class="font-display text-4xl mt-1 text-mustard"><span id="perteAnnee">0</span> €
+                                </div>
+                            </div>
+
+                            <div class="bg-accent/20 p-4 rounded-xl border border-accent/50">
+                                <div class="text-sm font-bold">L'équivalent de :</div>
+                                <div class="font-bold text-xl mt-1 text-accent flex items-center gap-2">
+                                    <i data-lucide="flame" class="w-6 h-6 animate-pulse"></i>
+                                    <span id="equivalence">---</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SEO / CTA Lead Magnet -->
+                    <div class="card-retro bg-white border-2 border-foreground p-5 text-center transform hover:-translate-y-1 transition-transform group shadow-retro cursor-pointer"
+                        onclick="window.location.href='index.html#demo'">
+                        <i data-lucide="clipboard-check"
+                            class="w-6 h-6 mx-auto mb-2 group-hover:text-accent transition-colors"></i>
+                        <h4 class="font-bold text-sm mb-1 uppercase tracking-wider">Arrêtez l'hémorragie</h4>
+                        <p class="font-sans text-xs font-medium opacity-80">Le module Gestion des Stocks Meal OS vous
+                            alerte avant péremption et ajuste vos commandes. Divisez vos pertes par 3.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="border-t-3 border-foreground py-8 px-4 text-center bg-white mt-auto">
+        <a href="index.html" class="logo-handwritten text-4xl inline-block mb-2">meal <span class="text-[0.7em] ml-1">OS</span></a>
+    </footer>
+
+
+    <script>
+        // Load Lucide
+        const script = document.createElement("script");
+        script.src = "https://unpkg.com/lucide@latest";
+        script.onload = () => 
+        document.body.appendChild(script);;
+        document.querySelectorAll('.reveal').forEach(el => new IntersectionObserver((es) => es.forEach(e => { if (e.isIntersecting) e.target.classList.add('revealed'); })).observe(el));
+
+        const caInput = document.getElementById('caInput');
+        const fcRange = document.getElementById('fcRange');
+        const fcVal = document.getElementById('fcVal');
+        const wasteRange = document.getElementById('wasteRange');
+        const wasteVal = document.getElementById('wasteVal');
+
+        const perteMoisEl = document.getElementById('perteMois');
+        const perteAnneeEl = document.getElementById('perteAnnee');
+        const equivalenceEl = document.getElementById('equivalence');
+
+        function formatCurrency(num) {
+            return new Intl.NumberFormat('fr-FR', { maximumFractionDigits: 0 }).format(num);
+        }
+
+        function calculate() {
+            const ca = parseFloat(caInput.value) || 0;
+            const fc = parseFloat(fcRange.value) / 100;
+            const waste = parseFloat(wasteRange.value) / 100;
+
+            fcVal.textContent = fcRange.value;
+            wasteVal.textContent = wasteRange.value;
+
+            // Calculation
+            // Total food purchases per month = CA * fc
+            // Value of wasted food = (CA * fc) * waste
+            // Note: this calculates the value at COST. The loss of potential revenue is theoretically higher.
+
+            const rawCost = ca * fc;
+            const wastedEurosMonth = rawCost * waste;
+            const wastedEurosYear = wastedEurosMonth * 12;
+
+            // Animate Numbers
+            animateValue(perteMoisEl, parseInt(perteMoisEl.textContent.replace(/\s/g, '')) || 0, wastedEurosMonth, 400);
+            animateValue(perteAnneeEl, parseInt(perteAnneeEl.textContent.replace(/\s/g, '')) || 0, wastedEurosYear, 400);
+
+            // Dynamically set equivalence
+            if (wastedEurosYear < 3000) {
+                equivalenceEl.textContent = "Un beau voyage annulé chaque année.";
+            } else if (wastedEurosYear < 6000) {
+                equivalenceEl.textContent = "Le prix d'une belle chambre froide neuve jeté à la poubelle.";
+            } else if (wastedEurosYear < 12000) {
+                equivalenceEl.textContent = "Un four Rational 10 niveaux flambant neuf.";
+            } else if (wastedEurosYear < 25000) {
+                equivalenceEl.textContent = "Un salaire annuel à temps plein parti en fumée.";
+            } else {
+                equivalenceEl.textContent = "La marge pure qui aurait pu financer une extension.";
+            }
+        }
+
+        function animateValue(obj, start, end, duration) {
+            let startTimestamp = null;
+            const step = (timestamp) => {
+                if (!startTimestamp) startTimestamp = timestamp;
+                const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                obj.innerHTML = formatCurrency(Math.floor(progress * (end - start) + start));
+                if (progress < 1) {
+                    window.requestAnimationFrame(step);
+                }
+            };
+            window.requestAnimationFrame(step);
+        }
+
+        // Listeners
+        [caInput, fcRange, wasteRange].forEach(el => el.addEventListener('input', calculate));
+
+        // Initial Output
+        calculate();
+
+    </script>
+
+    <!-- App Shell Logic -->
+    <script>
+        const menuToggleApp = document.getElementById('menuToggle');
+        const closeMenuApp = document.getElementById('closeMenu');
+        const sidebarApp = document.getElementById('sidebar');
+
+        if(menuToggleApp) menuToggleApp.addEventListener('click', () => sidebarApp.classList.add('open'));
+        if(closeMenuApp) closeMenuApp.addEventListener('click', () => sidebarApp.classList.remove('open'));
+
+        const userAppStr = localStorage.getItem('mealos_tools_user');
+        if (userAppStr) {
+            const userApp = JSON.parse(userAppStr);
+            if(document.getElementById('sidebarName')) document.getElementById('sidebarName').textContent = userApp.firstName + ' ' + userApp.lastName;
+            if(document.getElementById('sidebarRestaurant')) document.getElementById('sidebarRestaurant').textContent = userApp.restaurant;
+            if(document.getElementById('avatarInitials')) document.getElementById('avatarInitials').textContent = userApp.firstName ? userApp.firstName.charAt(0).toUpperCase() : 'U';
+        }
+    </script>
+
+    <script src="https://unpkg.com/lucide@latest" defer></script>
+    <script>if(typeof lucide !== "undefined") { lucide.createIcons(); } else { document.addEventListener("DOMContentLoaded", () => { if(typeof lucide !== "undefined") lucide.createIcons(); }); }</script>
+</body>
+
+
+</html>
