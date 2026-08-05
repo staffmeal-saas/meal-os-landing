@@ -55,19 +55,19 @@ def update_file(filename, title, desc, main_content):
     # Replace canonical and other URLs
     content = re.sub(
         r'<meta property="og:url" content="https://www\.mealos\.com/">',
-        f'<meta property="og:url" content="https://staffmeal-app.netlify.app/{filename}">',
+        f'<meta property="og:url" content="https://staff-meal.com/{filename}">',
         content,
         flags=re.DOTALL
     )
     content = re.sub(
         r'<meta property="twitter:url" content="https://www\.mealos\.com/">',
-        f'<meta property="twitter:url" content="https://staffmeal-app.netlify.app/{filename}">',
+        f'<meta property="twitter:url" content="https://staff-meal.com/{filename}">',
         content,
         flags=re.DOTALL
     )
     content = re.sub(
         r'<link rel="canonical" href="https://www\.mealos\.com/">',
-        f'<link rel="canonical" href="https://staffmeal-app.netlify.app/{filename}">',
+        f'<link rel="canonical" href="https://staff-meal.com/{filename}">',
         content,
         flags=re.DOTALL
     )

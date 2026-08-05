@@ -22,7 +22,7 @@ concurrency:
   cancel-in-progress: false
 
 env:
-  TARGET: https://staffmeal-app.netlify.app/
+  TARGET: https://staff-meal.com/
 
 jobs:
   deploy:
