@@ -33,15 +33,15 @@ const cssInjection = `
 
 const htmlInjection = `
     <!-- Mobile Header -->
-    <div class="lg:hidden fixed top-0 w-full left-0 bg-white border-b-3 border-foreground px-4 py-3 flex items-center justify-between z-40 no-print" style="box-shadow: 4px 4px 0px 0px #382512;">
-        <a href="boite-a-outils-dashboard.html" class="logo-handwritten text-3xl">meal OS</a>
+    <div class="lg:hidden fixed top-0 w-full left-0 bg-paper border-b border-foreground px-4 py-3 flex items-center justify-between z-40 no-print" style="box-shadow: 4px 4px 0px 0px #181410;">
+        <a href="boite-a-outils-dashboard.html" class="flex items-center gap-2.5"><img src="assets/brand/mascot.png" alt="" width="44" height="44" class="brand-mark w-9 h-9"><span class="wordmark text-lg">Staff Meal</span></a>
         <button id="menuToggle" class="p-2"><i data-lucide="menu"></i></button>
     </div>
 
     <!-- Sidebar -->
     <aside class="sidebar bg-background no-print" id="sidebar">
         <div class="flex items-center justify-between mb-10">
-            <a href="boite-a-outils-dashboard.html" class="logo-handwritten text-4xl">meal OS</a>
+            <a href="boite-a-outils-dashboard.html" class="flex items-center gap-2.5"><img src="assets/brand/mascot.png" alt="" width="44" height="44" class="brand-mark w-11 h-11"><span class="wordmark text-xl">Staff Meal</span></a>
             <button id="closeMenu" class="lg:hidden"><i data-lucide="x"></i></button>
         </div>
 
@@ -53,7 +53,7 @@ const htmlInjection = `
             
             <div class="pt-6 mt-6 border-t-2 border-foreground/10">
                 <div class="text-xs font-black uppercase tracking-widest opacity-40 mb-3 px-3 flex items-center justify-between">
-                    Meal OS Complet <span class="bg-accent text-white text-[8px] px-1 py-0.5 rounded uppercase">Pro</span>
+                    Staff Meal Complet <span class="bg-accent text-white text-[8px] px-1 py-0.5 rounded uppercase">Pro</span>
                 </div>
                 <a href="#" class="nav-link flex items-center justify-between group pro-link" data-pro-module="haccp" style="opacity: 0.5;">
                     <div class="flex items-center gap-3"><i data-lucide="clipboard-check" class="w-5 h-5"></i> Audit HACCP</div>
@@ -99,7 +99,7 @@ const htmlInjection = `
         <div class="absolute inset-0 bg-background/60 backdrop-blur-md transition-opacity duration-300"></div>
         
         <!-- Modal Card -->
-        <div class="card-retro bg-white p-8 max-w-lg w-full relative z-10 transform transition-all duration-300 scale-95 opacity-0" id="proModalCard">
+        <div class="card-retro bg-paper p-8 max-w-lg w-full relative z-10 transform transition-all duration-300 scale-95 opacity-0" id="proModalCard">
             <button id="closeProModal" class="absolute top-4 right-4 p-2 opacity-50 hover:opacity-100 transition-opacity">
                 <i data-lucide="x" class="w-6 h-6"></i>
             </button>
@@ -109,11 +109,11 @@ const htmlInjection = `
             </div>
             
             <h2 class="font-display font-black text-3xl mb-3 text-center" id="proModalTitle">Fonctionnalité Premium</h2>
-            <p class="font-sans text-center font-medium opacity-80 mb-6" id="proModalDesc">Découvrez la puissance de Meal OS Pro.</p>
+            <p class="font-sans text-center font-medium opacity-80 mb-6" id="proModalDesc">Découvrez la puissance de Staff Meal Pro.</p>
             
             <div class="bg-mustard/20 border-2 border-mustard rounded-lg p-4 mb-8 text-sm font-medium text-center">
                 <span class="font-black uppercase tracking-wider text-xs block mb-1">🎁 Accès exclusif</span>
-                Réservé aux établissements partenaires Meal OS.
+                Réservé aux établissements partenaires Staff Meal.
             </div>
             
             <div class="flex flex-col gap-3">
@@ -121,7 +121,7 @@ const htmlInjection = `
                 <a href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/mealos/15min'});return false;" class="btn-retro w-full group text-center">
                     Voir ce module en action <i data-lucide="arrow-right" class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform"></i>
                 </a>
-                <button id="cancelProModal" class="btn-retro alt w-full border-transparent hover:border-transparent hover:bg-black/5 shadow-none group-hover:translate-y-0 text-sm opacity-70">
+                <button id="cancelProModal" class="btn-retro alt w-full border-transparent hover:border-transparent hover:bg-foreground/5 shadow-none group-hover:translate-y-0 text-sm opacity-70">
                     Non merci, je reste sur l'outil gratuit
                 </button>
             </div>

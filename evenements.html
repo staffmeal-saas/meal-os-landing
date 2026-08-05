@@ -9,21 +9,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://unpkg.com">
     <link rel="preconnect" href="https://images.unsplash.com">
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..900;1,9..144,400..900&family=Outfit:wght@300;400;500;600;700&family=Caveat:wght@700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..900;1,9..144,400..900&family=Outfit:wght@300;400;500;600;700&family=Caveat:wght@700&display=swap"></noscript>
-    <title>Événements | Meal OS</title>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=Shantell+Sans:wght@500;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=Shantell+Sans:wght@500;600;700;800&display=swap"></noscript>
+    <title>Événements | Staff Meal</title>
     <meta name="description"
         content="Rejoignez nos événements physiques et virtuels pour les professionnels de la restauration. Masterclass, dîners exclusifs, et webséminaires.">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.mealos.com/evenements.html">
-    <meta property="og:title" content="Événements | Meal OS">
+    <meta property="og:url" content="https://staffmeal-app.netlify.app/evenements.html">
+    <meta property="og:title" content="Événements | Staff Meal">
     <meta property="og:description"
         content="Rejoignez nos événements physiques et virtuels pour les professionnels de la restauration. Masterclass, dîners exclusifs, et webséminaires.">
 
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://www.mealos.com/evenements.html">
+    <link rel="canonical" href="https://staffmeal-app.netlify.app/evenements.html">
 
     <!-- Built CSS -->
     <link rel="stylesheet" href="style.css">
@@ -31,33 +31,33 @@
     <!-- Custom CSS (Shared) -->
     <style>
         body {
-            background-color: theme('colors.background');
-            color: theme('colors.foreground');
+            background-color: #f4eedf;
+            color: #181410;
             overflow-x: hidden;
             font-feature-settings: "liga", "kern";
             -webkit-font-smoothing: antialiased;
         }
 
         ::selection {
-            background-color: theme('colors.foreground');
-            color: theme('colors.background');
+            background-color: #181410;
+            color: #f4eedf;
         }
 
         .logo-handwritten {
-            font-family: theme('fontFamily.script');
+            font-family: 'Shantell Sans', cursive;
             text-transform: lowercase;
             letter-spacing: -0.02em;
             line-height: 0.8;
-            color: #1A2222;
+            color: #181410;
         }
 
         .border-retro {
-            border: 3px solid theme('colors.foreground');
+            border: 1px solid #181410;
         }
 
         .glass-header {
             background: rgba(250, 242, 215, 0.95);
-            border-bottom: 3px solid theme('colors.foreground');
+            border-bottom: 1px solid #181410;
             transition: padding 0.3s ease;
             backdrop-filter: blur(8px);
         }
@@ -68,7 +68,7 @@
         }
 
         .text-chunky {
-            font-family: theme('fontFamily.display');
+            font-family: 'Familjen Grotesk', ui-sans-serif, system-ui, sans-serif;
             font-weight: 900;
             line-height: 0.95;
             letter-spacing: -0.03em;
@@ -78,9 +78,9 @@
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            background-color: theme('colors.foreground');
-            color: theme('colors.background');
-            font-family: theme('fontFamily.sans');
+            background-color: #181410;
+            color: #f4eedf;
+            font-family: 'Familjen Grotesk', ui-sans-serif, system-ui, sans-serif;
             font-weight: 900;
             text-transform: uppercase;
             letter-spacing: 0.05em;
@@ -89,7 +89,7 @@
             box-shadow: theme('boxShadow.retro');
             transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
             user-select: none;
-            border: 2px solid theme('colors.foreground');
+            border: 2px solid #181410;
         }
 
         .btn-retro:hover {
@@ -104,11 +104,11 @@
 
         .btn-retro.alt {
             background-color: white;
-            color: theme('colors.foreground');
+            color: #181410;
         }
 
         .card-retro {
-            border: 3px solid theme('colors.foreground');
+            border: 1px solid #181410;
             border-radius: 2rem;
             box-shadow: theme('boxShadow.retro');
         }
@@ -130,42 +130,36 @@
     </style>
 </head>
 
-<body class="selection:bg-foreground selection:text-background font-sans relative">
+<body class="selection:bg-foreground selection:text-background font-sans relative bg-background text-foreground">
 
     <!-- HEADER -->
     <header id="navbar"
-        class="fixed top-0 left-0 w-full z-50 flex items-center justify-between px-4 md:px-12 py-6 transition-all duration-300">
-        <!-- Logo -->
-        <a href="index.html"
-            class="relative inline-flex flex-col items-center hover:opacity-80 transition-opacity mt-2">
-            <span
-                class="absolute -top-1 -right-2 font-sans font-bold text-[0.6rem] lowercase tracking-wide opacity-70">the</span>
-            <span
-                class="logo-handwritten text-[5rem] md:text-[6rem] leading-none transform -rotate-3 pl-2 pr-4 pb-1">meal
-                os</span>
-            <div class="flex gap-4 font-sans text-[0.55rem] uppercase font-bold tracking-[0.2em] opacity-80 mt-1 ml-2">
-                <span>👋 l'outil ultime</span>
-            </div>
+        class="brand-bar fixed w-full top-0 z-50 transition-all duration-300 py-3 px-4 md:px-12 flex justify-between items-center border-b border-foreground">
+
+        <a href="index.html" class="flex items-center gap-3 hover:opacity-90 transition-opacity">
+            <img src="assets/brand/mascot.png" alt="" width="48" height="48"
+                class="brand-mark ring w-11 h-11 md:w-12 md:h-12">
+            <span class="flex flex-col leading-none">
+                <span class="wordmark text-xl md:text-2xl">Staff Meal</span>
+                <span class="font-sans text-[0.55rem] uppercase font-bold tracking-[0.22em] opacity-90 mt-1">le même
+                    service, à chaque service</span>
+            </span>
         </a>
 
-        <!-- Nav -->
         <nav class="hidden md:flex items-center gap-8 font-sans font-bold text-sm lowercase tracking-wider">
-            
-            
-            <a href="resources.html" class="hover:text-accent transition-colors">ressources</a>
-            <a href="evenements.html" class="text-accent underline decoration-2 underline-offset-4">événements</a>
-            <a href="index.html#faq" class="hover:text-accent transition-colors">questions ?</a>
+            <a href="index.html#modules" class="hover:opacity-70 transition-opacity">modules</a>
+            <a href="resources.html" class="hover:opacity-70 transition-opacity">ressources</a>
+            <a href="evenements.html" class="hover:opacity-70 transition-opacity">événements</a>
+            <a href="index.html#faq" class="hover:opacity-70 transition-opacity">questions ?</a>
         </nav>
 
-        <!-- CTA -->
         <div class="hidden md:block">
-            <a href="index.html#demo" class="btn-retro alt py-2 px-6 text-sm">
+            <a href="#demo" class="btn-retro alt py-2 px-6 text-sm">
                 postuler (50 places)
             </a>
         </div>
 
-        <!-- Mobile Menu Toggle -->
-        <button id="mobileMenuBtn" aria-label="Menu" class="md:hidden text-foreground">
+        <button id="mobileMenuBtn" aria-label="Menu" class="md:hidden text-background z-50">
             <i data-lucide="menu" class="w-8 h-8"></i>
         </button>
     </header>
@@ -173,7 +167,7 @@
     <!-- Mobile Menu Overlay -->
     <div id="mobileMenu" class="fixed inset-0 z-[60] pointer-events-none" style="visibility: hidden;">
         <div id="mobileMenuBackdrop" class="absolute inset-0 bg-foreground/80 opacity-0 transition-opacity duration-300"></div>
-        <div id="mobileMenuPanel" class="absolute top-0 right-0 w-4/5 max-w-sm h-full bg-background border-l-3 border-foreground p-8 pt-24 flex flex-col gap-6 transform translate-x-full transition-transform duration-300 ease-out">
+        <div id="mobileMenuPanel" class="absolute top-0 right-0 w-4/5 max-w-sm h-full bg-background border-l border-foreground p-8 pt-24 flex flex-col gap-6 transform translate-x-full transition-transform duration-300 ease-out">
             <button id="mobileMenuClose" class="absolute top-6 right-6 text-foreground" aria-label="Fermer">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
             </button>
@@ -207,15 +201,15 @@
 
         <!-- PRÉSENTIEL SECTION -->
         <section class="max-w-7xl mx-auto px-4 md:px-12 mb-24">
-            <div class="flex items-center gap-4 border-b-3 border-foreground pb-4 mb-12 reveal">
+            <div class="flex items-center gap-4 border-b border-foreground pb-4 mb-12 reveal">
                 <i data-lucide="map-pin" class="w-8 h-8 text-mustard"></i>
                 <h2 class="text-chunky text-4xl">La Vraie Vie (Sur invitation)</h2>
             </div>
-            <p class="font-sans font-medium text-lg mb-8 opacity-80 max-w-3xl reveal">Places limitées. Des événements physiques exclusifs pour échanger sans filtre et apprendre des techniques concrètes avec l'équipe Meal OS et des experts invités.</p>
+            <p class="font-sans font-medium text-lg mb-8 opacity-80 max-w-3xl reveal">Places limitées. Des événements physiques exclusifs pour échanger sans filtre et apprendre des techniques concrètes avec l'équipe Staff Meal et des experts invités.</p>
 
             <div class="grid lg:grid-cols-2 gap-8">
                 <!-- Masterclass -->
-                <div class="card-retro bg-white p-8 md:p-10 group hover:-translate-y-2 transition-transform reveal delay-1 flex flex-col h-full border-t-8 border-t-mustard">
+                <div class="card-retro bg-paper p-8 md:p-10 group hover:-translate-y-2 transition-transform reveal delay-1 flex flex-col h-full border-t-8 border-t-mustard">
                     <div class="flex justify-between items-start mb-6">
                         <span class="bg-foreground text-background font-sans font-bold text-xs uppercase tracking-wider px-3 py-1 rounded border-2 border-foreground">Masterclass</span>
                         <span class="text-accent font-bold text-sm">20 places dispo</span>
@@ -230,14 +224,14 @@
                 </div>
 
                 <!-- Dîner Privé -->
-                <div class="card-retro bg-[#1A2222] text-[#F4F1EB] p-8 md:p-10 group hover:-translate-y-2 transition-transform reveal delay-2 flex flex-col h-full border-t-8 border-t-[#F4F1EB]">
+                <div class="card-retro bg-[#181410] text-[#f4eedf] p-8 md:p-10 group hover:-translate-y-2 transition-transform reveal delay-2 flex flex-col h-full border-t-8 border-t-[#f4eedf]">
                     <div class="flex justify-between items-start mb-6">
                         <span class="bg-mustard text-foreground font-sans font-bold text-xs uppercase tracking-wider px-3 py-1 rounded border-2 border-foreground">Dîner Privé</span>
                         <span class="text-mustard font-bold text-sm"><i data-lucide="lock" class="w-4 h-4 inline pb-0.5"></i> Sur Liste</span>
                     </div>
                     <h3 class="font-display font-black text-3xl mb-4 leading-tight">Dîner des fondateurs : Les défis de la rentabilité</h3>
-                    <p class="font-sans font-medium opacity-80 mb-6 flex-grow text-[#F4F1EB]">Un repas bistronomique pour 10 restaurateurs avec les fondateurs de Meal OS. On parle recrutement, marges et défis sans bullshit.</p>
-                    <div class="flex items-center gap-4 text-sm font-bold opacity-70 mb-8 border-y-2 border-[#F4F1EB]/20 py-4">
+                    <p class="font-sans font-medium opacity-80 mb-6 flex-grow text-[#f4eedf]">Un repas bistronomique pour 10 restaurateurs avec les fondateurs de Staff Meal. On parle recrutement, marges et défis sans bullshit.</p>
+                    <div class="flex items-center gap-4 text-sm font-bold opacity-70 mb-8 border-y-2 border-[#f4eedf]/20 py-4">
                         <span class="flex items-center gap-1"><i data-lucide="calendar" class="w-4 h-4"></i> 28 Mai 2026</span>
                         <span class="flex items-center gap-1"><i data-lucide="map-pin" class="w-4 h-4"></i> Lyon (2e)</span>
                     </div>
@@ -248,31 +242,31 @@
 
         <!-- VIRTUEL SECTION -->
         <section class="max-w-7xl mx-auto px-4 md:px-12 mb-24">
-            <div class="flex items-center gap-4 border-b-3 border-foreground pb-4 mb-12 reveal">
+            <div class="flex items-center gap-4 border-b border-foreground pb-4 mb-12 reveal">
                 <i data-lucide="monitor-play" class="w-8 h-8 text-olive"></i>
                 <h2 class="text-chunky text-4xl">Où Que Vous Soyez (Webinars & Replays)</h2>
             </div>
 
             <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
                 <!-- Webinar 1 -->
-                <a href="#demo" class="card-retro bg-white p-6 group hover:bg-olive hover:text-white transition-colors reveal delay-1 block cursor-pointer">
+                <a href="#demo" class="card-retro bg-paper p-6 group hover:bg-olive hover:text-white transition-colors reveal delay-1 block cursor-pointer">
                     <div class="relative w-full h-40 border-2 border-foreground rounded-xl overflow-hidden mb-6">
                          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?fit=crop&w=600&h=400&format=webp&q=80" alt="Webinar" class="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all">
-                         <div class="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity">
+                         <div class="absolute inset-0 flex items-center justify-center bg-foreground/40 opacity-0 group-hover:opacity-100 transition-opacity">
                              <i data-lucide="play-circle" class="w-12 h-12 text-white"></i>
                          </div>
                     </div>
-                    <span class="bg-[#E8D5C4] text-foreground font-sans font-bold text-[0.65rem] uppercase tracking-wider px-2 py-1 rounded inline-block mb-3 border border-foreground">En Direct</span>
+                    <span class="bg-[#f4eedf] text-foreground font-sans font-bold text-[0.65rem] uppercase tracking-wider px-2 py-1 rounded inline-block mb-3 border border-foreground">En Direct</span>
                     <h3 class="font-display font-black text-xl mb-3">La chasse au gaspillage : Calculer ses pertes cachées</h3>
                     <p class="font-sans font-medium text-sm opacity-80 mb-4 line-clamp-2 group-hover:opacity-100">Découvrez comment utiliser notre calculateur de gaspillage pour identifier et stopper l'hémorragie financière.</p>
                     <div class="text-xs font-bold uppercase tracking-wider text-olive group-hover:text-white mt-auto">11 Avril • Inscription gratuite →</div>
                 </a>
 
                 <!-- Webinar 2 -->
-                <a href="#demo" class="card-retro bg-white p-6 group hover:bg-mustard transition-colors reveal delay-2 block cursor-pointer">
+                <a href="#demo" class="card-retro bg-paper p-6 group hover:bg-mustard transition-colors reveal delay-2 block cursor-pointer">
                     <div class="relative w-full h-40 border-2 border-foreground rounded-xl overflow-hidden mb-6">
                          <img src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?fit=crop&w=600&h=400&format=webp&q=80" alt="Webinar" class="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all">
-                         <div class="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity">
+                         <div class="absolute inset-0 flex items-center justify-center bg-foreground/40 opacity-0 group-hover:opacity-100 transition-opacity">
                              <i data-lucide="play-circle" class="w-12 h-12 text-white"></i>
                          </div>
                     </div>
@@ -283,11 +277,11 @@
                 </a>
 
                 <!-- Replay 1 -->
-                <a href="#demo" class="card-retro bg-[#F4F1EB] p-6 group hover:-translate-y-2 transition-transform reveal delay-3 block cursor-pointer">
+                <a href="#demo" class="card-retro bg-[#f4eedf] p-6 group hover:-translate-y-2 transition-transform reveal delay-3 block cursor-pointer">
                     <div class="relative w-full h-40 border-2 border-foreground rounded-xl overflow-hidden mb-6 opacity-80 group-hover:opacity-100 transition-opacity">
                          <img src="https://images.unsplash.com/photo-1590779033100-9f60a05a013d?fit=crop&w=600&h=400&format=webp&q=80" alt="Replay" class="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all">
                     </div>
-                    <span class="bg-white text-foreground font-sans font-bold text-[0.65rem] uppercase tracking-wider px-2 py-1 rounded inline-block mb-3 border border-foreground">Replay (VOD)</span>
+                    <span class="bg-paper text-foreground font-sans font-bold text-[0.65rem] uppercase tracking-wider px-2 py-1 rounded inline-block mb-3 border border-foreground">Replay (VOD)</span>
                     <h3 class="font-display font-black text-xl mb-3">Plannings RH : La méthode pour éviter le turnover</h3>
                     <p class="font-sans font-medium text-sm opacity-80 mb-4 line-clamp-2">Comment structurer les shifts pour garantir une viabilité économique ET un bon climat social.</p>
                     <div class="text-xs font-bold uppercase tracking-wider text-accent mt-auto">Visionner le Replay (45 min) →</div>
@@ -305,15 +299,15 @@
                 </div>
 
                 <div class="relative z-10 md:w-2/3">
-                    <span class="bg-white text-foreground font-sans font-black text-xs uppercase tracking-widest px-3 py-1 rounded-full border-2 border-foreground mb-6 inline-block">Privilège VIP</span>
-                    <h2 class="text-chunky text-4xl md:text-5xl mb-4 text-olive">Le Club Meal OS.</h2>
+                    <span class="bg-paper text-foreground font-sans font-black text-xs uppercase tracking-widest px-3 py-1 rounded-full border-2 border-foreground mb-6 inline-block">Privilège VIP</span>
+                    <h2 class="text-chunky text-4xl md:text-5xl mb-4 text-olive">Le Club Staff Meal.</h2>
                     <p class="font-sans font-medium text-lg leading-relaxed opacity-90 mb-8 max-w-lg">
                         Certains événements ne sont pas publics. Dégustations secrètes, rencontres exclusives avec des fournisseurs, avant-premières de fonctionnalités et clubs de réflexion. <strong>Pour y accéder, il suffit d'être membre de la famille.</strong>
                     </p>
                     <ul class="space-y-3 mb-8 font-sans font-bold opacity-80">
                         <li class="flex items-center gap-2"><i data-lucide="check" class="text-olive w-5 h-5"></i> Accès direct aux événements du Club</li>
                         <li class="flex items-center gap-2"><i data-lucide="check" class="text-olive w-5 h-5"></i> Tarifs préférentiels sur nos services partenaires</li>
-                        <li class="flex items-center gap-2"><i data-lucide="check" class="text-olive w-5 h-5"></i> Un accès immédiat dès la création de votre compte Meal OS</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="text-olive w-5 h-5"></i> Un accès immédiat dès la création de votre compte Staff Meal</li>
                     </ul>
                     <a href="index.html#demo" class="btn-retro bg-olive border-olive text-white hover:bg-foreground hover:border-foreground hover:text-background">Rejoindre l'application & le Club</a>
                 </div>
@@ -322,7 +316,7 @@
 
         <!-- NEWSLETTER CTA -->
         <section class="max-w-4xl mx-auto px-4 md:px-12 pb-24 reveal">
-            <div class="card-retro bg-white text-center p-10 md:p-16 border-dashed border-4 border-foreground shadow-[8px_8px_0px_theme('colors.foreground')]">
+            <div class="card-retro bg-paper text-center p-10 md:p-16 border-dashed border-4 border-foreground shadow-[8px_8px_0px_#181410]">
                 <i data-lucide="ticket" class="w-12 h-12 mx-auto mb-6 text-accent"></i>
                 <h2 class="text-chunky text-4xl md:text-5xl mb-4">Ne ratez aucune date.</h2>
                 <p class="font-sans font-medium opacity-80 max-w-lg mx-auto mb-8">Les places pour nos événements physiques partent en quelques heures. Laissez-nous votre email pour recevoir les invitations en avant-première.</p>
@@ -337,28 +331,50 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="border-t-3 border-foreground py-12 px-4 md:px-12 bg-white mt-auto">
+    <footer class="border-t border-foreground py-12 px-4 md:px-12 bg-background">
         <div
             class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8 text-center md:text-left">
-            <a href="index.html" class="relative inline-flex flex-col items-center hover:opacity-80 transition-opacity">
-                <span
-                    class="absolute -top-1 -right-2 font-sans font-bold text-[0.6rem] lowercase tracking-wide opacity-70">the</span>
-                <span
-                    class="logo-handwritten text-[4.5rem] md:text-[5.5rem] leading-none transform -rotate-3 pl-2 pr-4 pb-1">meal
-                    os</span>
+
+            <a href="index.html" class="flex items-center gap-3 hover:opacity-80 transition-opacity">
+                <img src="assets/brand/mascot.png" alt="" width="56" height="56" class="brand-mark w-14 h-14">
+                <span class="flex flex-col leading-none text-left">
+                    <span class="wordmark text-2xl">Staff Meal</span>
+                    <span class="font-sans text-[0.5rem] uppercase font-bold tracking-[0.2em] text-ink-soft mt-1">le
+                        même service, à chaque service</span>
+                </span>
             </a>
-            <div class="flex flex-wrap justify-center gap-6 font-sans font-bold text-sm">
-                
-                <a href="resources.html"
-                    class="hover:text-accent border-b-2 border-transparent hover:border-accent pb-1">Ressources</a>
-                <a href="evenements.html"
-                    class="hover:text-accent border-b-2 border-transparent hover:border-accent pb-1">Événements</a>
-                <a href="#"
-                    class="hover:text-accent border-b-2 border-transparent hover:border-accent pb-1">info@mealos.com</a>
+
+            <div
+                class="flex flex-col md:flex-row gap-8 md:gap-16 font-sans font-bold text-sm items-center md:items-start text-center md:text-left">
+                <div class="flex flex-col items-center md:items-start gap-3">
+                    <span class="text-accent uppercase tracking-widest text-xs">Comparatifs</span>
+                    <a href="staffmeal-vs-skello.html"
+                        class="hover:text-accent border-b border-transparent hover:border-accent pb-1 inline-block w-max">Staff
+                        Meal et Skello</a>
+                    <a href="staffmeal-vs-koust.html"
+                        class="hover:text-accent border-b border-transparent hover:border-accent pb-1 inline-block w-max">Staff
+                        Meal vs Koust</a>
+                    <a href="staffmeal-vs-combo.html"
+                        class="hover:text-accent border-b border-transparent hover:border-accent pb-1 inline-block w-max">Staff
+                        Meal vs Combo</a>
+                </div>
+                <div class="flex flex-col items-center md:items-start gap-3">
+                    <span class="uppercase tracking-widest text-xs">Ressources</span>
+                    <a href="resources.html"
+                        class="hover:text-accent border-b border-transparent hover:border-accent pb-1 inline-block w-max">Outils
+                        gratuits</a>
+                    <a href="evenements.html"
+                        class="hover:text-accent border-b border-transparent hover:border-accent pb-1 inline-block w-max">Événements</a>
+                    <a href="index.html#demo"
+                        class="hover:text-accent border-b border-transparent hover:border-accent pb-1 inline-block w-max">Nous
+                        contacter</a>
+                </div>
             </div>
-            <div class="font-sans text-sm font-medium opacity-60">
-                &copy; 2026 Meal OS. Designed for Chefs.
+
+            <div class="font-sans text-sm font-medium text-ink-faint">
+                &copy; 2026 Staff Meal.
             </div>
+
         </div>
     </footer>
 
@@ -374,9 +390,9 @@
         const header = document.getElementById('navbar');
         window.addEventListener('scroll', () => {
             if (window.scrollY > 20) {
-                header.classList.add('glass-header', 'header-scrolled');
+                header.classList.add('header-scrolled');
             } else {
-                header.classList.remove('glass-header', 'header-scrolled');
+                header.classList.remove('header-scrolled');
             }
         });
 

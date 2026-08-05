@@ -11,93 +11,127 @@
         as="image" fetchpriority="high">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..900;1,9..144,400..900&family=Outfit:wght@300;400;500;600;700&family=Caveat:wght@700&display=swap">
+        href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=Shantell+Sans:wght@500;600;700;800&display=swap">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meal OS | L'ingrédient secret de votre restaurant</title>
+    <title>Staff Meal | Le même service, à chaque service</title>
     <meta name="description"
-        content="Gérez votre restaurant comme un chef avec Meal OS. Plannings, HACCP, maintenance et communication centralisés. Rejoignez le programme Bêta exclusif.">
+        content="L'application d'exploitation des restaurants à partir de 15 employés. Checklists HACCP avec preuve photo, manuel opératoire, formations, client mystère, food cost et multi-site. Programme bêta ouvert.">
+
+    <link rel="icon" href="assets/brand/mascot-mark.png" type="image/png">
+    <link rel="apple-touch-icon" href="assets/brand/mascot.png">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.mealos.com/">
-    <meta property="og:title" content="Meal OS | L'ingrédient secret de votre restaurant">
+    <meta property="og:url" content="https://staffmeal-app.netlify.app/">
+    <meta property="og:title" content="Staff Meal | Le même service, à chaque service">
     <meta property="og:description"
-        content="Gérez votre restaurant comme un chef avec Meal OS. Plannings, HACCP, maintenance et communication centralisés. Rejoignez le programme Bêta exclusif.">
-    <meta property="og:image" content="https://www.mealos.com/og-image.jpg">
+        content="L'application d'exploitation des restaurants à partir de 15 employés. Checklists HACCP, manuel opératoire, formations, client mystère, food cost, multi-site.">
+    <meta property="og:image" content="https://staffmeal-app.netlify.app/assets/brand/mascot.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://www.mealos.com/">
-    <meta property="twitter:title" content="Meal OS | L'ingrédient secret de votre restaurant">
+    <meta property="twitter:url" content="https://staffmeal-app.netlify.app/">
+    <meta property="twitter:title" content="Staff Meal | Le même service, à chaque service">
     <meta property="twitter:description"
-        content="Gérez votre restaurant comme un chef avec Meal OS. Plannings, HACCP, maintenance et communication centralisés. Rejoignez le programme Bêta exclusif.">
-    <meta property="twitter:image" content="https://www.mealos.com/twitter-image.jpg">
+        content="L'application d'exploitation des restaurants à partir de 15 employés. Checklists HACCP, manuel opératoire, formations, client mystère, food cost, multi-site.">
+    <meta property="twitter:image" content="https://staffmeal-app.netlify.app/assets/brand/mascot.png">
 
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://www.mealos.com/">
+    <link rel="canonical" href="https://staffmeal-app.netlify.app/">
 
     <!-- Schema.org JSON-LD -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "SoftwareApplication",
-      "name": "Meal OS",
+      "name": "Staff Meal",
       "operatingSystem": "Web",
       "applicationCategory": "BusinessApplication",
-      "offers": {
-        "@type": "Offer",
-        "price": "200.00",
-        "priceCurrency": "EUR"
-      },
-      "description": "Le système d'exploitation complet pour les restaurateurs incluant planning, standards HACCP, maintenance et communication interne.",
-      "url": "https://www.mealos.com/"
+      "description": "Application d'exploitation pour la restauration : checklists HACCP avec preuve photo, manuel opératoire, formations et certification, client mystère, recettes et food cost, maintenance, multi-site.",
+      "url": "https://staffmeal-app.netlify.app/"
     }
     </script>
     <!-- Preconnect for performance -->
     <link rel="preconnect" href="https://unpkg.com">
-
-    <!-- Tailwind CSS (Moved to a safer version) -->
-
-
-    <!-- Tailwind Config -->
-
-
-    <!-- Custom CSS -->
 </head>
 
-<body class="selection:bg-accent selection:text-white relative bg-white text-black">
+<body class="selection:bg-accent selection:text-background relative bg-background text-foreground">
 
     <div class="noise-overlay opacity-5"></div>
 
-    <!-- HEADER -->
+    <!-- STICKERS FEUTRE — symboles repris de l'app (src/brand/Stickers.tsx) -->
+    <svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
+        <defs>
+            <filter id="rough" x="-20%" y="-20%" width="140%" height="140%">
+                <feTurbulence type="fractalNoise" baseFrequency="0.018" numOctaves="2" seed="7" result="n" />
+                <feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G" />
+            </filter>
+            <symbol id="d-hat" viewBox="0 0 100 100">
+                <g class="dl" filter="url(#rough)">
+                    <path d="M29,45 C18,45 16,29 28,27 C27,14 47,12 51,23 C57,12 75,15 74,29 C86,31 82,47 71,45" />
+                    <path d="M31,45 L31,61 C31,65 69,65 69,61 L69,45" />
+                    <path d="M42,49 L42,61" />
+                    <path d="M50,49 L50,61" />
+                    <path d="M58,49 L58,61" />
+                </g>
+            </symbol>
+            <symbol id="d-clock" viewBox="0 0 100 100">
+                <g class="dl" filter="url(#rough)">
+                    <path d="M50,20 C33,20 21,34 21,50 C21,67 34,80 50,80 C67,80 79,66 79,50 C79,33 66,20 50,20Z" />
+                    <path d="M50,50 L50,31" />
+                    <path d="M50,50 L65,57" />
+                </g>
+            </symbol>
+            <symbol id="d-spark" viewBox="0 0 100 100">
+                <g class="dl" filter="url(#rough)">
+                    <path d="M50,22 C53,41 59,47 78,50 C59,53 53,59 50,78 C47,59 41,53 22,50 C41,47 47,41 50,22Z" />
+                </g>
+            </symbol>
+            <symbol id="d-cutlery" viewBox="0 0 100 100">
+                <g class="dl" filter="url(#rough)">
+                    <path d="M33,16 L33,31" />
+                    <path d="M40,16 L40,31" />
+                    <path d="M47,16 L47,31" />
+                    <path d="M33,31 C33,40 47,40 47,31" />
+                    <path d="M40,31 L40,86" />
+                    <path d="M64,16 C56,22 56,44 63,47 L66,47 L66,16" />
+                    <path d="M65,47 L65,86" />
+                </g>
+            </symbol>
+            <symbol id="d-tomato" viewBox="0 0 100 100">
+                <g class="dl" filter="url(#rough)">
+                    <path d="M50,34 C29,33 21,53 26,69 C31,85 49,92 57,89 C75,83 80,63 75,50 C71,39 63,35 50,34Z" />
+                    <path d="M50,34 C48,25 43,21 38,19" />
+                    <path d="M50,34 C53,26 58,23 63,22" />
+                    <path d="M50,34 L50,23" />
+                    <path d="M40,50 C44,46 50,46 53,49" />
+                </g>
+            </symbol>
+        </defs>
+    </svg>
+
+    <!-- HEADER — bandeau de marque plein, wordmark et mascotte dedans (ref wana) -->
     <header id="navbar"
-        class="fixed w-full top-0 z-50 transition-all duration-300 py-4 px-4 md:px-12 flex justify-between items-center">
-        <!-- Logo replicating the "sol" layout -->
-        <a href="#" class="relative inline-flex flex-col items-center hover:opacity-80 transition-opacity mt-2">
-            <!-- "the" at top right -->
-            <span
-                class="absolute -top-1 -right-2 font-sans font-bold text-[0.6rem] lowercase tracking-wide opacity-70">the</span>
+        class="brand-bar fixed w-full top-0 z-50 transition-all duration-300 py-3 px-4 md:px-12 flex justify-between items-center border-b border-foreground">
 
-            <!-- main word -->
-            <span
-                class="logo-handwritten text-[5rem] md:text-[6rem] leading-none transform -rotate-3 pl-2 pr-4 pb-1">meal <span class="text-[0.7em] ml-1">OS</span></span>
-
-            <!-- subtext like "fresh & tasty" -->
-            <div class="flex gap-4 font-sans text-[0.55rem] uppercase font-bold tracking-[0.2em] opacity-80 mt-1 ml-2">
-                <span>👋 l'outil ultime</span>
-            </div>
+        <a href="index.html" class="flex items-center gap-3 hover:opacity-90 transition-opacity">
+            <img src="assets/brand/mascot.png" alt="" width="48" height="48"
+                class="brand-mark ring w-11 h-11 md:w-12 md:h-12">
+            <span class="flex flex-col leading-none">
+                <span class="wordmark text-xl md:text-2xl">Staff Meal</span>
+                <span class="font-sans text-[0.55rem] uppercase font-bold tracking-[0.22em] opacity-90 mt-1">le même
+                    service, à chaque service</span>
+            </span>
         </a>
 
         <!-- Nav -->
         <nav class="hidden md:flex items-center gap-8 font-sans font-bold text-sm lowercase tracking-wider">
-            
-            
-            <a href="resources.html" class="hover:text-accent transition-colors">ressources</a>
-            <a href="evenements.html" class="hover:text-accent transition-colors">événements</a>
-            
-            <a href="#faq" class="hover:text-accent transition-colors">questions ?</a>
+            <a href="#modules" class="hover:opacity-70 transition-opacity">modules</a>
+            <a href="resources.html" class="hover:opacity-70 transition-opacity">ressources</a>
+            <a href="evenements.html" class="hover:opacity-70 transition-opacity">événements</a>
+            <a href="#faq" class="hover:opacity-70 transition-opacity">questions ?</a>
         </nav>
 
         <!-- CTA -->
@@ -108,27 +142,37 @@
         </div>
 
         <!-- Mobile Menu Toggle -->
-        <button id="mobileMenuBtn" aria-label="Menu" class="md:hidden text-foreground z-50">
+        <button id="mobileMenuBtn" aria-label="Menu" class="md:hidden text-background z-50">
             <i data-lucide="menu" class="w-8 h-8"></i>
         </button>
     </header>
 
     <!-- Mobile Menu Overlay -->
     <div id="mobileMenu" class="fixed inset-0 z-[60] pointer-events-none" style="visibility: hidden;">
-        <!-- Backdrop -->
-        <div id="mobileMenuBackdrop" class="absolute inset-0 bg-foreground/80 opacity-0 transition-opacity duration-300"></div>
-        <!-- Panel -->
-        <div id="mobileMenuPanel" class="absolute top-0 right-0 w-4/5 max-w-sm h-full bg-background border-l-3 border-foreground p-8 pt-24 flex flex-col gap-6 transform translate-x-full transition-transform duration-300 ease-out">
+        <div id="mobileMenuBackdrop"
+            class="absolute inset-0 bg-foreground/80 opacity-0 transition-opacity duration-300"></div>
+        <div id="mobileMenuPanel"
+            class="absolute top-0 right-0 w-4/5 max-w-sm h-full bg-background border-l border-foreground p-8 pt-24 flex flex-col gap-6 transform translate-x-full transition-transform duration-300 ease-out">
             <button id="mobileMenuClose" class="absolute top-6 right-6 text-foreground" aria-label="Fermer">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
             </button>
             <nav class="flex flex-col gap-4 font-sans font-bold text-lg lowercase tracking-wider">
-                
-                
-                <a href="resources.html" class="mobile-menu-link py-3 border-b-2 border-foreground/10 hover:text-accent transition-colors">ressources</a>
-                <a href="evenements.html" class="mobile-menu-link py-3 border-b-2 border-foreground/10 hover:text-accent transition-colors">événements</a>
-                <a href="boite-a-outils-dashboard.html" class="mobile-menu-link py-3 border-b-2 border-foreground/10 hover:text-accent transition-colors">boîte à outils</a>
-                <a href="#faq" class="mobile-menu-link py-3 border-b-2 border-foreground/10 hover:text-accent transition-colors">questions ?</a>
+                <a href="#modules"
+                    class="mobile-menu-link py-3 border-b border-foreground/10 hover:text-accent transition-colors">modules</a>
+                <a href="resources.html"
+                    class="mobile-menu-link py-3 border-b border-foreground/10 hover:text-accent transition-colors">ressources</a>
+                <a href="evenements.html"
+                    class="mobile-menu-link py-3 border-b border-foreground/10 hover:text-accent transition-colors">événements</a>
+                <a href="boite-a-outils-dashboard.html"
+                    class="mobile-menu-link py-3 border-b border-foreground/10 hover:text-accent transition-colors">boîte
+                    à outils</a>
+                <a href="#faq"
+                    class="mobile-menu-link py-3 border-b border-foreground/10 hover:text-accent transition-colors">questions
+                    ?</a>
             </nav>
             <div class="mt-auto">
                 <a href="#demo" class="mobile-menu-link btn-retro w-full text-center">postuler (50 places)</a>
@@ -141,24 +185,22 @@
 
         <!-- SECTION 1: HERO -->
         <section
-            class="relative min-h-[90vh] flex items-center justify-center pt-32 pb-20 px-4 md:px-12 overflow-hidden bg-white">
-            
+            class="relative min-h-[90vh] flex items-center justify-center pt-32 pb-20 px-4 md:px-12 overflow-hidden bg-background">
+
             <div class="max-w-7xl mx-auto w-full grid md:grid-cols-2 gap-12 items-center relative z-10">
 
                 <div class="reveal">
-                    <!-- NEW BADGE -->
-                    <div
-                        class="inline-flex items-center gap-2 border-[1px] border-foreground rounded px-3 py-1 mb-6">
-                        <i data-lucide="award" class="w-4 h-4 text-accent"></i>
-                        <span class="font-sans font-medium text-xs uppercase tracking-widest">Expertise Terrain Accompagnée</span>
+                    <div class="inline-flex items-center gap-2 border border-foreground rounded-full px-4 py-1 mb-6">
+                        <i data-lucide="users" class="w-4 h-4 text-accent"></i>
+                        <span class="font-sans font-semibold text-xs uppercase tracking-widest">À partir de 15
+                            employés</span>
                     </div>
 
-                    <h1 class="text-chunky text-6xl md:text-7xl lg:text-[7rem] mb-6 relative mt-4">
-                        <span class="text-reveal-wrapper"><span class="text-reveal-inner">Pilotez
-                                votre</span></span><br />
+                    <h1 class="text-chunky text-5xl md:text-6xl lg:text-[5.25rem] mb-6 relative mt-4">
+                        <span class="text-reveal-wrapper"><span class="text-reveal-inner whitespace-nowrap">Le même
+                                service</span></span><br />
                         <span class="text-reveal-wrapper">
-                            <span class="text-reveal-inner relative">restaurant
-                                <!-- SVG Scribble underline (now red and thinner) -->
+                            <span class="text-reveal-inner relative whitespace-nowrap">à chaque service
                                 <svg class="absolute -bottom-2 left-0 w-full h-4 svg-draw text-accent z-[-1]"
                                     viewBox="0 0 200 20" preserveAspectRatio="none">
                                     <path d="M5,15 Q50,5 100,10 T195,15" fill="none" stroke="currentColor"
@@ -166,54 +208,54 @@
                                 </svg>
                             </span>
                         </span>
-                        <div class="absolute -bottom-10 right-0 md:right-4 transform">
-                            <span
-                                class="font-sans font-bold text-lg uppercase tracking-[0.3em] text-black">avec</span>
-                            <span
-                                class="font-script text-accent text-7xl inline-block -ml-2 -mt-2 tracking-normal reveal delay-3">élan.</span>
+                        <div class="absolute -bottom-12 right-0 md:right-4 transform">
+                            <span class="font-script text-accent text-5xl md:text-6xl inline-block reveal delay-3">sur
+                                tous vos sites.</span>
                         </div>
                     </h1>
 
                     <p
-                        class="font-sans font-medium text-lg md:text-xl max-w-md leading-snug mt-16 mb-10 opacity-80 reveal delay-1">
-                        Fini les classeurs papier et les groupes WhatsApp interminables. Une seule application pour
-                        piloter vos équipes, vos opérations et votre hygiène.
+                        class="font-sans font-medium text-lg md:text-xl max-w-md leading-snug mt-20 mb-10 text-ink-soft reveal delay-1">
+                        Checklists HACCP avec preuve photo, manuel opératoire, formations, client mystère, food cost.
+                        Vos équipes ouvrent une seule application, vous lisez un seul tableau de bord.
                     </p>
 
                     <div class="reveal delay-2 flex flex-col sm:flex-row gap-4">
                         <a href="#demo" class="btn-retro">
-                            Postuler à la Bêta Privée
+                            Postuler à la bêta privée
                         </a>
-                        <a href="boite-a-outils-dashboard.html" class="btn-retro alt flex gap-2 text-center items-center">
-                            Ouvrir ma boîte à outils (100% Gratuit) <i data-lucide="arrow-right" class="w-5 h-5 ml-1"></i>
+                        <a href="boite-a-outils-dashboard.html"
+                            class="btn-retro alt flex gap-2 text-center items-center">
+                            Ouvrir ma boîte à outils (gratuit) <i data-lucide="arrow-right" class="w-5 h-5 ml-1"></i>
                         </a>
                     </div>
                 </div>
 
                 <div class="reveal delay-3 relative mt-12 md:mt-0">
-                    <!-- Image composite with minimalist circular/sharp mix -->
                     <div class="relative w-full aspect-[4/5] max-w-md mx-auto">
-                        <div
-                            class="absolute w-full h-[90%] top-0 right-0 z-10 rounded-lg border-retro overflow-hidden">
-                            <img alt="Meal OS - Solution de gestion pour restaurants"
-                                class="w-full h-full object-cover img-breathe filter grayscale-[0.2] contrast-[1.05]"
+                        <div class="absolute w-full h-[90%] top-0 right-0 z-10 rounded-lg border-retro overflow-hidden">
+                            <img alt="Équipe en cuisine pendant le service"
+                                class="w-full h-full object-cover img-breathe filter contrast-[1.03]"
                                 src="https://images.unsplash.com/photo-1578474846511-04ba529f0b88?fit=crop&w=800&h=1000&q=80&format=webp"
                                 width="800" height="1000" fetchpriority="high">
                         </div>
 
-                        <!-- Floating red accent -->
                         <div
-                            class="absolute -bottom-6 -right-6 z-20 bg-accent text-white border-[1px] border-foreground rounded-full w-32 h-32 flex items-center justify-center text-center reveal delay-2 shadow-lg">
-                            <span class="font-sans font-black uppercase text-xs tracking-tighter leading-tight">100%<br>Restaurateur</span>
+                            class="absolute -bottom-6 -right-6 z-20 bg-accent text-background border border-foreground rounded-full w-32 h-32 flex items-center justify-center text-center reveal delay-2 shadow-mark">
+                            <span class="font-sans font-bold uppercase text-xs tracking-tight leading-tight">Pensé
+                                pour<br>le terrain</span>
                         </div>
 
                         <div
-                            class="absolute w-1/2 h-1/2 -bottom-10 -left-10 z-20 rounded-full border-retro overflow-hidden reveal delay-3 shadow-xl">
+                            class="absolute w-1/2 h-1/2 -bottom-10 -left-10 z-20 rounded-full border-retro overflow-hidden reveal delay-3 shadow-mark">
                             <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?fit=crop&w=400&h=400&format=webp&q=75"
-                                class="w-full h-full object-cover img-breathe"
-                                alt="Chef prepping" width="400" height="400"
-                                loading="lazy">
+                                class="w-full h-full object-cover img-breathe" alt="Chef en préparation" width="400"
+                                height="400" loading="lazy">
                         </div>
+
+                        <svg class="sticker stk w-16 h-16 -top-8 -left-6 z-30 hidden md:block" viewBox="0 0 100 100">
+                            <use href="#d-hat" />
+                        </svg>
                     </div>
                 </div>
 
@@ -224,41 +266,33 @@
         <section class="mt-8 mb-24">
             <div class="marquee">
                 <div class="marquee-content items-center">
-                    <span class="mx-6">audit haccp</span> <i data-lucide="star"
-                        class="w-6 h-6 fill-background text-foreground"></i>
-                    <span class="mx-6">client mystère</span> <i data-lucide="star"
-                        class="w-6 h-6 fill-background text-foreground"></i>
-                    <span class="mx-6">communication</span> <i data-lucide="star"
-                        class="w-6 h-6 fill-background text-foreground"></i>
-                    <span class="mx-6">formation</span> <i data-lucide="star"
-                        class="w-6 h-6 fill-background text-foreground"></i>
-                    <span class="mx-6">gestion rh</span> <i data-lucide="star"
-                        class="w-6 h-6 fill-background text-foreground"></i>
-                    <span class="mx-6">maintenance</span> <i data-lucide="star"
-                        class="w-6 h-6 fill-background text-foreground"></i>
-                    <span class="mx-6">manuel ops</span> <i data-lucide="star"
-                        class="w-6 h-6 fill-background text-foreground"></i>
-                    <span class="mx-6">recette</span> <i data-lucide="star"
-                        class="w-6 h-6 fill-background text-foreground"></i>
+                    <span class="mx-6">checklists haccp</span> <i data-lucide="star" class="w-5 h-5"></i>
+                    <span class="mx-6">manuel opératoire</span> <i data-lucide="star" class="w-5 h-5"></i>
+                    <span class="mx-6">client mystère</span> <i data-lucide="star" class="w-5 h-5"></i>
+                    <span class="mx-6">formations</span> <i data-lucide="star" class="w-5 h-5"></i>
+                    <span class="mx-6">recettes &amp; food cost</span> <i data-lucide="star" class="w-5 h-5"></i>
+                    <span class="mx-6">maintenance</span> <i data-lucide="star" class="w-5 h-5"></i>
+                    <span class="mx-6">planning</span> <i data-lucide="star" class="w-5 h-5"></i>
+                    <span class="mx-6">multi-site</span> <i data-lucide="star" class="w-5 h-5"></i>
                     <!-- Repeat -->
-                    <span class="mx-6">audit haccp</span> <i data-lucide="star"
-                        class="w-6 h-6 fill-background text-foreground"></i>
-                    <span class="mx-6">client mystère</span> <i data-lucide="star"
-                        class="w-6 h-6 fill-background text-foreground"></i>
-                    <span class="mx-6">communication</span> <i data-lucide="star"
-                        class="w-6 h-6 fill-background text-foreground"></i>
-                    <span class="mx-6">formation</span> <i data-lucide="star"
-                        class="w-6 h-6 fill-background text-foreground"></i>
-                    <span class="mx-6">gestion rh</span> <i data-lucide="star"
-                        class="w-6 h-6 fill-background text-foreground"></i>
-                    <span class="mx-6">maintenance</span> <i data-lucide="star"
-                        class="w-6 h-6 fill-background text-foreground"></i>
+                    <span class="mx-6">checklists haccp</span> <i data-lucide="star" class="w-5 h-5"></i>
+                    <span class="mx-6">manuel opératoire</span> <i data-lucide="star" class="w-5 h-5"></i>
+                    <span class="mx-6">client mystère</span> <i data-lucide="star" class="w-5 h-5"></i>
+                    <span class="mx-6">formations</span> <i data-lucide="star" class="w-5 h-5"></i>
+                    <span class="mx-6">recettes &amp; food cost</span> <i data-lucide="star" class="w-5 h-5"></i>
+                    <span class="mx-6">maintenance</span> <i data-lucide="star" class="w-5 h-5"></i>
+                    <span class="mx-6">planning</span> <i data-lucide="star" class="w-5 h-5"></i>
+                    <span class="mx-6">multi-site</span> <i data-lucide="star" class="w-5 h-5"></i>
                 </div>
             </div>
         </section>
 
         <!-- SECTION 3: PROBLÈMES / REALITY CHECK -->
-        <section class="py-16 px-4 md:px-12 max-w-7xl mx-auto">
+        <section class="py-16 px-4 md:px-12 max-w-7xl mx-auto relative">
+
+            <svg class="sticker stk w-14 h-14 top-4 right-6 opacity-70 hidden lg:block" viewBox="0 0 100 100">
+                <use href="#d-tomato" />
+            </svg>
 
             <div class="text-center mb-16 reveal">
                 <h2 class="font-script text-accent text-4xl mb-4 transform -rotate-1">le pragmatisme avant tout.</h2>
@@ -268,103 +302,106 @@
 
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
 
-                <div class="card-retro p-8 reveal flex flex-col h-full hover:bg-black hover:text-white transition-colors">
-                    <div
-                        class="w-12 h-12 rounded-full border-[1px] border-foreground flex items-center justify-center mb-6">
+                <div class="card-retro p-8 reveal flex flex-col h-full">
+                    <div class="w-12 h-12 rounded-full border border-foreground flex items-center justify-center mb-6">
                         <i data-lucide="file-warning" class="w-5 h-5"></i>
                     </div>
-                    <p class="font-sans font-bold text-lg leading-snug flex-grow">Vos fiches HACCP traînent dans un
+                    <p class="font-sans font-bold text-lg leading-snug flex-grow">Vos relevés HACCP dorment dans un
                         classeur que personne n'ouvre</p>
-                    <div class="mt-4 pt-4 border-t-2 border-foreground/10">
-                        <p class="font-sans font-black text-accent text-sm uppercase">→ Risque d'amende et fermeture.
-                        </p>
+                    <div class="mt-4 pt-4 border-t border-foreground/10">
+                        <p class="font-sans font-bold text-accent text-sm uppercase">→ Rien à montrer le jour du
+                            contrôle.</p>
                     </div>
                 </div>
 
-                <div class="card-retro p-8 reveal delay-1 flex flex-col h-full bg-black text-white">
-                    <div
-                        class="w-12 h-12 rounded-full border-[1px] border-white flex items-center justify-center mb-6">
-                        <i data-lucide="brain" class="w-5 h-5"></i>
+                <div class="card-retro p-8 reveal delay-1 flex flex-col h-full !bg-foreground text-background">
+                    <div class="w-12 h-12 rounded-full border border-background flex items-center justify-center mb-6">
+                        <i data-lucide="user-minus" class="w-5 h-5"></i>
                     </div>
-                    <p class="font-sans font-bold text-lg leading-snug flex-grow">Standardisation digitale de vos fiches techniques</p>
-                    <div class="mt-4 pt-4 border-t-[1px] border-white/20">
-                        <p class="font-sans font-medium text-accent text-xs uppercase tracking-widest">→ Rentabilité Garantie.</p>
-                    </div>
-                </div>
-
-                <div class="card-retro p-8 reveal delay-2 flex flex-col h-full border-accent">
-                    <div
-                        class="w-12 h-12 rounded-full border-[1px] border-accent flex items-center justify-center mb-6 text-accent">
-                        <i data-lucide="star" class="w-5 h-5"></i>
-                    </div>
-                    <p class="font-sans font-bold text-lg leading-snug flex-grow">Prévention active de la satisfaction client</p>
-                    <div class="mt-4 pt-4 border-t-[1px] border-foreground/10">
-                        <p class="font-sans font-bold text-xs uppercase tracking-widest text-black/50">→ E-réputation Sous Contrôle.</p>
+                    <p class="font-sans font-bold text-lg leading-snug flex-grow">Un manager s'en va, et ses habitudes
+                        partent avec lui</p>
+                    <div class="mt-4 pt-4 border-t border-background/20">
+                        <p class="font-sans font-bold text-accent text-sm uppercase tracking-wide">→ Chaque site dérive
+                            à sa façon.</p>
                     </div>
                 </div>
 
-                <div class="card-retro p-8 reveal delay-3 flex flex-col h-full hover:bg-black hover:text-white transition-colors">
+                <div class="card-retro p-8 reveal delay-2 flex flex-col h-full !border-accent">
                     <div
-                        class="w-12 h-12 rounded-full border-[1px] border-foreground flex items-center justify-center mb-6">
-                        <i data-lucide="timer" class="w-5 h-5"></i>
+                        class="w-12 h-12 rounded-full border border-accent flex items-center justify-center mb-6 text-accent">
+                        <i data-lucide="eye-off" class="w-5 h-5"></i>
                     </div>
-                    <p class="font-sans font-bold text-lg leading-snug flex-grow">Optimisation du temps de management</p>
-                    <div class="mt-4 pt-4 border-t-[1px] border-foreground/10">
-                        <p class="font-sans font-bold text-xs uppercase tracking-widest text-accent">→ Réduction du Turnover.</p>
+                    <p class="font-sans font-bold text-lg leading-snug flex-grow">Vous ne savez pas ce qui se passe en
+                        salle quand vous n'y êtes pas</p>
+                    <div class="mt-4 pt-4 border-t border-foreground/10">
+                        <p class="font-sans font-bold text-sm uppercase tracking-wide text-ink-faint">→ Vous
+                            l'apprenez dans les avis.</p>
+                    </div>
+                </div>
+
+                <div class="card-retro p-8 reveal delay-3 flex flex-col h-full">
+                    <div class="w-12 h-12 rounded-full border border-foreground flex items-center justify-center mb-6">
+                        <i data-lucide="scale" class="w-5 h-5"></i>
+                    </div>
+                    <p class="font-sans font-bold text-lg leading-snug flex-grow">Le coût matière se calcule une fois
+                        par an, sur un tableur</p>
+                    <div class="mt-4 pt-4 border-t border-foreground/10">
+                        <p class="font-sans font-bold text-sm uppercase tracking-wide text-accent">→ Vos marges bougent
+                            sans que vous le voyiez.</p>
                     </div>
                 </div>
 
             </div>
 
-            <div class="mt-16 text-center reveal border-t-[1px] border-foreground pt-12 max-w-lg mx-auto">
-                <p class="font-display italic font-bold text-2xl mb-8 leading-tight">Et si <span
-                        class="text-accent underline decoration-accent/30 decoration-2 underline-offset-4">une solution globale</span> sécurisait enfin vos fondamentaux ?</p>
+            <div class="mt-16 text-center reveal border-t border-foreground pt-12 max-w-lg mx-auto">
+                <p class="font-script text-3xl mb-8 leading-tight">Et si vos standards tenaient <span
+                        class="text-accent">tout seuls</span> ?</p>
                 <i data-lucide="arrow-down" class="w-8 h-8 mx-auto text-accent animate-bounce"></i>
             </div>
 
         </section>
 
 
-        <!-- SECTION 3.5: COMPARISON TABLE (Us vs Them) -->
+        <!-- SECTION 3.5: COMPARISON TABLE (Avant / Après) -->
         <section class="max-w-5xl mx-auto px-4 md:px-12 py-16">
             <div class="text-center mb-12 reveal">
                 <h2 class="text-chunky text-4xl md:text-5xl">La différence <span
-                        class="text-accent italic font-script pr-2">est claire.</span></h2>
+                        class="text-accent font-script pr-2">est claire.</span></h2>
             </div>
 
-            <div class="card-retro overflow-hidden bg-white reveal delay-1">
+            <div class="card-retro overflow-hidden reveal delay-1">
                 <div
-                    class="grid grid-cols-2 bg-black text-white p-4 text-center font-sans font-bold text-sm uppercase tracking-[0.2em]">
-                    <div class="border-r-[1px] border-white/20">Avant</div>
+                    class="grid grid-cols-2 bg-foreground text-background p-4 text-center font-sans font-bold text-sm uppercase tracking-[0.2em]">
+                    <div class="border-r border-background/20">Avant</div>
                     <div class="text-accent">Après</div>
                 </div>
 
-                <div class="divide-y-2 divide-foreground/10 font-sans font-medium text-lg">
+                <div class="divide-y divide-foreground/10 font-sans font-medium text-lg">
                     <div class="grid grid-cols-2 p-4 md:p-6 text-center">
-                        <div class="border-r-2 border-foreground/10 px-4 opacity-70">12 groupes WhatsApp différents pour
-                            l'équipe</div>
-                        <div class="px-4 font-bold text-olive flex items-center justify-center gap-2"><i
-                                data-lucide="check" class="w-5 h-5"></i> 1 seul canal de communication interne</div>
+                        <div class="border-r border-foreground/10 px-4 text-ink-faint">12 groupes WhatsApp pour faire
+                            passer une consigne</div>
+                        <div class="px-4 font-bold text-leaf flex items-center justify-center gap-2"><i
+                                data-lucide="check" class="w-5 h-5"></i> Un fil d'actu avec accusé de lecture par
+                            personne</div>
                     </div>
                     <div class="grid grid-cols-2 p-4 md:p-6 text-center">
-                        <div class="border-r-2 border-foreground/10 px-4 opacity-70">Les fiches techniques volantes ou
-                            imprimées</div>
-                        <div class="px-4 font-bold text-olive flex items-center justify-center gap-2"><i
-                                data-lucide="check" class="w-5 h-5"></i> Standardisation digitale dispo sur smartphone
-                        </div>
+                        <div class="border-r border-foreground/10 px-4 text-ink-faint">Des fiches techniques
+                            imprimées, jamais à jour</div>
+                        <div class="px-4 font-bold text-leaf flex items-center justify-center gap-2"><i
+                                data-lucide="check" class="w-5 h-5"></i> La fiche du jour dans la poche de chaque
+                            cuisinier</div>
                     </div>
                     <div class="grid grid-cols-2 p-4 md:p-6 text-center">
-                        <div class="border-r-2 border-foreground/10 px-4 opacity-70">Les pannes matérielles subies en
-                            plein service</div>
-                        <div class="px-4 font-bold text-olive flex items-center justify-center gap-2"><i
-                                data-lucide="check" class="w-5 h-5"></i> Plan de maintenance préventif généré</div>
+                        <div class="border-r border-foreground/10 px-4 text-ink-faint">Les pannes découvertes en plein
+                            coup de feu</div>
+                        <div class="px-4 font-bold text-leaf flex items-center justify-center gap-2"><i
+                                data-lucide="check" class="w-5 h-5"></i> Un ticket, un responsable, une timeline</div>
                     </div>
                     <div class="grid grid-cols-2 p-4 md:p-6 text-center">
-                        <div class="border-r-2 border-foreground/10 px-4 opacity-70">Doutes sur le registre d'hygiène
-                            HACCP</div>
-                        <div class="px-4 font-bold text-olive flex items-center justify-center gap-2"><i
-                                data-lucide="check" class="w-5 h-5"></i> Historique parfait et alertes quotidiennes
-                        </div>
+                        <div class="border-r border-foreground/10 px-4 text-ink-faint">« On a bien fait le relevé,
+                            non ? »</div>
+                        <div class="px-4 font-bold text-leaf flex items-center justify-center gap-2"><i
+                                data-lucide="check" class="w-5 h-5"></i> Chaque contrôle horodaté, avec sa photo</div>
                     </div>
                 </div>
             </div>
@@ -372,202 +409,282 @@
 
         <!-- SECTION 4: LES 9 MODULES -->
         <section id="modules"
-            class="py-24 px-4 md:px-12 bg-white text-black relative mt-12 border-y-[1px] border-foreground overflow-hidden">
-            
+            class="py-24 px-4 md:px-12 bg-paper text-foreground relative mt-12 border-y border-foreground overflow-hidden">
+
             <div class="max-w-[1400px] mx-auto relative z-10">
                 <div class="text-center mb-20 reveal">
                     <div
-                        class="border-[1px] border-accent text-accent rounded px-3 py-1 text-xs font-bold inline-block mb-6 tracking-widest uppercase">
-                        Structure & Équilibre</div>
-                    <h2 class="text-chunky text-5xl md:text-7xl mb-4 text-black uppercase tracking-tighter">les 9 modules.</h2>
-                    <p class="font-sans font-medium text-lg opacity-60">L'architecture d'un établissement d'exception.</p>
+                        class="border border-accent text-accent rounded-full px-4 py-1 text-xs font-bold inline-block mb-6 tracking-widest uppercase">
+                        Structure &amp; équilibre</div>
+                    <h2 class="text-chunky text-5xl md:text-7xl mb-4 uppercase tracking-tighter">les 9 modules.</h2>
+                    <p class="font-sans font-medium text-lg text-ink-soft">Trois piliers. Tout le reste en découle.</p>
                 </div>
 
                 <div class="grid lg:grid-cols-3 gap-8">
 
                     <!-- PILLAR 1 -->
-                    <div
-                        class="bg-white text-foreground p-8 border-[1px] border-foreground relative reveal delay-1">
+                    <div class="bg-background text-foreground p-8 border border-foreground rounded-[10px] relative reveal delay-1">
                         <div
-                            class="absolute -top-3 -right-3 bg-black text-white px-3 py-1 text-xs font-bold uppercase tracking-widest border-[1px] border-foreground">
+                            class="absolute -top-3 -right-3 bg-foreground text-background px-3 py-1 text-xs font-bold uppercase tracking-widest border border-foreground rounded">
                             P-01</div>
 
-                        <h3 class="font-display font-black text-3xl mb-1">Opérations</h3>
-                        <p class="font-script text-accent text-2xl mb-8 -mt-2">Le quotidien fluide</p>
+                        <h3 class="font-display font-bold text-3xl mb-1">Opérations</h3>
+                        <p class="font-script text-accent text-2xl mb-8 -mt-1">Le quotidien fluide</p>
 
                         <div class="space-y-6 flex flex-col">
-                            <!-- Items -->
-                            <div class="border-b-2 border-foreground/10 pb-4">
-                                <h4 class="font-sans font-black text-lg mb-1 flex items-center gap-2">
-                                    <i data-lucide="check-square" class="w-4 h-4 text-accent"></i> TodoLists
+                            <div class="border-b border-foreground/10 pb-4">
+                                <h4 class="font-sans font-bold text-lg mb-1 flex items-center gap-2">
+                                    <i data-lucide="check-square" class="w-4 h-4 text-accent"></i> To-Do &amp;
+                                    checklists HACCP
                                 </h4>
-                                <p class="font-sans font-medium text-sm opacity-80 leading-relaxed">Chaque service
-                                    commence avec une liste claire. Plus rien ne passe entre les mailles.</p>
+                                <p class="font-sans font-medium text-sm text-ink-soft leading-relaxed">Chaque service
+                                    s'ouvre sur une liste claire, ciblée par poste et par horaire. Les relevés sensibles
+                                    demandent une preuve photo, horodatée et consultable.</p>
                             </div>
-                            <div class="border-b-2 border-foreground/10 pb-4">
-                                <h4 class="font-sans font-black text-lg mb-1 flex items-center gap-2">
-                                    <i data-lucide="book" class="w-4 h-4 text-accent"></i> Manuel OPS
+                            <div class="border-b border-foreground/10 pb-4">
+                                <h4 class="font-sans font-bold text-lg mb-1 flex items-center gap-2">
+                                    <i data-lucide="book-open" class="w-4 h-4 text-accent"></i> Manuel opératoire
                                 </h4>
-                                <p class="font-sans font-medium text-sm opacity-80 leading-relaxed">Les standards de
-                                    votre maison accessibles à toute l'équipe = une qualité de service constante = de
-                                    meilleurs avis locaux.</p>
+                                <p class="font-sans font-medium text-sm text-ink-soft leading-relaxed">Les standards de
+                                    votre maison, rangés par catégorie et par procédure, avec accusé de lecture. Une
+                                    vidéo de geste métier se transforme en procédure écrite.</p>
                             </div>
                             <div>
-                                <h4 class="font-sans font-black text-lg mb-1 flex items-center gap-2">
+                                <h4 class="font-sans font-bold text-lg mb-1 flex items-center gap-2">
                                     <i data-lucide="wrench" class="w-4 h-4 text-accent"></i> Maintenance
                                 </h4>
-                                <p class="font-sans font-medium text-sm opacity-80 leading-relaxed">Anticipez les
-                                    pannes. Planifiez les interventions. Protégez votre matériel.</p>
+                                <p class="font-sans font-medium text-sm text-ink-soft leading-relaxed">Un parc
+                                    d'équipements, des tickets suivis dans une timeline, et l'historique de ce qui est
+                                    tombé en panne et quand.</p>
                             </div>
                         </div>
                     </div>
 
                     <!-- PILLAR 2 -->
-                    <div
-                        class="bg-black text-white p-8 border-[1px] border-black relative reveal delay-2 shadow-2xl">
+                    <div class="bg-foreground text-background p-8 border border-foreground rounded-[10px] relative reveal delay-2 shadow-mark">
                         <div
-                            class="absolute -top-3 -right-3 bg-accent text-white border-[1px] border-foreground px-3 py-1 text-xs font-bold uppercase tracking-widest">
+                            class="absolute -top-3 -right-3 bg-accent text-background border border-foreground px-3 py-1 text-xs font-bold uppercase tracking-widest rounded">
                             P-02</div>
 
-                        <h3 class="font-display font-black text-3xl mb-1 text-white">Qualité</h3>
-                        <p class="font-script text-accent text-2xl mb-8 -mt-2">L'exigence au quotidien</p>
+                        <h3 class="font-display font-bold text-3xl mb-1">Qualité</h3>
+                        <p class="font-script text-accent text-2xl mb-8 -mt-1">L'exigence au quotidien</p>
 
                         <div class="space-y-6 flex flex-col">
-                            <div class="border-b-[1px] border-white/20 pb-4">
-                                <h4 class="font-sans font-black text-lg mb-1 flex items-center gap-2">
+                            <div class="border-b border-background/20 pb-4">
+                                <h4 class="font-sans font-bold text-lg mb-1 flex items-center gap-2">
                                     <i data-lucide="clipboard-check" class="w-4 h-4 text-accent"></i> Audit HACCP
                                 </h4>
-                                <p class="font-sans font-medium text-sm opacity-60 leading-relaxed">Contrôles digitaux rigoureux. Sécurité alimentaire totale.</p>
+                                <p class="font-sans font-medium text-sm text-background/70 leading-relaxed">Des
+                                    grilles d'audit scorées par section, un rapport exportable en PDF, et les
+                                    non-conformités qui remontent au directeur.</p>
                             </div>
-                            <div class="border-b-[1px] border-white/20 pb-4">
-                                <h4 class="font-sans font-black text-lg mb-1 flex items-center gap-2">
-                                    <i data-lucide="search" class="w-4 h-4 text-accent"></i> E-Réputation
+                            <div class="border-b border-background/20 pb-4">
+                                <h4 class="font-sans font-bold text-lg mb-1 flex items-center gap-2">
+                                    <i data-lucide="user-search" class="w-4 h-4 text-accent"></i> Client mystère
                                 </h4>
-                                <p class="font-sans font-medium text-sm opacity-60 leading-relaxed">Anticipation des points de friction. Maîtrise de l'image.</p>
+                                <p class="font-sans font-medium text-sm text-background/70 leading-relaxed">Vos
+                                    propres visites mystère, sans agence. Questions pondérées et éliminatoires,
+                                    branchements conditionnels, preuve photo, note de satisfaction, et comparaison aux
+                                    visites précédentes.</p>
                             </div>
                             <div>
-                                <h4 class="font-sans font-black text-lg mb-1 flex items-center gap-2">
-                                    <i data-lucide="scale" class="w-4 h-4 text-accent"></i> Food Cost
+                                <h4 class="font-sans font-bold text-lg mb-1 flex items-center gap-2">
+                                    <i data-lucide="calculator" class="w-4 h-4 text-accent"></i> Recettes, food cost
+                                    &amp; production
                                 </h4>
-                                <p class="font-sans font-medium text-sm opacity-60 leading-relaxed">Recettage analytique. Optimisation des marges brutes.</p>
+                                <p class="font-sans font-medium text-sm text-background/70 leading-relaxed">Fiches
+                                    techniques, coûts d'achat réservés à la direction, et un calculateur qui part de vos
+                                    portions, de votre poids ou de votre chiffre d'affaires pour sortir la liste de
+                                    courses.</p>
                             </div>
                         </div>
                     </div>
 
                     <!-- PILLAR 3 -->
-                    <div
-                        class="bg-white text-foreground p-8 border-[1px] border-foreground relative reveal delay-3">
+                    <div class="bg-background text-foreground p-8 border border-foreground rounded-[10px] relative reveal delay-3">
                         <div
-                            class="absolute -top-3 -right-3 bg-black text-white border-[1px] border-foreground px-3 py-1 text-xs font-bold uppercase tracking-widest">
+                            class="absolute -top-3 -right-3 bg-foreground text-background border border-foreground px-3 py-1 text-xs font-bold uppercase tracking-widest rounded">
                             P-03</div>
 
-                        <h3 class="font-display font-black text-3xl mb-1">Équipe</h3>
-                        <p class="font-script text-accent text-2xl mb-8 -mt-2">Le collectif engagé</p>
+                        <h3 class="font-display font-bold text-3xl mb-1">Équipe</h3>
+                        <p class="font-script text-accent text-2xl mb-8 -mt-1">Le collectif engagé</p>
 
                         <div class="space-y-6 flex flex-col">
-                            <div class="border-b-[1px] border-foreground/10 pb-4">
-                                <h4 class="font-sans font-black text-lg mb-1 flex items-center gap-2">
+                            <div class="border-b border-foreground/10 pb-4">
+                                <h4 class="font-sans font-bold text-lg mb-1 flex items-center gap-2">
+                                    <i data-lucide="graduation-cap" class="w-4 h-4 text-accent"></i> Formations &amp;
+                                    certification
+                                </h4>
+                                <p class="font-sans font-medium text-sm text-ink-soft leading-relaxed">Des parcours
+                                    joués comme une story, un moteur de quiz, une validation par le manager, et un
+                                    certificat vérifiable depuis une page publique.</p>
+                            </div>
+                            <div class="border-b border-foreground/10 pb-4">
+                                <h4 class="font-sans font-bold text-lg mb-1 flex items-center gap-2">
                                     <i data-lucide="message-circle" class="w-4 h-4 text-accent"></i> Communication
                                 </h4>
-                                <p class="font-sans font-medium text-sm opacity-60 leading-relaxed">Centralisation des échanges. Fin du bruit numérique.</p>
-                            </div>
-                            <div class="border-b-[1px] border-foreground/10 pb-4">
-                                <h4 class="font-sans font-black text-lg mb-1 flex items-center gap-2">
-                                    <i data-lucide="graduation-cap" class="w-4 h-4 text-accent"></i> Formations
-                                </h4>
-                                <p class="font-sans font-medium text-sm opacity-60 leading-relaxed">Parcours d'onboarding digital. Montée en compétence rapide.</p>
+                                <p class="font-sans font-medium text-sm text-ink-soft leading-relaxed">Un fil d'actu
+                                    avec accusé de lecture, une messagerie interne et l'annuaire de l'équipe. Les
+                                    consignes cessent de vivre dans WhatsApp.</p>
                             </div>
                             <div>
-                                <h4 class="font-sans font-black text-lg mb-1 flex items-center gap-2">
-                                    <i data-lucide="users" class="w-4 h-4 text-accent"></i> Gestion RH
+                                <h4 class="font-sans font-bold text-lg mb-1 flex items-center gap-2">
+                                    <i data-lucide="network" class="w-4 h-4 text-accent"></i> Équipe &amp; multi-site
                                 </h4>
-                                <p class="font-sans font-medium text-sm opacity-60 leading-relaxed">Administration fluidifiée. Focus sur le terrain.</p>
+                                <p class="font-sans font-medium text-sm text-ink-soft leading-relaxed">Quatre rôles
+                                    du propriétaire à l'équipier, l'organigramme par établissement, la réplication d'un
+                                    site à l'autre et un tableau de bord consolidé sur tout le réseau.</p>
                             </div>
                         </div>
                     </div>
 
+                </div>
+
+                <!-- BANDEAU TRANSVERSAL -->
+                <div class="mt-16 border border-foreground rounded-[10px] bg-background overflow-hidden reveal">
+                    <div
+                        class="bg-accent text-background px-6 py-3 font-sans font-bold text-xs uppercase tracking-[0.25em]">
+                        Et ça traverse tous les modules
+                    </div>
+                    <div class="grid sm:grid-cols-2 lg:grid-cols-4 divide-y sm:divide-y-0 sm:divide-x divide-foreground/10">
+                        <div class="p-6">
+                            <i data-lucide="sparkles" class="w-5 h-5 text-accent mb-3"></i>
+                            <h4 class="font-sans font-bold text-base mb-1">Six briques d'IA</h4>
+                            <p class="font-sans text-sm text-ink-soft leading-relaxed">Une vidéo devient une procédure,
+                                une photo de fiche devient une recette, et les anomalies remontent au directeur.</p>
+                        </div>
+                        <div class="p-6">
+                            <i data-lucide="building-2" class="w-5 h-5 text-accent mb-3"></i>
+                            <h4 class="font-sans font-bold text-base mb-1">Multi-site natif</h4>
+                            <p class="font-sans text-sm text-ink-soft leading-relaxed">Un établissement ou quarante.
+                                Vous créez une fois et vous répliquez, vous lisez un seul tableau de bord réseau.</p>
+                        </div>
+                        <div class="p-6">
+                            <i data-lucide="smartphone" class="w-5 h-5 text-accent mb-3"></i>
+                            <h4 class="font-sans font-bold text-base mb-1">Installable, pensée mobile</h4>
+                            <p class="font-sans text-sm text-ink-soft leading-relaxed">L'équipe l'installe sur son
+                                téléphone comme une application. Rien à télécharger sur un store.</p>
+                        </div>
+                        <div class="p-6">
+                            <i data-lucide="bell" class="w-5 h-5 text-accent mb-3"></i>
+                            <h4 class="font-sans font-bold text-base mb-1">Notifications qui comptent</h4>
+                            <p class="font-sans text-sm text-ink-soft leading-relaxed">Relances de lecture, rappels de
+                                visite, récapitulatif de fin de service. Envoyées automatiquement.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- SECTION 5: CALCULATEUR ROI -->
-        <section id="roi-calculator" class="max-w-6xl mx-auto px-4 md:px-12 py-24">
+        <section id="roi-calculator" class="max-w-6xl mx-auto px-4 md:px-12 py-24 relative">
+
+            <svg class="sticker stk w-16 h-16 top-12 left-2 opacity-70 hidden lg:block" viewBox="0 0 100 100">
+                <use href="#d-clock" />
+            </svg>
+
             <div class="text-center mb-16 reveal">
-                <h2 class="font-script text-mustard text-4xl mb-2 transform -rotate-2">arrêtez de deviner</h2>
-                <h3 class="text-chunky text-5xl md:text-6xl text-foreground">calculez vos gains réels.</h3>
+                <h2 class="font-script text-accent text-4xl mb-2 transform -rotate-2">arrêtez de deviner</h2>
+                <h3 class="text-chunky text-5xl md:text-6xl">calculez sur vos chiffres.</h3>
             </div>
 
-            <div class="card-retro bg-white p-8 md:p-12 reveal delay-1 border-t-[1px] border-t-foreground grid md:grid-cols-2 gap-12 items-center">
+            <div class="card-retro p-8 md:p-12 reveal delay-1 grid md:grid-cols-2 gap-12 items-center">
                 <!-- Inputs Section -->
                 <div>
-                    <h4 class="font-sans font-black text-2xl mb-6 uppercase tracking-tighter">Paramètres establishment</h4>
-                    
+                    <h4 class="font-sans font-bold text-2xl mb-6 uppercase tracking-tighter">Votre exploitation</h4>
+
                     <div class="space-y-6">
                         <div>
-                            <label class="font-sans font-bold text-xs uppercase tracking-[0.2em] mb-2 flex justify-between text-black/40">
-                                <span>CA Mensuel</span>
-                                <span id="ca-val" class="text-black font-black text-lg">50 000 €</span>
+                            <label
+                                class="font-sans font-bold text-xs uppercase tracking-[0.2em] mb-2 flex justify-between text-ink-faint">
+                                <span>Établissements</span>
+                                <span id="sites-val" class="text-foreground font-bold text-lg">3</span>
                             </label>
-                            <input type="range" id="roi-ca" min="10000" max="250000" step="5000" value="50000" class="w-full h-1 bg-black/10 appearance-none cursor-pointer accent-black focus:outline-none">
+                            <input type="range" id="roi-sites" min="1" max="40" step="1" value="3"
+                                class="w-full h-1 bg-foreground/10 appearance-none cursor-pointer accent-accent focus:outline-none">
                         </div>
 
                         <div>
-                            <label class="font-sans font-bold text-xs uppercase tracking-[0.2em] mb-2 flex justify-between text-black/40">
-                                <span>Food Cost Initial</span>
-                                <span id="fc-val" class="text-black font-black text-lg">35%</span>
+                            <label
+                                class="font-sans font-bold text-xs uppercase tracking-[0.2em] mb-2 flex justify-between text-ink-faint">
+                                <span>Employés au total</span>
+                                <span id="emp-val" class="text-foreground font-bold text-lg">45</span>
                             </label>
-                            <input type="range" id="roi-fc" min="25" max="45" step="1" value="35" class="w-full h-1 bg-black/10 appearance-none cursor-pointer accent-black focus:outline-none">
+                            <input type="range" id="roi-emp" min="5" max="500" step="5" value="45"
+                                class="w-full h-1 bg-foreground/10 appearance-none cursor-pointer accent-accent focus:outline-none">
+                        </div>
+
+                        <div>
+                            <label
+                                class="font-sans font-bold text-xs uppercase tracking-[0.2em] mb-2 flex justify-between text-ink-faint">
+                                <span>CA mensuel par établissement</span>
+                                <span id="ca-val" class="text-foreground font-bold text-lg">50 000 €</span>
+                            </label>
+                            <input type="range" id="roi-ca" min="10000" max="250000" step="5000" value="50000"
+                                class="w-full h-1 bg-foreground/10 appearance-none cursor-pointer accent-accent focus:outline-none">
+                        </div>
+
+                        <div>
+                            <label
+                                class="font-sans font-bold text-xs uppercase tracking-[0.2em] mb-2 flex justify-between text-ink-faint">
+                                <span>Points de coût matière visés</span>
+                                <span id="fc-val" class="text-foreground font-bold text-lg">1,0 pt</span>
+                            </label>
+                            <input type="range" id="roi-fc" min="5" max="30" step="1" value="10"
+                                class="w-full h-1 bg-foreground/10 appearance-none cursor-pointer accent-accent focus:outline-none">
+                            <p class="font-sans text-xs text-ink-faint mt-2 leading-relaxed">C'est vous qui fixez
+                                l'hypothèse. Nous ne prétendons pas connaître votre carte à votre place.</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Results Section -->
-                <div class="bg-black text-white p-8 rounded-sm relative overflow-hidden border-[1px] border-black">
+                <div class="bg-foreground text-background p-8 rounded-[10px] relative overflow-hidden border border-foreground">
                     <div class="relative z-10 text-center space-y-8">
                         <div>
-                            <div class="font-sans font-bold text-[0.6rem] uppercase tracking-[0.3em] text-white/40 mb-1">Optimisation Matières / an</div>
-                            <div id="res-matiere" class="font-display font-black text-4xl text-accent">+ 24 000 €</div>
+                            <div
+                                class="font-sans font-bold text-[0.6rem] uppercase tracking-[0.3em] text-background/40 mb-1">
+                                Économie matière / an</div>
+                            <div id="res-matiere" class="font-display font-bold text-4xl text-accent">+ 18 000 €</div>
                         </div>
 
                         <div>
-                            <div class="font-sans font-bold text-[0.6rem] uppercase tracking-[0.3em] text-white/40 mb-1">Temps Managérial Sauvé</div>
-                            <div id="res-temps" class="font-display font-black text-4xl text-white">240 h / an</div>
+                            <div
+                                class="font-sans font-bold text-[0.6rem] uppercase tracking-[0.3em] text-background/40 mb-1">
+                                Temps de contrôle rendu</div>
+                            <div id="res-temps" class="font-display font-bold text-4xl">468 h / an</div>
                         </div>
 
-                        <div class="pt-6 border-t-[1px] border-white/20 mt-6 !mt-8">
-                            <div class="font-script text-accent text-3xl mb-1 transform rotate-[-1deg]">Gain Net Estimé</div>
-                            <div id="res-total" class="text-chunky text-5xl md:text-6xl text-white">+ 24 000 €</div>
+                        <div class="pt-6 border-t border-background/20 mt-6 !mt-8">
+                            <div class="font-script text-accent text-2xl mb-1">CA piloté dans l'app</div>
+                            <div id="res-total" class="text-chunky text-4xl md:text-5xl">1 800 000 €</div>
+                        </div>
+
+                        <div id="icp-verdict"
+                            class="text-left border-t border-background/20 pt-5 font-sans text-sm leading-relaxed">
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- TESTIMONIAL INSERT -->
-            <div class="mt-16 card-retro bg-white p-8 md:p-12 reveal border-t-[1px] border-t-foreground">
-                <div class="flex flex-col md:flex-row gap-8 items-center">
-                    <div class="w-32 h-32 shrink-0 rounded-full border-[1px] border-foreground overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1583394293235-ef80e5851886?fit=crop&w=300&h=300&q=80" alt="Restaurateur" class="w-full h-full object-cover grayscale">
-                    </div>
-                    <div class="flex-grow">
-                        <div class="text-accent mb-4 flex gap-1">
-                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-                        </div>
-                        <h4 class="font-display italic font-bold text-2xl md:text-3xl mb-4 leading-tight">
-                            "Une clarté opérationnelle que je n'avais jamais connue en 15 ans de métier. L'outil s'est imposé naturellement auprès de mes équipes dès le premier service."
-                        </h4>
-                        <div class="font-sans font-bold text-xs uppercase tracking-[0.2em] text-black/40">
-                            Julien B. — Gérant de Brasserie (Lyon)
-                        </div>
-                    </div>
-                </div>
+            <!-- CE QUE LE CALCUL SUPPOSE -->
+            <div class="mt-10 card-retro p-8 md:p-10 reveal">
+                <h4 class="font-sans font-bold text-sm uppercase tracking-[0.2em] mb-4 flex items-center gap-2">
+                    <i data-lucide="info" class="w-4 h-4 text-accent"></i> Ce que ce calcul suppose
+                </h4>
+                <ul class="font-sans text-sm text-ink-soft space-y-2 leading-relaxed">
+                    <li>L'économie matière applique le nombre de points que <strong>vous</strong> avez choisi au
+                        chiffre d'affaires annuel de vos établissements. Nous ne promettons pas ce gain, nous le
+                        calculons.</li>
+                    <li>Le temps de contrôle part de 30 minutes par jour et par établissement, six jours sur sept,
+                        cinquante-deux semaines par an.</li>
+                    <li>Ces chiffres sont un ordre de grandeur pour cadrer une discussion, pas un engagement
+                        contractuel.</li>
+                </ul>
             </div>
         </section>
 
-        <!-- FOUNDER'S LETTER -->
+        <!-- LETTRE DE L'ÉQUIPE -->
         <section class="max-w-4xl mx-auto px-4 md:px-12 pb-24 text-center reveal">
             <div class="inline-block relative">
                 <div class="absolute -top-6 -left-6 text-accent opacity-20 transform -rotate-12">
@@ -576,260 +693,313 @@
                             d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
                     </svg>
                 </div>
-                <p class="font-sans font-medium text-xl leading-relaxed opacity-80 mb-8 z-10 relative">
-                    "Après 10 ans sur le terrain, à voir les mêmes patrons s'épuiser sur les mêmes problèmes
+                <p class="font-sans font-medium text-xl leading-relaxed text-ink-soft mb-8 z-10 relative">
+                    « Après dix ans sur le terrain, à voir les mêmes patrons s'épuiser sur les mêmes problèmes
                     administratifs et logistiques qui rongent les marges, on a décidé de coder la solution qui nous
-                    manquait au quotidien."
+                    manquait au quotidien. »
                 </p>
-                <div class="font-script text-3xl transform rotate-[-2deg] mb-2">L'équipe Meal OS</div>
-                <div class="font-sans font-bold text-sm uppercase tracking-widest text-olive">Pour les restaurateurs,
+                <div class="font-script text-3xl mb-2">L'équipe Staff Meal</div>
+                <div class="font-sans font-bold text-sm uppercase tracking-widest text-leaf">Pour les restaurateurs,
                     par des restaurateurs.</div>
             </div>
         </section>
 
-        <!-- SECTION 6: HOW IT WORKS (Timeline styling) -->
-        <section id="procede" class="py-24 px-4 md:px-12 max-w-5xl mx-auto border-t-[1px] border-foreground">
+        <!-- SECTION 6: PROTOCOLE D'ADHÉSION -->
+        <section id="procede" class="py-24 px-4 md:px-12 max-w-5xl mx-auto border-t border-foreground">
             <div class="text-center mb-16 reveal">
                 <h2 class="font-script text-accent text-4xl mb-2 transform rotate-1">disponibilité restreinte.</h2>
                 <h3 class="text-chunky text-5xl md:text-6xl uppercase tracking-tighter">le protocole d'adhésion.</h3>
             </div>
 
             <div
-                class="space-y-8 relative before:absolute before:inset-0 before:ml-10 md:before:ml-[50%] before:-translate-x-px md:before:translate-x-0 before:h-full before:w-[1px] before:bg-foreground/20 before:rounded-full">
+                class="space-y-8 relative before:absolute before:inset-0 before:ml-10 md:before:ml-[50%] before:-translate-x-px md:before:translate-x-0 before:h-full before:w-px before:bg-foreground/20 before:rounded-full">
 
                 <!-- Step 1 -->
-                <div
-                    class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group reveal">
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group reveal">
                     <div
-                        class="flex items-center justify-center w-16 h-16 rounded-full border-[1px] border-foreground bg-white shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
-                        <span class="font-display font-black text-2xl">01</span>
+                        class="flex items-center justify-center w-16 h-16 rounded-full border border-foreground bg-paper shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
+                        <span class="font-display font-bold text-2xl">01</span>
                     </div>
-                    <div
-                        class="w-[calc(100%-6rem)] md:w-[calc(50%-4rem)] p-8 border-[1px] border-foreground bg-white">
-                        <h3 class="font-sans font-black text-lg mb-2 uppercase tracking-widest">Sélection</h3>
-                        <p class="font-sans font-medium text-sm opacity-60">Audit préliminaire de vos besoins opérationnels pour garantir une adéquation parfaite avec l'écosystème Meal OS.</p>
+                    <div class="w-[calc(100%-6rem)] md:w-[calc(50%-4rem)] p-8 border border-foreground rounded-[10px] bg-paper">
+                        <h3 class="font-sans font-bold text-lg mb-2 uppercase tracking-widest">Sélection</h3>
+                        <p class="font-sans font-medium text-sm text-ink-soft">Audit préliminaire de vos besoins
+                            opérationnels, pour vérifier que Staff Meal est vraiment fait pour votre exploitation. Si ce
+                            n'est pas le cas, on vous le dit.</p>
                     </div>
                 </div>
 
                 <!-- Step 2 -->
-                <div
-                    class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group reveal delay-1">
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group reveal delay-1">
                     <div
-                        class="flex items-center justify-center w-16 h-16 rounded-full border-[1px] border-foreground bg-black text-white shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
-                        <span class="font-display font-black text-2xl">02</span>
+                        class="flex items-center justify-center w-16 h-16 rounded-full border border-foreground bg-foreground text-background shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
+                        <span class="font-display font-bold text-2xl">02</span>
                     </div>
                     <div
-                        class="w-[calc(100%-6rem)] md:w-[calc(50%-4rem)] p-8 border-[1px] border-foreground bg-black text-white relative">
+                        class="w-[calc(100%-6rem)] md:w-[calc(50%-4rem)] p-8 border border-foreground rounded-[10px] bg-foreground text-background relative">
                         <div
-                            class="absolute -top-3 -right-3 bg-accent text-white font-bold text-[0.6rem] px-2 py-1 border-[1px] border-foreground uppercase tracking-widest">
+                            class="absolute -top-3 -right-3 bg-accent text-background font-bold text-[0.6rem] px-2 py-1 border border-foreground uppercase tracking-widest rounded">
                             Terrain</div>
-                        <h3 class="font-sans font-black text-lg mb-2 uppercase tracking-widest">Immersion</h3>
-                        <p class="font-sans font-medium text-sm opacity-60">Installation physique et formation de vos équipes sur site par un consultant expert. Pas de théorie, que du concret.</p>
+                        <h3 class="font-sans font-bold text-lg mb-2 uppercase tracking-widest">Immersion</h3>
+                        <p class="font-sans font-medium text-sm text-background/70">Paramétrage de votre compte,
+                            import de vos données, et formation de vos équipes sur place pendant un service complet.</p>
                     </div>
                 </div>
 
                 <!-- Step 3 -->
-                <div
-                    class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group reveal delay-2">
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group reveal delay-2">
                     <div
-                        class="flex items-center justify-center w-16 h-16 rounded-full border-[1px] border-foreground bg-white shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
-                        <span class="font-display font-black text-2xl">03</span>
+                        class="flex items-center justify-center w-16 h-16 rounded-full border border-foreground bg-paper shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
+                        <span class="font-display font-bold text-2xl">03</span>
                     </div>
-                    <div
-                        class="w-[calc(100%-6rem)] md:w-[calc(50%-4rem)] p-8 border-[1px] border-foreground bg-white">
-                        <h3 class="font-sans font-black text-lg mb-2 uppercase tracking-widest">Évolution</h3>
-                        <p class="font-sans font-medium text-sm opacity-60">Participation active à la roadmap du produit. Votre réalité terrain forge l'outil de demain.</p>
+                    <div class="w-[calc(100%-6rem)] md:w-[calc(50%-4rem)] p-8 border border-foreground rounded-[10px] bg-paper">
+                        <h3 class="font-sans font-bold text-lg mb-2 uppercase tracking-widest">Évolution</h3>
+                        <p class="font-sans font-medium text-sm text-ink-soft">Participation active à la feuille de
+                            route. Votre réalité terrain décide de ce qui se construit ensuite.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- SECTION 7: INTEGRATIONS -->
-        <section class="py-24 bg-white overflow-hidden border-t-[1px] border-foreground">
-            <div class="max-w-4xl mx-auto px-4 md:px-12 text-center mb-12 reveal">
+        <!-- SECTION 7: INTÉGRATIONS -->
+        <section class="py-24 bg-paper overflow-hidden border-t border-foreground">
+            <div class="max-w-5xl mx-auto px-4 md:px-12 text-center mb-12 reveal">
                 <div
-                    class="inline-flex items-center gap-2 border-[1px] border-foreground px-3 py-1 mb-6 text-[0.6rem] font-bold uppercase tracking-widest">
+                    class="inline-flex items-center gap-2 border border-foreground rounded-full px-4 py-1 mb-6 text-[0.6rem] font-bold uppercase tracking-widest">
                     <i data-lucide="plug" class="w-3 h-3 text-accent"></i>
-                    Connectivité Totale
+                    Registre de connecteurs
                 </div>
                 <h2 class="text-chunky text-4xl md:text-5xl mb-4 uppercase tracking-tighter">écosystème ouvert.</h2>
-                <p class="font-sans font-medium text-lg opacity-60 max-w-md mx-auto">Intégration native avec vos solutions de POS et de gestion RH actuelles.</p>
+                <p class="font-sans font-medium text-lg text-ink-soft max-w-lg mx-auto">Staff Meal ne remplace pas vos
+                    outils, il s'y branche. Chaque connecteur est une entrée dans un registre, pas un chantier.</p>
             </div>
 
-            <!-- Ticker Integrations -->
-            <div class="relative w-full py-6 bg-black text-white border-y-[1px] border-foreground overflow-hidden">
-                <div class="flex whitespace-nowrap">
-                    <div class="flex items-center animate-[marquee_30s_linear_infinite]">
-                        <!-- Logos/Text -->
-                        <span class="font-display font-black text-3xl mx-8 text-foreground opacity-80">ZELTY</span>
-                        <span class="text-mustard text-2xl">✦</span>
-                        <span class="font-display font-black text-3xl mx-8 text-foreground opacity-80">L'ADDITION</span>
-                        <span class="text-mustard text-2xl">✦</span>
-                        <span class="font-display font-black text-3xl mx-8 text-foreground opacity-80">LIGHTSPEED</span>
-                        <span class="text-mustard text-2xl">✦</span>
-                        <span class="font-display font-black text-3xl mx-8 text-foreground opacity-80">UBER EATS</span>
-                        <span class="text-mustard text-2xl">✦</span>
-                        <span class="font-display font-black text-3xl mx-8 text-foreground opacity-80">DELIVEROO</span>
-                        <span class="text-mustard text-2xl">✦</span>
-                        <span class="font-display font-black text-3xl mx-8 text-foreground opacity-80">SKELLO</span>
-                        <span class="text-mustard text-2xl">✦</span>
-                        <!-- Repeat -->
-                        <span class="font-display font-black text-3xl mx-8 text-foreground opacity-80">ZELTY</span>
-                        <span class="text-mustard text-2xl">✦</span>
-                        <span class="font-display font-black text-3xl mx-8 text-foreground opacity-80">L'ADDITION</span>
-                        <span class="text-mustard text-2xl">✦</span>
-                        <span class="font-display font-black text-3xl mx-8 text-foreground opacity-80">LIGHTSPEED</span>
-                        <span class="text-mustard text-2xl">✦</span>
-                        <span class="font-display font-black text-3xl mx-8 text-foreground opacity-80">UBER EATS</span>
-                        <span class="text-mustard text-2xl">✦</span>
-                        <span class="font-display font-black text-3xl mx-8 text-foreground opacity-80">DELIVEROO</span>
-                        <span class="text-mustard text-2xl">✦</span>
-                        <span class="font-display font-black text-3xl mx-8 text-foreground opacity-80">SKELLO</span>
-                        <span class="text-mustard text-2xl">✦</span>
+            <!-- Connecteur en service -->
+            <div class="max-w-5xl mx-auto px-4 md:px-12">
+                <div class="card-retro !bg-background p-8 md:p-10 reveal delay-1">
+                    <div class="flex flex-col md:flex-row gap-8 items-start">
+                        <div class="shrink-0">
+                            <div
+                                class="inline-flex items-center gap-2 bg-leaf text-background px-3 py-1 rounded-full text-[0.6rem] font-bold uppercase tracking-widest mb-3">
+                                <i data-lucide="check" class="w-3 h-3"></i> En service
+                            </div>
+                            <div class="font-display font-bold text-4xl tracking-tight">Skello</div>
+                            <div class="font-sans text-xs uppercase tracking-widest text-ink-faint mt-1">Planning</div>
+                        </div>
+                        <div class="flex-grow">
+                            <p class="font-sans font-medium text-base leading-relaxed mb-4">Votre planning Skello se
+                                synchronise dans Staff Meal. Les checklists se filtrent alors par poste et par horaire :
+                                un équipier en salle ne voit pas la fermeture cuisine, et celui qui ferme voit sa
+                                fermeture.</p>
+                            <ul class="font-sans text-sm text-ink-soft space-y-2">
+                                <li class="flex gap-2"><i data-lucide="check" class="w-4 h-4 text-leaf shrink-0 mt-0.5"></i>
+                                    Créneaux importés automatiquement, plusieurs fois par jour</li>
+                                <li class="flex gap-2"><i data-lucide="check" class="w-4 h-4 text-leaf shrink-0 mt-0.5"></i>
+                                    Table de correspondance des postes, validée par vous et pas devinée</li>
+                                <li class="flex gap-2"><i data-lucide="check" class="w-4 h-4 text-leaf shrink-0 mt-0.5"></i>
+                                    Sans planning saisi, aucune tâche n'est masquée. Un planning incomplet ne fera
+                                    jamais disparaître une fermeture HACCP.</li>
+                            </ul>
+                            <a href="staffmeal-vs-skello.html"
+                                class="inline-flex items-center gap-2 font-sans font-bold text-sm text-accent mt-5 border-b border-transparent hover:border-accent pb-0.5">
+                                Skello et Staff Meal, qui fait quoi <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Connecteurs à venir -->
+                <div class="mt-8 reveal delay-2">
+                    <p class="font-sans font-bold text-xs uppercase tracking-[0.25em] text-ink-faint mb-4 text-center">
+                        Connecteurs à l'étude, pas encore disponibles</p>
+                    <div class="flex flex-wrap justify-center gap-3">
+                        <span class="border border-foreground/20 rounded-full px-4 py-1.5 font-sans font-medium text-sm text-ink-faint">Zelty</span>
+                        <span class="border border-foreground/20 rounded-full px-4 py-1.5 font-sans font-medium text-sm text-ink-faint">L'Addition</span>
+                        <span class="border border-foreground/20 rounded-full px-4 py-1.5 font-sans font-medium text-sm text-ink-faint">Lightspeed</span>
+                        <span class="border border-foreground/20 rounded-full px-4 py-1.5 font-sans font-medium text-sm text-ink-faint">Uber Eats</span>
+                        <span class="border border-foreground/20 rounded-full px-4 py-1.5 font-sans font-medium text-sm text-ink-faint">Deliveroo</span>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- SECTION 8: FAQ -->
-        <section id="faq" class="py-24 px-4 md:px-12 max-w-4xl mx-auto border-t-[1px] border-foreground">
-            <h2 class="text-chunky text-5xl md:text-6xl text-center mb-16 reveal uppercase tracking-tighter">questions d'usage.</h2>
+        <section id="faq" class="py-24 px-4 md:px-12 max-w-4xl mx-auto border-t border-foreground relative">
+
+            <svg class="sticker stk w-14 h-14 top-16 right-0 opacity-70 hidden lg:block" viewBox="0 0 100 100">
+                <use href="#d-spark" />
+            </svg>
+
+            <h2 class="text-chunky text-5xl md:text-6xl text-center mb-16 reveal uppercase tracking-tighter">questions
+                d'usage.</h2>
 
             <div class="space-y-4">
-                <!-- FAQ Item -->
-                <div class="faq-item card-retro p-6 cursor-pointer reveal border-[1px] border-foreground rounded-none">
+                <div class="faq-item card-retro p-6 cursor-pointer reveal">
                     <div class="flex justify-between items-center group">
-                        <h3 class="font-sans font-bold text-base pr-8 uppercase tracking-widest">Mise en place opérationnelle</h3>
-                        <div class="faq-icon w-6 h-6 flex items-center justify-center border-[1px] border-foreground"><i
-                                data-lucide="plus" class="w-4 h-4"></i></div>
+                        <h3 class="font-sans font-bold text-lg pr-8">Combien de temps pour être opérationnel ?</h3>
+                        <div class="faq-icon w-8 h-8 flex items-center justify-center"><i data-lucide="plus"
+                                class="w-5 h-5"></i></div>
                     </div>
                     <div class="faq-answer">
-                        <p
-                            class="font-sans font-medium text-foreground/80 pt-4 border-t-2 border-foreground/10 mt-4 leading-relaxed">
-                            L'intégration se fait en quelques jours. Notre consultant paramètre votre compte, importe
-                            vos données et vient former votre équipe sur place pendant un service complet. L'impact sur
-                            vos opérations est minimal.
+                        <p class="font-sans font-medium text-ink-soft pt-4 border-t border-foreground/10 mt-4 leading-relaxed">
+                            Quelques jours. On paramètre votre compte, on importe vos données, et on vient former votre
+                            équipe sur place pendant un service complet. L'impact sur vos opérations est minimal.
                         </p>
                     </div>
                 </div>
 
-                <!-- FAQ Item -->
                 <div class="faq-item card-retro p-6 cursor-pointer reveal delay-1">
                     <div class="flex justify-between items-center group">
-                        <h3 class="font-sans font-black text-lg pr-8">Est-ce compatible avec mon système de caisse ?
-                        </h3>
-                        <div class="faq-icon w-8 h-8 flex items-center justify-center font-bold text-xl"><i
-                                data-lucide="plus" class="w-5 h-5"></i></div>
+                        <h3 class="font-sans font-bold text-lg pr-8">Ça se connecte à mes outils existants ?</h3>
+                        <div class="faq-icon w-8 h-8 flex items-center justify-center"><i data-lucide="plus"
+                                class="w-5 h-5"></i></div>
                     </div>
                     <div class="faq-answer">
-                        <p
-                            class="font-sans font-medium text-foreground/80 pt-4 border-t-2 border-foreground/10 mt-4 leading-relaxed">
-                            Meal OS se connecte à la majorité des POS modernes. Lors de la démo, nous validerons
-                            ensemble la compatibilité avec votre matériel actuel.
+                        <p class="font-sans font-medium text-ink-soft pt-4 border-t border-foreground/10 mt-4 leading-relaxed">
+                            Le connecteur en service aujourd'hui est Skello, pour le planning. Les caisses et les
+                            plateformes de livraison sont à l'étude et ne sont pas encore disponibles. On préfère vous
+                            le dire avant plutôt qu'après.
                         </p>
                     </div>
                 </div>
 
-                <!-- FAQ Item 3 -->
                 <div class="faq-item card-retro p-6 cursor-pointer reveal delay-2">
                     <div class="flex justify-between items-center group">
-                        <h3 class="font-sans font-black text-lg pr-8">Et si mon équipe n'est pas "tech" ?</h3>
-                        <div class="faq-icon w-8 h-8 flex items-center justify-center font-bold text-xl"><i
-                                data-lucide="plus" class="w-5 h-5"></i></div>
+                        <h3 class="font-sans font-bold text-lg pr-8">Et si mon équipe n'est pas « tech » ?</h3>
+                        <div class="faq-icon w-8 h-8 flex items-center justify-center"><i data-lucide="plus"
+                                class="w-5 h-5"></i></div>
                     </div>
                     <div class="faq-answer">
-                        <p
-                            class="font-sans font-medium text-foreground/80 pt-4 border-t-2 border-foreground/10 mt-4 leading-relaxed">
-                            C'est pourquoi un consultant vient sur place. L'application est designée pour être aussi
-                            simple qu'Instagram. Si vous savez envoyer un SMS, vous savez utiliser Meal OS.
+                        <p class="font-sans font-medium text-ink-soft pt-4 border-t border-foreground/10 mt-4 leading-relaxed">
+                            C'est pour ça qu'on vient sur place. L'équipier ouvre l'app, voit sa liste du jour, coche et
+                            prend une photo. Si vous savez envoyer un message, vous savez utiliser Staff Meal.
                         </p>
                     </div>
                 </div>
 
-                <!-- FAQ Item 4 (Objection Buster) -->
                 <div class="faq-item card-retro p-6 cursor-pointer reveal delay-3">
                     <div class="flex justify-between items-center group">
-                        <h3 class="font-sans font-black text-lg pr-8 text-accent">Le programme Bêta m'engage-t-il
-                            financièrement ?</h3>
-                        <div class="faq-icon w-8 h-8 flex items-center justify-center font-bold text-xl"><i
-                                data-lucide="plus" class="w-5 h-5"></i></div>
+                        <h3 class="font-sans font-bold text-lg pr-8 text-accent">J'ai moins de 15 employés, c'est pour
+                            moi ?</h3>
+                        <div class="faq-icon w-8 h-8 flex items-center justify-center"><i data-lucide="plus"
+                                class="w-5 h-5"></i></div>
                     </div>
                     <div class="faq-answer">
-                        <p
-                            class="font-sans font-medium text-foreground/80 pt-4 border-t-2 border-foreground/10 mt-4 leading-relaxed">
-                            Absolument pas. L'objectif de la Bêta est de co-construire l'outil ultime. Il n'y a aucun
-                            engagement de durée. Vous êtes libre de vous retirer à tout moment, sans frais.
+                        <p class="font-sans font-medium text-ink-soft pt-4 border-t border-foreground/10 mt-4 leading-relaxed">
+                            Non, et on préfère être clairs. En dessous d'une quinzaine d'employés, vous voyez encore
+                            tout le monde tous les jours et un outil comme celui-ci vous coûtera plus de temps qu'il ne
+                            vous en rendra. Staff Meal prend son sens quand vous ne pouvez plus être partout.
                         </p>
                     </div>
                 </div>
 
-                <!-- FAQ Item 5 (Objection Buster) -->
                 <div class="faq-item card-retro p-6 cursor-pointer reveal delay-4">
                     <div class="flex justify-between items-center group">
-                        <h3 class="font-sans font-black text-lg pr-8">Que se passe-t-il si mon équipe n'arrive pas à
-                            l'utiliser ?</h3>
-                        <div class="faq-icon w-8 h-8 flex items-center justify-center font-bold text-xl"><i
-                                data-lucide="plus" class="w-5 h-5"></i></div>
+                        <h3 class="font-sans font-bold text-lg pr-8">La bêta m'engage-t-elle financièrement ?</h3>
+                        <div class="faq-icon w-8 h-8 flex items-center justify-center"><i data-lucide="plus"
+                                class="w-5 h-5"></i></div>
                     </div>
                     <div class="faq-answer">
-                        <p
-                            class="font-sans font-medium text-foreground/80 pt-4 border-t-2 border-foreground/10 mt-4 leading-relaxed">
-                            Notre garantie est simple : si après 30 jours, votre équipe n'a pas adopté Meal OS lors de
-                            l'intégration sur place, nous vous remboursons intégralement votre premier mois.
+                        <p class="font-sans font-medium text-ink-soft pt-4 border-t border-foreground/10 mt-4 leading-relaxed">
+                            Non. L'objectif de la bêta est de construire l'outil avec vous. Aucun engagement de durée,
+                            vous pouvez vous retirer à tout moment, sans frais.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item card-retro p-6 cursor-pointer reveal delay-4">
+                    <div class="flex justify-between items-center group">
+                        <h3 class="font-sans font-bold text-lg pr-8">Et si mon équipe ne l'adopte pas ?</h3>
+                        <div class="faq-icon w-8 h-8 flex items-center justify-center"><i data-lucide="plus"
+                                class="w-5 h-5"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p class="font-sans font-medium text-ink-soft pt-4 border-t border-foreground/10 mt-4 leading-relaxed">
+                            Si après trente jours votre équipe n'a pas adopté l'outil malgré l'accompagnement sur
+                            place, on vous rembourse intégralement votre premier mois.
                         </p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- SECTION 8: CONTACT FORM / CLOSING (Ticket Style) -->
+        <!-- SECTION 9: CANDIDATURE -->
         <section id="demo" class="py-24 px-4 md:px-12 bg-foreground">
-            <div class="max-w-5xl mx-auto card-retro bg-white md:p-0 flex flex-col md:flex-row overflow-hidden reveal">
+            <div class="max-w-5xl mx-auto card-retro md:p-0 flex flex-col md:flex-row overflow-hidden reveal">
 
                 <!-- Left Ticket Side -->
                 <div
                     class="md:w-5/12 bg-accent text-background p-10 md:p-12 relative border-b md:border-b-0 md:border-r border-foreground border-dashed flex flex-col justify-center">
-                    <div class="absolute inset-0 bg-black opacity-5"
-                        style="background-image: radial-gradient(circle, #000 2px, transparent 2px); background-size: 10px 10px;">
+                    <div class="absolute inset-0 opacity-10"
+                        style="background-image: radial-gradient(circle, #181410 2px, transparent 2px); background-size: 10px 10px;">
                     </div>
 
                     <div class="relative z-10">
-                        <p class="font-script text-white text-3xl mb-2 transform -rotate-3">Club Fermé</p>
+                        <div class="flex items-center gap-3 mb-6">
+                            <img src="assets/brand/mascot.png" alt="" width="44" height="44"
+                                class="brand-mark ring w-11 h-11">
+                            <p class="font-script text-3xl">Club fermé</p>
+                        </div>
                         <h2 class="text-chunky text-5xl mb-6">Faites partie<br>des 50 pionniers.</h2>
                         <p class="font-sans font-medium opacity-90 mb-8">
-                            Rejoignez le programme de bêta-testeurs Meal OS. 50 places disponibles, intégration VIP sur
-                            place, et votre pass pour notre future Keynote.
+                            Cinquante établissements accompagnés sur place, qui décident de ce qui se construit
+                            ensuite.
                         </p>
 
-                        <div class="bg-white/10 p-4 rounded-xl border-2 border-white/20">
-                            <i data-lucide="phone" class="w-6 h-6 mb-2"></i>
-                            <div class="font-sans text-xs uppercase tracking-wider opacity-80">Appelez-nous au</div>
-                            <div class="font-display font-bold text-2xl">01 23 45 67 89</div>
-                        </div>
+                        <ul class="font-sans text-sm space-y-3">
+                            <li class="flex gap-3"><span class="font-bold">1.</span> On vous rappelle pour comprendre
+                                votre exploitation.</li>
+                            <li class="flex gap-3"><span class="font-bold">2.</span> On vous dit franchement si c'est
+                                pour vous.</li>
+                            <li class="flex gap-3"><span class="font-bold">3.</span> Si oui, on vient paramétrer et
+                                former sur place.</li>
+                        </ul>
                     </div>
                 </div>
 
                 <!-- Right Form Side -->
-                <div class="md:w-7/12 p-10 md:p-16 bg-background flex items-center justify-center">
-                    <form class="space-y-6 w-full max-w-sm">
+                <div class="md:w-7/12 p-10 md:p-16 bg-paper flex items-center justify-center">
+                    <form name="candidature-beta" method="POST" data-netlify="true" netlify-honeypot="bot-field"
+                        action="/merci.html" class="space-y-5 w-full max-w-sm">
+                        <input type="hidden" name="form-name" value="candidature-beta">
+                        <p class="hidden">
+                            <label>Ne pas remplir si vous êtes humain : <input name="bot-field"></label>
+                        </p>
+
                         <div>
-                            <label class="font-sans font-bold text-sm uppercase tracking-wider mb-2 block ml-2">Nom de
+                            <label for="etablissement"
+                                class="font-sans font-bold text-sm uppercase tracking-wider mb-2 block ml-1">Nom de
                                 l'établissement</label>
-                            <input type="text" class="input-retro" placeholder="ex: Le Petit Bistro">
+                            <input id="etablissement" name="etablissement" type="text" required class="input-retro"
+                                placeholder="ex : Le Petit Bistro">
+                        </div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <label for="sites"
+                                    class="font-sans font-bold text-sm uppercase tracking-wider mb-2 block ml-1">Sites</label>
+                                <input id="sites" name="nb_sites" type="number" min="1" required class="input-retro"
+                                    placeholder="3">
+                            </div>
+                            <div>
+                                <label for="employes"
+                                    class="font-sans font-bold text-sm uppercase tracking-wider mb-2 block ml-1">Employés</label>
+                                <input id="employes" name="nb_employes" type="number" min="1" required
+                                    class="input-retro" placeholder="45">
+                            </div>
                         </div>
                         <div>
-                            <label
-                                class="font-sans font-bold text-sm uppercase tracking-wider mb-2 block ml-2">Téléphone</label>
-                            <input type="text" class="input-retro" placeholder="06 00 00 00 00">
+                            <label for="telephone"
+                                class="font-sans font-bold text-sm uppercase tracking-wider mb-2 block ml-1">Téléphone</label>
+                            <input id="telephone" name="telephone" type="tel" required class="input-retro"
+                                placeholder="06 00 00 00 00">
                         </div>
                         <div>
-                            <label
-                                class="font-sans font-bold text-sm uppercase tracking-wider mb-2 block ml-2">Email</label>
-                            <input type="email" class="input-retro" placeholder="chef@restaurant.com">
+                            <label for="email"
+                                class="font-sans font-bold text-sm uppercase tracking-wider mb-2 block ml-1">Email</label>
+                            <input id="email" name="email" type="email" required class="input-retro"
+                                placeholder="chef@restaurant.com">
                         </div>
-                        <div class="pt-4">
-                            <button type="submit"
-                                class="btn-retro w-full hover:bg-foreground hover:text-white transition-colors">
+                        <div class="pt-3">
+                            <button type="submit" class="btn-retro w-full">
                                 Postuler au programme (2 min)
                             </button>
                         </div>
@@ -841,43 +1011,47 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="border-t border-foreground py-12 px-4 md:px-12 bg-white">
-        <div
-            class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8 text-center md:text-left">
+    <footer class="border-t border-foreground py-12 px-4 md:px-12 bg-background">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8 text-center md:text-left">
 
-            <!-- Logo matching Header -->
-            <a href="#" class="relative inline-flex flex-col items-center hover:opacity-80 transition-opacity">
-                <!-- "the" at top right -->
-                <span
-                    class="absolute -top-1 -right-2 font-sans font-bold text-[0.6rem] lowercase tracking-wide opacity-70">the</span>
-                <!-- main word -->
-                <span
-                    class="logo-handwritten text-[4.5rem] md:text-[5.5rem] leading-none transform -rotate-3 pl-2 pr-4 pb-1">meal
-                    os</span>
-                <!-- subtext -->
-                <div
-                    class="flex gap-4 font-sans text-[0.45rem] uppercase font-bold tracking-[0.2em] opacity-80 mt-1 ml-2">
-                    <span>👋 l'outil ultime</span>
-                </div>
+            <a href="index.html" class="flex items-center gap-3 hover:opacity-80 transition-opacity">
+                <img src="assets/brand/mascot.png" alt="" width="56" height="56" class="brand-mark w-14 h-14">
+                <span class="flex flex-col leading-none text-left">
+                    <span class="wordmark text-2xl">Staff Meal</span>
+                    <span class="font-sans text-[0.5rem] uppercase font-bold tracking-[0.2em] text-ink-soft mt-1">le
+                        même service, à chaque service</span>
+                </span>
             </a>
 
-            <div class="flex flex-col md:flex-row gap-8 md:gap-16 font-sans font-bold text-sm items-center md:items-start text-center md:text-left">
+            <div
+                class="flex flex-col md:flex-row gap-8 md:gap-16 font-sans font-bold text-sm items-center md:items-start text-center md:text-left">
                 <div class="flex flex-col items-center md:items-start gap-3">
                     <span class="text-accent uppercase tracking-widest text-xs">Comparatifs</span>
-                    <a href="meal-os-vs-skello.html" class="hover:text-accent border-b-2 border-transparent hover:border-accent pb-1 inline-block w-max">Meal OS vs Skello</a>
-                    <a href="meal-os-vs-koust.html" class="hover:text-accent border-b-2 border-transparent hover:border-accent pb-1 inline-block w-max">Meal OS vs Koust</a>
-                    <a href="meal-os-vs-combo.html" class="hover:text-accent border-b-2 border-transparent hover:border-accent pb-1 inline-block w-max">Meal OS vs Combo</a>
+                    <a href="staffmeal-vs-skello.html"
+                        class="hover:text-accent border-b border-transparent hover:border-accent pb-1 inline-block w-max">Staff
+                        Meal et Skello</a>
+                    <a href="staffmeal-vs-koust.html"
+                        class="hover:text-accent border-b border-transparent hover:border-accent pb-1 inline-block w-max">Staff
+                        Meal vs Koust</a>
+                    <a href="staffmeal-vs-combo.html"
+                        class="hover:text-accent border-b border-transparent hover:border-accent pb-1 inline-block w-max">Staff
+                        Meal vs Combo</a>
                 </div>
                 <div class="flex flex-col items-center md:items-start gap-3">
-                    <span class="text-foreground uppercase tracking-widest text-xs">Légal & Contact</span>
-                    <a href="#" class="hover:text-accent border-b-2 border-transparent hover:border-accent pb-1 inline-block w-max">info@mealos.com</a>
-                    <a href="#" class="hover:text-accent border-b-2 border-transparent hover:border-accent pb-1 inline-block w-max">Instagram</a>
-                    <a href="#" class="hover:text-accent border-b-2 border-transparent hover:border-accent pb-1 inline-block w-max">Mentions Légales</a>
+                    <span class="uppercase tracking-widest text-xs">Ressources</span>
+                    <a href="resources.html"
+                        class="hover:text-accent border-b border-transparent hover:border-accent pb-1 inline-block w-max">Outils
+                        gratuits</a>
+                    <a href="evenements.html"
+                        class="hover:text-accent border-b border-transparent hover:border-accent pb-1 inline-block w-max">Événements</a>
+                    <a href="#demo"
+                        class="hover:text-accent border-b border-transparent hover:border-accent pb-1 inline-block w-max">Nous
+                        contacter</a>
                 </div>
             </div>
 
-            <div class="font-sans text-sm font-medium opacity-60">
-                &copy; 2026 Meal OS. Designed for Chefs.
+            <div class="font-sans text-sm font-medium text-ink-faint">
+                &copy; 2026 Staff Meal.
             </div>
 
         </div>
@@ -886,9 +1060,6 @@
     <!-- SCRIPTS -->
 
     <script>
-        // Initialize Lucide Icons
-
-
         // Header Scroll Effect - Optimized to prevent forced reflow
         const header = document.getElementById('navbar');
         let isScrolled = false;
@@ -897,9 +1068,9 @@
             if (scrolled !== isScrolled) {
                 isScrolled = scrolled;
                 if (isScrolled) {
-                    header.classList.add('glass-header', 'header-scrolled');
+                    header.classList.add('header-scrolled');
                 } else {
-                    header.classList.remove('glass-header', 'header-scrolled');
+                    header.classList.remove('header-scrolled');
                 }
             }
         }, { passive: true });
@@ -974,38 +1145,68 @@
             link.addEventListener('click', closeMobileMenu);
         });
 
-        // ROI Calculator Logic
+        /* ------------------------------------------------------------------
+           Calculateur — cadre une discussion, ne promet rien.
+           Les hypothèses sont affichées sous le bloc et le taux de coût
+           matière est choisi par le visiteur, pas asséné par nous.
+           ------------------------------------------------------------------ */
+        const roiSitesInput = document.getElementById('roi-sites');
+        const roiEmpInput = document.getElementById('roi-emp');
         const roiCaInput = document.getElementById('roi-ca');
         const roiFcInput = document.getElementById('roi-fc');
+
+        const sitesValDisplay = document.getElementById('sites-val');
+        const empValDisplay = document.getElementById('emp-val');
         const caValDisplay = document.getElementById('ca-val');
         const fcValDisplay = document.getElementById('fc-val');
-        
+
         const resMatiere = document.getElementById('res-matiere');
         const resTemps = document.getElementById('res-temps');
         const resTotal = document.getElementById('res-total');
+        const icpVerdict = document.getElementById('icp-verdict');
+
+        const euro = new Intl.NumberFormat('fr-FR');
+
+        // 30 min par jour et par établissement, 6 jours sur 7, 52 semaines.
+        const HEURES_PAR_SITE_AN = 0.5 * 6 * 52;
+        const SEUIL_ICP_EMPLOYES = 15;
 
         function updateROI() {
-            if (!roiCaInput || !roiFcInput) return;
-            const ca = parseInt(roiCaInput.value);
-            const fc = parseInt(roiFcInput.value);
+            if (!roiSitesInput || !roiEmpInput || !roiCaInput || !roiFcInput) return;
 
-            // Formatting
-            caValDisplay.innerText = new Intl.NumberFormat('fr-FR').format(ca) + ' €';
-            fcValDisplay.innerText = fc + '%';
+            const sites = parseInt(roiSitesInput.value, 10);
+            const employes = parseInt(roiEmpInput.value, 10);
+            const ca = parseInt(roiCaInput.value, 10);
+            const points = parseInt(roiFcInput.value, 10) / 10; // 10 => 1,0 point
 
-            // Assumptions: Meal OS saves 4 points of Food Cost (0.04 * CA * 12)
-            const economyMatiereYear = ca * 0.04 * 12;
-            const timeSavedYear = 20 * 12; // 240 hours
-            
-            resMatiere.innerText = '+ ' + new Intl.NumberFormat('fr-FR').format(economyMatiereYear) + ' €';
-            // Time is fixed for now but could be dynamic
-            resTemps.innerText = timeSavedYear + ' h';
-            resTotal.innerText = '+ ' + new Intl.NumberFormat('fr-FR').format(economyMatiereYear) + ' €';
+            sitesValDisplay.innerText = sites;
+            empValDisplay.innerText = employes;
+            caValDisplay.innerText = euro.format(ca) + ' €';
+            fcValDisplay.innerText = points.toFixed(1).replace('.', ',') + ' pt';
+
+            const caAnnuelReseau = ca * 12 * sites;
+            const economieMatiere = caAnnuelReseau * (points / 100);
+            const heures = Math.round(sites * HEURES_PAR_SITE_AN);
+
+            resMatiere.innerText = '+ ' + euro.format(Math.round(economieMatiere)) + ' €';
+            resTemps.innerText = euro.format(heures) + ' h / an';
+            resTotal.innerText = euro.format(caAnnuelReseau) + ' €';
+
+            if (employes >= SEUIL_ICP_EMPLOYES) {
+                icpVerdict.innerHTML = '<span class="font-bold text-accent">Vous êtes dans la cible.</span> ' +
+                    'À partir de ' + SEUIL_ICP_EMPLOYES + ' employés, vous ne pouvez plus tout voir vous-même : ' +
+                    'c\'est là que l\'outil se rentabilise.';
+            } else {
+                icpVerdict.innerHTML = '<span class="font-bold">Franchement, pas encore.</span> ' +
+                    'En dessous de ' + SEUIL_ICP_EMPLOYES + ' employés, vous voyez encore tout le monde tous les jours. ' +
+                    'Gardez notre boîte à outils gratuite et revenez quand l\'équipe aura grandi.';
+            }
         }
 
-        if (roiCaInput && roiFcInput) {
-            roiCaInput.addEventListener('input', updateROI);
-            roiFcInput.addEventListener('input', updateROI);
+        if (roiSitesInput) {
+            [roiSitesInput, roiEmpInput, roiCaInput, roiFcInput].forEach((el) => {
+                el.addEventListener('input', updateROI);
+            });
             updateROI(); // init
         }
     </script>

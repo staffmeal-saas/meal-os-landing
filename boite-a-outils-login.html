@@ -9,9 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://unpkg.com">
     <link rel="preconnect" href="https://images.unsplash.com">
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..900;1,9..144,400..900&family=Outfit:wght@300;400;500;600;700&family=Caveat:wght@700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..900;1,9..144,400..900&family=Outfit:wght@300;400;500;600;700&family=Caveat:wght@700&display=swap"></noscript>
-    <title>Accès Boîte à Outils | Meal OS</title>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=Shantell+Sans:wght@500;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=Shantell+Sans:wght@500;600;700;800&display=swap"></noscript>
+    <title>Accès Boîte à Outils | Staff Meal</title>
 
     <!-- Preconnect -->
     
@@ -20,7 +20,7 @@
 
     <!-- Fonts with display=swap -->
     <link
-        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..900;1,9..144,400..900&family=Outfit:wght@300;400;500;600;700&family=Caveat:wght@700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=Shantell+Sans:wght@500;600;700;800&display=swap"
         rel="stylesheet">
 
     <!-- Tailwind CSS (Performance Optimized) -->
@@ -31,21 +31,21 @@
 
     <style>
         body {
-            background-color: theme('colors.background');
-            color: theme('colors.foreground');
+            background-color: #f4eedf;
+            color: #181410;
             -webkit-font-smoothing: antialiased;
         }
 
         .logo-handwritten {
-            font-family: theme('fontFamily.script');
+            font-family: 'Shantell Sans', cursive;
             text-transform: lowercase;
             letter-spacing: -0.02em;
             line-height: 0.8;
-            color: #1A2222;
+            color: #181410;
         }
 
         .text-chunky {
-            font-family: theme('fontFamily.display');
+            font-family: 'Familjen Grotesk', ui-sans-serif, system-ui, sans-serif;
             font-weight: 900;
             line-height: 0.95;
             letter-spacing: -0.03em;
@@ -55,16 +55,16 @@
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            background-color: theme('colors.accent');
+            background-color: #f0481c;
             color: white;
-            font-family: theme('fontFamily.sans');
+            font-family: 'Familjen Grotesk', ui-sans-serif, system-ui, sans-serif;
             font-weight: 900;
             text-transform: uppercase;
             padding: 0.875rem 2rem;
             border-radius: 9999px;
             box-shadow: theme('boxShadow.retro');
             transition: all 0.2s;
-            border: 2px solid theme('colors.foreground');
+            border: 2px solid #181410;
             cursor: pointer;
             width: 100%;
             font-size: 1.125rem;
@@ -82,10 +82,10 @@
 
         .input-retro {
             width: 100%;
-            border: 2px solid theme('colors.foreground');
+            border: 2px solid #181410;
             padding: 0.75rem 1rem;
             border-radius: 0.5rem;
-            font-family: theme('fontFamily.sans');
+            font-family: 'Familjen Grotesk', ui-sans-serif, system-ui, sans-serif;
             font-weight: 600;
             background-color: white;
             outline: none;
@@ -99,7 +99,7 @@
         }
 
         .card-retro {
-            border: 4px solid theme('colors.foreground');
+            border: 4px solid #181410;
             border-radius: 1.5rem;
             box-shadow: theme('boxShadow.retro');
         }
@@ -118,7 +118,7 @@
         }
     </script>
 
-    <div class="max-w-4xl w-full grid md:grid-cols-2 gap-0 card-retro bg-white">
+    <div class="max-w-4xl w-full grid md:grid-cols-2 gap-0 card-retro bg-paper">
 
         <!-- Left Side: Visual / Value Prop -->
         <div
@@ -127,12 +127,13 @@
             <i data-lucide="wrench" class="absolute -right-12 -bottom-12 w-64 h-64 text-background opacity-5"></i>
 
             <div>
-                <a href="index.html"
-                    class="logo-handwritten text-[4rem] text-background inline-block transform -rotate-3 mb-8">meal
-                    os</a>
+                <a href="index.html" class="inline-flex items-center gap-4 mb-8 hover:opacity-80 transition-opacity">
+                    <img src="assets/brand/mascot.png" alt="" width="72" height="72" class="brand-mark w-16 h-16">
+                    <span class="wordmark text-4xl text-background">Staff Meal</span>
+                </a>
                 <h1 class="text-chunky text-4xl mb-4 text-mustard">La Boîte à Outils.</h1>
                 <p class="font-sans font-medium opacity-90 text-lg leading-relaxed mb-8">
-                    Accédez gratuitement à l'écosystème d'outils Meal OS réservé aux restaurateurs ambitieux.
+                    Accédez gratuitement à l'écosystème d'outils Staff Meal réservé aux restaurateurs ambitieux.
                 </p>
 
                 <ul class="space-y-4 font-sans font-bold opacity-80">
@@ -155,7 +156,7 @@
         </div>
 
         <!-- Right Side: The Form -->
-        <div class="p-8 md:p-10 flex flex-col justify-center bg-white relative">
+        <div class="p-8 md:p-10 flex flex-col justify-center bg-paper relative">
             <a href="resources.html"
                 class="absolute top-6 right-6 text-foreground/50 hover:text-foreground transition-colors"><i
                     data-lucide="x" class="w-6 h-6"></i></a>
@@ -193,7 +194,7 @@
 
                 <div>
                     <label class="block font-bold text-xs uppercase tracking-wider text-foreground">Rôle</label>
-                    <select id="role" class="input-retro cursor-pointer bg-white" required>
+                    <select id="role" class="input-retro cursor-pointer bg-paper" required>
                         <option value="" disabled selected>Sélectionnez votre poste</option>
                         <option value="Proprietaire / Gérant">Propriétaire / Gérant</option>
                         <option value="Chef de Cuisine">Chef de Cuisine</option>

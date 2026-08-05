@@ -1,6 +1,51 @@
 [build]
   publish = "."
 
+# --- Redirections de marque : Meal OS -> Staff Meal ---------------------
+# L'ordre compte : Netlify applique la première règle qui correspond, donc
+# ces 301 doivent rester AVANT le fallback /* plus bas.
+
+[[redirects]]
+  from = "/meal-os-vs-skello.html"
+  to = "/staffmeal-vs-skello.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/meal-os-vs-koust.html"
+  to = "/staffmeal-vs-koust.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/meal-os-vs-combo.html"
+  to = "/staffmeal-vs-combo.html"
+  status = 301
+  force = true
+
+# Variantes sans extension (pretty_urls est actif)
+[[redirects]]
+  from = "/meal-os-vs-skello"
+  to = "/staffmeal-vs-skello.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/meal-os-vs-koust"
+  to = "/staffmeal-vs-koust.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/meal-os-vs-combo"
+  to = "/staffmeal-vs-combo.html"
+  status = 301
+  force = true
+
+# --- Fallback -----------------------------------------------------------
+# force = false : les fichiers réels sont servis en priorité, ce filet ne
+# sert que pour les URL inconnues.
+
 [[redirects]]
   from = "/*"
   to = "/index.html"
@@ -22,5 +67,10 @@
 
 [[headers]]
   for = "/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/assets/*"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"

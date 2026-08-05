@@ -11,48 +11,43 @@
         as="image" fetchpriority="high">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..900;1,9..144,400..900&family=Outfit:wght@300;400;500;600;700&family=Caveat:wght@700&display=swap">
+        href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=Shantell+Sans:wght@500;600;700;800&display=swap">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Combo (ex Snapshift) vs Meal OS : Le comparatif (2026)</title>
+    <title>Combo (ex Snapshift) vs Staff Meal : Le comparatif (2026)</title>
     <meta name="description"
-        content="L'alternative idéale à Combo. Gérez les plannings et les pointages, mais intégrez aussi HACCP, pertes et opérations grâce à Meal OS.">
+        content="L'alternative idéale à Combo. Gérez les plannings et les pointages, mais intégrez aussi HACCP, pertes et opérations grâce à Staff Meal.">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.mealos.com/meal-os-vs-combo.html">
-    <meta property="og:title" content="Combo (ex Snapshift) vs Meal OS : Le comparatif (2026)">
+    <meta property="og:url" content="https://staffmeal-app.netlify.app/staffmeal-vs-combo.html">
+    <meta property="og:title" content="Combo (ex Snapshift) vs Staff Meal : Le comparatif (2026)">
     <meta property="og:description"
-        content="L'alternative idéale à Combo. Gérez les plannings et les pointages, mais intégrez aussi HACCP, pertes et opérations grâce à Meal OS.">
-    <meta property="og:image" content="https://www.mealos.com/og-image.jpg">
+        content="L'alternative idéale à Combo. Gérez les plannings et les pointages, mais intégrez aussi HACCP, pertes et opérations grâce à Staff Meal.">
+    <meta property="og:image" content="https://staffmeal-app.netlify.app/og-image.jpg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://www.mealos.com/meal-os-vs-combo.html">
-    <meta property="twitter:title" content="Combo (ex Snapshift) vs Meal OS : Le comparatif (2026)">
+    <meta property="twitter:url" content="https://staffmeal-app.netlify.app/staffmeal-vs-combo.html">
+    <meta property="twitter:title" content="Combo (ex Snapshift) vs Staff Meal : Le comparatif (2026)">
     <meta property="twitter:description"
-        content="L'alternative idéale à Combo. Gérez les plannings et les pointages, mais intégrez aussi HACCP, pertes et opérations grâce à Meal OS.">
-    <meta property="twitter:image" content="https://www.mealos.com/twitter-image.jpg">
+        content="L'alternative idéale à Combo. Gérez les plannings et les pointages, mais intégrez aussi HACCP, pertes et opérations grâce à Staff Meal.">
+    <meta property="twitter:image" content="https://staffmeal-app.netlify.app/twitter-image.jpg">
 
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://www.mealos.com/meal-os-vs-combo.html">
+    <link rel="canonical" href="https://staffmeal-app.netlify.app/staffmeal-vs-combo.html">
 
     <!-- Schema.org JSON-LD -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "SoftwareApplication",
-      "name": "Meal OS",
+      "name": "Staff Meal",
       "operatingSystem": "Web",
       "applicationCategory": "BusinessApplication",
-      "offers": {
-        "@type": "Offer",
-        "price": "200.00",
-        "priceCurrency": "EUR"
-      },
       "description": "Le système d'exploitation complet pour les restaurateurs incluant planning, standards HACCP, maintenance et communication interne.",
-      "url": "https://www.mealos.com/"
+      "url": "https://staffmeal-app.netlify.app/"
     }
     </script>
     <!-- Preconnect for performance -->
@@ -67,48 +62,38 @@
     <!-- Custom CSS -->
 </head>
 
-<body class="selection:bg-olive selection:text-background relative">
+<body class="selection:bg-olive selection:text-background relative bg-background text-foreground">
 
     <div class="noise-overlay"></div>
 
     <!-- HEADER -->
     <header id="navbar"
-        class="fixed w-full top-0 z-50 transition-all duration-300 py-4 px-4 md:px-12 flex justify-between items-center">
-        <!-- Logo replicating the "sol" layout -->
-        <a href="#" class="relative inline-flex flex-col items-center hover:opacity-80 transition-opacity mt-2">
-            <!-- "the" at top right -->
-            <span
-                class="absolute -top-1 -right-2 font-sans font-bold text-[0.6rem] lowercase tracking-wide opacity-70">the</span>
+        class="brand-bar fixed w-full top-0 z-50 transition-all duration-300 py-3 px-4 md:px-12 flex justify-between items-center border-b border-foreground">
 
-            <!-- main word -->
-            <span
-                class="logo-handwritten text-[5rem] md:text-[6rem] leading-none transform -rotate-3 pl-2 pr-4 pb-1">meal <span class="text-[0.7em] ml-1">OS</span></span>
-
-            <!-- subtext like "fresh & tasty" -->
-            <div class="flex gap-4 font-sans text-[0.55rem] uppercase font-bold tracking-[0.2em] opacity-80 mt-1 ml-2">
-                <span>👋 l'outil ultime</span>
-            </div>
+        <a href="index.html" class="flex items-center gap-3 hover:opacity-90 transition-opacity">
+            <img src="assets/brand/mascot.png" alt="" width="48" height="48"
+                class="brand-mark ring w-11 h-11 md:w-12 md:h-12">
+            <span class="flex flex-col leading-none">
+                <span class="wordmark text-xl md:text-2xl">Staff Meal</span>
+                <span class="font-sans text-[0.55rem] uppercase font-bold tracking-[0.22em] opacity-90 mt-1">le même
+                    service, à chaque service</span>
+            </span>
         </a>
 
-        <!-- Nav -->
         <nav class="hidden md:flex items-center gap-8 font-sans font-bold text-sm lowercase tracking-wider">
-            
-            
-            <a href="resources.html" class="hover:text-accent transition-colors">ressources</a>
-            <a href="evenements.html" class="hover:text-accent transition-colors">événements</a>
-            
-            <a href="#faq" class="hover:text-accent transition-colors">questions ?</a>
+            <a href="index.html#modules" class="hover:opacity-70 transition-opacity">modules</a>
+            <a href="resources.html" class="hover:opacity-70 transition-opacity">ressources</a>
+            <a href="evenements.html" class="hover:opacity-70 transition-opacity">événements</a>
+            <a href="index.html#faq" class="hover:opacity-70 transition-opacity">questions ?</a>
         </nav>
 
-        <!-- CTA -->
         <div class="hidden md:block">
             <a href="#demo" class="btn-retro alt py-2 px-6 text-sm">
                 postuler (50 places)
             </a>
         </div>
 
-        <!-- Mobile Menu Toggle -->
-        <button id="mobileMenuBtn" aria-label="Menu" class="md:hidden text-foreground z-50">
+        <button id="mobileMenuBtn" aria-label="Menu" class="md:hidden text-background z-50">
             <i data-lucide="menu" class="w-8 h-8"></i>
         </button>
     </header>
@@ -118,7 +103,7 @@
         <!-- Backdrop -->
         <div id="mobileMenuBackdrop" class="absolute inset-0 bg-foreground/80 opacity-0 transition-opacity duration-300"></div>
         <!-- Panel -->
-        <div id="mobileMenuPanel" class="absolute top-0 right-0 w-4/5 max-w-sm h-full bg-background border-l-3 border-foreground p-8 pt-24 flex flex-col gap-6 transform translate-x-full transition-transform duration-300 ease-out">
+        <div id="mobileMenuPanel" class="absolute top-0 right-0 w-4/5 max-w-sm h-full bg-background border-l border-foreground p-8 pt-24 flex flex-col gap-6 transform translate-x-full transition-transform duration-300 ease-out">
             <button id="mobileMenuClose" class="absolute top-6 right-6 text-foreground" aria-label="Fermer">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
             </button>
@@ -139,68 +124,95 @@
     <!-- MAIN CONTENT -->
     <main>
 
-        <section class="relative min-h-[70vh] flex items-center justify-center pt-32 pb-20 px-4 md:px-12 bg-white overflow-hidden border-b-3 border-foreground">
+        <section class="relative min-h-[70vh] flex items-center justify-center pt-32 pb-20 px-4 md:px-12 bg-paper overflow-hidden border-b border-foreground">
             <div class="blob-1 bg-olive" style="width: 300px; height: 300px; top: -50px; left: -50px;"></div>
             <div class="max-w-4xl mx-auto w-full text-center relative z-10 reveal">
-                <div class="inline-flex items-center gap-2 bg-[#E8D5C4] border-2 border-foreground rounded-full px-4 py-2 mb-6">
+                <div class="inline-flex items-center gap-2 bg-[#f4eedf] border-2 border-foreground rounded-full px-4 py-2 mb-6">
                     <span class="font-sans font-bold text-sm tracking-wide">Comparatif 2026 : Outils Opérationnels</span>
                 </div>
-                <h1 class="text-chunky text-5xl md:text-7xl mb-6 mt-4">Combo <span class="text-mustard font-display mx-2">VS</span> Meal OS</h1>
+                <h1 class="text-chunky text-5xl md:text-7xl mb-6 mt-4">Combo <span class="text-mustard font-display mx-2">VS</span> Staff Meal</h1>
                 <p class="font-display italic font-bold text-3xl mb-8">Plus qu'une simple pointeuse connectée.</p>
                 <p class="font-sans font-medium text-lg max-w-2xl mx-auto leading-snug mb-10 opacity-80">
-                    Combo connecte vos équipes au planning. C'est déjà bien. Mais Meal OS ajoute à cela le suivi opérationnel, l'hygiène HACCP, et le suivi financier (Food Cost). Ne payez pas une plateforme juste pour des plannings.
+                    Combo connecte vos équipes au planning. C'est déjà bien. Mais Staff Meal ajoute à cela le suivi opérationnel, l'hygiène HACCP, et le suivi financier (Food Cost). Ne payez pas une plateforme juste pour des plannings.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="#demo" class="btn-retro">Tester Meal OS (50 places)</a>
+                    <a href="#demo" class="btn-retro">Tester Staff Meal (50 places)</a>
                 </div>
             </div>
         </section>
 
         <section class="max-w-5xl mx-auto px-4 md:px-12 py-16 reveal delay-1">
-            <div class="card-retro overflow-hidden bg-white">
+            <div class="card-retro overflow-hidden bg-paper">
                 <div class="grid grid-cols-2 lg:grid-cols-3 bg-foreground text-background p-4 text-center font-sans font-bold text-lg uppercase tracking-wider">
                     <div class="hidden lg:block border-r-2 border-background/20">Gestion Restauration</div>
-                    <div class="text-[#F4F1EB]/60 border-r-2 border-background/20">Combo</div>
-                    <div class="text-mustard">Meal OS</div>
+                    <div class="text-[#f4eedf]/60 border-r-2 border-background/20">Combo</div>
+                    <div class="text-mustard">Staff Meal</div>
                 </div>
                 <div class="divide-y-2 divide-foreground/10 font-sans font-medium text-lg">
                     <div class="grid grid-cols-2 lg:grid-cols-3 p-4 md:p-6 text-center lg:text-left items-center"><div class="hidden lg:block font-bold">Planning & Paie</div><div class="text-olive flex justify-center"><i data-lucide="check" class="w-6 h-6"></i></div><div class="text-olive flex justify-center"><i data-lucide="check" class="w-6 h-6"></i></div></div>
                     <div class="grid grid-cols-2 lg:grid-cols-3 p-4 md:p-6 text-center lg:text-left items-center"><div class="hidden lg:block font-bold">Messagerie Equipe</div><div class="text-olive flex justify-center"><i data-lucide="check" class="w-6 h-6"></i></div><div class="text-olive flex justify-center"><i data-lucide="check" class="w-6 h-6"></i></div></div>
-                    <div class="grid grid-cols-2 lg:grid-cols-3 p-4 md:p-6 bg-[#E8D5C4] text-center lg:text-left items-center"><div class="hidden lg:block font-bold">Contrôle Ratios/Recettes</div><div class="text-accent/50 flex justify-center"><i data-lucide="x" class="w-6 h-6"></i></div><div class="font-bold text-olive flex justify-center"><i data-lucide="check" class="w-6 h-6"></i></div></div>
-                    <div class="grid grid-cols-2 lg:grid-cols-3 p-4 md:p-6 bg-[#E8D5C4] text-center lg:text-left items-center"><div class="hidden lg:block font-bold">Hygiène & Audit</div><div class="text-accent/50 flex justify-center"><i data-lucide="x" class="w-6 h-6"></i></div><div class="font-bold text-olive flex justify-center"><i data-lucide="check" class="w-6 h-6"></i></div></div>
+                    <div class="grid grid-cols-2 lg:grid-cols-3 p-4 md:p-6 bg-[#f4eedf] text-center lg:text-left items-center"><div class="hidden lg:block font-bold">Contrôle Ratios/Recettes</div><div class="text-accent/50 flex justify-center"><i data-lucide="x" class="w-6 h-6"></i></div><div class="font-bold text-olive flex justify-center"><i data-lucide="check" class="w-6 h-6"></i></div></div>
+                    <div class="grid grid-cols-2 lg:grid-cols-3 p-4 md:p-6 bg-[#f4eedf] text-center lg:text-left items-center"><div class="hidden lg:block font-bold">Hygiène & Audit</div><div class="text-accent/50 flex justify-center"><i data-lucide="x" class="w-6 h-6"></i></div><div class="font-bold text-olive flex justify-center"><i data-lucide="check" class="w-6 h-6"></i></div></div>
                 </div>
             </div>
         </section>
 
-        <section id="demo" class="py-24 px-4 md:px-12 bg-foreground border-t-3 border-foreground">
-            <div class="max-w-5xl mx-auto card-retro bg-white md:p-0 flex flex-col md:flex-row overflow-hidden reveal">
-                <div class="md:w-5/12 bg-accent text-background p-10 md:p-12 relative border-b-3 md:border-b-0 md:border-r-3 border-foreground border-dashed flex flex-col justify-center">
-                    <div class="absolute inset-0 bg-black opacity-5" style="background-image: radial-gradient(circle, #000 2px, transparent 2px); background-size: 10px 10px;"></div>
+        <section id="demo" class="py-24 px-4 md:px-12 bg-foreground border-t border-foreground">
+            <div class="max-w-5xl mx-auto card-retro bg-paper md:p-0 flex flex-col md:flex-row overflow-hidden reveal">
+                <div class="md:w-5/12 bg-accent text-background p-10 md:p-12 relative border-b md:border-b-0 md:border-r border-foreground border-dashed flex flex-col justify-center">
+                    <div class="absolute inset-0 bg-foreground opacity-5" style="background-image: radial-gradient(circle, #000 2px, transparent 2px); background-size: 10px 10px;"></div>
                     <div class="relative z-10">
                         <p class="font-script text-mustard text-3xl mb-2 transform -rotate-3">Ne payez plus 5 fois</p>
                         <h2 class="text-chunky text-4xl mb-6">Passez à<br>l'étape supérieure.</h2>
                         <p class="font-sans font-medium opacity-90 mb-8">
-                            Rejoignez la bêta de Meal OS. L'outil ultime.
+                            Rejoignez la bêta de Staff Meal. L'outil ultime.
                         </p>
                     </div>
                 </div>
                 <div class="md:w-7/12 p-10 md:p-16 bg-background flex items-center justify-center">
-                    <form class="space-y-6 w-full max-w-sm">
-                        <!-- Same form -->
+                    <form name="candidature-beta" method="POST" data-netlify="true" netlify-honeypot="bot-field"
+                        action="/merci.html" class="space-y-5 w-full max-w-sm">
+                        <input type="hidden" name="form-name" value="candidature-beta">
+                        <p class="hidden">
+                            <label>Ne pas remplir si vous êtes humain : <input name="bot-field"></label>
+                        </p>
+
                         <div>
-                            <label class="font-sans font-bold text-sm uppercase tracking-wider mb-2 block ml-2">Nom de l'établissement</label>
-                            <input type="text" class="input-retro" placeholder="ex: Le Petit Bistro">
+                            <label class="font-sans font-bold text-sm uppercase tracking-wider mb-2 block ml-1">Nom de
+                                l'établissement</label>
+                            <input name="etablissement" type="text" required class="input-retro"
+                                placeholder="ex : Le Petit Bistro">
+                        </div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <label
+                                    class="font-sans font-bold text-sm uppercase tracking-wider mb-2 block ml-1">Sites</label>
+                                <input name="nb_sites" type="number" min="1" required class="input-retro"
+                                    placeholder="3">
+                            </div>
+                            <div>
+                                <label
+                                    class="font-sans font-bold text-sm uppercase tracking-wider mb-2 block ml-1">Employés</label>
+                                <input name="nb_employes" type="number" min="1" required class="input-retro"
+                                    placeholder="45">
+                            </div>
                         </div>
                         <div>
-                            <label class="font-sans font-bold text-sm uppercase tracking-wider mb-2 block ml-2">Téléphone</label>
-                            <input type="text" class="input-retro" placeholder="06 00 00 00 00">
+                            <label
+                                class="font-sans font-bold text-sm uppercase tracking-wider mb-2 block ml-1">Téléphone</label>
+                            <input name="telephone" type="tel" required class="input-retro"
+                                placeholder="06 00 00 00 00">
                         </div>
                         <div>
-                            <label class="font-sans font-bold text-sm uppercase tracking-wider mb-2 block ml-2">Email</label>
-                            <input type="email" class="input-retro" placeholder="chef@restaurant.com">
+                            <label
+                                class="font-sans font-bold text-sm uppercase tracking-wider mb-2 block ml-1">Email</label>
+                            <input name="email" type="email" required class="input-retro"
+                                placeholder="chef@restaurant.com">
                         </div>
-                        <div class="pt-4">
-                            <button type="submit" class="btn-retro w-full hover:bg-olive hover:text-white transition-colors">Postuler (2 min)</button>
+                        <div class="pt-3">
+                            <button type="submit" class="btn-retro w-full">
+                                Postuler au programme (2 min)
+                            </button>
                         </div>
                     </form>
                 </div>
@@ -210,43 +222,48 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="border-t-3 border-foreground py-12 px-4 md:px-12 bg-white">
+    <footer class="border-t border-foreground py-12 px-4 md:px-12 bg-background">
         <div
             class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8 text-center md:text-left">
 
-            <!-- Logo matching Header -->
-            <a href="#" class="relative inline-flex flex-col items-center hover:opacity-80 transition-opacity">
-                <!-- "the" at top right -->
-                <span
-                    class="absolute -top-1 -right-2 font-sans font-bold text-[0.6rem] lowercase tracking-wide opacity-70">the</span>
-                <!-- main word -->
-                <span
-                    class="logo-handwritten text-[4.5rem] md:text-[5.5rem] leading-none transform -rotate-3 pl-2 pr-4 pb-1">meal
-                    os</span>
-                <!-- subtext -->
-                <div
-                    class="flex gap-4 font-sans text-[0.45rem] uppercase font-bold tracking-[0.2em] opacity-80 mt-1 ml-2">
-                    <span>👋 l'outil ultime</span>
-                </div>
+            <a href="index.html" class="flex items-center gap-3 hover:opacity-80 transition-opacity">
+                <img src="assets/brand/mascot.png" alt="" width="56" height="56" class="brand-mark w-14 h-14">
+                <span class="flex flex-col leading-none text-left">
+                    <span class="wordmark text-2xl">Staff Meal</span>
+                    <span class="font-sans text-[0.5rem] uppercase font-bold tracking-[0.2em] text-ink-soft mt-1">le
+                        même service, à chaque service</span>
+                </span>
             </a>
 
-            <div class="flex flex-col md:flex-row gap-8 md:gap-16 font-sans font-bold text-sm items-center md:items-start text-center md:text-left">
+            <div
+                class="flex flex-col md:flex-row gap-8 md:gap-16 font-sans font-bold text-sm items-center md:items-start text-center md:text-left">
                 <div class="flex flex-col items-center md:items-start gap-3">
-                    <span class="text-mustard uppercase tracking-widest text-xs">Comparatifs</span>
-                    <a href="meal-os-vs-skello.html" class="hover:text-accent border-b-2 border-transparent hover:border-accent pb-1 inline-block w-max">Meal OS vs Skello</a>
-                    <a href="meal-os-vs-koust.html" class="hover:text-accent border-b-2 border-transparent hover:border-accent pb-1 inline-block w-max">Meal OS vs Koust</a>
-                    <a href="meal-os-vs-combo.html" class="hover:text-accent border-b-2 border-transparent hover:border-accent pb-1 inline-block w-max">Meal OS vs Combo</a>
+                    <span class="text-accent uppercase tracking-widest text-xs">Comparatifs</span>
+                    <a href="staffmeal-vs-skello.html"
+                        class="hover:text-accent border-b border-transparent hover:border-accent pb-1 inline-block w-max">Staff
+                        Meal et Skello</a>
+                    <a href="staffmeal-vs-koust.html"
+                        class="hover:text-accent border-b border-transparent hover:border-accent pb-1 inline-block w-max">Staff
+                        Meal vs Koust</a>
+                    <a href="staffmeal-vs-combo.html"
+                        class="hover:text-accent border-b border-transparent hover:border-accent pb-1 inline-block w-max">Staff
+                        Meal vs Combo</a>
                 </div>
                 <div class="flex flex-col items-center md:items-start gap-3">
-                    <span class="text-olive uppercase tracking-widest text-xs">Légal & Contact</span>
-                    <a href="#" class="hover:text-accent border-b-2 border-transparent hover:border-accent pb-1 inline-block w-max">info@mealos.com</a>
-                    <a href="#" class="hover:text-accent border-b-2 border-transparent hover:border-accent pb-1 inline-block w-max">Instagram</a>
-                    <a href="#" class="hover:text-accent border-b-2 border-transparent hover:border-accent pb-1 inline-block w-max">Mentions Légales</a>
+                    <span class="uppercase tracking-widest text-xs">Ressources</span>
+                    <a href="resources.html"
+                        class="hover:text-accent border-b border-transparent hover:border-accent pb-1 inline-block w-max">Outils
+                        gratuits</a>
+                    <a href="evenements.html"
+                        class="hover:text-accent border-b border-transparent hover:border-accent pb-1 inline-block w-max">Événements</a>
+                    <a href="index.html#demo"
+                        class="hover:text-accent border-b border-transparent hover:border-accent pb-1 inline-block w-max">Nous
+                        contacter</a>
                 </div>
             </div>
 
-            <div class="font-sans text-sm font-medium opacity-60">
-                &copy; 2026 Meal OS. Designed for Chefs.
+            <div class="font-sans text-sm font-medium text-ink-faint">
+                &copy; 2026 Staff Meal.
             </div>
 
         </div>
@@ -266,9 +283,9 @@
             if (scrolled !== isScrolled) {
                 isScrolled = scrolled;
                 if (isScrolled) {
-                    header.classList.add('glass-header', 'header-scrolled');
+                    header.classList.add('header-scrolled');
                 } else {
-                    header.classList.remove('glass-header', 'header-scrolled');
+                    header.classList.remove('header-scrolled');
                 }
             }
         }, { passive: true });
@@ -362,7 +379,7 @@
             caValDisplay.innerText = new Intl.NumberFormat('fr-FR').format(ca) + ' €';
             fcValDisplay.innerText = fc + '%';
 
-            // Assumptions: Meal OS saves 4 points of Food Cost (0.04 * CA * 12)
+            // Assumptions: Staff Meal saves 4 points of Food Cost (0.04 * CA * 12)
             const economyMatiereYear = ca * 0.04 * 12;
             const timeSavedYear = 20 * 12; // 240 hours
             

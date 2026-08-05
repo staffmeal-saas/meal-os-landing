@@ -12,28 +12,28 @@
     <!-- Custom CSS -->
     <style>
         body {
-            background-color: theme('colors.background');
-            color: theme('colors.foreground');
+            background-color: #f4eedf;
+            color: #181410;
             overflow-x: hidden;
             -webkit-font-smoothing: antialiased;
         }
 
         .logo-handwritten {
-            font-family: theme('fontFamily.script');
+            font-family: 'Shantell Sans', cursive;
             text-transform: lowercase;
             letter-spacing: -0.02em;
             line-height: 0.8;
-            color: #1A2222;
+            color: #181410;
         }
 
         .glass-header {
             background: rgba(250, 242, 215, 0.95);
-            border-bottom: 3px solid theme('colors.foreground');
+            border-bottom: 1px solid #181410;
             backdrop-filter: blur(8px);
         }
 
         .text-chunky {
-            font-family: theme('fontFamily.display');
+            font-family: 'Familjen Grotesk', ui-sans-serif, system-ui, sans-serif;
             font-weight: 900;
             line-height: 0.95;
             letter-spacing: -0.03em;
@@ -43,16 +43,16 @@
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            background-color: theme('colors.foreground');
-            color: theme('colors.background');
-            font-family: theme('fontFamily.sans');
+            background-color: #181410;
+            color: #f4eedf;
+            font-family: 'Familjen Grotesk', ui-sans-serif, system-ui, sans-serif;
             font-weight: 900;
             text-transform: uppercase;
             padding: 0.75rem 1.5rem;
             border-radius: 9999px;
             box-shadow: theme('boxShadow.retro');
             transition: all 0.2s;
-            border: 2px solid theme('colors.foreground');
+            border: 2px solid #181410;
             cursor: pointer;
         }
 
@@ -68,15 +68,15 @@
 
         .btn-retro.alt {
             background-color: white;
-            color: theme('colors.foreground');
+            color: #181410;
         }
 
         .input-retro {
             width: 100%;
-            border: 2px solid theme('colors.foreground');
+            border: 2px solid #181410;
             padding: 0.75rem 1rem;
             border-radius: 0.5rem;
-            font-family: theme('fontFamily.sans');
+            font-family: 'Familjen Grotesk', ui-sans-serif, system-ui, sans-serif;
             font-weight: 600;
             background-color: white;
             outline: none;
@@ -90,7 +90,7 @@
         }
 
         .card-retro {
-            border: 3px solid theme('colors.foreground');
+            border: 1px solid #181410;
             border-radius: 1.5rem;
             box-shadow: theme('boxShadow.retro');
         }
@@ -107,7 +107,7 @@
         }
 
         .number-choc {
-            font-family: theme('fontFamily.display');
+            font-family: 'Familjen Grotesk', ui-sans-serif, system-ui, sans-serif;
         }
 
         input[type=range] {
@@ -123,24 +123,24 @@
             height: 24px;
             width: 24px;
             border-radius: 50%;
-            background: theme('colors.accent');
-            border: 2px solid theme('colors.foreground');
+            background: #f0481c;
+            border: 2px solid #181410;
             cursor: pointer;
             margin-top: -10px;
-            box-shadow: 2px 2px 0px theme('colors.foreground');
+            box-shadow: 2px 2px 0px #181410;
         }
 
         input[type=range]::-webkit-slider-runnable-track {
             width: 100%;
             height: 6px;
             cursor: pointer;
-            background: theme('colors.foreground');
+            background: #181410;
             border-radius: 3px;
-            border: 1px solid theme('colors.foreground');
+            border: 1px solid #181410;
         }
     
         /* Dashboard App specific layout */
-        .sidebar { width: 260px; height: 100vh; position: fixed; left: 0; top: 0; background: white; border-right: 3px solid theme('colors.foreground'); padding: 2rem 1.5rem; display: flex; flex-direction: column; z-index: 100;}
+        .sidebar { width: 260px; height: 100vh; position: fixed; left: 0; top: 0; background: #fbf8ee; border-right: 1px solid #181410; padding: 2rem 1.5rem; display: flex; flex-direction: column; z-index: 100;}
         .app-main { margin-left: 260px; padding: 2rem; min-height: 100vh; padding-top: 2rem; }
         
         @media (max-width: 1024px) {
@@ -149,9 +149,9 @@
             .app-main { margin-left: 0; padding: 1.5rem; padding-top: 5rem;}
         }
 
-        .nav-link { display: flex; align-items: center; gap: 0.75rem; padding: 0.75rem 1rem; border-radius: 0.5rem; font-family: theme('fontFamily.sans'); font-weight: 700; opacity: 0.7; transition: all 0.2s; border: 2px solid transparent;}
-        .nav-link:hover { opacity: 1; background: rgba(0,0,0,0.05); }
-        .nav-link.active { opacity: 1; background: theme('colors.mustard'); border-color: theme('colors.foreground'); color: theme('colors.foreground'); box-shadow: 2px 2px 0px 0px theme('colors.foreground');}
+        .nav-link { display: flex; align-items: center; gap: 0.75rem; padding: 0.75rem 1rem; border-radius: 0.5rem; font-family: 'Familjen Grotesk', ui-sans-serif, system-ui, sans-serif; font-weight: 700; opacity: 0.7; transition: all 0.2s; border: 2px solid transparent;}
+        .nav-link:hover { opacity: 1; background: rgba(24,20,16,0.06); }
+        .nav-link.active { opacity: 1; background: #f0481c; color: #f4eedf; border-color: #181410; color: #181410; box-shadow: 2px 2px 0px 0px #181410;}
         
         @media print {
             .sidebar, .lg\:hidden { display: none !important; }
@@ -163,7 +163,7 @@
     <noscript><link rel="stylesheet" href="style.css"></noscript>
 </head>
 
-<body class="selection:bg-foreground selection:text-background font-sans flex flex-col min-h-screen">
+<body class="selection:bg-foreground selection:text-background font-sans flex flex-col min-h-screen bg-background text-foreground">
     <script>if(!localStorage.getItem("mealos_tools_user")){window.location.href="boite-a-outils-login.html";}</script>
 
     
@@ -172,15 +172,15 @@
     
     
     <!-- Mobile Header -->
-    <div class="lg:hidden fixed top-0 w-full left-0 bg-white border-b-3 border-foreground px-4 py-3 flex items-center justify-between z-40 no-print" style="box-shadow: 4px 4px 0px 0px #1A2222;">
-        <a href="boite-a-outils-dashboard.html" class="logo-handwritten text-3xl">meal <span class="text-[0.7em] ml-1">OS</span></a>
+    <div class="lg:hidden fixed top-0 w-full left-0 bg-paper border-b border-foreground px-4 py-3 flex items-center justify-between z-40 no-print" style="box-shadow: 4px 4px 0px 0px #181410;">
+        <a href="boite-a-outils-dashboard.html" class="flex items-center gap-2.5 hover:opacity-80 transition-opacity"><img src="assets/brand/mascot.png" alt="" width="44" height="44" class="brand-mark w-9 h-9"><span class="wordmark text-lg">Staff Meal</span></a>
         <button id="menuToggle" class="p-2"><i data-lucide="menu"></i></button>
     </div>
 
     <!-- Sidebar -->
     <aside class="sidebar bg-background no-print" id="sidebar">
         <div class="flex items-center justify-between mb-10">
-            <a href="boite-a-outils-dashboard.html" class="logo-handwritten text-4xl">meal <span class="text-[0.7em] ml-1">OS</span></a>
+            <a href="boite-a-outils-dashboard.html" class="flex items-center gap-2.5 hover:opacity-80 transition-opacity"><img src="assets/brand/mascot.png" alt="" width="44" height="44" class="brand-mark w-11 h-11"><span class="wordmark text-xl">Staff Meal</span></a>
             <button id="closeMenu" class="lg:hidden"><i data-lucide="x"></i></button>
         </div>
 
@@ -192,7 +192,7 @@
             
             <div class="pt-6 mt-6 border-t-2 border-foreground/10">
                 <div class="text-xs font-black uppercase tracking-widest opacity-40 mb-3 px-3 flex items-center justify-between">
-                    Meal OS Complet <span class="bg-accent text-white text-[8px] px-1 py-0.5 rounded uppercase">Pro</span>
+                    Staff Meal Complet <span class="bg-accent text-white text-[8px] px-1 py-0.5 rounded uppercase">Pro</span>
                 </div>
                 <a href="#" class="nav-link flex items-center justify-between group pro-link" data-pro-module="haccp" style="opacity: 0.5;">
                     <div class="flex items-center gap-3"><i data-lucide="clipboard-check" class="w-5 h-5"></i> Audit HACCP</div>
@@ -238,7 +238,7 @@
         <div class="absolute inset-0 bg-background/60 backdrop-blur-md transition-opacity duration-300"></div>
         
         <!-- Modal Card -->
-        <div class="card-retro bg-white p-8 max-w-lg w-full relative z-10 transform transition-all duration-300 scale-95 opacity-0" id="proModalCard">
+        <div class="card-retro bg-paper p-8 max-w-lg w-full relative z-10 transform transition-all duration-300 scale-95 opacity-0" id="proModalCard">
             <button id="closeProModal" class="absolute top-4 right-4 p-2 opacity-50 hover:opacity-100 transition-opacity">
                 <i data-lucide="x" class="w-6 h-6"></i>
             </button>
@@ -248,19 +248,19 @@
             </div>
             
             <h2 class="font-display font-black text-3xl mb-3 text-center" id="proModalTitle">Fonctionnalité Premium</h2>
-            <p class="font-sans text-center font-medium opacity-80 mb-6" id="proModalDesc">Découvrez la puissance de Meal OS Pro.</p>
+            <p class="font-sans text-center font-medium opacity-80 mb-6" id="proModalDesc">Découvrez la puissance de Staff Meal Pro.</p>
             
             <div class="bg-mustard/20 border-2 border-mustard rounded-lg p-4 mb-8 text-sm font-medium text-center">
                 <span class="font-black uppercase tracking-wider text-xs block mb-1">🎁 Accès exclusif</span>
-                Réservé aux établissements partenaires Meal OS.
+                Réservé aux établissements partenaires Staff Meal.
             </div>
             
             <div class="flex flex-col gap-3">
                 <!-- Calendly Link -->
-                <a href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/mealos/15min'});return false;" class="btn-retro w-full group text-center">
+                <a href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/staffmeal/15min'});return false;" class="btn-retro w-full group text-center">
                     Voir ce module en action <i data-lucide="arrow-right" class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform"></i>
                 </a>
-                <button id="cancelProModal" class="btn-retro alt w-full border-transparent hover:border-transparent hover:bg-black/5 shadow-none group-hover:translate-y-0 text-sm opacity-70">
+                <button id="cancelProModal" class="btn-retro alt w-full border-transparent hover:border-transparent hover:bg-foreground/5 shadow-none group-hover:translate-y-0 text-sm opacity-70">
                     Non merci, je reste sur l'outil gratuit
                 </button>
             </div>
@@ -331,7 +331,7 @@
 
             <div class="text-center mb-12 reveal">
                 <div
-                    class="bg-foreground text-background border-2 border-foreground rounded-full px-3 py-1 font-bold text-xs inline-flex items-center gap-2 mb-4 transform -rotate-2 shadow-[2px_2px_0px_theme('colors.accent')]">
+                    class="bg-foreground text-background border-2 border-foreground rounded-full px-3 py-1 font-bold text-xs inline-flex items-center gap-2 mb-4 transform -rotate-2 shadow-[2px_2px_0px_#f0481c]">
                     <i data-lucide="trash-2" class="w-4 h-4"></i> Outil Impact Financier
                 </div>
                 <h1 class="text-chunky text-5xl md:text-6xl mb-4">Calculateur <span
@@ -344,7 +344,7 @@
             <div class="grid lg:grid-cols-2 gap-8 items-stretch">
 
                 <!-- Left: Form -->
-                <div class="bg-white p-6 md:p-8 card-retro border-b-8 reveal flex flex-col">
+                <div class="bg-paper p-6 md:p-8 card-retro border-b-8 reveal flex flex-col">
                     <h2 class="font-display font-black text-2xl mb-8 flex items-center gap-2">
                         <span
                             class="bg-accent text-white w-8 h-8 rounded-full flex items-center justify-center text-sm"><i
@@ -390,7 +390,7 @@
                                 commande, et les retours assiettes non touchés.</p>
                             <div class="flex items-center gap-4">
                                 <span
-                                    class="font-bold flex-1 text-center bg-red-50 text-accent py-3 rounded-lg border-2 border-accent shadow-[2px_2px_0px_theme('colors.accent')]">
+                                    class="font-bold flex-1 text-center bg-red-50 text-accent py-3 rounded-lg border-2 border-accent shadow-[2px_2px_0px_#f0481c]">
                                     <span id="wasteVal">6</span>%
                                 </span>
                             </div>
@@ -427,7 +427,7 @@
                                         id="perteMois">0</span> €</div>
                             </div>
 
-                            <div class="bg-white/10 p-4 rounded-xl border border-white/20">
+                            <div class="bg-paper/10 p-4 rounded-xl border border-white/20">
                                 <div class="text-sm font-bold opacity-80">Sur une année pleine, cela représente :</div>
                                 <div class="font-display text-4xl mt-1 text-mustard"><span id="perteAnnee">0</span> €
                                 </div>
@@ -444,12 +444,12 @@
                     </div>
 
                     <!-- SEO / CTA Lead Magnet -->
-                    <div class="card-retro bg-white border-2 border-foreground p-5 text-center transform hover:-translate-y-1 transition-transform group shadow-retro cursor-pointer"
+                    <div class="card-retro bg-paper border-2 border-foreground p-5 text-center transform hover:-translate-y-1 transition-transform group shadow-retro cursor-pointer"
                         onclick="window.location.href='index.html#demo'">
                         <i data-lucide="clipboard-check"
                             class="w-6 h-6 mx-auto mb-2 group-hover:text-accent transition-colors"></i>
                         <h4 class="font-bold text-sm mb-1 uppercase tracking-wider">Arrêtez l'hémorragie</h4>
-                        <p class="font-sans text-xs font-medium opacity-80">Le module Gestion des Stocks Meal OS vous
+                        <p class="font-sans text-xs font-medium opacity-80">Le module Gestion des Stocks Staff Meal vous
                             alerte avant péremption et ajuste vos commandes. Divisez vos pertes par 3.</p>
                     </div>
                 </div>
@@ -458,8 +458,51 @@
         </div>
     </main>
 
-    <footer class="border-t-3 border-foreground py-8 px-4 text-center bg-white mt-auto">
-        <a href="index.html" class="logo-handwritten text-4xl inline-block mb-2">meal <span class="text-[0.7em] ml-1">OS</span></a>
+    <footer class="border-t border-foreground py-12 px-4 md:px-12 bg-background">
+        <div
+            class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8 text-center md:text-left">
+
+            <a href="index.html" class="flex items-center gap-3 hover:opacity-80 transition-opacity">
+                <img src="assets/brand/mascot.png" alt="" width="56" height="56" class="brand-mark w-14 h-14">
+                <span class="flex flex-col leading-none text-left">
+                    <span class="wordmark text-2xl">Staff Meal</span>
+                    <span class="font-sans text-[0.5rem] uppercase font-bold tracking-[0.2em] text-ink-soft mt-1">le
+                        même service, à chaque service</span>
+                </span>
+            </a>
+
+            <div
+                class="flex flex-col md:flex-row gap-8 md:gap-16 font-sans font-bold text-sm items-center md:items-start text-center md:text-left">
+                <div class="flex flex-col items-center md:items-start gap-3">
+                    <span class="text-accent uppercase tracking-widest text-xs">Comparatifs</span>
+                    <a href="staffmeal-vs-skello.html"
+                        class="hover:text-accent border-b border-transparent hover:border-accent pb-1 inline-block w-max">Staff
+                        Meal et Skello</a>
+                    <a href="staffmeal-vs-koust.html"
+                        class="hover:text-accent border-b border-transparent hover:border-accent pb-1 inline-block w-max">Staff
+                        Meal vs Koust</a>
+                    <a href="staffmeal-vs-combo.html"
+                        class="hover:text-accent border-b border-transparent hover:border-accent pb-1 inline-block w-max">Staff
+                        Meal vs Combo</a>
+                </div>
+                <div class="flex flex-col items-center md:items-start gap-3">
+                    <span class="uppercase tracking-widest text-xs">Ressources</span>
+                    <a href="resources.html"
+                        class="hover:text-accent border-b border-transparent hover:border-accent pb-1 inline-block w-max">Outils
+                        gratuits</a>
+                    <a href="evenements.html"
+                        class="hover:text-accent border-b border-transparent hover:border-accent pb-1 inline-block w-max">Événements</a>
+                    <a href="index.html#demo"
+                        class="hover:text-accent border-b border-transparent hover:border-accent pb-1 inline-block w-max">Nous
+                        contacter</a>
+                </div>
+            </div>
+
+            <div class="font-sans text-sm font-medium text-ink-faint">
+                &copy; 2026 Staff Meal.
+            </div>
+
+        </div>
     </footer>
 
 

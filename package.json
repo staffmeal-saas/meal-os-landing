@@ -4,5 +4,11 @@
     "netlify-cli": "^24.0.1",
     "postcss": "^8.5.8",
     "tailwindcss": "^3.4.17"
+  },
+  "name": "staffmeal-site",
+  "private": true,
+  "scripts": {
+    "build:css": "tailwindcss -i input.css -o style.css --minify",
+    "watch:css": "tailwindcss -i input.css -o style.css --watch"
   }
 }

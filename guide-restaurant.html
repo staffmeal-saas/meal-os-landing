@@ -4,19 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Le Guide Complet pour Gérer et Rentabiliser un Restaurant en 2026 | Meal OS</title>
+    <title>Le Guide Complet pour Gérer et Rentabiliser un Restaurant en 2026 | Staff Meal</title>
     <meta name="description"
         content="Découvrez le manuel ultime pour ouvrir, gérer une brigade, optimiser vos marges (Food Cost) et maîtriser l'hygiène de votre établissement sans stress.">
 
     <!-- Open Graph -->
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://www.mealos.com/guide-restaurant.html">
+    <meta property="og:url" content="https://staffmeal-app.netlify.app/guide-restaurant.html">
     <meta property="og:title" content="Le Guide Ultime pour Rentabiliser un Restaurant en 2026">
     <meta property="og:description"
         content="Découvrez le manuel ultime pour gérer une brigade, optimiser vos marges et maîtriser l'hygiène de votre établissement sans stress.">
 
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://www.mealos.com/guide-restaurant.html">
+    <link rel="canonical" href="https://staffmeal-app.netlify.app/guide-restaurant.html">
 
     <!-- Schema.org BlogPosting -->
     <script type="application/ld+json">
@@ -26,11 +26,11 @@
       "headline": "Le manuel complet pour ouvrir, gérer et rentabiliser un restaurant en France en 2026",
       "author": {
         "@type": "Organization",
-        "name": "Meal OS"
+        "name": "Staff Meal"
       },
       "publisher": {
         "@type": "Organization",
-        "name": "Meal OS"
+        "name": "Staff Meal"
       },
       "datePublished": "2026-03-14",
       "description": "Découvrez le manuel ultime pour ouvrir, gérer une brigade, optimiser vos marges (Food Cost) et maîtriser l'hygiène."
@@ -41,12 +41,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..900;1,9..144,400..900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=Shantell+Sans:wght@500;600;700;800&display=swap"
         rel="stylesheet">
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap"></noscript>
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=Shantell+Sans:wght@500;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=Shantell+Sans:wght@500;600;700;800&display=swap"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=Shantell+Sans:wght@500;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=Shantell+Sans:wght@500;600;700;800&display=swap"></noscript>
 
     <!-- Tailwind CSS -->
     
@@ -60,28 +60,28 @@
     <!-- Custom CSS -->
     <style>
         body {
-            background-color: theme('colors.background');
-            color: theme('colors.foreground');
+            background-color: #f4eedf;
+            color: #181410;
             overflow-x: hidden;
             -webkit-font-smoothing: antialiased;
         }
 
         ::selection {
-            background-color: theme('colors.foreground');
-            color: theme('colors.background');
+            background-color: #181410;
+            color: #f4eedf;
         }
 
         .logo-handwritten {
-            font-family: theme('fontFamily.script');
+            font-family: 'Shantell Sans', cursive;
             text-transform: lowercase;
             letter-spacing: -0.02em;
             line-height: 0.8;
-            color: #1A2222;
+            color: #181410;
         }
 
         .glass-header {
             background: rgba(250, 242, 215, 0.95);
-            border-bottom: 3px solid theme('colors.foreground');
+            border-bottom: 1px solid #181410;
             backdrop-filter: blur(8px);
             transition: padding 0.3s ease;
         }
@@ -92,7 +92,7 @@
         }
 
         .text-chunky {
-            font-family: theme('fontFamily.display');
+            font-family: 'Familjen Grotesk', ui-sans-serif, system-ui, sans-serif;
             font-weight: 900;
             line-height: 0.95;
             letter-spacing: -0.03em;
@@ -102,16 +102,16 @@
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            background-color: theme('colors.foreground');
-            color: theme('colors.background');
-            font-family: theme('fontFamily.sans');
+            background-color: #181410;
+            color: #f4eedf;
+            font-family: 'Familjen Grotesk', ui-sans-serif, system-ui, sans-serif;
             font-weight: 900;
             text-transform: uppercase;
             padding: 0.75rem 1.5rem;
             border-radius: 9999px;
             box-shadow: theme('boxShadow.retro');
             transition: all 0.2s;
-            border: 2px solid theme('colors.foreground');
+            border: 2px solid #181410;
             cursor: pointer;
         }
 
@@ -122,11 +122,11 @@
 
         .btn-retro.alt {
             background-color: white;
-            color: theme('colors.foreground');
+            color: #181410;
         }
 
         .card-retro {
-            border: 3px solid theme('colors.foreground');
+            border: 1px solid #181410;
             border-radius: 1.5rem;
             box-shadow: theme('boxShadow.retro');
         }
@@ -144,30 +144,30 @@
 
         /* Article Typography Styles */
         .prose h2 {
-            font-family: theme('fontFamily.display');
+            font-family: 'Familjen Grotesk', ui-sans-serif, system-ui, sans-serif;
             font-weight: 900;
             font-size: 2.25rem;
             line-height: 1.1;
             margin-top: 3.5rem;
             margin-bottom: 1.5rem;
             letter-spacing: -0.02em;
-            color: theme('colors.accent');
+            color: #f0481c;
         }
 
         .prose h3 {
-            font-family: theme('fontFamily.sans');
+            font-family: 'Familjen Grotesk', ui-sans-serif, system-ui, sans-serif;
             font-weight: 800;
             font-size: 1.5rem;
             margin-top: 2.5rem;
             margin-bottom: 1rem;
             text-transform: uppercase;
             letter-spacing: 0.05em;
-            color: theme('colors.foreground');
+            color: #181410;
             opacity: 0.9;
         }
 
         .prose p {
-            font-family: theme('fontFamily.sans');
+            font-family: 'Familjen Grotesk', ui-sans-serif, system-ui, sans-serif;
             font-weight: 500;
             font-size: 1.125rem;
             line-height: 1.7;
@@ -182,7 +182,7 @@
         }
 
         .prose li {
-            font-family: theme('fontFamily.sans');
+            font-family: 'Familjen Grotesk', ui-sans-serif, system-ui, sans-serif;
             font-weight: 500;
             font-size: 1.125rem;
             line-height: 1.7;
@@ -193,11 +193,11 @@
         .prose strong {
             font-weight: 800;
             opacity: 1;
-            color: theme('colors.foreground');
+            color: #181410;
         }
 
         .prose a {
-            color: theme('colors.accent');
+            color: #f0481c;
             text-decoration: underline;
             text-underline-offset: 4px;
             font-weight: 700;
@@ -209,12 +209,12 @@
         }
 
         .prose blockquote {
-            border-left: 4px solid theme('colors.olive');
+            border-left: 4px solid #4c6b27;
             padding-left: 1.5rem;
-            font-family: theme('fontFamily.display');
+            font-family: 'Familjen Grotesk', ui-sans-serif, system-ui, sans-serif;
             font-size: 1.5rem;
             font-style: italic;
-            color: theme('colors.olive');
+            color: #4c6b27;
             margin-top: 2rem;
             margin-bottom: 2rem;
         }
@@ -223,22 +223,38 @@
     <noscript><link rel="stylesheet" href="style.css"></noscript>
 </head>
 
-<body class="selection:bg-foreground selection:text-background font-sans relative">
+<body class="selection:bg-foreground selection:text-background font-sans relative bg-background text-foreground">
 
     <!-- HEADER -->
     <header id="navbar"
-        class="fixed top-0 left-0 w-full z-50 flex items-center justify-between px-4 md:px-12 py-5 glass-header transition-all duration-300">
-        <a href="index.html"
-            class="relative inline-flex flex-col items-center hover:opacity-80 transition-opacity mt-2">
-            <span class="logo-handwritten text-[4rem] leading-none transform -rotate-3 pl-2 pr-4 pb-1">meal <span class="text-[0.7em] ml-1">OS</span></span>
+        class="brand-bar fixed w-full top-0 z-50 transition-all duration-300 py-3 px-4 md:px-12 flex justify-between items-center border-b border-foreground">
+
+        <a href="index.html" class="flex items-center gap-3 hover:opacity-90 transition-opacity">
+            <img src="assets/brand/mascot.png" alt="" width="48" height="48"
+                class="brand-mark ring w-11 h-11 md:w-12 md:h-12">
+            <span class="flex flex-col leading-none">
+                <span class="wordmark text-xl md:text-2xl">Staff Meal</span>
+                <span class="font-sans text-[0.55rem] uppercase font-bold tracking-[0.22em] opacity-90 mt-1">le même
+                    service, à chaque service</span>
+            </span>
         </a>
-        <nav class="hidden md:flex items-center gap-6 font-sans font-bold text-sm lowercase tracking-wider">
-            <a href="resources.html" class="flex items-center gap-1 hover:text-accent transition-colors"><i
-                    data-lucide="arrow-left" class="w-4 h-4"></i> Revenir aux ressources</a>
+
+        <nav class="hidden md:flex items-center gap-8 font-sans font-bold text-sm lowercase tracking-wider">
+            <a href="index.html#modules" class="hover:opacity-70 transition-opacity">modules</a>
+            <a href="resources.html" class="hover:opacity-70 transition-opacity">ressources</a>
+            <a href="evenements.html" class="hover:opacity-70 transition-opacity">événements</a>
+            <a href="index.html#faq" class="hover:opacity-70 transition-opacity">questions ?</a>
         </nav>
+
         <div class="hidden md:block">
-            <a href="index.html#demo" class="btn-retro alt py-1.5 px-5 text-xs">Menu Bêta</a>
+            <a href="#demo" class="btn-retro alt py-2 px-6 text-sm">
+                postuler (50 places)
+            </a>
         </div>
+
+        <button id="mobileMenuBtn" aria-label="Menu" class="md:hidden text-background z-50">
+            <i data-lucide="menu" class="w-8 h-8"></i>
+        </button>
     </header>
 
     <main class="pt-32 pb-24">
@@ -260,7 +276,7 @@
             </div>
 
             <div
-                class="w-full h-[300px] md:h-[450px] rounded-3xl overflow-hidden border-3 border-foreground shadow-retro mb-16 reveal delay-1">
+                class="w-full h-[300px] md:h-[450px] rounded-3xl overflow-hidden border border-foreground shadow-retro mb-16 reveal delay-1">
                 <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?fit=crop&w=1200"
                     alt="Restaurant Busy Service" class="w-full h-full object-cover filter contrast-125 sepia-[0.1]">
             </div>
@@ -303,7 +319,7 @@
 
                     <!-- LEAD MAGNET INTEGRATION (IN-ARTICLE CTA) -->
                     <div
-                        class="card-retro bg-white p-6 my-8 flex flex-col md:flex-row items-center gap-6 group hover:translate-x-2 transition-transform">
+                        class="card-retro bg-paper p-6 my-8 flex flex-col md:flex-row items-center gap-6 group hover:translate-x-2 transition-transform">
                         <div
                             class="w-16 h-16 rounded-full bg-mustard/20 border-2 border-foreground flex items-center justify-center shrink-0">
                             <i data-lucide="calculator" class="w-8 h-8 text-mustard"></i>
@@ -352,7 +368,7 @@
 
                     <hr class="border-t-2 border-foreground/10 my-10">
 
-                    <p class="text-sm italic opacity-60">Auteur : L'équipe éditoriale Meal OS. Mise à jour le 14 Mars
+                    <p class="text-sm italic opacity-60">Auteur : L'équipe éditoriale Staff Meal. Mise à jour le 14 Mars
                         2026.</p>
 
                 </div>
@@ -361,7 +377,7 @@
                 <aside class="lg:w-1/3 hidden lg:block relative">
                     <div class="sticky top-32">
                         <!-- Sommaire -->
-                        <div class="card-retro bg-white p-6 mb-8">
+                        <div class="card-retro bg-paper p-6 mb-8">
                             <h4
                                 class="font-sans font-black text-sm uppercase tracking-widest mb-4 border-b-2 border-foreground/10 pb-2">
                                 Sommaire</h4>
@@ -390,7 +406,7 @@
                         </div>
 
                         <!-- Sticky CTA Widget -->
-                        <div class="card-retro bg-[#D5DCD0] p-6 text-center shadow-[4px_4px_0px_#1A2222]">
+                        <div class="card-retro bg-[#D5DCD0] p-6 text-center shadow-[4px_4px_0px_#181410]">
                             <i data-lucide="zap" class="w-8 h-8 mx-auto text-olive mb-3"></i>
                             <h4 class="font-display font-black text-xl leading-tight mb-2">Gérez tout ça les mains dans
                                 les poches.</h4>
@@ -407,12 +423,12 @@
         </article>
 
         <!-- RELATED ARTICLES (Siloing) -->
-        <div class="max-w-7xl mx-auto px-4 md:px-12 mt-24 mb-10 border-t-3 border-foreground pt-16 reveal">
+        <div class="max-w-7xl mx-auto px-4 md:px-12 mt-24 mb-10 border-t border-foreground pt-16 reveal">
             <h3 class="text-chunky text-3xl mb-8">Pour aller plus loin</h3>
             <div class="grid md:grid-cols-3 gap-6">
                 <!-- Cluster 1: Finance -->
                 <a href="ratios-financiers-restauration.html"
-                    class="card-retro bg-white p-6 hover:-translate-y-2 transition-transform group flex flex-col h-full">
+                    class="card-retro bg-paper p-6 hover:-translate-y-2 transition-transform group flex flex-col h-full">
                     <span class="text-accent font-sans font-black text-xs uppercase tracking-wider mb-2">Finance &
                         Marge</span>
                     <h4 class="font-display font-black text-xl leading-snug mb-3">Les 5 ratios financiers (hors Food
@@ -424,7 +440,7 @@
 
                 <!-- Cluster 2: RH -->
                 <a href="turnover-restauration.html"
-                    class="card-retro bg-white p-6 hover:-translate-y-2 transition-transform group flex flex-col h-full">
+                    class="card-retro bg-paper p-6 hover:-translate-y-2 transition-transform group flex flex-col h-full">
                     <span class="text-olive font-sans font-black text-xs uppercase tracking-wider mb-2">Management
                         Brut</span>
                     <h4 class="font-display font-black text-xl leading-snug mb-3">Turnover en salle : comment construire
@@ -436,7 +452,7 @@
 
                 <!-- Cluster 3: HACCP -->
                 <a href="checklist-haccp-inspection.html"
-                    class="card-retro bg-white p-6 hover:-translate-y-2 transition-transform group flex flex-col h-full">
+                    class="card-retro bg-paper p-6 hover:-translate-y-2 transition-transform group flex flex-col h-full">
                     <span class="text-mustard font-sans font-black text-xs uppercase tracking-wider mb-2">Opérations Sereines</span>
                     <h4 class="font-display font-black text-xl leading-snug mb-3">Survivre à une inspection : la checklist de l'enfer (HACCP).</h4>
                     <span class="mt-auto font-sans font-bold text-xs flex items-center gap-1 group-hover:text-mustard">Lire l'article <i data-lucide="arrow-right" class="w-3 h-3"></i></span>
@@ -444,7 +460,7 @@
                 
                 <!-- Cluster 4: RH -->
                 <a href="planning-personnel-restaurant.html"
-                    class="card-retro bg-white p-6 hover:-translate-y-2 transition-transform group flex flex-col h-full mt-6 md:mt-0">
+                    class="card-retro bg-paper p-6 hover:-translate-y-2 transition-transform group flex flex-col h-full mt-6 md:mt-0">
                     <span class="text-olive font-sans font-black text-xs uppercase tracking-wider mb-2">Gestion RH</span>
                     <h4 class="font-display font-black text-xl leading-snug mb-3">Planifier sans erreur : comment éviter les démissions.</h4>
                     <span class="mt-auto font-sans font-bold text-xs flex items-center gap-1 group-hover:text-olive">Lire l'article <i data-lucide="arrow-right" class="w-3 h-3"></i></span>
@@ -452,7 +468,7 @@
                 
                 <!-- Cluster 5: Maintenance -->
                 <a href="maintenance-equipement-restaurant.html"
-                    class="card-retro bg-white p-6 hover:-translate-y-2 transition-transform group flex flex-col h-full mt-6 md:mt-0">
+                    class="card-retro bg-paper p-6 hover:-translate-y-2 transition-transform group flex flex-col h-full mt-6 md:mt-0">
                     <span class="text-accent font-sans font-black text-xs uppercase tracking-wider mb-2">Opérations Sereines</span>
                     <h4 class="font-display font-black text-xl leading-snug mb-3">Digitaliser la maintenance de vos équipements (frigos, fours).</h4>
                     <span class="mt-auto font-sans font-bold text-xs flex items-center gap-1 group-hover:text-accent">Lire l'article <i data-lucide="arrow-right" class="w-3 h-3"></i></span>
@@ -460,7 +476,7 @@
                 
                 <!-- Cluster 6: Manuel OPS -->
                 <a href="manuel-operatoire-restaurant.html"
-                    class="card-retro bg-white p-6 hover:-translate-y-2 transition-transform group flex flex-col h-full mt-6 md:mt-0">
+                    class="card-retro bg-paper p-6 hover:-translate-y-2 transition-transform group flex flex-col h-full mt-6 md:mt-0">
                     <span class="text-foreground font-sans font-black text-xs uppercase tracking-wider mb-2">Parcours Client</span>
                     <h4 class="font-display font-black text-xl leading-snug mb-3">SOP : Le secret du service parfait des grandes franchises.</h4>
                     <span class="mt-auto font-sans font-bold text-xs flex items-center gap-1 group-hover:text-foreground">Lire l'article <i data-lucide="arrow-right" class="w-3 h-3"></i></span>
@@ -470,10 +486,51 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="border-t-3 border-foreground py-8 px-4 md:px-12 bg-white text-center flex flex-col items-center">
-        <a href="index.html" class="logo-handwritten text-4xl mb-4">meal <span class="text-[0.7em] ml-1">OS</span></a>
-        <div class="font-sans text-xs font-medium opacity-60">&copy; 2026 Meal OS. Outil conçu pour les restaurateurs
-            professionnels.</div>
+    <footer class="border-t border-foreground py-12 px-4 md:px-12 bg-background">
+        <div
+            class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8 text-center md:text-left">
+
+            <a href="index.html" class="flex items-center gap-3 hover:opacity-80 transition-opacity">
+                <img src="assets/brand/mascot.png" alt="" width="56" height="56" class="brand-mark w-14 h-14">
+                <span class="flex flex-col leading-none text-left">
+                    <span class="wordmark text-2xl">Staff Meal</span>
+                    <span class="font-sans text-[0.5rem] uppercase font-bold tracking-[0.2em] text-ink-soft mt-1">le
+                        même service, à chaque service</span>
+                </span>
+            </a>
+
+            <div
+                class="flex flex-col md:flex-row gap-8 md:gap-16 font-sans font-bold text-sm items-center md:items-start text-center md:text-left">
+                <div class="flex flex-col items-center md:items-start gap-3">
+                    <span class="text-accent uppercase tracking-widest text-xs">Comparatifs</span>
+                    <a href="staffmeal-vs-skello.html"
+                        class="hover:text-accent border-b border-transparent hover:border-accent pb-1 inline-block w-max">Staff
+                        Meal et Skello</a>
+                    <a href="staffmeal-vs-koust.html"
+                        class="hover:text-accent border-b border-transparent hover:border-accent pb-1 inline-block w-max">Staff
+                        Meal vs Koust</a>
+                    <a href="staffmeal-vs-combo.html"
+                        class="hover:text-accent border-b border-transparent hover:border-accent pb-1 inline-block w-max">Staff
+                        Meal vs Combo</a>
+                </div>
+                <div class="flex flex-col items-center md:items-start gap-3">
+                    <span class="uppercase tracking-widest text-xs">Ressources</span>
+                    <a href="resources.html"
+                        class="hover:text-accent border-b border-transparent hover:border-accent pb-1 inline-block w-max">Outils
+                        gratuits</a>
+                    <a href="evenements.html"
+                        class="hover:text-accent border-b border-transparent hover:border-accent pb-1 inline-block w-max">Événements</a>
+                    <a href="index.html#demo"
+                        class="hover:text-accent border-b border-transparent hover:border-accent pb-1 inline-block w-max">Nous
+                        contacter</a>
+                </div>
+            </div>
+
+            <div class="font-sans text-sm font-medium text-ink-faint">
+                &copy; 2026 Staff Meal.
+            </div>
+
+        </div>
     </footer>
 
     <!-- SCRIPTS -->
