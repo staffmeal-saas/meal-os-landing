@@ -88,7 +88,7 @@ skello_main = """
         <section class="relative min-h-[70vh] flex items-center justify-center pt-32 pb-20 px-4 md:px-12 bg-background overflow-hidden border-b-3 border-foreground">
             <div class="blob-1" style="top: 20%; right: 10%;"></div>
             <div class="max-w-4xl mx-auto w-full text-center relative z-10 reveal">
-                <div class="inline-flex items-center gap-2 bg-[#fce5cd] border-2 border-foreground rounded-full px-4 py-2 mb-6 transform -rotate-2 shadow-[2px_2px_0px_#111111]">
+                <div class="inline-flex items-center gap-2 bg-[#E8D5C4] border-2 border-foreground rounded-full px-4 py-2 mb-6 transform -rotate-2 shadow-[2px_2px_0px_#1A2222]">
                     <span class="font-sans font-bold text-sm tracking-wide">Comparatif 2026 : Logiciels RH Restauration</span>
                 </div>
                 <h1 class="text-chunky text-5xl md:text-7xl mb-6 mt-4">Skello <span class="text-mustard font-display mx-2">VS</span> Meal OS</h1>
@@ -107,22 +107,22 @@ skello_main = """
             <div class="card-retro overflow-hidden bg-white">
                 <div class="grid grid-cols-2 lg:grid-cols-3 bg-foreground text-background p-4 text-center font-sans font-bold text-lg uppercase tracking-wider">
                     <div class="hidden lg:block border-r-2 border-background/20">Fonctionnalités Clés</div>
-                    <div class="text-[#FAF2D7]/60 border-r-2 border-background/20">Skello</div>
+                    <div class="text-[#F4F1EB]/60 border-r-2 border-background/20">Skello</div>
                     <div class="text-mustard">Meal OS</div>
                 </div>
                 <div class="divide-y-2 divide-foreground/10 font-sans font-medium text-lg">
                     <div class="grid grid-cols-2 lg:grid-cols-3 p-4 md:p-6 text-center lg:text-left items-center"><div class="hidden lg:block font-bold">Plannings & RH</div><div class="text-olive flex justify-center"><i data-lucide="check" class="w-6 h-6"></i></div><div class="text-olive flex justify-center"><i data-lucide="check" class="w-6 h-6"></i></div></div>
-                    <div class="grid grid-cols-2 lg:grid-cols-3 p-4 md:p-6 bg-[#fce5cd] text-center lg:text-left items-center"><div class="hidden lg:block font-bold">Standardisation HACCP</div><div class="text-accent/50 flex justify-center"><i data-lucide="x" class="w-6 h-6"></i></div><div class="font-bold text-olive flex justify-center"><i data-lucide="check" class="w-6 h-6"></i></div></div>
-                    <div class="grid grid-cols-2 lg:grid-cols-3 p-4 md:p-6 bg-[#fce5cd] text-center lg:text-left items-center"><div class="hidden lg:block font-bold">Rendements & Recettes</div><div class="text-accent/50 flex justify-center"><i data-lucide="x" class="w-6 h-6"></i></div><div class="font-bold text-olive flex justify-center"><i data-lucide="check" class="w-6 h-6"></i></div></div>
+                    <div class="grid grid-cols-2 lg:grid-cols-3 p-4 md:p-6 bg-[#E8D5C4] text-center lg:text-left items-center"><div class="hidden lg:block font-bold">Standardisation HACCP</div><div class="text-accent/50 flex justify-center"><i data-lucide="x" class="w-6 h-6"></i></div><div class="font-bold text-olive flex justify-center"><i data-lucide="check" class="w-6 h-6"></i></div></div>
+                    <div class="grid grid-cols-2 lg:grid-cols-3 p-4 md:p-6 bg-[#E8D5C4] text-center lg:text-left items-center"><div class="hidden lg:block font-bold">Rendements & Recettes</div><div class="text-accent/50 flex justify-center"><i data-lucide="x" class="w-6 h-6"></i></div><div class="font-bold text-olive flex justify-center"><i data-lucide="check" class="w-6 h-6"></i></div></div>
                 </div>
             </div>
         </section>
 """
 
 koust_main = """
-        <section class="relative min-h-[70vh] flex items-center justify-center pt-32 pb-20 px-4 md:px-12 bg-[#FAF2D7] overflow-hidden border-b-3 border-foreground">
+        <section class="relative min-h-[70vh] flex items-center justify-center pt-32 pb-20 px-4 md:px-12 bg-[#F4F1EB] overflow-hidden border-b-3 border-foreground">
             <div class="max-w-4xl mx-auto w-full text-center relative z-10 reveal">
-                <div class="inline-flex items-center gap-2 bg-[#e3ecd4] border-2 border-foreground rounded-full px-4 py-2 mb-6">
+                <div class="inline-flex items-center gap-2 bg-[#D5DCD0] border-2 border-foreground rounded-full px-4 py-2 mb-6">
                     <span class="font-sans font-bold text-sm tracking-wide">Comparatif 2026 : Food Cost & Marges</span>
                 </div>
                 <h1 class="text-chunky text-5xl md:text-7xl mb-6 mt-4">Koust <span class="text-accent font-display mx-2">VS</span> Meal OS</h1>
@@ -140,13 +140,13 @@ koust_main = """
             <div class="card-retro overflow-hidden bg-white">
                 <div class="grid grid-cols-2 lg:grid-cols-3 bg-foreground text-background p-4 text-center font-sans font-bold text-lg uppercase tracking-wider">
                     <div class="hidden lg:block border-r-2 border-background/20">Fonctionnalités</div>
-                    <div class="text-[#FAF2D7]/60 border-r-2 border-background/20">Koust</div>
+                    <div class="text-[#F4F1EB]/60 border-r-2 border-background/20">Koust</div>
                     <div class="text-mustard">Meal OS</div>
                 </div>
                 <div class="divide-y-2 divide-foreground/10 font-sans font-medium text-lg">
                     <div class="grid grid-cols-2 lg:grid-cols-3 p-4 md:p-6 text-center lg:text-left items-center"><div class="hidden lg:block font-bold">Fiches Recettes & Marges</div><div class="text-olive flex justify-center"><i data-lucide="check" class="w-6 h-6"></i></div><div class="text-olive flex justify-center"><i data-lucide="check" class="w-6 h-6"></i></div></div>
                     <div class="grid grid-cols-2 lg:grid-cols-3 p-4 md:p-6 text-center lg:text-left items-center"><div class="hidden lg:block font-bold">Complexité</div><div class="text-accent flex justify-center font-bold">Élevée/Technique</div><div class="text-olive flex justify-center font-bold">Très Intuitive</div></div>
-                    <div class="grid grid-cols-2 lg:grid-cols-3 p-4 md:p-6 bg-[#e3ecd4] text-center lg:text-left items-center"><div class="hidden lg:block font-bold">Communication & Equipe</div><div class="text-accent/50 flex justify-center"><i data-lucide="x" class="w-6 h-6"></i></div><div class="font-bold text-olive flex justify-center"><i data-lucide="check" class="w-6 h-6"></i></div></div>
+                    <div class="grid grid-cols-2 lg:grid-cols-3 p-4 md:p-6 bg-[#D5DCD0] text-center lg:text-left items-center"><div class="hidden lg:block font-bold">Communication & Equipe</div><div class="text-accent/50 flex justify-center"><i data-lucide="x" class="w-6 h-6"></i></div><div class="font-bold text-olive flex justify-center"><i data-lucide="check" class="w-6 h-6"></i></div></div>
                 </div>
             </div>
         </section>
@@ -156,7 +156,7 @@ combo_main = """
         <section class="relative min-h-[70vh] flex items-center justify-center pt-32 pb-20 px-4 md:px-12 bg-white overflow-hidden border-b-3 border-foreground">
             <div class="blob-1 bg-olive" style="width: 300px; height: 300px; top: -50px; left: -50px;"></div>
             <div class="max-w-4xl mx-auto w-full text-center relative z-10 reveal">
-                <div class="inline-flex items-center gap-2 bg-[#fce5cd] border-2 border-foreground rounded-full px-4 py-2 mb-6">
+                <div class="inline-flex items-center gap-2 bg-[#E8D5C4] border-2 border-foreground rounded-full px-4 py-2 mb-6">
                     <span class="font-sans font-bold text-sm tracking-wide">Comparatif 2026 : Outils Opérationnels</span>
                 </div>
                 <h1 class="text-chunky text-5xl md:text-7xl mb-6 mt-4">Combo <span class="text-mustard font-display mx-2">VS</span> Meal OS</h1>
@@ -174,14 +174,14 @@ combo_main = """
             <div class="card-retro overflow-hidden bg-white">
                 <div class="grid grid-cols-2 lg:grid-cols-3 bg-foreground text-background p-4 text-center font-sans font-bold text-lg uppercase tracking-wider">
                     <div class="hidden lg:block border-r-2 border-background/20">Gestion Restauration</div>
-                    <div class="text-[#FAF2D7]/60 border-r-2 border-background/20">Combo</div>
+                    <div class="text-[#F4F1EB]/60 border-r-2 border-background/20">Combo</div>
                     <div class="text-mustard">Meal OS</div>
                 </div>
                 <div class="divide-y-2 divide-foreground/10 font-sans font-medium text-lg">
                     <div class="grid grid-cols-2 lg:grid-cols-3 p-4 md:p-6 text-center lg:text-left items-center"><div class="hidden lg:block font-bold">Planning & Paie</div><div class="text-olive flex justify-center"><i data-lucide="check" class="w-6 h-6"></i></div><div class="text-olive flex justify-center"><i data-lucide="check" class="w-6 h-6"></i></div></div>
                     <div class="grid grid-cols-2 lg:grid-cols-3 p-4 md:p-6 text-center lg:text-left items-center"><div class="hidden lg:block font-bold">Messagerie Equipe</div><div class="text-olive flex justify-center"><i data-lucide="check" class="w-6 h-6"></i></div><div class="text-olive flex justify-center"><i data-lucide="check" class="w-6 h-6"></i></div></div>
-                    <div class="grid grid-cols-2 lg:grid-cols-3 p-4 md:p-6 bg-[#fce5cd] text-center lg:text-left items-center"><div class="hidden lg:block font-bold">Contrôle Ratios/Recettes</div><div class="text-accent/50 flex justify-center"><i data-lucide="x" class="w-6 h-6"></i></div><div class="font-bold text-olive flex justify-center"><i data-lucide="check" class="w-6 h-6"></i></div></div>
-                    <div class="grid grid-cols-2 lg:grid-cols-3 p-4 md:p-6 bg-[#fce5cd] text-center lg:text-left items-center"><div class="hidden lg:block font-bold">Hygiène & Audit</div><div class="text-accent/50 flex justify-center"><i data-lucide="x" class="w-6 h-6"></i></div><div class="font-bold text-olive flex justify-center"><i data-lucide="check" class="w-6 h-6"></i></div></div>
+                    <div class="grid grid-cols-2 lg:grid-cols-3 p-4 md:p-6 bg-[#E8D5C4] text-center lg:text-left items-center"><div class="hidden lg:block font-bold">Contrôle Ratios/Recettes</div><div class="text-accent/50 flex justify-center"><i data-lucide="x" class="w-6 h-6"></i></div><div class="font-bold text-olive flex justify-center"><i data-lucide="check" class="w-6 h-6"></i></div></div>
+                    <div class="grid grid-cols-2 lg:grid-cols-3 p-4 md:p-6 bg-[#E8D5C4] text-center lg:text-left items-center"><div class="hidden lg:block font-bold">Hygiène & Audit</div><div class="text-accent/50 flex justify-center"><i data-lucide="x" class="w-6 h-6"></i></div><div class="font-bold text-olive flex justify-center"><i data-lucide="check" class="w-6 h-6"></i></div></div>
                 </div>
             </div>
         </section>

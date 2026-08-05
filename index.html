@@ -67,9 +67,9 @@
     <!-- Custom CSS -->
 </head>
 
-<body class="selection:bg-olive selection:text-background relative">
+<body class="selection:bg-accent selection:text-white relative bg-white text-black">
 
-    <div class="noise-overlay"></div>
+    <div class="noise-overlay opacity-5"></div>
 
     <!-- HEADER -->
     <header id="navbar"
@@ -141,43 +141,36 @@
 
         <!-- SECTION 1: HERO -->
         <section
-            class="relative min-h-[90vh] flex items-center justify-center pt-32 pb-20 px-4 md:px-12 overflow-hidden">
-            <!-- Decorative Blobs -->
-            <div class="blob-1" style="top: 20%; right: 10%;"></div>
-            <div class="blob-1 bg-mustard"
-                style="width: 300px; height: 300px; bottom: -50px; left: -50px; border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;">
-            </div>
-
+            class="relative min-h-[90vh] flex items-center justify-center pt-32 pb-20 px-4 md:px-12 overflow-hidden bg-white">
+            
             <div class="max-w-7xl mx-auto w-full grid md:grid-cols-2 gap-12 items-center relative z-10">
 
                 <div class="reveal">
                     <!-- NEW BADGE -->
                     <div
-                        class="inline-flex items-center gap-2 bg-[#fce5cd] border-2 border-foreground rounded-full px-4 py-2 mb-6 transform -rotate-2 shadow-[2px_2px_0px_#111111]">
-                        <i data-lucide="award" class="w-5 h-5 text-accent"></i>
-                        <span class="font-sans font-bold text-sm tracking-wide">Le seul OS incluant l'installation sur
-                            place par nos experts.</span>
+                        class="inline-flex items-center gap-2 border-[1px] border-foreground rounded px-3 py-1 mb-6">
+                        <i data-lucide="award" class="w-4 h-4 text-accent"></i>
+                        <span class="font-sans font-medium text-xs uppercase tracking-widest">Expertise Terrain Accompagnée</span>
                     </div>
 
-                    <h1 class="text-chunky text-6xl md:text-7xl lg:text-[6.5rem] mb-6 relative mt-4">
-                        <span class="text-reveal-wrapper"><span class="text-reveal-inner">Gérez
+                    <h1 class="text-chunky text-6xl md:text-7xl lg:text-[7rem] mb-6 relative mt-4">
+                        <span class="text-reveal-wrapper"><span class="text-reveal-inner">Pilotez
                                 votre</span></span><br />
                         <span class="text-reveal-wrapper">
                             <span class="text-reveal-inner relative">restaurant
-                                <!-- SVG Scribble underline -->
-                                <svg class="absolute -bottom-4 left-0 w-full h-6 svg-draw text-mustard z-[-1]"
+                                <!-- SVG Scribble underline (now red and thinner) -->
+                                <svg class="absolute -bottom-2 left-0 w-full h-4 svg-draw text-accent z-[-1]"
                                     viewBox="0 0 200 20" preserveAspectRatio="none">
                                     <path d="M5,15 Q50,5 100,10 T195,15" fill="none" stroke="currentColor"
-                                        stroke-width="6" stroke-linecap="round" />
+                                        stroke-width="3" stroke-linecap="round" />
                                 </svg>
                             </span>
                         </span>
-                        <div class="absolute -bottom-8 -right-4 md:right-10 transform rotate-[-5deg]">
+                        <div class="absolute -bottom-10 right-0 md:right-4 transform">
                             <span
-                                class="font-sans font-medium text-xl uppercase tracking-widest text-olive -ml-6 pl-2 pr-1 bg-white border-2 border-foreground rounded reveal delay-2">comme
-                                un</span>
+                                class="font-sans font-bold text-lg uppercase tracking-[0.3em] text-black">avec</span>
                             <span
-                                class="font-script text-accent text-7xl inline-block -ml-2 -mt-2 tracking-normal reveal delay-3">chef!</span>
+                                class="font-script text-accent text-7xl inline-block -ml-2 -mt-2 tracking-normal reveal delay-3">élan.</span>
                         </div>
                     </h1>
 
@@ -198,33 +191,28 @@
                 </div>
 
                 <div class="reveal delay-3 relative mt-12 md:mt-0">
-                    <!-- Image composite imitating the kitchen/staff vibe -->
+                    <!-- Image composite with minimalist circular/sharp mix -->
                     <div class="relative w-full aspect-[4/5] max-w-md mx-auto">
                         <div
-                            class="absolute w-full h-[85%] top-0 right-0 z-10 rounded-3xl border-retro overflow-hidden">
+                            class="absolute w-full h-[90%] top-0 right-0 z-10 rounded-lg border-retro overflow-hidden">
                             <img alt="Meal OS - Solution de gestion pour restaurants"
-                                class="w-full h-full object-cover img-breathe filter sepia-[0.2] contrast-[1.1]"
+                                class="w-full h-full object-cover img-breathe filter grayscale-[0.2] contrast-[1.05]"
                                 src="https://images.unsplash.com/photo-1578474846511-04ba529f0b88?fit=crop&w=800&h=1000&q=80&format=webp"
                                 width="800" height="1000" fetchpriority="high">
                         </div>
 
-                        <!-- Floating sticker -->
+                        <!-- Floating red accent -->
                         <div
-                            class="absolute top-10 -left-6 z-20 bg-background border-retro rounded-full p-4 transform -rotate-12 shadow-retro w-28 h-28 flex items-center justify-center text-center reveal delay-2">
-                            <span class="font-display font-black text-accent leading-none text-xl">100%<br><span
-                                    class="text-sm text-foreground">terrain</span></span>
+                            class="absolute -bottom-6 -right-6 z-20 bg-accent text-white border-[1px] border-foreground rounded-full w-32 h-32 flex items-center justify-center text-center reveal delay-2 shadow-lg">
+                            <span class="font-sans font-black uppercase text-xs tracking-tighter leading-tight">100%<br>Restaurateur</span>
                         </div>
 
                         <div
-                            class="absolute w-2/3 h-[40%] -bottom-4 -left-4 z-20 rounded-2xl border-retro overflow-hidden reveal delay-3">
-                            <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?fit=crop&w=400&h=267&format=webp&q=75"
-                                srcset="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?fit=crop&w=300&h=200&format=webp&q=70 300w,
-                                        https://images.unsplash.com/photo-1577219491135-ce391730fb2c?fit=crop&w=400&h=267&format=webp&q=75 400w,
-                                        https://images.unsplash.com/photo-1577219491135-ce391730fb2c?fit=crop&w=600&h=400&format=webp&q=75 600w"
-                                sizes="(max-width: 768px) 60vw, 285px"
-                                class="w-full h-full object-cover img-breathe filter sepia-[0.2] contrast-[1.1]"
-                                style="animation-delay: -5s;" alt="Chef preparing inox" width="400" height="267"
-                                loading="lazy" decoding="async">
+                            class="absolute w-1/2 h-1/2 -bottom-10 -left-10 z-20 rounded-full border-retro overflow-hidden reveal delay-3 shadow-xl">
+                            <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?fit=crop&w=400&h=400&format=webp&q=75"
+                                class="w-full h-full object-cover img-breathe"
+                                alt="Chef prepping" width="400" height="400"
+                                loading="lazy">
                         </div>
                     </div>
                 </div>
@@ -273,17 +261,17 @@
         <section class="py-16 px-4 md:px-12 max-w-7xl mx-auto">
 
             <div class="text-center mb-16 reveal">
-                <h2 class="font-script text-olive text-4xl mb-4 transform -rotate-2">on sait ce que c'est...</h2>
-                <h3 class="text-chunky text-5xl md:text-6xl">le vrai quotidien d'un restaurateur.<br><span
-                        class="text-4xl text-mustard">Et on sait ce que ça vous coûte.</span></h3>
+                <h2 class="font-script text-accent text-4xl mb-4 transform -rotate-1">le pragmatisme avant tout.</h2>
+                <h3 class="text-chunky text-5xl md:text-6xl uppercase tracking-tighter">maîtrisez chaque service.<br><span
+                        class="text-accent underline decoration-1 underline-offset-8">sécurisez vos marges.</span></h3>
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
 
-                <div class="card-retro p-8 reveal flex flex-col h-full">
+                <div class="card-retro p-8 reveal flex flex-col h-full hover:bg-black hover:text-white transition-colors">
                     <div
-                        class="w-14 h-14 rounded-full border-2 border-foreground bg-accent/20 flex items-center justify-center mb-6 text-accent">
-                        <i data-lucide="file-warning" class="w-6 h-6"></i>
+                        class="w-12 h-12 rounded-full border-[1px] border-foreground flex items-center justify-center mb-6">
+                        <i data-lucide="file-warning" class="w-5 h-5"></i>
                     </div>
                     <p class="font-sans font-bold text-lg leading-snug flex-grow">Vos fiches HACCP traînent dans un
                         classeur que personne n'ouvre</p>
@@ -293,52 +281,45 @@
                     </div>
                 </div>
 
-                <div class="card-retro p-8 reveal delay-1 flex flex-col h-full bg-[#fce5cd]">
+                <div class="card-retro p-8 reveal delay-1 flex flex-col h-full bg-black text-white">
                     <div
-                        class="w-14 h-14 rounded-full border-2 border-foreground bg-white flex items-center justify-center mb-6 text-foreground">
-                        <i data-lucide="brain" class="w-6 h-6"></i>
+                        class="w-12 h-12 rounded-full border-[1px] border-white flex items-center justify-center mb-6">
+                        <i data-lucide="brain" class="w-5 h-5"></i>
                     </div>
-                    <p class="font-sans font-bold text-lg leading-snug flex-grow">Vos recettes sont dans la tête de
-                        votre chef, pas dans un système</p>
-                    <div class="mt-4 pt-4 border-t-2 border-foreground/10">
-                        <p class="font-sans font-black text-foreground text-sm uppercase">→ Marge non maîtrisée et
-                            gaspillage.</p>
+                    <p class="font-sans font-bold text-lg leading-snug flex-grow">Standardisation digitale de vos fiches techniques</p>
+                    <div class="mt-4 pt-4 border-t-[1px] border-white/20">
+                        <p class="font-sans font-medium text-accent text-xs uppercase tracking-widest">→ Rentabilité Garantie.</p>
                     </div>
                 </div>
 
-                <div class="card-retro p-8 reveal delay-2 flex flex-col h-full bg-[#e3ecd4]">
+                <div class="card-retro p-8 reveal delay-2 flex flex-col h-full border-accent">
                     <div
-                        class="w-14 h-14 rounded-full border-2 border-foreground bg-white flex items-center justify-center mb-6 text-foreground">
-                        <i data-lucide="star-off" class="w-6 h-6"></i>
+                        class="w-12 h-12 rounded-full border-[1px] border-accent flex items-center justify-center mb-6 text-accent">
+                        <i data-lucide="star" class="w-5 h-5"></i>
                     </div>
-                    <p class="font-sans font-bold text-lg leading-snug flex-grow">Vous découvrez les problèmes de
-                        service par les avis Google</p>
-                    <div class="mt-4 pt-4 border-t-2 border-foreground/10">
-                        <p class="font-sans font-black text-foreground text-sm uppercase">→ Perte de clientèle et baisse
-                            de CA.</p>
+                    <p class="font-sans font-bold text-lg leading-snug flex-grow">Prévention active de la satisfaction client</p>
+                    <div class="mt-4 pt-4 border-t-[1px] border-foreground/10">
+                        <p class="font-sans font-bold text-xs uppercase tracking-widest text-black/50">→ E-réputation Sous Contrôle.</p>
                     </div>
                 </div>
 
-                <div class="card-retro p-8 reveal delay-3 flex flex-col h-full">
+                <div class="card-retro p-8 reveal delay-3 flex flex-col h-full hover:bg-black hover:text-white transition-colors">
                     <div
-                        class="w-14 h-14 rounded-full border-2 border-foreground bg-mustard/20 flex items-center justify-center mb-6 text-mustard">
-                        <i data-lucide="timer" class="w-6 h-6"></i>
+                        class="w-12 h-12 rounded-full border-[1px] border-foreground flex items-center justify-center mb-6">
+                        <i data-lucide="timer" class="w-5 h-5"></i>
                     </div>
-                    <p class="font-sans font-bold text-lg leading-snug flex-grow">Les tâches du jour se perdent entre le
-                        briefing et le coup de feu</p>
-                    <div class="mt-4 pt-4 border-t-2 border-foreground/10">
-                        <p class="font-sans font-black text-foreground text-sm uppercase">→ Désorganisation et turnover.
-                        </p>
+                    <p class="font-sans font-bold text-lg leading-snug flex-grow">Optimisation du temps de management</p>
+                    <div class="mt-4 pt-4 border-t-[1px] border-foreground/10">
+                        <p class="font-sans font-bold text-xs uppercase tracking-widest text-accent">→ Réduction du Turnover.</p>
                     </div>
                 </div>
 
             </div>
 
-            <div class="mt-16 text-center reveal border-t-3 border-foreground pt-12 max-w-lg mx-auto">
-                <p class="font-display italic font-bold text-2xl mb-8">Et si <span
-                        class="bg-mustard px-2 rotate-1 inline-block">un seul système</span> pouvait sécuriser vos
-                    marges et votre qualité de service ?</p>
-                <i data-lucide="arrow-down" class="w-10 h-10 mx-auto text-accent animate-bounce"></i>
+            <div class="mt-16 text-center reveal border-t-[1px] border-foreground pt-12 max-w-lg mx-auto">
+                <p class="font-display italic font-bold text-2xl mb-8 leading-tight">Et si <span
+                        class="text-accent underline decoration-accent/30 decoration-2 underline-offset-4">une solution globale</span> sécurisait enfin vos fondamentaux ?</p>
+                <i data-lucide="arrow-down" class="w-8 h-8 mx-auto text-accent animate-bounce"></i>
             </div>
 
         </section>
@@ -353,9 +334,9 @@
 
             <div class="card-retro overflow-hidden bg-white reveal delay-1">
                 <div
-                    class="grid grid-cols-2 bg-foreground text-background p-4 text-center font-sans font-bold text-lg uppercase tracking-wider">
-                    <div class="border-r-2 border-background/20">Avant Meal OS</div>
-                    <div class="text-mustard">Avec Meal OS</div>
+                    class="grid grid-cols-2 bg-black text-white p-4 text-center font-sans font-bold text-sm uppercase tracking-[0.2em]">
+                    <div class="border-r-[1px] border-white/20">Avant</div>
+                    <div class="text-accent">Après</div>
                 </div>
 
                 <div class="divide-y-2 divide-foreground/10 font-sans font-medium text-lg">
@@ -391,30 +372,25 @@
 
         <!-- SECTION 4: LES 9 MODULES -->
         <section id="modules"
-            class="py-24 px-4 md:px-12 bg-[#382512] text-[#FAF2D7] relative mt-12 rounded-[3.5rem] border-3 border-foreground mx-4 md:mx-8 shadow-retro overflow-hidden">
-            <!-- Decorative inner pattern (Flux coffee vibe) -->
-            <div class="absolute inset-0 opacity-5 pointer-events-none"
-                style="background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #FAF2D7 10px), repeating-linear-gradient(#FAF2D755, #FAF2D7); background-size: 20px 20px;">
-            </div>
-
+            class="py-24 px-4 md:px-12 bg-white text-black relative mt-12 border-y-[1px] border-foreground overflow-hidden">
+            
             <div class="max-w-[1400px] mx-auto relative z-10">
                 <div class="text-center mb-20 reveal">
                     <div
-                        class="bg-accent text-white border-2 border-background rounded-full px-4 py-1 text-sm font-bold inline-block mb-6 transform -rotate-3">
-                        notre assemblage exclusif</div>
-                    <h2 class="text-chunky text-5xl md:text-7xl mb-4 text-[#FAF2D7]">les 9 ingrédients.</h2>
-                    <p class="font-sans font-medium text-xl opacity-80">Trois saveurs fondamentales pour diriger
-                        sereinement.</p>
+                        class="border-[1px] border-accent text-accent rounded px-3 py-1 text-xs font-bold inline-block mb-6 tracking-widest uppercase">
+                        Structure & Équilibre</div>
+                    <h2 class="text-chunky text-5xl md:text-7xl mb-4 text-black uppercase tracking-tighter">les 9 modules.</h2>
+                    <p class="font-sans font-medium text-lg opacity-60">L'architecture d'un établissement d'exception.</p>
                 </div>
 
                 <div class="grid lg:grid-cols-3 gap-8">
 
                     <!-- PILLAR 1 -->
                     <div
-                        class="bg-white text-foreground rounded-3xl p-8 border-retro border-white relative reveal delay-1">
+                        class="bg-white text-foreground p-8 border-[1px] border-foreground relative reveal delay-1">
                         <div
-                            class="absolute -top-4 -right-4 bg-olive text-white px-3 py-1 font-bold rounded-lg border-2 border-foreground transform rotate-6">
-                            Pilier 01</div>
+                            class="absolute -top-3 -right-3 bg-black text-white px-3 py-1 text-xs font-bold uppercase tracking-widest border-[1px] border-foreground">
+                            P-01</div>
 
                         <h3 class="font-display font-black text-3xl mb-1">Opérations</h3>
                         <p class="font-script text-accent text-2xl mb-8 -mt-2">Le quotidien fluide</p>
@@ -423,14 +399,14 @@
                             <!-- Items -->
                             <div class="border-b-2 border-foreground/10 pb-4">
                                 <h4 class="font-sans font-black text-lg mb-1 flex items-center gap-2">
-                                    <i data-lucide="check-square" class="w-5 h-5 text-olive"></i> TodoList
+                                    <i data-lucide="check-square" class="w-4 h-4 text-accent"></i> TodoLists
                                 </h4>
                                 <p class="font-sans font-medium text-sm opacity-80 leading-relaxed">Chaque service
                                     commence avec une liste claire. Plus rien ne passe entre les mailles.</p>
                             </div>
                             <div class="border-b-2 border-foreground/10 pb-4">
                                 <h4 class="font-sans font-black text-lg mb-1 flex items-center gap-2">
-                                    <i data-lucide="book" class="w-5 h-5 text-olive"></i> Manuel OPS
+                                    <i data-lucide="book" class="w-4 h-4 text-accent"></i> Manuel OPS
                                 </h4>
                                 <p class="font-sans font-medium text-sm opacity-80 leading-relaxed">Les standards de
                                     votre maison accessibles à toute l'équipe = une qualité de service constante = de
@@ -438,7 +414,7 @@
                             </div>
                             <div>
                                 <h4 class="font-sans font-black text-lg mb-1 flex items-center gap-2">
-                                    <i data-lucide="wrench" class="w-5 h-5 text-olive"></i> Maintenance
+                                    <i data-lucide="wrench" class="w-4 h-4 text-accent"></i> Maintenance
                                 </h4>
                                 <p class="font-sans font-medium text-sm opacity-80 leading-relaxed">Anticipez les
                                     pannes. Planifiez les interventions. Protégez votre matériel.</p>
@@ -448,70 +424,64 @@
 
                     <!-- PILLAR 2 -->
                     <div
-                        class="bg-[#fce5cd] text-foreground rounded-3xl p-8 border-retro border-white relative reveal delay-2">
+                        class="bg-black text-white p-8 border-[1px] border-black relative reveal delay-2 shadow-2xl">
                         <div
-                            class="absolute -top-4 -right-4 bg-mustard text-foreground border-2 border-foreground px-3 py-1 font-bold rounded-lg transform -rotate-3">
-                            Pilier 02</div>
+                            class="absolute -top-3 -right-3 bg-accent text-white border-[1px] border-foreground px-3 py-1 text-xs font-bold uppercase tracking-widest">
+                            P-02</div>
 
-                        <h3 class="font-display font-black text-3xl mb-1">Qualité</h3>
-                        <p class="font-script text-accent text-2xl mb-8 -mt-2">L'excellence servie</p>
+                        <h3 class="font-display font-black text-3xl mb-1 text-white">Qualité</h3>
+                        <p class="font-script text-accent text-2xl mb-8 -mt-2">L'exigence au quotidien</p>
 
                         <div class="space-y-6 flex flex-col">
-                            <div class="border-b-2 border-foreground/10 pb-4">
+                            <div class="border-b-[1px] border-white/20 pb-4">
                                 <h4 class="font-sans font-black text-lg mb-1 flex items-center gap-2">
-                                    <i data-lucide="clipboard-check" class="w-5 h-5 text-accent"></i> Audit HACCP
+                                    <i data-lucide="clipboard-check" class="w-4 h-4 text-accent"></i> Audit HACCP
                                 </h4>
-                                <p class="font-sans font-medium text-sm opacity-80 leading-relaxed">Digitalisez vos
-                                    contrôles. Soyez prêts pour chaque inspection, sans stress.</p>
+                                <p class="font-sans font-medium text-sm opacity-60 leading-relaxed">Contrôles digitaux rigoureux. Sécurité alimentaire totale.</p>
                             </div>
-                            <div class="border-b-2 border-foreground/10 pb-4">
+                            <div class="border-b-[1px] border-white/20 pb-4">
                                 <h4 class="font-sans font-black text-lg mb-1 flex items-center gap-2">
-                                    <i data-lucide="search" class="w-5 h-5 text-accent"></i> Client Mystère
+                                    <i data-lucide="search" class="w-4 h-4 text-accent"></i> E-Réputation
                                 </h4>
-                                <p class="font-sans font-medium text-sm opacity-80 leading-relaxed">Mesurez l'expérience
-                                    réelle. Corrigez le tir en interne avant de perdre des étoiles sur Google.</p>
+                                <p class="font-sans font-medium text-sm opacity-60 leading-relaxed">Anticipation des points de friction. Maîtrise de l'image.</p>
                             </div>
                             <div>
                                 <h4 class="font-sans font-black text-lg mb-1 flex items-center gap-2">
-                                    <i data-lucide="scale" class="w-5 h-5 text-accent"></i> Recette
+                                    <i data-lucide="scale" class="w-4 h-4 text-accent"></i> Food Cost
                                 </h4>
-                                <p class="font-sans font-medium text-sm opacity-80 leading-relaxed">Chaque plat chiffré.
-                                    Chaque grammage standardisé. Marge maîtrisée.</p>
+                                <p class="font-sans font-medium text-sm opacity-60 leading-relaxed">Recettage analytique. Optimisation des marges brutes.</p>
                             </div>
                         </div>
                     </div>
 
                     <!-- PILLAR 3 -->
                     <div
-                        class="bg-[#e3ecd4] text-foreground rounded-3xl p-8 border-retro border-white relative reveal delay-3">
+                        class="bg-white text-foreground p-8 border-[1px] border-foreground relative reveal delay-3">
                         <div
-                            class="absolute -top-4 -right-4 bg-background text-foreground border-2 border-foreground px-3 py-1 font-bold rounded-lg transform rotate-3">
-                            Pilier 03</div>
+                            class="absolute -top-3 -right-3 bg-black text-white border-[1px] border-foreground px-3 py-1 text-xs font-bold uppercase tracking-widest">
+                            P-03</div>
 
                         <h3 class="font-display font-black text-3xl mb-1">Équipe</h3>
-                        <p class="font-script text-accent text-2xl mb-8 -mt-2">L'humain au centre</p>
+                        <p class="font-script text-accent text-2xl mb-8 -mt-2">Le collectif engagé</p>
 
                         <div class="space-y-6 flex flex-col">
-                            <div class="border-b-2 border-foreground/10 pb-4">
+                            <div class="border-b-[1px] border-foreground/10 pb-4">
                                 <h4 class="font-sans font-black text-lg mb-1 flex items-center gap-2">
-                                    <i data-lucide="message-circle" class="w-5 h-5 text-foreground"></i> Communication
+                                    <i data-lucide="message-circle" class="w-4 h-4 text-accent"></i> Communication
                                 </h4>
-                                <p class="font-sans font-medium text-sm opacity-80 leading-relaxed">Un seul canal pour
-                                    toute l'équipe. Fini les 12 groupes WhatsApp.</p>
+                                <p class="font-sans font-medium text-sm opacity-60 leading-relaxed">Centralisation des échanges. Fin du bruit numérique.</p>
                             </div>
-                            <div class="border-b-2 border-foreground/10 pb-4">
+                            <div class="border-b-[1px] border-foreground/10 pb-4">
                                 <h4 class="font-sans font-black text-lg mb-1 flex items-center gap-2">
-                                    <i data-lucide="graduation-cap" class="w-5 h-5 text-foreground"></i> Formation
+                                    <i data-lucide="graduation-cap" class="w-4 h-4 text-accent"></i> Formations
                                 </h4>
-                                <p class="font-sans font-medium text-sm opacity-80 leading-relaxed">Formez sans arrêter
-                                    le service. Suivez la progression de chacun.</p>
+                                <p class="font-sans font-medium text-sm opacity-60 leading-relaxed">Parcours d'onboarding digital. Montée en compétence rapide.</p>
                             </div>
                             <div>
                                 <h4 class="font-sans font-black text-lg mb-1 flex items-center gap-2">
-                                    <i data-lucide="users" class="w-5 h-5 text-foreground"></i> Gestion RH
+                                    <i data-lucide="users" class="w-4 h-4 text-accent"></i> Gestion RH
                                 </h4>
-                                <p class="font-sans font-medium text-sm opacity-80 leading-relaxed">Plannings, absences,
-                                    documents RH — tout centralisé en un clic.</p>
+                                <p class="font-sans font-medium text-sm opacity-60 leading-relaxed">Administration fluidifiée. Focus sur le terrain.</p>
                             </div>
                         </div>
                     </div>
@@ -527,53 +497,45 @@
                 <h3 class="text-chunky text-5xl md:text-6xl text-foreground">calculez vos gains réels.</h3>
             </div>
 
-            <div class="card-retro bg-white p-8 md:p-12 reveal delay-1 border-t-8 border-t-mustard grid md:grid-cols-2 gap-12 items-center">
+            <div class="card-retro bg-white p-8 md:p-12 reveal delay-1 border-t-[1px] border-t-foreground grid md:grid-cols-2 gap-12 items-center">
                 <!-- Inputs Section -->
                 <div>
-                    <h4 class="font-sans font-black text-2xl mb-6">Vos données actuelles</h4>
+                    <h4 class="font-sans font-black text-2xl mb-6 uppercase tracking-tighter">Paramètres establishment</h4>
                     
                     <div class="space-y-6">
                         <div>
-                            <label class="font-sans font-bold text-sm uppercase tracking-wider mb-2 flex justify-between">
-                                <span>Chiffre d'Affaires Mensuel</span>
-                                <span id="ca-val" class="text-mustard font-black text-lg">50 000 €</span>
+                            <label class="font-sans font-bold text-xs uppercase tracking-[0.2em] mb-2 flex justify-between text-black/40">
+                                <span>CA Mensuel</span>
+                                <span id="ca-val" class="text-black font-black text-lg">50 000 €</span>
                             </label>
-                            <input type="range" id="roi-ca" min="10000" max="250000" step="5000" value="50000" class="w-full h-2 bg-foreground/10 rounded-lg appearance-none cursor-pointer accent-mustard focus:outline-none">
+                            <input type="range" id="roi-ca" min="10000" max="250000" step="5000" value="50000" class="w-full h-1 bg-black/10 appearance-none cursor-pointer accent-black focus:outline-none">
                         </div>
 
                         <div>
-                            <label class="font-sans font-bold text-sm uppercase tracking-wider mb-2 flex justify-between">
-                                <span>Food Cost Actuel (%)</span>
-                                <span id="fc-val" class="text-olive font-black text-lg">35%</span>
+                            <label class="font-sans font-bold text-xs uppercase tracking-[0.2em] mb-2 flex justify-between text-black/40">
+                                <span>Food Cost Initial</span>
+                                <span id="fc-val" class="text-black font-black text-lg">35%</span>
                             </label>
-                            <input type="range" id="roi-fc" min="25" max="45" step="1" value="35" class="w-full h-2 bg-foreground/10 rounded-lg appearance-none cursor-pointer accent-olive focus:outline-none">
+                            <input type="range" id="roi-fc" min="25" max="45" step="1" value="35" class="w-full h-1 bg-black/10 appearance-none cursor-pointer accent-black focus:outline-none">
                         </div>
-                    </div>
-
-                    <div class="mt-8 pt-6 border-t-2 border-foreground/10">
-                        <p class="font-sans font-medium text-sm text-foreground/70 italic">
-                            Meal OS réduit en moyenne le Food Cost de 4 points et fait gagner 20h/mois par établissement.
-                        </p>
                     </div>
                 </div>
 
                 <!-- Results Section -->
-                <div class="bg-foreground text-background p-8 rounded-3xl relative overflow-hidden border-retro">
-                    <div class="absolute inset-0 opacity-5" style="background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #FAF2D7 10px), repeating-linear-gradient(#FAF2D755, #FAF2D7); background-size: 20px 20px;"></div>
-                    
+                <div class="bg-black text-white p-8 rounded-sm relative overflow-hidden border-[1px] border-black">
                     <div class="relative z-10 text-center space-y-8">
                         <div>
-                            <div class="font-sans font-bold text-xs uppercase tracking-widest text-[#FAF2D7]/70 mb-1">Économies Matières / an</div>
-                            <div id="res-matiere" class="font-display font-black text-4xl text-mustard">+ 24 000 €</div>
+                            <div class="font-sans font-bold text-[0.6rem] uppercase tracking-[0.3em] text-white/40 mb-1">Optimisation Matières / an</div>
+                            <div id="res-matiere" class="font-display font-black text-4xl text-accent">+ 24 000 €</div>
                         </div>
 
                         <div>
-                            <div class="font-sans font-bold text-xs uppercase tracking-widest text-[#FAF2D7]/70 mb-1">Temps Sauvé / an</div>
-                            <div id="res-temps" class="font-display font-black text-4xl text-olive">240 h</div>
+                            <div class="font-sans font-bold text-[0.6rem] uppercase tracking-[0.3em] text-white/40 mb-1">Temps Managérial Sauvé</div>
+                            <div id="res-temps" class="font-display font-black text-4xl text-white">240 h / an</div>
                         </div>
 
-                        <div class="pt-6 border-t-2 border-background/20 mt-6 !mt-8">
-                            <div class="font-script text-accent text-3xl mb-1 transform rotate-[-2deg]">Nouveau Bénéfice</div>
+                        <div class="pt-6 border-t-[1px] border-white/20 mt-6 !mt-8">
+                            <div class="font-script text-accent text-3xl mb-1 transform rotate-[-1deg]">Gain Net Estimé</div>
                             <div id="res-total" class="text-chunky text-5xl md:text-6xl text-white">+ 24 000 €</div>
                         </div>
                     </div>
@@ -581,30 +543,24 @@
             </div>
 
             <!-- TESTIMONIAL INSERT -->
-            <div class="mt-16 card-retro bg-white p-8 md:p-12 reveal border-t-8 border-t-mustard">
+            <div class="mt-16 card-retro bg-white p-8 md:p-12 reveal border-t-[1px] border-t-foreground">
                 <div class="flex flex-col md:flex-row gap-8 items-center">
-                    <div class="w-32 h-32 shrink-0 rounded-full bg-foreground border-4 border-mustard overflow-hidden">
-                        <!-- Placeholder face logic -->
-                        <div class="w-full h-full bg-foreground flex items-center justify-center text-white">
-                            <i data-lucide="user" class="w-12 h-12 opacity-50"></i>
-                        </div>
+                    <div class="w-32 h-32 shrink-0 rounded-full border-[1px] border-foreground overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1583394293235-ef80e5851886?fit=crop&w=300&h=300&q=80" alt="Restaurateur" class="w-full h-full object-cover grayscale">
                     </div>
                     <div class="flex-grow">
-                        <div class="text-mustard mb-4 flex gap-1">
-                            <i data-lucide="star" class="w-6 h-6 fill-current"></i>
-                            <i data-lucide="star" class="w-6 h-6 fill-current"></i>
-                            <i data-lucide="star" class="w-6 h-6 fill-current"></i>
-                            <i data-lucide="star" class="w-6 h-6 fill-current"></i>
-                            <i data-lucide="star" class="w-6 h-6 fill-current"></i>
+                        <div class="text-accent mb-4 flex gap-1">
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
                         </div>
                         <h4 class="font-display italic font-bold text-2xl md:text-3xl mb-4 leading-tight">
-                            "Avant Meal OS, j'avais l'impression de diriger un navire qui prenait l'eau de tous les
-                            côtés. Aujourd'hui, l'équipe est autonome sur l'hygiène et les recettages. J'ai retrouvé 2
-                            jours off par semaine et ma rentabilité a bondi."
+                            "Une clarté opérationnelle que je n'avais jamais connue en 15 ans de métier. L'outil s'est imposé naturellement auprès de mes équipes dès le premier service."
                         </h4>
-                        <div class="font-sans">
-                            <span class="font-black text-lg uppercase">Julien B.</span><span class="opacity-70 ml-2">—
-                                Gérant de Brasserie (Lyon)</span>
+                        <div class="font-sans font-bold text-xs uppercase tracking-[0.2em] text-black/40">
+                            Julien B. — Gérant de Brasserie (Lyon)
                         </div>
                     </div>
                 </div>
@@ -632,27 +588,26 @@
         </section>
 
         <!-- SECTION 6: HOW IT WORKS (Timeline styling) -->
-        <section id="procede" class="py-24 px-4 md:px-12 max-w-5xl mx-auto border-t-3 border-foreground">
+        <section id="procede" class="py-24 px-4 md:px-12 max-w-5xl mx-auto border-t-[1px] border-foreground">
             <div class="text-center mb-16 reveal">
-                <h2 class="font-script text-accent text-4xl mb-2 transform rotate-2">50 places seulement</h2>
-                <h3 class="text-chunky text-5xl md:text-6xl">rejoignez l'avant-garde.</h3>
+                <h2 class="font-script text-accent text-4xl mb-2 transform rotate-1">disponibilité restreinte.</h2>
+                <h3 class="text-chunky text-5xl md:text-6xl uppercase tracking-tighter">le protocole d'adhésion.</h3>
             </div>
 
             <div
-                class="space-y-8 relative before:absolute before:inset-0 before:ml-10 md:before:ml-[50%] before:-translate-x-px md:before:translate-x-0 before:h-full before:w-1 before:bg-foreground before:rounded-full">
+                class="space-y-8 relative before:absolute before:inset-0 before:ml-10 md:before:ml-[50%] before:-translate-x-px md:before:translate-x-0 before:h-full before:w-[1px] before:bg-foreground/20 before:rounded-full">
 
                 <!-- Step 1 -->
                 <div
                     class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group reveal">
                     <div
-                        class="flex items-center justify-center w-20 h-20 rounded-full border-retro bg-white shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10 shadow-retro">
-                        <span class="font-display font-black text-3xl">1</span>
+                        class="flex items-center justify-center w-16 h-16 rounded-full border-[1px] border-foreground bg-white shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
+                        <span class="font-display font-black text-2xl">01</span>
                     </div>
                     <div
-                        class="w-[calc(100%-6rem)] md:w-[calc(50%-4rem)] p-6 rounded-3xl border-retro bg-white shadow-retro">
-                        <h3 class="font-sans font-black text-xl mb-2 uppercase">Candidature</h3>
-                        <p class="font-sans font-medium opacity-80">On sélectionne 50 restaurants partenaires avec qui
-                            on va co-construire l'outil final sur le terrain.</p>
+                        class="w-[calc(100%-6rem)] md:w-[calc(50%-4rem)] p-8 border-[1px] border-foreground bg-white">
+                        <h3 class="font-sans font-black text-lg mb-2 uppercase tracking-widest">Sélection</h3>
+                        <p class="font-sans font-medium text-sm opacity-60">Audit préliminaire de vos besoins opérationnels pour garantir une adéquation parfaite avec l'écosystème Meal OS.</p>
                     </div>
                 </div>
 
@@ -660,17 +615,16 @@
                 <div
                     class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group reveal delay-1">
                     <div
-                        class="flex items-center justify-center w-20 h-20 rounded-full border-retro bg-mustard shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10 shadow-retro">
-                        <span class="font-display font-black text-3xl">2</span>
+                        class="flex items-center justify-center w-16 h-16 rounded-full border-[1px] border-foreground bg-black text-white shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
+                        <span class="font-display font-black text-2xl">02</span>
                     </div>
                     <div
-                        class="w-[calc(100%-6rem)] md:w-[calc(50%-4rem)] p-6 rounded-3xl border-retro bg-[#fce5cd] shadow-retro relative">
+                        class="w-[calc(100%-6rem)] md:w-[calc(50%-4rem)] p-8 border-[1px] border-foreground bg-black text-white relative">
                         <div
-                            class="absolute -top-3 -right-3 bg-accent text-white font-bold text-xs px-2 py-1 rounded border-2 border-foreground transform rotate-6">
-                            la diff'</div>
-                        <h3 class="font-sans font-black text-xl mb-2 uppercase">Onboarding sur site (VIP)</h3>
-                        <p class="font-sans font-medium opacity-80">Un consultant configure Meal OS avec votre équipe,
-                            sur place. Fini les tutoriels YouTube inutiles.</p>
+                            class="absolute -top-3 -right-3 bg-accent text-white font-bold text-[0.6rem] px-2 py-1 border-[1px] border-foreground uppercase tracking-widest">
+                            Terrain</div>
+                        <h3 class="font-sans font-black text-lg mb-2 uppercase tracking-widest">Immersion</h3>
+                        <p class="font-sans font-medium text-sm opacity-60">Installation physique et formation de vos équipes sur site par un consultant expert. Pas de théorie, que du concret.</p>
                     </div>
                 </div>
 
@@ -678,37 +632,34 @@
                 <div
                     class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group reveal delay-2">
                     <div
-                        class="flex items-center justify-center w-20 h-20 rounded-full border-retro bg-olive text-white shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10 shadow-retro">
-                        <span class="font-display font-black text-3xl">3</span>
+                        class="flex items-center justify-center w-16 h-16 rounded-full border-[1px] border-foreground bg-white shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
+                        <span class="font-display font-black text-2xl">03</span>
                     </div>
                     <div
-                        class="w-[calc(100%-6rem)] md:w-[calc(50%-4rem)] p-6 rounded-3xl border-retro bg-white shadow-retro">
-                        <h3 class="font-sans font-black text-xl mb-2 uppercase">Invitation Keynote</h3>
-                        <p class="font-sans font-medium opacity-80">Vous serez nos invités d'honneur lors de la Keynote
-                            de lancement officiel de l'application à tous les restaurateurs.</p>
+                        class="w-[calc(100%-6rem)] md:w-[calc(50%-4rem)] p-8 border-[1px] border-foreground bg-white">
+                        <h3 class="font-sans font-black text-lg mb-2 uppercase tracking-widest">Évolution</h3>
+                        <p class="font-sans font-medium text-sm opacity-60">Participation active à la roadmap du produit. Votre réalité terrain forge l'outil de demain.</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- SECTION 7: INTEGRATIONS -->
-        <section class="py-24 bg-[#FAF2D7] overflow-hidden border-t-3 border-foreground">
+        <section class="py-24 bg-white overflow-hidden border-t-[1px] border-foreground">
             <div class="max-w-4xl mx-auto px-4 md:px-12 text-center mb-12 reveal">
                 <div
-                    class="inline-flex items-center gap-2 bg-white border-2 border-foreground rounded-full px-4 py-1 mb-6 text-sm font-bold shadow-retro transform rotate-2">
-                    <i data-lucide="plug" class="w-4 h-4"></i>
-                    Pas de silos
+                    class="inline-flex items-center gap-2 border-[1px] border-foreground px-3 py-1 mb-6 text-[0.6rem] font-bold uppercase tracking-widest">
+                    <i data-lucide="plug" class="w-3 h-3 text-accent"></i>
+                    Connectivité Totale
                 </div>
-                <h2 class="text-chunky text-4xl md:text-5xl mb-4">Meal OS se connecte<br />à ce que vous utilisez <span
-                        class="text-accent italic font-script pr-2">déjà.</span></h2>
-                <p class="font-sans font-medium text-lg opacity-80 max-w-md mx-auto">Fini la double saisie. On
-                    communique avec vos caisses et vos plateformes de livraison.</p>
+                <h2 class="text-chunky text-4xl md:text-5xl mb-4 uppercase tracking-tighter">écosystème ouvert.</h2>
+                <p class="font-sans font-medium text-lg opacity-60 max-w-md mx-auto">Intégration native avec vos solutions de POS et de gestion RH actuelles.</p>
             </div>
 
             <!-- Ticker Integrations -->
-            <div class="relative w-full py-4 bg-white border-y-3 border-foreground transform -rotate-1 shadow-retro">
-                <div class="flex whitespace-nowrap overflow-hidden">
-                    <div class="flex items-center animate-[marquee_25s_linear_infinite]">
+            <div class="relative w-full py-6 bg-black text-white border-y-[1px] border-foreground overflow-hidden">
+                <div class="flex whitespace-nowrap">
+                    <div class="flex items-center animate-[marquee_30s_linear_infinite]">
                         <!-- Logos/Text -->
                         <span class="font-display font-black text-3xl mx-8 text-foreground opacity-80">ZELTY</span>
                         <span class="text-mustard text-2xl">✦</span>
@@ -741,17 +692,16 @@
         </section>
 
         <!-- SECTION 8: FAQ -->
-        <section id="faq" class="py-24 px-4 md:px-12 max-w-4xl mx-auto border-t-3 border-foreground">
-            <h2 class="text-chunky text-5xl md:text-6xl text-center mb-16 reveal">vos questions.<br><span
-                    class="text-olive">nos réponses.</span></h2>
+        <section id="faq" class="py-24 px-4 md:px-12 max-w-4xl mx-auto border-t-[1px] border-foreground">
+            <h2 class="text-chunky text-5xl md:text-6xl text-center mb-16 reveal uppercase tracking-tighter">questions d'usage.</h2>
 
             <div class="space-y-4">
                 <!-- FAQ Item -->
-                <div class="faq-item card-retro p-6 cursor-pointer reveal">
+                <div class="faq-item card-retro p-6 cursor-pointer reveal border-[1px] border-foreground rounded-none">
                     <div class="flex justify-between items-center group">
-                        <h3 class="font-sans font-black text-lg pr-8">Combien de temps prend la mise en place ?</h3>
-                        <div class="faq-icon w-8 h-8 flex items-center justify-center font-bold text-xl"><i
-                                data-lucide="plus" class="w-5 h-5"></i></div>
+                        <h3 class="font-sans font-bold text-base pr-8 uppercase tracking-widest">Mise en place opérationnelle</h3>
+                        <div class="faq-icon w-6 h-6 flex items-center justify-center border-[1px] border-foreground"><i
+                                data-lucide="plus" class="w-4 h-4"></i></div>
                     </div>
                     <div class="faq-answer">
                         <p
@@ -801,7 +751,7 @@
                     <div class="flex justify-between items-center group">
                         <h3 class="font-sans font-black text-lg pr-8 text-accent">Le programme Bêta m'engage-t-il
                             financièrement ?</h3>
-                        <div class="faq-icon w-8 h-8 flex items-center justify-center font-bold text-xl text-accent"><i
+                        <div class="faq-icon w-8 h-8 flex items-center justify-center font-bold text-xl"><i
                                 data-lucide="plus" class="w-5 h-5"></i></div>
                     </div>
                     <div class="faq-answer">
@@ -838,13 +788,13 @@
 
                 <!-- Left Ticket Side -->
                 <div
-                    class="md:w-5/12 bg-accent text-background p-10 md:p-12 relative border-b-3 md:border-b-0 md:border-r-3 border-foreground border-dashed flex flex-col justify-center">
+                    class="md:w-5/12 bg-accent text-background p-10 md:p-12 relative border-b md:border-b-0 md:border-r border-foreground border-dashed flex flex-col justify-center">
                     <div class="absolute inset-0 bg-black opacity-5"
                         style="background-image: radial-gradient(circle, #000 2px, transparent 2px); background-size: 10px 10px;">
                     </div>
 
                     <div class="relative z-10">
-                        <p class="font-script text-mustard text-3xl mb-2 transform -rotate-3">Club Fermé</p>
+                        <p class="font-script text-white text-3xl mb-2 transform -rotate-3">Club Fermé</p>
                         <h2 class="text-chunky text-5xl mb-6">Faites partie<br>des 50 pionniers.</h2>
                         <p class="font-sans font-medium opacity-90 mb-8">
                             Rejoignez le programme de bêta-testeurs Meal OS. 50 places disponibles, intégration VIP sur
@@ -879,7 +829,7 @@
                         </div>
                         <div class="pt-4">
                             <button type="submit"
-                                class="btn-retro w-full hover:bg-olive hover:text-white transition-colors">
+                                class="btn-retro w-full hover:bg-foreground hover:text-white transition-colors">
                                 Postuler au programme (2 min)
                             </button>
                         </div>
@@ -891,7 +841,7 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="border-t-3 border-foreground py-12 px-4 md:px-12 bg-white">
+    <footer class="border-t border-foreground py-12 px-4 md:px-12 bg-white">
         <div
             class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8 text-center md:text-left">
 
@@ -913,13 +863,13 @@
 
             <div class="flex flex-col md:flex-row gap-8 md:gap-16 font-sans font-bold text-sm items-center md:items-start text-center md:text-left">
                 <div class="flex flex-col items-center md:items-start gap-3">
-                    <span class="text-mustard uppercase tracking-widest text-xs">Comparatifs</span>
+                    <span class="text-accent uppercase tracking-widest text-xs">Comparatifs</span>
                     <a href="meal-os-vs-skello.html" class="hover:text-accent border-b-2 border-transparent hover:border-accent pb-1 inline-block w-max">Meal OS vs Skello</a>
                     <a href="meal-os-vs-koust.html" class="hover:text-accent border-b-2 border-transparent hover:border-accent pb-1 inline-block w-max">Meal OS vs Koust</a>
                     <a href="meal-os-vs-combo.html" class="hover:text-accent border-b-2 border-transparent hover:border-accent pb-1 inline-block w-max">Meal OS vs Combo</a>
                 </div>
                 <div class="flex flex-col items-center md:items-start gap-3">
-                    <span class="text-olive uppercase tracking-widest text-xs">Légal & Contact</span>
+                    <span class="text-foreground uppercase tracking-widest text-xs">Légal & Contact</span>
                     <a href="#" class="hover:text-accent border-b-2 border-transparent hover:border-accent pb-1 inline-block w-max">info@mealos.com</a>
                     <a href="#" class="hover:text-accent border-b-2 border-transparent hover:border-accent pb-1 inline-block w-max">Instagram</a>
                     <a href="#" class="hover:text-accent border-b-2 border-transparent hover:border-accent pb-1 inline-block w-max">Mentions Légales</a>
