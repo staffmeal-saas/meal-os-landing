@@ -1,29 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://staff-meal.com/boite-a-outils-dashboard.html</loc>
-    <lastmod>2026-08-05</lastmod>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://staff-meal.com/boite-a-outils-login.html</loc>
-    <lastmod>2026-08-05</lastmod>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://staff-meal.com/calculateur-gaspillage-alimentaire.html</loc>
     <lastmod>2026-08-05</lastmod>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://staff-meal.com/checklist-haccp-inspection.html</loc>
     <lastmod>2026-08-05</lastmod>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://staff-meal.com/comparatif-logiciels-caisse-restaurant.html</loc>
     <lastmod>2026-08-05</lastmod>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://staff-meal.com/evenements.html</loc>
@@ -33,22 +23,22 @@
   <url>
     <loc>https://staff-meal.com/food-cost-calculator.html</loc>
     <lastmod>2026-08-05</lastmod>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://staff-meal.com/generateur-fiche-technique.html</loc>
     <lastmod>2026-08-05</lastmod>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://staff-meal.com/generateur-reponse-avis-google.html</loc>
     <lastmod>2026-08-05</lastmod>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://staff-meal.com/guide-restaurant.html</loc>
     <lastmod>2026-08-05</lastmod>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://staff-meal.com/</loc>
@@ -58,42 +48,42 @@
   <url>
     <loc>https://staff-meal.com/maintenance-equipement-restaurant.html</loc>
     <lastmod>2026-08-05</lastmod>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://staff-meal.com/manuel-operatoire-restaurant.html</loc>
     <lastmod>2026-08-05</lastmod>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://staff-meal.com/matrice-menu-engineering.html</loc>
     <lastmod>2026-08-05</lastmod>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://staff-meal.com/menu-engineering-psychologie.html</loc>
     <lastmod>2026-08-05</lastmod>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://staff-meal.com/planning-personnel-restaurant.html</loc>
     <lastmod>2026-08-05</lastmod>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://staff-meal.com/prime-cost-calculator.html</loc>
     <lastmod>2026-08-05</lastmod>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://staff-meal.com/ratios-financiers-restauration.html</loc>
     <lastmod>2026-08-05</lastmod>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://staff-meal.com/reponses-avis-google-restaurant.html</loc>
     <lastmod>2026-08-05</lastmod>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://staff-meal.com/resources.html</loc>
@@ -118,6 +108,6 @@
   <url>
     <loc>https://staff-meal.com/turnover-restauration.html</loc>
     <lastmod>2026-08-05</lastmod>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
 </urlset>

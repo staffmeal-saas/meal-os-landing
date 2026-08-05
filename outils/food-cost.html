@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculateur de food cost gratuit | Staff Meal</title>
+    <meta name="description" content="Calculez le coût matière et la marge de chaque plat. Entrez vos ingrédients et leurs prix, obtenez votre ratio et un prix de vente cohérent.">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="theme-color" content="#f0481c">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Staff Meal">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:url" content="https://staff-meal.com/food-cost-calculator.html">
+    <meta property="og:title" content="Calculateur de food cost gratuit | Staff Meal">
+    <meta property="og:description" content="Calculez le coût matière et la marge de chaque plat. Entrez vos ingrédients et leurs prix, obtenez votre ratio et un prix de vente cohérent.">
+    <meta property="og:image" content="https://staff-meal.com/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Calculateur de food cost gratuit | Staff Meal">
+    <meta name="twitter:description" content="Calculez le coût matière et la marge de chaque plat. Entrez vos ingrédients et leurs prix, obtenez votre ratio et un prix de vente cohérent.">
+    <meta name="twitter:image" content="https://staff-meal.com/og-image.jpg">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Calculateur de food cost",
+  "url": "https://staff-meal.com/food-cost-calculator.html",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Web",
+  "inLanguage": "fr-FR",
+  "description": "Calculez le coût matière et la marge de chaque plat. Entrez vos ingrédients et leurs prix, obtenez votre ratio et un prix de vente cohérent.",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://staff-meal.com/#organization",
+    "name": "Staff Meal",
+    "url": "https://staff-meal.com/",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://staff-meal.com/assets/brand/mascot.png",
+      "width": 512,
+      "height": 512
+    },
+    "description": "Application d'exploitation pour la restauration : checklists HACCP, manuel opératoire, formations, client mystère, food cost et multi-site."
+  },
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "EUR"
+  }
+}
+</script>
+    <script type="application/ld+json">
+{
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Accueil",
+      "item": "https://staff-meal.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Calculateur de food cost",
+      "item": "https://staff-meal.com/food-cost-calculator.html"
+    }
+  ],
+  "@context": "https://schema.org"
+}
+</script>
+
+    <!-- Auth Guard -->
+    
+
+    <!-- Icons -->
+    
+
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-color: #f4eedf;
+            color: #181410;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .logo-handwritten {
+            font-family: 'Shantell Sans', cursive;
+            text-transform: lowercase;
+            letter-spacing: -0.02em;
+            line-height: 0.8;
+            color: #181410;
+        }
+
+        .border-retro {
+            border: 1px solid #181410;
+        }
+
+        .glass-header {
+            background: rgba(250, 242, 215, 0.95);
+            border-bottom: 1px solid #181410;
+            backdrop-filter: blur(8px);
+        }
+
+        .text-chunky {
+            font-family: 'Familjen Grotesk', ui-sans-serif, system-ui, sans-serif;
+            font-weight: 900;
+            line-height: 0.95;
+            letter-spacing: -0.03em;
+        }
+
+        .btn-retro {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #181410;
+            color: #f4eedf;
+            font-family: 'Familjen Grotesk', ui-sans-serif, system-ui, sans-serif;
+            font-weight: 900;
+            text-transform: uppercase;
+            padding: 0.75rem 1.5rem;
+            border-radius: 9999px;
+            box-shadow: 4px 4px 0px 0px #181410;
+            transition: all 0.2s;
+            border: 2px solid #181410;
+            cursor: pointer;
+        }
+
+        .btn-retro:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 6px 6px 0px 0px #181410;
+        }
+
+        .btn-retro.alt {
+            background-color: #fbf8ee;
+            color: #181410;
+        }
+
+        .input-retro {
+            width: 100%;
+            border: 2px solid #181410;
+            padding: 0.75rem 1rem;
+            border-radius: 0.5rem;
+            font-family: 'Familjen Grotesk', ui-sans-serif, system-ui, sans-serif;
+            font-weight: 600;
+            background-color: #fbf8ee;
+            outline: none;
+            transition: all 0.2s;
+        }
+
+        .input-retro:focus {
+            box-shadow: 4px 4px 0px 0px #181410;
+            transform: translate(-2px, -2px);
+        }
+
+        .card-retro {
+            border: 1px solid #181410;
+            border-radius: 1.5rem;
+            box-shadow: 4px 4px 0px 0px #181410;
+        }
+
+        /* Reveal animation */
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease-out;
+        }
+
+        .reveal.revealed {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    
+        /* Dashboard App specific layout */
+        .sidebar { width: 260px; height: 100vh; position: fixed; left: 0; top: 0; background: #fbf8ee; border-right: 1px solid #181410; padding: 2rem 1.5rem; display: flex; flex-direction: column; z-index: 100;}
+        .app-main { margin-left: 260px; padding: 2rem; min-height: 100vh; padding-top: 2rem; }
+        
+        @media (max-width: 1024px) {
+            .sidebar { transform: translateX(-100%); z-index: 100; transition: transform 0.3s ease; }
+            .sidebar.open { transform: translateX(0); }
+            .app-main { margin-left: 0; padding: 1.5rem; padding-top: 5rem;}
+        }
+
+        .nav-link { display: flex; align-items: center; gap: 0.75rem; padding: 0.75rem 1rem; border-radius: 0.5rem; font-family: 'Familjen Grotesk', ui-sans-serif, system-ui, sans-serif; font-weight: 700; opacity: 0.7; transition: all 0.2s; border: 2px solid transparent;}
+        .nav-link:hover { opacity: 1; background: rgba(24,20,16,0.06); }
+        .nav-link.active { opacity: 1; background: #f0481c; color: #f4eedf; border-color: #181410; color: #181410; box-shadow: 2px 2px 0px 0px #181410;}
+        
+        @media print {
+            .sidebar, .lg\:hidden { display: none !important; }
+            .app-main { margin-left: 0 !important; padding: 0 !important; }
+        }
+
+    </style>
+    <link rel="preload" href="/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/style.css"></noscript>
+</head>
+
+<body class="selection:bg-foreground selection:text-background font-sans flex flex-col min-h-screen bg-background text-foreground">
+    <script>if(!localStorage.getItem("mealos_tools_user")){window.location.href="/boite-a-outils-login.html";}</script>
+
+    
+    
+    
+    
+    
+    
+    <!-- Mobile Header -->
+    <div class="lg:hidden fixed top-0 w-full left-0 bg-paper border-b border-foreground px-4 py-3 flex items-center justify-between z-40 no-print" style="box-shadow: 4px 4px 0px 0px #181410;">
+        <a href="/boite-a-outils-dashboard.html" class="flex items-center gap-2.5 hover:opacity-80 transition-opacity"><img src="/assets/brand/mascot.png" alt="" width="44" height="44" class="brand-mark w-9 h-9"><span class="wordmark text-lg">Staff Meal</span></a>
+        <button id="menuToggle" class="p-2"><i data-lucide="menu"></i></button>
+    </div>
+
+    <!-- Sidebar -->
+    <aside class="sidebar bg-background no-print" id="sidebar">
+        <div class="flex items-center justify-between mb-10">
+            <a href="/boite-a-outils-dashboard.html" class="flex items-center gap-2.5 hover:opacity-80 transition-opacity"><img src="/assets/brand/mascot.png" alt="" width="44" height="44" class="brand-mark w-11 h-11"><span class="wordmark text-xl">Staff Meal</span></a>
+            <button id="closeMenu" class="lg:hidden"><i data-lucide="x"></i></button>
+        </div>
+
+        <nav class="space-y-2 flex-grow overflow-y-auto pb-4">
+            <div class="text-xs font-black uppercase tracking-widest opacity-40 mb-3 px-3">Espace Restaurant</div>
+            <a href="/boite-a-outils-dashboard.html" class="nav-link active">
+                <i data-lucide="layout-grid" class="w-5 h-5"></i> Outils Gratuits
+            </a>
+            
+            <div class="pt-6 mt-6 border-t-2 border-foreground/10">
+                <div class="text-xs font-black uppercase tracking-widest opacity-40 mb-3 px-3 flex items-center justify-between">
+                    Staff Meal Complet <span class="bg-accent text-white text-[8px] px-1 py-0.5 rounded uppercase">Pro</span>
+                </div>
+                <a href="#" class="nav-link flex items-center justify-between group pro-link" data-pro-module="haccp" style="opacity: 0.5;">
+                    <div class="flex items-center gap-3"><i data-lucide="clipboard-check" class="w-5 h-5"></i> Audit HACCP</div>
+                    <i data-lucide="lock" class="w-3 h-3 opacity-30 group-hover:text-accent group-hover:opacity-100 transition-colors"></i>
+                </a>
+                <a href="#" class="nav-link flex items-center justify-between group pro-link" data-pro-module="ops" style="opacity: 0.5;">
+                    <div class="flex items-center gap-3"><i data-lucide="book" class="w-5 h-5"></i> Manuel OPS</div>
+                    <i data-lucide="lock" class="w-3 h-3 opacity-30 group-hover:text-accent group-hover:opacity-100 transition-colors"></i>
+                </a>
+                <a href="#" class="nav-link flex items-center justify-between group pro-link" data-pro-module="rh" style="opacity: 0.5;">
+                    <div class="flex items-center gap-3"><i data-lucide="users" class="w-5 h-5"></i> Gestion RH</div>
+                    <i data-lucide="lock" class="w-3 h-3 opacity-30 group-hover:text-accent group-hover:opacity-100 transition-colors"></i>
+                </a>
+                <a href="#" class="nav-link flex items-center justify-between group pro-link" data-pro-module="maintenance" style="opacity: 0.5;">
+                    <div class="flex items-center gap-3"><i data-lucide="wrench" class="w-5 h-5"></i> Maintenance</div>
+                    <i data-lucide="lock" class="w-3 h-3 opacity-30 group-hover:text-accent group-hover:opacity-100 transition-colors"></i>
+                </a>
+            </div>
+
+            <div class="pt-6 mt-6 border-t-2 border-foreground/10">
+                <div class="text-xs font-black uppercase tracking-widest opacity-40 mb-3 px-3">Ressources</div>
+                <a href="/resources.html" class="nav-link">
+                    <i data-lucide="book-open" class="w-5 h-5"></i> Articles & Guides
+                </a>
+            </div>
+        </nav>
+
+        <div class="mt-auto border-t-2 border-foreground/10 pt-6">
+            <div class="flex items-center gap-3 px-2">
+                <div class="w-10 h-10 rounded-full bg-foreground text-background flex items-center justify-center font-display font-black text-xl" id="avatarInitials">U</div>
+                <div class="overflow-hidden">
+                    <div class="font-bold text-sm truncate w-full" id="sidebarName">Utilisateur</div>
+                    <div class="text-xs opacity-60 truncate w-full" id="sidebarRestaurant">Restaurant</div>
+                </div>
+            </div>
+            <a href="/index.html" class="mt-4 text-xs font-bold uppercase tracking-wider text-accent hover:underline px-2 flex items-center gap-1 w-full justify-start"><i data-lucide="arrow-left" class="w-3 h-3"></i> Retour au site</a>
+        </div>
+    </aside>
+
+    <!-- Soft Paywall Modal -->
+    <div id="proModalOverlay" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4">
+        <!-- Backdrop blur -->
+        <div class="absolute inset-0 bg-background/60 backdrop-blur-md transition-opacity duration-300"></div>
+        
+        <!-- Modal Card -->
+        <div class="card-retro bg-paper p-8 max-w-lg w-full relative z-10 transform transition-all duration-300 scale-95 opacity-0" id="proModalCard">
+            <button id="closeProModal" class="absolute top-4 right-4 p-2 opacity-50 hover:opacity-100 transition-opacity">
+                <i data-lucide="x" class="w-6 h-6"></i>
+            </button>
+            
+            <div class="mb-6 flex items-center justify-center w-16 h-16 rounded-full bg-accent/10 border-2 border-accent text-accent mx-auto">
+                <i data-lucide="lock" class="w-8 h-8" id="proModalIcon"></i>
+            </div>
+            
+            <h2 class="font-display font-black text-3xl mb-3 text-center" id="proModalTitle">Fonctionnalité Premium</h2>
+            <p class="font-sans text-center font-medium opacity-80 mb-6" id="proModalDesc">Découvrez la puissance de Staff Meal Pro.</p>
+            
+            <div class="bg-mustard/20 border-2 border-mustard rounded-lg p-4 mb-8 text-sm font-medium text-center">
+                <span class="font-black uppercase tracking-wider text-xs block mb-1">🎁 Accès exclusif</span>
+                Réservé aux établissements partenaires Staff Meal.
+            </div>
+            
+            <div class="flex flex-col gap-3">
+                <!-- Calendly Link -->
+                <a href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/staffmeal/15min'});return false;" class="btn-retro w-full group text-center">
+                    Voir ce module en action <i data-lucide="arrow-right" class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform"></i>
+                </a>
+                <button id="cancelProModal" class="btn-retro alt w-full border-transparent hover:border-transparent hover:bg-foreground/5 shadow-none group-hover:translate-y-0 text-sm opacity-70">
+                    Non merci, je reste sur l'outil gratuit
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Calendly link widget begin -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    <!-- Calendly link widget end -->
+
+    <!-- Pro Modal Logic -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const proModalOverlay = document.getElementById('proModalOverlay');
+            const proModalCard = document.getElementById('proModalCard');
+            const proModalTitle = document.getElementById('proModalTitle');
+            const proModalDesc = document.getElementById('proModalDesc');
+            const proModalIcon = document.getElementById('proModalIcon');
+            
+            const proTitles = {
+                'haccp': { title: "Fini la panique lors des contrôles.", desc: "Digitalisez vos relevés de températures et vos protocoles de nettoyage. Soyez 100% prêt à tout moment.", icon: "clipboard-check" },
+                'ops': { title: "Vos standards, respectés par tous.", desc: "Créez vos checklists d'ouverture et de fermeture. Fini les petites erreurs du quotidien.", icon: "book" },
+                'rh': { title: "Vos plannings créés en 3 min.", desc: "Centralisez les plannings, absences et documents RH de toute votre équipe en un seul endroit.", icon: "users" },
+                'maintenance': { title: "Ne laissez plus vos machines vous lâcher.", desc: "Anticipez les pannes et planifiez les interventions pour protéger votre précieux matériel.", icon: "wrench" },
+            };
+
+            function openProModal(moduleKey) {
+                if(proTitles[moduleKey]) {
+                    proModalTitle.textContent = proTitles[moduleKey].title;
+                    proModalDesc.textContent = proTitles[moduleKey].desc;
+                    proModalIcon.setAttribute('data-lucide', proTitles[moduleKey].icon);
+                    if(typeof lucide !== 'undefined') lucide.createIcons();
+                }
+                
+                proModalOverlay.classList.remove('hidden');
+                setTimeout(() => {
+                    proModalCard.classList.remove('scale-95', 'opacity-0');
+                }, 10);
+            }
+
+            function closeProModalFunc() {
+                proModalCard.classList.add('scale-95', 'opacity-0');
+                setTimeout(() => {
+                    proModalOverlay.classList.add('hidden');
+                }, 300);
+            }
+
+            document.querySelectorAll('.pro-link').forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    openProModal(link.getAttribute('data-pro-module'));
+                });
+            });
+
+            document.getElementById('closeProModal').addEventListener('click', closeProModalFunc);
+            document.getElementById('cancelProModal').addEventListener('click', closeProModalFunc);
+        });
+    </script>
+
+    <main class="app-main">
+
+
+
+
+
+        <div class="max-w-5xl mx-auto">
+
+            <!-- Intro -->
+            <div class="text-center mb-12 reveal">
+                <div
+                    class="bg-mustard text-foreground border-2 border-foreground rounded-full px-3 py-1 font-bold text-xs inline-flex items-center gap-2 mb-4 transform rotate-2 shadow-[2px_2px_0px_#111]">
+                    <i data-lucide="calculator" class="w-4 h-4"></i> Outil Gratuit
+                </div>
+                <h1 class="text-chunky text-5xl md:text-6xl mb-4">Calculateur de <span
+                        class="text-accent underline decoration-4 underline-offset-8">Food Cost</span>.</h1>
+                <p class="font-sans font-medium text-lg opacity-80 max-w-2xl mx-auto">Saisissez les coûts de vos
+                    ingrédients et votre prix de vente pour connaître instantanément la rentabilité de votre plat. Idéal
+                    pour tester votre nouvelle carte.</p>
+            </div>
+
+            <!-- Dashboard Layout -->
+            <div class="grid lg:grid-cols-12 gap-8 items-start">
+
+                <!-- Left: Calculator Form -->
+                <div class="lg:col-span-7 bg-paper p-6 md:p-8 card-retro reveal">
+                    <h2
+                        class="font-display font-black text-2xl mb-6 flex items-center gap-2 border-b-2 border-foreground/10 pb-4">
+                        <i data-lucide="chef-hat" class="w-6 h-6 text-olive"></i> Fiche Technique Rapide
+                    </h2>
+
+                    <!-- Infos générales -->
+                    <div class="grid grid-cols-2 gap-4 mb-8">
+                        <div>
+                            <label class="block font-bold text-xs uppercase tracking-wider mb-2">Nom de la
+                                recette</label>
+                            <input type="text" id="recipeName" class="input-retro" placeholder="ex: Burger Signature">
+                        </div>
+                        <div>
+                            <label class="block font-bold text-xs uppercase tracking-wider mb-2">TVA Applicable</label>
+                            <select id="taxRate" class="input-retro h-[3.125rem]">
+                                <option value="10">10% (Restauration standard)</option>
+                                <option value="5.5">5.5% (Vente à emporter)</option>
+                                <option value="20">20% (Alcool)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Liste des Ingrédients -->
+                    <div class="mb-4 flex justify-between items-end">
+                        <label class="block font-bold text-sm uppercase tracking-wider">Coûts Matières (HT)</label>
+                        <span id="totalCostDisplay" class="font-display font-black text-xl text-accent">0.00 €</span>
+                    </div>
+
+                    <div id="ingredientsList"
+                        class="space-y-3 mb-6 bg-background/50 p-4 rounded-xl border-2 border-foreground/10">
+                        <!-- Ligne ingrédient générée en JS -->
+                    </div>
+
+                    <button id="addIngredientBtn"
+                        class="font-bold text-sm flex items-center gap-1 text-olive hover:text-foreground transition-colors mb-8">
+                        <i data-lucide="plus-circle" class="w-5 h-5"></i> Ajouter un ingrédient
+                    </button>
+
+                    <!-- Prix de vente -->
+                    <div class="bg-[#f4eedf] p-6 rounded-xl border-2 border-foreground mb-4">
+                        <label class="block font-bold text-sm uppercase tracking-wider mb-2">Prix de vente envisagé
+                            (TTC)</label>
+                        <div class="relative">
+                            <input type="number" id="sellingPrice" class="input-retro pl-8 text-xl font-black"
+                                placeholder="0.00" step="0.10" min="0">
+                            <span
+                                class="absolute left-3 top-1/2 -translate-y-1/2 font-black text-xl opacity-50">€</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Dashboard / Results -->
+                <div class="lg:col-span-5 space-y-6 sticky top-28 reveal delay-1">
+
+                    <div class="card-retro bg-foreground text-background p-8 text-center pb-10">
+                        <h3 class="font-sans font-bold text-xs uppercase tracking-widest opacity-60 mb-6">Résultats</h3>
+
+                        <!-- Ratio Matière (Food Cost %) -->
+                        <div class="mb-8">
+                            <div class="font-sans font-medium mb-1">Ratio Matière (Food Cost)</div>
+                            <div id="ratioResult" class="font-display font-black text-6xl leading-none mb-2">--%</div>
+                            <div id="ratioStatusBadge"
+                                class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-bold bg-paper/10 opacity-0 transition-opacity">
+                                <i data-lucide="activity" class="w-4 h-4"></i> <span id="ratioStatusText">En
+                                    attente</span>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-4 border-t-2 border-background/20 pt-6">
+                            <div>
+                                <div class="font-sans font-medium text-xs uppercase tracking-wider opacity-60 mb-1">
+                                    Marge Brute HT</div>
+                                <div id="marginResult" class="font-display font-black text-2xl text-mustard">0.00 €
+                                </div>
+                            </div>
+                            <div>
+                                <div class="font-sans font-medium text-xs uppercase tracking-wider opacity-60 mb-1">
+                                    Coefficient</div>
+                                <div id="coeffResult" class="font-display font-black text-2xl">0.00</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SEO / CTA Lead Magnet -->
+                    <div class="card-retro bg-[#D5DCD0] p-6 border-dashed text-center">
+                        <i data-lucide="save" class="w-8 h-8 text-olive mx-auto mb-3"></i>
+                        <h4 class="font-sans font-black text-lg mb-2">Sauvegardez vos fiches</h4>
+                        <p class="font-sans text-sm opacity-80 mb-4 line-clamp-3">
+                            Sur 100 plats, calculer ça sur Excel devient un enfer. Staff Meal actualise vos marges
+                            automatiquement à chaque variation de prix fournisseur.
+                        </p>
+                        <a href="/index.html#demo"
+                            class="font-sans font-bold text-xs uppercase tracking-wider text-olive underline underline-offset-4 hover:text-foreground">Découvrir
+                            la gestion Staff Meal</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-foreground py-12 px-4 md:px-12 bg-background">
+        <div
+            class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8 text-center md:text-left">
+
+            <a href="/index.html" class="flex items-center gap-3 hover:opacity-80 transition-opacity">
+                <img src="/assets/brand/mascot.png" alt="" width="56" height="56" class="brand-mark w-14 h-14">
+                <span class="flex flex-col leading-none text-left">
+                    <span class="wordmark text-2xl">Staff Meal</span>
+                    <span class="font-sans text-[0.5rem] uppercase font-bold tracking-[0.2em] text-ink-soft mt-1">le
+                        même service, à chaque service</span>
+                </span>
+            </a>
+
+            <div
+                class="flex flex-col md:flex-row gap-8 md:gap-16 font-sans font-bold text-sm items-center md:items-start text-center md:text-left">
+                <div class="flex flex-col items-center md:items-start gap-3">
+                    <span class="text-accent uppercase tracking-widest text-xs">Comparatifs</span>
+                    <a href="/staffmeal-vs-skello.html"
+                        class="hover:text-accent border-b border-transparent hover:border-accent pb-1 inline-block w-max">Staff
+                        Meal et Skello</a>
+                    <a href="/staffmeal-vs-koust.html"
+                        class="hover:text-accent border-b border-transparent hover:border-accent pb-1 inline-block w-max">Staff
+                        Meal vs Koust</a>
+                    <a href="/staffmeal-vs-combo.html"
+                        class="hover:text-accent border-b border-transparent hover:border-accent pb-1 inline-block w-max">Staff
+                        Meal vs Combo</a>
+                </div>
+                <div class="flex flex-col items-center md:items-start gap-3">
+                    <span class="uppercase tracking-widest text-xs">Ressources</span>
+                    <a href="/resources.html"
+                        class="hover:text-accent border-b border-transparent hover:border-accent pb-1 inline-block w-max">Outils
+                        gratuits</a>
+                    <a href="/evenements.html"
+                        class="hover:text-accent border-b border-transparent hover:border-accent pb-1 inline-block w-max">Événements</a>
+                    <a href="/index.html#demo"
+                        class="hover:text-accent border-b border-transparent hover:border-accent pb-1 inline-block w-max">Nous
+                        contacter</a>
+                </div>
+            </div>
+
+            <div class="font-sans text-sm font-medium text-ink-faint">
+                &copy; 2026 Staff Meal.
+            </div>
+
+        </div>
+    </footer>
+
+
+    <!-- LOGIC SCRIPT -->
+    <script>
+        // Load Lucide
+        const script = document.createElement("script");
+        script.src = "https://unpkg.com/lucide@latest";
+        script.onload = () => 
+        document.body.appendChild(script);;
+
+        // Reveal animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('revealed'); });
+        });
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        // Calculator Logic
+        const ingredientsList = document.getElementById('ingredientsList');
+        const addBtn = document.getElementById('addIngredientBtn');
+        const sellingPriceInput = document.getElementById('sellingPrice');
+        const taxRateSelect = document.getElementById('taxRate');
+
+        const totalCostDisplay = document.getElementById('totalCostDisplay');
+        const ratioResult = document.getElementById('ratioResult');
+        const marginResult = document.getElementById('marginResult');
+        const coeffResult = document.getElementById('coeffResult');
+        const ratioStatusBadge = document.getElementById('ratioStatusBadge');
+        const ratioStatusText = document.getElementById('ratioStatusText');
+
+        let ingredientCount = 0;
+
+        function createIngredientRow() {
+            ingredientCount++;
+            const id = ingredientCount;
+            const div = document.createElement('div');
+            div.className = 'flex gap-2 items-center ingredient-row';
+            div.innerHTML = `
+                <input type="text" placeholder="Ingrédient (ex: Pain Bun)" class="input-retro py-2 flex-grow text-sm">
+                <div class="relative w-32 shrink-0">
+                    <input type="number" step="0.01" min="0" placeholder="0.00" class="input-retro py-2 pl-6 pr-2 text-sm text-right cost-input" oninput="calculate()">
+                    <span class="absolute left-2 top-1/2 -translate-y-1/2 font-bold opacity-50 text-sm">€</span>
+                </div>
+                <button onclick="this.parentElement.remove(); calculate();" class="p-2 text-foreground/50 hover:text-accent outline-none">
+                    <i data-lucide="x" class="w-5 h-5"></i>
+                </button>
+            `;
+            ingredientsList.appendChild(div);
+            lucide.createIcons({ root: div });
+        }
+
+        function calculate() {
+            // 1. Calculate Total Food Cost (HT)
+            const inputs = document.querySelectorAll('.cost-input');
+            let totalCost = 0;
+            inputs.forEach(input => {
+                const val = parseFloat(input.value);
+                if (!isNaN(val)) totalCost += val;
+            });
+            totalCostDisplay.textContent = totalCost.toFixed(2) + ' €';
+
+            // 2. Get Sales Price and Tax
+            const priceTTC = parseFloat(sellingPriceInput.value);
+            const taxRate = parseFloat(taxRateSelect.value) / 100;
+
+            if (isNaN(priceTTC) || priceTTC <= 0 || totalCost === 0) {
+                // Reset outputs if incomplete
+                ratioResult.textContent = '--%';
+                marginResult.textContent = '0.00 €';
+                coeffResult.textContent = '0.00';
+                ratioStatusBadge.style.opacity = '0';
+                return;
+            }
+
+            // 3. Math
+            const priceHT = priceTTC / (1 + taxRate);
+            const foodCostRatio = (totalCost / priceHT) * 100;
+            const marginHT = priceHT - totalCost;
+            const coeff = priceTTC / totalCost;
+
+            // 4. Update UI
+            ratioResult.textContent = foodCostRatio.toFixed(1) + '%';
+            marginResult.textContent = marginHT.toFixed(2) + ' €';
+            coeffResult.textContent = coeff.toFixed(2);
+
+            // 5. Status Badge logic (Rule of thumb: <28% excellent, 28-32% good, >32% danger)
+            ratioStatusBadge.style.opacity = '1';
+            ratioStatusBadge.className = 'inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-bold transition-all';
+
+            if (foodCostRatio < 28) {
+                ratioStatusBadge.classList.add('bg-olive', 'text-white');
+                ratioStatusText.textContent = "Excellente marge";
+                ratioResult.className = "font-display font-black text-6xl leading-none mb-2 text-olive";
+            } else if (foodCostRatio <= 32) {
+                ratioStatusBadge.classList.add('bg-mustard', 'text-foreground');
+                ratioStatusText.textContent = "Ratio correct";
+                ratioResult.className = "font-display font-black text-6xl leading-none mb-2 text-mustard";
+            } else {
+                ratioStatusBadge.classList.add('bg-accent', 'text-white');
+                ratioStatusText.textContent = "Attention : Marge faible";
+                ratioResult.className = "font-display font-black text-6xl leading-none mb-2 text-accent";
+            }
+        }
+
+        // Event Listeners
+        addBtn.addEventListener('click', createIngredientRow);
+        sellingPriceInput.addEventListener('input', calculate);
+        taxRateSelect.addEventListener('change', calculate);
+
+        // Init with 3 blank rows
+        createIngredientRow();
+        createIngredientRow();
+        createIngredientRow();
+    </script>
+
+    <!-- App Shell Logic -->
+    <script>
+        const menuToggleApp = document.getElementById('menuToggle');
+        const closeMenuApp = document.getElementById('closeMenu');
+        const sidebarApp = document.getElementById('sidebar');
+
+        if(menuToggleApp) menuToggleApp.addEventListener('click', () => sidebarApp.classList.add('open'));
+        if(closeMenuApp) closeMenuApp.addEventListener('click', () => sidebarApp.classList.remove('open'));
+
+        const userAppStr = localStorage.getItem('mealos_tools_user');
+        if (userAppStr) {
+            const userApp = JSON.parse(userAppStr);
+            if(document.getElementById('sidebarName')) document.getElementById('sidebarName').textContent = userApp.firstName + ' ' + userApp.lastName;
+            if(document.getElementById('sidebarRestaurant')) document.getElementById('sidebarRestaurant').textContent = userApp.restaurant;
+            if(document.getElementById('avatarInitials')) document.getElementById('avatarInitials').textContent = userApp.firstName ? userApp.firstName.charAt(0).toUpperCase() : 'U';
+        }
+    </script>
+
+    <script src="https://unpkg.com/lucide@latest" defer></script>
+    <script>if(typeof lucide !== "undefined") { lucide.createIcons(); } else { document.addEventListener("DOMContentLoaded", () => { if(typeof lucide !== "undefined") lucide.createIcons(); }); }</script>
+</body>
+
+
+</html>
