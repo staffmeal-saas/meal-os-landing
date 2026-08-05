@@ -1,4 +1,11 @@
-name: Deploy to GitHub Pages
+name: Redirection GitHub Pages vers Netlify
+
+# Le site est servi par Netlify depuis la refonte Staff Meal du 5 août 2026.
+# Netlify est nécessaire pour les formulaires (Netlify Forms) et les 301 des
+# anciennes URL meal-os-vs-*, que GitHub Pages ne sait pas faire.
+# Ce workflow ne publie plus le site : il publie une page de redirection, pour
+# que les liens déjà partagés vers staffmeal-saas.github.io ne tombent pas sur
+# une version périmée de la marque.
 
 on:
   push:
@@ -14,6 +21,9 @@ concurrency:
   group: "pages"
   cancel-in-progress: false
 
+env:
+  TARGET: https://staffmeal-app.netlify.app/
+
 jobs:
   deploy:
     environment:
@@ -21,14 +31,41 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - name: Construire la page de redirection
+        run: |
+          mkdir -p _redirect
+          cat > _redirect/index.html <<HTML
+          <!DOCTYPE html>
+          <html lang="fr">
+          <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Staff Meal</title>
+            <link rel="canonical" href="${TARGET}">
+            <meta http-equiv="refresh" content="0; url=${TARGET}">
+            <meta name="robots" content="noindex">
+            <style>
+              body { margin:0; min-height:100vh; display:flex; align-items:center;
+                     justify-content:center; background:#f4eedf; color:#181410;
+                     font-family: ui-sans-serif, system-ui, sans-serif; text-align:center; }
+              a { color:#f0481c; font-weight:700; }
+            </style>
+          </head>
+          <body>
+            <div>
+              <p>Le site Staff Meal a déménagé.</p>
+              <p><a href="${TARGET}">${TARGET}</a></p>
+            </div>
+          </body>
+          </html>
+          HTML
+          cp _redirect/index.html _redirect/404.html
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '.'
+          path: '_redirect'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
