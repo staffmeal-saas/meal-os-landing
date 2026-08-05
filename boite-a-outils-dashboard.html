@@ -3,6 +3,24 @@
 
 <head>
     <meta charset="UTF-8">
+    <title>Ma boîte à outils | Staff Meal</title>
+    <meta name="description" content="Vos outils gratuits Staff Meal.">
+    <meta name="robots" content="noindex, follow">
+    <meta name="theme-color" content="#f0481c">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Staff Meal">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:url" content="https://staff-meal.com/boite-a-outils-dashboard.html">
+    <meta property="og:title" content="Ma boîte à outils | Staff Meal">
+    <meta property="og:description" content="Vos outils gratuits Staff Meal.">
+    <meta property="og:image" content="https://staff-meal.com/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ma boîte à outils | Staff Meal">
+    <meta name="twitter:description" content="Vos outils gratuits Staff Meal.">
+    <meta name="twitter:image" content="https://staff-meal.com/og-image.jpg">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Performance-first Asset Loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,8 +29,6 @@
     <link rel="preconnect" href="https://images.unsplash.com">
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=Shantell+Sans:wght@500;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=Shantell+Sans:wght@500;600;700;800&display=swap"></noscript>
-    <title>Dashboard Boîte à Outils | Staff Meal</title>
-
     <!-- Preconnect -->
     
     
@@ -62,7 +78,7 @@
             text-transform: uppercase;
             padding: 0.5rem 1rem;
             border-radius: 9999px;
-            box-shadow: theme('boxShadow.retro');
+            box-shadow: 4px 4px 0px 0px #181410;
             transition: all 0.2s;
             border: 2px solid #181410;
             cursor: pointer;
@@ -70,23 +86,23 @@
 
         .btn-retro:hover {
             transform: translate(-2px, -2px);
-            box-shadow: 6px 6px 0px 0px theme("colors.foreground");
+            box-shadow: 6px 6px 0px 0px #181410;
         }
 
         .btn-retro:active {
             transform: translate(2px, 2px);
-            box-shadow: 0px 0px 0px 0px theme("colors.foreground");
+            box-shadow: 0px 0px 0px 0px #181410;
         }
 
         .btn-retro.alt {
-            background-color: white;
+            background-color: #fbf8ee;
             color: #181410;
         }
 
         .card-retro {
             border: 1px solid #181410;
             border-radius: 1rem;
-            box-shadow: theme('boxShadow.retro');
+            box-shadow: 4px 4px 0px 0px #181410;
         }
 
         /* Dashboard App specific layout */
@@ -96,7 +112,7 @@
             position: fixed;
             left: 0;
             top: 0;
-            background: white;
+            background: #fbf8ee;
             border-right: 1px solid #181410;
             padding: 2rem 1.5rem;
             display: flex;
@@ -142,12 +158,13 @@
 
         .nav-link:hover {
             opacity: 1;
-            background: rgba(0, 0, 0, 0.05);
+            background: rgba(24,20,16,0.06);
         }
 
         .nav-link.active {
             opacity: 1;
-            background: #b3720f;
+            background: #f0481c;
+            color: #f4eedf;
             border-color: #181410;
             color: #181410;
             box-shadow: 2px 2px 0px 0px #181410;
