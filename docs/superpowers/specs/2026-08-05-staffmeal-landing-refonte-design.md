@@ -1,7 +1,7 @@
 # Refonte du site Meal OS vers Staff Meal
 
 Date : 2026-08-05
-Statut : validé, prêt pour plan d'implémentation
+Statut : LIVRÉ ET EN LIGNE le 2026-08-05 sur https://staffmeal-app.netlify.app
 
 ## Contexte
 
