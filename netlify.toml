@@ -47,214 +47,262 @@
 # signal et ne pas casser les liens déjà crawlés par Google.
 
 [[redirects]]
+  from = "/index.html"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/agence-client-mystere-ou-interne"
   to = "/agence-client-mystere-ou-interne.html"
   status = 301
+  force = true
 
 [[redirects]]
   from = "/boite-a-outils-dashboard"
   to = "/boite-a-outils-dashboard.html"
   status = 301
+  force = true
 
 [[redirects]]
   from = "/boite-a-outils-login"
   to = "/boite-a-outils-login.html"
   status = 301
+  force = true
 
 [[redirects]]
   from = "/calculateur-gaspillage-alimentaire"
   to = "/calculateur-gaspillage-alimentaire.html"
   status = 301
+  force = true
 
 [[redirects]]
   from = "/checklist-haccp-inspection"
   to = "/checklist-haccp-inspection.html"
   status = 301
+  force = true
 
 [[redirects]]
   from = "/client-mystere-franchise-reseau"
   to = "/client-mystere-franchise-reseau.html"
   status = 301
+  force = true
 
 [[redirects]]
   from = "/client-mystere-restaurant"
   to = "/client-mystere-restaurant.html"
   status = 301
+  force = true
 
 [[redirects]]
   from = "/comparatif-logiciels-caisse-restaurant"
   to = "/comparatif-logiciels-caisse-restaurant.html"
   status = 301
+  force = true
 
 [[redirects]]
   from = "/cout-client-mystere-restaurant"
   to = "/cout-client-mystere-restaurant.html"
   status = 301
+  force = true
 
 [[redirects]]
   from = "/evenements"
   to = "/evenements.html"
   status = 301
+  force = true
 
 [[redirects]]
   from = "/food-cost-calculator"
   to = "/food-cost-calculator.html"
   status = 301
+  force = true
 
 [[redirects]]
   from = "/frequence-visites-mystere"
   to = "/frequence-visites-mystere.html"
   status = 301
+  force = true
 
 [[redirects]]
   from = "/generateur-fiche-technique"
   to = "/generateur-fiche-technique.html"
   status = 301
+  force = true
 
 [[redirects]]
   from = "/generateur-reponse-avis-google"
   to = "/generateur-reponse-avis-google.html"
   status = 301
+  force = true
 
 [[redirects]]
   from = "/grille-visite-mystere-restaurant"
   to = "/grille-visite-mystere-restaurant.html"
   status = 301
+  force = true
 
 [[redirects]]
   from = "/guide-restaurant"
   to = "/guide-restaurant.html"
   status = 301
+  force = true
 
 [[redirects]]
   from = "/haccp-restaurant"
   to = "/haccp-restaurant.html"
   status = 301
+  force = true
 
 [[redirects]]
   from = "/maintenance-equipement-restaurant"
   to = "/maintenance-equipement-restaurant.html"
   status = 301
+  force = true
 
 [[redirects]]
   from = "/manuel-operatoire-restaurant"
   to = "/manuel-operatoire-restaurant.html"
   status = 301
+  force = true
 
 [[redirects]]
   from = "/matrice-menu-engineering"
   to = "/matrice-menu-engineering.html"
   status = 301
+  force = true
 
 [[redirects]]
   from = "/menu-engineering-psychologie"
   to = "/menu-engineering-psychologie.html"
   status = 301
+  force = true
 
 [[redirects]]
   from = "/merci"
   to = "/merci.html"
   status = 301
+  force = true
 
 [[redirects]]
   from = "/planning-personnel-restaurant"
   to = "/planning-personnel-restaurant.html"
   status = 301
+  force = true
 
 [[redirects]]
   from = "/prime-cost-calculator"
   to = "/prime-cost-calculator.html"
   status = 301
+  force = true
 
 [[redirects]]
   from = "/questionnaire-client-mystere"
   to = "/questionnaire-client-mystere.html"
   status = 301
+  force = true
 
 [[redirects]]
   from = "/rapport-client-mystere"
   to = "/rapport-client-mystere.html"
   status = 301
+  force = true
 
 [[redirects]]
   from = "/ratios-financiers-restauration"
   to = "/ratios-financiers-restauration.html"
   status = 301
+  force = true
 
 [[redirects]]
   from = "/recruter-clients-mysteres"
   to = "/recruter-clients-mysteres.html"
   status = 301
+  force = true
 
 [[redirects]]
   from = "/rentabilite-restaurant"
   to = "/rentabilite-restaurant.html"
   status = 301
+  force = true
 
 [[redirects]]
   from = "/reponses-avis-google-restaurant"
   to = "/reponses-avis-google-restaurant.html"
   status = 301
+  force = true
 
 [[redirects]]
   from = "/resources"
   to = "/resources.html"
   status = 301
+  force = true
 
 [[redirects]]
   from = "/staffmeal-vs-combo"
   to = "/staffmeal-vs-combo.html"
   status = 301
+  force = true
 
 [[redirects]]
   from = "/staffmeal-vs-koust"
   to = "/staffmeal-vs-koust.html"
   status = 301
+  force = true
 
 [[redirects]]
   from = "/staffmeal-vs-skello"
   to = "/staffmeal-vs-skello.html"
   status = 301
+  force = true
 
 [[redirects]]
   from = "/standards-service-restaurant"
   to = "/standards-service-restaurant.html"
   status = 301
+  force = true
 
 [[redirects]]
   from = "/turnover-restauration"
   to = "/turnover-restauration.html"
   status = 301
+  force = true
 
 [[redirects]]
   from = "/outils/fiche-technique"
   to = "/outils/fiche-technique.html"
   status = 301
+  force = true
 
 [[redirects]]
   from = "/outils/food-cost"
   to = "/outils/food-cost.html"
   status = 301
+  force = true
 
 [[redirects]]
   from = "/outils/gaspillage"
   to = "/outils/gaspillage.html"
   status = 301
+  force = true
 
 [[redirects]]
   from = "/outils/menu-engineering"
   to = "/outils/menu-engineering.html"
   status = 301
+  force = true
 
 [[redirects]]
   from = "/outils/prime-cost"
   to = "/outils/prime-cost.html"
   status = 301
+  force = true
 
 [[redirects]]
   from = "/outils/reponse-avis"
   to = "/outils/reponse-avis.html"
   status = 301
+  force = true
 
 # --- Pas de fallback ----------------------------------------------------
 # Une URL inconnue doit renvoyer un vrai 404 (Netlify sert 404.html), et
