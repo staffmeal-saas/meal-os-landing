@@ -6,7 +6,7 @@
     <title>Calculateur de prime cost et masse salariale</title>
     <meta name="description" content="Additionnez coût matière et coût du personnel pour obtenir votre prime cost, l'indicateur qui dit si votre restaurant tient debout.">
     <meta name="robots" content="noindex, nofollow">
-    <meta name="theme-color" content="#f0481c">
+    <meta name="theme-color" content="#ffffff">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Staff Meal">
     <meta property="og:locale" content="fr_FR">
@@ -37,7 +37,7 @@
     "url": "https://staff-meal.com/",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://staff-meal.com/assets/brand/mascot.png",
+      "url": "https://staff-meal.com/assets/brand/mark.png",
       "width": 512,
       "height": 512
     },
@@ -80,32 +80,32 @@
     <!-- Custom CSS -->
     <style>
         body {
-            background-color: #f4eedf;
-            color: #181410;
+            background-color: #ffffff;
+            color: #191919;
             overflow-x: hidden;
             -webkit-font-smoothing: antialiased;
         }
 
         .logo-handwritten {
-            font-family: 'Shantell Sans', cursive;
+            font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
             text-transform: lowercase;
             letter-spacing: -0.02em;
             line-height: 0.8;
-            color: #181410;
+            color: #191919;
         }
 
         .border-retro {
-            border: 1px solid #181410;
+            border: 1px solid #e7e7e4;
         }
 
         .glass-header {
             background: rgba(250, 242, 215, 0.95);
-            border-bottom: 1px solid #181410;
+            border-bottom: 1px solid #e7e7e4;
             backdrop-filter: blur(8px);
         }
 
         .text-chunky {
-            font-family: 'Familjen Grotesk', ui-sans-serif, system-ui, sans-serif;
+            font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
             font-weight: 900;
             line-height: 0.95;
             letter-spacing: -0.03em;
@@ -115,50 +115,50 @@
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            background-color: #181410;
-            color: #f4eedf;
-            font-family: 'Familjen Grotesk', ui-sans-serif, system-ui, sans-serif;
+            background-color: #191919;
+            color: #ffffff;
+            font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
             font-weight: 900;
             text-transform: uppercase;
             padding: 0.75rem 1.5rem;
             border-radius: 9999px;
-            box-shadow: 4px 4px 0px 0px #181410;
+            box-shadow: 0 14px 40px rgba(25,25,25,.08);
             transition: all 0.2s;
-            border: 2px solid #181410;
+            border: 1px solid #e7e7e4;
             cursor: pointer;
         }
 
         .btn-retro:hover {
             transform: translate(-2px, -2px);
-            box-shadow: 6px 6px 0px 0px #181410;
+            box-shadow: 0 14px 40px rgba(25,25,25,.08);
         }
 
         .btn-retro.alt {
-            background-color: #fbf8ee;
-            color: #181410;
+            background-color: #f7f7f5;
+            color: #191919;
         }
 
         .input-retro {
             width: 100%;
-            border: 2px solid #181410;
+            border: 1px solid #e7e7e4;
             padding: 0.75rem 1rem;
             border-radius: 0.5rem;
-            font-family: 'Familjen Grotesk', ui-sans-serif, system-ui, sans-serif;
+            font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
             font-weight: 600;
-            background-color: #fbf8ee;
+            background-color: #f7f7f5;
             outline: none;
             transition: all 0.2s;
         }
 
         .input-retro:focus {
-            box-shadow: 4px 4px 0px 0px #181410;
+            box-shadow: 0 14px 40px rgba(25,25,25,.08);
             transform: translate(-2px, -2px);
         }
 
         .card-retro {
-            border: 1px solid #181410;
+            border: 1px solid #e7e7e4;
             border-radius: 1.5rem;
-            box-shadow: 4px 4px 0px 0px #181410;
+            box-shadow: 0 14px 40px rgba(25,25,25,.08);
         }
 
         .reveal {
@@ -173,7 +173,7 @@
         }
     
         /* Dashboard App specific layout */
-        .sidebar { width: 260px; height: 100vh; position: fixed; left: 0; top: 0; background: #fbf8ee; border-right: 1px solid #181410; padding: 2rem 1.5rem; display: flex; flex-direction: column; z-index: 100;}
+        .sidebar { width: 260px; height: 100vh; position: fixed; left: 0; top: 0; background: #f7f7f5; border-right: 1px solid #e7e7e4; padding: 2rem 1.5rem; display: flex; flex-direction: column; z-index: 100;}
         .app-main { margin-left: 260px; padding: 2rem; min-height: 100vh; padding-top: 2rem; }
         
         @media (max-width: 1024px) {
@@ -182,9 +182,9 @@
             .app-main { margin-left: 0; padding: 1.5rem; padding-top: 5rem;}
         }
 
-        .nav-link { display: flex; align-items: center; gap: 0.75rem; padding: 0.75rem 1rem; border-radius: 0.5rem; font-family: 'Familjen Grotesk', ui-sans-serif, system-ui, sans-serif; font-weight: 700; opacity: 0.7; transition: all 0.2s; border: 2px solid transparent;}
-        .nav-link:hover { opacity: 1; background: rgba(24,20,16,0.06); }
-        .nav-link.active { opacity: 1; background: #f0481c; color: #f4eedf; border-color: #181410; color: #181410; box-shadow: 2px 2px 0px 0px #181410;}
+        .nav-link { display: flex; align-items: center; gap: 0.75rem; padding: 0.75rem 1rem; border-radius: 0.5rem; font-family: 'Inter', ui-sans-serif, system-ui, sans-serif; font-weight: 700; opacity: 0.7; transition: all 0.2s; border: 2px solid transparent;}
+        .nav-link:hover { opacity: 1; background: rgba(25,25,25,0.06); }
+        .nav-link.active { opacity: 1; background: #2383e2; color: #ffffff; border-color: #e7e7e4; color: #191919; box-shadow: 0 2px 10px rgba(25,25,25,.06);}
         
         @media print {
             .sidebar, .lg\:hidden { display: none !important; }
@@ -192,8 +192,12 @@
         }
 
     </style>
-    <link rel="preload" href="/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="/style.css"></noscript>
+    <link rel="preload" href="/style.css?v=20261025g" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/style.css?v=20261025g"></noscript>
+    <link rel="stylesheet" href="/shell.css?v=20261025c">
+    <script defer data-domain="staff-meal.com" data-api="/s/event" src="/s/script"></script>
+    <script>window.plausible = window.plausible || function () { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
+    <script defer src="/analytics.js?v=20261025i"></script>
 </head>
 
 <body class="selection:bg-foreground selection:text-background font-sans flex flex-col min-h-screen bg-background text-foreground">
@@ -205,15 +209,15 @@
     
     
     <!-- Mobile Header -->
-    <div class="lg:hidden fixed top-0 w-full left-0 bg-paper border-b border-foreground px-4 py-3 flex items-center justify-between z-40 no-print" style="box-shadow: 4px 4px 0px 0px #181410;">
-        <a href="/boite-a-outils-dashboard.html" class="flex items-center gap-2.5 hover:opacity-80 transition-opacity"><img src="/assets/brand/mascot.png" alt="" width="44" height="44" class="brand-mark w-9 h-9"><span class="wordmark text-lg">Staff Meal</span></a>
+    <div class="lg:hidden fixed top-0 w-full left-0 bg-paper border-b border-cream-dark px-4 py-3 flex items-center justify-between z-40 no-print" style="box-shadow: 0 14px 40px rgba(25,25,25,.08);">
+        <a href="/boite-a-outils-dashboard.html" class="flex items-center gap-2.5 hover:opacity-80 transition-opacity"><span class="brand-mark sm-mark w-9 h-9" aria-hidden="true">S</span><span class="wordmark text-lg">Staff Meal</span></a>
         <button id="menuToggle" class="p-2"><i data-lucide="menu"></i></button>
     </div>
 
     <!-- Sidebar -->
     <aside class="sidebar bg-background no-print" id="sidebar">
         <div class="flex items-center justify-between mb-10">
-            <a href="/boite-a-outils-dashboard.html" class="flex items-center gap-2.5 hover:opacity-80 transition-opacity"><img src="/assets/brand/mascot.png" alt="" width="44" height="44" class="brand-mark w-11 h-11"><span class="wordmark text-xl">Staff Meal</span></a>
+            <a href="/boite-a-outils-dashboard.html" class="flex items-center gap-2.5 hover:opacity-80 transition-opacity"><span class="brand-mark sm-mark w-11 h-11" aria-hidden="true">S</span><span class="wordmark text-xl">Staff Meal</span></a>
             <button id="closeMenu" class="lg:hidden"><i data-lucide="x"></i></button>
         </div>
 
@@ -223,7 +227,7 @@
                 <i data-lucide="layout-grid" class="w-5 h-5"></i> Outils Gratuits
             </a>
             
-            <div class="pt-6 mt-6 border-t-2 border-foreground/10">
+            <div class="pt-6 mt-6 border-t border-foreground/10">
                 <div class="text-xs font-black uppercase tracking-widest opacity-40 mb-3 px-3 flex items-center justify-between">
                     Staff Meal Complet <span class="bg-accent text-white text-[8px] px-1 py-0.5 rounded uppercase">Pro</span>
                 </div>
@@ -245,7 +249,7 @@
                 </a>
             </div>
 
-            <div class="pt-6 mt-6 border-t-2 border-foreground/10">
+            <div class="pt-6 mt-6 border-t border-foreground/10">
                 <div class="text-xs font-black uppercase tracking-widest opacity-40 mb-3 px-3">Ressources</div>
                 <a href="/resources.html" class="nav-link">
                     <i data-lucide="book-open" class="w-5 h-5"></i> Articles & Guides
@@ -253,7 +257,7 @@
             </div>
         </nav>
 
-        <div class="mt-auto border-t-2 border-foreground/10 pt-6">
+        <div class="mt-auto border-t border-foreground/10 pt-6">
             <div class="flex items-center gap-3 px-2">
                 <div class="w-10 h-10 rounded-full bg-foreground text-background flex items-center justify-center font-display font-black text-xl" id="avatarInitials">U</div>
                 <div class="overflow-hidden">
@@ -276,14 +280,14 @@
                 <i data-lucide="x" class="w-6 h-6"></i>
             </button>
             
-            <div class="mb-6 flex items-center justify-center w-16 h-16 rounded-full bg-accent/10 border-2 border-accent text-accent mx-auto">
+            <div class="mb-6 flex items-center justify-center w-16 h-16 rounded-full bg-accent/10 border border-accent text-accent mx-auto">
                 <i data-lucide="lock" class="w-8 h-8" id="proModalIcon"></i>
             </div>
             
             <h2 class="font-display font-black text-3xl mb-3 text-center" id="proModalTitle">Fonctionnalité Premium</h2>
             <p class="font-sans text-center font-medium opacity-80 mb-6" id="proModalDesc">Découvrez la puissance de Staff Meal Pro.</p>
             
-            <div class="bg-mustard/20 border-2 border-mustard rounded-lg p-4 mb-8 text-sm font-medium text-center">
+            <div class="bg-mustard/20 border border-mustard rounded-lg p-4 mb-8 text-sm font-medium text-center">
                 <span class="font-black uppercase tracking-wider text-xs block mb-1">🎁 Accès exclusif</span>
                 Réservé aux établissements partenaires Staff Meal.
             </div>
@@ -357,7 +361,7 @@
             <!-- Intro -->
             <div class="text-center mb-12 reveal">
                 <div
-                    class="bg-paper text-olive border-2 border-foreground rounded-full px-3 py-1 font-bold text-xs inline-flex items-center gap-2 mb-4 transform -rotate-2 shadow-[2px_2px_0px_#111]">
+                    class="bg-paper text-olive border border-cream-dark rounded-full px-3 py-1 font-bold text-xs inline-flex items-center gap-2 mb-4 transform -rotate-2 shadow-flat">
                     <i data-lucide="users" class="w-4 h-4"></i> Diagnostic RH
                 </div>
                 <h1 class="text-chunky text-5xl md:text-6xl mb-4">Simulateur de <span
@@ -373,9 +377,9 @@
                 <div class="lg:col-span-8 space-y-8 reveal">
 
                     <!-- Etape 1: Chiffre d'Affaires & Food Cost -->
-                    <div class="bg-paper p-6 md:p-8 card-retro border-b-8">
+                    <div class="bg-paper p-6 md:p-8 card-retro">
                         <h2
-                            class="font-display font-black text-2xl mb-6 flex items-center gap-2 border-b-2 border-foreground/10 pb-4">
+                            class="font-display font-black text-2xl mb-6 flex items-center gap-2 border-b border-foreground/10 pb-4">
                             <span
                                 class="bg-foreground text-background w-8 h-8 rounded-full flex items-center justify-center text-sm">1</span>
                             Les Bases du Mois
@@ -406,8 +410,8 @@
                     </div>
 
                     <!-- Etape 2: Calcul des Salaires -->
-                    <div class="bg-paper p-6 md:p-8 card-retro border-b-8">
-                        <div class="flex justify-between items-center mb-6 border-b-2 border-foreground/10 pb-4">
+                    <div class="bg-paper p-6 md:p-8 card-retro">
+                        <div class="flex justify-between items-center mb-6 border-b border-foreground/10 pb-4">
                             <h2 class="font-display font-black text-2xl flex items-center gap-2">
                                 <span
                                     class="bg-foreground text-background w-8 h-8 rounded-full flex items-center justify-center text-sm">2</span>
@@ -427,7 +431,7 @@
                         <button id="addSalaryBtn"
                             class="font-bold text-sm flex items-center gap-1 text-olive hover:text-foreground transition-colors mb-2">
                             <i data-lucide="plus"
-                                class="w-5 h-5 bg-background border-2 border-foreground rounded-full"></i> Ajouter un
+                                class="w-5 h-5 bg-background border border-cream-dark rounded-full"></i> Ajouter un
                             employé
                         </button>
                     </div>
@@ -445,7 +449,7 @@
                                     id="masseSalarialeTtl">0</span> €)</div>
                         </div>
 
-                        <div class="mb-4 pt-4 border-t-2 border-white/10">
+                        <div class="mb-4 pt-4 border-t border-white/10">
                             <div class="font-sans font-medium mb-1">Votre "Prime Cost" Total</div>
                             <div class="text-xs opacity-60 mb-2">(Coût Matière + Masse Salariale)</div>
 
@@ -466,7 +470,7 @@
 
                     <!-- SEO / CTA Lead Magnet -->
                     <div class="card-retro bg-paper pb-6 overflow-hidden">
-                        <div class="bg-olive p-4 text-white text-center mb-4 border-b border-foreground">
+                        <div class="bg-olive p-4 text-white text-center mb-4 border-b border-cream-dark">
                             <i data-lucide="activity" class="w-8 h-8 mx-auto mb-2"></i>
                             <h4 class="font-sans font-black text-lg">Fatigué du turnover ?</h4>
                         </div>
@@ -488,12 +492,12 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="border-t border-foreground py-12 px-4 md:px-12 bg-background">
+    <footer class="border-t border-cream-dark py-12 px-4 md:px-12 bg-background">
         <div
             class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8 text-center md:text-left">
 
             <a href="/" class="flex items-center gap-3 hover:opacity-80 transition-opacity">
-                <img src="/assets/brand/mascot.png" alt="" width="56" height="56" class="brand-mark w-14 h-14">
+                <span class="brand-mark sm-mark w-14 h-14" aria-hidden="true">S</span>
                 <span class="flex flex-col leading-none text-left">
                     <span class="wordmark text-2xl">Staff Meal</span>
                     <span class="font-sans text-[0.5rem] uppercase font-bold tracking-[0.2em] text-ink-soft mt-1">le

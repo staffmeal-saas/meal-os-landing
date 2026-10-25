@@ -2,177 +2,127 @@
 @tailwind components;
 
 /* ---------------------------------------------------------------
-   Staff Meal — feuille de style du site.
-   La DA est celle de l'app (crème / encre / orange, Familjen Grotesk
-   + Shantell Sans, mascotte). Registre de mise en page inspiré de la
-   référence wana : bandeau plein de couleur de marque, fond crème,
-   display surdimensionné, respiration généreuse.
-   --------------------------------------------------------------- */
+   Staff Meal — feuille de style des pages Tailwind (DA v2, octobre 2026).
+   Grammaire Notion : blanc, encre, un seul accent bleu, Inter, bordures
+   fines grises, rayons doux. La coque (header, footer, boutons .button)
+   vit dans shell.css, partagée avec la home.
 
-/* Font fallback metrics to prevent CLS */
-        @font-face {
-            font-family: 'Familjen-fallback';
-            src: local('Helvetica Neue'), local('Arial');
-            size-adjust: 100%;
-            ascent-override: 96%;
-            descent-override: 24%;
-            line-gap-override: 0%;
-        }
-        @font-face {
-            font-family: 'Shantell-fallback';
-            src: local('Comic Sans MS'), local('Segoe Script'), local('cursive');
-            size-adjust: 103%;
-            ascent-override: 95%;
-            descent-override: 30%;
-            line-gap-override: 0%;
-        }
+   Les noms de classes historiques (btn-retro, card-retro, input-retro,
+   text-chunky, font-script…) sont gardés tels quels : les pages les
+   utilisent, seul leur rendu change. Mascotte et stickers sont retirés.
+   --------------------------------------------------------------- */
 
         body {
             background-color: theme('colors.background');
             color: theme('colors.foreground');
             overflow-x: hidden;
-            font-family: 'Familjen Grotesk', 'Familjen-fallback', ui-sans-serif, system-ui, sans-serif;
+            font-family: theme('fontFamily.sans');
             font-feature-settings: "liga", "kern";
             -webkit-font-smoothing: antialiased;
         }
 
         ::selection {
-            background-color: theme('colors.accent');
-            color: theme('colors.background');
-        }
-
-        /* Bandeau de marque plein (ref wana) : wordmark crème + mascotte dedans */
-        .brand-bar {
-            background-color: theme('colors.accent');
-            color: theme('colors.background');
-        }
-
-        .wordmark {
-            font-family: 'Familjen Grotesk', 'Familjen-fallback', sans-serif;
-            font-weight: 700;
-            letter-spacing: -0.03em;
-            line-height: 0.9;
-            text-transform: uppercase;
-        }
-
-        /* Le badge mascotte de l'app : carré orange à coins très arrondis */
-        .brand-mark {
-            border-radius: 26%;
-            box-shadow: theme('boxShadow.mark');
-            object-fit: cover;
-            display: block;
-            user-select: none;
-        }
-
-        .brand-mark.ring {
-            outline: 2px solid rgba(244, 238, 223, 0.8);
-            outline-offset: 0;
-        }
-
-        /* Logo manuscrit (conservé pour les pages qui l'utilisent encore) */
-        .logo-handwritten {
-            font-family: 'Shantell Sans', 'Shantell-fallback', cursive;
-            letter-spacing: -0.02em;
-            line-height: 0.8;
+            background-color: theme('colors.pause');
             color: theme('colors.foreground');
         }
 
-        /* Border Utility */
+        .wordmark {
+            font-weight: 760;
+            letter-spacing: -0.025em;
+            line-height: 1;
+        }
+
+        .logo-handwritten {
+            font-weight: 760;
+            letter-spacing: -0.025em;
+            line-height: 1;
+            color: theme('colors.foreground');
+        }
+
+        /* Bordures : l'encre pleine devient un filet gris fin */
         .border-retro {
-            border: 1px solid theme('colors.foreground');
+            border: 1px solid theme('colors.cream-dark');
         }
 
-        /* Dashed Separators */
         .border-dashed-x {
-            border-top: 1px dashed theme('colors.foreground');
-            opacity: 0.3;
+            border-top: 1px solid theme('colors.cream-dark');
         }
 
-        /* Circular crops for images like in the inspiration */
         .img-circular {
             border-radius: 50%;
             aspect-ratio: 1;
             object-fit: cover;
-            border: 1px solid theme('colors.foreground');
+            border: 1px solid theme('colors.cream-dark');
         }
 
-        /* Glass Header (minimalist) */
         .glass-header {
-            background: rgba(244, 238, 223, 0.97);
-            border-bottom: 1px solid theme('colors.foreground');
-            transition: padding 0.3s ease;
+            background: rgba(255, 255, 255, 0.92);
+            border-bottom: 1px solid theme('colors.cream-dark');
         }
 
-        .header-scrolled {
-            padding-top: 1rem !important;
-            padding-bottom: 1rem !important;
-        }
-
-        /* Typography Utilities */
+        /* Titres : grande grotesque serrée, jamais en capitales */
         .text-chunky {
-            font-family: 'Familjen Grotesk', 'Familjen-fallback', sans-serif;
-            line-height: 0.92;
-            letter-spacing: -0.045em;
-            font-weight: 700;
+            font-family: theme('fontFamily.display');
+            line-height: 0.98;
+            letter-spacing: -0.055em;
+            font-weight: 780;
+            text-transform: none !important;
+        }
+
+        /* L'ancienne manuscrite Shantell. En bloc, elle devient le sur-titre
+           bleu en capitales de la DA ; en ligne dans un titre, elle garde la
+           taille du titre et passe en bleu. */
+        .font-script {
+            font-family: theme('fontFamily.sans');
+            transform: none !important;
+            rotate: none !important;
+        }
+
+        h1.font-script, h2.font-script, h3.font-script, h4.font-script,
+        p.font-script, div.font-script {
+            font-size: 13px !important;
+            line-height: 1.4 !important;
+            font-weight: 780;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: theme('colors.accent');
+        }
+
+        span.font-script {
+            font-weight: inherit;
+            color: theme('colors.accent');
         }
 
         .text-pill {
             font-family: theme('fontFamily.sans');
             font-size: 0.75rem;
-            text-transform: lowercase;
-            letter-spacing: 0.05em;
-            font-weight: 700;
-            padding: 0.25rem 0.75rem;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            font-weight: 750;
+            padding: 0.3rem 0.7rem;
             border-radius: 9999px;
-            border: 2px solid theme('colors.foreground');
+            border: 0;
+            color: theme('colors.accent-dark');
+            background: theme('colors.accent-soft');
             display: inline-flex;
             align-items: center;
         }
 
-        /* Image treatment */
         .img-minimal {
-            border: 1px solid theme('colors.foreground');
-            filter: grayscale(0.1) contrast(1.05);
+            border: 1px solid theme('colors.cream-dark');
+            border-radius: 12px;
         }
 
-        /* Stickers feutre repris de l'app (src/brand/Stickers.tsx + src/index.css).
-           Trait tremblé une seule prise, contour crème découpé, ombre douce. */
-        .dl {
-            fill: none;
-            stroke: currentColor;
-            stroke-width: 3.2;
-            stroke-linecap: round;
-            stroke-linejoin: round;
+        /* Pas de stickers ni de mascotte dans la DA v2 */
+        .stk, .stk-i, .sticker, .noise-overlay, .blob-1 {
+            display: none !important;
         }
 
-        .stk {
-            color: theme('colors.foreground');
-            filter: drop-shadow(3px 0 0 #f4eedf) drop-shadow(-3px 0 0 #f4eedf)
-                drop-shadow(0 3px 0 #f4eedf) drop-shadow(0 -3px 0 #f4eedf)
-                drop-shadow(2px 2px 0 #f4eedf) drop-shadow(-2px 2px 0 #f4eedf)
-                drop-shadow(2px -2px 0 #f4eedf) drop-shadow(-2px -2px 0 #f4eedf)
-                drop-shadow(5px 7px 7px rgb(0 0 0 / 0.16));
-        }
-
-        /* Sticker inversé : trait crème, contour encre (sur fond sombre ou orange) */
-        .stk-i {
-            color: theme('colors.background');
-            filter: drop-shadow(3px 0 0 #181410) drop-shadow(-3px 0 0 #181410)
-                drop-shadow(0 3px 0 #181410) drop-shadow(0 -3px 0 #181410)
-                drop-shadow(2px 2px 0 #181410) drop-shadow(-2px 2px 0 #181410)
-                drop-shadow(2px -2px 0 #181410) drop-shadow(-2px -2px 0 #181410);
-        }
-
-        .sticker {
-            position: absolute;
-            pointer-events: none;
-        }
-
-        /* Animations */
+        /* Animations : révélations verticales très discrètes uniquement */
         .reveal {
             opacity: 0;
-            transform: translateY(30px);
-            transition: all 1s cubic-bezier(0.22, 1, 0.36, 1);
+            transform: translateY(14px);
+            transition: opacity .6s ease, transform .6s ease;
         }
 
         .reveal.revealed {
@@ -180,90 +130,56 @@
             transform: translateY(0);
         }
 
-        /* Text Reveal Effect */
         .text-reveal-wrapper {
-            overflow: hidden;
             display: inline-block;
             vertical-align: top;
         }
 
         .text-reveal-inner {
             display: inline-block;
-            transform: translateY(110%);
-            transition: transform 1s cubic-bezier(0.22, 1, 0.36, 1);
         }
 
-        .reveal.revealed .text-reveal-inner {
-            transform: translateY(0);
+        .svg-draw {
+            display: none;
         }
 
-        /* SVG Scribble Draw */
-        .svg-draw path {
-            stroke-dasharray: 1000;
-            stroke-dashoffset: 1000;
-            transition: stroke-dashoffset 1.5s cubic-bezier(0.65, 0, 0.35, 1) 0.5s;
-        }
+        .delay-1 { transition-delay: 60ms; }
+        .delay-2 { transition-delay: 120ms; }
+        .delay-3 { transition-delay: 180ms; }
+        .delay-4 { transition-delay: 240ms; }
 
-        .reveal.revealed .svg-draw path {
-            stroke-dashoffset: 0;
-        }
-
-        .delay-1 {
-            transition-delay: 100ms;
-        }
-
-        .delay-2 {
-            transition-delay: 200ms;
-        }
-
-        .delay-3 {
-            transition-delay: 300ms;
-        }
-
-        .delay-4 {
-            transition-delay: 400ms;
-        }
-
-        /* Marquee */
+        /* Bandeau défilant : sobre, gris clair, texte gris */
         .marquee {
             white-space: nowrap;
             overflow: hidden;
             display: flex;
-            background-color: theme('colors.foreground');
-            border-bottom: 1px solid theme('colors.foreground');
-            border-top: 1px solid theme('colors.foreground');
-            padding: 0.75rem 0;
-            color: theme('colors.background');
-            transform: none;
+            background-color: theme('colors.background');
+            border-top: 1px solid theme('colors.cream-dark');
+            border-bottom: 1px solid theme('colors.cream-dark');
+            padding: 1rem 0;
+            color: theme('colors.ink-faint');
             position: relative;
             z-index: 20;
         }
 
         .marquee-content {
             display: flex;
-            animation: marquee 20s linear infinite;
-            font-family: theme('fontFamily.display');
-            font-weight: 700;
-            font-style: normal;
-            letter-spacing: -0.02em;
-            font-size: 1.5rem;
+            animation: marquee 40s linear infinite;
+            font-weight: 650;
+            letter-spacing: -0.01em;
+            font-size: 1rem;
         }
 
         @keyframes marquee {
-            0% {
-                transform: translateX(0);
-            }
-
-            100% {
-                transform: translateX(-50%);
-            }
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
         }
 
         /* FAQ */
         .faq-answer {
             max-height: 0;
             overflow: hidden;
-            transition: all 0.4s ease;
+            transition: all 0.3s ease;
             opacity: 0;
         }
 
@@ -275,76 +191,78 @@
         }
 
         .faq-icon {
-            transition: transform 0.3s ease;
-            background: theme('colors.foreground');
-            color: theme('colors.background');
+            transition: transform 0.2s ease;
+            background: transparent;
+            color: theme('colors.foreground');
             border-radius: 50%;
             padding: 4px;
         }
 
         .faq-item.active .faq-icon {
             transform: rotate(45deg);
-            background: theme('colors.accent');
         }
 
-        /* Buttons matching the style */
+        /* Boutons : noir plein, alt = blanc filet gris */
         .btn-retro {
-            background-color: theme('colors.accent');
-            color: theme('colors.background');
+            background-color: theme('colors.foreground');
+            color: #fff;
             border: 1px solid theme('colors.foreground');
-            border-radius: 10px;
-            padding: 0.875rem 2.25rem;
+            border-radius: 7px;
+            padding: 0.8rem 1.4rem;
             font-family: theme('fontFamily.sans');
-            font-weight: 700;
-            font-size: 1rem;
+            font-weight: 720;
+            font-size: 0.95rem;
             box-shadow: none;
-            transition: all 0.3s ease;
-            text-transform: uppercase;
-            letter-spacing: 0.03em;
+            transition: transform .18s ease, box-shadow .18s ease, background .18s ease;
+            text-transform: none;
+            letter-spacing: -0.005em;
             display: inline-flex;
             justify-content: center;
             align-items: center;
+            gap: 0.4rem;
         }
 
         .btn-retro:hover {
-            transform: translateY(-2px);
-            background-color: theme('colors.accent-dark');
-            color: theme('colors.background');
+            transform: translateY(-1px);
+            background-color: #333;
+            color: #fff;
+            box-shadow: 0 6px 18px rgba(25, 25, 25, .12);
         }
 
         .btn-retro.alt {
-            background-color: theme('colors.paper');
+            background-color: #fff;
             color: theme('colors.foreground');
+            border-color: #d5d5d1;
         }
 
         .btn-retro.alt:hover {
-            background-color: theme('colors.foreground');
-            color: theme('colors.background');
+            background-color: #fff;
+            color: theme('colors.foreground');
         }
 
-        /* Card styles */
+        /* Cartes : dalle grise douce, filet fin, rayon 13 px */
         .card-retro {
-            background-color: theme('colors.paper');
-            border: 1px solid theme('colors.foreground');
-            border-radius: 10px;
+            background-color: #fff;
+            border: 1px solid theme('colors.cream-dark');
+            border-radius: 13px;
             box-shadow: none;
-            transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+            transition: transform .2s ease, box-shadow .2s ease;
             position: relative;
             overflow: hidden;
         }
 
         .card-retro:hover {
-            transform: translateY(-4px);
-            border-color: theme('colors.accent');
+            transform: translateY(-3px);
+            box-shadow: 0 14px 40px rgba(25, 25, 25, .08);
         }
 
-        /* Input */
+        /* Champs */
         .input-retro {
             width: 100%;
-            background: theme('colors.paper');
-            border: 1px solid theme('colors.foreground');
-            border-radius: 10px;
-            padding: 1rem 1.5rem;
+            background: #fff;
+            border: 1px solid #d9d9d5;
+            border-radius: 7px;
+            padding: 0.8rem 0.9rem;
             font-family: theme('fontFamily.sans');
             font-weight: 500;
             color: theme('colors.foreground');
@@ -353,91 +271,25 @@
         }
 
         .input-retro::placeholder {
-            color: theme('colors.ink-faint');
+            color: #aaa;
         }
 
         .input-retro:focus {
             border-color: theme('colors.accent');
-            box-shadow: 0 0 0 3px theme('colors.accent-soft');
+            box-shadow: 0 0 0 3px rgba(35, 131, 226, .15);
         }
 
-        /* Abstract shapes */
-        .blob-1 {
-            display: none;
-        }
-
-        @keyframes amorphous {
-            0% {
-                border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
-            }
-
-            50% {
-                border-radius: 60% 40% 30% 70% / 50% 60% 40% 50%;
-            }
-
-            100% {
-                border-radius: 30% 70% 50% 50% / 60% 40% 70% 30%;
-            }
-        }
-
-        @keyframes spin-slow {
-            0% {
-                transform: rotate(0deg) scale(1);
-            }
-
-            50% {
-                transform: rotate(180deg) scale(1.05);
-            }
-
-            100% {
-                transform: rotate(360deg) scale(1);
-            }
-        }
-
-        /* Slow Image Scale */
         .img-breathe {
-            animation: breathe 10s ease-in-out infinite alternate;
             transform-origin: center center;
         }
 
-        @keyframes breathe {
-            0% {
-                transform: scale(1);
-            }
-
-            100% {
-                transform: scale(1.08);
-            }
-        }
-
-        /* Noise texture overlay - GPU optimized */
-        .noise-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            z-index: 100;
-            opacity: 0.15;
-            will-change: auto;
-            contain: strict;
-            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
-        }
-
-        /* Reserve space for elements to prevent CLS */
-        .font-script, [class*="font-script"] {
-            font-family: 'Shantell Sans', 'Shantell-fallback', cursive;
-        }
-
         @media (prefers-reduced-motion: reduce) {
-            .reveal,
-            .text-reveal-inner,
-            .svg-draw path {
+            .reveal {
                 transition: none;
+                opacity: 1;
+                transform: none;
             }
 
-            .img-breathe,
             .marquee-content {
                 animation: none;
             }

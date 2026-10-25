@@ -4,6 +4,19 @@
 # --- Redirections de marque : Meal OS -> Staff Meal ---------------------
 # L'ordre compte : Netlify applique la première règle qui correspond.
 
+# --- Mesure d'audience : proxy first-party vers Plausible (stats.staff-meal.com) ---
+# Servi depuis staff-meal.com pour ne pas être bloqué par les bloqueurs de pub.
+# Pas d'extension .js sur /s/script : sinon la règle de cache "immutable 1 an" sur /*.js
+# figerait le script Plausible chez les visiteurs.
+[[redirects]]
+  from = "/s/script"
+  to = "https://stats.staff-meal.com/js/script.outbound-links.file-downloads.js"
+  status = 200
+  force = true
+
+# /s/event est servi par l'Edge Function netlify/edge-functions/plausible-event.ts
+# (elle transmet l'IP réelle du visiteur, ce qu'une redirection ne sait pas faire).
+
 [[redirects]]
   from = "/meal-os-vs-skello.html"
   to = "/staffmeal-vs-skello.html"
@@ -178,11 +191,9 @@
   status = 301
   force = true
 
-[[redirects]]
-  from = "/merci"
-  to = "/merci.html"
-  status = 301
-  force = true
+# Pas de 301 sur /merci : Netlify réécrit l'action des formulaires en "/merci",
+# et une redirection forcée y transforme le POST en GET, ce qui perd la soumission
+# (aucune candidature reçue du 09/08 au 25/10/2026 à cause de ça). Page en noindex.
 
 [[redirects]]
   from = "/planning-personnel-restaurant"

@@ -1,38 +1,40 @@
 /** @type {import('tailwindcss').Config} */
 /*
-  Staff Meal — tokens repris tels quels de l'app en prod (~/projects/staffmeal/src/index.css).
-  Orange Coup de feu = action · Crème Papier = fonds · Encre = trait/texte
-  Vert Frais = validé/vivant · Bleu Pause = respiration
-  Ne pas diverger de l'app : le site et le produit doivent être la même marque.
+  Staff Meal — DA v2 (octobre 2026), grammaire Notion : blanc dominant,
+  encre #191919, un seul accent bleu #2383E2, Inter partout.
+  Les NOMS de tokens sont gardés (background, paper, accent…) pour que les
+  40 pages basculent sans retoucher leur HTML : seules les valeurs changent.
+  Les mêmes valeurs vivent en variables CSS dans shell.css.
 */
 module.exports = {
     content: ["./*.html"],
     theme: {
         extend: {
             fontFamily: {
-                sans: ['"Familjen Grotesk"', '"Familjen-fallback"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
-                display: ['"Familjen Grotesk"', '"Familjen-fallback"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
-                script: ['"Shantell Sans"', '"Shantell-fallback"', 'cursive'],
+                sans: ['Inter', 'ui-sans-serif', '-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'sans-serif'],
+                display: ['Inter', 'ui-sans-serif', '-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'sans-serif'],
+                // L'ancienne manuscrite devient un sur-titre (voir .font-script dans input.css)
+                script: ['Inter', 'ui-sans-serif', '-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'sans-serif'],
             },
             colors: {
-                background: '#f4eedf',   // crème, fond de page
-                paper: '#fbf8ee',        // surfaces et cartes
-                'cream-dark': '#e9e1cb', // séparateurs, surfaces enfoncées
-                foreground: '#181410',   // encre
-                'ink-soft': '#4a443c',   // texte secondaire
-                'ink-faint': '#7d766b',  // texte tertiaire
-                accent: '#f0481c',       // orange coup de feu, action
-                'accent-dark': '#d33c13',
-                'accent-soft': '#fde8e0',
-                leaf: '#4c6b27',         // validé, preuve
-                olive: '#4c6b27',        // alias historique du site
-                mustard: '#b3720f',      // avertissement
-                pause: '#a9c6da',        // respiration
-                'pause-soft': '#e9f1f7',
+                background: '#ffffff',   // fond de page
+                paper: '#f7f7f5',        // surfaces et cartes
+                'cream-dark': '#e7e7e4', // séparateurs, surfaces enfoncées
+                foreground: '#191919',   // encre
+                'ink-soft': '#4f4f4b',   // texte secondaire
+                'ink-faint': '#787774',  // texte tertiaire
+                accent: '#2383e2',       // bleu, action et mise en avant
+                'accent-dark': '#1269bd',
+                'accent-soft': '#eaf3fc',
+                leaf: '#0f7b6c',         // validé, preuve
+                olive: '#0f7b6c',        // alias historique du site
+                mustard: '#e9a23b',      // avertissement
+                pause: '#a7d6ff',        // surlignage
+                'pause-soft': '#eaf3fc',
             },
             boxShadow: {
-                'flat': '0px 2px 4px rgba(24,20,16,0.06)',
-                'mark': '0 6px 16px rgba(24,20,16,0.18)',
+                'flat': '0 2px 10px rgba(25,25,25,0.06)',
+                'mark': '0 14px 40px rgba(25,25,25,0.08)',
                 'none': 'none',
             }
         }

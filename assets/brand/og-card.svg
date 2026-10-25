@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#ffffff"/>
+  <rect x="54" y="48" width="56" height="56" rx="11" fill="#191919"/>
+  <text x="82" y="88" text-anchor="middle" fill="#ffffff" font-family="Georgia,serif" font-size="38" font-weight="700" font-style="italic">S</text>
+  <text x="128" y="86" fill="#191919" font-family="Arial,sans-serif" font-size="30" font-weight="700">Staff Meal</text>
+  <text x="58" y="242" fill="#191919" font-family="Arial,sans-serif" font-size="72" font-weight="700" letter-spacing="-4">Chaque site.</text>
+  <rect x="51" y="264" width="512" height="64" rx="3" fill="#a7d6ff" transform="rotate(-1 51 264)"/>
+  <text x="58" y="325" fill="#191919" font-family="Arial,sans-serif" font-size="72" font-weight="700" letter-spacing="-4">Le même niveau.</text>
+  <text x="60" y="388" fill="#62625e" font-family="Arial,sans-serif" font-size="24">L’application d’exploitation des restaurants.</text>
+  <rect x="60" y="446" width="195" height="54" rx="8" fill="#191919"/>
+  <text x="157" y="481" text-anchor="middle" fill="#ffffff" font-family="Arial,sans-serif" font-size="17" font-weight="700">staff-meal.com</text>
+  <g transform="translate(675 92)">
+    <rect width="455" height="470" rx="20" fill="#eaf3fc" transform="rotate(2 227 235)"/>
+    <rect x="25" y="22" width="405" height="425" rx="14" fill="#ffffff" stroke="#d9d9d5" stroke-width="2"/>
+    <rect x="25" y="22" width="92" height="425" rx="14" fill="#f7f7f5"/>
+    <rect x="41" y="48" width="38" height="38" rx="8" fill="#191919"/>
+    <rect x="42" y="113" width="58" height="10" rx="5" fill="#b9dafa"/>
+    <rect x="42" y="145" width="49" height="8" rx="4" fill="#d9d9d5"/>
+    <rect x="42" y="174" width="59" height="8" rx="4" fill="#d9d9d5"/>
+    <rect x="42" y="203" width="42" height="8" rx="4" fill="#d9d9d5"/>
+    <text x="147" y="77" fill="#191919" font-family="Arial,sans-serif" font-size="23" font-weight="700">Bonjour Camille.</text>
+    <rect x="147" y="111" width="113" height="72" rx="9" fill="#f7f7f5"/>
+    <rect x="271" y="111" width="113" height="72" rx="9" fill="#f7f7f5"/>
+    <text x="162" y="143" fill="#777777" font-family="Arial,sans-serif" font-size="10">COMPLÉTION</text>
+    <text x="162" y="169" fill="#191919" font-family="Arial,sans-serif" font-size="22" font-weight="700">86 %</text>
+    <text x="286" y="143" fill="#777777" font-family="Arial,sans-serif" font-size="10">ÉQUIPE</text>
+    <text x="286" y="169" fill="#191919" font-family="Arial,sans-serif" font-size="22" font-weight="700">34</text>
+    <rect x="147" y="199" width="237" height="207" rx="9" fill="#ffffff" stroke="#e7e7e4" stroke-width="2"/>
+    <text x="163" y="228" fill="#191919" font-family="Arial,sans-serif" font-size="12" font-weight="700">Complétion sur 7 jours</text>
+    <g fill="#c5dff7"><rect x="166" y="313" width="20" height="69" rx="4"/><rect x="196" y="286" width="20" height="96" rx="4"/><rect x="226" y="299" width="20" height="83" rx="4"/><rect x="256" y="258" width="20" height="124" rx="4"/><rect x="286" y="276" width="20" height="106" rx="4"/><rect x="316" y="249" width="20" height="133" rx="4"/></g>
+    <rect x="346" y="265" width="20" height="117" rx="4" fill="#2383e2"/>
+  </g>
+</svg>

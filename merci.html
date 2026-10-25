@@ -4,15 +4,15 @@
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=20261025g">
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=Shantell+Sans:wght@500;600;700;800&display=swap">
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
 
     <meta charset="UTF-8">
     <title>Candidature reçue | Staff Meal</title>
     <meta name="description" content="Votre candidature au programme bêta Staff Meal a bien été reçue.">
     <meta name="robots" content="noindex, follow">
-    <meta name="theme-color" content="#f0481c">
+    <meta name="theme-color" content="#ffffff">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Staff Meal">
     <meta property="og:locale" content="fr_FR">
@@ -28,26 +28,27 @@
     <meta name="twitter:image" content="https://staff-meal.com/og-image.jpg">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="assets/brand/mascot-mark.png" type="image/png">
+    <link rel="icon" href="/assets/brand/mark.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/shell.css?v=20261025c">
+    <script defer data-domain="staff-meal.com" data-api="/s/event" src="/s/script"></script>
+    <script>window.plausible = window.plausible || function () { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
+    <script defer src="/analytics.js?v=20261025i"></script>
 </head>
 
 <body class="bg-background text-foreground">
 
-    <header class="brand-bar w-full py-3 px-4 md:px-12 flex justify-between items-center border-b border-foreground">
-        <a href="/" class="flex items-center gap-3 hover:opacity-90 transition-opacity">
-            <img src="assets/brand/mascot.png" alt="" width="48" height="48" class="brand-mark ring w-11 h-11 md:w-12 md:h-12">
-            <span class="flex flex-col leading-none">
-                <span class="wordmark text-xl md:text-2xl">Staff Meal</span>
-                <span class="font-sans text-[0.55rem] uppercase font-bold tracking-[0.22em] opacity-90 mt-1">le même
-                    service, à chaque service</span>
-            </span>
-        </a>
+    <a class="skip-link" href="#main">Aller au contenu</a>
+    <div class="announcement"><span class="announcement-star" aria-hidden="true">✦</span>Bêta privée · 50 établissements accompagnés sur le terrain<a href="/#demo">Voir le programme <span aria-hidden="true">→</span></a></div>
+    <header class="site-header" id="navbar">
+      <a class="brand" href="/" aria-label="Staff Meal, accueil"><span class="brand-mark" aria-hidden="true">S</span><span>Staff Meal</span></a>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav"><span></span><span></span><span class="sr-only">Ouvrir le menu</span></button>
+      <nav class="main-nav" id="main-nav" aria-label="Navigation principale"><a href="/#produit">Produit</a><a href="/#modules">Modules</a><a href="/resources.html">Ressources</a><a href="/evenements.html">Événements</a><a href="/#faq">Questions</a><a class="nav-cta" href="/#demo">Postuler (50 places)</a></nav>
+      <div class="header-actions"><a class="text-link" href="https://app.staff-meal.com/login">Connexion</a><a class="button button-primary button-small" href="/#demo">Postuler (50 places)</a></div>
     </header>
 
-    <main class="min-h-[70vh] flex items-center justify-center px-4 md:px-12 py-24">
+    <main id="main" class="min-h-[70vh] flex items-center justify-center px-4 md:px-12 py-24">
         <div class="max-w-xl text-center">
-            <img src="assets/brand/mascot.png" alt="" width="96" height="96"
-                class="brand-mark w-24 h-24 mx-auto mb-8">
+            <span class="brand-mark sm-mark w-24 h-24 mx-auto" aria-hidden="true">S</span>
 
             <h1 class="text-chunky text-5xl md:text-6xl mb-4">Candidature reçue.</h1>
             <p class="font-script text-accent text-3xl mb-8">on vous rappelle vite.</p>
@@ -71,10 +72,9 @@
         </div>
     </main>
 
-    <footer class="border-t border-foreground py-8 px-4 md:px-12 bg-background text-center">
-        <div class="font-sans text-sm font-medium text-ink-faint">&copy; 2026 Staff Meal.</div>
-    </footer>
+    <footer class="site-footer"><div class="footer-brand"><a class="brand" href="/"><span class="brand-mark" aria-hidden="true">S</span><span>Staff Meal</span></a><p>Le même service,<br />à chaque service.</p></div><div class="footer-links"><div><b>Les sujets</b><a href="/haccp-restaurant.html">Hygiène et HACCP</a><a href="/rentabilite-restaurant.html">Coûts et rentabilité</a><a href="/standards-service-restaurant.html">Équipe et standards</a><a href="/client-mystere-restaurant.html">Client mystère</a></div><div><b>Ressources</b><a href="/resources.html">Outils gratuits</a><a href="/evenements.html">Événements</a><a href="/#demo">Nous contacter</a></div><div><b>Produit</b><a href="/#produit">Aperçu</a><a href="/#modules">Les 9 modules</a><a href="/#faq">Questions</a><a href="https://app.staff-meal.com/login">Connexion</a></div></div><div class="footer-bottom"><span>© 2026 Staff Meal</span><span>Pour les restaurateurs, par des restaurateurs.</span></div></footer>
 
+    <script src="/shell.js?v=20261025c" defer></script>
 </body>
 
 </html>

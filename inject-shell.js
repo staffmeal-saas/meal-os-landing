@@ -33,7 +33,7 @@ const cssInjection = `
 
 const htmlInjection = `
     <!-- Mobile Header -->
-    <div class="lg:hidden fixed top-0 w-full left-0 bg-paper border-b border-foreground px-4 py-3 flex items-center justify-between z-40 no-print" style="box-shadow: 4px 4px 0px 0px #181410;">
+    <div class="lg:hidden fixed top-0 w-full left-0 bg-paper border-b border-cream-dark px-4 py-3 flex items-center justify-between z-40 no-print" style="box-shadow: 0 14px 40px rgba(25,25,25,.08);">
         <a href="boite-a-outils-dashboard.html" class="flex items-center gap-2.5"><img src="assets/brand/mascot.png" alt="" width="44" height="44" class="brand-mark w-9 h-9"><span class="wordmark text-lg">Staff Meal</span></a>
         <button id="menuToggle" class="p-2"><i data-lucide="menu"></i></button>
     </div>
@@ -51,7 +51,7 @@ const htmlInjection = `
                 <i data-lucide="layout-grid" class="w-5 h-5"></i> Outils Gratuits
             </a>
             
-            <div class="pt-6 mt-6 border-t-2 border-foreground/10">
+            <div class="pt-6 mt-6 border-t border-foreground/10">
                 <div class="text-xs font-black uppercase tracking-widest opacity-40 mb-3 px-3 flex items-center justify-between">
                     Staff Meal Complet <span class="bg-accent text-white text-[8px] px-1 py-0.5 rounded uppercase">Pro</span>
                 </div>
@@ -73,7 +73,7 @@ const htmlInjection = `
                 </a>
             </div>
 
-            <div class="pt-6 mt-6 border-t-2 border-foreground/10">
+            <div class="pt-6 mt-6 border-t border-foreground/10">
                 <div class="text-xs font-black uppercase tracking-widest opacity-40 mb-3 px-3">Ressources</div>
                 <a href="resources.html" class="nav-link">
                     <i data-lucide="book-open" class="w-5 h-5"></i> Articles & Guides
@@ -81,7 +81,7 @@ const htmlInjection = `
             </div>
         </nav>
 
-        <div class="mt-auto border-t-2 border-foreground/10 pt-6">
+        <div class="mt-auto border-t border-foreground/10 pt-6">
             <div class="flex items-center gap-3 px-2">
                 <div class="w-10 h-10 rounded-full bg-foreground text-background flex items-center justify-center font-display font-black text-xl" id="avatarInitials">U</div>
                 <div class="overflow-hidden">
@@ -104,14 +104,14 @@ const htmlInjection = `
                 <i data-lucide="x" class="w-6 h-6"></i>
             </button>
             
-            <div class="mb-6 flex items-center justify-center w-16 h-16 rounded-full bg-accent/10 border-2 border-accent text-accent mx-auto">
+            <div class="mb-6 flex items-center justify-center w-16 h-16 rounded-full bg-accent/10 border border-accent text-accent mx-auto">
                 <i data-lucide="lock" class="w-8 h-8" id="proModalIcon"></i>
             </div>
             
             <h2 class="font-display font-black text-3xl mb-3 text-center" id="proModalTitle">Fonctionnalité Premium</h2>
             <p class="font-sans text-center font-medium opacity-80 mb-6" id="proModalDesc">Découvrez la puissance de Staff Meal Pro.</p>
             
-            <div class="bg-mustard/20 border-2 border-mustard rounded-lg p-4 mb-8 text-sm font-medium text-center">
+            <div class="bg-mustard/20 border border-mustard rounded-lg p-4 mb-8 text-sm font-medium text-center">
                 <span class="font-black uppercase tracking-wider text-xs block mb-1">🎁 Accès exclusif</span>
                 Réservé aux établissements partenaires Staff Meal.
             </div>
