@@ -187,16 +187,16 @@
             <h1 class="text-chunky text-4xl md:text-6xl mb-6">Générateur de fiche technique</h1>
             <p class="font-sans text-lg md:text-xl text-ink-soft leading-relaxed">Une fiche technique n'est pas de la paperasse. C'est ce qui fait que le plat sort pareil un mardi de novembre avec un extra en cuisine que le samedi soir avec toute la brigade. Sans elle, votre carte dépend de la mémoire de deux ou trois personnes, et elle part quand elles partent.</p>
 
-            <!-- Accès à l'outil, tôt dans la page -->
+            <!-- Accès au calculateur, intégré plus bas dans la page -->
             <div class="card-retro p-6 md:p-8 my-10 flex flex-col sm:flex-row items-start sm:items-center gap-5">
                 <div class="shrink-0 w-12 h-12 rounded-full bg-accent text-background flex items-center justify-center">
                     <i data-lucide="calculator" class="w-5 h-5"></i>
                 </div>
                 <div class="flex-grow">
                     <p class="font-sans font-bold text-lg mb-1">Générateur de fiche technique, gratuit</p>
-                    <p class="font-sans text-sm text-ink-soft">Aucune installation. Un email suffit pour accéder à la boîte à outils complète.</p>
+                    <p class="font-sans text-sm text-ink-soft">Directement sur cette page. Sans inscription et sans email.</p>
                 </div>
-                <a href="/outils/fiche-technique.html" class="btn-retro shrink-0 text-sm py-2.5 px-6">Ouvrir l'outil</a>
+                <a href="#calculateur" class="btn-retro shrink-0 text-sm py-2.5 px-6">Aller au calculateur</a>
             </div>
 
             <h2 class="text-chunky text-3xl md:text-4xl mt-14 mb-5">Ce qu'une fiche doit contenir</h2>
@@ -255,13 +255,134 @@
                 </li>
             </ol>
 
-            <!-- CTA outil -->
-            <div class="card-retro !bg-foreground text-background p-8 md:p-10 my-12 text-center">
-                <p class="font-script text-accent text-3xl mb-3">on vous fait gagner le calcul</p>
-                <h2 class="text-chunky text-3xl md:text-4xl mb-4">Générateur de fiche technique</h2>
-                <p class="font-sans text-background/70 mb-7 max-w-lg mx-auto">Vous entrez vos chiffres, l'outil applique la méthode ci-dessus. Gratuit, sans installation.</p>
-                <a href="/outils/fiche-technique.html" class="btn-retro">Ouvrir l'outil gratuitement</a>
-            </div>
+            <!-- Calculateur, intégré et utilisable sans inscription -->
+            <section id="calculateur" class="my-12 scroll-mt-28">
+                <p class="font-script text-accent text-3xl mb-2 text-center">on vous fait gagner le calcul</p>
+                <h2 class="text-chunky text-3xl md:text-4xl mb-8 text-center">Générateur de fiche technique</h2>
+<div class="grid lg:grid-cols-2 gap-8 items-start">
+<!-- Left: Editor (Hidden on Print) -->
+<div class="bg-paper p-6 md:p-8 card-retro border-b-8 no-print" id="editorSection">
+<h2 class="font-display font-black text-2xl mb-6 flex items-center gap-2 border-b-2 border-foreground/10 pb-4">
+<i class="w-6 h-6" data-lucide="pen-tool"></i> Éditer la recette
+                </h2>
+<div class="space-y-6">
+<div class="grid grid-cols-2 gap-4">
+<div class="col-span-2">
+<label class="block font-bold text-xs uppercase tracking-wider mb-1">Nom du Plat</label>
+<input class="input-retro" id="recipeName" placeholder="ex: Tartare de Bœuf Charolais au Couteau" type="text"/>
+</div>
+<div>
+<label class="block font-bold text-xs uppercase tracking-wider mb-1">Portions</label>
+<input class="input-retro" id="recipePortions" min="1" type="number" value="1"/>
+</div>
+<div>
+<label class="block font-bold text-xs uppercase tracking-wider mb-1">Cible Food Cost
+                                (%)</label>
+<input class="input-retro" id="targetFc" type="number" value="30"/>
+</div>
+</div>
+<div class="border-t-2 border-foreground/10 pt-6">
+<h3 class="font-bold text-sm uppercase tracking-wider mb-4 flex justify-between items-center">
+                            Ingrédients
+                            <span class="text-xs opacity-50 normal-case font-medium">Prix HT</span>
+</h3>
+<div class="space-y-2" id="ingredientsList">
+<!-- JS Populated Rows here -->
+</div>
+<button class="mt-4 font-bold text-xs flex items-center gap-1 text-olive hover:text-foreground transition-colors uppercase tracking-wider" id="addIngBtn">
+<i class="w-4 h-4 rounded-full border border-current" data-lucide="plus"></i> Ajouter un
+                            Ingrédient
+                        </button>
+</div>
+<div class="border-t-2 border-foreground/10 pt-6">
+<label class="block font-bold text-xs uppercase tracking-wider mb-2">Instructions de dressage
+                            (Optionnel)</label>
+<textarea class="input-retro min-h-[100px] resize-y" id="recipeInstructions" placeholder="- Déposer la viande au centre avec l'emporte-pièce
+- Ajouter un trait d'huile d'olive en cercle
+..."></textarea>
+</div>
+</div>
+</div>
+<!-- Right: Preview (Shown on Print) -->
+<div class="bg-paper p-8 card-retro border-b-8 sticky top-28 print-layout min-h-[297mm]" id="previewSection">
+<!-- Print Header -->
+<div class="border-b-4 border-foreground pb-6 mb-6">
+<div class="flex justify-between items-start mb-4">
+<h2 class="font-display font-black text-3xl md:text-4xl text-foreground break-words w-3/4 leading-tight" id="outName">
+                            Nom du Plat</h2>
+<div class="text-right border-2 border-foreground p-2 rounded-lg bg-background hidden print:block">
+<div class="font-bold text-[0.6rem] uppercase tracking-wider">Mise à jour le</div>
+<div class="font-sans font-bold" id="outDate"></div>
+</div>
+</div>
+<div class="flex flex-wrap gap-4 font-sans font-bold text-sm uppercase tracking-wider opacity-80">
+<div class="bg-foreground/5 px-3 py-1 rounded">Portions: <span class="text-foreground" id="outPortions">1</span></div>
+<div class="bg-mustard/20 text-foreground px-3 py-1 rounded border border-mustard hidden" id="pillWarning">Alerte Marge</div>
+</div>
+</div>
+<!-- Financial Summary Box -->
+<div class="grid grid-cols-3 divide-x-2 divide-foreground border-2 border-foreground rounded-xl overflow-hidden mb-8 shadow-[4px_4px_0px_#111]">
+<div class="p-4 bg-background text-center">
+<div class="font-bold text-[0.65rem] uppercase tracking-wider opacity-60 mb-1">Coût par Portion
+                            (HT)</div>
+<div class="font-display text-2xl" id="outCost">0.00 €</div>
+</div>
+<div class="p-4 bg-paper text-center">
+<div class="font-bold text-[0.65rem] uppercase tracking-wider opacity-60 mb-1">Ratio Actuel
+                        </div>
+<div class="font-display text-2xl" id="outRatio">0 %</div>
+</div>
+<div class="p-4 bg-foreground text-background text-center">
+<div class="font-bold text-[0.65rem] uppercase tracking-wider opacity-80 mb-1">Prix de Vente
+                            Conseillé</div>
+<div class="font-display text-2xl text-mustard" id="outSuggested">0.00 €</div>
+<div class="text-[0.6rem] opacity-70 mt-1">Pour atteindre <span id="outTargetParam">30</span>%
+                        </div>
+</div>
+</div>
+<!-- Ingredients Table -->
+<div class="mb-8 font-sans">
+<h3 class="font-bold text-sm uppercase tracking-wider border-b-2 border-foreground pb-2 mb-4">
+                        Matières Premières</h3>
+<table class="w-full text-left text-sm">
+<thead>
+<tr class="opacity-50 text-xs border-b border-foreground/20">
+<th class="pb-2 font-medium">Ingrédient</th>
+<th class="pb-2 font-medium">Qté Brute</th>
+<th class="pb-2 font-medium text-right">Coût Partiel</th>
+</tr>
+</thead>
+<tbody id="outIngredients">
+<!-- Populated via JS -->
+</tbody>
+</table>
+</div>
+<!-- Instructions -->
+<div class="font-sans mb-12">
+<h3 class="font-bold text-sm uppercase tracking-wider border-b-2 border-foreground pb-2 mb-4">
+                        Dressage / Remarques</h3>
+<div class="whitespace-pre-wrap text-sm leading-relaxed opacity-80 min-h-[100px] border border-dashed border-foreground/20 p-4 rounded-lg bg-foreground/5" id="outInstructions">
+</div>
+</div>
+<!-- Ad CTA (Hidden on print) -->
+<div class="mt-auto bg-[#D5DCD0] border-t-2 border-olive p-4 text-center rounded-b-xl -mx-8 -mb-8 no-print cursor-pointer hover:bg-olive hover:text-white transition-colors group" onclick="window.location.href='/#demo'">
+<i class="w-6 h-6 mx-auto mb-2 text-olive group-hover:text-white transition-colors" data-lucide="refresh-cw"></i>
+<h4 class="font-sans font-bold text-sm leading-snug">Fatigué de mettre à jour les prix manuellement
+                        ?</h4>
+<p class="text-xs opacity-80 mt-1">L'application Staff Meal met à jour automatiquement le prix de vos
+                        fiches techniques via les factures fournisseurs.</p>
+</div>
+<!-- Floating Print Button -->
+<button class="absolute bottom-6 right-6 btn-retro text-xs py-2 px-4 shadow-[4px_4px_0px_#111] flex hidden md:flex no-print hover:bg-olive hover:text-white group z-10" onclick="window.print()">
+<i class="w-4 h-4 mr-2" data-lucide="printer"></i> Imprimer la fiche
+                </button>
+<!-- Watermark -->
+<div class="hidden print:block text-center mt-12 pt-4 border-t-2 border-foreground/20 text-xs font-bold opacity-60 uppercase tracking-widest text-foreground">
+                    Outil 100% gratuit par Staff Meal. Plus de rentabilité sur www.staffmeal.com
+                </div>
+</div>
+</div>
+            </section>
 
             <!-- FAQ -->
             <h2 class="text-chunky text-3xl md:text-4xl mt-14 mb-6">Questions fréquentes</h2>
@@ -348,6 +469,121 @@
             if (typeof lucide !== 'undefined') lucide.createIcons();
         });
     </script>
+    <!-- Logique du calculateur intégré -->
+    <script>
+        // Load Lucide
+        const script = document.createElement("script");
+        script.src = "https://unpkg.com/lucide@latest";
+        script.onload = () => 
+        document.body.appendChild(script);;
+        document.querySelectorAll('.reveal').forEach(el => new IntersectionObserver((es) => es.forEach(e => { if (e.isIntersecting) e.target.classList.add('revealed'); })).observe(el));
+
+        // Elements
+        const iName = document.getElementById('recipeName');
+        const iPortions = document.getElementById('recipePortions');
+        const iTargetFc = document.getElementById('targetFc');
+        const iInstructions = document.getElementById('recipeInstructions');
+        const ingList = document.getElementById('ingredientsList');
+        const addIngBtn = document.getElementById('addIngBtn');
+
+        const oName = document.getElementById('outName');
+        const oPortions = document.getElementById('outPortions');
+        const oTargetParam = document.getElementById('outTargetParam');
+        const oCost = document.getElementById('outCost');
+        const oSuggested = document.getElementById('outSuggested');
+        const oRatio = document.getElementById('outRatio');
+        const oIngredients = document.getElementById('outIngredients');
+        const oInstructions = document.getElementById('outInstructions');
+        const pillWarning = document.getElementById('pillWarning');
+
+        document.getElementById('outDate').innerText = new Date().toLocaleDateString('fr-FR');
+
+        function createIngRow() {
+            const div = document.createElement('div');
+            div.className = 'grid grid-cols-12 gap-2 items-center ing-row';
+            div.innerHTML = `
+                <div class="col-span-5"><input type="text" class="input-retro text-xs ing-name" placeholder="Nom"></div>
+                <div class="col-span-3 flex"><input type="number" step="0.1" class="input-retro text-xs rounded-r-none border-r-0 ing-qty" placeholder="0"><select class="input-retro text-xs rounded-l-none bg-foreground/5 px-1 ing-unit" style="appearance: none; text-align:center;"><option>kg</option><option>L</option><option>pièce</option><option>g</option></select></div>
+                <div class="col-span-3 flex items-center relative"><span class="absolute left-2 text-xs opacity-50">€/U</span><input type="number" step="0.1" class="input-retro text-xs pl-8 text-right bg-accent/10 border-accent/30 focus:border-accent ing-price" placeholder="Prix Unité"></div>
+                <div class="col-span-1 text-center"><button class="text-foreground/30 hover:text-accent p-1" onclick="this.closest('.ing-row').remove(); calculate();"><i data-lucide="x" class="w-4 h-4"></i></button></div>
+            `;
+            ingList.appendChild(div);
+            typeof lucide !== 'undefined' && lucide.createIcons({ root: div });
+
+            // Add listeners to new inputs
+            div.querySelectorAll('input').forEach(inp => inp.addEventListener('input', calculate));
+        }
+
+        function calculate() {
+            // Update Headers
+            oName.textContent = iName.value || "Nouvelle Recette";
+            oPortions.textContent = iPortions.value || 1;
+            oTargetParam.textContent = iTargetFc.value || 30;
+            oInstructions.textContent = iInstructions.value || "Aucune consigne de dressage spécifique.";
+
+            const portions = parseInt(iPortions.value) || 1;
+            const targetRatio = parseFloat(iTargetFc.value) / 100 || 0.3;
+
+            let totalCost = 0;
+            oIngredients.innerHTML = '';
+
+            const rows = document.querySelectorAll('.ing-row');
+            rows.forEach(row => {
+                const name = row.querySelector('.ing-name').value;
+                const qtyVal = parseFloat(row.querySelector('.ing-qty').value) || 0;
+                const unit = row.querySelector('.ing-unit').value;
+                const pricePerUnit = parseFloat(row.querySelector('.ing-price').value) || 0;
+
+                if (name || qtyVal > 0) {
+                    let cost = 0;
+                    if (unit === 'g') {
+                        cost = (qtyVal / 1000) * pricePerUnit; // assuming price is per kg if g is selected (common shortcut), or we treat unit price as price per stated unit. Let's treat Price as per Stated Unit to keep it simple.
+                    } else {
+                        cost = qtyVal * pricePerUnit;
+                    }
+                    totalCost += cost;
+
+                    // Row inside preview
+                    oIngredients.innerHTML += `
+                        <tr class="border-b border-foreground/5 last:border-0">
+                            <td class="py-2 font-medium text-foreground">${name || '---'}</td>
+                            <td class="py-2 opacity-80">${qtyVal} ${unit}</td>
+                            <td class="py-2 text-right font-medium">${cost > 0 ? cost.toFixed(2) + ' €' : '-'}</td>
+                        </tr>
+                    `;
+                }
+            });
+
+            const costPerPortionCents = (totalCost / portions) * 100; // in cents
+            // Prevent dividing by zero
+            // Multiply by 0.XX logic: Selling Price = Cost / TargetRatio
+            const targetPriceCents = targetRatio > 0 ? costPerPortionCents / targetRatio : 0;
+
+            // Round nicely for restaurant prices (e.g. 14.90 instead of 14.81)
+            let roundedSellingPrice = targetPriceCents / 100;
+            // Let's just output raw required price for accuracy of the tool
+
+            if (portions > 0) {
+                oCost.textContent = (costPerPortionCents / 100).toFixed(2) + ' €';
+                oSuggested.textContent = roundedSellingPrice.toFixed(2) + ' €';
+            } else {
+                oCost.textContent = '0.00 €';
+                oSuggested.textContent = '0.00 €';
+            }
+        }
+
+        // Init
+        addIngBtn.addEventListener('click', createIngRow);
+        [iName, iPortions, iTargetFc, iInstructions].forEach(inp => inp.addEventListener('input', calculate));
+
+        // Setup initial default row
+        createIngRow();
+        createIngRow();
+        calculate();
+
+    
+    </script>
+
 </body>
 
 </html>

@@ -117,10 +117,6 @@ const htmlInjection = `
             </div>
             
             <div class="flex flex-col gap-3">
-                <!-- Calendly Link -->
-                <a href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/mealos/15min'});return false;" class="btn-retro w-full group text-center">
-                    Voir ce module en action <i data-lucide="arrow-right" class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform"></i>
-                </a>
                 <button id="cancelProModal" class="btn-retro alt w-full border-transparent hover:border-transparent hover:bg-foreground/5 shadow-none group-hover:translate-y-0 text-sm opacity-70">
                     Non merci, je reste sur l'outil gratuit
                 </button>
@@ -128,10 +124,6 @@ const htmlInjection = `
         </div>
     </div>
 
-    <!-- Calendly link widget begin -->
-    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-    <!-- Calendly link widget end -->
 
     <!-- Pro Modal Logic -->
     <script>

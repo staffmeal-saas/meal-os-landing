@@ -187,16 +187,16 @@
             <h1 class="text-chunky text-4xl md:text-6xl mb-6">Générateur de réponse aux avis</h1>
             <p class="font-sans text-lg md:text-xl text-ink-soft leading-relaxed">Quand vous répondez à un avis négatif, vous ne parlez pas à son auteur. Il a déjà son opinion et il ne reviendra probablement pas. Vous parlez aux dizaines de personnes qui liront l'échange en hésitant à réserver, et qui jugeront votre maison sur votre sang-froid plus que sur l'incident.</p>
 
-            <!-- Accès à l'outil, tôt dans la page -->
+            <!-- Accès au calculateur, intégré plus bas dans la page -->
             <div class="card-retro p-6 md:p-8 my-10 flex flex-col sm:flex-row items-start sm:items-center gap-5">
                 <div class="shrink-0 w-12 h-12 rounded-full bg-accent text-background flex items-center justify-center">
                     <i data-lucide="calculator" class="w-5 h-5"></i>
                 </div>
                 <div class="flex-grow">
                     <p class="font-sans font-bold text-lg mb-1">Générateur de réponse aux avis, gratuit</p>
-                    <p class="font-sans text-sm text-ink-soft">Aucune installation. Un email suffit pour accéder à la boîte à outils complète.</p>
+                    <p class="font-sans text-sm text-ink-soft">Directement sur cette page. Sans inscription et sans email.</p>
                 </div>
-                <a href="/outils/reponse-avis.html" class="btn-retro shrink-0 text-sm py-2.5 px-6">Ouvrir l'outil</a>
+                <a href="#calculateur" class="btn-retro shrink-0 text-sm py-2.5 px-6">Aller au calculateur</a>
             </div>
 
             <h2 class="text-chunky text-3xl md:text-4xl mt-14 mb-5">La structure qui fonctionne</h2>
@@ -257,13 +257,89 @@
                 </li>
             </ol>
 
-            <!-- CTA outil -->
-            <div class="card-retro !bg-foreground text-background p-8 md:p-10 my-12 text-center">
-                <p class="font-script text-accent text-3xl mb-3">on vous fait gagner le calcul</p>
-                <h2 class="text-chunky text-3xl md:text-4xl mb-4">Générateur de réponse aux avis</h2>
-                <p class="font-sans text-background/70 mb-7 max-w-lg mx-auto">Vous entrez vos chiffres, l'outil applique la méthode ci-dessus. Gratuit, sans installation.</p>
-                <a href="/outils/reponse-avis.html" class="btn-retro">Ouvrir l'outil gratuitement</a>
-            </div>
+            <!-- Calculateur, intégré et utilisable sans inscription -->
+            <section id="calculateur" class="my-12 scroll-mt-28">
+                <p class="font-script text-accent text-3xl mb-2 text-center">on vous fait gagner le calcul</p>
+                <h2 class="text-chunky text-3xl md:text-4xl mb-8 text-center">Générateur de réponse aux avis</h2>
+<div class="max-w-6xl mx-auto">
+
+<div class="grid lg:grid-cols-2 gap-8 items-start">
+<!-- Left: Form -->
+<div class="bg-paper p-6 md:p-8 card-retro border-b-8">
+<h2 class="font-display font-black text-2xl mb-6 flex items-center gap-2 border-b-2 border-foreground/10 pb-4">
+<span class="bg-foreground text-background w-8 h-8 rounded-full flex items-center justify-center text-sm"><i class="w-4 h-4" data-lucide="pen-tool"></i></span> Configurer la plainte
+                    </h2>
+<div class="space-y-6">
+<div>
+<label class="block font-bold text-sm uppercase tracking-wider">Prénom / Nom du Client (ou
+                                pseudo)</label>
+<input class="input-retro" id="clientName" placeholder="Jean Dupont (ou laissez vide)" type="text"/>
+</div>
+<div>
+<label class="block font-bold text-sm uppercase tracking-wider">Motif principal de
+                                mécontentement</label>
+<select class="select-retro cursor-pointer" id="complaintType">
+<option value="attente">Temps d'attente trop long</option>
+<option value="prix">Prix jugé trop élevé</option>
+<option selected="" value="service">Service / Serveur désagréable</option>
+<option value="qualite">Qualité de la nourriture</option>
+<option value="faux">Faux avis / pure mauvaise foi</option>
+</select>
+</div>
+<div>
+<label class="block font-bold text-sm uppercase tracking-wider">Ton de la réponse</label>
+<div class="flex gap-4 mt-2">
+<label class="flex-1 cursor-pointer">
+<input checked="" class="peer hidden" name="tone" type="radio" value="empathique"/>
+<div class="text-center p-3 border-2 border-foreground rounded-lg font-bold text-sm peer-checked:bg-foreground peer-checked:text-background transition-colors">
+                                        Empathique (Recommandé)
+                                    </div>
+</label>
+<label class="flex-1 cursor-pointer">
+<input class="peer hidden" name="tone" type="radio" value="ferme"/>
+<div class="text-center p-3 border-2 border-foreground rounded-lg font-bold text-sm peer-checked:bg-foreground peer-checked:text-background transition-colors">
+                                        Ferme &amp; Factuel
+                                    </div>
+</label>
+</div>
+</div>
+<button class="btn-retro w-full mt-4 text-lg py-4 group" id="generateBtn">
+                            Générer la réponse <i class="w-5 h-5 ml-2 group-hover:animate-pulse" data-lucide="sparkles"></i>
+</button>
+</div>
+</div>
+<!-- Right: Output -->
+<div class="space-y-6 sticky top-28">
+<div class="card-retro bg-foreground text-white p-6 md:p-8 relative">
+<!-- Decorative quote mark -->
+<div class="absolute -top-6 -left-4 text-mustard opacity-20 hidden md:block">
+<i class="w-24 h-24 fill-mustard text-mustard" data-lucide="quote"></i>
+</div>
+<h3 class="font-display font-black text-xl mb-4 border-b-2 border-white/20 pb-4 text-mustard">
+                            Résultat prêt à copier</h3>
+<div class="relative">
+<textarea class="w-full bg-paper/10 border-2 border-white/20 rounded-xl p-5 text-lg font-sans font-medium text-white leading-relaxed resize-none h-64 outline-none focus:border-mustard transition-colors text-shadow" id="resultOutput" readonly="">Votre réponse générée apparaîtra ici...</textarea>
+<button class="absolute bottom-4 right-4 bg-mustard text-foreground font-bold px-4 py-2 rounded-lg text-sm hover:scale-105 transition-transform shadow-[2px_2px_0px_#fff] flex items-center gap-2 opacity-0 pointer-events-none" id="copyBtn">
+<i class="w-4 h-4" data-lucide="copy"></i> Copier
+                            </button>
+</div>
+<div class="text-sm font-bold text-mustard mt-2 text-right opacity-0 transition-opacity" id="copyToast">Copié
+                            dans le presse-papiers !</div>
+</div>
+<!-- SEO / CTA Lead Magnet -->
+<div class="card-retro bg-[#D5DCD0] border-olive text-foreground p-6 text-center transform hover:-translate-y-1 transition-transform">
+<i class="w-8 h-8 mx-auto mb-3 text-olive" data-lucide="message-square-off"></i>
+<h4 class="font-display font-black text-lg mb-2">Traitez le problème avant Google.</h4>
+<p class="font-sans text-sm font-medium opacity-80 mb-4">Avec le carnet de bord Staff Meal,
+                            centralisez les remarques clients en temps réel pendant le service. Vous réagissez avant
+                            qu'ils ne dégainent leur portable.</p>
+<a class="btn-retro alt hover:bg-olive hover:text-white border-olive text-xs py-2" href="/#demo">Découvrir
+                            Staff Meal Comms</a>
+</div>
+</div>
+</div>
+</div>
+            </section>
 
             <!-- FAQ -->
             <h2 class="text-chunky text-3xl md:text-4xl mt-14 mb-6">Questions fréquentes</h2>
@@ -356,6 +432,105 @@
             if (typeof lucide !== 'undefined') lucide.createIcons();
         });
     </script>
+    <!-- Logique du calculateur intégré -->
+    <script>
+        // Load Lucide
+        const script = document.createElement("script");
+        script.src = "https://unpkg.com/lucide@latest";
+        script.onload = () => 
+        document.body.appendChild(script);;
+        document.querySelectorAll('.reveal').forEach(el => new IntersectionObserver((es) => es.forEach(e => { if (e.isIntersecting) e.target.classList.add('revealed'); })).observe(el));
+
+        // Templating Logic
+        const templates = {
+            "attente": {
+                "empathique": "Bonjour {nom}, nous sommes sincèrement navrés pour l'attente lors de votre visite. Nous avons fait face à une affluence exceptionnelle ce jour-là, et notre équipe n'a pas voulu expédier la qualité de nos plats pour gagner du temps. Nous espérons avoir l'opportunité de vous offrir une expérience plus fluide très prochainement. Cordialement, la Direction.",
+                "ferme": "Bonjour {nom}, merci de votre visite. Le métier de la restauration en flux tendu impose parfois des délais imprévus en cas d'affluence. Nous priorisons toujours le soin apporté à nos assiettes cuisinées minute plutôt que la précipitation. Nous prenons note de votre remarque pour nous améliorer. Cordialement."
+            },
+            "prix": {
+                "empathique": "Bonjour {nom}, nous regrettons que l'addition n'ait pas été à la hauteur de vos attentes. Nos tarifs (tous affichés à l'extérieur) reflètent notre exigence : produits frais, circuits courts, et une juste rémunération de nos artisans en cuisine. Nous espérons avoir l'occasion de vous convaincre de notre rapport qualité-prix. L'équipe.",
+                "ferme": "Bonjour {nom}. Nos tarifs sont calculés avec de faibles marges pour garantir des produits frais et locaux, et sont affichés à plusieurs endroits avant la commande. Nous ne pouvons malheureusement pas proposer les prix de la restauration rapide industrielle. Nous respectons votre avis et vous remercions de votre passage."
+            },
+            "service": {
+                "empathique": "Bonjour {nom}, toutes nos excuses si l'accueil n'a pas été à la hauteur de nos standards habituels. Ce n'est absolument pas l'image que nous souhaitons donner de notre établissement. Un rappel a été fait à l'équipe afin que cela ne se reproduise plus. N'hésitez pas à nous contacter en privé. Bien à vous, la Direction.",
+                "ferme": "Bonjour {nom}. Nous entendons votre remarque. Nous exigeons de nos équipes un professionnalisme irréprochable, mais lors d'un gros service, le rythme intense peut parfois être mal interprété. Nous en avons discuté en interne. Merci pour ce retour factuel."
+            },
+            "qualite": {
+                "empathique": "Bonjour {nom}, nous sommes navrés d'apprendre que votre repas n'a pas été satisfaisant. La qualité de nos plats est notre priorité absolue. N'hésitez pas lors d'une prochaine visite à le signaler immédiatement à notre équipe en salle, nous nous ferons un plaisir d'ajuster ou de changer votre plat sur l'instant. L'équipe.",
+                "ferme": "Bonjour {nom}. Le plat servi ce jour-là est pourtant l'un de nos Best-Sellers, préparé quotidiennement par le Chef avec des ingrédients bruts. Si un incident de cuisson survient, notre équipe en salle est là pour le rectifier immédiatement si on lui signale. Dommage de ne pas nous l'avoir indiqué sur le moment. Cordialement."
+            },
+            "faux": {
+                "empathique": "Bonjour, après vérification rigoureuse dans notre logiciel de caisse et auprès de notre équipe, nous ne trouvons aucune trace de votre passage ce jour-là (ni réservation à ce nom). Notre établissement est d'ailleurs fermé sur le créneau que vous indiquez. Nous vous invitons à retirer ce commentaire infondé. Cordialement.",
+                "ferme": "Bonjour, cet avis est manifestement faux. Nous n'avons aucune trace de votre venue, et les faits décrits (tels que vous les mentionnez) sont impossibles dans notre établissement ce jour-là. Publier de fausses informations dans le but de nuire est répréhensible. Nous avons signalé cet avis à Google. La Direction."
+            }
+        };
+
+        const generateBtn = document.getElementById('generateBtn');
+        const copyBtn = document.getElementById('copyBtn');
+        const resultOutput = document.getElementById('resultOutput');
+        const copyToast = document.getElementById('copyToast');
+
+        generateBtn.addEventListener('click', () => {
+            const rawName = document.getElementById('clientName').value.trim();
+            const nom = rawName ? rawName : "Cher/Chère client(e)";
+            const type = document.getElementById('complaintType').value;
+            const tone = document.querySelector('input[name="tone"]:checked').value;
+
+            let response = templates[type][tone];
+            response = response.replace(/{nom}/g, nom);
+
+            // Add simple typing effect to feel "AI-like"
+            resultOutput.value = "";
+            let i = 0;
+            copyBtn.classList.remove('opacity-100', 'pointer-events-auto');
+            copyBtn.classList.add('opacity-0', 'pointer-events-none');
+
+            generateBtn.disabled = true;
+            generateBtn.innerHTML = '<i data-lucide="loader" class="w-5 h-5 animate-spin"></i> Génération...';
+            // Load Lucide
+        const script = document.createElement("script");
+        script.src = "https://unpkg.com/lucide@latest";
+        script.onload = () => 
+        document.body.appendChild(script);;
+
+            function typeWriter() {
+                if (i < response.length) {
+                    resultOutput.value += response.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, 10); // speed
+                } else {
+                    generateBtn.disabled = false;
+                    generateBtn.innerHTML = 'Générer une autre réponse <i data-lucide="sparkles" class="w-5 h-5 ml-2"></i>';
+                    // Load Lucide
+        const script = document.createElement("script");
+        script.src = "https://unpkg.com/lucide@latest";
+        script.onload = () => 
+        document.body.appendChild(script);;
+
+                    setTimeout(() => {
+                        copyBtn.classList.remove('opacity-0', 'pointer-events-none');
+                        copyBtn.classList.add('opacity-100', 'pointer-events-auto');
+                    }, 300);
+                }
+            }
+            typeWriter();
+        });
+
+        copyBtn.addEventListener('click', () => {
+            navigator.clipboard.writeText(resultOutput.value).then(() => {
+                copyToast.style.opacity = '1';
+                copyBtn.innerHTML = '<i data-lucide="check" class="w-4 h-4"></i> Copié !';
+
+                setTimeout(() => {
+                    copyToast.style.opacity = '0';
+                    copyBtn.innerHTML = '<i data-lucide="copy" class="w-4 h-4"></i> Copier';
+                }, 2000);
+            });
+        });
+
+    
+    </script>
+
 </body>
 
 </html>

@@ -187,16 +187,16 @@
             <h1 class="text-chunky text-4xl md:text-6xl mb-6">Calculateur de food cost</h1>
             <p class="font-sans text-lg md:text-xl text-ink-soft leading-relaxed">Le food cost, c'est la part de votre prix de vente qui repart dans l'assiette. C'est le premier chiffre qu'on regarde quand une carte ne rapporte pas ce qu'elle devrait, et c'est aussi celui que la plupart des restaurateurs calculent de travers, pour deux raisons précises.</p>
 
-            <!-- Accès à l'outil, tôt dans la page -->
+            <!-- Accès au calculateur, intégré plus bas dans la page -->
             <div class="card-retro p-6 md:p-8 my-10 flex flex-col sm:flex-row items-start sm:items-center gap-5">
                 <div class="shrink-0 w-12 h-12 rounded-full bg-accent text-background flex items-center justify-center">
                     <i data-lucide="calculator" class="w-5 h-5"></i>
                 </div>
                 <div class="flex-grow">
                     <p class="font-sans font-bold text-lg mb-1">Calculateur de food cost, gratuit</p>
-                    <p class="font-sans text-sm text-ink-soft">Aucune installation. Un email suffit pour accéder à la boîte à outils complète.</p>
+                    <p class="font-sans text-sm text-ink-soft">Directement sur cette page. Sans inscription et sans email.</p>
                 </div>
-                <a href="/outils/food-cost.html" class="btn-retro shrink-0 text-sm py-2.5 px-6">Ouvrir l'outil</a>
+                <a href="#calculateur" class="btn-retro shrink-0 text-sm py-2.5 px-6">Aller au calculateur</a>
             </div>
 
             <h2 class="text-chunky text-3xl md:text-4xl mt-14 mb-5">Ce que le food cost mesure, et ce qu'il ne mesure pas</h2>
@@ -257,13 +257,99 @@
                 </li>
             </ol>
 
-            <!-- CTA outil -->
-            <div class="card-retro !bg-foreground text-background p-8 md:p-10 my-12 text-center">
-                <p class="font-script text-accent text-3xl mb-3">on vous fait gagner le calcul</p>
-                <h2 class="text-chunky text-3xl md:text-4xl mb-4">Calculateur de food cost</h2>
-                <p class="font-sans text-background/70 mb-7 max-w-lg mx-auto">Vous entrez vos chiffres, l'outil applique la méthode ci-dessus. Gratuit, sans installation.</p>
-                <a href="/outils/food-cost.html" class="btn-retro">Ouvrir l'outil gratuitement</a>
-            </div>
+            <!-- Calculateur, intégré et utilisable sans inscription -->
+            <section id="calculateur" class="my-12 scroll-mt-28">
+                <p class="font-script text-accent text-3xl mb-2 text-center">on vous fait gagner le calcul</p>
+                <h2 class="text-chunky text-3xl md:text-4xl mb-8 text-center">Calculateur de food cost</h2>
+<div class="max-w-5xl mx-auto">
+<!-- Intro -->
+
+<!-- Dashboard Layout -->
+<div class="grid lg:grid-cols-12 gap-8 items-start">
+<!-- Left: Calculator Form -->
+<div class="lg:col-span-7 bg-paper p-6 md:p-8 card-retro">
+<h2 class="font-display font-black text-2xl mb-6 flex items-center gap-2 border-b-2 border-foreground/10 pb-4">
+<i class="w-6 h-6 text-olive" data-lucide="chef-hat"></i> Fiche Technique Rapide
+                    </h2>
+<!-- Infos générales -->
+<div class="grid grid-cols-2 gap-4 mb-8">
+<div>
+<label class="block font-bold text-xs uppercase tracking-wider mb-2">Nom de la
+                                recette</label>
+<input class="input-retro" id="recipeName" placeholder="ex: Burger Signature" type="text"/>
+</div>
+<div>
+<label class="block font-bold text-xs uppercase tracking-wider mb-2">TVA Applicable</label>
+<select class="input-retro h-[3.125rem]" id="taxRate">
+<option value="10">10% (Restauration standard)</option>
+<option value="5.5">5.5% (Vente à emporter)</option>
+<option value="20">20% (Alcool)</option>
+</select>
+</div>
+</div>
+<!-- Liste des Ingrédients -->
+<div class="mb-4 flex justify-between items-end">
+<label class="block font-bold text-sm uppercase tracking-wider">Coûts Matières (HT)</label>
+<span class="font-display font-black text-xl text-accent" id="totalCostDisplay">0.00 €</span>
+</div>
+<div class="space-y-3 mb-6 bg-background/50 p-4 rounded-xl border-2 border-foreground/10" id="ingredientsList">
+<!-- Ligne ingrédient générée en JS -->
+</div>
+<button class="font-bold text-sm flex items-center gap-1 text-olive hover:text-foreground transition-colors mb-8" id="addIngredientBtn">
+<i class="w-5 h-5" data-lucide="plus-circle"></i> Ajouter un ingrédient
+                    </button>
+<!-- Prix de vente -->
+<div class="bg-[#f4eedf] p-6 rounded-xl border-2 border-foreground mb-4">
+<label class="block font-bold text-sm uppercase tracking-wider mb-2">Prix de vente envisagé
+                            (TTC)</label>
+<div class="relative">
+<input class="input-retro pl-8 text-xl font-black" id="sellingPrice" min="0" placeholder="0.00" step="0.10" type="number"/>
+<span class="absolute left-3 top-1/2 -translate-y-1/2 font-black text-xl opacity-50">€</span>
+</div>
+</div>
+</div>
+<!-- Right: Dashboard / Results -->
+<div class="lg:col-span-5 space-y-6 sticky top-28">
+<div class="card-retro bg-foreground text-background p-8 text-center pb-10">
+<h3 class="font-sans font-bold text-xs uppercase tracking-widest opacity-60 mb-6">Résultats</h3>
+<!-- Ratio Matière (Food Cost %) -->
+<div class="mb-8">
+<div class="font-sans font-medium mb-1">Ratio Matière (Food Cost)</div>
+<div class="font-display font-black text-6xl leading-none mb-2" id="ratioResult">--%</div>
+<div class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-bold bg-paper/10 opacity-0 transition-opacity" id="ratioStatusBadge">
+<i class="w-4 h-4" data-lucide="activity"></i> <span id="ratioStatusText">En
+                                    attente</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4 border-t-2 border-background/20 pt-6">
+<div>
+<div class="font-sans font-medium text-xs uppercase tracking-wider opacity-60 mb-1">
+                                    Marge Brute HT</div>
+<div class="font-display font-black text-2xl text-mustard" id="marginResult">0.00 €
+                                </div>
+</div>
+<div>
+<div class="font-sans font-medium text-xs uppercase tracking-wider opacity-60 mb-1">
+                                    Coefficient</div>
+<div class="font-display font-black text-2xl" id="coeffResult">0.00</div>
+</div>
+</div>
+</div>
+<!-- SEO / CTA Lead Magnet -->
+<div class="card-retro bg-[#D5DCD0] p-6 border-dashed text-center">
+<i class="w-8 h-8 text-olive mx-auto mb-3" data-lucide="save"></i>
+<h4 class="font-sans font-black text-lg mb-2">Sauvegardez vos fiches</h4>
+<p class="font-sans text-sm opacity-80 mb-4 line-clamp-3">
+                            Sur 100 plats, calculer ça sur Excel devient un enfer. Staff Meal actualise vos marges
+                            automatiquement à chaque variation de prix fournisseur.
+                        </p>
+<a class="font-sans font-bold text-xs uppercase tracking-wider text-olive underline underline-offset-4 hover:text-foreground" href="/#demo">Découvrir
+                            la gestion Staff Meal</a>
+</div>
+</div>
+</div>
+</div>
+            </section>
 
             <!-- FAQ -->
             <h2 class="text-chunky text-3xl md:text-4xl mt-14 mb-6">Questions fréquentes</h2>
@@ -350,6 +436,107 @@
             if (typeof lucide !== 'undefined') lucide.createIcons();
         });
     </script>
+    <!-- Logique du calculateur intégré -->
+    <script>
+        // Calculator Logic
+        const ingredientsList = document.getElementById('ingredientsList');
+        const addBtn = document.getElementById('addIngredientBtn');
+        const sellingPriceInput = document.getElementById('sellingPrice');
+        const taxRateSelect = document.getElementById('taxRate');
+
+        const totalCostDisplay = document.getElementById('totalCostDisplay');
+        const ratioResult = document.getElementById('ratioResult');
+        const marginResult = document.getElementById('marginResult');
+        const coeffResult = document.getElementById('coeffResult');
+        const ratioStatusBadge = document.getElementById('ratioStatusBadge');
+        const ratioStatusText = document.getElementById('ratioStatusText');
+
+        let ingredientCount = 0;
+
+        function createIngredientRow() {
+            ingredientCount++;
+            const id = ingredientCount;
+            const div = document.createElement('div');
+            div.className = 'flex gap-2 items-center ingredient-row';
+            div.innerHTML = `
+                <input type="text" placeholder="Ingrédient (ex: Pain Bun)" class="input-retro py-2 flex-grow text-sm">
+                <div class="relative w-32 shrink-0">
+                    <input type="number" step="0.01" min="0" placeholder="0.00" class="input-retro py-2 pl-6 pr-2 text-sm text-right cost-input" oninput="calculate()">
+                    <span class="absolute left-2 top-1/2 -translate-y-1/2 font-bold opacity-50 text-sm">€</span>
+                </div>
+                <button onclick="this.parentElement.remove(); calculate();" class="p-2 text-foreground/50 hover:text-accent outline-none">
+                    <i data-lucide="x" class="w-5 h-5"></i>
+                </button>
+            `;
+            ingredientsList.appendChild(div);
+            typeof lucide !== 'undefined' && lucide.createIcons({ root: div });
+        }
+
+        function calculate() {
+            // 1. Calculate Total Food Cost (HT)
+            const inputs = document.querySelectorAll('.cost-input');
+            let totalCost = 0;
+            inputs.forEach(input => {
+                const val = parseFloat(input.value);
+                if (!isNaN(val)) totalCost += val;
+            });
+            totalCostDisplay.textContent = totalCost.toFixed(2) + ' €';
+
+            // 2. Get Sales Price and Tax
+            const priceTTC = parseFloat(sellingPriceInput.value);
+            const taxRate = parseFloat(taxRateSelect.value) / 100;
+
+            if (isNaN(priceTTC) || priceTTC <= 0 || totalCost === 0) {
+                // Reset outputs if incomplete
+                ratioResult.textContent = '--%';
+                marginResult.textContent = '0.00 €';
+                coeffResult.textContent = '0.00';
+                ratioStatusBadge.style.opacity = '0';
+                return;
+            }
+
+            // 3. Math
+            const priceHT = priceTTC / (1 + taxRate);
+            const foodCostRatio = (totalCost / priceHT) * 100;
+            const marginHT = priceHT - totalCost;
+            const coeff = priceTTC / totalCost;
+
+            // 4. Update UI
+            ratioResult.textContent = foodCostRatio.toFixed(1) + '%';
+            marginResult.textContent = marginHT.toFixed(2) + ' €';
+            coeffResult.textContent = coeff.toFixed(2);
+
+            // 5. Status Badge logic (Rule of thumb: <28% excellent, 28-32% good, >32% danger)
+            ratioStatusBadge.style.opacity = '1';
+            ratioStatusBadge.className = 'inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-bold transition-all';
+
+            if (foodCostRatio < 28) {
+                ratioStatusBadge.classList.add('bg-olive', 'text-white');
+                ratioStatusText.textContent = "Excellente marge";
+                ratioResult.className = "font-display font-black text-6xl leading-none mb-2 text-olive";
+            } else if (foodCostRatio <= 32) {
+                ratioStatusBadge.classList.add('bg-mustard', 'text-foreground');
+                ratioStatusText.textContent = "Ratio correct";
+                ratioResult.className = "font-display font-black text-6xl leading-none mb-2 text-mustard";
+            } else {
+                ratioStatusBadge.classList.add('bg-accent', 'text-white');
+                ratioStatusText.textContent = "Attention : Marge faible";
+                ratioResult.className = "font-display font-black text-6xl leading-none mb-2 text-accent";
+            }
+        }
+
+        // Event Listeners
+        addBtn.addEventListener('click', createIngredientRow);
+        sellingPriceInput.addEventListener('input', calculate);
+        taxRateSelect.addEventListener('change', calculate);
+
+        // Init with 3 blank rows
+        createIngredientRow();
+        createIngredientRow();
+        createIngredientRow();
+    
+    </script>
+
 </body>
 
 </html>

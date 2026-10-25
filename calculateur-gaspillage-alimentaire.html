@@ -187,16 +187,16 @@
             <h1 class="text-chunky text-4xl md:text-6xl mb-6">Calculateur de gaspillage alimentaire</h1>
             <p class="font-sans text-lg md:text-xl text-ink-soft leading-relaxed">Une denrée jetée n'a pas coûté son prix d'achat. Elle a été commandée, livrée, stockée au froid, parfois préparée, puis évacuée. Elle se paie donc trois ou quatre fois, et ces euros-là ne figurent sur aucune ligne de votre compte de résultat.</p>
 
-            <!-- Accès à l'outil, tôt dans la page -->
+            <!-- Accès au calculateur, intégré plus bas dans la page -->
             <div class="card-retro p-6 md:p-8 my-10 flex flex-col sm:flex-row items-start sm:items-center gap-5">
                 <div class="shrink-0 w-12 h-12 rounded-full bg-accent text-background flex items-center justify-center">
                     <i data-lucide="calculator" class="w-5 h-5"></i>
                 </div>
                 <div class="flex-grow">
                     <p class="font-sans font-bold text-lg mb-1">Calculateur de gaspillage alimentaire, gratuit</p>
-                    <p class="font-sans text-sm text-ink-soft">Aucune installation. Un email suffit pour accéder à la boîte à outils complète.</p>
+                    <p class="font-sans text-sm text-ink-soft">Directement sur cette page. Sans inscription et sans email.</p>
                 </div>
-                <a href="/outils/gaspillage.html" class="btn-retro shrink-0 text-sm py-2.5 px-6">Ouvrir l'outil</a>
+                <a href="#calculateur" class="btn-retro shrink-0 text-sm py-2.5 px-6">Aller au calculateur</a>
             </div>
 
             <h2 class="text-chunky text-3xl md:text-4xl mt-14 mb-5">Le coût réel d'une perte</h2>
@@ -258,13 +258,104 @@
                 </li>
             </ol>
 
-            <!-- CTA outil -->
-            <div class="card-retro !bg-foreground text-background p-8 md:p-10 my-12 text-center">
-                <p class="font-script text-accent text-3xl mb-3">on vous fait gagner le calcul</p>
-                <h2 class="text-chunky text-3xl md:text-4xl mb-4">Calculateur de gaspillage alimentaire</h2>
-                <p class="font-sans text-background/70 mb-7 max-w-lg mx-auto">Vous entrez vos chiffres, l'outil applique la méthode ci-dessus. Gratuit, sans installation.</p>
-                <a href="/outils/gaspillage.html" class="btn-retro">Ouvrir l'outil gratuitement</a>
-            </div>
+            <!-- Calculateur, intégré et utilisable sans inscription -->
+            <section id="calculateur" class="my-12 scroll-mt-28">
+                <p class="font-script text-accent text-3xl mb-2 text-center">on vous fait gagner le calcul</p>
+                <h2 class="text-chunky text-3xl md:text-4xl mb-8 text-center">Calculateur de gaspillage alimentaire</h2>
+<div class="max-w-5xl mx-auto">
+
+<div class="grid lg:grid-cols-2 gap-8 items-stretch">
+<!-- Left: Form -->
+<div class="bg-paper p-6 md:p-8 card-retro border-b-8 flex flex-col">
+<h2 class="font-display font-black text-2xl mb-8 flex items-center gap-2">
+<span class="bg-accent text-white w-8 h-8 rounded-full flex items-center justify-center text-sm"><i class="w-4 h-4" data-lucide="calculator"></i></span> Vos Chiffres
+                    </h2>
+<div class="space-y-8 flex-grow">
+<!-- CA Input -->
+<div>
+<label class="block font-bold text-sm uppercase tracking-wider mb-2">Chiffre d'Affaires
+                                Mensuel (HT)</label>
+<div class="relative">
+<input class="input-retro pl-10" id="caInput" placeholder="ex: 50000" type="number" value="50000"/>
+<span class="absolute left-4 top-1/2 transform -translate-y-1/2 font-bold opacity-50">€</span>
+</div>
+</div>
+<!-- Food Cost Input -->
+<div>
+<label class="block font-bold text-sm uppercase tracking-wider mb-2">Matière Première (% du
+                                CA)</label>
+<div class="flex items-center gap-4">
+<span class="font-bold flex-1 text-center bg-background py-3 rounded-lg border-2 border-foreground">
+<span id="fcVal">30</span>%
+                                </span>
+</div>
+<input id="fcRange" max="45" min="20" type="range" value="30"/>
+<div class="flex justify-between text-xs font-bold opacity-50 mt-1 px-1">
+<span>20% (Excellent)</span>
+<span>30% (Standard)</span>
+<span>45% (Critique)</span>
+</div>
+</div>
+<!-- Waste Input -->
+<div>
+<label class="block font-bold text-sm uppercase tracking-wider mb-2 text-accent">Taux de
+                                Gaspillage Estimé (%)</label>
+<p class="text-xs opacity-70 mb-2 font-medium">Inclut les DLC dépassées, les erreurs de
+                                commande, et les retours assiettes non touchés.</p>
+<div class="flex items-center gap-4">
+<span class="font-bold flex-1 text-center bg-red-50 text-accent py-3 rounded-lg border-2 border-accent shadow-[2px_2px_0px_#f0481c]">
+<span id="wasteVal">6</span>%
+                                </span>
+</div>
+<input id="wasteRange" max="15" min="1" step="0.5" type="range" value="6"/>
+<div class="flex justify-between text-xs font-bold opacity-50 mt-1 px-1">
+<span>1% (Exceptionnel)</span>
+<span>6% (Moyenne FR)</span>
+<span>15% (Alerte)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right: Output -->
+<div class="space-y-6 flex flex-col justify-between">
+<div class="card-retro bg-foreground text-white p-6 md:p-8 flex-grow flex flex-col justify-center relative overflow-hidden">
+<!-- Background decoration -->
+<div class="absolute -right-12 -bottom-12 opacity-5 pointer-events-none">
+<i class="w-64 h-64 text-accent" data-lucide="triangle-alert"></i>
+</div>
+<h3 class="font-display font-black text-xl mb-6 text-center text-mustard uppercase tracking-widest border-b-2 border-white/20 pb-4">
+                            Le verdict de vos poubelles</h3>
+<div class="space-y-8 z-10">
+<div class="text-center">
+<div class="text-sm font-bold opacity-80 uppercase tracking-widest line-through">Vous
+                                    jetez par mois :</div>
+<div class="number-choc text-5xl md:text-6xl text-accent mt-2"><span id="perteMois">0</span> €</div>
+</div>
+<div class="bg-paper/10 p-4 rounded-xl border border-white/20">
+<div class="text-sm font-bold opacity-80">Sur une année pleine, cela représente :</div>
+<div class="font-display text-4xl mt-1 text-mustard"><span id="perteAnnee">0</span> €
+                                </div>
+</div>
+<div class="bg-accent/20 p-4 rounded-xl border border-accent/50">
+<div class="text-sm font-bold">L'équivalent de :</div>
+<div class="font-bold text-xl mt-1 text-accent flex items-center gap-2">
+<i class="w-6 h-6 animate-pulse" data-lucide="flame"></i>
+<span id="equivalence">---</span>
+</div>
+</div>
+</div>
+</div>
+<!-- SEO / CTA Lead Magnet -->
+<div class="card-retro bg-paper border-2 border-foreground p-5 text-center transform hover:-translate-y-1 transition-transform group shadow-retro cursor-pointer" onclick="window.location.href='/#demo'">
+<i class="w-6 h-6 mx-auto mb-2 group-hover:text-accent transition-colors" data-lucide="clipboard-check"></i>
+<h4 class="font-bold text-sm mb-1 uppercase tracking-wider">Arrêtez l'hémorragie</h4>
+<p class="font-sans text-xs font-medium opacity-80">Le module Gestion des Stocks Staff Meal vous
+                            alerte avant péremption et ajuste vos commandes. Divisez vos pertes par 3.</p>
+</div>
+</div>
+</div>
+</div>
+            </section>
 
             <!-- FAQ -->
             <h2 class="text-chunky text-3xl md:text-4xl mt-14 mb-6">Questions fréquentes</h2>
@@ -351,6 +442,86 @@
             if (typeof lucide !== 'undefined') lucide.createIcons();
         });
     </script>
+    <!-- Logique du calculateur intégré -->
+    <script>
+        // Load Lucide
+        const script = document.createElement("script");
+        script.src = "https://unpkg.com/lucide@latest";
+        script.onload = () => 
+        document.body.appendChild(script);;
+        document.querySelectorAll('.reveal').forEach(el => new IntersectionObserver((es) => es.forEach(e => { if (e.isIntersecting) e.target.classList.add('revealed'); })).observe(el));
+
+        const caInput = document.getElementById('caInput');
+        const fcRange = document.getElementById('fcRange');
+        const fcVal = document.getElementById('fcVal');
+        const wasteRange = document.getElementById('wasteRange');
+        const wasteVal = document.getElementById('wasteVal');
+
+        const perteMoisEl = document.getElementById('perteMois');
+        const perteAnneeEl = document.getElementById('perteAnnee');
+        const equivalenceEl = document.getElementById('equivalence');
+
+        function formatCurrency(num) {
+            return new Intl.NumberFormat('fr-FR', { maximumFractionDigits: 0 }).format(num);
+        }
+
+        function calculate() {
+            const ca = parseFloat(caInput.value) || 0;
+            const fc = parseFloat(fcRange.value) / 100;
+            const waste = parseFloat(wasteRange.value) / 100;
+
+            fcVal.textContent = fcRange.value;
+            wasteVal.textContent = wasteRange.value;
+
+            // Calculation
+            // Total food purchases per month = CA * fc
+            // Value of wasted food = (CA * fc) * waste
+            // Note: this calculates the value at COST. The loss of potential revenue is theoretically higher.
+
+            const rawCost = ca * fc;
+            const wastedEurosMonth = rawCost * waste;
+            const wastedEurosYear = wastedEurosMonth * 12;
+
+            // Animate Numbers
+            animateValue(perteMoisEl, parseInt(perteMoisEl.textContent.replace(/\s/g, '')) || 0, wastedEurosMonth, 400);
+            animateValue(perteAnneeEl, parseInt(perteAnneeEl.textContent.replace(/\s/g, '')) || 0, wastedEurosYear, 400);
+
+            // Dynamically set equivalence
+            if (wastedEurosYear < 3000) {
+                equivalenceEl.textContent = "Un beau voyage annulé chaque année.";
+            } else if (wastedEurosYear < 6000) {
+                equivalenceEl.textContent = "Le prix d'une belle chambre froide neuve jeté à la poubelle.";
+            } else if (wastedEurosYear < 12000) {
+                equivalenceEl.textContent = "Un four Rational 10 niveaux flambant neuf.";
+            } else if (wastedEurosYear < 25000) {
+                equivalenceEl.textContent = "Un salaire annuel à temps plein parti en fumée.";
+            } else {
+                equivalenceEl.textContent = "La marge pure qui aurait pu financer une extension.";
+            }
+        }
+
+        function animateValue(obj, start, end, duration) {
+            let startTimestamp = null;
+            const step = (timestamp) => {
+                if (!startTimestamp) startTimestamp = timestamp;
+                const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                obj.innerHTML = formatCurrency(Math.floor(progress * (end - start) + start));
+                if (progress < 1) {
+                    window.requestAnimationFrame(step);
+                }
+            };
+            window.requestAnimationFrame(step);
+        }
+
+        // Listeners
+        [caInput, fcRange, wasteRange].forEach(el => el.addEventListener('input', calculate));
+
+        // Initial Output
+        calculate();
+
+    
+    </script>
+
 </body>
 
 </html>

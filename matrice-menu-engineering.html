@@ -187,16 +187,16 @@
             <h1 class="text-chunky text-4xl md:text-6xl mb-6">Matrice de menu engineering</h1>
             <p class="font-sans text-lg md:text-xl text-ink-soft leading-relaxed">Une carte n'est pas une liste de plats, c'est un portefeuille. Certains plats font venir, d'autres font la marge, et quelques-uns ne font ni l'un ni l'autre tout en occupant une ligne, un frigo et une place dans la tête de vos cuisiniers. La matrice les sépare en quatre familles, et chaque famille appelle une décision différente.</p>
 
-            <!-- Accès à l'outil, tôt dans la page -->
+            <!-- Accès au calculateur, intégré plus bas dans la page -->
             <div class="card-retro p-6 md:p-8 my-10 flex flex-col sm:flex-row items-start sm:items-center gap-5">
                 <div class="shrink-0 w-12 h-12 rounded-full bg-accent text-background flex items-center justify-center">
                     <i data-lucide="calculator" class="w-5 h-5"></i>
                 </div>
                 <div class="flex-grow">
                     <p class="font-sans font-bold text-lg mb-1">Matrice de menu engineering, gratuit</p>
-                    <p class="font-sans text-sm text-ink-soft">Aucune installation. Un email suffit pour accéder à la boîte à outils complète.</p>
+                    <p class="font-sans text-sm text-ink-soft">Directement sur cette page. Sans inscription et sans email.</p>
                 </div>
-                <a href="/outils/menu-engineering.html" class="btn-retro shrink-0 text-sm py-2.5 px-6">Ouvrir l'outil</a>
+                <a href="#calculateur" class="btn-retro shrink-0 text-sm py-2.5 px-6">Aller au calculateur</a>
             </div>
 
             <h2 class="text-chunky text-3xl md:text-4xl mt-14 mb-5">Deux axes, quatre décisions</h2>
@@ -259,13 +259,107 @@
                 </li>
             </ol>
 
-            <!-- CTA outil -->
-            <div class="card-retro !bg-foreground text-background p-8 md:p-10 my-12 text-center">
-                <p class="font-script text-accent text-3xl mb-3">on vous fait gagner le calcul</p>
-                <h2 class="text-chunky text-3xl md:text-4xl mb-4">Matrice de menu engineering</h2>
-                <p class="font-sans text-background/70 mb-7 max-w-lg mx-auto">Vous entrez vos chiffres, l'outil applique la méthode ci-dessus. Gratuit, sans installation.</p>
-                <a href="/outils/menu-engineering.html" class="btn-retro">Ouvrir l'outil gratuitement</a>
-            </div>
+            <!-- Calculateur, intégré et utilisable sans inscription -->
+            <section id="calculateur" class="my-12 scroll-mt-28">
+                <p class="font-script text-accent text-3xl mb-2 text-center">on vous fait gagner le calcul</p>
+                <h2 class="text-chunky text-3xl md:text-4xl mb-8 text-center">Matrice de menu engineering</h2>
+<div class="max-w-7xl mx-auto">
+
+<div class="grid lg:grid-cols-12 gap-8 items-start">
+<!-- Left: Form -->
+<div class="lg:col-span-7 bg-paper p-6 md:p-8 card-retro border-b-8">
+<h2 class="font-display font-black text-2xl mb-6 flex items-center gap-2 border-b-2 border-foreground/10 pb-4">
+<span class="bg-foreground text-background w-8 h-8 rounded-full flex items-center justify-center text-sm"><i class="w-4 h-4" data-lucide="list"></i></span> Vos Plats (Données du mois)
+                    </h2>
+<div class="overflow-x-auto pb-4">
+<table class="w-full text-left min-w-[500px]">
+<thead>
+<tr class="font-sans font-bold text-xs uppercase tracking-wider opacity-60 border-b-2 border-foreground/10">
+<th class="pb-2 w-8">#</th>
+<th class="pb-2 w-1/3">Nom du Plat</th>
+<th class="pb-2">Prix Vente (€)</th>
+<th class="pb-2">Coût Revient (€)</th>
+<th class="pb-2">Qté Vendues</th>
+<th class="pb-2 w-8"></th>
+</tr>
+</thead>
+<tbody class="space-y-2" id="dishesList">
+<!-- JS Populated -->
+</tbody>
+</table>
+</div>
+<div class="mt-4 flex flex-wrap gap-4 justify-between items-center border-t-2 border-foreground/10 pt-4">
+<button class="font-bold text-sm flex items-center gap-1 text-mustard hover:text-foreground transition-colors" id="addDishBtn">
+<i class="w-5 h-5 bg-background border-2 border-foreground rounded-full" data-lucide="plus"></i> Ajouter un
+                            plat (Max 8)
+                        </button>
+<button class="btn-retro text-sm py-2 px-6 disabled" id="generateBtn">Calculer la
+                            Matrice</button>
+</div>
+</div>
+<!-- Right: Matrix Dashboard -->
+<div class="lg:col-span-5 space-y-6 sticky top-28">
+<div class="card-retro bg-background border-4 border-foreground p-6 shadow-retro relative">
+<h3 class="font-display font-black text-xl mb-4 text-center">Votre Matrice de Rentabilité</h3>
+<!-- The Matrix Grid -->
+<div class="matrix-grid bg-paper p-2 rounded-xl border-4 border-foreground" id="matrixContainer">
+<!-- Top Left: Stars (High Profit, High Popularity) -->
+<div class="matrix-quad bg-green-50/50" id="quad-stars">
+<span class="matrix-quad-label text-olive">Étoiles</span>
+<div class="font-bold text-xs mb-2 opacity-60 text-olive">Très Rentables, Très
+                                    Populaires</div>
+<div class="flex flex-wrap gap-1 z-10" id="list-stars"></div>
+</div>
+<!-- Top Right: Plowhorses (Low Profit, High Popularity) -->
+<div class="matrix-quad bg-blue-50/50" id="quad-plowhorses">
+<span class="matrix-quad-label text-blue-600">Vaches à lait</span>
+<div class="font-bold text-xs mb-2 opacity-60 text-blue-600">Faible Marge, Très
+                                    Populaires</div>
+<div class="flex flex-wrap gap-1 z-10" id="list-plowhorses"></div>
+</div>
+<!-- Bottom Left: Puzzles (High Profit, Low Popularity) -->
+<div class="matrix-quad bg-purple-50/50" id="quad-puzzles">
+<span class="matrix-quad-label text-purple-600">Énigmes</span>
+<div class="font-bold text-xs mb-2 opacity-60 text-purple-600">Très Rentables, Peu
+                                    Ventes</div>
+<div class="flex flex-wrap gap-1 z-10" id="list-puzzles"></div>
+</div>
+<!-- Bottom Right: Dogs (Low Profit, Low Popularity) -->
+<div class="matrix-quad bg-red-50/50" id="quad-dogs">
+<span class="matrix-quad-label text-accent">Poids Morts</span>
+<div class="font-bold text-xs mb-2 opacity-60 text-accent">Faible Marge, Peu Ventes
+                                </div>
+<div class="flex flex-wrap gap-1 z-10" id="list-dogs"></div>
+</div>
+</div>
+<!-- Analysis Output -->
+<div class="mt-6 bg-paper p-4 rounded-xl border-2 border-foreground text-sm font-medium leading-relaxed hidden" id="analysisText">
+<!-- Filled by JS -->
+</div>
+</div>
+<div class="mt-8 text-center bg-[#D5DCD0] p-4 border-2 border-olive rounded-xl text-olive flex items-center justify-center gap-3 no-print cursor-pointer hover:bg-olive hover:text-white transition-colors group" onclick="window.location.href='/#demo'">
+<i class="w-6 h-6 group-hover:text-white" data-lucide="lock"></i>
+<p class="font-sans font-bold text-sm text-left leading-snug">Staff Meal se connecte à votre caisse
+                            <br/><span class="opacity-80 font-medium">et trace cette matrice automatiquement en direct
+                                !</span></p>
+</div>
+<!-- Watermark -->
+<div class="hidden print:block text-center mt-12 pt-4 border-t-2 border-foreground/20 text-xs font-bold opacity-60 uppercase tracking-widest text-foreground">
+                        Matrice générée sur Staff Meal. Plus de rentabilité sur www.staffmeal.com
+                    </div>
+<div class="card-retro bg-[#D5DCD0] border-olive text-foreground p-6 text-center transform hover:-translate-y-1 transition-transform cursor-pointer" onclick="window.location.href='/#demo'">
+<i class="w-8 h-8 mx-auto mb-3 text-olive" data-lucide="trending-up"></i>
+<h4 class="font-display font-black text-lg mb-2">Passez au niveau supérieur.</h4>
+<p class="font-sans text-xs font-medium opacity-80 mb-4">Avec Staff Meal, vos fiches techniques
+                            sont connectées à vos ventes. La matrice se génère automatiquement en temps réel à chaque
+                            fin de service.</p>
+<span class="font-bold text-xs uppercase underline underline-offset-4 text-olive">Découvrir le
+                            module Finance</span>
+</div>
+</div>
+</div>
+</div>
+            </section>
 
             <!-- FAQ -->
             <h2 class="text-chunky text-3xl md:text-4xl mt-14 mb-6">Questions fréquentes</h2>
@@ -352,6 +446,153 @@
             if (typeof lucide !== 'undefined') lucide.createIcons();
         });
     </script>
+    <!-- Logique du calculateur intégré -->
+    <script>
+        // Load Lucide
+        const script = document.createElement("script");
+        script.src = "https://unpkg.com/lucide@latest";
+        script.onload = () => 
+        document.body.appendChild(script);;
+        document.querySelectorAll('.reveal').forEach(el => new IntersectionObserver((es) => es.forEach(e => { if (e.isIntersecting) e.target.classList.add('revealed'); })).observe(el));
+
+        const dishesList = document.getElementById('dishesList');
+        const addDishBtn = document.getElementById('addDishBtn');
+        const generateBtn = document.getElementById('generateBtn');
+        const analysisText = document.getElementById('analysisText');
+        const MAX_DISHES = 8;
+        let dishIdSeq = 0;
+
+        const defaultData = [
+            { name: "Burger Maison", price: 18, cost: 4.5, qty: 350 },
+            { name: "Salade César", price: 15, cost: 4.0, qty: 120 },
+            { name: "Entrecôte Frites", price: 28, cost: 11, qty: 80 },
+            { name: "Pâtes Truffe", price: 22, cost: 3.5, qty: 280 },
+            { name: "Tarte Citron", price: 8, cost: 2.5, qty: 50 }
+        ];
+
+        function createRow(data = null) {
+            if (dishesList.children.length >= MAX_DISHES) return;
+            dishIdSeq++;
+            const id = dishIdSeq;
+
+            const tr = document.createElement('tr');
+            tr.className = 'border-b border-foreground/10 last:border-0 hover:bg-foreground/5 transition-colors dish-row';
+            tr.dataset.id = id;
+
+            tr.innerHTML = `
+                <td class="py-2"><div class="item-dot">${id}</div></td>
+                <td class="py-2 pr-2"><input type="text" class="input-retro dish-name" placeholder="Nom du plat" value="${data ? data.name : ''}"></td>
+                <td class="py-2 pr-2"><input type="number" step="0.5" class="input-retro text-right dish-price" value="${data ? data.price : ''}" placeholder="15"></td>
+                <td class="py-2 pr-2"><input type="number" step="0.5" class="input-retro text-right dish-cost text-accent" value="${data ? data.cost : ''}" placeholder="4.5"></td>
+                <td class="py-2 pr-2"><input type="number" class="input-retro text-right dish-qty text-olive" value="${data ? data.qty : ''}" placeholder="50"></td>
+                <td class="py-2 text-right">
+                    <button onclick="this.closest('tr').remove(); validateForm();" class="p-2 text-foreground/50 hover:text-accent rounded-full hover:bg-accent/10 transition-colors" title="Supprimer">
+                        <i data-lucide="x" class="w-4 h-4"></i>
+                    </button>
+                </td>
+            `;
+            dishesList.appendChild(tr);
+            typeof lucide !== 'undefined' && lucide.createIcons({ root: tr });
+            validateForm();
+        }
+
+        function validateForm() {
+            const rows = document.querySelectorAll('.dish-row');
+            if (rows.length >= MAX_DISHES) {
+                addDishBtn.classList.add('opacity-50', 'pointer-events-none');
+            } else {
+                addDishBtn.classList.remove('opacity-50', 'pointer-events-none');
+            }
+
+            const canGenerate = rows.length >= 2;
+            if (canGenerate) {
+                generateBtn.classList.remove('disabled');
+            } else {
+                generateBtn.classList.add('disabled');
+            }
+        }
+
+        function processMatrix() {
+            const rows = document.querySelectorAll('.dish-row');
+            const dishes = [];
+
+            let totalVolume = 0;
+            let totalMarginPoints = 0;
+
+            rows.forEach(tr => {
+                const id = tr.dataset.id;
+                const name = tr.querySelector('.dish-name').value || `Plat #${id}`;
+                const price = parseFloat(tr.querySelector('.dish-price').value) || 0;
+                const cost = parseFloat(tr.querySelector('.dish-cost').value) || 0;
+                const qty = parseFloat(tr.querySelector('.dish-qty').value) || 0;
+
+                if (price > 0 && qty > 0) {
+                    const margin = price - cost;
+                    dishes.push({ id, name, margin, qty });
+                    totalVolume += qty;
+                    totalMarginPoints += margin; // sum of margins for avg
+                }
+            });
+
+            if (dishes.length < 2) return;
+
+            // Calculate averages to set the matrix crosshairs
+            const avgVolume = totalVolume / dishes.length;
+            const avgMargin = totalMarginPoints / dishes.length;
+
+            // Clear quads
+            document.getElementById('list-stars').innerHTML = '';
+            document.getElementById('list-plowhorses').innerHTML = '';
+            document.getElementById('list-puzzles').innerHTML = '';
+            document.getElementById('list-dogs').innerHTML = '';
+
+            let strAnalysis = "";
+            let starCount = 0;
+            let dogCount = 0;
+
+            dishes.forEach(d => {
+                const isHighVol = d.qty >= avgVolume;
+                const isHighMargin = d.margin >= avgMargin;
+                let targetQuad = '';
+
+                const dotHtml = `<div class="item-dot" title="${d.name} (Marge: ${d.margin.toFixed(2)}€, Qté: ${d.qty})">${d.id}</div>`;
+
+                if (isHighVol && isHighMargin) {
+                    targetQuad = 'list-stars';
+                    starCount++;
+                } else if (isHighVol && !isHighMargin) {
+                    targetQuad = 'list-plowhorses';
+                } else if (!isHighVol && isHighMargin) {
+                    targetQuad = 'list-puzzles';
+                } else {
+                    targetQuad = 'list-dogs';
+                    dogCount++;
+                }
+
+                document.getElementById(targetQuad).innerHTML += dotHtml;
+            });
+
+            analysisText.classList.remove('hidden');
+            if (starCount > 0 && dogCount > 0) {
+                analysisText.innerHTML = `Analyses de vos données : Vous avez <strong>${starCount} Étoile(s)</strong> à sur-valoriser sur le menu (ex: photo, gras). Attention, vous traînez <strong>${dogCount} Poids Mort(s)</strong> qui vampirisent votre inventaire et compliquent votre gestion.`;
+            } else if (starCount > 0) {
+                analysisText.innerHTML = `Excellent ! Vous avez de très bonnes locomotives (<strong>${starCount} Étoiles</strong>). Essayez maintenant de transformer vos "Énigmes" en Etoiles en demandant à vos serveurs de les vendre à la table.`;
+            } else {
+                analysisText.innerHTML = `Alerte : Votre carte manque de rentabilité star. Vos plats les plus vendus "Vaches à Lait" ont des marges trop minces. Envisagez de réduire légèrement les portions ou d'augmenter le prix de 5%.`;
+            }
+        }
+
+        addDishBtn.addEventListener('click', () => createRow());
+        generateBtn.addEventListener('click', processMatrix);
+
+        // Listen to changes in inputs to re-evaluate if wanted (optional)
+        document.getElementById('dishesList').addEventListener('input', () => { /* don't auto-calc to avoid jumping */ });
+
+        // Init
+        defaultData.forEach(d => createRow(d));
+    
+    </script>
+
 </body>
 
 </html>
