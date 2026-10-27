@@ -134,11 +134,12 @@
   });
   document.addEventListener('submit', (e) => {
     const name = e.target.getAttribute('name');
-    if (!FORMS[name]) return;
+    // Un formulaire en étapes annule l'envoi tant qu'on n'est pas à la dernière : ce n'est pas une candidature
+    if (!FORMS[name] || e.defaultPrevented) return;
     const state = forms.get(e.target);
     if (state) state.sent = true;
     track(FORMS[name], { page, ...journey(), temps_de_saisie: state ? bucket(Date.now() - state.startedAt) : 'inconnu' });
-  }, true);
+  });
   window.addEventListener('pagehide', () => {
     forms.forEach((state, form) => {
       if (state.sent) return;

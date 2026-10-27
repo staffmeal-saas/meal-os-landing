@@ -51,7 +51,8 @@ function updateROI() {
 
   document.getElementById('res-matiere').textContent = '+ ' + euro.format(Math.round(economieMatiere)) + ' €';
   document.getElementById('res-temps').textContent = euro.format(heures) + ' h / an';
-  document.getElementById('res-total').textContent = euro.format(caAnnuelReseau) + ' €';
+  const total = document.getElementById('res-total'); // bloc « CA piloté » retiré de la page
+  if (total) total.textContent = euro.format(caAnnuelReseau) + ' €';
 
   const verdict = document.getElementById('icp-verdict');
   const dansLaCible = employes >= SEUIL_ICP_EMPLOYES;
@@ -338,13 +339,13 @@ if (stepForm) {
   stepForm.classList.add('is-steps');
   stepForm.noValidate = true; // les champs des étapes cachées bloqueraient la validation native
   stepForm.addEventListener('submit', (e) => {
-    const fields = [...steps[at].querySelectorAll('input')];
+    const fields = [...steps[at].querySelectorAll('input, select')];
     if (!fields.every((f) => f.reportValidity())) { e.preventDefault(); return; }
     if (at === steps.length - 1) {
       // Dernière étape : on revérifie tout, puis envoi normal vers Netlify
-      const bad = steps.findIndex((s) => [...s.querySelectorAll('input')].some((f) => !f.checkValidity()));
+      const bad = steps.findIndex((s) => [...s.querySelectorAll('input, select')].some((f) => !f.checkValidity()));
       if (bad === -1) return;
-      e.preventDefault(); at = bad; render(true); steps[at].querySelector('input:invalid')?.reportValidity();
+      e.preventDefault(); at = bad; render(true); steps[at].querySelector(':invalid:not(fieldset)')?.reportValidity();
       return;
     }
     e.preventDefault();
@@ -366,3 +367,12 @@ if (sticky && heroEl && applyEl && 'IntersectionObserver' in window) {
   // Caché dès que le formulaire arrive à l'écran, et après (footer compris)
   new IntersectionObserver(([e]) => { onForm = e.isIntersecting || e.boundingClientRect.top < 0; sync(); }, { threshold: 0.15 }).observe(applyEl);
 }
+
+// Calculateur : « Parler de ces chiffres » pré-remplit le formulaire avec les sites et employés saisis.
+document.querySelector('[data-roi-cta]')?.addEventListener('click', () => {
+  const sites = document.getElementById('roi-sites'), emp = document.getElementById('roi-emp');
+  const fSites = document.getElementById('sites'), fEmp = document.getElementById('employes');
+  if (sites && fSites) fSites.value = sites.value;
+  if (emp && fEmp) fEmp.value = emp.value;
+  if (typeof window.plausible === 'function') window.plausible('Clic Postuler', { props: { emplacement: 'calculateur', page: '/' } });
+});

@@ -253,7 +253,7 @@ def page(m: Module, modules: list[Module]) -> str:
 </script>
     <script defer data-domain="staff-meal.com" data-api="/s/event" src="/s/script"></script>
     <script>window.plausible = window.plausible || function () {{ (window.plausible.q = window.plausible.q || []).push(arguments) }}</script>
-    <script defer src="/analytics.js?v=20261025i"></script>
+    <script defer src="/analytics.js?v=20261027"></script>
 </head>
 <body>
     <a class="skip-link" href="#main">Aller au contenu</a>
