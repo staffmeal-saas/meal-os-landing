@@ -1,0 +1,675 @@
+[
+  {
+    "slug": "module-checklists-haccp",
+    "video": "checklists",
+    "mode": "mobile",
+    "poster_at": 18,
+    "pillar": "Opérations",
+    "name": "Checklists HACCP",
+    "icon": "check-square",
+    "short": "Par poste et par horaire, avec photo horodatée.",
+    "title": "Checklists HACCP sur mobile avec preuve photo | Staff Meal",
+    "description": "Relevés de température, ouverture, fermeture : chaque équipier coche sa checklist du moment sur son téléphone, avec photo horodatée. Démo vidéo du module.",
+    "h1": "Les relevés HACCP faits, prouvés, à l'heure.",
+    "lede": "Chaque équipier ouvre la checklist de son créneau sur son téléphone. Il coche, prend la photo du thermomètre, laisse un mot quand il le faut. Chaque validation porte son nom et l'heure.",
+    "video_alt": "Démonstration : un équipier valide la mise en place du soir, photo du thermomètre comprise",
+    "chapters": [
+      [
+        0,
+        "La checklist du créneau en cours, dès l'accueil"
+      ],
+      [
+        6,
+        "Relevé de chambre froide avec photo"
+      ],
+      [
+        18,
+        "Les tâches simples cochées en un geste"
+      ],
+      [
+        27,
+        "Un commentaire sur la réception boulangerie"
+      ],
+      [
+        33,
+        "Qui a fait quoi, à quelle heure, avec quelle preuve"
+      ]
+    ],
+    "benefits": [
+      [
+        "Fini le classeur rempli le vendredi",
+        "Le relevé se fait au moment où il compte, sur le téléphone que l'équipier a déjà en poche."
+      ],
+      [
+        "Une preuve pour chaque contrôle",
+        "Photo, heure et nom restent attachés à la tâche. Le jour du contrôle sanitaire, vous ouvrez l'historique."
+      ],
+      [
+        "Les oublis remontent seuls",
+        "Ce qui n'est pas fait à la fin du créneau apparaît en retard sur votre tableau de bord."
+      ]
+    ],
+    "features": [
+      "Créneaux horaires et jours de récurrence par checklist",
+      "Checklists filtrées par poste : cuisine, salle, bar",
+      "Trois preuves au choix : case, photo, commentaire",
+      "Tâches urgentes signalées en tête de liste",
+      "Tâche ponctuelle ajoutée en direct par un responsable",
+      "Import d'une checklist existante, historique jour par jour"
+    ],
+    "faq": [
+      [
+        "Ça remplace mon plan de maîtrise sanitaire ?",
+        "Non. Votre PMS reste le vôtre. Staff Meal tient les relevés qu'il prévoit, avec l'heure et la preuve, pour que vous puissiez les montrer."
+      ],
+      [
+        "Mes équipiers doivent installer une application ?",
+        "Ils l'ajoutent à l'écran d'accueil de leur téléphone depuis le navigateur. Rien à télécharger sur un store."
+      ],
+      [
+        "Je dois tout ressaisir ?",
+        "Vous pouvez importer une checklist existante. Pendant la bêta, on fait le paramétrage avec vous, sur place."
+      ]
+    ],
+    "guide": [
+      "/haccp-restaurant.html",
+      "Le guide HACCP du restaurant"
+    ]
+  },
+  {
+    "slug": "module-manuel-operatoire",
+    "video": "manuel",
+    "mode": "mobile",
+    "poster_at": 6,
+    "pillar": "Opérations",
+    "name": "Manuel opératoire",
+    "icon": "book-open",
+    "short": "Vos standards, lus et confirmés par l'équipe.",
+    "title": "Manuel opératoire digital pour restaurant | Staff Meal",
+    "description": "Vos procédures rangées par catégorie, en étapes courtes, avec révision datée. L'équipier retrouve la bonne en deux gestes. Démo vidéo du module.",
+    "h1": "Vos standards dans la poche de chaque équipier.",
+    "lede": "Les procédures de la maison sont rangées par catégorie et écrites en étapes courtes, avec une révision datée et un responsable. L'équipier retrouve la bonne en deux gestes, même en plein service.",
+    "video_alt": "Démonstration : un équipier ouvre la procédure d'ouverture de cuisine puis la coupure gaz d'urgence",
+    "chapters": [
+      [
+        0,
+        "Les catégories du manuel"
+      ],
+      [
+        6,
+        "La procédure d'ouverture, étape par étape"
+      ],
+      [
+        18,
+        "La coupure gaz en urgence, trouvée en deux gestes"
+      ]
+    ],
+    "benefits": [
+      [
+        "Le savoir ne part plus avec le manager",
+        "Ce qui était dans la tête d'une personne est écrit, daté et accessible à toute l'équipe."
+      ],
+      [
+        "Une seule version qui fait foi",
+        "Chaque procédure porte sa révision. Plus de photocopie jaunie qui contredit la nouvelle."
+      ],
+      [
+        "L'équipe propose, vous décidez",
+        "Un équipier peut suggérer une amélioration depuis la procédure. Elle arrive à la direction."
+      ]
+    ],
+    "features": [
+      "Catégories : ouverture, hygiène, service, sécurité",
+      "Étapes numérotées, lisibles sur un téléphone",
+      "Révision, priorité et responsable affichés",
+      "Recherche dans toutes les procédures",
+      "Diffusion à tout l'établissement ou à un poste",
+      "Suggestion d'amélioration envoyée depuis l'app"
+    ],
+    "faq": [
+      [
+        "J'ai déjà mes procédures sur papier.",
+        "On les reprend avec vous pendant le paramétrage. Une procédure courte se saisit en quelques minutes."
+      ],
+      [
+        "Qui peut modifier une procédure ?",
+        "La direction. L'équipe lit et peut proposer une modification, qui n'est publiée qu'après validation."
+      ],
+      [
+        "Ça marche pour plusieurs établissements ?",
+        "Oui. Une procédure créée pour le groupe se retrouve sur tous les sites, chaque site peut avoir les siennes en plus."
+      ]
+    ],
+    "guide": [
+      "/manuel-operatoire-restaurant.html",
+      "Écrire un manuel opératoire qui sert vraiment"
+    ]
+  },
+  {
+    "slug": "module-maintenance",
+    "video": "maintenance",
+    "mode": "mobile",
+    "poster_at": 27,
+    "pillar": "Opérations",
+    "name": "Maintenance",
+    "icon": "wrench",
+    "short": "Chaque panne a un ticket et un responsable.",
+    "title": "Suivi de maintenance des équipements de restaurant | Staff Meal",
+    "description": "Parc matériel, signalement de panne en 5 étapes depuis le téléphone, ticket suivi jusqu'à la réparation. Démo vidéo du module maintenance.",
+    "h1": "Chaque panne a un ticket et un responsable.",
+    "lede": "L'équipier signale le problème depuis son téléphone : l'équipement, le type, la priorité, la description. Le ticket arrive au responsable et l'historique de la machine se remplit tout seul.",
+    "video_alt": "Démonstration : un équipier signale un dysfonctionnement du four mixte",
+    "chapters": [
+      [
+        0,
+        "Le parc matériel de l'établissement"
+      ],
+      [
+        3,
+        "Choisir l'équipement concerné"
+      ],
+      [
+        9,
+        "Type de problème et priorité"
+      ],
+      [
+        15,
+        "Description et localisation précise"
+      ],
+      [
+        27,
+        "Récapitulatif, puis ticket créé"
+      ]
+    ],
+    "benefits": [
+      [
+        "Plus de panne signalée sur un coin de table",
+        "Le signalement est complet du premier coup : quoi, où, à quel point c'est urgent."
+      ],
+      [
+        "Quelqu'un est responsable",
+        "Le ticket est attribué, son statut avance : en cours, en attente de pièce, réparé."
+      ],
+      [
+        "L'historique de chaque machine",
+        "Interventions et coûts restent rattachés à l'équipement. Vous savez quand réparer ne vaut plus le coup."
+      ]
+    ],
+    "features": [
+      "Parc matériel par zone et par catégorie",
+      "Statut visible : en service ou en maintenance",
+      "Priorité avec délai d'intervention : 24 h, 3 jours, 7 jours",
+      "Photos et vidéo jointes au signalement",
+      "Suivi du ticket et fil des échanges",
+      "Coût des interventions et maintenance préventive"
+    ],
+    "faq": [
+      [
+        "Qui reçoit le signalement ?",
+        "Le responsable de l'établissement. Il l'attribue, fait avancer le statut, et l'équipier qui a signalé suit le ticket."
+      ],
+      [
+        "On peut signaler un problème sans équipement précis ?",
+        "Oui, un problème général (une fuite, une porte) se signale aussi, avec sa localisation."
+      ],
+      [
+        "Je peux suivre plusieurs sites ?",
+        "Oui. Le parc et les tickets sont séparés par établissement, la direction les voit tous."
+      ]
+    ],
+    "guide": [
+      "/maintenance-equipement-restaurant.html",
+      "Organiser la maintenance d'une cuisine"
+    ]
+  },
+  {
+    "slug": "module-audit-haccp",
+    "video": "audit",
+    "mode": "mobile",
+    "poster_at": 40,
+    "pillar": "Qualité",
+    "name": "Audit HACCP",
+    "icon": "clipboard-check",
+    "short": "Grille notée, rapport détaillé, écarts remontés.",
+    "title": "Audit hygiène HACCP noté sur mobile | Staff Meal",
+    "description": "Le manager déroule la grille d'audit sur son téléphone, documente chaque écart et obtient une note par section. Démo vidéo du module Audit HACCP.",
+    "h1": "Un audit d'hygiène noté du même barème partout.",
+    "lede": "Le manager déroule la grille sur son téléphone : conforme ou non, photo, note. Un écart doit être documenté avant de passer à la suite. La note tombe à la fin, section par section.",
+    "video_alt": "Démonstration : une manager réalise l'audit hygiène quotidien et obtient 85 sur 100",
+    "chapters": [
+      [
+        0,
+        "Les audits à réaliser et l'historique"
+      ],
+      [
+        3,
+        "Températures, avec photo de la chambre froide"
+      ],
+      [
+        18,
+        "Propreté : un écart relevé"
+      ],
+      [
+        24,
+        "L'écart documenté, obligatoire"
+      ],
+      [
+        39,
+        "La note sur 100 et le détail par section"
+      ]
+    ],
+    "benefits": [
+      [
+        "Le même barème sur tous vos sites",
+        "Une grille, des points fixes. Une note de 85 veut dire la même chose à Opéra et à Bastille."
+      ],
+      [
+        "Chaque écart a une explication",
+        "Impossible de cocher non conforme sans écrire ce qui s'est passé et ce qui a été fait."
+      ],
+      [
+        "Les tendances, pas seulement la photo du jour",
+        "L'historique classe les audits en conformes, à corriger et critiques."
+      ]
+    ],
+    "features": [
+      "Grilles personnalisées, découpées en sections",
+      "Réponses conforme, oui ou non, note sur 5",
+      "Photo jointe à une question",
+      "Écart documenté obligatoire",
+      "Note globale et note par section",
+      "Rapport détaillé et historique filtrable"
+    ],
+    "faq": [
+      [
+        "Je peux reprendre la grille de mon organisme de contrôle ?",
+        "Oui. Vous créez vos sections et vos questions dans l'éditeur, avec le barème qui vous convient."
+      ],
+      [
+        "Qui peut lancer un audit ?",
+        "Les managers et la direction. L'équipe ne voit pas les grilles."
+      ],
+      [
+        "À quelle fréquence ?",
+        "Vous choisissez par grille : quotidien, hebdomadaire ou ponctuel."
+      ]
+    ],
+    "guide": [
+      "/checklist-haccp-inspection.html",
+      "Préparer une inspection sanitaire"
+    ]
+  },
+  {
+    "slug": "module-client-mystere",
+    "video": "mystere",
+    "mode": "desktop",
+    "poster_at": 1,
+    "pillar": "Qualité",
+    "name": "Client mystère",
+    "icon": "user-search",
+    "short": "Vos visites sans agence, comparées dans le temps.",
+    "title": "Client mystère pour restaurant, sans agence | Staff Meal",
+    "description": "Vos clients mystère remplissent une grille pondérée pendant leur visite. Note du mois, évolution, points ratés et points forts. Démo vidéo du module.",
+    "h1": "Vos visites mystère, sans agence.",
+    "lede": "Vos clients mystère remplissent la grille pendant leur visite. Vous lisez la note du mois, son évolution, la moyenne par section et les questions les plus souvent ratées, établissement par établissement.",
+    "video_alt": "Démonstration : le tableau de bord client mystère de la Brasserie République",
+    "chapters": [
+      [
+        0,
+        "La note du mois et son évolution"
+      ],
+      [
+        3,
+        "La moyenne par section, du plus faible au meilleur"
+      ],
+      [
+        9,
+        "Les derniers audits reçus"
+      ],
+      [
+        21,
+        "Le détail d'une visite, question par question"
+      ]
+    ],
+    "benefits": [
+      [
+        "La salle vue par un vrai client",
+        "Accueil, attente, dressage, sanitaires : ce que vous ne voyez pas quand vous êtes là."
+      ],
+      [
+        "Une priorité claire",
+        "Les questions les plus souvent ratées sortent en tête. Vous savez quoi travailler au prochain brief."
+      ],
+      [
+        "Une progression qui se mesure",
+        "Même grille, mois après mois. La courbe montre si les consignes ont pris."
+      ]
+    ],
+    "features": [
+      "Modèles d'audit avec questions pondérées et points critiques",
+      "Missions par période, au service du midi ou du soir",
+      "Clients mystère sous pseudonyme, récompense en repas",
+      "Note du mois, évolution sur 6 ou 12 mois",
+      "Points à améliorer et points forts calculés",
+      "Partage des résultats aux directeurs de site"
+    ],
+    "faq": [
+      [
+        "Où trouver des clients mystère ?",
+        "Parmi vos habitués, ou par un lien d'inscription que vous diffusez. Vous gardez la main sur qui devient client mystère."
+      ],
+      [
+        "Mes équipes doivent-elles être prévenues ?",
+        "Oui, l'équipe est informée que des visites ont lieu, sans savoir quand. L'application vous le rappelle avant la première mission."
+      ],
+      [
+        "Combien ça coûte par visite ?",
+        "Le prix du repas que vous offrez au client mystère. Pas de commission d'agence."
+      ]
+    ],
+    "guide": [
+      "/client-mystere-restaurant.html",
+      "Monter ses propres visites mystère"
+    ]
+  },
+  {
+    "slug": "module-recettes-food-cost",
+    "video": "recettes",
+    "mode": "desktop",
+    "poster_at": 13,
+    "pillar": "Qualité",
+    "name": "Recettes & food cost",
+    "icon": "calculator",
+    "short": "Fiche technique, coût portion, ratio matière.",
+    "title": "Fiches techniques et food cost en temps réel | Staff Meal",
+    "description": "Fiches techniques avec photo, coût par portion, marge et ratio matière recalculés à chaque changement de prix. Démo vidéo du module Recettes.",
+    "h1": "Le coût de chaque assiette, avant qu'elle parte.",
+    "lede": "Chaque fiche technique porte ses ingrédients, ses étapes et sa photo. Les prix suivent votre catalogue : coût par portion, marge et ratio matière se recalculent dès qu'un chiffre bouge.",
+    "video_alt": "Démonstration : la fiche du bœuf bourguignon, son coût par portion et son ratio matière",
+    "chapters": [
+      [
+        0,
+        "Le livre de recettes et le coût de chaque fiche"
+      ],
+      [
+        3,
+        "La fiche vue par l'équipe en cuisine"
+      ],
+      [
+        12,
+        "Ratio matière, marge et coût par portion"
+      ],
+      [
+        18,
+        "Le prix de vente change"
+      ],
+      [
+        27,
+        "Le ratio se recalcule tout seul"
+      ]
+    ],
+    "benefits": [
+      [
+        "La même assiette à chaque service",
+        "Grammages, étapes et dressage sont écrits. Le nouveau commis suit la fiche, pas sa mémoire."
+      ],
+      [
+        "La marge sous les yeux",
+        "Coût par portion et ratio matière comparés à votre cible, hors taxes, selon la TVA applicable."
+      ],
+      [
+        "Les coûts restent à la direction",
+        "L'équipe voit la recette, jamais les prix d'achat."
+      ]
+    ],
+    "features": [
+      "Fiches plat à la carte et mise en place",
+      "Ratio matière comparé à une cible de 30 %",
+      "Catalogue de composants mis à jour par les factures",
+      "Coûts visibles par la direction uniquement",
+      "Fiche imprimable et téléchargeable en PDF",
+      "Allergènes, matériel, consignes de conservation"
+    ],
+    "faq": [
+      [
+        "D'où viennent les prix des ingrédients ?",
+        "De votre catalogue de composants. Il se met à jour à partir de vos factures fournisseurs."
+      ],
+      [
+        "Je peux calculer avant d'avoir l'app ?",
+        "Oui, notre calculateur de food cost est gratuit et sans inscription."
+      ],
+      [
+        "Une recette secrète reste secrète ?",
+        "Oui. Vous choisissez qui peut l'ouvrir, nommément."
+      ]
+    ],
+    "guide": [
+      "/food-cost-calculator.html",
+      "Calculer votre food cost gratuitement"
+    ]
+  },
+  {
+    "slug": "module-formations",
+    "video": "formations",
+    "mode": "mobile",
+    "poster_at": 18,
+    "pillar": "Équipe",
+    "name": "Formations",
+    "icon": "graduation-cap",
+    "short": "Parcours, quiz, certificat vérifiable.",
+    "title": "Formation du personnel de restaurant sur mobile | Staff Meal",
+    "description": "Modules courts sur téléphone : une leçon, un quiz, un module validé. Assignation avec échéance et suivi par équipier. Démo vidéo du module Formations.",
+    "h1": "Former l'équipe sans immobiliser un chef.",
+    "lede": "Des modules courts sur téléphone : une leçon, un quiz, un module validé. Vous assignez une formation avec une échéance, vous voyez qui avance et qui bloque.",
+    "video_alt": "Démonstration : un équipier suit le module chaîne du froid et réussit le quiz",
+    "chapters": [
+      [
+        0,
+        "La formation assignée, avec son échéance"
+      ],
+      [
+        3,
+        "Les modules et ce qu'il faut réussir"
+      ],
+      [
+        6,
+        "La leçon, lisible en deux minutes"
+      ],
+      [
+        12,
+        "Le quiz de validation"
+      ],
+      [
+        21,
+        "Module terminé, le suivant se débloque"
+      ]
+    ],
+    "benefits": [
+      [
+        "L'intégration ne dépend plus de qui est là",
+        "Le nouveau suit le même parcours, que son premier jour tombe un lundi calme ou un samedi plein."
+      ],
+      [
+        "Vous savez qui a compris",
+        "Le quiz a un seuil et un nombre de tentatives. Pas de case cochée par politesse."
+      ],
+      [
+        "Une compétence qui se prouve",
+        "La formation réussie donne un certificat vérifiable par un code."
+      ]
+    ],
+    "features": [
+      "Parcours en modules, déblocage progressif",
+      "Quiz avec seuil de réussite et tentatives limitées",
+      "Exercice pratique validé par un manager",
+      "Assignation par équipier ou par poste, avec échéance",
+      "Suivi de l'avancement de chaque équipier",
+      "Certificat vérifiable"
+    ],
+    "faq": [
+      [
+        "Je dois écrire toutes les formations ?",
+        "Vous les créez dans l'éditeur, module par module. Pendant la bêta, on construit les premières avec vous."
+      ],
+      [
+        "Ça se fait pendant le service ?",
+        "Non, en dehors. Un module prend quelques minutes, sur le téléphone de l'équipier."
+      ],
+      [
+        "Et si quelqu'un échoue au quiz ?",
+        "Il relit la leçon et retente, dans la limite que vous avez fixée. Le manager voit qui bloque."
+      ]
+    ],
+    "guide": [
+      "/standards-service-restaurant.html",
+      "Tenir le niveau de service"
+    ]
+  },
+  {
+    "slug": "module-communication",
+    "video": "communication",
+    "mode": "mobile",
+    "poster_at": 6,
+    "pillar": "Équipe",
+    "name": "Communication",
+    "icon": "message-circle",
+    "short": "Les consignes sortent de WhatsApp.",
+    "title": "Communication d'équipe en restaurant, hors WhatsApp | Staff Meal",
+    "description": "Annonces, alertes, sondages et événements dans un fil dédié à l'établissement, avec confirmation de lecture. Démo vidéo du module Communication.",
+    "h1": "Les consignes sortent de WhatsApp.",
+    "lede": "Annonces, alertes, sondages et événements arrivent dans un fil réservé à l'établissement. Quand une consigne compte, l'équipier confirme l'avoir lue, et vous savez qui ne l'a pas fait.",
+    "video_alt": "Démonstration : un équipier confirme la lecture d'une annonce et vote au sondage d'équipe",
+    "chapters": [
+      [
+        0,
+        "Le fil d'actualités de l'établissement"
+      ],
+      [
+        3,
+        "Une annonce importante, lue et confirmée"
+      ],
+      [
+        6,
+        "Le sondage de l'équipe"
+      ],
+      [
+        9,
+        "Événements et célébrations"
+      ]
+    ],
+    "benefits": [
+      [
+        "Une consigne ne se noie plus",
+        "Elle n'est pas entre une photo de vacances et un mème. Elle reste épinglée tant qu'il le faut."
+      ],
+      [
+        "Vous savez qui a lu",
+        "La confirmation de lecture vous dit qui relancer avant le service."
+      ],
+      [
+        "La vie privée de l'équipe respectée",
+        "Plus besoin d'échanger les numéros personnels pour travailler ensemble."
+      ]
+    ],
+    "features": [
+      "Annonces, alertes, sondages, événements, célébrations",
+      "Publications épinglées en tête du fil",
+      "Confirmation de lecture demandée sur les consignes",
+      "Ciblage par poste : cuisine, salle, bar",
+      "Réactions, commentaires et messagerie d'équipe",
+      "Taux de lecture suivi par la direction"
+    ],
+    "faq": [
+      [
+        "Mon équipe va vraiment quitter WhatsApp ?",
+        "Pour le travail, oui, parce que les consignes, le planning du jour et les tâches sont au même endroit. Le groupe des copains reste où il est."
+      ],
+      [
+        "Qui peut publier ?",
+        "La direction et les managers. L'équipe réagit, commente et vote."
+      ],
+      [
+        "Les notifications sont envoyées ?",
+        "Oui, sur le téléphone de l'équipier, pour les publications qui demandent une lecture."
+      ]
+    ],
+    "guide": [
+      "/turnover-restauration.html",
+      "Réduire le turnover en restauration"
+    ]
+  },
+  {
+    "slug": "module-multi-site",
+    "video": "multisite",
+    "mode": "desktop",
+    "poster_at": 13,
+    "pillar": "Équipe",
+    "name": "Multi-site",
+    "icon": "network",
+    "short": "Créé une fois, déployé sur tous vos sites.",
+    "title": "Pilotage multi-site de restaurants | Staff Meal",
+    "description": "Passez d'un établissement à l'autre en un clic et lisez la vue réseau : complétion du jour, retards, conformité, équipe en poste. Démo vidéo du module.",
+    "h1": "Un établissement ou quarante, un seul écran.",
+    "lede": "Vous passez d'un site à l'autre en un clic. La vue réseau aligne, pour chaque établissement, les tâches faites du jour, les retards, la note d'hygiène et l'équipe en poste.",
+    "video_alt": "Démonstration : le directeur passe de Bastille à République puis ouvre la vue consolidée des trois brasseries",
+    "chapters": [
+      [
+        0,
+        "Le tableau de bord d'un site"
+      ],
+      [
+        3,
+        "Changer d'établissement en un clic"
+      ],
+      [
+        12,
+        "La vue consolidée des trois sites"
+      ],
+      [
+        24,
+        "Les mêmes checklists partout"
+      ]
+    ],
+    "benefits": [
+      [
+        "Le site qui décroche se voit tout de suite",
+        "Retards et conformité côte à côte : vous savez où passer demain matin."
+      ],
+      [
+        "Créé une fois, appliqué partout",
+        "Checklists, procédures, recettes et formations du groupe arrivent sur chaque site."
+      ],
+      [
+        "Chacun voit son périmètre",
+        "Le directeur voit ses sites, le manager le sien, l'équipier sa journée."
+      ]
+    ],
+    "features": [
+      "Sélecteur d'établissement dans le back-office",
+      "Vue consolidée : complétion, retards, conformité, équipe en poste",
+      "Contenus de groupe déployés sur tous les sites",
+      "Contenus propres à un site quand il le faut",
+      "Rôles : propriétaire, directeur, manager, équipier",
+      "Données séparées par établissement"
+    ],
+    "faq": [
+      [
+        "À partir de combien de sites ?",
+        "Dès deux. Mais Staff Meal sert surtout dès que vous ne pouvez plus être partout, souvent autour de 15 employés."
+      ],
+      [
+        "Un site peut garder ses spécificités ?",
+        "Oui. Il reçoit les contenus du groupe et peut ajouter les siens, ou masquer une fiche qui ne le concerne pas."
+      ],
+      [
+        "Ça marche pour une franchise ?",
+        "Oui, chaque franchisé voit son établissement, la tête de réseau voit l'ensemble."
+      ]
+    ],
+    "guide": [
+      "/client-mystere-franchise-reseau.html",
+      "Piloter la qualité d'un réseau"
+    ]
+  }
+]

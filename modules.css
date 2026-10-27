@@ -1,0 +1,127 @@
+/* ---------------------------------------------------------------
+   Staff Meal — pages produit des modules (DA v2).
+   Chargée après shell.css et home.css : on reprend leurs tokens,
+   boutons, section-shell, eyebrow et FAQ. Ici seulement le héros
+   vidéo (téléphone ou navigateur), les chapitres et les blocs propres.
+   --------------------------------------------------------------- */
+
+.mod-page { color: var(--ink); }
+
+/* Intro : titre, puis la boucle façon Notion (l'app qui vit seule, muette). */
+.mod-intro { max-width: 1180px; margin: 0 auto; padding: 72px 28px 24px; }
+.mod-intro .mod-hero-copy { max-width: 860px; }
+.mod-loop { margin: 48px 0 0; }
+.mod-loop-video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; border: 1px solid var(--line); border-radius: 16px; background: #ecf1f8; box-shadow: 0 40px 90px -30px rgba(25,25,25,.28), 0 2px 6px rgba(25,25,25,.06); }
+
+/* Démo complète, sous l'intro */
+.mod-demo-head h2 { margin: 0; font-size: clamp(30px, 3.4vw, 44px); font-weight: 760; line-height: 1.05; letter-spacing: -.045em; }
+
+/* Héros : texte + appareil. Mobile = deux colonnes, desktop = empilé. */
+.mod-hero { max-width: 1180px; margin: 0 auto; padding: 72px 28px 40px; display: grid; gap: 28px 64px; }
+.mod-hero-mobile { grid-template-columns: 1fr 380px; grid-template-areas: "copy player" "chapters player"; align-items: start; }
+.mod-hero-desktop { grid-template-columns: 1fr; grid-template-areas: "copy" "player" "chapters"; }
+.mod-hero-copy { grid-area: copy; }
+.mod-hero-desktop .mod-hero-copy { max-width: 860px; }
+.mod-player { grid-area: player; margin: 0; }
+.mod-chapters-wrap { grid-area: chapters; }
+
+.mod-crumb { display: flex; gap: 8px; margin-bottom: 26px; color: var(--muted); font-size: 13px; font-weight: 600; }
+.mod-crumb a { color: var(--muted); border-bottom: 1px solid var(--line); }
+.mod-crumb a:hover { color: var(--ink); }
+.mod-hero .eyebrow { display: inline-flex; align-items: center; gap: 8px; }
+.mod-hero .eyebrow svg { width: 17px; height: 17px; }
+.mod-hero h1 { margin: 0; font-size: clamp(42px, 5.2vw, 72px); font-weight: 780; line-height: 1; letter-spacing: -.055em; }
+.mod-lede { max-width: 640px; margin: 26px 0 0; color: #4f4f4b; font-size: 19px; line-height: 1.55; letter-spacing: -.015em; }
+.mod-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 30px; }
+.mod-actions .button svg { width: 16px; height: 16px; }
+
+/* Appareils */
+.mod-device { position: relative; overflow: hidden; background: var(--ink); box-shadow: 0 30px 70px rgba(25,25,25,.18), 0 2px 6px rgba(25,25,25,.08); }
+.mod-phone { width: 100%; max-width: 380px; margin: 0 auto; padding: 10px; border-radius: 46px; }
+.mod-phone .mod-video { border-radius: 37px; }
+.mod-browser { border: 1px solid var(--line); border-radius: 14px; background: white; }
+.mod-browser-bar { height: 40px; display: flex; align-items: center; gap: 7px; padding: 0 16px; border-bottom: 1px solid var(--line); background: var(--soft); }
+.mod-browser-bar span { width: 11px; height: 11px; border-radius: 50%; background: #dcdcd8; }
+.mod-browser-bar em { margin: 0 auto; padding: 4px 40px; border-radius: 6px; color: var(--muted); background: white; font-size: 12px; font-style: normal; }
+.mod-screen { position: relative; }
+.mod-video { display: block; width: 100%; height: auto; background: #eef2f7; cursor: pointer; }
+
+.mod-play { position: absolute; left: 50%; top: 50%; width: 76px; height: 76px; display: grid; place-items: center; margin: -38px 0 0 -38px; border-radius: 50%; color: white; background: rgba(25,25,25,.78); box-shadow: 0 10px 30px rgba(0,0,0,.25); transition: opacity .2s, transform .2s; }
+.mod-play svg { width: 30px; height: 30px; margin-left: 4px; fill: currentColor; }
+.mod-play:hover { transform: scale(1.06); }
+.mod-player.is-playing .mod-play { opacity: 0; pointer-events: none; }
+
+.mod-progress { height: 3px; margin: 14px auto 0; border-radius: 3px; background: var(--line); overflow: hidden; }
+.mod-hero-mobile .mod-progress { max-width: 340px; }
+.mod-progress i { display: block; width: 0; height: 100%; background: var(--blue); transition: width .25s linear; }
+.mod-player figcaption { margin-top: 10px; color: #888; font-size: 12px; text-align: center; }
+
+/* Chapitres : cliquer saute au moment dans la vidéo */
+.mod-chapters-title { margin: 0 0 10px; color: var(--muted); font-size: 12px; font-weight: 750; letter-spacing: .08em; text-transform: uppercase; }
+.mod-chapters { display: grid; gap: 4px; margin: 0; padding: 0; list-style: none; }
+.mod-hero-desktop .mod-chapters { grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 8px; }
+.mod-chapters button { width: 100%; display: flex; align-items: baseline; gap: 14px; padding: 12px 14px; border: 1px solid transparent; border-radius: 9px; color: var(--ink); background: transparent; font-size: 15px; font-weight: 600; text-align: left; transition: background .15s, border-color .15s; }
+.mod-hero-desktop .mod-chapters button { height: 100%; flex-direction: column; gap: 4px; border-color: var(--line); }
+.mod-chapters button:hover { background: var(--soft); }
+.mod-chapters button.is-active { border-color: #b9d8f5; background: var(--blue-soft); }
+.mod-chapters time { flex: 0 0 auto; color: var(--blue); font-size: 13px; font-variant-numeric: tabular-nums; font-weight: 750; }
+
+/* Sections */
+.mod-section.section-shell { padding-top: 110px; padding-bottom: 110px; }
+.mod-section .section-heading h2 { font-size: clamp(40px, 4.6vw, 62px); }
+.mod-benefits { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.mod-benefit { padding: 28px; border: 1px solid var(--line); border-radius: 14px; background: white; }
+.mod-benefit span { color: var(--blue); font-size: 13px; font-weight: 800; }
+.mod-benefit h3 { margin: 40px 0 10px; font-size: 22px; line-height: 1.15; letter-spacing: -.03em; }
+.mod-benefit p { margin: 0; color: #5a5a56; line-height: 1.55; }
+
+.mod-features { display: grid; grid-template-columns: .9fr 1.1fr; gap: 60px; align-items: start; border-top: 1px solid var(--line); }
+.mod-features .section-heading { margin: 0; }
+.mod-guide { margin: 26px 0 0; color: var(--muted); font-size: 15px; }
+.mod-guide a { color: var(--ink); font-weight: 700; border-bottom: 1px solid var(--blue); }
+.mod-feature-list { display: grid; margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--ink); }
+.mod-feature-list li { display: flex; align-items: center; gap: 14px; padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 17px; font-weight: 600; }
+.mod-feature-list svg { flex: 0 0 auto; width: 20px; height: 20px; padding: 3px; border-radius: 50%; color: white; background: var(--green); }
+
+.mod-others { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+.mod-other { display: flex; gap: 14px; padding: 20px; border: 1px solid var(--line); border-radius: 12px; background: white; transition: border-color .15s, transform .15s; }
+.mod-other:hover { border-color: var(--ink); transform: translateY(-2px); }
+.mod-other > svg { flex: 0 0 auto; width: 22px; height: 22px; color: var(--blue); }
+.mod-other span { display: grid; gap: 3px; color: #5a5a56; font-size: 13px; line-height: 1.4; }
+.mod-other small { color: var(--muted); font-size: 11px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
+.mod-other b { color: var(--ink); font-size: 16px; }
+
+.mod-cta { display: flex; align-items: center; justify-content: space-between; gap: 40px; padding: 90px max(28px, calc((100vw - 1180px)/2 + 28px)); background: var(--blue-soft); }
+.mod-cta .eyebrow { color: var(--blue-dark); }
+.mod-cta h2 { margin: 0; font-size: clamp(38px, 4.4vw, 60px); font-weight: 780; line-height: 1; letter-spacing: -.055em; }
+.mod-cta div > p:not(.eyebrow) { max-width: 520px; margin: 18px 0 0; color: #4f6577; font-size: 17px; line-height: 1.55; }
+.mod-cta .button { flex: 0 0 auto; }
+
+@media (max-width: 1050px) {
+  .mod-hero-mobile { grid-template-columns: 1fr 320px; gap: 28px 40px; }
+  .mod-benefits { grid-template-columns: 1fr; }
+  .mod-features { grid-template-columns: 1fr; gap: 36px; }
+  .mod-others { grid-template-columns: repeat(2, 1fr); }
+  .mod-cta { flex-direction: column; align-items: flex-start; }
+}
+
+@media (max-width: 760px) {
+  .mod-intro { padding: 40px 16px 8px; }
+  .mod-loop { margin-top: 28px; }
+  .mod-loop-video { border-radius: 10px; }
+  .mod-hero { padding: 40px 16px 24px; }
+  .mod-hero-mobile { grid-template-columns: 1fr; grid-template-areas: "copy" "player" "chapters"; }
+  .mod-phone { max-width: 300px; border-radius: 40px; }
+  .mod-phone .mod-video { border-radius: 31px; }
+  .mod-lede { font-size: 17px; }
+  .mod-browser-bar em { padding: 4px 16px; }
+  .mod-hero-desktop .mod-chapters { grid-template-columns: 1fr; }
+  .mod-section.section-shell { padding: 70px 16px; }
+  .mod-benefit h3 { margin-top: 24px; }
+  .mod-others { grid-template-columns: 1fr; }
+  .mod-cta { padding: 64px 16px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mod-progress i, .mod-other, .mod-play { transition: none; }
+}

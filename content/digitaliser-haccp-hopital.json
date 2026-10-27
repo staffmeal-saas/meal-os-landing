@@ -1,0 +1,114 @@
+{
+  "slug": "digitaliser-haccp-hopital",
+  "title": "Digitaliser l'HACCP en cuisine d'hôpital et d'EHPAD",
+  "description": "Digitaliser le PMS d'une cuisine d'hôpital ou d'EHPAD : relevés horodatés, plats témoins, refroidissement, textures modifiées. Ce que la règle exige.",
+  "kicker": "patients fragiles, preuve exigée",
+  "h1": "Digitaliser l'HACCP en cuisine d'hôpital et d'EHPAD",
+  "lede": "Digitaliser l'HACCP d'une cuisine hospitalière, c'est remplacer les classeurs de relevés par des contrôles saisis sur le poste, au moment où ils sont faits, avec une heure, un auteur et une photo. Le règlement ne l'impose pas, mais il impose de prouver l'application du plan de maîtrise sanitaire. Face à des patients âgés ou immunodéprimés, c'est cette preuve que l'on vous demandera après un incident.",
+  "breadcrumb": [["Hygiène et conformité", "/haccp-restaurant.html"], ["Hôpital et EHPAD", null]],
+  "datePublished": "2026-10-25",
+  "sections": [
+    {"h2": "Pourquoi l'hôpital est un cas à part", "blocks": [
+      {"p": "Les règles d'hygiène d'une cuisine hospitalière sont celles de toute la restauration collective : le règlement (CE) n° 852/2004 et l'arrêté du 21 décembre 2009. Ce qui change, c'est la population servie et donc la gravité d'un écart."},
+      {"p": "Santé publique France le documente pour la listériose : en 2024, l'âge médian des cas était de 76 ans et près de 9 cas sur 10 présentaient au moins une comorbidité. L'incidence atteignait 87 cas par million d'habitants chez les plus de 90 ans, contre 2,3 chez les moins de 60 ans. Les personnes âgées, immunodéprimées et les femmes enceintes sont désignées comme les plus à risque."},
+      {"p": "Autre point relevé par Santé publique France : les consignes d'éviction alimentaire sont difficiles à tenir dans la durée chez les personnes âgées ou immunodéprimées. En EHPAD comme en service de soins, la sécurité repose donc d'abord sur la cuisine, pas sur le choix du mangeur."},
+      {"callout": "En établissement de santé, un relevé oublié n'est pas un défaut administratif. C'est une étape non maîtrisée sur un repas servi à des personnes qui tolèrent mal une contamination."}
+    ]},
+    {"h2": "Ce que la réglementation exige de prouver", "blocks": [
+      {"p": "L'article 5 du règlement 852/2004 impose des procédures fondées sur les principes HACCP et des <strong>documents et dossiers</strong>, adaptés à la nature et à la taille de l'entreprise, « pour prouver l'application effective » des mesures. L'exploitant doit aussi démontrer cette conformité aux autorités et tenir à jour les documents qui décrivent ses procédures."},
+      {"p": "En cuisine hospitalière, les points qui reviennent à chaque contrôle sont fixés par l'annexe IV de l'arrêté du 21 décembre 2009 et précisés par la note de service DGAL/SDSSA/N2011-8117 :"},
+      {"table": {"caption": "Températures et délais en restauration collective (arrêté du 21 décembre 2009, note DGAL N2011-8117)", "head": ["Étape", "Exigence", "Ce qu'il faut pouvoir montrer"], "rows": [
+        ["Refroidissement rapide", "À cœur, de +63 °C à +10 °C en moins de 2 heures, puis stockage entre 0 et +3 °C", "Heure et température en début et en fin de refroidissement"],
+        ["Remise en température", "À cœur, de +10 °C à +63 °C en moins d'1 heure", "Heure et température atteinte avant service"],
+        ["Liaison chaude", "Maintien à +63 °C minimum jusqu'au service", "Relevés de maintien au chaud"],
+        ["Préparations élaborées à l'avance (liaison froide)", "Conservation à +3 °C maximum, DLC au plus tard à J+3 sans étude de durée de vie", "Date de fabrication et DLC sur chaque préparation"],
+        ["Plats servis froids", "Entre 0 et +3 °C, sortis au plus tôt 2 heures avant consommation et sans dépasser +10 °C", "Heure de sortie de l'enceinte froide"],
+        ["Plats témoins", "80 à 100 g par plat, conservés au moins 5 jours entre 0 et +3 °C", "Prélèvement daté et identifié, pour chaque service"]
+      ]}},
+      {"p": "Ces valeurs peuvent être différentes si votre analyse des dangers les justifie. Sans cette justification écrite, ce sont elles qui s'appliquent. Un plat refroidi puis remis en température doit être consommé le jour même : la note DGAL exclut tout second refroidissement, y compris entre le service du midi et celui du soir."},
+      {"p": "La note précise enfin que, si le refroidissement ou la remise en température ne sont pas retenus comme points critiques, ils doivent tout de même faire l'objet d'une surveillance particulière."}
+    ]},
+    {"h2": "Plats témoins : les règles propres à l'hôpital", "blocks": [
+      {"p": "Les plats témoins servent aux services de contrôle en cas de suspicion de toxi-infection alimentaire collective. La note DGAL N2011-8117 consacre plusieurs points aux situations hospitalières :"},
+      {"ul": [
+        "<strong>Menus multiples</strong> : la note cite l'hôpital en exemple et demande un prélèvement systématique de chaque plat, sauf pour les plats à modification mineure comme le sans sel.",
+        "<strong>Textures modifiées</strong> : en office satellite, le mixage, le moulinage, le hachage ou le tranchage sont des manipulations. Ils déclenchent un plat témoin. La remise en température, l'assemblage ou le dressage sont des opérations et n'en déclenchent pas.",
+        "<strong>Moment du prélèvement</strong> : en fin de service, jamais en sortie de cuisson. En office, après la remise en température.",
+        "<strong>Deux services, deux prélèvements</strong> : un plat servi midi et soir fait l'objet de deux prélèvements distincts."
+      ]},
+      {"p": "Sur papier, ces règles se perdent entre la cuisine centrale et les offices d'étage. Une checklist par office et par service, qui demande la photo du prélèvement étiqueté, rend l'oubli visible le jour même."}
+    ]},
+    {"h2": "Excédents dans les offices d'étage", "blocks": [
+      {"p": "Les restes de service sont un autre point où l'hôpital se distingue, parce que les repas sont souvent produits dans une cuisine et distribués dans des offices. La note DGAL N2011-8117 pose deux règles différentes selon le mode de livraison :"},
+      {"ul": [
+        "<strong>Livrés en liaison chaude</strong> : les excédents de l'office sont éliminés en fin de service, car un office n'a pas le matériel pour un refroidissement rapide.",
+        "<strong>Livrés en liaison froide</strong> : ils peuvent être resservis s'ils sont restés à température, -18 °C pour les surgelés et entre 0 et +3 °C pour les réfrigérés.",
+        "<strong>Surplus gardé au chaud en cuisine puis refroidi rapidement</strong> : il devient une préparation élaborée à l'avance, avec une durée de vie de J+3 sans étude de durée de vie."
+      ]},
+      {"p": "Une checklist de fin de service par office, avec la décision prise pour chaque excédent, évite que ces règles reposent sur la mémoire de l'agent présent ce jour-là."}
+    ]},
+    {"h2": "Allergènes et refus d'ingrédients", "blocks": [
+      {"p": "Le décret n° 2015-447 du 17 avril 2015 impose une information écrite sur les allergènes listés à l'annexe II du règlement (UE) n° 1169/2011, pour les denrées servies non préemballées."},
+      {"p": "En restauration collective, cette information n'est pas exigée au moment du repas si un dispositif permet au convive d'indiquer à l'avance qu'il refuse un ou plusieurs de ces ingrédients. Le document qui atteste ce refus doit alors être conservé trois ans après le dernier repas fourni."},
+      {"p": "Le décret prévoit aussi que chaque livraison de denrées à un établissement de restauration soit accompagnée d'un document portant l'information sur les allergènes. Quand une cuisine centrale livre les offices de plusieurs pavillons, ce document fait partie de ce que le contrôleur vérifiera."}
+    ]},
+    {"h2": "Papier ou numérique : ce qui change en cuisine hospitalière", "blocks": [
+      {"table": {"head": ["Point de contrôle", "Classeur papier", "Relevé numérique"], "rows": [
+        ["Heure du relevé", "Écrite à la main, souvent après coup", "Enregistrée automatiquement à la saisie"],
+        ["Auteur", "Initiales, parfois absentes", "Compte nominatif de l'agent"],
+        ["Preuve visuelle", "Aucune", "Photo horodatée du thermomètre ou du prélèvement"],
+        ["Écart de température", "Noté sans suite visible", "Commentaire et action corrective attachés au relevé"],
+        ["Offices d'étage", "Feuilles dispersées dans chaque service", "Mêmes contrôles sur tous les postes, consultables depuis la direction"],
+        ["Recherche en cas de suspicion de TIAC", "Plusieurs classeurs à feuilleter", "Historique filtré par date, poste et plat"]
+      ]}},
+      {"p": "En cas de suspicion de toxi-infection alimentaire collective, définie par au moins deux cas groupés liés à une même origine alimentaire, la note DGAL demande de mettre à disposition les menus, les éléments de traçabilité, les enregistrements de refroidissement et de remise en température et les plats témoins. C'est le moment où la qualité de vos enregistrements se mesure."},
+      {"p": "L'arrêté du 21 décembre 2009 impose aussi au responsable d'établissement de déclarer sans délai ces situations à l'agence régionale de santé et à la direction départementale de la protection des populations. Votre plan de maîtrise sanitaire doit contenir la procédure correspondante, avec les contacts d'urgence."}
+    ]},
+    {"h2": "Ce que Staff Meal prend en charge", "blocks": [
+      {"p": "Staff Meal est une application d'exploitation pour les établissements de 15 personnes et plus. Elle ne gère pas les prescriptions diététiques des patients et ne se branche pas sur des sondes. Elle organise le travail de contrôle de l'équipe et en garde la preuve."},
+      {"ul": [
+        "<strong>Checklists ciblées par poste et par horaire</strong> : refroidissement, remise en température, plats témoins, maintien au chaud. Chaque contrôle demande une mesure, accepte un commentaire et peut exiger une photo horodatée.",
+        "<strong>Manuel opératoire et procédures</strong> avec accusé de lecture : la procédure TIAC, le protocole des textures modifiées ou la gestion des allergènes sont lus et signés par chaque agent concerné. Voir <a href=\"/manuel-operatoire-restaurant.html\">le manuel opératoire</a>.",
+        "<strong>Maintenance</strong> : parc d'équipements, tickets, responsables et historique. Une cellule de refroidissement en panne devient un ticket suivi, pas un mot sur un tableau. Voir <a href=\"/maintenance-equipement-restaurant.html\">la maintenance du matériel</a>.",
+        "<strong>Audits HACCP</strong> : grilles scorées par section, non-conformités qui remontent au directeur, rapport PDF à présenter lors d'un contrôle.",
+        "<strong>Formations</strong> : parcours, quiz, validation par le manager et certificats, ce qui documente l'obligation de formation à l'hygiène prévue par le règlement 852/2004.",
+        "<strong>Communication interne</strong> : un fil d'actualité avec accusé de lecture pour les changements de menu, de fournisseur ou de procédure.",
+        "<strong>Multi-site</strong> : une checklist créée une fois est déployée sur la cuisine centrale et tous les offices, avec un tableau de bord consolidé et quatre rôles.",
+        "<strong>Connecteur Skello</strong> : les contrôles suivent le planning réel des équipes."
+      ]},
+      {"p": "L'application est en bêta privée : 50 établissements sont accompagnés sur place pour la mise en route."}
+    ]},
+    {"h2": "Par où commencer", "blocks": [
+      {"ol": [
+        "Listez les étapes que votre plan de maîtrise sanitaire classe en points critiques ou en points à surveiller : refroidissement, remise en température, plats témoins, réception.",
+        "Pour chacune, fixez le poste, l'horaire, la valeur attendue et l'action corrective si elle n'est pas atteinte.",
+        "Commencez par la cuisine de production, puis étendez aux offices d'étage avec la même grille.",
+        "Après un mois, lancez un audit interne noté par section pour repérer les postes qui dérivent."
+      ]},
+      {"p": "Pour le cadre général, consultez <a href=\"/haccp-restaurant.html\">notre page pilier sur l'HACCP</a> et <a href=\"/checklist-haccp-inspection.html\">la checklist d'inspection</a>. Si votre établissement produit pour plusieurs sites, la page <a href=\"/digitaliser-haccp-cuisine-centrale.html\">cuisine centrale</a> traite l'agrément et le transport."}
+    ]}
+  ],
+  "faq": [
+    {"q": "La digitalisation du PMS est-elle obligatoire à l'hôpital ?", "a": "Non. Le règlement (CE) n° 852/2004 impose des documents et des dossiers qui prouvent l'application du plan de maîtrise sanitaire, sans imposer de support. Le papier reste légal. Le numérique ajoute l'heure, l'auteur et la photo, que le papier ne garantit pas."},
+    {"q": "Combien de temps garder les plats témoins en EHPAD ?", "a": "Au moins cinq jours après la dernière présentation au consommateur, entre 0 et +3 °C, selon l'arrêté du 21 décembre 2009. La note DGAL N2011-8117 fixe la quantité entre 80 et 100 g par plat, prélevés en fin de service."},
+    {"q": "Faut-il un plat témoin pour les textures mixées ?", "a": "En office satellite, oui : la note DGAL N2011-8117 classe le mixage et le moulinage parmi les manipulations qui imposent un plat témoin. La simple remise en température n'en impose pas."},
+    {"q": "Quelle est la règle de refroidissement rapide en cuisine collective ?", "a": "La température à cœur doit passer de +63 °C à +10 °C en moins de deux heures, puis le produit est stocké entre 0 et +3 °C. Des valeurs différentes ne sont admises que si votre analyse des dangers les justifie."},
+    {"q": "Peut-on remettre en température un plat deux fois ?", "a": "Non. Un plat refroidi destiné à être servi chaud est consommé le jour de sa première remise en température, sinon il est éliminé. La note DGAL exclut tout second refroidissement."},
+    {"q": "Qui prévenir en cas de suspicion d'intoxication alimentaire collective ?", "a": "L'arrêté du 21 décembre 2009 impose de déclarer sans délai à l'agence régionale de santé et à la direction départementale de la protection des populations. Les plats témoins, les menus et les enregistrements de température doivent être tenus à disposition."}
+  ],
+  "related": [
+    {"href": "/haccp-restaurant.html", "title": "HACCP : du classeur à la preuve", "desc": "Le pilier hygiène : ce que la digitalisation change dans un plan de maîtrise sanitaire."},
+    {"href": "/digitaliser-haccp-cuisine-centrale.html", "title": "Digitaliser l'HACCP d'une cuisine centrale", "desc": "Agrément sanitaire, liaison froide et chaude, transport vers les satellites."},
+    {"href": "/digitaliser-haccp-restauration-collective.html", "title": "Digitaliser l'HACCP en restauration collective", "desc": "Les règles communes aux cantines, restaurants d'entreprise et établissements de santé."},
+    {"href": "/checklist-haccp-inspection.html", "title": "Inspection HACCP : la checklist", "desc": "Ce que le contrôleur regarde, dans l'ordre."},
+    {"href": "/maintenance-equipement-restaurant.html", "title": "Maintenance du matériel", "desc": "Une cellule de refroidissement en panne est un incident d'hygiène avant d'être une panne."}
+  ],
+  "sources": [
+    {"label": "Arrêté du 21 décembre 2009 relatif aux règles sanitaires applicables aux activités de commerce de détail (Légifrance)", "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000021573483"},
+    {"label": "Note de service DGAL/SDSSA/N2011-8117 du 23 mai 2011, application de l'arrêté du 21 décembre 2009 (ministère de l'Agriculture)", "url": "https://info.agriculture.gouv.fr/boagri/instruction-N2011-8117/telechargement"},
+    {"label": "Règlement (CE) n° 852/2004 relatif à l'hygiène des denrées alimentaires (texte diffusé par la préfecture de l'Ardèche)", "url": "https://www.ardeche.gouv.fr/contenu/telechargement/20587/172385/file/Regl_852_2004_cle03fa7b.pdf"},
+    {"label": "Décret n° 2015-447 du 17 avril 2015 relatif à l'information sur les allergènes (Journal officiel, via FAOLEX)", "url": "https://faolex.fao.org/docs/pdf/fra147954.pdf"},
+    {"label": "Santé publique France, surveillance de la listériose 1999-2024 (septembre 2025)", "url": "https://invs.santepubliquefrance.fr/sites/default/files/rdd/document/bullnat_listeriose_20250919.pdf"}
+  ],
+  "cta_text": "L'application d'exploitation des établissements à partir de 15 employés, cuisines de santé comprises. Cinquante établissements accompagnés sur place."
+}

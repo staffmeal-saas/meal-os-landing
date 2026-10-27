@@ -1,0 +1,119 @@
+{
+  "slug": "logiciel-haccp-restauration-rapide",
+  "title": "Logiciel PMS restauration rapide : HACCP digital en fast food",
+  "description": "Turnover, rush, huiles de friture, réseau franchisé : ce qu'un logiciel PMS doit tenir en restauration rapide, avec les seuils réglementaires sourcés.",
+  "kicker": "le même standard dans chaque point de vente",
+  "h1": "Logiciel PMS pour la restauration rapide : tenir l'HACCP avec une équipe qui tourne",
+  "lede": "Un logiciel PMS pour la restauration rapide doit tenir trois contraintes : être compris dès le premier jour par un équipier qui vient d'arriver, se remplir en quelques gestes pendant le rush, et appliquer la même grille dans chaque point de vente d'un réseau. Le règlement n'impose aucun support numérique, il impose de prouver que les contrôles sont faits. Avec une équipe qui change souvent, c'est le support qui décide si cette preuve existe.",
+  "breadcrumb": [["Hygiène et conformité", "/haccp-restaurant.html"], ["PMS restauration rapide", null]],
+  "datePublished": "2026-10-25",
+  "sections": [
+    {"h2": "Ce que la réglementation impose à un fast-food", "blocks": [
+      {"p": "Le plan de maîtrise sanitaire découle de l'article 5 du règlement (CE) n° 852/2004 : identifier les dangers et les points critiques, fixer des <strong>limites critiques</strong>, les surveiller, prévoir les actions correctives, vérifier le dispositif et tenir <strong>des documents et des dossiers</strong> qui prouvent son application. Le texte ne précise pas le support. Il exige que les procédures soient à jour et que les enregistrements soient conservés pendant une « période appropriée »."},
+      {"p": "Trois obligations pèsent particulièrement sur la restauration rapide :"},
+      {"ul": [
+        "<strong>Une personne formée par établissement.</strong> Le décret n° 2011-731 vise expressément la restauration rapide (code NAF 56.10C). Au moins une personne de l'effectif doit justifier de la formation spécifique de 14 heures, d'un diplôme listé par arrêté, ou de trois ans d'expérience comme gestionnaire ou exploitant dans le secteur alimentaire. L'attestation doit pouvoir être présentée au contrôle.",
+        "<strong>Des instructions pour chaque équipier.</strong> L'annexe II, chapitre XII, du règlement 852/2004 exige que toute personne qui manipule des denrées soit encadrée et dispose d'instructions ou d'une formation adaptées. Un intérimaire présent deux jours est concerné.",
+        "<strong>L'information écrite sur les allergènes.</strong> Le décret n° 2015-447 impose, là où des repas sont consommés sur place, une information écrite, lisible et visible : la liste des allergènes ou la manière d'y accéder librement."
+      ]},
+      {"callout": "Pour les réseaux, l'instruction de la DGAL du 30 octobre 2017 est explicite : dans les entreprises qui gèrent de nombreux sites, « cas notamment des grandes chaînes de restauration rapide », chaque site doit répondre à l'obligation de formation, et la personne qualifiée doit être présente sur le site de manière habituelle."}
+    ]},
+    {"h2": "Le turnover : pourquoi le classeur ne tient pas", "blocks": [
+      {"p": "Un PMS papier suppose une équipe stable qui sait où est le classeur, ce qu'il faut y noter et quand. En restauration rapide, une partie de l'équipe est étudiante, à temps partiel ou en intérim, et le planning change chaque semaine. Le résultat est connu : les relevés se font en fin de service, de mémoire, par la personne qui ferme."},
+      {"p": "Un logiciel PMS change trois choses pour une équipe qui tourne :"},
+      {"ul": [
+        "<strong>La bonne tâche, au bon poste, à la bonne heure.</strong> Avec le connecteur Skello, les checklists se filtrent par poste et par horaire du planning. L'équipier planifié en friteuse à l'ouverture voit le contrôle des bains, pas le nettoyage de la salle.",
+        "<strong>Une procédure lue, et la preuve qu'elle l'a été.</strong> Le manuel opératoire est accessible sur téléphone, avec accusé de lecture. Un manager qui filme le bon geste (changement d'huile, nettoyage de la trancheuse) peut en faire une procédure écrite.",
+        "<strong>Une intégration mesurable.</strong> Les parcours de formation se terminent par un quiz, sont validés par le manager et donnent un certificat. Vous savez qui est prêt à tenir un poste seul."
+      ]},
+      {"p": "Sur l'intégration des nouveaux, voir aussi notre page <a href=\"/turnover-restauration.html\">turnover en restauration</a>."}
+    ]},
+    {"h2": "Les points de contrôle d'un fast-food", "blocks": [
+      {"p": "Le tableau ci-dessous sert de base de checklist. Les moments proposés sont à ajuster dans votre analyse des dangers. Les seuils viennent de l'arrêté du 21 décembre 2009 et, pour les huiles, du décret n° 2008-184."},
+      {"table": {"caption": "Contrôles types en restauration rapide", "head": ["Poste", "Contrôle", "Moment proposé", "Repère réglementaire"], "rows": [
+        ["Réception", "Température des produits livrés", "À chaque livraison", "Viandes hachées : + 2 °C maximum ; volailles : + 4 °C maximum"],
+        ["Stockage froid", "Chambre froide, frigos saladette", "Ouverture et fermeture", "Préparations élaborées à l'avance : + 3 °C maximum"],
+        ["Stockage négatif", "Congélateurs", "Ouverture et fermeture", "Viandes hachées congelées, glaces : - 18 °C"],
+        ["Friteuses", "Taux de composés polaires, aspect de l'huile, changement de bain", "Ouverture, puis selon votre PMS", "Composés polaires : 25 % maximum"],
+        ["Maintien au chaud", "Température des produits en attente", "Pendant le service", "+ 63 °C minimum"],
+        ["Comptoir", "Affichage des allergènes", "Ouverture et à chaque changement de carte", "Information écrite, lisible et visible"],
+        ["Toutes zones", "Plan de nettoyage et de désinfection", "Selon la fréquence de chaque zone", "Défini dans votre PMS"]
+      ]}}
+    ]},
+    {"h2": "Huiles de friture : le seuil et le suivi", "blocks": [
+      {"p": "L'article 8 du décret n° 2008-184 du 26 février 2008 fixe la règle : une huile ou une graisse dont la teneur en <strong>composés polaires dépasse 25 %</strong>, ou en polymères de triglycérides dépasse 14 %, est réputée impropre à la consommation humaine. En friture, c'est la limite qui décide du changement de bain."},
+      {"p": "La fiche de la DREETS Occitanie sur les huiles de friture donne les règles pratiques pour limiter la dégradation :"},
+      {"ul": [
+        "ne pas dépasser 180 °C dans la friteuse ;",
+        "limiter la durée de chauffe ;",
+        "éviter de frire des aliments trop mouillés ou assaisonnés, et éviter de frire différents types d'aliments dans le même bain ;",
+        "contrôler l'aspect : l'huile ne doit pas fumer, ne doit pas mousser au contact des frites, et doit rester limpide et claire ;",
+        "utiliser un testeur pour vérifier la qualité de l'huile."
+      ]},
+      {"p": "La même fiche rappelle que les huiles usagées sont des déchets : elles ne se jettent ni avec les autres déchets ni dans les eaux usées, et sont collectées par des sociétés spécialisées."},
+      {"p": "Dans Staff Meal, le contrôle des friteuses est une checklist avec un champ de mesure : l'équipier saisit la valeur lue sur votre testeur, ajoute une photo si la procédure le demande, et note le changement de bain. Une friteuse dont le thermostat dérive fait l'objet d'un ticket de maintenance avec un responsable. L'application ne mesure pas l'huile elle-même : elle date, attribue et archive la mesure."}
+    ]},
+    {"h2": "La cadence : un contrôle qui se fait pendant le rush", "blocks": [
+      {"p": "Un contrôle qui demande de quitter son poste pour aller chercher un classeur ne se fait pas entre 12 h et 14 h. Un relevé utile en restauration rapide tient en quelques gestes sur le téléphone : la valeur, une photo si besoin, un commentaire en cas d'écart. L'heure et l'auteur sont enregistrés sans saisie."},
+      {"p": "La preuve photo horodatée a un intérêt particulier en fast-food : elle ne peut pas être produite après coup. Un manager de zone qui consulte les relevés d'un point de vente voit ce qui a été fait, à quelle heure, par qui. Il n'a pas besoin d'être sur place pour savoir si l'ouverture s'est faite selon la procédure."},
+      {"p": "Pour garder la cadence, limitez chaque checklist de service aux contrôles du créneau. Une liste de quarante lignes à l'ouverture sera survolée. Cinq contrôles ciblés, envoyés au poste concerné, seront faits."}
+    ]},
+    {"h2": "Réseaux franchisés et multi-sites : le même standard partout", "blocks": [
+      {"p": "Pour un franchiseur ou un directeur d'exploitation, la question n'est pas de savoir si un site tient ses relevés, c'est de savoir lequel dérive et sur quel point. Cela suppose des outils comparables d'un site à l'autre."},
+      {"ul": [
+        "<strong>Créer une fois, déployer partout.</strong> Une checklist, une procédure ou une grille d'audit est conçue une fois et diffusée dans tous les points de vente.",
+        "<strong>Des audits HACCP scorés par section.</strong> Les mêmes grilles, les mêmes barèmes. Les non-conformités remontent au directeur et chaque audit produit un rapport PDF.",
+        "<strong>Un tableau de bord consolidé.</strong> Les scores et les relevés de tous les sites sur un écran.",
+        "<strong>Quatre rôles.</strong> Du propriétaire à l'équipier, chacun voit ce qui le concerne.",
+        "<strong>Un fil d'actualité avec accusé de lecture.</strong> Une consigne du réseau (nouveau produit, changement de procédure) arrive dans chaque site, et vous savez qui l'a lue."
+      ]},
+      {"p": "Staff Meal s'adresse aux établissements de 15 personnes et plus. L'application est en bêta privée, avec 50 établissements accompagnés sur place. Elle ne pose pas de capteurs, n'imprime pas d'étiquettes et ne remplace ni votre caisse ni votre testeur d'huile."}
+    ]},
+    {"h2": "Papier ou logiciel : ce qui change au contrôle", "blocks": [
+      {"p": "Les résultats des contrôles sanitaires sont publiés sur Alim'confiance, de « très satisfaisant » à « à corriger de manière urgente », et restent visibles un an. Pour une enseigne, le niveau d'hygiène d'un seul point de vente est consultable par tous les clients."},
+      {"table": {"head": ["Question", "Classeur papier", "Logiciel PMS"], "rows": [
+        ["Qui a contrôlé l'huile ce matin ?", "Une initiale, parfois", "Un nom, une heure, la valeur saisie"],
+        ["Que s'est-il passé quand le bain a dépassé 25 % ?", "Rarement noté", "Changement de bain et commentaire enregistrés"],
+        ["Le nouvel équipier connaît-il la procédure ?", "Non prouvable", "Accusé de lecture daté, quiz validé"],
+        ["Les cinq sites appliquent-ils la même grille ?", "Chacun son classeur", "Même grille, scores comparables"],
+        ["La friteuse en panne depuis quand ?", "Mémoire du manager", "Ticket avec historique"]
+      ]}}
+    ]},
+    {"h2": "Par où commencer", "blocks": [
+      {"ol": [
+        "Choisissez un site pilote et listez ses postes : réception, stockage, friteuses, maintien au chaud, comptoir, nettoyage.",
+        "Transformez votre PMS en checklists par poste et par horaire, avec les seuils chiffrés.",
+        "Rédigez ou filmez les trois procédures que les nouveaux ratent le plus souvent, et demandez un accusé de lecture.",
+        "Lancez un audit HACCP scoré sur le site pilote, puis déployez la même grille sur les autres sites.",
+        "Comparez les scores par section chaque mois et traitez d'abord le point qui décroche partout."
+      ]},
+      {"p": "Pour la liste de ce que regarde un inspecteur, voir notre <a href=\"/checklist-haccp-inspection.html\">checklist d'inspection HACCP</a>. Pour le cadre général, la page <a href=\"/haccp-restaurant.html\">HACCP en restaurant</a>. Pour faire respecter les mêmes gestes partout, la page <a href=\"/standards-service-restaurant.html\">standards de service</a>."}
+    ]}
+  ],
+  "faq": [
+    {"q": "Quel logiciel PMS pour un fast food ?", "a": "Un outil qui envoie les contrôles au bon poste et à la bonne heure, se remplit sur téléphone en quelques gestes, garde l'auteur, l'heure et la photo de chaque relevé, et applique la même grille dans tous vos points de vente. Staff Meal couvre ces besoins, avec en plus les procédures, la formation et la maintenance."},
+    {"q": "Le PMS digital est-il obligatoire en restauration rapide ?", "a": "Non. Le règlement 852/2004 impose un plan fondé sur les principes HACCP et des enregistrements qui prouvent son application, sans imposer de support. Le papier reste recevable. Le numérique facilite la preuve, surtout avec une équipe qui change souvent."},
+    {"q": "À quel taux de composés polaires faut-il changer l'huile de friture ?", "a": "Le décret n° 2008-184 répute impropre à la consommation une huile dont la teneur en composés polaires dépasse 25 %, ou en polymères de triglycérides dépasse 14 %. Le changement doit intervenir avant ce seuil. Un testeur permet de le vérifier dans la friteuse."},
+    {"q": "Faut-il une formation hygiène dans chaque restaurant d'une franchise ?", "a": "Oui. Selon l'instruction de la DGAL de 2017, dans les entreprises qui gèrent de nombreux sites, chaque site doit répondre à l'obligation, et la personne qualifiée doit y être présente de manière habituelle. Une personne formée au siège ne couvre pas les points de vente."},
+    {"q": "Comment former rapidement les nouveaux équipiers à l'HACCP ?", "a": "En leur donnant, dès le premier service, les procédures de leur poste sur téléphone avec accusé de lecture, puis un parcours court avec quiz validé par le manager. Les checklists filtrées par poste leur montrent uniquement ce qu'ils ont à contrôler."},
+    {"q": "Quelle température pour le maintien au chaud en fast food ?", "a": "L'arrêté du 21 décembre 2009 fixe un minimum de + 63 °C pour les plats remis chauds au consommateur. Ce relevé se fait pendant le service, sur les produits en attente."}
+  ],
+  "related": [
+    {"href": "/haccp-restaurant.html", "title": "HACCP en restaurant : du classeur à la preuve", "desc": "Le cadre général du plan de maîtrise sanitaire et ce que la digitalisation change."},
+    {"href": "/checklist-haccp-inspection.html", "title": "Inspection HACCP : la checklist pour être prêt", "desc": "Ce que l'inspecteur regarde, dans l'ordre."},
+    {"href": "/turnover-restauration.html", "title": "Turnover en restauration", "desc": "Intégrer vite des équipes qui changent souvent."},
+    {"href": "/standards-service-restaurant.html", "title": "Standards de service", "desc": "Faire appliquer les mêmes gestes dans chaque établissement."},
+    {"href": "/maintenance-equipement-restaurant.html", "title": "Maintenance du matériel de restauration", "desc": "Friteuses, chambres froides : suivre les pannes avant qu'elles deviennent des incidents."},
+    {"href": "/digitaliser-haccp-hotel.html", "title": "Digitaliser l'HACCP d'un hôtel", "desc": "Restaurant, buffet, room service, bar et banquets."}
+  ],
+  "sources": [
+    {"label": "Décret n° 2008-184 du 26 février 2008 relatif aux graisses et huiles comestibles, article 8 (Journal officiel, via FAOLEX)", "url": "https://faolex.fao.org/docs/pdf/fra85501.pdf"},
+    {"label": "Les huiles de friture : fiche de la DREETS Occitanie", "url": "https://occitanie.dreets.gouv.fr/sites/occitanie.dreets.gouv.fr/IMG/pdf/huilefriture.pdf"},
+    {"label": "Arrêté du 21 décembre 2009 relatif aux règles sanitaires applicables aux activités de commerce de détail (Légifrance)", "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000021573483"},
+    {"label": "Arrêté du 21 décembre 2009, annexe I : températures de conservation (Légifrance)", "url": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000041864893"},
+    {"label": "Règlement (CE) n° 852/2004 relatif à l'hygiène des denrées alimentaires, article 5 et annexe II (copie publiée par la préfecture de l'Ardèche)", "url": "https://www.ardeche.gouv.fr/contenu/telechargement/20587/172385/file/Regl_852_2004_cle03fa7b.pdf"},
+    {"label": "Instruction technique DGAL/SDSSA/2017-861 : obligation de formation en hygiène alimentaire en restauration commerciale (ministère de l'Agriculture)", "url": "https://info.agriculture.gouv.fr/boagri/instruction-2017-861/telechargement"},
+    {"label": "Décret n° 2015-447 du 17 avril 2015 relatif à l'information sur les allergènes des denrées non préemballées (Journal officiel, via FAOLEX)", "url": "https://faolex.fao.org/docs/pdf/fra147954.pdf"},
+    {"label": "Alim'confiance : les résultats des contrôles sanitaires en ligne (Institut national de la consommation)", "url": "https://www.inc-conso.fr/content/alimconfiance-les-resultats-des-controles-sanitaires-en-ligne"}
+  ]
+}

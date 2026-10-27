@@ -1,0 +1,116 @@
+{
+  "slug": "staffmeal-vs-skello",
+  "title": "Skello et Staff Meal : comparatif, connecteur, alternative",
+  "description": "Skello planifie vos équipes, Staff Meal pilote l'exécution du service. Les deux se connectent : comparatif vérifié et cas où chercher une alternative.",
+  "kicker": "comparatif vérifié",
+  "h1": "Skello et Staff Meal : deux métiers, un connecteur",
+  "lede": "Skello est un logiciel de gestion du personnel : planning, badgeuse, congés et absences, préparation de la paie et administration RH, pour l'hôtellerie-restauration, le commerce et d'autres secteurs. Staff Meal est une application d'exploitation pour les restaurants de 15 personnes et plus, qui lit votre planning Skello pour montrer à chaque équipier les checklists de son poste et de son horaire.",
+  "breadcrumb": [["Ressources", "/resources.html"], ["Staff Meal et Skello", null]],
+  "datePublished": "2026-03-16",
+  "sections": [
+    {"h2": "La réponse courte : ce ne sont pas des concurrents", "blocks": [
+      {"p": "Vous cherchiez sans doute lequel remplace l'autre. Aucun des deux. Skello décide <strong>qui travaille et quand</strong>, et transmet les heures à la paie. Staff Meal décide <strong>ce qui doit être fait pendant ce service</strong>, et vérifie que ça l'a été. Les deux outils se complètent, et Staff Meal dispose d'un connecteur Skello en service depuis août 2026."},
+      {"p": "Cette page détaille ce que fait chaque outil, comment fonctionne le connecteur, et dans quels cas il est raisonnable de chercher une alternative à Skello. Les informations sur Skello sont des informations publiques vérifiées le 25/10/2026 sur son site officiel, listées en bas de page."},
+      {"callout": "Vous gardez Skello. Rien à migrer, rien à réapprendre à vos managers. Staff Meal se branche sur le planning existant."}
+    ]},
+    {"h2": "Ce que fait Skello", "blocks": [
+      {"p": "D'après son site officiel, Skello couvre la gestion du personnel des métiers à horaires variables, des petites entreprises de 2 à 200 salariés jusqu'aux grands comptes :"},
+      {"ul": [
+        "<strong>Planification</strong> : création automatique des plannings, prévisions, gestion des contraintes légales. Skello signale les plannings non conformes avant publication, selon la convention collective et vos règles internes.",
+        "<strong>Suivi des temps</strong> : badgeuse sur tablette et mobile, signature électronique des feuilles d'heures.",
+        "<strong>Congés et absences</strong> : demandes depuis le téléphone, compteurs de congés payés, RTT et repos compensateurs, compensation des heures supplémentaires.",
+        "<strong>Paie</strong> : préparation de la paie et rapport comptable, transmission des heures, absences et majorations aux principaux logiciels de paie, distribution des fiches de paie, service de paie en option.",
+        "<strong>Administration RH</strong> : DPAE, registre du personnel, documents et signatures électroniques, recrutement.",
+        "<strong>Application employés</strong> : planning et solde de congés sur mobile."
+      ]},
+      {"p": "Skello liste parmi ses secteurs l'hôtellerie et la restauration, le commerce et la grande distribution, la pharmacie, la construction, l'industrie, les services et les loisirs. Il s'intègre aux logiciels de paie, de caisse, d'ERP et de SIRH. Sa page d'offres affiche des prix à partir de 79 € par mois pour l'offre Planning Standard, 99 € pour l'offre Duo Standard (planning et badgeuse), avec un essai gratuit de 14 jours et une offre sur mesure au delà de 200 employés."}
+    ]},
+    {"h2": "Ce que fait Staff Meal", "blocks": [
+      {"p": "Staff Meal ne fait ni planning, ni pointage, ni paie. L'application couvre l'exécution et le contrôle du service :"},
+      {"ul": [
+        "<strong>Checklists par poste et par horaire</strong> : ouverture, fermeture, nettoyage, relevés de température, avec mesures et preuve photo horodatée.",
+        "<strong>Audits HACCP scorés</strong> avec rapport PDF (voir notre guide <a href=\"/haccp-restaurant.html\">HACCP en restaurant</a>).",
+        "<strong>Manuel opératoire</strong> avec accusé de lecture.",
+        "<strong>Maintenance</strong> : parc d'équipements, tickets, historique des interventions.",
+        "<strong>Client mystère sans agence</strong> (voir <a href=\"/client-mystere-restaurant.html\">le client mystère en restaurant</a>).",
+        "<strong>Recettes, food cost et plans de production</strong> : fiches techniques, coûts d'achat réservés à la direction, calcul de production qui sort la liste de courses.",
+        "<strong>Formations</strong> : parcours, quiz, certificats.",
+        "<strong>Communication interne</strong> : fil d'actualité avec accusé de lecture, messagerie, annuaire.",
+        "<strong>Multi-site natif</strong>, pour appliquer les mêmes <a href=\"/standards-service-restaurant.html\">standards de service</a> sur chaque établissement."
+      ]},
+      {"p": "Staff Meal est en bêta privée, avec 50 établissements accompagnés sur place, pour des équipes de 15 personnes et plus."}
+    ]},
+    {"h2": "Tableau comparatif : qui fait quoi", "blocks": [
+      {"table": {
+        "caption": "Informations publiques vérifiées le 25/10/2026 sur skello.io. « Non » signifie que l'outil ne prétend pas couvrir ce besoin.",
+        "head": ["Besoin", "Skello", "Staff Meal"],
+        "rows": [
+          ["Construire le planning, contrôles légaux", "Oui, cœur du produit", "Non, lit le planning Skello"],
+          ["Badgeuse, feuilles d'heures", "Oui", "Non"],
+          ["Congés, absences, compteurs", "Oui", "Non"],
+          ["Préparation de la paie, DPAE, documents RH", "Oui", "Non"],
+          ["Checklists HACCP avec mesures et preuve photo", "Non mentionné", "Oui, filtrées par poste et horaire"],
+          ["Manuel opératoire, formations, certificats", "Non mentionné", "Oui"],
+          ["Recettes, food cost, calcul de production", "Non mentionné", "Oui"],
+          ["Audits notés, client mystère", "Non mentionné", "Oui, rapport PDF"],
+          ["Prix public", "À partir de 79 € par mois (Planning Standard)", "Bêta privée, sur candidature"]
+        ]
+      }}
+    ]},
+    {"h2": "Comment fonctionne le connecteur Skello", "blocks": [
+      {"p": "Le connecteur Skello est en service. Il importe vos créneaux Skello plusieurs fois par jour. Les checklists se filtrent alors par poste et par horaire : l'équipier en salle ne voit pas la fermeture cuisine, et celui qui ferme voit la sienne. Vous arrêtez de demander à quinze personnes de faire le tri dans une liste qui ne les concerne pas."},
+      {"ol": [
+        "Le connecteur lit les créneaux et les postes de votre planning Skello.",
+        "Une table de correspondance relie ces postes à ceux de vos checklists.",
+        "Vous validez cette table. Un poste que le connecteur ne reconnaît pas vous est présenté, vous tranchez une fois.",
+        "Le planning se synchronise ensuite plusieurs fois par jour, sans saisie de votre part."
+      ]},
+      {"p": "Deux garde-fous encadrent ce filtrage. La correspondance des postes est validée par vous, pas devinée. Et <strong>sans planning saisi, aucune tâche n'est masquée</strong> : un planning incomplet ne fera jamais disparaître une fermeture HACCP à celui qui ferme. Dans le doute, Staff Meal montre plus, jamais moins."},
+      {"p": "Côté direction, vous gardez une lecture claire : les plannings et les heures restent dans Skello, les preuves d'exécution (relevés, photos, audits) restent dans Staff Meal, et chacun des deux outils reste la référence de son domaine."}
+    ]},
+    {"h2": "Alternative à Skello : pour quels besoins chercher autre chose", "blocks": [
+      {"p": "Une recherche « alternative à Skello » cache souvent un besoin que le planning ne couvre pas. Avant de changer d'outil, identifiez ce qui manque vraiment :"},
+      {"ul": [
+        "<strong>Vos plannings sont bons, mais l'exécution varie</strong> : fermetures oubliées, relevés absents, recettes qui dérivent. Changer de logiciel de planning ne règlera pas ce point. Il vous faut un outil d'exploitation à côté de Skello, comme Staff Meal.",
+        "<strong>Vous voulez suivre vos achats, vos stocks et vos inventaires</strong> : c'est le rôle d'un logiciel de gestion des achats et des stocks, comme Koust (voir <a href=\"/staffmeal-vs-koust.html\">Staff Meal et Koust</a>). Ni Skello ni Staff Meal ne gèrent les stocks ni les commandes fournisseurs.",
+        "<strong>Vous voulez un autre logiciel de planning</strong> : pour un changement de prix, d'ergonomie ou de modèle de paie, comparez avec d'autres éditeurs de planning, par exemple Combo, ex Snapshift (voir <a href=\"/staffmeal-vs-combo.html\">Staff Meal et Combo</a>). Staff Meal n'est pas une alternative à Skello sur ce terrain : il ne fait ni planning ni paie."
+      ]},
+      {"p": "Si votre sujet est le planning lui-même, notre guide sur le <a href=\"/planning-personnel-restaurant.html\">planning du personnel en restaurant</a> rappelle les règles d'un roulement juste, quel que soit l'outil. Et si votre sujet est la marge, commencez par mesurer votre coût matière avec le <a href=\"/food-cost-calculator.html\">calculateur de food cost</a>, puis lisez <a href=\"/rentabilite-restaurant.html\">les coûts qui décident de la rentabilité d'un restaurant</a>."}
+    ]},
+    {"h2": "Skello est le bon choix si, Staff Meal est le bon choix si", "blocks": [
+      {"h3": "Skello"},
+      {"ul": [
+        "vous construisez des plannings sur un tableur et recomptez les heures à la main ;",
+        "vous voulez contrôler les plannings au regard de la convention collective avant publication ;",
+        "vous voulez transmettre automatiquement heures, absences et majorations à la paie."
+      ]},
+      {"h3": "Staff Meal, en plus de Skello"},
+      {"ul": [
+        "vous devez prouver vos contrôles d'hygiène, avec des relevés datés et photographiés ;",
+        "vous voulez que chaque équipier ne voie que les tâches de son poste et de son créneau ;",
+        "vous ouvrez des sites et voulez les mêmes procédures, formations et recettes partout."
+      ]}
+    ]}
+  ],
+  "faq": [
+    {"q": "Skello ou Staff Meal : lequel choisir ?", "a": "Ce n'est pas un choix exclusif. Skello gère le planning, les temps, les absences et la préparation de la paie. Staff Meal gère l'exécution du service : checklists HACCP, audits, manuel opératoire, recettes et formations. Si vous avez Skello, vous le gardez et vous y branchez Staff Meal."},
+    {"q": "Staff Meal est-il compatible avec Skello ?", "a": "Oui. Le connecteur Skello est en service : le planning se synchronise plusieurs fois par jour, vous validez une table de correspondance des postes, et les checklists se filtrent par poste et par horaire. Sans planning saisi, aucune tâche n'est masquée."},
+    {"q": "Quel est le prix de Skello ?", "a": "Selon sa page d'offres consultée le 25/10/2026, Skello affiche des prix à partir de 79 € par mois pour l'offre Planning Standard et 99 € par mois pour l'offre Duo Standard, avec 10 % de réduction en engagement annuel et 14 jours d'essai. Au delà de 200 employés, l'offre est sur mesure. Vérifiez les conditions à jour sur skello.io."},
+    {"q": "Quelle alternative à Skello pour un restaurant ?", "a": "Tout dépend du besoin. Pour un autre logiciel de planning, comparez avec des éditeurs comme Combo. Pour les achats et les stocks, regardez un outil comme Koust. Pour l'exécution du service, Staff Meal vient en complément de Skello, pas à sa place."},
+    {"q": "Faut-il quitter Skello pour utiliser Staff Meal ?", "a": "Non. Vous gardez Skello pour le planning et la paie. Staff Meal lit le planning pour filtrer les checklists, et fonctionne aussi sans planning connecté."},
+    {"q": "Staff Meal fait-il du planning ?", "a": "Non. Staff Meal ne fait ni planning, ni pointage, ni paie. Il s'appuie sur votre planning Skello quand il est connecté, et montre toutes les tâches de l'établissement quand il ne l'est pas."}
+  ],
+  "related": [
+    {"href": "/staffmeal-vs-combo.html", "title": "Staff Meal et Combo (ex Snapshift)", "desc": "Un autre logiciel de planning et de paie, comparé à l'exploitation du service."},
+    {"href": "/staffmeal-vs-koust.html", "title": "Staff Meal et Koust", "desc": "Achats, stocks et inventaires, ou exécution du service : ce que chaque outil couvre."},
+    {"href": "/planning-personnel-restaurant.html", "title": "Planning de restaurant", "desc": "Les règles d'un roulement juste."},
+    {"href": "/haccp-restaurant.html", "title": "Logiciel HACCP pour restaurant", "desc": "Digitaliser son plan de maîtrise sanitaire."}
+  ],
+  "sources": [
+    {"label": "Skello : site officiel, fonctionnalités, secteurs et intégrations (skello.io, consulté le 25/10/2026)", "url": "https://www.skello.io/"},
+    {"label": "Skello : page des offres et tarifs (consultée le 25/10/2026)", "url": "https://www.skello.io/pricing"},
+    {"label": "Skello : intégrations et partenaires", "url": "https://www.skello.io/fonctionnalites/integrations-et-partenaires"}
+  ],
+  "cta_kicker": "gardez skello, branchez l'exploitation",
+  "cta_text": "Staff Meal s'adresse aux restaurants de 15 personnes et plus. Bêta privée, 50 établissements accompagnés sur place."
+}

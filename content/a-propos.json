@@ -1,0 +1,41 @@
+{
+  "slug": "a-propos",
+  "title": "À propos de Staff Meal : l'application des restaurateurs",
+  "description": "Staff Meal est une application d'exploitation construite avec des restaurateurs, pour que chaque site tienne le même niveau de service, même sans vous.",
+  "kicker": "pour les restaurateurs, par des restaurateurs",
+  "h1": "Pourquoi Staff Meal existe",
+  "lede": "Staff Meal est une application d'exploitation pour les restaurants de 15 personnes et plus et les réseaux multi-sites. Elle sert une seule chose : que les standards d'une maison tiennent à chaque service, sur chaque site, y compris quand la direction n'est pas là.",
+  "breadcrumb": [["À propos", null]],
+  "datePublished": "2026-10-25",
+  "sections": [
+    {"h2": "Le problème que nous avons vu de près", "blocks": [
+      {"p": "Après des années sur le terrain, nous avons vu les mêmes patrons s'épuiser sur les mêmes problèmes : des relevés d'hygiène qui dorment dans un classeur, des consignes perdues dans des groupes de messagerie, des standards qui partent avec le manager qui s'en va, un coût matière qu'on découvre une fois par an."},
+      {"p": "Aucun de ces problèmes n'est un manque de volonté. Ce sont des problèmes d'outil : l'information n'arrive pas au bon poste, au bon moment, et rien ne prouve qu'une tâche a été faite. C'est ce que Staff Meal corrige."}
+    ]},
+    {"h2": "Ce que fait l'application", "blocks": [
+      {"p": "L'équipe ouvre une seule application sur son téléphone et voit uniquement ce qui concerne son poste et son horaire. La direction lit un seul tableau de bord, établissement par établissement ou pour tout le réseau."},
+      {"ul": [
+        "<strong>Opérations</strong> : checklists par poste et par horaire avec preuve photo horodatée, manuel opératoire avec accusé de lecture, maintenance des équipements.",
+        "<strong>Qualité</strong> : audits HACCP notés, visites client mystère sans agence, fiches techniques, food cost et plans de production.",
+        "<strong>Équipe</strong> : formations avec quiz et certificats, fil d'actualité avec accusé de lecture, rôles du propriétaire à l'équipier, pilotage multi-site."
+      ]},
+      {"p": "Le détail de chaque module est sur la <a href=\"/#modules\" class=\"underline hover:text-accent\">page d'accueil</a>, et les sujets de fond dans les guides : <a href=\"/haccp-restaurant.html\" class=\"underline hover:text-accent\">hygiène et HACCP</a>, <a href=\"/rentabilite-restaurant.html\" class=\"underline hover:text-accent\">coûts et rentabilité</a>, <a href=\"/standards-service-restaurant.html\" class=\"underline hover:text-accent\">équipe et standards</a>, <a href=\"/client-mystere-restaurant.html\" class=\"underline hover:text-accent\">client mystère</a>."}
+    ]},
+    {"h2": "Notre façon de travailler", "blocks": [
+      {"p": "<strong>Sur place, pas seulement en ligne.</strong> Pendant la bêta privée, nous accompagnons cinquante établissements. Nous paramétrons le compte, reprenons les données utiles et formons l'équipe pendant un service complet. Un outil que l'équipe n'adopte pas ne sert à rien, quelle que soit sa liste de fonctions."},
+      {"p": "<strong>Franchement, y compris quand ce n'est pas pour vous.</strong> En dessous d'une quinzaine d'employés, vous voyez encore tout le monde tous les jours, et un outil comme le nôtre vous coûtera plus de temps qu'il ne vous en rendra. Nous le disons avant, pas après. Nos calculateurs restent gratuits et sans inscription pour tous."},
+      {"p": "<strong>Ce qui existe, pas ce qui est promis.</strong> Le connecteur en service aujourd'hui est Skello, pour le planning. Les caisses et les plateformes de livraison sont à l'étude et ne sont pas disponibles. Sur ce site, ce qui est décrit est dans l'application."},
+      {"p": "<strong>Construit avec les établissements pionniers.</strong> Les cinquante établissements de la bêta participent à la feuille de route. Ce qui se construit ensuite part de leur réalité de terrain."}
+    ]},
+    {"h2": "Pour qui", "blocks": [
+      {"p": "Les restaurants de 15 personnes et plus, les groupes et les réseaux multi-sites, franchisés ou non, ainsi que les établissements qui ont plusieurs points de restauration sous un même toit. C'est à partir de là qu'on ne peut plus être partout, et que les écarts entre services ou entre sites coûtent de l'argent."}
+    ]},
+    {"h2": "Nous contacter", "blocks": [
+      {"p": "La meilleure porte d'entrée est la <a href=\"/#demo\" class=\"underline hover:text-accent\">candidature à la bêta privée</a> : deux minutes, nous vous rappelons pour comprendre votre exploitation et vous disons franchement si Staff Meal est fait pour vous."}
+    ]}
+  ],
+  "related": [
+    {"href": "/resources.html", "title": "Outils gratuits et guides", "desc": "Food cost, prime cost, gaspillage, menu engineering : sans inscription."},
+    {"href": "/evenements.html", "title": "Événements", "desc": "Rencontrer d'autres restaurateurs et travailler sur les opérations."}
+  ]
+}

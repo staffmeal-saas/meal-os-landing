@@ -1,0 +1,104 @@
+{
+  "slug": "staffmeal-vs-koust",
+  "title": "Koust ou Staff Meal : achats, food cost et exploitation",
+  "description": "Koust gère achats, stocks, inventaires et marges reliés à la caisse. Staff Meal gère l'exécution du service et les recettes. Comparatif vérifié et loyal.",
+  "kicker": "comparatif vérifié",
+  "h1": "Koust ou Staff Meal : la marge par les achats, ou par l'exécution",
+  "lede": "Koust est un logiciel de gestion des achats, des stocks et des marges pour les restaurants indépendants, les chaînes, les franchises et l'hôtellerie : commandes fournisseurs, inventaires, fiches techniques, écarts théoriques et réels reliés à la caisse. Staff Meal est une application d'exploitation pour les restaurants de 15 personnes et plus : checklists par poste avec preuve photo, audits HACCP, manuel opératoire, formations, ainsi que recettes, food cost et plans de production.",
+  "breadcrumb": [["Ressources", "/resources.html"], ["Staff Meal et Koust", null]],
+  "datePublished": "2026-03-16",
+  "sections": [
+    {"h2": "La réponse courte", "blocks": [
+      {"p": "Les deux outils parlent de food cost, mais pas depuis le même point de départ. Koust part des <strong>achats et des stocks</strong> : ce que vous commandez, recevez, stockez et vendez, pour calculer votre marge réelle. Staff Meal part de <strong>l'exécution en cuisine et en salle</strong> : que chaque équipier applique la bonne recette, la bonne procédure et les bons contrôles d'hygiène, sur chaque site."},
+      {"p": "Si votre priorité est de savoir où part la marchandise entre la facture fournisseur et le ticket de caisse, Koust est conçu pour cela. Si votre priorité est que les fiches techniques soient réellement suivies et que les contrôles soient prouvés, c'est le terrain de Staff Meal. Les informations sur Koust sont des informations publiques vérifiées le 25/10/2026 sur son site officiel, listées en bas de page."},
+      {"callout": "Staff Meal ne gère ni les stocks, ni les inventaires, ni les commandes fournisseurs. Si c'est votre besoin principal, un outil comme Koust y répond directement."}
+    ]},
+    {"h2": "Ce que fait Koust", "blocks": [
+      {"p": "Koust, société créée en 2016 à Brest, revendique plus de 1 000 clients. Son site officiel présente les fonctions suivantes :"},
+      {"ul": [
+        "<strong>Achats</strong> : commandes fournisseurs, réception des livraisons, factures et bons de livraison scannés, rapprochement bon de livraison et facture.",
+        "<strong>Recettes et fiches techniques</strong> : coût matière par plat, sous-recettes, allergènes, fiches techniques partagées dans le réseau.",
+        "<strong>Stocks et inventaires</strong> : suivi des stocks, inventaires sur mobile, pertes et gaspillage, transferts entre sites.",
+        "<strong>Analyse et pilotage</strong> : analyse des ventes, menu engineering, écarts théoriques et réels, marge au jour le jour, tableau de bord.",
+        "<strong>Production</strong> : planification de production, gestion de cuisine centrale.",
+        "<strong>Hygiène et traçabilité</strong>, en option : plan de nettoyage, relevés de température, étiquettes DLC.",
+        "<strong>Multi-sites</strong> : tableaux de bord consolidés, comparaison entre sites, historique des prix d'achat du réseau, rôles par site."
+      ]},
+      {"p": "Koust ne remplace pas la caisse : il s'y connecte pour récupérer les ventes. Le site annonce plus de 40 partenaires connectés (caisses, plateformes de livraison, comptabilité et facturation électronique), une API publique et une application mobile. Koust s'adresse aux restaurants indépendants, aux chaînes et franchises, aux hôtels, campings et résidences, ainsi qu'aux bars et snacks."}
+    ]},
+    {"h2": "Ce que fait Staff Meal", "blocks": [
+      {"p": "Staff Meal couvre l'exécution du service et sa vérification, avec un module recettes qui recoupe en partie celui de Koust :"},
+      {"ul": [
+        "<strong>Recettes, food cost et plans de production</strong> : fiches techniques, coûts d'achat visibles par la direction seulement, calcul de production qui sort la liste de courses.",
+        "<strong>Checklists par poste et par horaire</strong> avec mesures et preuve photo horodatée : ouverture, fermeture, relevés de température.",
+        "<strong>Audits HACCP scorés</strong> avec rapport PDF (voir notre guide <a href=\"/haccp-restaurant.html\">HACCP en restaurant</a>).",
+        "<strong>Manuel opératoire</strong> avec accusé de lecture, et <strong>formations</strong> avec parcours, quiz et certificats.",
+        "<strong>Client mystère sans agence</strong> (voir <a href=\"/client-mystere-restaurant.html\">le client mystère en restaurant</a>).",
+        "<strong>Maintenance</strong> : parc d'équipements, tickets, historique.",
+        "<strong>Communication interne</strong> : fil d'actualité avec accusé de lecture, messagerie, annuaire.",
+        "<strong>Multi-site natif</strong> et connecteur Skello en service pour filtrer les checklists selon le planning."
+      ]},
+      {"p": "Les connecteurs de caisse (Zelty, L'Addition, Lightspeed) et de plateformes de livraison sont à l'étude chez Staff Meal et ne sont pas disponibles. Staff Meal ne calcule donc pas aujourd'hui d'écart entre consommation théorique et consommation réelle à partir des ventes. Staff Meal est en bêta privée, avec 50 établissements accompagnés sur place, pour des équipes de 15 personnes et plus."}
+    ]},
+    {"h2": "Tableau comparatif Koust et Staff Meal", "blocks": [
+      {"table": {
+        "caption": "Informations publiques vérifiées le 25/10/2026 sur koust.net. « Non » signifie que l'outil ne prétend pas couvrir ce besoin.",
+        "head": ["Besoin", "Koust", "Staff Meal"],
+        "rows": [
+          ["Commandes fournisseurs, réception, factures", "Oui", "Non"],
+          ["Stocks, inventaires, transferts", "Oui", "Non"],
+          ["Connexion caisse, écarts théoriques et réels", "Oui", "Non (caisses à l'étude)"],
+          ["Fiches techniques et coût matière", "Oui", "Oui, coûts réservés à la direction"],
+          ["Planification de production", "Oui (offre Professionnel et plus)", "Oui, avec liste de courses"],
+          ["Hygiène : températures, nettoyage", "Oui, en option (plan de nettoyage, températures, DLC)", "Oui : checklists par poste et horaire, preuve photo, audits HACCP scorés"],
+          ["Manuel opératoire, formations, certificats", "Non mentionné", "Oui"],
+          ["Client mystère, maintenance, communication interne", "Non mentionné", "Oui"],
+          ["Prix public", "Par site et par mois en engagement annuel : Essentiel 80 €, Professionnel 130 €, Entreprise 180 € ; option hygiène 38 €", "Bêta privée, sur candidature"]
+        ]
+      }}
+    ]},
+    {"h2": "Où les deux outils se recoupent", "blocks": [
+      {"p": "Le recouvrement porte sur deux sujets, et il est utile de le connaître avant de choisir."},
+      {"h3": "Les fiches techniques"},
+      {"p": "Les deux outils permettent de rédiger des fiches techniques et d'en calculer le coût matière. Koust relie ce coût aux prix d'achat réels issus des factures et aux ventes issues de la caisse, ce qui lui permet de calculer des écarts. Staff Meal relie la fiche technique à l'exécution : la recette est consultable par l'équipe sans exposer les coûts d'achat, qui restent réservés à la direction, et le calcul de production sort la liste de courses du jour. Pour estimer votre coût matière avant tout logiciel, le <a href=\"/food-cost-calculator.html\">calculateur de food cost</a> suffit."},
+      {"h3": "L'hygiène"},
+      {"p": "Koust propose en option un module hygiène et traçabilité (plan de nettoyage, relevés de température, étiquettes DLC). Staff Meal traite l'hygiène comme une partie de l'exploitation : checklists filtrées par poste et par horaire, mesures et photo horodatée à chaque relevé, audits HACCP notés avec rapport PDF, et lien avec le manuel opératoire et les formations. Le choix dépend de votre besoin : une traçabilité rattachée aux produits, ou un contrôle des gestes de l'équipe service par service."}
+    ]},
+    {"h2": "Koust ou Staff Meal : lequel choisir selon votre besoin", "blocks": [
+      {"h3": "Koust est le bon choix si"},
+      {"ul": [
+        "vous voulez suivre vos achats, vos stocks et vos inventaires, et rapprocher factures et bons de livraison ;",
+        "vous voulez mesurer l'écart entre la consommation théorique de vos ventes et la consommation réelle ;",
+        "vous gérez une cuisine centrale ou des transferts de marchandise entre sites."
+      ]},
+      {"h3": "Staff Meal est le bon choix si"},
+      {"ul": [
+        "vos fiches techniques existent, mais ne sont pas appliquées de la même façon d'un service à l'autre ;",
+        "vous devez prouver vos contrôles HACCP avec des relevés datés et photographiés ;",
+        "vous voulez former vos équipes et appliquer les mêmes <a href=\"/standards-service-restaurant.html\">standards de service</a> sur tous vos sites ;",
+        "votre planning est dans Skello et vous voulez que chacun voie les tâches de son poste."
+      ]},
+      {"p": "Les deux peuvent coexister : Koust pour la chaîne achats, stocks et ventes, Staff Meal pour ce qui se passe pendant le service. Dans ce cas, vous choisirez un seul outil de référence pour les fiches techniques, pour éviter de les maintenir deux fois. Pour situer le food cost parmi vos autres postes de coûts, lisez <a href=\"/rentabilite-restaurant.html\">les coûts qui décident de la rentabilité d'un restaurant</a>."}
+    ]}
+  ],
+  "faq": [
+    {"q": "Koust ou Staff Meal : lequel choisir ?", "a": "Koust si votre besoin principal est la gestion des achats, des stocks, des inventaires et des marges reliées à la caisse. Staff Meal si votre besoin est l'exécution du service : checklists HACCP avec preuve photo, audits, manuel opératoire, formations, recettes et plans de production."},
+    {"q": "Quel est le prix de Koust ?", "a": "Selon sa page tarifs consultée le 25/10/2026, Koust affiche par site et par mois, en engagement annuel, l'offre Essentiel à 80 €, Professionnel à 130 € et Entreprise à 180 €, et respectivement 90 €, 150 € et 210 € en engagement mensuel. L'option hygiène et traçabilité est à 38 € par mois. Vérifiez les conditions à jour sur koust.net."},
+    {"q": "Staff Meal gère-t-il les stocks comme Koust ?", "a": "Non. Staff Meal ne gère ni les stocks, ni les inventaires, ni les commandes fournisseurs. Son module recettes couvre les fiches techniques, le food cost et le calcul de production qui sort la liste de courses."},
+    {"q": "Koust est-il compatible avec Staff Meal ?", "a": "Il n'existe pas de connecteur entre Koust et Staff Meal. Les deux outils peuvent être utilisés en parallèle ; dans ce cas, gardez les fiches techniques de référence dans un seul des deux."},
+    {"q": "Koust se connecte-t-il à ma caisse ?", "a": "Selon son site, Koust se connecte aux logiciels de caisse pour récupérer les ventes et annonce plus de 40 partenaires connectés. Vérifiez la compatibilité de votre caisse auprès de Koust. Chez Staff Meal, les connecteurs de caisse sont à l'étude et pas encore disponibles."},
+    {"q": "Quelle alternative à Koust pour un restaurant ?", "a": "Pour la gestion des achats et des stocks, comparez avec d'autres logiciels de gestion des stocks pour la restauration. Staff Meal n'est pas une alternative à Koust sur ce terrain. Il le devient si votre besoin réel est l'application des fiches techniques et le contrôle de l'hygiène en service."}
+  ],
+  "related": [
+    {"href": "/staffmeal-vs-skello.html", "title": "Staff Meal et Skello", "desc": "Planning et exploitation : comment le connecteur Skello filtre les checklists."},
+    {"href": "/staffmeal-vs-combo.html", "title": "Staff Meal et Combo (ex Snapshift)", "desc": "Planning, temps et paie, comparés à l'exploitation du service."},
+    {"href": "/food-cost-calculator.html", "title": "Calculateur de food cost", "desc": "Mesurer le coût matière de vos plats en quelques minutes."},
+    {"href": "/rentabilite-restaurant.html", "title": "Rentabilité d'un restaurant", "desc": "Les coûts qui décident de votre marge."}
+  ],
+  "sources": [
+    {"label": "Koust : site officiel, fonctionnalités, cible et intégrations (koust.net, consulté le 25/10/2026)", "url": "https://www.koust.net/"},
+    {"label": "Koust : page tarifs (consultée le 25/10/2026)", "url": "https://www.koust.net/tarifs"}
+  ],
+  "cta_kicker": "la recette écrite, puis la recette suivie",
+  "cta_text": "Staff Meal s'adresse aux restaurants de 15 personnes et plus. Bêta privée, 50 établissements accompagnés sur place."
+}

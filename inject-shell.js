@@ -34,14 +34,14 @@ const cssInjection = `
 const htmlInjection = `
     <!-- Mobile Header -->
     <div class="lg:hidden fixed top-0 w-full left-0 bg-paper border-b border-cream-dark px-4 py-3 flex items-center justify-between z-40 no-print" style="box-shadow: 0 14px 40px rgba(25,25,25,.08);">
-        <a href="boite-a-outils-dashboard.html" class="flex items-center gap-2.5"><img src="assets/brand/mascot.png" alt="" width="44" height="44" class="brand-mark w-9 h-9"><span class="wordmark text-lg">Staff Meal</span></a>
+        <a href="boite-a-outils-dashboard.html" class="flex items-center gap-2.5"><img class="brand-word" src="/assets/brand/wordmark.svg" alt="Staff Meal" width="136" height="24"></a>
         <button id="menuToggle" class="p-2"><i data-lucide="menu"></i></button>
     </div>
 
     <!-- Sidebar -->
     <aside class="sidebar bg-background no-print" id="sidebar">
         <div class="flex items-center justify-between mb-10">
-            <a href="boite-a-outils-dashboard.html" class="flex items-center gap-2.5"><img src="assets/brand/mascot.png" alt="" width="44" height="44" class="brand-mark w-11 h-11"><span class="wordmark text-xl">Staff Meal</span></a>
+            <a href="boite-a-outils-dashboard.html" class="flex items-center gap-2.5"><img class="brand-word brand-word-lg" src="/assets/brand/wordmark.svg" alt="Staff Meal" width="136" height="24"></a>
             <button id="closeMenu" class="lg:hidden"><i data-lucide="x"></i></button>
         </div>
 

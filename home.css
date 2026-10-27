@@ -561,3 +561,100 @@ img, svg { display: block; max-width: 100%; }
   .phone-window { transform: none; }
   .demo-label { margin-top: 18px; text-align: left; padding-right: 225px; }
 }
+
+/* ---------------------------------------------------------------
+   Lot Kitchen (27/10/2026) : chiffres, piliers en onglets avec les
+   boucles de l'app, grille des 9 modules, candidature en 3 étapes,
+   CTA collant mobile.
+   --------------------------------------------------------------- */
+
+/* Chiffres qui comptent : faits vérifiables, sources en dessous */
+.facts { padding-top: 40px; padding-bottom: 40px; }
+.facts-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.facts-grid div { padding: 28px 24px 24px; border: 1px solid var(--line); border-radius: 14px; background: white; text-align: center; }
+.facts-grid b { display: block; font-size: clamp(48px, 6vw, 72px); font-weight: 780; line-height: 1; letter-spacing: -.06em; font-variant-numeric: tabular-nums; }
+.facts-grid b small { font-size: .45em; letter-spacing: -.02em; color: var(--muted); }
+.facts-grid span { display: block; margin-top: 12px; color: var(--muted); font-size: 15px; line-height: 1.4; }
+.facts-src { margin: 14px 0 0; color: #999; font-size: 12px; text-align: center; }
+
+/* Piliers en onglets : l'onglet avance à la fin de sa boucle */
+.pillar-tabs { display: grid; grid-template-columns: 300px minmax(0, 1fr); gap: 36px; align-items: start; margin-top: 48px; }
+.pt-list { display: grid; gap: 6px; }
+.pt-list button { position: relative; display: block; width: 100%; padding: 14px 16px 18px; border: 1px solid transparent; border-radius: 10px; background: transparent; color: var(--muted); font: inherit; font-size: 18px; font-weight: 700; letter-spacing: -.02em; text-align: left; cursor: pointer; transition: background .2s, color .2s, border-color .2s; }
+.pt-list button:hover { color: var(--ink); background: var(--soft); }
+.pt-list button[aria-selected="true"] { color: var(--ink); background: white; border-color: var(--line); box-shadow: 0 1px 2px rgba(25,25,25,.06); }
+.pt-list button:focus-visible { outline: 3px solid rgba(35,131,226,.3); outline-offset: 2px; }
+.pt-list button i { position: absolute; left: 16px; right: 16px; bottom: 8px; height: 3px; border-radius: 2px; background: var(--line); overflow: hidden; }
+.pt-list button u { position: absolute; inset: 0; background: var(--blue); transform: scaleX(0); transform-origin: left; text-decoration: none; }
+.pt-panel { margin-top: 22px; padding: 0 4px; }
+.pt-promise { margin: 0; font-size: 24px; font-weight: 760; line-height: 1.15; letter-spacing: -.035em; }
+.pt-what { margin: 12px 0 0; color: var(--muted); font-size: 15px; line-height: 1.5; }
+.pt-link { display: inline-flex; gap: 6px; margin-top: 16px; color: var(--blue); font-size: 15px; font-weight: 700; text-decoration: none; }
+.pt-link:hover { text-decoration: underline; }
+.pt-frame { position: relative; aspect-ratio: 16 / 10; overflow: hidden; border: 1px solid var(--line); border-radius: 16px; background: #ecf1f8; box-shadow: 0 40px 90px -30px rgba(25,25,25,.28), 0 2px 6px rgba(25,25,25,.06); }
+.pt-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity .45s ease; }
+.pt-video.on { opacity: 1; }
+
+/* Grille des 9 modules : la tuile se soulève, son pictogramme saute */
+.mod-tiles { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-top: 56px; }
+.mod-tile { display: grid; grid-template-columns: auto 1fr; gap: 4px 14px; align-items: start; padding: 18px 18px 20px; border: 1px solid var(--line); border-radius: 12px; background: white; color: var(--ink); text-decoration: none; box-shadow: 0 1px 2px rgba(25,25,25,.04); transition: transform .25s cubic-bezier(.2,.8,.2,1), border-color .2s, box-shadow .25s; }
+.mod-tile svg { grid-row: span 2; width: 22px; height: 22px; margin-top: 2px; color: var(--muted); transition: color .2s; }
+.mod-tile b { font-size: 16px; font-weight: 720; letter-spacing: -.02em; }
+.mod-tile span { color: var(--muted); font-size: 14px; line-height: 1.45; }
+.mod-tile:hover, .mod-tile:focus-visible { transform: translateY(-4px); border-color: #b9d8f5; box-shadow: 0 12px 24px rgba(35,131,226,.12); }
+.mod-tile:hover svg, .mod-tile:focus-visible svg { color: var(--blue); animation: tile-hop .5s cubic-bezier(.2,.8,.2,1); }
+@keyframes tile-hop { 40% { transform: translateY(-4px) rotate(-6deg); } }
+
+/* Candidature en 3 étapes (sans JS : tout reste visible) */
+.step-head, .step-bar, [data-step-back] { display: none; }
+.apply-form.is-steps .step-head { display: flex; justify-content: space-between; align-items: baseline; color: #888; font-size: 13px; }
+.apply-form.is-steps .step-head b { color: var(--ink); font-size: 18px; font-weight: 760; letter-spacing: -.02em; }
+.apply-form.is-steps .step-bar { display: flex; gap: 5px; }
+.step-bar i { flex: 1; height: 4px; border-radius: 2px; background: #e3e3df; transition: background .3s; }
+.step-bar i.on { background: var(--blue); }
+.step { display: grid; gap: 15px; min-width: 0; margin: 0; padding: 0; border: 0; }
+.apply-form.is-steps .step { min-height: 92px; align-content: start; }
+.step[hidden] { display: none; }
+.step-nav { display: flex; gap: 10px; }
+.apply-form .step-nav .button { width: auto; flex: 1 1 auto; min-width: 0; margin-top: 4px; }
+.apply-form.is-steps .step-nav [data-step-back]:not([hidden]) { display: inline-flex; flex: 0 0 auto; padding: 0 16px; }
+
+/* CTA collant mobile : monte après le hero, disparaît sur le formulaire */
+.sticky-cta { display: none; }
+@media (max-width: 760px) {
+  .sticky-cta { position: fixed; left: max(12px, env(safe-area-inset-left, 0px)); right: max(12px, env(safe-area-inset-right, 0px)); bottom: calc(12px + env(safe-area-inset-bottom, 0px)); z-index: 40; display: flex; align-items: center; justify-content: center; min-height: 52px; border-radius: 10px; color: white; background: var(--ink); font-size: 16px; font-weight: 720; text-decoration: none; box-shadow: 0 12px 30px rgba(25,25,25,.28); transform: translateY(calc(100% + 24px)); transition: transform .35s cubic-bezier(.2,.8,.2,1); }
+  .sticky-cta.show { transform: none; }
+  .facts-grid { grid-template-columns: 1fr; gap: 10px; }
+  .facts-grid div { display: flex; align-items: baseline; gap: 14px; padding: 18px 20px; text-align: left; }
+  .facts-grid b { font-size: 44px; flex: 0 0 72px; }
+  .facts-grid span { margin: 0; }
+  .pillar-tabs { grid-template-columns: 1fr; gap: 18px; margin-top: 32px; }
+  .pt-list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .pt-list button { padding: 10px 8px 16px; font-size: 15px; text-align: center; }
+  .pt-list button i { left: 10px; right: 10px; }
+  .pt-promise { font-size: 20px; }
+  .pt-frame { border-radius: 10px; }
+  .mod-tiles { grid-template-columns: 1fr; gap: 8px; margin-top: 36px; }
+}
+@media (min-width: 761px) and (max-width: 1050px) {
+  .pillar-tabs { grid-template-columns: 1fr; }
+  .pt-list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .mod-tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .mod-tile, .sticky-cta, .pt-video { transition: none; }
+  .mod-tile:hover svg { animation: none; }
+}
+
+/* Icônes de la maquette du hero : les mêmes que l'app (Lucide) */
+.product-stage .ic { display: inline-block; width: 13px; height: 13px; flex: 0 0 auto; vertical-align: -2px; }
+.dashboard-sidebar nav i { display: inline-grid; place-items: center; }
+.dashboard-sidebar nav .ic { width: 14px; height: 14px; }
+.dash-head button .ic { width: 14px; height: 14px; vertical-align: middle; }
+.alert > i .ic, .activity > i .ic { width: 12px; height: 12px; }
+.live .ic { width: 11px; height: 11px; margin-right: 2px; }
+.task-icon .ic { width: 14px; height: 14px; }
+.task-card strong .ic { width: 12px; height: 12px; color: #999; }
+.phone-add .ic { width: 9px; height: 9px; vertical-align: -1px; }
+.phone-nav .ic { width: 15px; height: 15px; }
+.workspace > span .ic { width: 12px; height: 12px; color: #999; }

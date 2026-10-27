@@ -1,0 +1,110 @@
+{
+  "slug": "staffmeal-vs-combo",
+  "title": "Combo (ex Snapshift) ou Staff Meal : le comparatif 2026",
+  "description": "Combo, ex Snapshift, gère planning, temps et paie. Staff Meal gère l'exécution du service : checklists, HACCP, recettes. Comparatif vérifié et loyal.",
+  "kicker": "comparatif vérifié",
+  "h1": "Combo (ex Snapshift) ou Staff Meal : deux outils, deux métiers",
+  "lede": "Combo, l'ancien Snapshift, est un logiciel RH pour les équipes terrain : planning du personnel, suivi des heures, congés, préparation de la paie et paie native. Staff Meal est une application d'exploitation pour les restaurants de 15 personnes et plus : checklists par poste avec preuve photo, audits HACCP, manuel opératoire, recettes et food cost, formations et communication interne.",
+  "breadcrumb": [["Ressources", "/resources.html"], ["Staff Meal et Combo", null]],
+  "datePublished": "2026-03-16",
+  "sections": [
+    {"h2": "Snapshift et Combo : le même logiciel, un nouveau nom", "blocks": [
+      {"p": "Si vous cherchez Snapshift, vous cherchez Combo. L'éditeur a changé de nom en septembre 2022 : selon RH Matin, le changement d'identité est effectif depuis le 20 septembre 2022, et l'éditeur l'explique lui-même sur son blog (« Snapshift est devenu Combo »). Le produit, l'application web, l'application mobile des employés et la pointeuse sont restés utilisables comme avant. Le site officiel est aujourd'hui combohr.com et l'espace de connexion se trouve sur app.combohr.com."},
+      {"p": "Le changement de nom accompagnait un changement de périmètre. L'éditeur le résume ainsi : « Snapshift c'était le planning, Combo c'est une solution RH tout-en-un ». Le logiciel a gardé son cœur, le planning du personnel des métiers à horaires variables, et y a ajouté la gestion des absences, la préparation de la paie puis une paie intégrée."},
+      {"p": "Staff Meal n'a aucun lien avec Combo ni avec Snapshift. C'est un autre éditeur et un autre produit. Cette page compare les deux pour vous aider à savoir lequel répond à votre besoin, ou si vous avez besoin des deux. Les informations sur Combo sont des informations publiques vérifiées le 25/10/2026 sur son site officiel et dans la presse spécialisée, listées en bas de page."},
+      {"callout": "En une phrase : Combo organise qui travaille, quand, et combien cela coûte en heures et en paie. Staff Meal organise ce qui doit être fait pendant le service, et garde la preuve que c'est fait."}
+    ]},
+    {"h2": "Ce que fait Combo", "blocks": [
+      {"p": "D'après son site officiel, Combo couvre trois familles de besoins pour les équipes terrain, de la petite équipe au réseau de franchises multi-établissements :"},
+      {"ul": [
+        "<strong>Gestion du temps</strong> : création des plannings, ratios de productivité en temps réel, suivi des heures, congés et absences, pointeuse digitale.",
+        "<strong>Gestion de la paie</strong> : préparation des éléments variables, export vers votre logiciel de paie, distribution des bulletins dans l'application, et avec l'offre Combo Pay un logiciel de paie natif avec transmission de la DSN.",
+        "<strong>Gestion des équipes</strong> : centralisation des documents RH (contrats, DPAE), tableau de bord RH (turnover, absentéisme), application employés pour consulter son planning et faire ses demandes, messagerie intégrée web et mobile."
+      ]},
+      {"p": "Les secteurs mis en avant sont la restauration traditionnelle et rapide, l'hôtellerie, la boulangerie, le commerce et le commerce alimentaire, les loisirs et la pharmacie. La restauration y occupe une place centrale, avec de nombreux témoignages d'enseignes. L'offre Time mentionne une intégration aux solutions de caisse, qui sert à mettre en regard le chiffre d'affaires et les heures planifiées."}
+    ]},
+    {"h2": "Ce que fait Staff Meal", "blocks": [
+      {"p": "Staff Meal ne fait ni planning, ni pointage, ni paie. L'application couvre l'exécution du service et sa vérification, là où les procédures vivent souvent encore sur papier ou dans des groupes de messagerie :"},
+      {"ul": [
+        "<strong>Checklists par poste et par horaire</strong> : ouverture, fermeture, relevés de température, avec saisie des mesures et preuve photo horodatée.",
+        "<strong>Audits HACCP scorés</strong> avec rapport PDF, pour suivre la conformité site par site (voir notre guide <a href=\"/haccp-restaurant.html\">HACCP en restaurant</a>).",
+        "<strong>Manuel opératoire</strong> avec accusé de lecture : chaque procédure est datée, et vous savez qui l'a lue.",
+        "<strong>Maintenance</strong> : parc d'équipements, tickets de panne, historique des interventions.",
+        "<strong>Client mystère sans agence</strong> : grilles de visite et résultats suivis dans l'outil (voir <a href=\"/client-mystere-restaurant.html\">le client mystère en restaurant</a>).",
+        "<strong>Recettes, food cost et plans de production</strong> : fiches techniques, coûts d'achat visibles par la direction seulement, calcul de production qui sort la liste de courses.",
+        "<strong>Formations</strong> : parcours, quiz et certificats.",
+        "<strong>Communication interne</strong> : fil d'actualité avec accusé de lecture, messagerie, annuaire.",
+        "<strong>Multi-site natif</strong> : les mêmes standards déployés sur tous vos établissements."
+      ]},
+      {"p": "Staff Meal est en bêta privée, avec 50 établissements accompagnés sur place, et s'adresse aux équipes de 15 personnes et plus."}
+    ]},
+    {"h2": "Tableau comparatif Combo et Staff Meal", "blocks": [
+      {"table": {
+        "caption": "Informations publiques vérifiées le 25/10/2026 sur combohr.com. « Non » signifie que l'outil ne prétend pas couvrir ce besoin.",
+        "head": ["Besoin", "Combo (ex Snapshift)", "Staff Meal"],
+        "rows": [
+          ["Planning du personnel", "Oui, cœur du produit", "Non"],
+          ["Pointeuse, suivi des heures", "Oui (pointeuse en option)", "Non"],
+          ["Congés et absences", "Oui", "Non"],
+          ["Préparation de la paie, paie native", "Oui (paie native avec Combo Pay)", "Non"],
+          ["Messagerie d'équipe", "Oui, web et mobile", "Oui, avec fil d'actualité et accusé de lecture"],
+          ["Checklists HACCP avec mesures et preuve photo", "Non mentionné", "Oui, par poste et par horaire"],
+          ["Audits notés, client mystère", "Non mentionné", "Oui, rapport PDF"],
+          ["Manuel opératoire, formations, certificats", "Non mentionné", "Oui"],
+          ["Recettes, food cost, plans de production", "Non mentionné", "Oui"],
+          ["Maintenance des équipements", "Non mentionné", "Oui"],
+          ["Prix public", "Time 68 €, People 89 € par établissement et par mois ; Combo Pay 19 € par employé et par mois", "Bêta privée, sur candidature"]
+        ]
+      }}
+    ]},
+    {"h2": "Combo ou Staff Meal : lequel choisir selon votre besoin", "blocks": [
+      {"h3": "Combo est le bon choix si"},
+      {"ul": [
+        "vos managers passent des heures à construire les plannings sur un tableur et à recompter les heures en fin de mois ;",
+        "vous voulez relier les heures planifiées et pointées à la paie, voire faire la paie dans le même outil ;",
+        "vous devez suivre la masse salariale et les ratios de productivité par établissement."
+      ]},
+      {"h3": "Staff Meal est le bon choix si"},
+      {"ul": [
+        "vos plannings sont tenus, mais l'exécution varie d'un service à l'autre : fermetures oubliées, relevés de température manquants, recettes qui dérivent ;",
+        "vous devez prouver vos contrôles HACCP lors d'une inspection, avec des relevés datés et photographiés ;",
+        "vous ouvrez des sites et voulez que les standards du premier se retrouvent dans le cinquième (voir <a href=\"/standards-service-restaurant.html\">standards de service</a>) ;",
+        "vous voulez suivre votre food cost à partir de fiches techniques à jour (voir <a href=\"/rentabilite-restaurant.html\">rentabilité d'un restaurant</a>)."
+      ]},
+      {"h3": "Les deux ensemble"},
+      {"p": "Les deux outils ne se recouvrent pas sur leur cœur de métier : Combo répond à la question « qui travaille et combien d'heures », Staff Meal à la question « ce qui devait être fait l'a-t-il été ». Beaucoup d'exploitants auront besoin des deux. Le seul recouvrement réel est la messagerie d'équipe ; Staff Meal y ajoute l'accusé de lecture, utile pour une consigne d'hygiène ou un changement de recette."},
+      {"p": "Un point à connaître : Staff Meal n'a pas de connecteur Combo à ce jour. Le connecteur de planning en service est celui de Skello, qui sert à filtrer les checklists selon le poste et l'horaire de chacun. Sans connecteur, Staff Meal fonctionne normalement : aucune tâche n'est masquée et chaque équipier voit les checklists de son établissement. Les connecteurs de caisse (Zelty, L'Addition, Lightspeed) et de plateformes de livraison sont à l'étude et ne sont pas disponibles."}
+    ]},
+    {"h2": "Questions à vous poser avant de choisir", "blocks": [
+      {"p": "Avant de comparer des listes de fonctions, regardez où votre exploitation perd du temps ou de l'argent. Trois questions suffisent souvent à trancher :"},
+      {"ol": [
+        "Le problème est-il de mettre les bonnes personnes au bon moment, ou de faire en sorte que ces personnes appliquent les mêmes gestes ? Le premier relève d'un outil de planning comme Combo, le second d'un outil d'exploitation comme Staff Meal.",
+        "Lors du dernier contrôle sanitaire, combien de temps a-t-il fallu pour retrouver vos relevés ? Si la réponse se compte en heures, le sujet est la traçabilité, pas le planning.",
+        "Connaissez-vous le coût matière de vos dix plats les plus vendus ? Si non, commencez par le <a href=\"/food-cost-calculator.html\">calculateur de food cost</a> pour mesurer l'écart."
+      ]},
+      {"p": "Pour construire un roulement juste avant même de choisir un logiciel, notre guide sur le <a href=\"/planning-personnel-restaurant.html\">planning du personnel en restaurant</a> détaille les règles à respecter."}
+    ]}
+  ],
+  "faq": [
+    {"q": "Snapshift et Combo, c'est la même chose ?", "a": "Oui. Snapshift a changé de nom pour devenir Combo, avec un changement effectif depuis le 20 septembre 2022 selon RH Matin. C'est le même éditeur et le même produit, élargi depuis à la gestion des absences et à la paie."},
+    {"q": "Où se connecter à Combo (ex Snapshift) ?", "a": "L'espace de connexion de Combo se trouve sur app.combohr.com, accessible depuis le site combohr.com. Staff Meal est un autre éditeur et ne gère pas les comptes Combo."},
+    {"q": "Combo ou Staff Meal : lequel choisir ?", "a": "Combo si votre besoin est le planning, le suivi des heures et la paie. Staff Meal si votre besoin est l'exécution du service : checklists HACCP avec preuve photo, audits, manuel opératoire, recettes et food cost. Les deux se complètent plus qu'ils ne se remplacent."},
+    {"q": "Quel est le prix de Combo ?", "a": "Selon sa page d'offres consultée le 25/10/2026, Combo affiche l'offre Time à 68 € et l'offre People à 89 € par établissement et par mois, et Combo Pay à 19 € par employé et par mois. Des options sont facturées par employé, comme la pointeuse à 2 € par mois. Vérifiez les conditions à jour sur combohr.com."},
+    {"q": "Staff Meal est-il compatible avec Combo ?", "a": "Il n'existe pas de connecteur Combo à ce jour. Vous pouvez utiliser les deux en parallèle : Staff Meal fonctionne sans planning, et dans ce cas aucune tâche n'est masquée aux équipiers. Le connecteur de planning en service chez Staff Meal est celui de Skello."},
+    {"q": "Quelle alternative à Combo pour un restaurant ?", "a": "Pour le planning et la paie, la comparaison se fait avec d'autres logiciels de planning comme Skello. Staff Meal n'est pas une alternative à Combo : il ne fait ni planning ni paie, il couvre l'exploitation du service."}
+  ],
+  "related": [
+    {"href": "/staffmeal-vs-skello.html", "title": "Staff Meal et Skello", "desc": "Planning et exploitation : comment le connecteur Skello filtre les checklists par poste."},
+    {"href": "/staffmeal-vs-koust.html", "title": "Staff Meal et Koust", "desc": "Gestion des achats et des stocks, ou exploitation du service : ce que chaque outil couvre."},
+    {"href": "/planning-personnel-restaurant.html", "title": "Planning de restaurant", "desc": "Les règles d'un roulement juste, avant de choisir un logiciel."},
+    {"href": "/haccp-restaurant.html", "title": "Logiciel HACCP pour restaurant", "desc": "Digitaliser son plan de maîtrise sanitaire."}
+  ],
+  "sources": [
+    {"label": "Combo : site officiel, fonctionnalités et secteurs (combohr.com, consulté le 25/10/2026)", "url": "https://combohr.com/fr/"},
+    {"label": "Combo : page des offres et tarifs (consultée le 25/10/2026)", "url": "https://combohr.com/fr/nos-offres"},
+    {"label": "Combo : « Snapshift devient Combo, on vous explique tout » (blog officiel)", "url": "https://combohr.com/fr/blog/snapshift-devient-combo"},
+    {"label": "RH Matin, 22/09/2022 : pourquoi Combo prend le relais de Snapshift", "url": "https://www.rhmatin.com/paie/gestion-temps/gestion-planning-personnel-combo-relais-snapshift.html"}
+  ],
+  "cta_kicker": "le planning dit qui, l'exploitation dit quoi",
+  "cta_text": "Staff Meal s'adresse aux restaurants de 15 personnes et plus. Bêta privée, 50 établissements accompagnés sur place."
+}

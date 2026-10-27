@@ -1,0 +1,945 @@
+{
+  "slug": "questionnaire-client-mystere",
+  "title": "Questionnaire client mystère restaurant : exemple complet",
+  "description": "Exemple de questionnaire client mystère restaurant prêt à l'emploi : 58 questions par moment de la visite, barème sur 100, éliminatoires et version PDF.",
+  "kicker": "à reprendre tel quel",
+  "h1": "Questionnaire client mystère restaurant : l'exemple complet",
+  "lede": "Voici un questionnaire client mystère complet pour restaurant : 58 questions réparties sur les dix moments de la visite, dont 51 notées sur 100 points et 5 éliminatoires qui plafonnent la note. Chaque question appelle un fait observable, pas une opinion. Reprenez-le tel quel, ajustez les poids à votre format, puis calculez le score avec la méthode donnée en fin de page.",
+  "breadcrumb": [
+    [
+      "Client mystère",
+      "/client-mystere-restaurant.html"
+    ],
+    [
+      "Questionnaire",
+      null
+    ]
+  ],
+  "datePublished": "2026-08-05",
+  "sections": [
+    {
+      "h2": "Comment lire ce questionnaire",
+      "blocks": [
+        {
+          "html": "<p class=\"font-sans text-base md:text-lg leading-relaxed mb-4\"><a href=\"/questionnaire-client-mystere-restaurant.pdf\" class=\"btn-retro\">Télécharger le questionnaire en PDF</a></p>"
+        },
+        {
+          "p": "Le questionnaire suit l'ordre de la visite, de l'appel de réservation jusqu'au trottoir en repartant. Le visiteur le lit avant d'entrer et le remplit pendant ou juste après le repas, jamais le lendemain."
+        },
+        {
+          "p": "Chaque question porte un type de réponse :"
+        },
+        {
+          "ul": [
+            "<strong>Oui/Non</strong> : tous les points ou zéro.",
+            "<strong>Bande</strong> : un délai chronométré classé en trois tranches. Tranche haute : tous les points. Tranche du milieu : la moitié. Tranche basse : zéro.",
+            "<strong>Note</strong> : une échelle courte dont chaque niveau est décrit, pour éviter le ressenti.",
+            "<strong>Observation</strong> : une réponse libre ou un choix dans une liste, sans points. Elle sert à comprendre la cause d'une réponse négative."
+          ]
+        },
+        {
+          "p": "La colonne « Élim. » signale les cinq questions éliminatoires (E1 à E5). Une question qui ne s'applique pas à votre établissement (pas de vestiaire, pas de réservation) est marquée « sans objet » et sort du calcul."
+        },
+        {
+          "p": "Les observations sans points fonctionnent comme des branchements : elles ne se remplissent que si la question précédente a échoué. Elles donnent la cause du problème, et c'est la cause qui se corrige, pas le score."
+        },
+        {
+          "callout": "Le test de chaque question : deux visiteurs assis à la même table doivent donner la même réponse. Si ce n'est pas le cas, la question mesure le visiteur, pas l'établissement."
+        }
+      ]
+    },
+    {
+      "h2": "1. Réservation et téléphone (5 points)",
+      "blocks": [
+        {
+          "p": "Le premier contact se mesure avant la visite, à l'appel de réservation, idéalement la veille ou le jour même."
+        },
+        {
+          "table": {
+            "head": [
+              "N°",
+              "Question",
+              "Réponse",
+              "Points",
+              "Élim."
+            ],
+            "rows": [
+              [
+                "1.1",
+                "Le téléphone a-t-il été décroché en moins de cinq sonneries ?",
+                "Oui/Non",
+                "1",
+                ""
+              ],
+              [
+                "1.2",
+                "L'interlocuteur a-t-il donné le nom de l'établissement à la prise d'appel ?",
+                "Oui/Non",
+                "1",
+                ""
+              ],
+              [
+                "1.3",
+                "La réservation a-t-elle été reformulée (date, heure, nombre de couverts, nom) ?",
+                "Oui/Non",
+                "2",
+                ""
+              ],
+              [
+                "1.4",
+                "Les horaires et informations en ligne correspondaient-ils à ceux donnés au téléphone ?",
+                "Oui/Non",
+                "1",
+                ""
+              ],
+              [
+                "1.5",
+                "Si l'appel n'a pas abouti : un rappel a-t-il eu lieu dans la journée ?",
+                "Observation",
+                "0",
+                ""
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "h2": "2. Accueil (12 points)",
+      "blocks": [
+        {
+          "p": "Le visiteur déclenche son chronomètre en franchissant la porte et l'arrête au premier mot adressé par un membre du personnel."
+        },
+        {
+          "table": {
+            "head": [
+              "N°",
+              "Question",
+              "Réponse",
+              "Points",
+              "Élim."
+            ],
+            "rows": [
+              [
+                "2.1",
+                "Délai entre l'entrée et la prise en charge : moins d'1 min / 1 à 3 min / plus de 3 min",
+                "Bande",
+                "4",
+                ""
+              ],
+              [
+                "2.2",
+                "Le visiteur a-t-il reçu un regard ou un signe, même si le personnel était occupé ?",
+                "Oui/Non",
+                "2",
+                ""
+              ],
+              [
+                "2.3",
+                "Une formule de bienvenue a-t-elle été prononcée ?",
+                "Oui/Non",
+                "2",
+                ""
+              ],
+              [
+                "2.4",
+                "La réservation a-t-elle été retrouvée sans faire répéter le nom ?",
+                "Oui/Non (sans objet si pas de réservation)",
+                "2",
+                ""
+              ],
+              [
+                "2.5",
+                "En cas d'attente, la durée a-t-elle été annoncée et une solution proposée (bar, boisson) ?",
+                "Oui/Non (sans objet si pas d'attente)",
+                "2",
+                ""
+              ],
+              [
+                "2.6",
+                "Si la prise en charge a dépassé 3 min : personne en salle, personnel à l'encaissement, visiteur ignoré, autre ?",
+                "Observation",
+                "0",
+                ""
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "h2": "3. Installation (6 points)",
+      "blocks": [
+        {
+          "p": "L'installation dit si la salle a été préparée avant le service ou pendant. Une table encore à dresser à l'arrivée d'un client qui a réservé signale un problème de mise en place, pas d'accueil."
+        },
+        {
+          "table": {
+            "head": [
+              "N°",
+              "Question",
+              "Réponse",
+              "Points",
+              "Élim."
+            ],
+            "rows": [
+              [
+                "3.1",
+                "La table était-elle prête, propre et dressée à l'arrivée ?",
+                "Oui/Non",
+                "2",
+                ""
+              ],
+              [
+                "3.2",
+                "Le visiteur a-t-il été accompagné jusqu'à sa table ?",
+                "Oui/Non",
+                "1",
+                ""
+              ],
+              [
+                "3.3",
+                "Un vestiaire ou une place pour les affaires a-t-il été proposé ?",
+                "Oui/Non (sans objet si pas de vestiaire)",
+                "1",
+                ""
+              ],
+              [
+                "3.4",
+                "Les cartes ont-elles été remises à l'installation, propres et en bon état ?",
+                "Oui/Non",
+                "1",
+                ""
+              ],
+              [
+                "3.5",
+                "De l'eau a-t-elle été proposée ou servie sans que le visiteur la demande ?",
+                "Oui/Non",
+                "1",
+                ""
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "h2": "4. Prise de commande (12 points)",
+      "blocks": [
+        {
+          "p": "La question 4.5 est un scénario : le visiteur demande quels allergènes contient un plat. Depuis le décret n° 2015-447 du 17 avril 2015, le restaurateur doit pouvoir fournir cette information par écrit."
+        },
+        {
+          "table": {
+            "head": [
+              "N°",
+              "Question",
+              "Réponse",
+              "Points",
+              "Élim."
+            ],
+            "rows": [
+              [
+                "4.1",
+                "Délai entre l'installation et la prise de commande : moins de 5 min / 5 à 10 min / plus de 10 min",
+                "Bande",
+                "3",
+                ""
+              ],
+              [
+                "4.2",
+                "Une suggestion du jour ou un plat du moment a-t-il été présenté sans que le visiteur le demande ?",
+                "Oui/Non",
+                "2",
+                ""
+              ],
+              [
+                "4.3",
+                "Une boisson ou un apéritif a-t-il été proposé ?",
+                "Oui/Non",
+                "2",
+                ""
+              ],
+              [
+                "4.4",
+                "Le serveur a-t-il répondu précisément à une question sur la composition d'un plat ?",
+                "Oui/Non",
+                "2",
+                ""
+              ],
+              [
+                "4.5",
+                "À la demande sur les allergènes, une information écrite a-t-elle été présentée ?",
+                "Oui/Non",
+                "2",
+                "E1"
+              ],
+              [
+                "4.6",
+                "La commande a-t-elle été reformulée, cuisson demandée pour les viandes ?",
+                "Oui/Non",
+                "1",
+                ""
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "h2": "5. Service (12 points)",
+      "blocks": [
+        {
+          "p": "Le chronomètre repart à la prise de commande. La question 5.4 vérifie le passage du personnel après les premières bouchées : c'est le moment où un plat trop cuit ou tiède peut encore être remplacé sans que le client parte mécontent."
+        },
+        {
+          "table": {
+            "head": [
+              "N°",
+              "Question",
+              "Réponse",
+              "Points",
+              "Élim."
+            ],
+            "rows": [
+              [
+                "5.1",
+                "Délai entre la commande et l'arrivée du premier plat : moins de 15 min / 15 à 25 min / plus de 25 min",
+                "Bande",
+                "4",
+                ""
+              ],
+              [
+                "5.2",
+                "Les plats ont-ils été annoncés au moment du service ?",
+                "Oui/Non",
+                "1",
+                ""
+              ],
+              [
+                "5.3",
+                "Chaque plat a-t-il été posé devant la bonne personne sans demander qui a pris quoi ?",
+                "Oui/Non",
+                "2",
+                ""
+              ],
+              [
+                "5.4",
+                "Un membre du personnel est-il repassé dans les cinq minutes suivant le service ?",
+                "Oui/Non",
+                "2",
+                ""
+              ],
+              [
+                "5.5",
+                "Les assiettes vides ont-elles été débarrassées en moins de cinq minutes ?",
+                "Oui/Non",
+                "1",
+                ""
+              ],
+              [
+                "5.6",
+                "Un dessert ou un café a-t-il été proposé ?",
+                "Oui/Non",
+                "2",
+                ""
+              ],
+              [
+                "5.7",
+                "Si le délai a dépassé 25 min : le personnel a-t-il informé ou présenté des excuses sans qu'on le demande ?",
+                "Observation",
+                "0",
+                ""
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "h2": "6. Produit (25 points)",
+      "blocks": [
+        {
+          "p": "Le produit porte le quart de la note. Le visiteur photographie chaque assiette avant d'y toucher : la photo est comparée à votre photo de référence."
+        },
+        {
+          "table": {
+            "head": [
+              "N°",
+              "Question",
+              "Réponse",
+              "Points",
+              "Élim."
+            ],
+            "rows": [
+              [
+                "6.1",
+                "Le plat correspondait-il à la description de la carte (composants, garniture) ?",
+                "Oui/Non",
+                "4",
+                ""
+              ],
+              [
+                "6.2",
+                "Les plats chauds étaient-ils servis chauds et les plats froids servis froids ?",
+                "Oui/Non",
+                "5",
+                "E2"
+              ],
+              [
+                "6.3",
+                "Le dressage correspondait-il à la photo de référence ?",
+                "Oui/Non + photo",
+                "4",
+                ""
+              ],
+              [
+                "6.4",
+                "La cuisson était-elle conforme à celle demandée ?",
+                "Oui/Non (sans objet si aucune cuisson demandée)",
+                "3",
+                ""
+              ],
+              [
+                "6.5",
+                "L'assiette était-elle propre sur les bords, sans traces ni coulures ?",
+                "Oui/Non",
+                "2",
+                ""
+              ],
+              [
+                "6.6",
+                "L'assiette était-elle exempte de tout corps étranger (cheveu, fragment, emballage) ?",
+                "Oui/Non + photo si non",
+                "3",
+                "E3"
+              ],
+              [
+                "6.7",
+                "Assaisonnement : 0 = défaut net (trop salé, fade), 1 = défaut léger, 2 = sans défaut",
+                "Note 0 à 2",
+                "2",
+                ""
+              ],
+              [
+                "6.8",
+                "Le pain et les boissons étaient-ils servis à la bonne température ?",
+                "Oui/Non",
+                "2",
+                ""
+              ],
+              [
+                "6.9",
+                "Commentaire libre sur les plats",
+                "Observation",
+                "0",
+                ""
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "h2": "7. Addition (6 points)",
+      "blocks": [
+        {
+          "p": "L'addition est le dernier souvenir concret du repas. Le visiteur vérifie chaque ligne contre la carte et photographie le ticket."
+        },
+        {
+          "table": {
+            "head": [
+              "N°",
+              "Question",
+              "Réponse",
+              "Points",
+              "Élim."
+            ],
+            "rows": [
+              [
+                "7.1",
+                "Délai entre la demande d'addition et sa présentation : moins de 3 min / 3 à 8 min / plus de 8 min",
+                "Bande",
+                "2",
+                ""
+              ],
+              [
+                "7.2",
+                "L'addition était-elle juste (prix conformes à la carte, aucun article en trop) ?",
+                "Oui/Non",
+                "2",
+                "E4 si l'erreur est en défaveur du client et n'est pas corrigée"
+              ],
+              [
+                "7.3",
+                "Le paiement fractionné ou le moyen de paiement demandé a-t-il été accepté sans réticence ?",
+                "Oui/Non",
+                "1",
+                ""
+              ],
+              [
+                "7.4",
+                "L'encaissement s'est-il fait à table, ou au comptoir avec moins de 3 min d'attente ?",
+                "Oui/Non",
+                "1",
+                ""
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "h2": "8. Départ (4 points)",
+      "blocks": [
+        {
+          "p": "Le départ pèse peu dans la note, mais c'est le moment le plus souvent oublié en plein service, quand le personnel est concentré sur les tables qui arrivent."
+        },
+        {
+          "table": {
+            "head": [
+              "N°",
+              "Question",
+              "Réponse",
+              "Points",
+              "Élim."
+            ],
+            "rows": [
+              [
+                "8.1",
+                "Le personnel a-t-il pris congé du visiteur (au revoir, remerciement) ?",
+                "Oui/Non",
+                "2",
+                ""
+              ],
+              [
+                "8.2",
+                "L'avis du visiteur sur le repas a-t-il été demandé ?",
+                "Oui/Non",
+                "1",
+                ""
+              ],
+              [
+                "8.3",
+                "Les affaires ont-elles été rendues sans attente, ou la porte tenue ?",
+                "Oui/Non",
+                "1",
+                ""
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "h2": "9. Propreté et sanitaires (13 points)",
+      "blocks": [
+        {
+          "p": "Le visiteur passe aux sanitaires au milieu du repas, pas à l'arrivée : c'est l'état en plein service qui compte. La photo est obligatoire."
+        },
+        {
+          "table": {
+            "head": [
+              "N°",
+              "Question",
+              "Réponse",
+              "Points",
+              "Élim."
+            ],
+            "rows": [
+              [
+                "9.1",
+                "Les sanitaires étaient-ils propres (sol, cuvette, lavabo) ?",
+                "Oui/Non + photo",
+                "4",
+                "E5 si insalubres"
+              ],
+              [
+                "9.2",
+                "Du savon était-il disponible ?",
+                "Oui/Non",
+                "2",
+                ""
+              ],
+              [
+                "9.3",
+                "Du papier toilette et un moyen de séchage des mains étaient-ils disponibles ?",
+                "Oui/Non",
+                "2",
+                ""
+              ],
+              [
+                "9.4",
+                "Le sol de la salle était-il propre sous et autour de la table ?",
+                "Oui/Non",
+                "2",
+                ""
+              ],
+              [
+                "9.5",
+                "Les tables voisines ont-elles été débarrassées dans les cinq minutes suivant le départ des clients ?",
+                "Oui/Non",
+                "2",
+                ""
+              ],
+              [
+                "9.6",
+                "La tenue du personnel de salle était-elle propre et conforme ?",
+                "Oui/Non",
+                "1",
+                ""
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "h2": "10. Extérieur (5 points)",
+      "blocks": [
+        {
+          "p": "À observer en arrivant, et à vérifier en repartant. La carte affichée dehors n'est pas un détail : l'affichage des menus et des prix, visible et lisible de l'extérieur pendant le service, est une obligation (arrêté du 27 mars 1987)."
+        },
+        {
+          "table": {
+            "head": [
+              "N°",
+              "Question",
+              "Réponse",
+              "Points",
+              "Élim."
+            ],
+            "rows": [
+              [
+                "10.1",
+                "Les menus et la carte étaient-ils affichés et lisibles de l'extérieur ?",
+                "Oui/Non",
+                "2",
+                ""
+              ],
+              [
+                "10.2",
+                "La devanture et les vitres étaient-elles propres ?",
+                "Oui/Non",
+                "1",
+                ""
+              ],
+              [
+                "10.3",
+                "La terrasse et les abords (trottoir, mégots, poubelles) étaient-ils propres ?",
+                "Oui/Non",
+                "1",
+                ""
+              ],
+              [
+                "10.4",
+                "L'enseigne et l'éclairage extérieur fonctionnaient-ils entièrement ?",
+                "Oui/Non",
+                "1",
+                ""
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "h2": "Les questions de fin de visite",
+      "blocks": [
+        {
+          "p": "Trois questions ouvertes et une note de satisfaction, toujours à la fin et hors score. Elles servent à comprendre, pas à comparer."
+        },
+        {
+          "table": {
+            "head": [
+              "N°",
+              "Question",
+              "Réponse",
+              "Points"
+            ],
+            "rows": [
+              [
+                "F.1",
+                "Quel moment de la visite vous a le plus marqué, en bien ou en mal ?",
+                "Observation",
+                "0"
+              ],
+              [
+                "F.2",
+                "Qu'auriez-vous attendu que le personnel fasse et qu'il n'a pas fait ?",
+                "Observation",
+                "0"
+              ],
+              [
+                "F.3",
+                "Un fait que le questionnaire n'a pas permis de noter ?",
+                "Observation",
+                "0"
+              ],
+              [
+                "F.4",
+                "Note de satisfaction globale : reviendriez-vous ?",
+                "Note 0 à 10",
+                "Hors score"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "h2": "Calculer le score sur 100",
+      "blocks": [
+        {
+          "p": "Le score se calcule en quatre étapes, toujours dans le même ordre."
+        },
+        {
+          "ol": [
+            "Additionnez les points obtenus sur les 51 questions notées. Une bande au milieu donne la moitié des points de la question.",
+            "Retirez du total possible les questions sans objet. Si le vestiaire n'existe pas, le maximum passe de 100 à 99.",
+            "Score brut = points obtenus ÷ points applicables × 100, arrondi à l'entier.",
+            "Appliquez le plafond des éliminatoires : un éliminatoire échoué plafonne la note à 60, deux ou plus la plafonnent à 40. Le rapport indique toujours que le plafond a été appliqué, et pourquoi."
+          ]
+        },
+        {
+          "table": {
+            "caption": "Répartition des 100 points",
+            "head": [
+              "Moment",
+              "Points",
+              "Éliminatoire"
+            ],
+            "rows": [
+              [
+                "Réservation et téléphone",
+                "5",
+                ""
+              ],
+              [
+                "Accueil",
+                "12",
+                ""
+              ],
+              [
+                "Installation",
+                "6",
+                ""
+              ],
+              [
+                "Prise de commande",
+                "12",
+                "E1 allergènes"
+              ],
+              [
+                "Service",
+                "12",
+                ""
+              ],
+              [
+                "Produit",
+                "25",
+                "E2 température, E3 corps étranger"
+              ],
+              [
+                "Addition",
+                "6",
+                "E4 erreur non corrigée"
+              ],
+              [
+                "Départ",
+                "4",
+                ""
+              ],
+              [
+                "Propreté et sanitaires",
+                "13",
+                "E5 sanitaires insalubres"
+              ],
+              [
+                "Extérieur",
+                "5",
+                ""
+              ],
+              [
+                "Total",
+                "100",
+                "plafond 60 (un échec), 40 (deux ou plus)"
+              ]
+            ]
+          }
+        },
+        {
+          "p": "Cette répartition reste proche de celle de notre <a href=\"/grille-visite-mystere-restaurant.html\">grille de visite mystère</a> : le produit et l'accueil concentrent le poids. En restauration rapide, déplacez des points vers les délais et la propreté. En gastronomique, vers le conseil et le produit."
+        }
+      ]
+    },
+    {
+      "h2": "Exemple de calcul",
+      "blocks": [
+        {
+          "p": "Un dîner à deux, réservé par téléphone. Pas d'attente à l'arrivée (2.5 sans objet, 2 points) et pas de vestiaire (3.3 sans objet, 1 point) : le total applicable est de 97 points."
+        },
+        {
+          "table": {
+            "head": [
+              "Moment",
+              "Applicable",
+              "Obtenu",
+              "Ce qui a coûté des points"
+            ],
+            "rows": [
+              [
+                "Réservation",
+                "5",
+                "4",
+                "nom de l'établissement non donné"
+              ],
+              [
+                "Accueil",
+                "10",
+                "8",
+                "prise en charge en 2 min (bande du milieu)"
+              ],
+              [
+                "Installation",
+                "5",
+                "5",
+                ""
+              ],
+              [
+                "Prise de commande",
+                "12",
+                "10",
+                "aucune suggestion du jour"
+              ],
+              [
+                "Service",
+                "12",
+                "8",
+                "premier plat en 22 min, pas de passage après le service"
+              ],
+              [
+                "Produit",
+                "25",
+                "21",
+                "dressage différent de la photo de référence"
+              ],
+              [
+                "Addition",
+                "6",
+                "5",
+                "addition apportée en 5 min"
+              ],
+              [
+                "Départ",
+                "4",
+                "3",
+                "avis non demandé"
+              ],
+              [
+                "Propreté et sanitaires",
+                "13",
+                "11",
+                "plus de papier pour les mains"
+              ],
+              [
+                "Extérieur",
+                "5",
+                "5",
+                ""
+              ],
+              [
+                "Total",
+                "97",
+                "80",
+                "score : 80 ÷ 97 × 100 = 82"
+              ]
+            ]
+          }
+        },
+        {
+          "p": "Même visite, mais le plat principal arrive tiède (6.2 échouée, E2). Le score brut tombe à 75 ÷ 97 × 100 = 77, et le plafond le ramène à <strong>60</strong>. Le directeur lit 60, voit que le plafond vient de la température, et sait sur quoi agir en cuisine et au passe."
+        },
+        {
+          "p": "Un score isolé ne dit pas grand-chose. Il prend son sens comparé aux visites précédentes du même site : voir <a href=\"/rapport-client-mystere.html\">comment lire un rapport de visite mystère</a>."
+        }
+      ]
+    },
+    {
+      "h2": "Avant de l'envoyer à un visiteur",
+      "blocks": [
+        {
+          "ul": [
+            "Remplacez les délais par vos propres standards s'ils sont écrits ailleurs, par exemple dans vos <a href=\"/standards-service-restaurant.html\">standards de service</a>.",
+            "Préparez la photo de référence de chaque plat testé : sans elle, la question 6.3 ne vaut rien.",
+            "Figez le questionnaire pour l'année. Changer les questions casse la comparaison avec les visites précédentes.",
+            "Briefez le visiteur : scénario, créneau, budget, consigne de remplissage. Le détail est sur la page <a href=\"/recruter-clients-mysteres.html\">qui envoyer en visite mystère</a>."
+          ]
+        },
+        {
+          "p": "Dans Staff Meal, ce questionnaire se monte tel quel : questions pondérées et éliminatoires, branchements conditionnels (la question 2.6 n'apparaît que si la prise en charge a dépassé 3 minutes), preuve photo, note de satisfaction et comparaison aux visites précédentes. Vous créez vos missions, recrutez vos visiteurs, et lisez les résultats par établissement, comparables sur tout le réseau."
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "Combien de questions doit compter un questionnaire client mystère ?",
+      "a": "Entre quarante et soixante pour un restaurant avec service à table. Celui-ci en compte 58, dont 51 notées. En dessous, des moments entiers de la visite échappent à la mesure. Au-dessus, le visiteur remplit mal faute d'attention pendant le repas."
+    },
+    {
+      "q": "Combien de temps faut-il pour remplir le questionnaire ?",
+      "a": "Dix à quinze minutes, pendant ou juste après la visite. Les délais sont notés au fil du repas sur le téléphone. Au-delà d'une heure après la sortie, le visiteur remplit de mémoire et la donnée perd sa valeur."
+    },
+    {
+      "q": "Pourquoi des bandes plutôt qu'une note de rapidité ?",
+      "a": "Parce qu'un délai se chronomètre et qu'une impression de lenteur dépend du visiteur. Une bande de 15 à 25 minutes donne la même réponse à deux visiteurs différents, une note de 1 à 5 sur la rapidité non."
+    },
+    {
+      "q": "Que se passe-t-il quand une question ne s'applique pas ?",
+      "a": "Elle est marquée sans objet et ses points sortent du total possible. Le score reste ainsi comparable entre un site avec vestiaire et un site sans, ou entre une visite avec réservation et une visite sans."
+    },
+    {
+      "q": "Peut-on utiliser le même questionnaire pour plusieurs restaurants ?",
+      "a": "Oui, et c'est la condition pour comparer vos sites. Gardez les mêmes questions et les mêmes poids partout, et ne changez que les photos de référence des plats. Le fonctionnement en réseau est détaillé sur la page <a href=\"/client-mystere-franchise-reseau.html\">client mystère en réseau</a>."
+    },
+    {
+      "q": "Faut-il montrer le questionnaire aux équipes ?",
+      "a": "Oui. Un questionnaire connu devient un référentiel de service que l'équipe peut viser. Ce qui reste confidentiel, ce sont les dates et les visiteurs, jamais les critères."
+    }
+  ],
+  "related": [
+    {
+      "href": "/client-mystere-restaurant.html",
+      "title": "Client mystère en restaurant : le guide",
+      "desc": "Organiser vos visites mystère de A à Z, avec ou sans agence."
+    },
+    {
+      "href": "/grille-visite-mystere-restaurant.html",
+      "title": "Grille de visite mystère",
+      "desc": "La structure derrière ce questionnaire : sections, pondération, éliminatoires, branchements."
+    },
+    {
+      "href": "/rapport-client-mystere.html",
+      "title": "Lire un rapport de visite mystère",
+      "desc": "Que faire du score une fois la visite remplie."
+    },
+    {
+      "href": "/frequence-visites-mystere.html",
+      "title": "Fréquence des visites mystère",
+      "desc": "Combien de visites pour que le score devienne une tendance."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Assemblée nationale, réponse à la question écrite n° 75805 (JO du 14 juillet 2015) : décret n° 2015-447 sur l'information écrite sur les allergènes",
+      "url": "https://www.assemblee-nationale.fr/dyn/14/questions/QANR5L14QE75805"
+    },
+    {
+      "label": "CCI Paris Île-de-France, obligations d'affichage d'un restaurant (arrêté du 27 mars 1987)",
+      "url": "https://entreprises.cci-paris-idf.fr/web/reglementation/activites-reglementees/metiers-de-la-restauration-et-hotellerie/obligations-affichage-restaurant"
+    }
+  ],
+  "cta_kicker": "le même questionnaire, sans tableur",
+  "cta_text": "Questions pondérées et éliminatoires, branchements, preuve photo et comparaison aux visites précédentes. Bêta privée pour les équipes de 15 personnes et plus, cinquante établissements accompagnés sur place."
+}

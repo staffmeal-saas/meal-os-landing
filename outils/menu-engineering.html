@@ -37,7 +37,7 @@
     "url": "https://staff-meal.com/",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://staff-meal.com/assets/brand/mark.png",
+      "url": "https://staff-meal.com/assets/brand/mark.png?v=20261027",
       "width": 512,
       "height": 512
     },
@@ -311,9 +311,9 @@
             }
         }
     </style>
-    <link rel="preload" href="/style.css?v=20261025g" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="/style.css?v=20261025g"></noscript>
-    <link rel="stylesheet" href="/shell.css?v=20261025c">
+    <link rel="preload" href="/style.css?v=20261025k" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/style.css?v=20261025k"></noscript>
+    <link rel="stylesheet" href="/shell.css?v=20261027">
     <script defer data-domain="staff-meal.com" data-api="/s/event" src="/s/script"></script>
     <script>window.plausible = window.plausible || function () { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
     <script defer src="/analytics.js?v=20261025i"></script>
@@ -328,14 +328,14 @@
     
     <!-- Mobile Header -->
     <div class="lg:hidden fixed top-0 w-full left-0 bg-paper border-b border-cream-dark px-4 py-3 flex items-center justify-between z-40 no-print" style="box-shadow: 0 14px 40px rgba(25,25,25,.08);">
-        <a href="/boite-a-outils-dashboard.html" class="flex items-center gap-2.5 hover:opacity-80 transition-opacity"><span class="brand-mark sm-mark w-9 h-9" aria-hidden="true">S</span><span class="wordmark text-lg">Staff Meal</span></a>
+        <a href="/boite-a-outils-dashboard.html" class="flex items-center gap-2.5 hover:opacity-80 transition-opacity"><img class="brand-word" src="/assets/brand/wordmark.svg" alt="Staff Meal" width="136" height="24"></a>
         <button id="menuToggle" class="p-2"><i data-lucide="menu"></i></button>
     </div>
 
     <!-- Sidebar -->
     <aside class="sidebar bg-background no-print" id="sidebar">
         <div class="flex items-center justify-between mb-10">
-            <a href="/boite-a-outils-dashboard.html" class="flex items-center gap-2.5 hover:opacity-80 transition-opacity"><span class="brand-mark sm-mark w-11 h-11" aria-hidden="true">S</span><span class="wordmark text-xl">Staff Meal</span></a>
+            <a href="/boite-a-outils-dashboard.html" class="flex items-center gap-2.5 hover:opacity-80 transition-opacity"><img class="brand-word brand-word-lg" src="/assets/brand/wordmark.svg" alt="Staff Meal" width="136" height="24"></a>
             <button id="closeMenu" class="lg:hidden"><i data-lucide="x"></i></button>
         </div>
 
@@ -591,15 +591,13 @@
                     <!-- Watermark -->
                     <div
                         class="hidden print:block text-center mt-12 pt-4 border-t border-foreground/20 text-xs font-bold opacity-60 uppercase tracking-widest text-foreground">
-                        Matrice générée sur Staff Meal. Plus de rentabilité sur www.staffmeal.com
+                        Matrice générée sur Staff Meal. Plus de rentabilité sur staff-meal.com
                     </div>
                     <div class="card-retro bg-accent-soft border-olive text-foreground p-6 text-center transform hover:-translate-y-1 transition-transform cursor-pointer"
                         onclick="window.location.href='/#demo'">
                         <i data-lucide="trending-up" class="w-8 h-8 mx-auto mb-3 text-olive"></i>
                         <h4 class="font-display font-black text-lg mb-2">Passez au niveau supérieur.</h4>
-                        <p class="font-sans text-xs font-medium opacity-80 mb-4">Avec Staff Meal, vos fiches techniques
-                            sont connectées à vos ventes. La matrice se génère automatiquement en temps réel à chaque
-                            fin de service.</p>
+                        <p class="font-sans text-xs font-medium opacity-80 mb-4">Avec Staff Meal, vos fiches techniques et leurs coûts vivent au même endroit, partagés avec l'équipe, et le calcul de production sort la liste de courses.</p>
                         <span class="font-bold text-xs uppercase underline underline-offset-4 text-olive">Découvrir le
                             module Finance</span>
                     </div>
@@ -614,9 +612,8 @@
             class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8 text-center md:text-left">
 
             <a href="/" class="flex items-center gap-3 hover:opacity-80 transition-opacity">
-                <span class="brand-mark sm-mark w-14 h-14" aria-hidden="true">S</span>
                 <span class="flex flex-col leading-none text-left">
-                    <span class="wordmark text-2xl">Staff Meal</span>
+                    <img class="brand-word" style="height:30px" src="/assets/brand/wordmark.svg" alt="Staff Meal" width="170" height="30">
                     <span class="font-sans text-[0.5rem] uppercase font-bold tracking-[0.2em] text-ink-soft mt-1">le
                         même service, à chaque service</span>
                 </span>

@@ -1,0 +1,112 @@
+{
+  "slug": "digitaliser-haccp-cuisine-centrale",
+  "title": "Digitaliser l'HACCP d'une cuisine centrale",
+  "description": "Cuisine centrale : digitaliser le PMS pour prouver refroidissement, liaison froide ou chaude, plats témoins et traçabilité des lots livrés aux satellites.",
+  "kicker": "produire en volume, prouver chaque lot",
+  "h1": "Digitaliser l'HACCP d'une cuisine centrale",
+  "lede": "Digitaliser l'HACCP d'une cuisine centrale, c'est saisir chaque refroidissement, chaque départ de lot et chaque plat témoin au moment où il a lieu, avec l'heure, l'auteur et une photo, puis retrouver ces preuves par date et par site livré. Le support reste libre. Ce qui est imposé, c'est de pouvoir démontrer que chaque étape a été maîtrisée, du four jusqu'au satellite.",
+  "breadcrumb": [["Hygiène et conformité", "/haccp-restaurant.html"], ["Cuisine centrale", null]],
+  "datePublished": "2026-10-25",
+  "sections": [
+    {"h2": "Ce qui distingue une cuisine centrale", "blocks": [
+      {"p": "La note de service DGAL/SDSSA/N2011-8117 définit la cuisine centrale comme un établissement dont une partie au moins de l'activité consiste à fabriquer des préparations culinaires livrées à au moins un restaurant satellite ou à une collectivité de personnes à caractère social. Les satellites sont les locaux desservis par cette cuisine."},
+      {"p": "La même note précise qu'un établissement qui a une activité de cuisine centrale, agréée ou dérogataire, doit respecter les dispositions de la restauration collective, quelle que soit son activité principale. Un traiteur ou un restaurant qui livre une cantine est donc concerné au même titre qu'une unité de production de plusieurs milliers de repas."},
+      {"p": "Cette organisation ajoute trois contraintes à celles d'une cuisine sur place : un statut sanitaire spécifique, des étapes de refroidissement et de transport en plus, et une responsabilité partagée entre plusieurs sites. Sur papier, chacune produit ses propres feuilles, rarement rassemblées au même endroit."}
+    ]},
+    {"h2": "Agrément sanitaire : le principe et ses exceptions", "blocks": [
+      {"p": "Une cuisine centrale livre d'autres établissements de commerce de détail. À ce titre, elle doit en principe bénéficier d'un agrément sanitaire au titre du règlement (CE) n° 853/2004, comme le rappellent la note DGAL N2011-8117 et la DRIAAF Île-de-France."},
+      {"ul": [
+        "<strong>Mode pavillonnaire</strong> : une cuisine qui livre des satellites situés dans la même enceinte géographique, avec le même responsable juridique et le même numéro SIRET, n'a pas besoin d'agrément. L'exception tombe dès qu'un seul établissement livré a un SIRET différent.",
+        "<strong>Dérogation</strong> : l'activité de livraison doit rester « marginale, localisée et restreinte » au sens du règlement 853/2004. Les conditions sont fixées par l'arrêté du 8 juin 2006 modifié.",
+        "<strong>Distance</strong> : selon l'instruction DGAL/SDSSA/2014-823, la livraison sous dérogation est limitée à 80 km à vol d'oiseau. Le préfet peut porter ce rayon jusqu'à 200 km dans les zones soumises à des contraintes géographiques particulières.",
+        "<strong>Volumes</strong> : les annexes 3 et 4 de l'arrêté du 8 juin 2006 fixent des quantités hebdomadaires maximales, avec deux plafonds selon que l'établissement livre 30 % ou moins, ou plus de 30 %, de sa production."
+      ]},
+      {"h3": "Comment se comptent les volumes et les distances"},
+      {"p": "L'instruction DGAL/SDSSA/2014-823 apporte plusieurs précisions utiles au moment de remplir la déclaration de dérogation :"},
+      {"ul": [
+        "Une fraction de repas est comptée comme un repas complet seulement si elle constitue le plat principal. Les entrées, laitages et desserts relèvent des catégories de l'annexe 3.",
+        "La dérogation ne vise que les produits utilisés en l'état, prêts à consommer, éventuellement réchauffés. Un produit livré puis cuisiné au satellite est compté comme une matière première.",
+        "Les plafonds hebdomadaires sont des maximums sur une semaine, pas une moyenne de l'activité annuelle.",
+        "Si des denrées transitent par un site où elles sont seulement entreposées, la distance se mesure entre le site de production et le site final."
+      ]},
+      {"p": "La DRIAAF Île-de-France ajoute un point d'approvisionnement : d'une manière générale, un établissement agréé ne peut se fournir qu'auprès d'un autre établissement agréé. Le contrôle des fournisseurs à réception fait donc partie de votre dossier."},
+      {"callout": "Une cuisine sur place qui commence à livrer un autre restaurant collectif devient une cuisine centrale et entre dans le régime de l'agrément. Vérifiez votre statut avant d'ouvrir un nouveau site livré."}
+    ]},
+    {"h2": "Liaison froide, liaison chaude : les valeurs à prouver", "blocks": [
+      {"p": "Les températures et délais viennent de l'annexe I et de l'annexe IV de l'arrêté du 21 décembre 2009, précisés par la note DGAL N2011-8117. Des valeurs différentes ne sont admises que si votre analyse des dangers les justifie par écrit."},
+      {"table": {"caption": "Températures et délais en cuisine centrale (arrêté du 21 décembre 2009, note DGAL N2011-8117)", "head": ["Étape", "Exigence", "Enregistrement utile"], "rows": [
+        ["Refroidissement rapide", "À cœur, de +63 °C à +10 °C en moins de 2 heures, puis stockage entre 0 et +3 °C", "Heure et température à l'entrée et à la sortie de cellule, par lot"],
+        ["Stockage et transport en liaison froide", "+3 °C maximum pour les préparations élaborées à l'avance", "Température au chargement et à la livraison"],
+        ["Durée de vie", "DLC au plus tard à J+3 sans étude de durée de vie", "Date de fabrication et DLC sur chaque bac"],
+        ["Liaison chaude", "+63 °C minimum pour les plats livrés chauds", "Température au départ et à l'arrivée au satellite"],
+        ["Remise en température au satellite", "À cœur, de +10 °C à +63 °C en moins d'1 heure", "Heure et température atteinte avant service"],
+        ["Plats témoins", "80 à 100 g par plat, conservés au moins 5 jours entre 0 et +3 °C", "Prélèvement identifié par plat et par jour"]
+      ]}},
+      {"p": "Le refroidissement est le point qui sépare la liaison froide de la liaison chaude. Il exige une cellule adaptée et un relevé en deux temps sur chaque lot. La note DGAL précise que, s'il n'est pas classé point critique, il doit tout de même faire l'objet d'une surveillance particulière."},
+      {"p": "Un plat refroidi destiné à être servi chaud est consommé le jour de sa première remise en température. Il ne peut pas y avoir de second refroidissement. Côté satellite, les excédents livrés en liaison chaude sont éliminés en fin de service, faute de matériel de refroidissement rapide. Ceux livrés en liaison froide peuvent être resservis s'ils sont restés entre 0 et +3 °C."}
+    ]},
+    {"h2": "Plats témoins et traçabilité des lots", "blocks": [
+      {"p": "En cuisine centrale, la note DGAL demande des plats témoins systématiques pour toutes les denrées préparées ou manipulées servies à plusieurs consommateurs. Elle recommande, dans la mesure du possible, de conserver aussi le repas qui a suivi le circuit de distribution le plus long."},
+      {"p": "Les satellites prélèvent à leur tour s'ils manipulent : découpage, tranchage, hachage, mixage ou moulinage. Quand les satellites ne sont pas gérés par la cuisine centrale, la note recommande qu'ils prélèvent toutes les denrées, même sans manipulation."},
+      {"p": "Pour la traçabilité, l'arrêté du 21 décembre 2009 prévoit que chaque lot expédié soit accompagné des informations de traçabilité du règlement (UE) n° 931/2011 et de recommandations de conservation et d'utilisation. Le décret n° 2015-447 impose en plus qu'un document portant l'information sur les allergènes accompagne chaque livraison à un établissement de restauration."},
+      {"p": "En cas de suspicion de toxi-infection alimentaire collective, il faudra présenter les menus, les bons de livraison et d'expédition, les enregistrements de refroidissement et de remise en température, et les plats témoins. Avec dix satellites, c'est le dossier de dix sites qu'il faut rassembler dans l'heure."}
+    ]},
+    {"h2": "Papier ou numérique en production centralisée", "blocks": [
+      {"table": {"head": ["Point de contrôle", "Classeur papier", "Relevé numérique"], "rows": [
+        ["Refroidissement par lot", "Deux lignes à remplir à deux heures d'intervalle, souvent complétées en fin de journée", "Contrôle programmé à l'horaire du poste, avec mesure et photo"],
+        ["Départ des lots", "Feuille de chargement séparée des relevés de production", "Contrôle de départ rattaché au même historique"],
+        ["Réception au satellite", "Feuille propre à chaque site, rarement remontée", "Même checklist sur chaque satellite, visible depuis la cuisine centrale"],
+        ["Écart constaté", "Annotation sans suivi", "Commentaire, action corrective et remontée au directeur"],
+        ["Comparaison entre sites", "Impossible sans ressaisie", "Tableau de bord consolidé par site et par section d'audit"]
+      ]}},
+      {"p": "L'article 5 du règlement 852/2004 demande des documents et des dossiers adaptés à la nature et à la taille de l'entreprise. Pour une production de plusieurs milliers de repas, cette proportionnalité joue dans le sens d'un enregistrement plus complet, pas plus léger."}
+    ]},
+    {"h2": "Ce que Staff Meal fait pour une cuisine centrale", "blocks": [
+      {"p": "Staff Meal est une application d'exploitation pensée pour les équipes de 15 personnes et plus. Elle ne remplace pas vos cellules, vos sondes ou vos étiquettes. Elle organise les contrôles de l'équipe et en conserve la preuve sur tous les sites."},
+      {"ul": [
+        "<strong>Checklists ciblées par poste et par horaire</strong> : entrée et sortie de cellule, chargement, réception au satellite, plats témoins. Chaque contrôle porte une mesure, un commentaire et, si vous l'exigez, une photo horodatée.",
+        "<strong>Multi-site</strong> : vous créez la checklist une fois et la déployez sur la cuisine centrale et tous les satellites, avec un tableau de bord consolidé et quatre rôles.",
+        "<strong>Audits HACCP</strong> : grilles scorées par section, non-conformités qui remontent au directeur, rapport PDF.",
+        "<strong>Maintenance</strong> : parc d'équipements, tickets, responsables et historique pour les cellules de refroidissement, les chambres froides et les véhicules isothermes. Voir <a href=\"/maintenance-equipement-restaurant.html\">la maintenance du matériel</a>.",
+        "<strong>Manuel opératoire et procédures</strong> avec accusé de lecture, pour que la procédure de refroidissement soit la même sur toutes les équipes. Voir <a href=\"/manuel-operatoire-restaurant.html\">le manuel opératoire</a>.",
+        "<strong>Formations</strong> : parcours, quiz, validation par le manager et certificats, ce qui documente l'obligation de formation à l'hygiène prévue par le règlement 852/2004.",
+        "<strong>Communication interne</strong> : fil d'actualité avec accusé de lecture pour un changement de recette, de fournisseur ou d'horaire de tournée.",
+        "<strong>Connecteur Skello</strong> : les contrôles suivent les équipes réellement planifiées, y compris en horaires décalés."
+      ]},
+      {"p": "L'application est en bêta privée, avec 50 établissements accompagnés sur place."}
+    ]},
+    {"h2": "Mettre en place le suivi en quatre étapes", "blocks": [
+      {"ol": [
+        "Reprenez votre plan de maîtrise sanitaire et listez les étapes surveillées : réception, cuisson, refroidissement, conditionnement, départ, réception au satellite, remise en température.",
+        "Pour chacune, fixez le poste responsable, l'horaire, la valeur attendue et l'action corrective.",
+        "Démarrez sur la cuisine centrale, puis déployez la même grille sur les satellites.",
+        "Après un mois, comparez les sites sur le tableau de bord et auditez ceux qui dérivent."
+      ]},
+      {"p": "Le cadre général est sur <a href=\"/haccp-restaurant.html\">notre page pilier HACCP</a> et <a href=\"/checklist-haccp-inspection.html\">la checklist d'inspection</a>. Si vos satellites sont des services de soins ou des EHPAD, lisez aussi <a href=\"/digitaliser-haccp-hopital.html\">la page hôpital et EHPAD</a>."}
+    ]}
+  ],
+  "faq": [
+    {"q": "Une cuisine centrale doit-elle être agréée ?", "a": "En principe oui, au titre du règlement (CE) n° 853/2004, car elle livre d'autres établissements. Elle en est dispensée en mode pavillonnaire (même enceinte, même responsable juridique, même SIRET) ou si elle remplit les conditions de dérogation de l'arrêté du 8 juin 2006 modifié."},
+    {"q": "Quelle distance de livraison sous dérogation à l'agrément ?", "a": "80 km à vol d'oiseau, selon l'instruction DGAL/SDSSA/2014-823. Le préfet peut autoriser jusqu'à 200 km dans des zones soumises à des contraintes géographiques particulières, comme les zones de montagne."},
+    {"q": "Quelle est la règle de refroidissement en liaison froide ?", "a": "La température à cœur doit passer de +63 °C à +10 °C en moins de deux heures, puis le produit est stocké entre 0 et +3 °C. Sans étude de durée de vie, la DLC ne dépasse pas J+3."},
+    {"q": "À quelle température livrer en liaison chaude ?", "a": "À +63 °C minimum, selon l'annexe I de l'arrêté du 21 décembre 2009. Une température inférieure n'est admise que si l'analyse des dangers montre qu'elle ne présente pas de risque."},
+    {"q": "Combien de temps garder les plats témoins en cuisine centrale ?", "a": "Au moins cinq jours après la dernière présentation au consommateur, entre 0 et +3 °C. La note DGAL N2011-8117 demande 80 à 100 g par plat et un prélèvement systématique en cuisine centrale."},
+    {"q": "Un satellite peut-il resservir les restes du jour ?", "a": "Pas pour les plats livrés en liaison chaude : ils sont éliminés en fin de service. Les plats livrés en liaison froide peuvent l'être s'ils sont restés entre 0 et +3 °C, et un plat remis en température est consommé le jour même."}
+  ],
+  "related": [
+    {"href": "/haccp-restaurant.html", "title": "HACCP : du classeur à la preuve", "desc": "Le pilier hygiène : ce que la digitalisation change dans un plan de maîtrise sanitaire."},
+    {"href": "/digitaliser-haccp-hopital.html", "title": "Digitaliser l'HACCP à l'hôpital et en EHPAD", "desc": "Patients fragiles, plats témoins en office, textures modifiées."},
+    {"href": "/digitaliser-haccp-restauration-collective.html", "title": "Digitaliser l'HACCP en restauration collective", "desc": "Les règles communes aux cantines et restaurants d'entreprise."},
+    {"href": "/checklist-haccp-inspection.html", "title": "Inspection HACCP : la checklist", "desc": "Ce que le contrôleur regarde, dans l'ordre."},
+    {"href": "/maintenance-equipement-restaurant.html", "title": "Maintenance du matériel", "desc": "Cellules, chambres froides et véhicules : suivre les pannes avant qu'elles touchent la production."}
+  ],
+  "sources": [
+    {"label": "Arrêté du 21 décembre 2009 relatif aux règles sanitaires applicables aux activités de commerce de détail (Légifrance)", "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000021573483"},
+    {"label": "Note de service DGAL/SDSSA/N2011-8117 du 23 mai 2011, application de l'arrêté du 21 décembre 2009 (ministère de l'Agriculture)", "url": "https://info.agriculture.gouv.fr/boagri/instruction-N2011-8117/telechargement"},
+    {"label": "Instruction technique DGAL/SDSSA/2014-823, dérogation à l'obligation d'agrément sanitaire (ministère de l'Agriculture)", "url": "https://info.agriculture.gouv.fr/boagri/instruction-2014-823/telechargement"},
+    {"label": "DRIAAF Île-de-France, réglementation sanitaire de l'approvisionnement en restauration collective", "url": "https://driaaf.ile-de-france.agriculture.gouv.fr/IMG/pdf/Reglementation_sanitaire_approvisionnement_restauration_collective_F8_cle8a49a8.pdf"},
+    {"label": "Règlement (CE) n° 852/2004 relatif à l'hygiène des denrées alimentaires (texte diffusé par la préfecture de l'Ardèche)", "url": "https://www.ardeche.gouv.fr/contenu/telechargement/20587/172385/file/Regl_852_2004_cle03fa7b.pdf"},
+    {"label": "Décret n° 2015-447 du 17 avril 2015 relatif à l'information sur les allergènes (Journal officiel, via FAOLEX)", "url": "https://faolex.fao.org/docs/pdf/fra147954.pdf"}
+  ],
+  "cta_text": "L'application d'exploitation des établissements à partir de 15 employés, de la cuisine centrale aux satellites. Cinquante établissements accompagnés sur place."
+}

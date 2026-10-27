@@ -185,7 +185,7 @@ if (roiSitesInput && roiEmpInput && roiCaInput && roiFcInput) {
     const feed = q('#feed');
     const item = document.createElement('div');
     item.className = 'activity enter';
-    item.innerHTML = '<i>✓</i><p><b>Léa</b> a relevé la chambre froide · 3,1 °C<small>à l’instant</small></p>';
+    item.innerHTML = '<i><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="8" height="4" x="8" y="2" rx="1" ry="1"/> <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/> <path d="m9 14 2 2 4-4"/></svg></i><p><b>Léa</b> a relevé la chambre froide · 3,1 °C<small>à l’instant</small></p>';
     feed.querySelector('.panel-title').after(item);
     const items = feed.querySelectorAll('.activity');
     if (items.length > 3) items[items.length - 1].remove();
@@ -208,7 +208,7 @@ if (roiSitesInput && roiEmpInput && roiCaInput && roiFcInput) {
     await click(camille);
     comment.classList.remove('on');
     alert.classList.add('resolved');
-    alert.innerHTML = '<i>✓</i><p><b>Maintenance résolue</b><small>Four mixte · par Camille</small></p>';
+    alert.innerHTML = '<i><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/> <path d="m9 12 2 2 4-4"/></svg></i><p><b>Maintenance résolue</b><small>Four mixte · par Camille</small></p>';
     q('#alert-count').textContent = '1 ouverte';
 
     // 4. Camille a vu la tâche de Léa (sauté si le téléphone cache la ligne, en mobile)
@@ -244,3 +244,125 @@ if (roiSitesInput && roiEmpInput && roiCaInput && roiFcInput) {
     }
   }, { threshold: 0.25 }).observe(stage);
 })();
+
+// ---------------------------------------------------------------
+// Lot Kitchen (27/10/2026)
+// ---------------------------------------------------------------
+const calm = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+// Chiffres qui comptent : défilent de 0 à leur valeur quand le bandeau entre à l'écran.
+document.querySelectorAll('.facts-grid b[data-n]').forEach((el) => {
+  const target = Number(el.dataset.n);
+  const textNode = el.firstChild;
+  if (calm || !('IntersectionObserver' in window) || !textNode) return;
+  textNode.nodeValue = '0';
+  const io = new IntersectionObserver(([e]) => {
+    if (!e.isIntersecting) return;
+    io.disconnect();
+    const t0 = performance.now(), dur = 900;
+    const step = (now) => {
+      const k = Math.min(1, (now - t0) / dur);
+      textNode.nodeValue = String(Math.round(target * (1 - Math.pow(1 - k, 3))));
+      if (k < 1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
+  }, { threshold: 0.6 });
+  io.observe(el);
+});
+
+// Piliers en onglets : chaque onglet joue la boucle de son module, puis passe au suivant.
+// Un clic (ou les flèches du clavier) reprend la main : la boucle tourne alors sur place.
+const pillarTabs = document.querySelector('[data-pillar-tabs]');
+if (pillarTabs) {
+  const tabs = [...pillarTabs.querySelectorAll('[role="tab"]')];
+  const panels = tabs.map((t) => document.getElementById(t.getAttribute('aria-controls')));
+  const videos = [...pillarTabs.querySelectorAll('.pt-video')];
+  const fills = tabs.map((t) => t.querySelector('u'));
+  let current = 0, auto = !calm, visible = false;
+
+  const load = (v) => { if (!v.src) v.src = v.dataset.src; };
+  const show = (i, focus = false) => {
+    current = i;
+    tabs.forEach((t, k) => { t.setAttribute('aria-selected', String(k === i)); t.tabIndex = k === i ? 0 : -1; panels[k].hidden = k !== i; fills[k].style.transform = 'scaleX(0)'; });
+    videos.forEach((v, k) => { v.classList.toggle('on', k === i); if (k !== i) v.pause(); });
+    const v = videos[i];
+    load(v); v.loop = !auto; v.currentTime = 0;
+    if (visible && !calm) v.play().catch(() => {});
+    if (focus) tabs[i].focus();
+  };
+  videos.forEach((v, k) => v.addEventListener('ended', () => { if (auto && k === current) show((current + 1) % tabs.length); }));
+  tabs.forEach((t, i) => {
+    t.addEventListener('click', () => { auto = false; show(i); });
+    t.addEventListener('keydown', (e) => {
+      const d = e.key === 'ArrowRight' || e.key === 'ArrowDown' ? 1 : e.key === 'ArrowLeft' || e.key === 'ArrowUp' ? -1 : 0;
+      if (d) { e.preventDefault(); auto = false; show((current + d + tabs.length) % tabs.length, true); }
+    });
+  });
+  // La barre sous l'onglet actif suit la lecture de la boucle
+  const tick = () => {
+    const v = videos[current];
+    if (v.duration) fills[current].style.transform = `scaleX(${auto ? v.currentTime / v.duration : 1})`;
+    requestAnimationFrame(tick);
+  };
+  if (!calm) requestAnimationFrame(tick);
+  if (calm) { videos.forEach((v) => { v.controls = true; }); load(videos[0]); }
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(([e]) => {
+      visible = e.isIntersecting;
+      const v = videos[current];
+      if (visible && !calm) { load(v); v.play().catch(() => {}); } else v.pause();
+    }, { threshold: 0.35 }).observe(pillarTabs.querySelector('.pt-frame'));
+  } else { visible = true; show(0); }
+}
+
+// Candidature en 3 étapes : une question à la fois, même formulaire Netlify à l'arrivée.
+const stepForm = document.querySelector('form[data-steps]');
+if (stepForm) {
+  const steps = [...stepForm.querySelectorAll('.step')];
+  const bars = [...stepForm.querySelectorAll('.step-bar i')];
+  const title = stepForm.querySelector('[data-step-title]');
+  const count = stepForm.querySelector('[data-step-count]');
+  const back = stepForm.querySelector('[data-step-back]');
+  const next = stepForm.querySelector('[data-step-next]');
+  const finalLabel = next.textContent;
+  let at = 0;
+  const render = (focus) => {
+    steps.forEach((s, i) => { s.hidden = i !== at; });
+    bars.forEach((b, i) => b.classList.toggle('on', i <= at));
+    title.textContent = steps[at].dataset.step;
+    count.textContent = `${at + 1}/${steps.length}`;
+    back.hidden = at === 0;
+    next.textContent = at === steps.length - 1 ? finalLabel : 'Continuer';
+    if (focus) steps[at].querySelector('input')?.focus();
+  };
+  stepForm.classList.add('is-steps');
+  stepForm.noValidate = true; // les champs des étapes cachées bloqueraient la validation native
+  stepForm.addEventListener('submit', (e) => {
+    const fields = [...steps[at].querySelectorAll('input')];
+    if (!fields.every((f) => f.reportValidity())) { e.preventDefault(); return; }
+    if (at === steps.length - 1) {
+      // Dernière étape : on revérifie tout, puis envoi normal vers Netlify
+      const bad = steps.findIndex((s) => [...s.querySelectorAll('input')].some((f) => !f.checkValidity()));
+      if (bad === -1) return;
+      e.preventDefault(); at = bad; render(true); steps[at].querySelector('input:invalid')?.reportValidity();
+      return;
+    }
+    e.preventDefault();
+    at += 1; render(true);
+    if (typeof window.plausible === 'function') window.plausible('Candidature étape', { props: { etape: String(at + 1) } });
+  });
+  back.addEventListener('click', () => { at = Math.max(0, at - 1); render(true); });
+  render(false);
+}
+
+// CTA collant mobile : visible une fois le hero passé, caché quand le formulaire est à l'écran.
+const sticky = document.querySelector('[data-sticky-cta]');
+const heroEl = document.querySelector('.hero');
+const applyEl = document.getElementById('demo');
+if (sticky && heroEl && applyEl && 'IntersectionObserver' in window) {
+  let pastHero = false, onForm = false;
+  const sync = () => sticky.classList.toggle('show', pastHero && !onForm);
+  new IntersectionObserver(([e]) => { pastHero = !e.isIntersecting && e.boundingClientRect.top < 0; sync(); }).observe(heroEl);
+  // Caché dès que le formulaire arrive à l'écran, et après (footer compris)
+  new IntersectionObserver(([e]) => { onForm = e.isIntersecting || e.boundingClientRect.top < 0; sync(); }, { threshold: 0.15 }).observe(applyEl);
+}

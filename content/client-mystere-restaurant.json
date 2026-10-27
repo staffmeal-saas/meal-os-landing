@@ -1,0 +1,299 @@
+{
+  "slug": "client-mystere-restaurant",
+  "title": "Client mystère restaurant : organiser vos visites mystère",
+  "description": "Client mystère en restauration : à quoi sert une visite mystère, agence ou interne, étapes, fréquence, coût et rapport. Le guide pour décideurs.",
+  "kicker": "savoir avant que ça parte en avis",
+  "h1": "Client mystère en restaurant : le guide pour organiser vos visites",
+  "lede": "Une visite mystère en restaurant consiste à envoyer une personne inconnue de vos équipes vivre un repas comme un client ordinaire, puis remplir un questionnaire factuel et noté. Elle vous dit ce qui se passe en salle quand vous n'y êtes pas, avant que le client ne l'écrive en public. Vous pouvez la confier à une agence ou l'organiser vous-même : ce guide couvre les deux, étape par étape, et renvoie vers une page détaillée pour chaque sujet.",
+  "breadcrumb": [
+    [
+      "Client mystère",
+      null
+    ]
+  ],
+  "datePublished": "2026-08-05",
+  "sections": [
+    {
+      "h2": "Qu'est-ce qu'une visite mystère en restauration ?",
+      "blocks": [
+        {
+          "p": "Le client mystère, ou visiteur mystère, réserve, mange et paie comme n'importe quel client. La différence : il observe des points définis à l'avance, chronomètre les délais, photographie l'assiette et les sanitaires, et note chaque moment de la visite sur une grille identique d'une visite à l'autre."
+        },
+        {
+          "p": "Ce n'est ni un avis client, ni un audit d'hygiène. C'est une mesure de l'expérience vécue en salle, sur vos critères, à intervalles réguliers."
+        },
+        {
+          "table": {
+            "caption": "Ce que mesure chaque dispositif",
+            "head": [
+              "Dispositif",
+              "Qui observe",
+              "Ce qu'il mesure",
+              "Limite"
+            ],
+            "rows": [
+              [
+                "Visite mystère",
+                "Un visiteur briefé, non reconnu",
+                "Le service réel, sur une grille fixe",
+                "Une visite reste un échantillon"
+              ],
+              [
+                "Avis en ligne",
+                "Le client, de lui-même",
+                "Ce qui a marqué, en bien ou en mal",
+                "Biais vers les extrêmes, déjà public"
+              ],
+              [
+                "Enquête de satisfaction",
+                "Le client, sollicité",
+                "Une opinion après coup",
+                "Pas de fait vérifiable"
+              ],
+              [
+                "Audit d'hygiène",
+                "Un contrôleur annoncé ou non",
+                "La conformité sanitaire, en cuisine",
+                "Ne dit rien du service"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "h2": "À quoi sert une visite mystère pour un décideur",
+      "blocks": [
+        {
+          "p": "La raison de fond tient en un chiffre. Dans l'étude « Experience is everything » de PwC, menée auprès de 15 000 consommateurs, 32 % déclarent qu'ils quitteraient une marque qu'ils apprécient après une seule mauvaise expérience. En salle, cette mauvaise expérience a lieu le plus souvent quand le propriétaire ou le directeur n'est pas là."
+        },
+        {
+          "p": "Pour un propriétaire, un directeur d'exploitation ou un responsable qualité, la visite mystère sert à quatre choses :"
+        },
+        {
+          "ul": [
+            "<strong>Vérifier que les standards sont appliqués</strong>, pas seulement écrits. Si vos gestes de service ne sont pas encore formalisés, commencez par vos <a href=\"/standards-service-restaurant.html\">standards de service</a>.",
+            "<strong>Repérer une dérive avant qu'elle ne devienne un avis.</strong> Quand le problème est déjà public, la question devient celle de la <a href=\"/reponses-avis-google-restaurant.html\">réponse aux avis Google</a>.",
+            "<strong>Mesurer l'effet d'une action</strong> : nouvelle carte, nouveau responsable de salle, formation à l'accueil.",
+            "<strong>Comparer vos établissements</strong> sur une même grille, pour savoir où passer votre semaine."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Agence ou dispositif interne",
+      "blocks": [
+        {
+          "p": "Les deux se défendent, pour des besoins différents. Une agence apporte un tiers neutre et une méthode : c'est ce qu'il faut pour un contrôle contractuel de franchisé, une labellisation ou un premier état des lieux. Un dispositif interne apporte la fréquence et un rapport lu le lendemain matin : c'est ce qu'il faut pour piloter."
+        },
+        {
+          "p": "Le prix explique l'essentiel du choix. Une visite unitaire en agence se facture le plus souvent entre 60 et 100 €, et les missions complètes démarrent autour de 800 € HT pour monter jusqu'à 7 000 € HT pour un audit multi-sites. Le repas et les déplacements du visiteur restent en général à votre charge, en plus des honoraires."
+        },
+        {
+          "table": {
+            "head": [
+              "Besoin",
+              "Dispositif adapté"
+            ],
+            "rows": [
+              [
+                "Constat opposable à un tiers (franchise, label)",
+                "Agence"
+              ],
+              [
+                "Premier référentiel quand vous n'avez pas de grille",
+                "Agence"
+              ],
+              [
+                "Suivi mensuel de chaque établissement",
+                "Interne"
+              ],
+              [
+                "Grille qui évolue avec la carte ou le concept",
+                "Interne"
+              ],
+              [
+                "Référence externe une fois par an et suivi entre deux",
+                "Les deux"
+              ]
+            ]
+          }
+        },
+        {
+          "p": "Les trois cas où l'agence reste le bon choix, et le montage qui combine les deux, sont détaillés sur la page <a href=\"/agence-client-mystere-ou-interne.html\">agence ou dispositif interne</a>."
+        }
+      ]
+    },
+    {
+      "h2": "Les étapes d'une visite mystère",
+      "blocks": [
+        {
+          "p": "Que vous passiez par une agence ou non, une visite mystère utile suit sept étapes. En interne, c'est vous qui les tenez."
+        },
+        {
+          "ol": [
+            "<strong>Fixer l'objectif.</strong> Contrôler la conformité au concept, suivre un site en difficulté, comparer un réseau : l'objectif décide de la grille et de la fréquence.",
+            "<strong>Construire la grille.</strong> Des sections par moment de la visite, une pondération, des questions éliminatoires qui plafonnent la note, des branchements qui demandent pourquoi quand la réponse est non. Le modèle est sur la page <a href=\"/grille-visite-mystere-restaurant.html\">grille de visite mystère</a>.",
+            "<strong>Rédiger les questions.</strong> Une question appelle un fait que deux visiteurs constateraient de la même façon. Un <a href=\"/questionnaire-client-mystere.html\">questionnaire client mystère complet</a> est prêt à reprendre.",
+            "<strong>Choisir et briefer le visiteur.</strong> Une personne inconnue du site, qui a lu la grille avant d'entrer. Les profils qui fonctionnent sont sur la page <a href=\"/recruter-clients-mysteres.html\">qui envoyer en visite mystère</a>.",
+            "<strong>Écrire le scénario.</strong> Jour, créneau, nombre de couverts, et une demande à tester : allergènes, paiement fractionné, changement de garniture.",
+            "<strong>Faire la visite et remplir sur place.</strong> Délais chronométrés, photos de l'assiette et des sanitaires, questionnaire rempli pendant ou juste après le repas.",
+            "<strong>Lire le rapport et décider.</strong> Deux ou trois actions datées, transmises au bon responsable. La méthode est sur la page <a href=\"/rapport-client-mystere.html\">lire un rapport de visite mystère</a>."
+          ]
+        },
+        {
+          "callout": "Annoncez à vos équipes que le dispositif existe, jamais les dates. Une grille connue devient un référentiel de service. Une date connue se prépare, et vous mesurez alors la préparation."
+        }
+      ]
+    },
+    {
+      "h2": "À quelle fréquence",
+      "blocks": [
+        {
+          "p": "Deux visites par an photographient deux soirées. Un service dépend du jour, du remplissage, de qui était en poste : il faut assez de points pour que ce bruit se moyenne. La cadence de référence est d'une visite par mois et par établissement, en variant les créneaux."
+        },
+        {
+          "p": "Dans l'hôtellerie de chaîne, les visites se répètent à un rythme mensuel ou trimestriel, selon la demande de la chaîne ou de l'établissement. Les seuils et les moments où il faut resserrer sont sur la page <a href=\"/frequence-visites-mystere.html\">fréquence des visites mystère</a>."
+        }
+      ]
+    },
+    {
+      "h2": "Combien coûte une visite mystère",
+      "blocks": [
+        {
+          "p": "En agence, comptez le tarif de la visite, entre 60 et 100 € dans la plupart des cas, plus le repas du visiteur. Sur un restaurant où deux couverts coûtent 60 €, la visite revient donc à environ 120 à 160 €."
+        },
+        {
+          "p": "En interne, le coût de l'enquête disparaît. Restent le repas, un éventuel défraiement, et le temps de construire la grille puis de lire les rapports. C'est ce qui rend la visite mensuelle tenable sur plusieurs sites. Le calcul complet sur un réseau de cinq établissements est sur la page <a href=\"/cout-client-mystere-restaurant.html\">coût d'un client mystère</a>."
+        }
+      ]
+    },
+    {
+      "h2": "Ce que doit contenir le rapport",
+      "blocks": [
+        {
+          "p": "Un score global ne dit rien seul : 87 sur 100 est bon si la visite précédente était à 79, inquiétant si elle était à 94. Un rapport exploitable affiche aussi le score par section, les éliminatoires déclenchés, les délais mesurés, les photos et deux ou trois verbatims."
+        },
+        {
+          "p": "Le rapport ne s'envoie pas brut à l'équipe et ne conditionne pas une prime : le jour où la note devient un objectif, elle cesse d'être une mesure. La restitution par niveau est détaillée sur la page <a href=\"/rapport-client-mystere.html\">lire un rapport de visite mystère</a>."
+        }
+      ]
+    },
+    {
+      "h2": "Restaurant d'hôtel, franchise et réseau",
+      "blocks": [
+        {
+          "p": "Dans un hôtel, le restaurant entre souvent dans un dispositif plus large. Pour les hôtels qui demandent un classement en 4 ou 5 étoiles, une visite mystère est réalisée dans le cadre de la visite de contrôle, selon Atout France. Cette visite porte sur le classement de l'hôtel : elle ne remplace pas un suivi régulier de votre salle."
+        },
+        {
+          "p": "En réseau, la question change. Vous savez déjà que le service tient quelque part et pas ailleurs : vous cherchez où, sur quel point, depuis quand. Cela suppose la même grille partout et un indicateur d'écart entre sites plutôt qu'une moyenne. Voir la page <a href=\"/client-mystere-franchise-reseau.html\">client mystère en franchise et en réseau</a>."
+        }
+      ]
+    },
+    {
+      "h2": "Les erreurs qui rendent la visite inutile",
+      "blocks": [
+        {
+          "p": "La plupart des dispositifs qui échouent ne manquent pas de visiteurs. Ils butent sur l'une de ces cinq erreurs :"
+        },
+        {
+          "ul": [
+            "<strong>Des questions d'opinion.</strong> « Le service était-il agréable ? » mesure l'humeur du visiteur. « Le client a-t-il été salué en moins d'une minute ? » mesure l'établissement.",
+            "<strong>Une grille sans éliminatoire.</strong> Un plat servi froid se retrouve compensé par quarante cases cochées ailleurs, et le score ne dit plus la vérité.",
+            "<strong>Une grille qui change à chaque visite.</strong> Le score n'est plus comparable à celui du mois précédent.",
+            "<strong>Un questionnaire rempli le lendemain.</strong> Les délais deviennent des souvenirs, les détails disparaissent.",
+            "<strong>Un rapport sans suite.</strong> Une visite qui ne débouche sur aucune action datée n'avait pas besoin d'être faite."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Le dossier complet, page par page",
+      "blocks": [
+        {
+          "p": "Chaque sujet a sa page. Celle-ci donne la vue d'ensemble, les suivantes donnent le détail."
+        },
+        {
+          "ul": [
+            "<a href=\"/questionnaire-client-mystere.html\">Questionnaire client mystère restaurant</a> : 58 questions par moment de la visite, barème sur 100, éliminatoires, version PDF.",
+            "<a href=\"/grille-visite-mystere-restaurant.html\">Grille de visite mystère</a> : sections, pondération, éliminatoires et branchements conditionnels.",
+            "<a href=\"/cout-client-mystere-restaurant.html\">Coût d'un client mystère</a> : tarifs des prestataires, frais annexes, calcul sur un réseau.",
+            "<a href=\"/agence-client-mystere-ou-interne.html\">Agence ou dispositif interne</a> : quand l'agence s'impose, quand elle ne sert pas, comment combiner.",
+            "<a href=\"/recruter-clients-mysteres.html\">Qui envoyer en visite mystère</a> : les profils qui fonctionnent, celui à éviter, le brief.",
+            "<a href=\"/rapport-client-mystere.html\">Lire un rapport de visite mystère</a> : lire par section, traiter un éliminatoire, restituer sans casser l'équipe.",
+            "<a href=\"/frequence-visites-mystere.html\">Fréquence des visites mystère</a> : la cadence qui rend une courbe lisible.",
+            "<a href=\"/client-mystere-franchise-reseau.html\">Client mystère en franchise et en réseau</a> : mesurer l'écart entre établissements.",
+            "<a href=\"/generateur-reponse-avis-google.html\">Générateur de réponse aux avis</a> : quand un problème relevé en visite est déjà en ligne."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Vos visites mystère dans Staff Meal",
+      "blocks": [
+        {
+          "p": "Staff Meal vous permet de faire vos propres visites mystère, sans agence. Vous créez vos missions et recrutez vos visiteurs. La grille porte des questions pondérées et éliminatoires, des branchements conditionnels, la preuve photo et une note de satisfaction. Chaque visite se compare aux précédentes, et les résultats se lisent par établissement, comparables sur tout le réseau."
+        },
+        {
+          "p": "L'application est en bêta privée, pensée pour les équipes de 15 personnes et plus. Cinquante établissements sont accompagnés sur place."
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "Combien de temps dure une visite mystère au restaurant ?",
+      "a": "Le temps d'un repas normal, de l'appel de réservation au départ, plus dix à quinze minutes de saisie. Le visiteur remplit le questionnaire pendant ou juste après la visite, jamais le lendemain, sinon il remplit de mémoire."
+    },
+    {
+      "q": "Combien de visites mystère par an faut-il prévoir ?",
+      "a": "Une par mois et par établissement pour obtenir une tendance lisible. En dessous de six par an, vous ne distinguez pas une dérive d'un mauvais soir. Le détail est sur la page <a href=\"/frequence-visites-mystere.html\">fréquence des visites mystère</a>."
+    },
+    {
+      "q": "Peut-on envoyer quelqu'un de son équipe ?",
+      "a": "Quelqu'un d'un autre établissement du réseau, oui : il est inconnu sur place et sait quoi regarder. Quelqu'un du site visité, non : il sera reconnu et le service observé ne sera pas le service habituel."
+    },
+    {
+      "q": "Quelle différence entre client mystère et avis Google ?",
+      "a": "L'avis dit ce qui a déjà marqué un client, publiquement, avec un biais vers les extrêmes. La visite mystère mesure ce que vit un client ordinaire, sur des critères que vous avez choisis, avant que cela devienne un avis."
+    },
+    {
+      "q": "Une grille de client mystère peut-elle servir pour un restaurant d'hôtel ?",
+      "a": "Oui, avec les mêmes moments de visite, en ajoutant le petit-déjeuner ou le room service si vous les proposez. La visite mystère liée au classement 4 ou 5 étoiles évalue l'hôtel pour son classement ; votre propre grille suit la salle entre deux contrôles."
+    },
+    {
+      "q": "Comment devenir client mystère dans un restaurant ?",
+      "a": "Cette page s'adresse aux restaurateurs qui organisent des visites. Si vous souhaitez devenir visiteur, ce sont les sociétés d'enquêtes et les agences de visites mystère qui recrutent : renseignez-vous directement auprès d'elles, et ne payez jamais pour vous inscrire."
+    }
+  ],
+  "related": [
+    {
+      "href": "/standards-service-restaurant.html",
+      "title": "Standards de service en restaurant",
+      "desc": "Écrire les gestes que la visite mystère va vérifier."
+    },
+    {
+      "href": "/reponses-avis-google-restaurant.html",
+      "title": "Répondre aux avis Google",
+      "desc": "Ce qu'on fait quand le problème est déjà public."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Adobe, « New study finds consumers would pay more for better CX » (2018), sur l'étude PwC « Experience is everything » (15 000 répondants)",
+      "url": "https://blog.adobe.com/en/publish/2018/04/05/new-study-finds-consumers-would-pay-more-for-better-cx-pwc"
+    },
+    {
+      "label": "DTS Tech, « Combien coûte une mission de client mystère ? » : tarifs unitaires, budgets de mission, frais à la charge du commanditaire",
+      "url": "https://www.dtstech.com/combien-coute-une-mission-de-client-mystere-budget-formats-et-criteres-de-choix/"
+    },
+    {
+      "label": "Atout France, plaquette du classement hôtelier (2019) : visite mystère pour les demandes de classement 4 et 5 étoiles",
+      "url": "https://www.tourisme-valdemarne.com/espace-pro/wp-content/uploads/sites/3/2019/06/plaquette-atoutfrance-hotelier.pdf"
+    },
+    {
+      "label": "L'Hôtellerie Restauration, « Clients mystère : un outil d'amélioration continue » (2019) : rythme mensuel ou trimestriel des visites",
+      "url": "https://www.lhotellerie-restauration.fr/actualite/clients-mystere-un-outil-d-amelioration-continue"
+    }
+  ]
+}

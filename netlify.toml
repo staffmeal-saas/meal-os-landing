@@ -66,6 +66,60 @@
   force = true
 
 [[redirects]]
+  from = "/module-checklists-haccp"
+  to = "/module-checklists-haccp.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/module-manuel-operatoire"
+  to = "/module-manuel-operatoire.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/module-maintenance"
+  to = "/module-maintenance.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/module-audit-haccp"
+  to = "/module-audit-haccp.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/module-client-mystere"
+  to = "/module-client-mystere.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/module-recettes-food-cost"
+  to = "/module-recettes-food-cost.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/module-formations"
+  to = "/module-formations.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/module-communication"
+  to = "/module-communication.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/module-multi-site"
+  to = "/module-multi-site.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/agence-client-mystere-ou-interne"
   to = "/agence-client-mystere-ou-interne.html"
   status = 301
@@ -319,6 +373,49 @@
 # Une URL inconnue doit renvoyer un vrai 404 (Netlify sert 404.html), et
 # non un 200 avec la page d'accueil : un soft 404 fait crawler à Google
 # une infinité d'URL inexistantes au détriment des vraies pages.
+
+# Pages ajoutées le 25/10/2026 : même règle, une seule URL par page (version .html)
+[[redirects]]
+  from = "/a-propos"
+  to = "/a-propos.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/digitaliser-haccp-cafeteria"
+  to = "/digitaliser-haccp-cafeteria.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/digitaliser-haccp-cuisine-centrale"
+  to = "/digitaliser-haccp-cuisine-centrale.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/digitaliser-haccp-hopital"
+  to = "/digitaliser-haccp-hopital.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/digitaliser-haccp-hotel"
+  to = "/digitaliser-haccp-hotel.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/digitaliser-haccp-restauration-collective"
+  to = "/digitaliser-haccp-restauration-collective.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/logiciel-haccp-restauration-rapide"
+  to = "/logiciel-haccp-restauration-rapide.html"
+  status = 301
+  force = true
 
 [build.processing]
   [build.processing.html]

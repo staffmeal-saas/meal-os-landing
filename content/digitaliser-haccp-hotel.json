@@ -1,0 +1,126 @@
+{
+  "slug": "digitaliser-haccp-hotel",
+  "title": "Digitaliser l'HACCP d'un hôtel : un PMS par point de service",
+  "description": "Restaurant, buffet, room service, bar, banquets : comment digitaliser l'HACCP d'un hôtel, poste par poste, avec des preuves horodatées et des repères sourcés.",
+  "kicker": "un hôtel, cinq cuisines",
+  "h1": "Digitaliser l'HACCP d'un hôtel : restaurant, buffet, room service, banquets",
+  "lede": "Digitaliser l'HACCP d'un hôtel consiste à découper le plan de maîtrise sanitaire par point de service (restaurant, petit-déjeuner, room service, bar, banquets) et à envoyer à chaque poste, à l'heure de son service, les relevés qui le concernent, saisis sur téléphone avec une heure, un auteur et, si besoin, une photo. Le règlement n'impose aucun support. Il impose de pouvoir démontrer que les contrôles ont été faits, et dans un hôtel où les équipes tournent entre les points de service et changent avec la saison, un classeur unique en cuisine ne le démontre plus.",
+  "breadcrumb": [["Hygiène et conformité", "/haccp-restaurant.html"], ["HACCP en hôtel", null]],
+  "datePublished": "2026-10-25",
+  "sections": [
+    {"h2": "Ce que la réglementation demande à un hôtel", "blocks": [
+      {"p": "Le socle est le règlement (CE) n° 852/2004. Son article 5 oblige tout exploitant à appliquer une procédure fondée sur les principes HACCP : identifier les dangers et les points critiques, fixer à ces points des <strong>limites critiques</strong>, les surveiller, prévoir les actions correctives, vérifier le dispositif et tenir <strong>des documents et des dossiers</strong> qui prouvent son application effective."},
+      {"p": "Le même article précise que les documents décrivant les procédures doivent être à jour à tout moment et que les autres enregistrements sont conservés pendant une « période appropriée ». Le texte ne fixe aucun support : papier et numérique sont recevables, à condition de pouvoir présenter les enregistrements lors d'un contrôle."},
+      {"p": "Pour un hôtel, trois obligations complémentaires pèsent directement sur l'organisation :"},
+      {"ul": [
+        "<strong>La formation spécifique de 14 heures.</strong> Le décret n° 2011-731 impose qu'au moins une personne de l'effectif justifie d'une formation en hygiène alimentaire adaptée à la restauration commerciale. L'instruction de la DGAL du 30 octobre 2017 cite explicitement les restaurants des hôtels. Elle exclut en revanche les hôtels qui servent uniquement des petits-déjeuners.",
+        "<strong>La formation de tout le personnel qui manipule des denrées.</strong> L'annexe II, chapitre XII, du règlement 852/2004 exige que chaque manutentionnaire soit encadré et dispose d'instructions ou d'une formation adaptées à son activité. Cette obligation s'applique aussi au personnel du petit-déjeuner, même quand l'hôtel n'a pas de restaurant.",
+        "<strong>L'information écrite sur les allergènes.</strong> Depuis le décret n° 2015-447, là où des repas sont servis sur place, le client doit trouver par écrit, de façon lisible et visible, soit la liste des allergènes de chaque plat, soit la manière d'y accéder. Un buffet, une carte de room service et une carte de bar sont concernés."
+      ]}
+    ]},
+    {"h2": "Pourquoi l'hôtel est un cas à part", "blocks": [
+      {"p": "Un restaurant indépendant a une cuisine, une équipe et un service à la fois. Un hôtel de taille moyenne fait tourner plusieurs activités alimentaires qui n'ont ni les mêmes horaires ni les mêmes dangers :"},
+      {"ul": [
+        "<strong>Le petit-déjeuner buffet</strong> expose des produits froids et chauds pendant plusieurs heures, devant des clients qui se servent eux-mêmes.",
+        "<strong>Le room service</strong> fait voyager des plats chauds dans les étages, avec un temps de trajet que personne ne mesure.",
+        "<strong>Le bar</strong> manipule des denrées (fruits coupés, glaçons, snacking) avec une équipe qui ne se considère pas comme une équipe de cuisine.",
+        "<strong>Les banquets et séminaires</strong> produisent en avance de gros volumes, ce qui pose les questions de refroidissement, de stockage et de remise en température.",
+        "<strong>Le restaurant</strong> suit le rythme classique : réception, stockage, production, service, nettoyage."
+      ]},
+      {"p": "Un PMS rédigé pour la cuisine centrale de l'hôtel ne dit pas au chef de rang du petit-déjeuner ce qu'il doit relever à 7 h. La digitalisation utile commence par ce découpage : chaque point de service reçoit ses propres contrôles, à ses propres horaires, et le F&B manager voit l'ensemble sur un seul écran."}
+    ]},
+    {"h2": "Les points de contrôle par point de service", "blocks": [
+      {"p": "Le tableau ci-dessous donne une base de travail. Les fréquences sont des propositions à ajuster dans votre analyse des dangers. Les seuils chiffrés sont ceux de l'arrêté du 21 décembre 2009."},
+      {"table": {"caption": "Contrôles types d'un hôtel avec restauration", "head": ["Point de service", "Contrôle", "Moment proposé", "Repère réglementaire"], "rows": [
+        ["Petit-déjeuner buffet", "Température des vitrines et bacs froids", "Mise en place, puis en cours de service", "Préparations élaborées à l'avance : + 3 °C maximum"],
+        ["Petit-déjeuner buffet", "Température des chauffe-plats", "Mise en place, puis en cours de service", "Liaison chaude : + 63 °C minimum"],
+        ["Petit-déjeuner buffet", "Affichage des allergènes", "Ouverture", "Information écrite, lisible et visible (décret 2015-447)"],
+        ["Room service", "Température des plats chauds au départ", "À chaque envoi ou par échantillon", "+ 63 °C minimum"],
+        ["Restaurant", "Réception des marchandises", "À chaque livraison", "Viandes hachées : + 2 °C ; volailles : + 4 °C"],
+        ["Restaurant et bar", "Enceintes froides positives et négatives", "Ouverture et fermeture", "Annexe I de l'arrêté (tableau ci-dessous)"],
+        ["Banquets", "Refroidissement et stockage des productions faites en avance", "À chaque production", "Limites fixées par votre PMS, stockage à + 3 °C maximum"],
+        ["Tous", "Plan de nettoyage et de désinfection", "Selon la fréquence de chaque zone", "Défini dans votre PMS"]
+      ]}}
+    ]},
+    {"h2": "Les températures réglementaires à afficher au bon poste", "blocks": [
+      {"p": "L'annexe I de l'arrêté du 21 décembre 2009 fixe les températures de conservation pour la remise directe au consommateur. Ce sont les valeurs à inscrire dans l'intitulé de chaque contrôle, pour que l'équipier sache à quoi comparer sa mesure."},
+      {"table": {"caption": "Extraits de l'annexe I de l'arrêté du 21 décembre 2009", "head": ["Denrée", "Température"], "rows": [
+        ["Viandes hachées", "+ 2 °C maximum"],
+        ["Produits de la pêche frais", "+ 2 °C maximum (glace fondante : 0 à + 2 °C)"],
+        ["Préparations culinaires élaborées à l'avance", "+ 3 °C maximum"],
+        ["Préparations de viandes, volailles", "+ 4 °C maximum"],
+        ["Autres denrées très périssables", "+ 4 °C maximum"],
+        ["Plats cuisinés remis chauds au consommateur", "+ 63 °C minimum"],
+        ["Glaces, crèmes glacées", "- 18 °C"],
+        ["Viandes hachées et préparations de viandes congelées", "- 18 °C"]
+      ]}},
+      {"callout": "Le refroidissement de + 63 °C à + 10 °C en moins de deux heures et la remise en température en moins d'une heure figurent à l'annexe IV de l'arrêté, réservée à la restauration collective. Un hôtel n'y est pas soumis à ce titre, mais l'article 5 du règlement 852/2004 l'oblige à fixer ses propres limites critiques pour ces étapes. Pour la production des banquets, écrivez-les noir sur blanc dans le PMS."}
+    ]},
+    {"h2": "Équipes tournantes et saisonnalité : le vrai sujet", "blocks": [
+      {"p": "Dans un hôtel, le même extra peut servir le petit-déjeuner le matin et renforcer un banquet le soir. En haute saison, une partie de l'équipe découvre l'établissement la semaine où il est le plus chargé. Le classeur ne connaît pas ces personnes. Il contient des colonnes à remplir, et chacun suppose que quelqu'un d'autre s'en charge."},
+      {"p": "Le règlement 852/2004 ne fait pas d'exception pour les saisonniers : chaque personne qui manipule des denrées doit disposer d'instructions adaptées. Concrètement, il faut pouvoir montrer qu'un extra arrivé lundi a reçu la procédure du buffet et l'a lue."},
+      {"ul": [
+        "<strong>Des checklists qui suivent le planning.</strong> Avec le connecteur Skello, les checklists se filtrent par poste et par horaire : l'équipier planifié au petit-déjeuner de 6 h 30 voit les contrôles du buffet, pas ceux de la plonge du soir.",
+        "<strong>Des procédures avec accusé de lecture.</strong> Le manuel opératoire est consultable sur téléphone, et chaque lecture est enregistrée. Le geste filmé par votre chef (le montage d'un buffet, le nettoyage d'une machine à glaçons) peut devenir une procédure écrite.",
+        "<strong>Des parcours de formation.</strong> Un saisonnier suit un parcours avec quiz, validé par son manager, et le certificat reste dans son dossier."
+      ]},
+      {"p": "Pour la formation de 14 heures, gardez en tête un point de l'instruction de la DGAL : dans les entreprises qui gèrent plusieurs sites, chaque site doit compter une personne qualifiée présente de manière habituelle. Pour un groupe hôtelier, une seule personne formée au siège ne suffit pas."}
+    ]},
+    {"h2": "Ce que Staff Meal fait dans un hôtel", "blocks": [
+      {"p": "Staff Meal est une application d'exploitation pour les établissements de 15 personnes et plus, en bêta privée auprès de 50 établissements accompagnés sur place. Appliquée à l'HACCP d'un hôtel, elle couvre six usages :"},
+      {"ul": [
+        "<strong>Checklists ciblées</strong> par point de service et par horaire, avec mesures, commentaires et preuve photo horodatée.",
+        "<strong>Manuel opératoire et procédures</strong> avec accusé de lecture, pour savoir qui a pris connaissance de quoi. Voir notre page sur le <a href=\"/manuel-operatoire-restaurant.html\">manuel opératoire</a>.",
+        "<strong>Maintenance</strong> : parc d'équipements (chambres froides, chauffe-plats, lave-vaisselle, machines à glaçons), tickets, responsables et historique. Une enceinte qui dérive devient un ticket suivi, pas une remarque oubliée. Détail sur la page <a href=\"/maintenance-equipement-restaurant.html\">maintenance du matériel</a>.",
+        "<strong>Audits HACCP</strong> avec des grilles scorées par section. Les non-conformités remontent au directeur et chaque audit produit un rapport PDF.",
+        "<strong>Formations</strong> avec parcours, quiz, validation par le manager et certificats.",
+        "<strong>Communication interne</strong> : un fil d'actualité avec accusé de lecture, utile pour une consigne du type « nouveau fournisseur de viennoiseries à partir de lundi »."
+      ]},
+      {"p": "Pour un groupe, le multi-site permet de créer une checklist ou une grille d'audit une fois et de la déployer dans tous les hôtels, avec un tableau de bord consolidé et quatre rôles, du propriétaire à l'équipier. Staff Meal ne pose pas de capteurs, n'imprime pas d'étiquettes et ne remplace pas votre thermomètre : l'équipe relève la valeur et l'application la date, la signe et la rend consultable."}
+    ]},
+    {"h2": "Papier ou numérique : ce qui change lors d'un contrôle", "blocks": [
+      {"p": "Les résultats des contrôles sanitaires sont publics sur Alim'confiance, de « très satisfaisant » à « à corriger de manière urgente », et restent affichés un an. Les inspections portent notamment sur la propreté des locaux et du matériel, l'hygiène du personnel et le respect de la chaîne du froid. Pour un hôtel, ce résultat se lit à côté des avis clients."},
+      {"table": {"head": ["Question de l'inspecteur", "Avec un classeur", "Avec des relevés numériques"], "rows": [
+        ["Qui a relevé la vitrine du buffet ce matin ?", "Une initiale, parfois", "Un nom, une heure, une photo si demandée"],
+        ["Que s'est-il passé quand la chambre froide était à + 7 °C ?", "Rarement écrit", "Commentaire et action corrective saisis avec le relevé, ticket de maintenance ouvert sur l'équipement"],
+        ["Le personnel du petit-déjeuner connaît-il la procédure ?", "Difficile à prouver", "Accusés de lecture datés"],
+        ["Où est l'attestation de formation de 14 heures ?", "Dans un dossier RH", "Toujours le document de l'organisme ; les formations internes et leurs certificats sont dans l'application"],
+        ["Les relevés du mois dernier ?", "Classeur archivé, parfois incomplet", "Historique consultable par point de service"]
+      ]}}
+    ]},
+    {"h2": "Par où commencer", "blocks": [
+      {"ol": [
+        "Listez vos points de service et, pour chacun, ses horaires, ses équipements et ses produits sensibles.",
+        "Reprenez votre PMS et rattachez chaque contrôle à un point de service et à un créneau, avec ses bornes chiffrées.",
+        "Démarrez par le petit-déjeuner : c'est le service le plus long, le plus exposé et souvent le moins encadré.",
+        "Ajoutez la réception et les enceintes froides, puis le room service, le bar et les banquets.",
+        "Après un mois, lancez un premier audit interne scoré pour voir quel point de service décroche."
+      ]},
+      {"p": "Pour le détail des attentes d'un inspecteur, voir notre <a href=\"/checklist-haccp-inspection.html\">checklist d'inspection HACCP</a>. Pour le cadre général, la page <a href=\"/haccp-restaurant.html\">HACCP en restaurant</a>."}
+    ]}
+  ],
+  "faq": [
+    {"q": "Un hôtel qui ne sert que le petit-déjeuner doit-il avoir un PMS ?", "a": "Oui. Tout exploitant du secteur alimentaire applique une procédure fondée sur les principes HACCP au titre du règlement 852/2004, et le personnel qui manipule des denrées doit être formé ou disposer d'instructions. En revanche, la formation spécifique de 14 heures ne s'impose pas aux hôtels qui servent uniquement des petits-déjeuners, selon l'instruction de la DGAL de 2017."},
+    {"q": "La formation hygiène de 14 heures est-elle obligatoire dans un hôtel restaurant ?", "a": "Oui, les restaurants d'hôtels sont dans le champ du décret n° 2011-731. Au moins une personne de l'effectif doit justifier de cette formation, d'un diplôme listé par arrêté ou de trois ans d'expérience comme gestionnaire ou exploitant dans le secteur alimentaire. L'attestation doit pouvoir être présentée lors du contrôle."},
+    {"q": "Quelle température pour un buffet de petit-déjeuner ?", "a": "Les préparations froides élaborées à l'avance se conservent à + 3 °C maximum, et les plats chauds remis au consommateur doivent rester à + 63 °C minimum, selon l'annexe I de l'arrêté du 21 décembre 2009. Pour les autres produits, reportez-vous au tableau de l'annexe I et aux indications du fabricant."},
+    {"q": "Les relevés HACCP sur tablette ou téléphone sont-ils valables en cas de contrôle ?", "a": "Oui. Le règlement 852/2004 exige des documents et des dossiers qui prouvent l'application du plan, sans imposer de support. Un relevé numérique horodaté et attribué à une personne est même plus facile à présenter qu'un classeur."},
+    {"q": "Faut-il afficher les allergènes au room service et au bar ?", "a": "Dès que des repas sont proposés à la consommation sur place, le décret n° 2015-447 impose une information écrite, lisible et visible : soit la liste des allergènes, soit la manière d'y accéder librement. Une carte de room service ou de snacking au bar est concernée."},
+    {"q": "Comment harmoniser l'HACCP entre plusieurs hôtels d'un même groupe ?", "a": "En utilisant les mêmes checklists et les mêmes grilles d'audit partout, puis en comparant les scores par section. Dans Staff Meal, une grille créée une fois se déploie dans tous les établissements et le tableau de bord consolidé montre quel hôtel décroche et sur quel point."}
+  ],
+  "related": [
+    {"href": "/haccp-restaurant.html", "title": "HACCP en restaurant : du classeur à la preuve", "desc": "Le cadre général du plan de maîtrise sanitaire et ce que la digitalisation change."},
+    {"href": "/checklist-haccp-inspection.html", "title": "Inspection HACCP : la checklist pour être prêt", "desc": "Ce que l'inspecteur regarde, dans l'ordre."},
+    {"href": "/maintenance-equipement-restaurant.html", "title": "Maintenance du matériel de restauration", "desc": "Une chambre froide qui lâche est un incident d'hygiène avant d'être une panne."},
+    {"href": "/turnover-restauration.html", "title": "Turnover en restauration", "desc": "Former vite des équipes qui changent souvent."},
+    {"href": "/digitaliser-haccp-restauration-collective.html", "title": "Digitaliser l'HACCP en restauration collective", "desc": "Plats témoins, refroidissement, cuisines satellites."},
+    {"href": "/logiciel-haccp-restauration-rapide.html", "title": "Logiciel PMS pour la restauration rapide", "desc": "Turnover, cadence, huiles de friture et réseaux franchisés."}
+  ],
+  "sources": [
+    {"label": "Arrêté du 21 décembre 2009 relatif aux règles sanitaires applicables aux activités de commerce de détail (Légifrance)", "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000021573483"},
+    {"label": "Arrêté du 21 décembre 2009, annexe I : températures de conservation (Légifrance)", "url": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000041864893"},
+    {"label": "Règlement (CE) n° 852/2004 relatif à l'hygiène des denrées alimentaires, article 5 et annexe II (copie publiée par la préfecture de l'Ardèche)", "url": "https://www.ardeche.gouv.fr/contenu/telechargement/20587/172385/file/Regl_852_2004_cle03fa7b.pdf"},
+    {"label": "Instruction technique DGAL/SDSSA/2017-861 : obligation de formation en hygiène alimentaire en restauration commerciale (ministère de l'Agriculture)", "url": "https://info.agriculture.gouv.fr/boagri/instruction-2017-861/telechargement"},
+    {"label": "Décret n° 2015-447 du 17 avril 2015 relatif à l'information sur les allergènes des denrées non préemballées (Journal officiel, via FAOLEX)", "url": "https://faolex.fao.org/docs/pdf/fra147954.pdf"},
+    {"label": "Alim'confiance : les résultats des contrôles sanitaires en ligne (Institut national de la consommation)", "url": "https://www.inc-conso.fr/content/alimconfiance-les-resultats-des-controles-sanitaires-en-ligne"}
+  ]
+}

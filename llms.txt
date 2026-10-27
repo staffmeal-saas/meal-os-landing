@@ -1,0 +1,65 @@
+# Staff Meal
+
+> Staff Meal est une application d'exploitation pour les restaurants de 15 personnes et plus et les réseaux multi-sites, en France. L'équipe voit sur mobile les tâches de son poste et de son horaire ; la direction pilote chaque établissement depuis un tableau de bord consolidé. Bêta privée : 50 établissements accompagnés sur place.
+
+Modules : checklists par poste et par horaire avec preuve photo horodatée, manuel opératoire avec accusé de lecture, maintenance des équipements, audits HACCP notés avec rapport PDF, visites client mystère sans agence, fiches techniques, food cost et plans de production, formations avec quiz et certificats, communication interne, pilotage multi-site. Connecteur en service : Skello (planning). Caisses et plateformes de livraison : à l'étude, non disponibles.
+
+## Produit
+
+- [Accueil et modules](https://staff-meal.com/): présentation de l'application, des 9 modules, calculateur de retour sur investissement et candidature à la bêta
+- [À propos](https://staff-meal.com/a-propos.html): pourquoi Staff Meal existe, méthode d'accompagnement sur place, cible
+
+## Les 9 modules, avec vidéo de démonstration
+
+- [Checklists HACCP](https://staff-meal.com/module-checklists-haccp.html): par poste et par horaire, avec photo horodatée
+- [Manuel opératoire](https://staff-meal.com/module-manuel-operatoire.html): vos standards, lus et confirmés par l'équipe
+- [Maintenance](https://staff-meal.com/module-maintenance.html): chaque panne a un ticket et un responsable
+- [Audit HACCP](https://staff-meal.com/module-audit-haccp.html): grille notée, rapport détaillé, écarts remontés
+- [Client mystère](https://staff-meal.com/module-client-mystere.html): vos visites sans agence, comparées dans le temps
+- [Recettes & food cost](https://staff-meal.com/module-recettes-food-cost.html): fiche technique, coût portion, ratio matière
+- [Formations](https://staff-meal.com/module-formations.html): parcours, quiz, certificat vérifiable
+- [Communication](https://staff-meal.com/module-communication.html): les consignes sortent de WhatsApp
+- [Multi-site](https://staff-meal.com/module-multi-site.html): créé une fois, déployé sur tous vos sites
+
+## Hygiène et HACCP
+
+- [HACCP en restaurant](https://staff-meal.com/haccp-restaurant.html): digitaliser son plan de maîtrise sanitaire
+- [Checklist inspection HACCP](https://staff-meal.com/checklist-haccp-inspection.html): ce que le contrôleur regarde
+- [HACCP en restauration collective](https://staff-meal.com/digitaliser-haccp-restauration-collective.html)
+- [HACCP en cafétéria](https://staff-meal.com/digitaliser-haccp-cafeteria.html)
+- [HACCP à l'hôpital et en EHPAD](https://staff-meal.com/digitaliser-haccp-hopital.html)
+- [HACCP en cuisine centrale](https://staff-meal.com/digitaliser-haccp-cuisine-centrale.html)
+- [HACCP à l'hôtel](https://staff-meal.com/digitaliser-haccp-hotel.html)
+- [HACCP en restauration rapide](https://staff-meal.com/logiciel-haccp-restauration-rapide.html)
+- [Maintenance du matériel](https://staff-meal.com/maintenance-equipement-restaurant.html)
+
+## Client mystère en restauration
+
+- [Client mystère en restaurant](https://staff-meal.com/client-mystere-restaurant.html): guide complet, le faire sans agence
+- [Questionnaire client mystère](https://staff-meal.com/questionnaire-client-mystere.html): modèle complet et noté, version PDF
+- [Grille de visite mystère](https://staff-meal.com/grille-visite-mystere-restaurant.html)
+- [Coût d'un client mystère](https://staff-meal.com/cout-client-mystere-restaurant.html)
+- [Rapport de visite mystère](https://staff-meal.com/rapport-client-mystere.html)
+- [Fréquence des visites](https://staff-meal.com/frequence-visites-mystere.html)
+
+## Coûts et rentabilité (outils gratuits, sans inscription)
+
+- [Rentabilité d'un restaurant](https://staff-meal.com/rentabilite-restaurant.html)
+- [Calculateur de food cost](https://staff-meal.com/food-cost-calculator.html)
+- [Calculateur de prime cost](https://staff-meal.com/prime-cost-calculator.html)
+- [Gaspillage alimentaire : méthode de calcul et calculateur](https://staff-meal.com/calculateur-gaspillage-alimentaire.html)
+- [Matrice de menu engineering](https://staff-meal.com/matrice-menu-engineering.html)
+- [Générateur de fiche technique](https://staff-meal.com/generateur-fiche-technique.html)
+
+## Équipe et standards
+
+- [Standards de service](https://staff-meal.com/standards-service-restaurant.html)
+- [Manuel opératoire](https://staff-meal.com/manuel-operatoire-restaurant.html)
+- [Planning du personnel](https://staff-meal.com/planning-personnel-restaurant.html)
+- [Turnover en restauration](https://staff-meal.com/turnover-restauration.html)
+
+## Comparatifs
+
+- [Staff Meal et Skello](https://staff-meal.com/staffmeal-vs-skello.html): outils complémentaires, connecteur en service
+- [Staff Meal et Combo (ex-Snapshift)](https://staff-meal.com/staffmeal-vs-combo.html)
+- [Staff Meal et Koust](https://staff-meal.com/staffmeal-vs-koust.html)
