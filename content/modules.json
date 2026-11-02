@@ -74,6 +74,16 @@
     "guide": [
       "/haccp-restaurant.html",
       "Le guide HACCP du restaurant"
+    ],
+    "guides_more": [
+      [
+        "/plan-de-nettoyage-cuisine.html",
+        "Modèle de plan de nettoyage"
+      ],
+      [
+        "/fiche-releve-temperature.html",
+        "Fiche de relevé de température"
+      ]
     ]
   },
   {
@@ -297,6 +307,12 @@
     "guide": [
       "/checklist-haccp-inspection.html",
       "Préparer une inspection sanitaire"
+    ],
+    "guides_more": [
+      [
+        "/modele-plan-maitrise-sanitaire.html",
+        "Modèle de plan de maîtrise sanitaire"
+      ]
     ]
   },
   {
@@ -447,6 +463,12 @@
     "guide": [
       "/food-cost-calculator.html",
       "Calculer votre food cost gratuitement"
+    ],
+    "guides_more": [
+      [
+        "/fiche-technique-cuisine-vierge.html",
+        "Fiche technique de cuisine vierge"
+      ]
     ]
   },
   {

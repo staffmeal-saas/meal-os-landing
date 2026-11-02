@@ -1,0 +1,116 @@
+{
+  "slug": "tablette-haccp",
+  "title": "Tablette HACCP : kit, alternatives et passage au sans papier",
+  "description": "Tablette HACCP fixe ou smartphones de l'équipe : le kit type, ce que le logiciel doit enregistrer pour le contrôle, et comment passer au HACCP sans papier.",
+  "kicker": "haccp sans papier, côté matériel",
+  "h1": "Tablette HACCP : quel matériel pour un HACCP sans papier",
+  "lede": "Une tablette HACCP remplace le classeur de relevés : elle est fixée en cuisine, l'équipe y saisit températures, nettoyages et réceptions, et le logiciel garde l'heure, l'auteur et les actions correctives. Ce n'est pas une obligation. Le règlement (CE) n° 852/2004 exige des documents qui prouvent l'application de votre plan, pas un support précis, et les smartphones de l'équipe peuvent faire le même travail. Le bon choix dépend du nombre de postes, de qui fait les relevés et de ce que vous devez prouver.",
+  "breadcrumb": [["Hygiène et conformité", "/haccp-restaurant.html"], ["Tablette HACCP", null]],
+  "datePublished": "2026-11-02",
+  "sections": [
+    {"h2": "À quoi sert une tablette HACCP", "blocks": [
+      {"p": "Le plan de maîtrise sanitaire repose sur l'article 5 du règlement 852/2004 : surveiller les points critiques, prévoir les actions correctives quand une limite est dépassée, et <strong>établir des documents et des dossiers</strong> « en fonction de la nature et de la taille de l'entreprise » pour prouver que tout cela est fait. Les documents qui décrivent les procédures doivent être à jour à tout moment, les autres sont conservés pendant une « période appropriée ». Le texte ne fixe pas de durée chiffrée : c'est à vous de la définir dans votre PMS."},
+      {"p": "Une tablette HACCP sert à produire ces enregistrements au moment du contrôle, et non le soir en remplissant le classeur de mémoire. Dans les offres du marché, elle sert à quatre usages :"},
+      {"ul": [
+        "<strong>Relevés de température</strong> des enceintes froides, du maintien au chaud et des réceptions.",
+        "<strong>Plan de nettoyage</strong> : qui a nettoyé quoi, et quand. Voir notre page <a href=\"/plan-de-nettoyage-cuisine.html\">plan de nettoyage cuisine</a>.",
+        "<strong>Contrôles à réception</strong> : température, état des emballages, étiquettes.",
+        "<strong>Traçabilité et étiquettes de DLC secondaire</strong>, avec une imprimante reliée. Ce volet a sa propre page : <a href=\"/logiciel-tracabilite-alimentaire.html\">logiciel de traçabilité alimentaire</a>."
+      ]}
+    ]},
+    {"h2": "Le kit type vendu avec une tablette HACCP", "blocks": [
+      {"p": "Les éditeurs qui arrivent en tête sur cette requête vendent un ensemble matériel et logiciel. Leurs pages publiques décrivent à peu près la même composition :"},
+      {"table": {"caption": "Composition d'un kit tablette HACCP", "head": ["Élément", "Rôle", "Indispensable ?"], "rows": [
+        ["Tablette (iPad ou Android) avec coque de protection", "Saisie des relevés en cuisine", "Non, si l'équipe saisit sur téléphone"],
+        ["Support mural", "Garde la tablette à hauteur, hors du plan de travail", "Utile si la tablette est fixe"],
+        ["Imprimante d'étiquettes", "DLC secondaire des produits entamés ou préparés", "Seulement si vous étiquetez beaucoup"],
+        ["Thermomètre sonde", "Mesure à cœur et à réception", "Oui, quel que soit le support"],
+        ["Capteurs ou enregistreurs de température", "Relevé automatique des enceintes, alertes", "Selon vos enceintes, voir ci-dessous"]
+      ]}},
+      {"p": "Le thermomètre sonde n'est pas une option. Les lignes directrices de la DGAL sur la flexibilité en restauration commerciale indiquent que l'établissement dispose <strong>au moins d'un thermomètre sonde fonctionnel</strong>, et que les instruments de mesure sont vérifiés périodiquement. Un thermomètre défaillant se remplace, et l'écart s'enregistre avec la mesure corrective."},
+      {"p": "Pour les enceintes négatives qui contiennent des aliments surgelés, les mêmes lignes directrices demandent un <strong>enregistrement continu des températures</strong>. Là, une tablette ne suffit pas : il faut un enregistreur ou un capteur. Pour les autres enceintes, elles prévoient une surveillance visuelle au minimum quotidienne et l'enregistrement des non-conformités et des mesures correctives, avec le devenir des denrées. Les thermomètres qui gardent le minimum et le maximum y sont cités comme un moyen efficace de surveiller les enceintes pendant les heures de fermeture."}
+    ]},
+    {"h2": "Tablette fixe ou smartphones de l'équipe", "blocks": [
+      {"p": "La vraie question n'est pas « quelle tablette », mais « sur quel écran le relevé sera fait au bon moment ». Les deux options ont des limites concrètes."},
+      {"table": {"head": ["Critère", "Tablette fixe dédiée", "Smartphones de l'équipe"], "rows": [
+        ["Hygiène", "Écran partagé touché par toute la brigade, à nettoyer comme une surface de travail", "Le téléphone sort de la poche en zone de production : règle de lavage des mains à fixer dans le PMS"],
+        ["Casse et perte", "Exposée aux chocs, à l'eau et à la chaleur, d'où coque et support", "Le risque reste sur l'appareil personnel de chacun"],
+        ["Qui a fait le relevé", "Chaque personne doit s'identifier, sinon la tablette signe pour tout le monde", "Le compte de chacun identifie l'auteur sans étape en plus"],
+        ["Disponibilité", "Une tablette pour plusieurs postes : file d'attente au rush, relevé reporté", "Chacun relève à son poste, au moment prévu"],
+        ["Photo de preuve", "Il faut décrocher la tablette et l'amener à la chambre froide", "L'appareil photo est déjà dans la main"],
+        ["Coût matériel", "Achat ou location de la tablette, du support, parfois de l'imprimante", "Aucun appareil à acheter, mais un accord de l'équipe à obtenir"],
+        ["Consultation par le manager", "Sur place, ou via l'application si elle est en ligne", "De n'importe où, si l'outil est en ligne"]
+      ]}},
+      {"p": "Le règlement 852/2004 (annexe II, chapitre VIII) impose à toute personne qui travaille en zone de manutention un « niveau élevé de propreté personnelle ». Que l'écran soit fixe ou personnel, écrivez dans votre plan quand il se nettoie et à quel moment on se lave les mains après l'avoir touché."},
+      {"p": "En pratique, la tablette fixe convient à une petite cuisine où une seule personne fait les relevés à heure fixe, surtout si vous imprimez beaucoup d'étiquettes. Les smartphones conviennent mieux dès que plusieurs postes ont chacun leurs contrôles, que les équipes tournent, ou que vous voulez une photo par relevé. Beaucoup d'établissements combinent les deux : une tablette au poste d'étiquetage, les téléphones pour le reste."}
+    ]},
+    {"h2": "Ce que le logiciel doit enregistrer pour tenir au contrôle", "blocks": [
+      {"p": "Le support n'impressionne pas un inspecteur. Ce qui compte, c'est que l'enregistrement prouve le contrôle. Vérifiez que l'outil garde, pour chaque relevé :"},
+      {"ul": [
+        "<strong>La date et l'heure réelles de saisie</strong>, posées par l'outil et non tapées à la main. Un relevé saisi à 23 h pour 11 h doit se voir.",
+        "<strong>L'auteur</strong> : un compte par personne. Un code partagé par toute la cuisine ne dit pas qui a contrôlé.",
+        "<strong>La valeur mesurée</strong>, pas seulement une case « conforme ».",
+        "<strong>L'action corrective en cas d'écart</strong> et le devenir de la denrée : c'est l'enregistrement que les lignes directrices de la DGAL citent dans presque chaque rubrique.",
+        "<strong>Une preuve</strong> quand votre procédure la demande : photo du thermomètre, de l'étiquette, de la zone nettoyée.",
+        "<strong>Un historique consultable et exportable</strong> pour la durée que fixe votre PMS, y compris si vous changez d'outil ou de matériel.",
+        "<strong>Les procédures à jour</strong> à côté des relevés, puisque l'article 5 exige que les documents qui décrivent les procédures le soient à tout moment."
+      ]},
+      {"callout": "Avant de signer, demandez à l'éditeur une démonstration d'export : un mois de relevés d'une chambre froide, avec auteurs, heures et actions correctives. Si l'export n'existe pas, vos archives dépendent de l'abonnement."},
+      {"p": "Pour la liste de ce que regarde l'inspecteur, voir notre <a href=\"/checklist-haccp-inspection.html\">checklist d'inspection HACCP</a>. Pour la fiche papier équivalente, la page <a href=\"/fiche-releve-temperature.html\">fiche de relevé de température</a>."}
+    ]},
+    {"h2": "Passer du papier au HACCP digital, étape par étape", "blocks": [
+      {"ol": [
+        "<strong>Partez de votre PMS, pas du logiciel.</strong> Listez chaque contrôle avec son seuil, sa fréquence, son responsable et l'action corrective prévue. Si votre plan n'est pas écrit, commencez par le <a href=\"/modele-plan-maitrise-sanitaire.html\">modèle de plan de maîtrise sanitaire</a>.",
+        "<strong>Regroupez les contrôles par poste et par créneau</strong> : ouverture, réception, service, fermeture. Une liste de quarante lignes sera survolée.",
+        "<strong>Choisissez le support poste par poste.</strong> Étiquetage intensif : tablette et imprimante. Relevés répartis entre plusieurs personnes : téléphones.",
+        "<strong>Faites tourner papier et digital en parallèle</strong> deux à quatre semaines sur un site. Comparez : quels relevés manquent, lesquels arrivent en retard.",
+        "<strong>Formez par la pratique</strong> : chaque équipier fait un relevé complet devant le manager, photo et action corrective comprises.",
+        "<strong>Arrêtez le papier</strong> une fois que le digital est complet sur toute une semaine, et gardez les anciens classeurs pour la durée fixée dans votre PMS.",
+        "<strong>Vérifiez chaque mois</strong> : relevés manquants, écarts sans action corrective, contrôles toujours faits en retard. Ajustez les créneaux en conséquence."
+      ]}
+    ]},
+    {"h2": "Budget : ce qui se paie vraiment", "blocks": [
+      {"p": "Les éditeurs de kits HACCP ne publient pas tous leurs tarifs, et ceux qui le font combinent abonnement logiciel, mise en service et matériel en achat ou en location. Octopus HACCP, par exemple, affiche sur sa page d'accueil un abonnement « à partir de 55 €/mois », selon les modules et le matériel choisis (consulté le 2 novembre 2026). Nous ne donnons pas de fourchette de prix matériel : les offres ne sont pas comparables entre elles. Demandez un devis qui sépare ces lignes :"},
+      {"ul": [
+        "abonnement logiciel, par établissement ou par utilisateur ;",
+        "frais de mise en service et de formation ;",
+        "tablette, coque et support : achat ou location, et qui la remplace en cas de casse ;",
+        "imprimante d'étiquettes et consommables ;",
+        "capteurs et enregistreurs, si vos enceintes en demandent ;",
+        "durée d'engagement et conditions de récupération de vos données à la sortie."
+      ]}
+    ]},
+    {"h2": "Et Staff Meal dans tout ça", "blocks": [
+      {"p": "Staff Meal ne vend ni tablette, ni imprimante, ni sonde, ni capteur. C'est une application d'exploitation pour les restaurants de 15 personnes et plus, pensée pour le téléphone de chaque équipier : elle s'ouvre depuis le navigateur et s'ajoute à l'écran d'accueil, sans passer par un store."},
+      {"ul": [
+        "<strong>Checklists HACCP par poste et par créneau</strong>, avec trois preuves au choix : case, photo, commentaire. Chaque validation porte le nom de l'équipier et l'heure.",
+        "<strong>Les oublis remontent</strong> : ce qui n'est pas fait à la fin du créneau apparaît en retard sur le tableau de bord.",
+        "<strong>Audits HACCP</strong> où un écart non conforme doit être documenté avant de passer à la suite, avec note par section.",
+        "<strong>Manuel opératoire</strong> avec révision datée, et <strong>maintenance</strong> : la chambre froide qui dérive devient un ticket avec un responsable."
+      ]},
+      {"p": "Soyons clairs : si vous avez une petite équipe stable, une seule personne qui fait les relevés et des étiquettes à imprimer toute la journée, un classeur bien tenu ou un kit tablette et imprimante fera le travail. Staff Meal sert quand les contrôles sont répartis entre beaucoup de personnes, sur plusieurs postes ou plusieurs sites. Voir le <a href=\"/module-checklists-haccp.html\">module checklists HACCP</a> et le comparatif <a href=\"/meilleur-logiciel-haccp.html\">meilleur logiciel HACCP</a>."}
+    ]}
+  ],
+  "faq": [
+    {"q": "Une tablette HACCP est-elle obligatoire ?", "a": "Non. Le règlement 852/2004 impose des documents et des dossiers qui prouvent l'application de votre plan HACCP, sans imposer de support. Le papier reste recevable, tout comme un logiciel sur tablette ou sur téléphone."},
+    {"q": "Peut-on faire ses relevés HACCP sur smartphone ?", "a": "Oui, si l'outil enregistre l'heure réelle, l'auteur, la valeur et l'action corrective en cas d'écart. Fixez dans votre PMS les règles d'usage du téléphone en zone de production, notamment le lavage des mains."},
+    {"q": "Combien de temps garder les enregistrements HACCP ?", "a": "Le règlement 852/2004 parle d'une « période appropriée » sans chiffre. Fixez la durée dans votre plan de maîtrise sanitaire, en tenant compte de la durée de vie de vos produits, et vérifiez que votre logiciel permet d'exporter l'historique sur toute cette durée."},
+    {"q": "Faut-il un capteur de température connecté en restaurant ?", "a": "Pas pour toutes les enceintes. Les lignes directrices de la DGAL demandent un enregistrement continu pour les enceintes négatives contenant des surgelés. Pour les autres, une surveillance visuelle au minimum quotidienne et l'enregistrement des écarts et des mesures correctives sont prévus."},
+    {"q": "Que contient un kit tablette HACCP ?", "a": "En général une tablette avec coque, un support mural, une imprimante d'étiquettes pour les DLC secondaires, et en option des capteurs de température. Le thermomètre sonde reste indispensable quel que soit le kit."},
+    {"q": "Comment passer au HACCP sans papier ?", "a": "Listez les contrôles de votre PMS avec seuils et responsables, regroupez-les par poste et par créneau, faites tourner papier et digital en parallèle quelques semaines sur un site, puis arrêtez le papier quand le digital est complet."}
+  ],
+  "related": [
+    {"href": "/module-checklists-haccp.html", "title": "Checklists HACCP sur mobile avec preuve photo", "desc": "Par poste et par créneau, avec le nom et l'heure sur chaque relevé."},
+    {"href": "/haccp-restaurant.html", "title": "HACCP en restaurant : du classeur à la preuve", "desc": "Le cadre du plan de maîtrise sanitaire et ce que la digitalisation change."},
+    {"href": "/checklist-haccp-inspection.html", "title": "Inspection HACCP : la checklist pour être prêt", "desc": "Ce que l'inspecteur regarde, dans l'ordre."},
+    {"href": "/logiciel-haccp-restauration-rapide.html", "title": "Logiciel PMS en restauration rapide", "desc": "Tenir l'HACCP avec une équipe qui tourne et pendant le rush."},
+    {"href": "/maintenance-equipement-restaurant.html", "title": "Maintenance du matériel de restauration", "desc": "Chambres froides et thermomètres : suivre les pannes avant l'incident."}
+  ],
+  "sources": [
+    {"label": "Règlement (CE) n° 852/2004 relatif à l'hygiène des denrées alimentaires, article 5 et annexe II, chapitre VIII (copie publiée par la préfecture de l'Ardèche)", "url": "https://www.ardeche.gouv.fr/contenu/telechargement/20587/172385/file/Regl_852_2004_cle03fa7b.pdf"},
+    {"label": "Lignes directrices flexibilité du plan de maîtrise sanitaire, restauration commerciale, annexe de l'instruction technique DGAL/SDSSA/2018-924, version de décembre 2022 (ministère de l'Agriculture)", "url": "https://agriculture.gouv.fr/telecharger/93165"},
+    {"label": "Octopus HACCP : page d'accueil, composition du pack et prix affiché (consultée le 2 novembre 2026)", "url": "https://octopus-haccp.com"},
+    {"label": "Kooklin : page d'accueil, matériel inclus dans l'offre (consultée le 2 novembre 2026)", "url": "https://www.kooklin.fr"},
+    {"label": "traqfood : page d'accueil, composition du kit (consultée le 2 novembre 2026)", "url": "https://www.traqfood.com"}
+  ]
+}

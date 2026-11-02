@@ -1,0 +1,475 @@
+{
+  "slug": "fiche-technique-cuisine-vierge",
+  "title": "Fiche technique cuisine vierge : modèle PDF, Excel et Word",
+  "description": "Fiche technique cuisine vierge gratuite en PDF, Excel et Word : rubriques, calcul du coût portion et du food cost, 14 allergènes, exemple chiffré complet.",
+  "kicker": "modèle gratuit, prêt à imprimer",
+  "h1": "Fiche technique cuisine vierge : le modèle gratuit et la méthode pour la remplir",
+  "lede": "Téléchargez ci-dessous une fiche technique de cuisine vierge en PDF à imprimer, en Excel avec les coûts qui se calculent, ou en Word modifiable. Elle tient sur une page A4 portrait : en-tête de la recette, tableau des ingrédients avec quantités brutes, rendement, quantités nettes et coût, progression, les 14 allergènes à déclaration obligatoire, dressage et conservation. Un exemple chiffré de bœuf bourguignon pour 10 portions est pré-rempli pour montrer comment chaque case se remplit.",
+  "breadcrumb": [
+    [
+      "Outils gratuits",
+      "/resources.html"
+    ],
+    [
+      "Fiche technique cuisine vierge",
+      null
+    ]
+  ],
+  "datePublished": "2026-11-02",
+  "sections": [
+    {
+      "h2": "À quoi sert une fiche technique en restaurant",
+      "blocks": [
+        {
+          "p": "Une fiche technique décrit une recette de façon à ce que n'importe quel membre de la brigade la refasse à l'identique, au même coût. Elle a quatre usages concrets en cuisine professionnelle :"
+        },
+        {
+          "ul": [
+            "<strong>Connaître le coût d'une assiette.</strong> Sans grammages écrits, le coût matière d'un plat est une estimation. Avec la fiche, il se calcule ligne par ligne et se compare au prix de vente hors taxes.",
+            "<strong>Servir la même assiette à chaque service.</strong> Le plat du samedi soir et celui du mardi midi, fait par un extra, sortent avec les mêmes quantités, la même cuisson et le même dressage.",
+            "<strong>Tenir l'information sur les allergènes.</strong> Le restaurant doit informer par écrit ses clients des allergènes présents dans chaque plat. La fiche est l'endroit où cette information se met à jour en même temps que la recette.",
+            "<strong>Former un nouveau commis.</strong> La fiche, avec sa photo de dressage, remplace les explications orales répétées à chaque arrivée."
+          ]
+        },
+        {
+          "p": "Si vous préférez remplir la fiche en ligne et obtenir directement le coût par portion et le prix de vente conseillé, utilisez notre <a href=\"/generateur-fiche-technique.html\">générateur de fiche technique en ligne</a>, gratuit et sans inscription. Le modèle ci-dessous est fait pour l'impression, le classeur de cuisine et le travail hors connexion."
+        },
+        {
+          "html": "<div class=\"card-retro bg-paper p-6 my-6\"><p class=\"font-sans font-bold text-lg mb-3\">Télécharger le modèle gratuit</p><p class=\"flex flex-wrap gap-3\"><a href=\"/modeles/fiche-technique-cuisine-vierge.pdf\" class=\"btn-retro\" download>PDF à imprimer</a> <a href=\"/modeles/fiche-technique-cuisine-vierge.xlsx\" class=\"btn-retro\" download>Excel modifiable</a> <a href=\"/modeles/fiche-technique-cuisine-vierge.docx\" class=\"btn-retro\" download>Word modifiable</a></p><p class=\"font-sans text-sm text-ink-faint mt-3\">Sans inscription. Format A4.</p></div>"
+        }
+      ]
+    },
+    {
+      "h2": "Ce que contient le modèle",
+      "blocks": [
+        {
+          "p": "Le modèle suit l'ordre dans lequel un cuisinier lit une fiche : d'abord ce qu'il produit, ensuite ce qu'il prend, puis ce qu'il fait, enfin ce qu'il envoie."
+        },
+        {
+          "ol": [
+            "<strong>L'en-tête de la recette</strong> : nom du plat, catégorie (entrée, plat, dessert, mise en place), nombre de portions produites, poids d'une portion, numéro de version et date, nom de la personne qui l'a rédigée et de celle qui l'a validée.",
+            "<strong>Le tableau des ingrédients</strong> : ingrédient, unité, quantité brute, rendement en %, quantité nette, prix unitaire hors taxes, coût hors taxes de la ligne, allergène éventuel. Une ligne de total donne le coût de la recette entière.",
+            "<strong>Le calcul du coût</strong> : coût par portion, prix de vente TTC et HT, food cost en %, coefficient multiplicateur et marge brute par portion, avec la formule écrite à côté de chaque case.",
+            "<strong>La progression</strong> : les étapes numérotées, le temps de chaque étape et les points de contrôle de température.",
+            "<strong>Les 14 allergènes</strong> à déclaration obligatoire, chacun avec une case à cocher et l'ingrédient qui l'apporte.",
+            "<strong>Le dressage</strong> : contenant, disposition, décor, emplacement de la photo de référence.",
+            "<strong>La conservation</strong> : refroidissement, stockage, remise en température, durée de vie fixée par votre plan de maîtrise sanitaire."
+          ]
+        },
+        {
+          "p": "Dans la version Excel, les colonnes quantité nette, coût de la ligne, total, coût par portion, food cost et coefficient sont des formules : vous saisissez la quantité brute, le rendement et le prix unitaire, le reste se calcule. Dans la version PDF, les formules sont écrites en clair pour un calcul à la calculatrice."
+        }
+      ]
+    },
+    {
+      "h2": "Comment remplir la fiche, case par case",
+      "blocks": [
+        {
+          "h3": "1. Écrivez le rendement en haut de la fiche"
+        },
+        {
+          "p": "Indiquez le nombre de portions que la recette produit et le poids d'une portion, par exemple « 10 portions de 250 g ». Décidez une fois pour toutes si vos fiches sont écrites à la portion ou au bac, et tenez la même règle sur toutes les fiches de la carte. Une fiche qui annonce 20 portions mais liste les quantités d'une seule portion fausse le coût d'un facteur 20 dès que quelqu'un la met à l'échelle."
+        },
+        {
+          "h3": "2. Distinguez quantité brute et quantité nette"
+        },
+        {
+          "p": "La <strong>quantité brute</strong> est ce que vous sortez de la chambre froide, tel que vous l'avez acheté. La <strong>quantité nette</strong> est ce qui reste après épluchage, parage ou désossage. Le rapport entre les deux est le <strong>rendement</strong> : quantité nette ÷ quantité brute × 100. Des carottes dont on retire 120 g d'épluchures sur 800 g ont un rendement de 85 %."
+        },
+        {
+          "p": "Le rendement se mesure chez vous, avec vos produits et votre façon de travailler : pesez le produit avant, pesez-le après, sur trois ou quatre préparations. Un paleron paré par un boucher et le même paleron acheté entier n'ont pas le même rendement."
+        },
+        {
+          "h3": "3. Calculez le coût sur la quantité brute"
+        },
+        {
+          "p": "Vous payez le kilo acheté, pas le kilo utilisé. Le coût d'une ligne est donc : <strong>quantité brute × prix unitaire HT</strong>. Si vous partez de la quantité nette, la formule équivalente est : quantité nette ÷ rendement × prix unitaire HT. Prenez le prix de la dernière facture, hors taxes."
+        },
+        {
+          "h3": "4. Écrivez la progression comme une liste d'actions"
+        },
+        {
+          "p": "Une étape = un verbe, une quantité ou un temps, un repère vérifiable. « Saisir la viande par petites quantités, 3 à 4 minutes par face » se suit ; « bien colorer la viande » s'interprète. Notez les points de contrôle de température au moment où ils ont lieu, pas en bas de page."
+        },
+        {
+          "h3": "5. Cochez les allergènes et nommez l'ingrédient"
+        },
+        {
+          "p": "Pour chaque allergène présent, notez l'ingrédient qui l'apporte. Vérifiez les produits transformés (fonds, sauces, charcuteries, mélanges d'épices) sur la fiche ou l'étiquette du fournisseur : ce sont eux qui font oublier un allergène."
+        },
+        {
+          "h3": "6. Photographiez le dressage"
+        },
+        {
+          "p": "Prenez la photo sur le passe, avec la vaisselle réelle, au moment où le chef valide l'assiette. Collez-la sur la version imprimée ou insérez-la dans la version Word ou Excel."
+        }
+      ]
+    },
+    {
+      "h2": "Exemple chiffré : bœuf bourguignon pour 10 portions",
+      "blocks": [
+        {
+          "p": "Les prix ci-dessous sont des prix d'achat hors taxes donnés pour l'exemple. Remplacez-les par ceux de vos factures."
+        },
+        {
+          "table": {
+            "caption": "Fiche technique pré-remplie dans le modèle (coût = quantité brute × prix unitaire HT)",
+            "head": [
+              "Ingrédient",
+              "Qté brute",
+              "Rendement",
+              "Qté nette",
+              "Prix unitaire HT",
+              "Coût HT"
+            ],
+            "rows": [
+              [
+                "Paleron de bœuf",
+                "2,000 kg",
+                "90 %",
+                "1,800 kg",
+                "14,50 €/kg",
+                "29,00 €"
+              ],
+              [
+                "Lardons fumés",
+                "0,300 kg",
+                "100 %",
+                "0,300 kg",
+                "9,80 €/kg",
+                "2,94 €"
+              ],
+              [
+                "Carottes",
+                "0,800 kg",
+                "85 %",
+                "0,680 kg",
+                "1,40 €/kg",
+                "1,12 €"
+              ],
+              [
+                "Oignons",
+                "0,500 kg",
+                "90 %",
+                "0,450 kg",
+                "1,20 €/kg",
+                "0,60 €"
+              ],
+              [
+                "Champignons de Paris",
+                "0,500 kg",
+                "90 %",
+                "0,450 kg",
+                "3,90 €/kg",
+                "1,95 €"
+              ],
+              [
+                "Vin rouge",
+                "1,500 l",
+                "100 %",
+                "1,500 l",
+                "4,20 €/l",
+                "6,30 €"
+              ],
+              [
+                "Fond brun (fiche de base)",
+                "1,000 l",
+                "100 %",
+                "1,000 l",
+                "2,50 €/l",
+                "2,50 €"
+              ],
+              [
+                "Farine T55",
+                "0,060 kg",
+                "100 %",
+                "0,060 kg",
+                "1,00 €/kg",
+                "0,06 €"
+              ],
+              [
+                "Beurre",
+                "0,080 kg",
+                "100 %",
+                "0,080 kg",
+                "9,50 €/kg",
+                "0,76 €"
+              ],
+              [
+                "Ail, thym, laurier",
+                "1 forfait",
+                "",
+                "",
+                "0,40 €",
+                "0,40 €"
+              ],
+              [
+                "<strong>Total recette</strong>",
+                "",
+                "",
+                "",
+                "",
+                "<strong>45,63 €</strong>"
+              ]
+            ]
+          }
+        },
+        {
+          "p": "À partir de ce total, le calcul tient en cinq lignes. Le plat est vendu 19,50 € TTC, consommé sur place."
+        },
+        {
+          "table": {
+            "caption": "Du coût de la recette à la marge par assiette",
+            "head": [
+              "Indicateur",
+              "Formule",
+              "Résultat"
+            ],
+            "rows": [
+              [
+                "Coût par portion",
+                "45,63 € ÷ 10 portions",
+                "4,56 € HT"
+              ],
+              [
+                "Prix de vente HT",
+                "19,50 € TTC ÷ 1,10 (TVA à 10 %)",
+                "17,73 € HT"
+              ],
+              [
+                "Food cost (ratio matière)",
+                "4,56 ÷ 17,73 × 100",
+                "25,7 %"
+              ],
+              [
+                "Coefficient multiplicateur",
+                "17,73 ÷ 4,56",
+                "3,89"
+              ],
+              [
+                "Marge brute par portion",
+                "17,73 - 4,56",
+                "13,17 € HT"
+              ]
+            ]
+          }
+        },
+        {
+          "p": "Le taux de 10 % s'applique aux repas servis sur place ; les boissons alcoolisées sont à 20 %. Calculez toujours le food cost sur le prix <strong>hors taxes</strong> : sur le prix TTC, ce bourguignon afficherait 23,4 % au lieu de 25,7 %, et vous sous-estimeriez votre coût matière sur toute la carte."
+        },
+        {
+          "p": "Le calcul inverse sert à fixer un prix. Si vous visez un food cost de 30 % : prix de vente HT = coût portion ÷ 0,30, soit 4,56 ÷ 0,30 = 15,21 € HT, ou 16,73 € TTC. Le prix de carte reste votre décision ; la fiche vous dit seulement en dessous de quel prix la cible n'est plus tenue. Pour tester plusieurs prix, le <a href=\"/food-cost-calculator.html\">calculateur de food cost</a> fait le calcul en direct, et la <a href=\"/matrice-menu-engineering.html\">matrice de menu engineering</a> croise ensuite marge et volume de ventes."
+        },
+        {
+          "callout": "Le fond brun a sa propre fiche, et son coût au litre vient de cette fiche. Une sauce ou un fond utilisé dans six plats et valorisé « à vue » rend les six fiches fausses."
+        }
+      ]
+    },
+    {
+      "h2": "Les 14 allergènes à faire figurer",
+      "blocks": [
+        {
+          "p": "La liste vient de l'annexe II du règlement (UE) n° 1169/2011, dit INCO. Le modèle reprend les 14 catégories :"
+        },
+        {
+          "table": {
+            "head": [
+              "Allergène",
+              "Précision"
+            ],
+            "rows": [
+              [
+                "Céréales contenant du gluten",
+                "Blé, seigle, orge, avoine et leurs hybrides"
+              ],
+              [
+                "Crustacés",
+                ""
+              ],
+              [
+                "Œufs",
+                ""
+              ],
+              [
+                "Poissons",
+                ""
+              ],
+              [
+                "Arachides",
+                ""
+              ],
+              [
+                "Soja",
+                ""
+              ],
+              [
+                "Lait",
+                "Y compris le lactose"
+              ],
+              [
+                "Fruits à coque",
+                "Amandes, noisettes, noix, noix de cajou, de pécan, du Brésil, de macadamia, pistaches"
+              ],
+              [
+                "Céleri",
+                ""
+              ],
+              [
+                "Moutarde",
+                ""
+              ],
+              [
+                "Graines de sésame",
+                ""
+              ],
+              [
+                "Anhydride sulfureux et sulfites",
+                "Au-delà de 10 mg/kg ou 10 mg/l"
+              ],
+              [
+                "Lupin",
+                ""
+              ],
+              [
+                "Mollusques",
+                ""
+              ]
+            ]
+          }
+        },
+        {
+          "p": "En France, le décret n° 2015-447 a inscrit dans le code de la consommation l'obligation de signaler ces allergènes pour les denrées non préemballées. Pour les repas servis sur place, l'information est portée par écrit, de façon lisible et visible du public, soit directement, soit en indiquant comment consulter librement un document écrit. Chaque allergène doit être nommé précisément. Dans l'exemple, le bourguignon contient du gluten (farine), du lait (beurre) et des sulfites (vin rouge). Sur la mise en forme de l'affichage en salle, voir notre page <a href=\"/affichage-obligatoire-restaurant.html\">affichage obligatoire en restaurant</a>."
+        }
+      ]
+    },
+    {
+      "h2": "Conservation : les températures à écrire sur la fiche",
+      "blocks": [
+        {
+          "p": "Pour un plat cuisiné à l'avance comme le bourguignon, la rubrique conservation reprend les règles de l'arrêté du 21 décembre 2009 :"
+        },
+        {
+          "ul": [
+            "<strong>Refroidissement</strong> : la préparation ne doit pas rester plus de deux heures entre + 63 °C et + 10 °C à cœur, puis elle est stockée entre 0 °C et + 3 °C, sauf analyse des dangers validée qui justifie un autre barème.",
+            "<strong>Stockage</strong> : + 3 °C maximum pour une préparation culinaire élaborée à l'avance.",
+            "<strong>Remise en température</strong> : pas plus d'une heure entre + 10 °C et la température de service, et pas en dessous de + 63 °C sauf dérogation fondée sur une analyse des dangers. La préparation se consomme le jour de sa première remise en température.",
+            "<strong>Maintien au chaud</strong> : + 63 °C minimum."
+          ]
+        },
+        {
+          "p": "La durée de vie du produit (la date à écrire sur l'étiquette) n'est pas fixée par ce texte : elle découle de votre <a href=\"/modele-plan-maitrise-sanitaire.html\">plan de maîtrise sanitaire</a>. Les relevés eux-mêmes se notent sur une <a href=\"/fiche-releve-temperature.html\">fiche de relevé de température</a>, pas sur la fiche technique."
+        }
+      ]
+    },
+    {
+      "h2": "Les erreurs qui faussent une fiche technique",
+      "blocks": [
+        {
+          "ul": [
+            "<strong>Calculer le coût sur la quantité nette.</strong> Dans l'exemple, valoriser le paleron sur 1,800 kg au lieu de 2,000 kg donne 26,10 € au lieu de 29,00 €, soit 0,29 € de moins par portion. Sur un plat vendu 200 fois par mois, l'écart non vu atteint 58 € HT par mois, pour une seule ligne.",
+            "<strong>Utiliser un rendement copié ailleurs.</strong> Le rendement dépend du produit, du calibre, de la saison et de la main. Mesurez-le dans votre cuisine.",
+            "<strong>Oublier les pertes de cuisson.</strong> Une viande braisée perd du poids. Si la portion servie est pesée cuite, le nombre de portions annoncé doit être vérifié en pesant la production finie au moins une fois.",
+            "<strong>Ne pas compter les petits ingrédients.</strong> Huile de cuisson, beurre de finition, herbes, garniture du dressage : regroupez-les dans une ligne forfaitaire plutôt que de les ignorer.",
+            "<strong>Ne pas mettre la fiche à jour.</strong> Changez la date et le numéro de version à chaque modification de recette ou de prix d'achat significative. Une fiche jamais rouverte depuis deux ans donne un coût qui ne correspond plus à rien.",
+            "<strong>Laisser les prix d'achat sur la fiche affichée en cuisine.</strong> Imprimez deux versions si besoin : une avec les coûts pour la direction, une sans pour la brigade."
+          ]
+        }
+      ]
+    },
+    {
+      "h2": "Papier, Excel ou application : que choisir",
+      "blocks": [
+        {
+          "p": "Pour une carte de quinze plats qui change deux fois par an et une équipe stable, la fiche papier dans un classeur fait le travail. Pour une carte qui bouge souvent, la version Excel évite de refaire les calculs à chaque hausse de prix. Le <a href=\"/generateur-fiche-technique.html\">générateur en ligne</a> sert à produire rapidement une fiche propre à imprimer."
+        },
+        {
+          "p": "La limite du papier et du tableur apparaît avec plusieurs sites ou une brigade qui tourne : les prix ne suivent pas les factures, plusieurs versions d'une même fiche circulent, et rien ne garantit que la bonne version est en cuisine."
+        }
+      ]
+    },
+    {
+      "h2": "Et Staff Meal dans tout ça",
+      "blocks": [
+        {
+          "p": "Staff Meal est une application d'exploitation pour les restaurants de 15 personnes et plus. Son module <a href=\"/module-recettes-food-cost.html\">Recettes et food cost</a> reprend les rubriques de ce modèle : fiches plat à la carte et mise en place, ingrédients, étapes, photo, allergènes, matériel et consignes de conservation. Les prix suivent un catalogue de composants mis à jour à partir de vos factures fournisseurs ; le coût par portion, la marge et le ratio matière, comparé à une cible de 30 %, se recalculent quand un prix change. L'équipe voit la recette, la direction seule voit les coûts. Chaque fiche reste imprimable en PDF."
+        },
+        {
+          "p": "Si vous avez un seul établissement et une carte stable, le modèle gratuit de cette page suffit. L'application devient utile quand vous gérez beaucoup de fiches, plusieurs sites ou des prix d'achat qui bougent chaque mois."
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "Où trouver une fiche technique cuisine vierge gratuite ?",
+      "a": "Sur cette page, en PDF à imprimer, en Excel avec les coûts en formules et en Word modifiable, sans inscription. Si vous préférez la remplir en ligne, le générateur de fiche technique de Staff Meal calcule le coût par portion et le prix de vente conseillé."
+    },
+    {
+      "q": "Comment calculer le coût d'une portion sur une fiche technique ?",
+      "a": "Multipliez la quantité brute de chaque ingrédient par son prix unitaire hors taxes, additionnez les lignes, puis divisez le total par le nombre de portions produites. Dans l'exemple de cette page, 45,63 € pour 10 portions donne 4,56 € HT par portion."
+    },
+    {
+      "q": "Comment calculer le food cost d'un plat ?",
+      "a": "Divisez le coût par portion par le prix de vente hors taxes et multipliez par 100. Un plat qui coûte 4,56 € et se vend 17,73 € HT (19,50 € TTC avec une TVA à 10 %) a un food cost de 25,7 %."
+    },
+    {
+      "q": "Quelle différence entre quantité brute et quantité nette ?",
+      "a": "La quantité brute est le poids acheté, avant épluchage ou parage. La quantité nette est ce qui part réellement dans le plat. Le rendement est le rapport des deux ; le coût se calcule sur la quantité brute, puisque c'est elle que vous payez."
+    },
+    {
+      "q": "Quelles sont les rubriques d'une fiche technique de cuisine ?",
+      "a": "Nom du plat, nombre de portions et poids d'une portion, ingrédients avec unité, quantités brute et nette, prix unitaire et coût, progression, allergènes, dressage avec photo, conservation, date et version."
+    },
+    {
+      "q": "Les allergènes doivent-ils figurer sur la fiche technique ?",
+      "a": "La réglementation impose d'informer le client par écrit des 14 allergènes à déclaration obligatoire présents dans chaque plat servi. Les noter sur la fiche technique est le moyen le plus sûr que cette information reste à jour quand la recette change."
+    }
+  ],
+  "related": [
+    {
+      "href": "/generateur-fiche-technique.html",
+      "title": "Générateur de fiche technique en ligne",
+      "desc": "Remplir la fiche à l'écran et obtenir le coût par portion et le prix conseillé."
+    },
+    {
+      "href": "/module-recettes-food-cost.html",
+      "title": "Module Recettes et food cost",
+      "desc": "Les fiches techniques dans Staff Meal, avec les prix qui suivent vos factures."
+    },
+    {
+      "href": "/food-cost-calculator.html",
+      "title": "Calculateur de food cost",
+      "desc": "Tester un prix de vente et voir le ratio matière en direct."
+    },
+    {
+      "href": "/matrice-menu-engineering.html",
+      "title": "Matrice de menu engineering",
+      "desc": "Croiser la marge de chaque plat avec ses ventes."
+    },
+    {
+      "href": "/haccp-restaurant.html",
+      "title": "HACCP en restaurant",
+      "desc": "Le guide des obligations d'hygiène et des contrôles."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Allergènes à mentionner sur un produit alimentaire, liste des 14 et règles pour la restauration (entreprendre.service-public.gouv.fr, vérifié le 23/10/2025)",
+      "url": "https://entreprendre.service-public.gouv.fr/vosdroits/F32192"
+    },
+    {
+      "label": "Décret n° 2015-447 du 17 avril 2015 relatif à l'information des consommateurs sur les allergènes et les denrées non préemballées (Légifrance)",
+      "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000030491684"
+    },
+    {
+      "label": "Arrêté du 21 décembre 2009, annexes I et IV : températures de conservation, refroidissement, remise en température (Légifrance)",
+      "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000021573483"
+    },
+    {
+      "label": "Taux de TVA sur les produits alimentaires et les boissons : 10 % sur place, 20 % pour l'alcool (entreprendre.service-public.gouv.fr, vérifié le 03/12/2025)",
+      "url": "https://entreprendre.service-public.gouv.fr/vosdroits/F22399"
+    }
+  ],
+  "cta_kicker": "la fiche écrite, puis la fiche suivie",
+  "cta_text": "Staff Meal s'adresse aux restaurants de 15 personnes et plus. Bêta privée, 50 établissements accompagnés sur place."
+}

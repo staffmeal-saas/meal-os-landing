@@ -1,0 +1,158 @@
+{
+  "slug": "affichage-obligatoire-restaurant",
+  "title": "Affichage obligatoire restaurant : la checklist sourcée",
+  "description": "Prix, origine des viandes, allergènes, licence, tabac, mineurs, puis inspection du travail, horaires : chaque affichage obligatoire, son texte, sa sanction.",
+  "kicker": "clientèle et salariés, ligne par ligne",
+  "h1": "Affichage obligatoire en restaurant : la checklist complète, texte par texte",
+  "lede": "Un restaurant doit tenir deux séries d'affichages. Pour la clientèle : les menus ou la carte du jour à l'extérieur pendant tout le service (au moins dès 11h30 et 18h00), les prix de cinq vins ou de cinq boissons, des cartes identiques à l'intérieur, la mention « Prix service compris », l'origine des viandes, l'information écrite sur les allergènes, le type de licence, l'affiche de protection des mineurs, la signalisation d'interdiction de fumer et l'eau potable gratuite. Pour les salariés : les coordonnées de l'inspection du travail, de la médecine du travail et des secours, les consignes incendie, les horaires collectifs, le texte sur le harcèlement sexuel et l'accès au document unique, plus la convention collective communiquée par tout moyen.",
+  "breadcrumb": [["Hygiène et conformité", "/haccp-restaurant.html"], ["Affichage obligatoire", null]],
+  "datePublished": "2026-11-02",
+  "sections": [
+    {"h2": "Deux affichages, deux contrôles", "blocks": [
+      {"p": "Les affichages destinés aux clients relèvent surtout du droit de la consommation. Ils sont vérifiés par la direction départementale de la protection des populations (DDPP) ou, selon les départements, par la DDETS-PP, le même service qui contrôle l'hygiène en salle et en cuisine. Les affichages destinés aux salariés relèvent du Code du travail : la fiche officielle demande de les placer « sur le lieu de travail », dans un « endroit facilement accessible »."},
+      {"p": "Une partie des informations salariés peut être transmise « par tout moyen » (intranet, courriel, application), sans panneau. Côté clientèle, la DGCCRF fixe une limite claire depuis sa fiche mise à jour en février 2025 : pour l'accès à l'ensemble des affichages obligatoires, le restaurant <strong>ne peut pas utiliser uniquement un QR code</strong>. Le QR code peut compléter la carte papier, jamais la remplacer."},
+      {"callout": "Méthode de lecture : chaque ligne de cette page cite le texte de référence. Une sanction n'est donnée que si l'administration la publie. Quand elle ne la publie pas, nous l'indiquons au lieu d'avancer un chiffre."}
+    ]},
+    {"h2": "Affichage clientèle à l'extérieur de l'établissement", "blocks": [
+      {"h3": "Les menus et la carte du jour"},
+      {"p": "L'arrêté du 27 mars 1987 relatif à l'affichage des prix dans les établissements servant des repas impose d'afficher à l'extérieur <strong>la liste des menus ou la carte du jour</strong>, pendant toute la durée du service, et au moins à partir de <strong>11h30 pour le déjeuner et 18h00 pour le dîner</strong>. Doivent aussi figurer les prix de <strong>cinq vins</strong>, ou de cinq boissons couramment servies si le restaurant ne sert pas de vin."},
+      {"p": "Si un menu à tarif réduit n'est servi qu'à certaines heures, l'horaire exact doit apparaître sur les cartes et sur l'affichage extérieur. Sans cette précision, le client peut exiger ce menu."},
+      {"h3": "Le cas des cafés et des comptoirs"},
+      {"p": "Pour un établissement qui sert des boissons, la fiche Service Public demande d'afficher à l'extérieur les prix pratiqués au comptoir et en salle pour les produits les plus servis, écrits en lettres d'au moins <strong>1,5 cm de haut</strong> :"},
+      {"ul": [
+        "la tasse de café noir et le demi de bière à la pression ;",
+        "la bouteille de bière, le jus de fruit, le soda, l'eau minérale plate ou gazeuse et l'apéritif anisé, chacun avec sa contenance ;",
+        "le plat du jour et le sandwich."
+      ]},
+      {"h3": "La licence et l'interdiction de fumer"},
+      {"p": "Un établissement qui vend de l'alcool doit afficher une <strong>pancarte mentionnant le type de licence</strong>. La signalisation « espace sans tabac » rappelle l'interdiction de fumer et de vapoter : la fiche Service Public dédiée aux bars et restaurants prévoit des panneaux à l'extérieur, à chaque entrée et à l'intérieur, et les modèles de signalisation sont désormais fixés par l'arrêté du 21 juillet 2025. Le responsable des lieux qui ne pose pas cette signalisation encourt jusqu'à <strong>750 €</strong> d'amende, comme celui qui favorise volontairement la violation de l'interdiction."}
+    ]},
+    {"h2": "Affichage clientèle à l'intérieur de la salle", "blocks": [
+      {"h3": "Les prix et la mention « Prix service compris »"},
+      {"p": "À l'intérieur, des cartes et menus <strong>identiques à ceux de l'extérieur</strong> doivent être à la disposition des clients, avec la liste des boissons et leurs prix. Dans un établissement où un service est perçu, le prix affiché s'entend taxes et service compris et la mention <strong>« Prix service compris »</strong> doit apparaître. Chaque menu indique si la boisson, quelle qu'elle soit, est comprise ou non. Si vous facturez le couvert d'un client qui partage le plat d'un autre, son prix doit figurer sur les menus et la carte."},
+      {"p": "La note remise en fin de repas porte la date, le nom et l'adresse de l'établissement, et le prix TTC de chaque prestation (arrêté n° 25-361 du 8 juin 1967)."},
+      {"h3": "L'origine des viandes"},
+      {"p": "Le décret n° 2002-1465 du 17 décembre 2002, modifié par le décret n° 2025-141 du 13 février 2025, impose d'indiquer le pays d'origine des viandes <strong>bovines, porcines, ovines et de volaille</strong>, y compris dans les viandes hachées, les préparations de viande et les viandes achetées déjà cuites ou préparées. Deux formulations sont admises : « Origine : (pays) », ou « Né et élevé : (pays) / Abattu : (pays) ». Pour une viande cuite dont l'origine précise n'est pas connue, « origine UE » ou « origine hors UE » est possible. La règle vaut sur place, à emporter et en livraison. Sanction publiée : <strong>1 500 €</strong> pour une personne physique, <strong>7 500 €</strong> pour une personne morale."},
+      {"h3": "Les allergènes"},
+      {"p": "Depuis le décret n° 2015-447, l'article R. 112-13 du Code de la consommation impose, dans les lieux où des repas sont consommés sur place, de porter à la connaissance du client, <strong>sous forme écrite, de façon lisible et visible</strong> : soit la présence des allergènes réglementaires dans chaque plat, soit la manière dont cette information est tenue à sa disposition. Dans le second cas, le client doit pouvoir y accéder directement et librement, par écrit. Une mention « demandez au serveur » ne suffit donc pas. Le classeur des allergènes posé en salle, annoncé par une affiche, répond à l'exigence."},
+      {"p": "Ce classeur ne vaut que s'il suit la carte. Le plus simple est de le tenir à partir des fiches techniques : une <a href=\"/fiche-technique-cuisine-vierge.html\">fiche technique</a> qui liste les allergènes de chaque recette donne directement la page du classeur."},
+      {"h3": "Alcool, mineurs et boissons sans alcool"},
+      {"ul": [
+        "<strong>Affiche de protection des mineurs et de répression de l'ivresse publique</strong> : obligatoire dans les débits de boissons (articles L3342-1 à L3342-4 du Code de la santé publique, modèles fixés par l'arrêté du 17 octobre 2016). La vente ou l'offre d'alcool à un mineur est punie de <strong>7 500 €</strong> d'amende, avec une interdiction d'exploiter la licence pendant un an selon la fiche Service Public.",
+        "<strong>Étalage de boissons sans alcool</strong> (article L3323-1 du Code de la santé publique) : au moins <strong>10 bouteilles</strong> visibles, avec un exemplaire de chacune de ces boissons : jus de fruits ou de légumes, boisson gazeuse au jus de fruits, soda, limonade, sirop, eau minérale gazeuse ou non, eau ordinaire gazéifiée ou non."
+      ]},
+      {"h3": "L'eau potable gratuite et le doggy bag"},
+      {"p": "Vous devez afficher que vous servez gratuitement de l'eau potable, fraîche ou tempérée (article L541-15-10 du Code de l'environnement). Le client qui consomme dans l'établissement peut demander une carafe sans frais."},
+      {"p": "Le client peut aussi demander un « doggy bag », un contenant réutilisable ou recyclable pour emporter ce qu'il n'a pas consommé. Vous pouvez facturer le contenant, il peut apporter le sien, et la demande ne vaut pas pour une offre à volonté ni pour des boissons consignées. Les sources officielles consultées ne prévoient pas d'affiche dédiée au doggy bag : c'est un service à rendre sur demande, pas un panneau."},
+      {"h3": "Le « fait maison » : facultatif, mais encadré"},
+      {"p": "La mention « fait maison » n'est pas obligatoire. Si vous l'utilisez, les décrets n° 2014-797 et n° 2015-505 encadrent son emploi : le plat doit être élaboré sur place dans les conditions prévues, et la carte l'indique par le logo ou la mention, plat par plat. Une carte peut mêler plats faits maison et plats qui ne le sont pas. Il n'existe ni certification ni démarche préalable. Une mention « maison » abusive figure parmi les infractions que la DGCCRF relève le plus souvent en restauration."}
+    ]},
+    {"h2": "Affichage obligatoire pour les salariés", "blocks": [
+      {"p": "La liste dépend de l'effectif. La fiche F23106 de Service Public distingue ce qui doit être <strong>affiché</strong> de ce qui peut être <strong>communiqué par tout moyen</strong>."},
+      {"h3": "À afficher dès le premier salarié"},
+      {"ul": [
+        "Nom, adresse et téléphone de l'<strong>inspecteur du travail</strong> compétent.",
+        "Adresse et téléphone du <strong>médecin du travail</strong> ou du service de santé au travail.",
+        "Adresse et téléphone des <strong>services de secours</strong> d'urgence (pompiers, Samu).",
+        "<strong>Consignes de sécurité incendie</strong> : consignes conformes à la norme NF EN ISO 7010, noms des personnes chargées du matériel de secours et de l'évacuation, consignes de premiers secours en cas d'accident électrique.",
+        "<strong>Horaires collectifs</strong> : heures de début et de fin, durée des repos, et pour un travail par roulement ou par relais, la composition nominative des équipes, intérimaires compris.",
+        "<strong>Congés payés</strong> : période de prise des congés, au moins 2 mois avant son ouverture, et ordre des départs, au moins 1 mois avant.",
+        "Numéro d'appel contre les discriminations (09 69 39 00 00) et conditions de saisine du Défenseur des droits.",
+        "Texte de l'article 222-33 du Code pénal sur le <strong>harcèlement sexuel</strong>, avec les voies de recours et les contacts (médecin du travail, inspection du travail, Défenseur des droits).",
+        "<strong>Interdiction de fumer et de vapoter</strong> dans les locaux de travail.",
+        "Modalités d'accès au <strong>document unique d'évaluation des risques</strong> (DUERP)."
+      ]},
+      {"h3": "À communiquer par tout moyen"},
+      {"ul": [
+        "Les <strong>conventions et accords collectifs</strong> applicables, et où les consulter. Pour un restaurant traditionnel : la convention collective nationale des hôtels, cafés, restaurants (HCR) du 30 avril 1997, IDCC 1979. Pour la restauration rapide : la convention collective nationale de la restauration rapide du 18 mars 1988, IDCC 1501.",
+        "L'égalité de rémunération femmes-hommes (articles L3221-1 à L3221-7 du Code du travail).",
+        "Le jour et les heures du repos hebdomadaire collectif s'il n'est pas donné le dimanche, ce qui concerne beaucoup de restaurants.",
+        "L'article 222-33-2 du Code pénal sur le harcèlement moral, et les articles 225-1 à 225-4 sur les discriminations.",
+        "Les adresses des organisations syndicales représentatives."
+      ]},
+      {"h3": "Ce qui s'ajoute avec l'effectif"},
+      {"table": {
+        "caption": "Seuils de la fiche Service Public F23106, vérifiée le 8 juillet 2026.",
+        "head": ["Effectif", "Ce qui s'ajoute"],
+        "rows": [
+          ["11 à 49 salariés", "Liste nominative des membres du CSE (affichée), procédure d'élection du CSE et procès-verbal de carence, référent harcèlement du CSE dans les contacts."],
+          ["50 salariés et plus", "Règlement intérieur (hygiène, sécurité, sanctions), index de l'égalité professionnelle si l'entreprise n'a pas de site internet, référent harcèlement désigné par l'employeur, accord de participation."]
+        ]
+      }},
+      {"p": "Pour les affichages salariés, la fiche officielle ne publie pas de montant de sanction. Des montants circulent sur des sites privés sans texte cité : nous n'en reprenons aucun. L'absence de ces informations se constate en revanche dès le premier passage de l'inspection du travail."}
+    ]},
+    {"h2": "Tableau récapitulatif des affichages obligatoires", "blocks": [
+      {"table": {
+        "caption": "Sanction indiquée seulement quand l'administration la publie. Sources en bas de page.",
+        "head": ["Affichage", "Où", "Texte de référence", "Sanction publiée"],
+        "rows": [
+          ["Menus ou carte du jour, 5 vins ou 5 boissons", "Extérieur, pendant le service, dès 11h30 et 18h00", "Arrêté du 27 mars 1987", "Jusqu'à 3 000 € (personne physique), 15 000 € (société), art. L131-5 C. conso"],
+          ["Cartes identiques, prix des boissons", "Intérieur", "Arrêté du 27 mars 1987", "Idem"],
+          ["« Prix service compris », boisson comprise ou non", "Cartes et menus", "Arrêté du 27 mars 1987", "Idem"],
+          ["Prix des boissons les plus servies, lettres de 1,5 cm", "Extérieur (cafés, bars)", "Arrêté du 27 mars 1987", "Idem"],
+          ["Origine des viandes bovine, porcine, ovine, volaille", "Carte, menu ou support visible", "Décret 2002-1465 modifié par le décret 2025-141", "1 500 € (personne physique), 7 500 € (personne morale)"],
+          ["Allergènes, ou modalités d'accès écrites", "Salle, lisible et visible", "Art. R. 112-13 C. conso (décret 2015-447)", "Non publiée sur les fiches consultées"],
+          ["Type de licence", "Pancarte", "Code de la santé publique", "Non publiée sur les fiches consultées"],
+          ["Protection des mineurs et ivresse publique", "Débit de boissons", "Art. L3342-1 à L3342-4 CSP, arrêté du 17 octobre 2016", "Vente d'alcool à un mineur : 7 500 € et 1 an d'interdiction d'exploiter"],
+          ["Espace sans tabac", "Entrées et intérieur", "Art. R3512-2 à R3512-9 CSP, arrêté du 21 juillet 2025", "Jusqu'à 750 € pour le responsable"],
+          ["Étalage de 10 boissons sans alcool", "Intérieur", "Art. L3323-1 CSP", "Non publiée sur les fiches consultées"],
+          ["Eau potable gratuite", "Salle", "Art. L541-15-10 C. env.", "Non publiée sur les fiches consultées"],
+          ["Inspection du travail, médecine du travail, secours", "Lieu de travail", "Art. D4711-1 C. trav.", "Non publiée sur la fiche F23106"],
+          ["Consignes incendie", "Lieu de travail", "Art. R4227-34 à R4227-41 C. trav.", "Non publiée sur la fiche F23106"],
+          ["Horaires collectifs, congés", "Lieu de travail", "Art. D3171-1 et suivants, D3141-5 et D3141-6 C. trav.", "Non publiée sur la fiche F23106"],
+          ["Harcèlement sexuel, discriminations", "Lieu de travail", "Art. 222-33 C. pén., art. L1153-5 et D1151-1 C. trav.", "Non publiée sur la fiche F23106"],
+          ["Accès au document unique", "Lieu de travail", "Art. R4121-1 à R4121-4 C. trav.", "Non publiée sur la fiche F23106"],
+          ["Convention collective HCR ou restauration rapide", "Par tout moyen", "Art. R2262-1 à R2262-5 C. trav.", "Non publiée sur la fiche F23106"]
+        ]
+      }},
+      {"p": "Une information de prix trompeuse, par exemple une remise fictive, ne relève plus de la simple amende administrative : c'est une pratique commerciale trompeuse, punie de 2 ans d'emprisonnement et de 300 000 € d'amende pour un entrepreneur individuel, 1 500 000 € pour une société."}
+    ]},
+    {"h2": "Tenir les affichages à jour au fil des mois", "blocks": [
+      {"p": "Les affichages se posent à l'ouverture, puis se périment : la carte change mais l'affichage extérieur reste l'ancien, le fournisseur de bœuf change mais pas la mention d'origine, une recette nouvelle arrive sans sa page dans le classeur allergènes, le médecin du travail déménage. Ce sont ces écarts que relève un contrôle, pas l'absence d'un panneau posé il y a trois ans."},
+      {"p": "Quatre déclencheurs suffisent à couvrir la plupart des cas :"},
+      {"ol": [
+        "<strong>Changement de carte ou de prix</strong> : refaire l'affichage extérieur, la carte intérieure et vérifier « Prix service compris ».",
+        "<strong>Changement de fournisseur de viande</strong> : vérifier l'origine sur la facture et corriger la carte.",
+        "<strong>Nouvelle recette ou nouveau produit</strong> : mettre à jour la fiche technique, puis la page du classeur allergènes.",
+        "<strong>Changement d'équipe ou d'organisation</strong> : horaires collectifs, ordre des départs en congés, responsables de l'évacuation."
+      ]},
+      {"p": "Ajoutez un contrôle mensuel des panneaux à votre routine d'ouverture : présence, lisibilité, information à jour. Il entre naturellement dans la <a href=\"/checklist-haccp-inspection.html\">checklist de préparation au contrôle sanitaire</a>, à côté des <a href=\"/fiche-releve-temperature.html\">relevés de température</a> et du <a href=\"/plan-de-nettoyage-cuisine.html\">plan de nettoyage</a>."}
+    ]},
+    {"h2": "Ce que Staff Meal peut tenir, et ce qu'il ne remplace pas", "blocks": [
+      {"p": "Staff Meal ne remplace aucun affichage clientèle. La carte extérieure, la pancarte de licence, l'affiche des mineurs et la signalisation sans tabac restent des supports physiques, et la DGCCRF exclut le QR code seul. Pour un restaurant avec une équipe stable, un classeur, un tableau en réserve et un rappel dans l'agenda suffisent."},
+      {"p": "Au-delà de 15 personnes, ou sur plusieurs sites, la difficulté n'est plus de poser les panneaux mais de vérifier qu'ils restent à jour. Staff Meal aide sur trois points :"},
+      {"ul": [
+        "<strong>Le contrôle des affichages dans une checklist</strong> : une tâche récurrente, à l'horaire choisi, validée par une case, une photo ou un commentaire, avec le nom de l'équipier et l'heure (<a href=\"/module-checklists-haccp.html\">module Checklists HACCP</a>).",
+        "<strong>Les consignes qui peuvent passer par tout moyen</strong> : une publication épinglée dans le fil de l'établissement, avec une confirmation de lecture demandée et le taux de lecture suivi par la direction (<a href=\"/module-communication.html\">module Communication</a>). Le tableau d'affichage reste obligatoire pour ce que la loi demande d'afficher.",
+        "<strong>Les allergènes à la source</strong> : chaque fiche technique porte ses allergènes et s'imprime en PDF, ce qui garde le classeur de salle aligné sur les recettes (<a href=\"/module-recettes-food-cost.html\">module Recettes et food cost</a>)."
+      ]},
+      {"p": "Pour un réseau, le <a href=\"/module-multi-site.html\">module Multi-site</a> déploie la même checklist sur tous les établissements et montre les retards site par site."}
+    ]}
+  ],
+  "faq": [
+    {"q": "Quels sont les affichages obligatoires dans un restaurant ?", "a": "Côté clients : menus ou carte du jour et prix de cinq vins à l'extérieur pendant le service, cartes identiques à l'intérieur, « Prix service compris », origine des viandes, information écrite sur les allergènes, licence, affiche de protection des mineurs, signalisation sans tabac, eau gratuite. Côté salariés : inspection du travail, médecine du travail, secours, consignes incendie, horaires, congés, harcèlement sexuel, accès au document unique, et la convention collective par tout moyen."},
+    {"q": "Un QR code suffit-il pour afficher la carte et les prix d'un restaurant ?", "a": "Non. La DGCCRF précise que, pour l'accès à l'ensemble des affichages obligatoires, le professionnel ne peut pas utiliser uniquement un QR code. Il peut compléter une carte papier et un affichage extérieur, pas les remplacer."},
+    {"q": "Quelle amende pour défaut d'affichage des prix dans un restaurant ?", "a": "Un manquement à l'information sur les prix est puni d'une amende administrative pouvant aller jusqu'à 3 000 € pour un entrepreneur individuel et 15 000 € pour une société (article L131-5 du Code de la consommation). Si l'information trompe le client, c'est une pratique commerciale trompeuse, punie de 2 ans d'emprisonnement et de 300 000 € d'amende."},
+    {"q": "L'affichage des allergènes est-il obligatoire au restaurant ?", "a": "Oui, sous forme écrite, lisible et visible : soit la liste des allergènes de chaque plat, soit l'indication de l'endroit où le client peut la consulter librement, par exemple un classeur en salle (article R. 112-13 du Code de la consommation). Une information seulement orale ne suffit pas."},
+    {"q": "Faut-il afficher l'origine de la viande au restaurant ?", "a": "Oui, pour les viandes bovines, porcines, ovines et de volaille, y compris hachées ou achetées déjà préparées, sur place, à emporter et en livraison. L'amende publiée est de 1 500 € pour une personne physique et 7 500 € pour une personne morale."},
+    {"q": "Le logo « fait maison » est-il obligatoire sur la carte ?", "a": "Non. La mention est facultative, mais si vous l'utilisez, elle doit respecter les conditions des décrets de 2014 et 2015 et s'appliquer plat par plat. Une mention « maison » non justifiée fait partie des infractions les plus relevées par la DGCCRF."}
+  ],
+  "related": [
+    {"href": "/checklist-haccp-inspection.html", "title": "Inspection HACCP : la checklist pour être prêt", "desc": "Ce que l'inspecteur regarde en cuisine et en salle, point par point."},
+    {"href": "/module-communication.html", "title": "Module Communication", "desc": "Les consignes avec confirmation de lecture, hors WhatsApp."},
+    {"href": "/module-checklists-haccp.html", "title": "Module Checklists HACCP", "desc": "Les contrôles par poste et par horaire, avec preuve photo."},
+    {"href": "/haccp-restaurant.html", "title": "HACCP en restaurant", "desc": "Le plan de maîtrise sanitaire et sa mise en pratique."},
+    {"href": "/planning-personnel-restaurant.html", "title": "Planning de restaurant", "desc": "Les règles d'un roulement juste et des horaires tenus."}
+  ],
+  "sources": [
+    {"label": "DGCCRF, « Restaurants : droits et obligations des professionnels » (fiche du 10/02/2025, economie.gouv.fr)", "url": "https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/restaurants-droits-et-obligations-des-professionnels"},
+    {"label": "Service Public Entreprendre, réglementation dans un bar ou un restaurant (fiche F22387, vérifiée le 18/02/2025)", "url": "https://entreprendre.service-public.gouv.fr/vosdroits/F22387"},
+    {"label": "Service Public Entreprendre, affichage des prix : règles à respecter et sanctions (fiche F34344)", "url": "https://entreprendre.service-public.gouv.fr/vosdroits/F34344"},
+    {"label": "Service Public Entreprendre, obligations d'affichage dans une entreprise (fiche F23106, vérifiée le 08/07/2026)", "url": "https://entreprendre.service-public.gouv.fr/vosdroits/F23106"},
+    {"label": "Service Public, interdiction de fumer et sanctions du responsable des lieux (fiche F160)", "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F160"},
+    {"label": "Décret n° 2015-447 du 17 avril 2015 relatif à l'information sur les allergènes, article R. 112-13 (Journal officiel, via FAOLEX)", "url": "https://faolex.fao.org/docs/pdf/fra147954.pdf"},
+    {"label": "DRAAF Auvergne-Rhône-Alpes, la mention « fait maison » en restauration commerciale (ministère de l'Agriculture)", "url": "https://draaf.auvergne-rhone-alpes.agriculture.gouv.fr/la-mention-fait-maison-en-restauration-commerciale-a871.html"},
+    {"label": "Code du travail numérique, convention collective Hôtels, cafés, restaurants (IDCC 1979)", "url": "https://code.travail.gouv.fr/convention-collective/1979-hotels-cafes-restaurants"},
+    {"label": "Code du travail numérique, convention collective de la restauration rapide (IDCC 1501)", "url": "https://code.travail.gouv.fr/convention-collective/1501"}
+  ]
+}

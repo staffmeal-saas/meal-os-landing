@@ -1,0 +1,85 @@
+{
+  "slug": "plan-de-nettoyage-cuisine",
+  "title": "Plan de nettoyage et de désinfection",
+  "subtitle": "Cuisine professionnelle. Une feuille par semaine, à afficher dans la zone concernée.",
+  "orientation": "landscape",
+  "formats": ["pdf", "xlsx", "docx"],
+  "fields": ["Établissement", "Zone", "Semaine du", "Responsable hygiène", "Visa du responsable (fin de semaine)"],
+  "sections": [
+    {
+      "h": "Mode d'emploi",
+      "p": [
+        "Remplacez les produits d'exemple par les vôtres, avec la dilution et le temps de contact lus sur la fiche technique. Indiquez s'il faut rincer après désinfection.",
+        "Chaque case du jour reçoit les initiales de la personne qui a fait la tâche, au moment où elle est faite. Une case vide en fin de journée = un écart à noter en bas de page.",
+        "Méthode de base sur une surface en contact avec les aliments : 1. débarrasser et racler, 2. laver au détergent en frottant, 3. rincer à l'eau potable, 4. désinfecter en respectant le temps de contact, 5. rincer si la fiche du produit le demande, 6. sécher à l'air ou au papier à usage unique."
+      ]
+    },
+    {
+      "h": "Après chaque utilisation et plusieurs fois par jour",
+      "head": ["Zone / équipement", "Quand", "Produit et dilution", "Méthode", "Poste", "L", "M", "M", "J", "V", "S", "D"],
+      "widths": [3, 2, 3, 4, 2, 1, 1, 1, 1, 1, 1, 1],
+      "rows": [
+        ["Plans de travail inox", "Après chaque usage et changement de denrée", "Détergent désinfectant (dilution fiche)", "Racler, laver, rincer, désinfecter, sécher", "Poste concerné"],
+        ["Planches à découper", "Après chaque usage", "Lave-vaisselle ou détergent désinfectant", "Laver, rincer, désinfecter, sécher debout", "Poste concerné"],
+        ["Trancheuse", "Après chaque usage", "Détergent désinfectant", "Débrancher, démonter, laver, désinfecter, remonter", "Poste froid"],
+        ["Thermomètre sonde", "Entre deux produits", "Lingette désinfectante contact alimentaire", "Essuyer la tige, laisser sécher", "Poste concerné"],
+        ["Poignées frigos et chambres froides", "3 fois par jour", "Détergent désinfectant", "Pulvériser sur lavette, essuyer", "Plonge"],
+        ["Lave-mains", "Matin, midi, soir", "Détergent désinfectant", "Laver, rincer, recharger savon et papier", "Plonge"]
+      ],
+      "blank_rows": 3
+    },
+    {
+      "h": "Tous les jours, en fin de service",
+      "head": ["Zone / équipement", "Quand", "Produit et dilution", "Méthode", "Poste", "L", "M", "M", "J", "V", "S", "D"],
+      "widths": [3, 2, 3, 4, 2, 1, 1, 1, 1, 1, 1, 1],
+      "rows": [
+        ["Plaques, grill, piano", "Fin de service, surface tiède", "Dégraissant cuisson", "Gratter, dégraisser, rincer, sécher", "Chef de partie chaud"],
+        ["Friteuse (extérieur et abords)", "Fin de service", "Dégraissant", "Dégraisser, rincer, essuyer", "Poste friture"],
+        ["Frigos du service (intérieur)", "Fin de service", "Détergent désinfectant", "Vider, laver, désinfecter, ranger", "Commis"],
+        ["Éviers et plonge", "Fin de service", "Détergent désinfectant", "Laver, rincer, désinfecter", "Plonge"],
+        ["Sols cuisine et plonge", "Fin de service", "Détergent désinfectant sols", "Balayer, laver, raclette vers siphon", "Fermeture"],
+        ["Poubelles et supports", "Fin de service", "Détergent désinfectant", "Vider, laver, désinfecter, nouveau sac", "Fermeture"]
+      ],
+      "blank_rows": 3
+    },
+    {
+      "h": "Chaque semaine",
+      "head": ["Zone / équipement", "Jour prévu", "Produit et dilution", "Méthode", "Poste", "L", "M", "M", "J", "V", "S", "D"],
+      "widths": [3, 2, 3, 4, 2, 1, 1, 1, 1, 1, 1, 1],
+      "rows": [
+        ["Chambre froide positive", "Lundi", "Détergent désinfectant", "Vider par étagère, laver sol, étagères, joints", "Commis"],
+        ["Filtres de hotte", "Mardi", "Dégraissant ou lave-vaisselle", "Démonter, tremper, laver, rincer, remonter", "Plonge"],
+        ["Four (intérieur, en profondeur)", "Mercredi", "Dégraissant four", "Appliquer à froid, laisser agir, rincer", "Chef de partie chaud"],
+        ["Réserve sèche", "Jeudi", "Détergent", "Vérifier dates, balayer, laver étagères", "Commis"],
+        ["Murs carrelés zone chaude", "Vendredi", "Dégraissant", "Laver de haut en bas, rincer", "Fermeture"],
+        ["Siphons de sol", "Vendredi", "Détergent désinfectant", "Retirer grille, brosser, rincer", "Plonge"]
+      ],
+      "blank_rows": 3
+    },
+    {
+      "h": "Chaque mois",
+      "head": ["Zone / équipement", "Semaine prévue", "Produit et dilution", "Méthode", "Poste", "Fait le", "Initiales"],
+      "widths": [3, 2, 3, 5, 2, 2, 2],
+      "rows": [
+        ["Congélateurs", "Semaine 1", "Détergent désinfectant", "Transférer, dégivrer, laver, désinfecter, sécher", "Commis"],
+        ["Plafonds accessibles et luminaires", "Semaine 2", "Détergent", "Denrées protégées ou sorties, laver, essuyer", "Fermeture"],
+        ["Grilles de ventilation", "Semaine 3", "Détergent", "Dépoussiérer, laver", "Fermeture"],
+        ["Dessus des meubles hauts", "Semaine 4", "Détergent", "Dépoussiérer, laver", "Fermeture"]
+      ],
+      "blank_rows": 3
+    },
+    {
+      "h": "Écarts et actions correctives",
+      "head": ["Date", "Tâche non faite ou mal faite", "Cause", "Action corrective", "Initiales"],
+      "widths": [2, 5, 4, 5, 2],
+      "rows": [
+        ["", "Exemple : sol chambre froide non lavé mardi", "Commis absent", "Fait mercredi matin, tâche réattribuée à la fermeture", ""]
+      ],
+      "blank_rows": 5
+    }
+  ],
+  "notes": [
+    "Règlement (CE) n° 852/2004, annexe II, chapitre V : les équipements en contact avec les denrées sont nettoyés et, le cas échéant, désinfectés à une fréquence suffisante pour éviter tout risque de contamination. Les produits d'entretien sont rangés hors des zones de manipulation des denrées (chapitre I, point 10).",
+    "Fréquences proposées à titre indicatif, à adapter à votre activité et à votre plan de maîtrise sanitaire. Modèle gratuit Staff Meal, staff-meal.com."
+  ]
+}

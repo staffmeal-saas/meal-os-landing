@@ -212,7 +212,10 @@ def page(m: Module, modules: list[Module]) -> str:
         for o in modules
         if o["slug"] != m["slug"]
     )
-    guide_href, guide_label = m["guide"]
+    guide_links = " · ".join(
+        f'<a href="{h}">{esc(lbl)} <span aria-hidden="true">→</span></a>'
+        for h, lbl in [m["guide"], *m.get("guides_more", [])]
+    )
     t, d = esc(m["title"]), esc(m["description"])
     return f"""<!DOCTYPE html>
 <html lang="fr">
@@ -297,7 +300,7 @@ def page(m: Module, modules: list[Module]) -> str:
 
       <section class="section-shell mod-section mod-features" aria-labelledby="features-title">
         <div class="section-heading compact reveal"><p class="eyebrow">Le module en détail</p><h2 id="features-title">Ce qu'il fait.</h2>
-          <p class="mod-guide">Pour aller plus loin : <a href="{guide_href}">{esc(guide_label)} <span aria-hidden="true">→</span></a></p></div>
+          <p class="mod-guide">Pour aller plus loin : {guide_links}</p></div>
         <ul class="mod-feature-list reveal">{features}</ul>
       </section>
 

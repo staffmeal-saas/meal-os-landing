@@ -1,0 +1,153 @@
+{
+  "slug": "meilleur-logiciel-haccp",
+  "title": "Meilleur logiciel HACCP : comparatif de 8 applications",
+  "description": "Octopus, Traqfood, HACCP Facile, ePackPro, Mitti, Kooklin, eEAT, Staff Meal : fonctions, matériel et prix publics vérifiés le 02/11/2026.",
+  "kicker": "comparatif vérifié le 02/11/2026",
+  "h1": "Meilleur logiciel HACCP : comparatif des applications pour restaurants",
+  "lede": "Il n'y a pas un meilleur logiciel HACCP, il y en a un par besoin. Pour des relevés simples à petit prix, HACCP Facile (16,90 € par mois en Pro, offre découverte gratuite) ou Traqfood (dès 19,99 € HT par mois) suffisent. Pour des sondes connectées et des étiquettes DLC avec matériel fourni et installé, regardez ePackPro, Kooklin, Octopus HACCP ou eEAT. Pour un réseau qui veut des audits notés et des checklists prouvées par photo sur tous ses sites, Mitti ou Staff Meal. Tous les prix ci-dessous ont été lus sur les sites officiels le 02/11/2026.",
+  "breadcrumb": [["Hygiène et conformité", "/haccp-restaurant.html"], ["Meilleur logiciel HACCP", null]],
+  "datePublished": "2026-11-02",
+  "sections": [
+    {"h2": "Ce qu'un logiciel HACCP doit prouver", "blocks": [
+      {"p": "Le règlement (CE) n° 852/2004, article 5, impose aux exploitants une procédure fondée sur les principes HACCP : identifier les dangers et les points critiques, fixer des limites critiques, surveiller, corriger, vérifier. Le point g) demande d'établir <strong>des documents et des dossiers</strong> adaptés à la nature et à la taille de l'entreprise pour prouver que ces mesures sont appliquées. Le paragraphe 4 ajoute que les procédures doivent être à jour à tout moment et que les autres documents sont conservés pendant une « période appropriée »."},
+      {"p": "Le texte n'impose aucun support. Un classeur papier bien tenu est recevable, et des fiches gratuites existent (voir notre <a href=\"/fiche-releve-temperature.html\">fiche de relevé de température</a>). Un logiciel apporte trois choses que le papier fait mal : l'heure et l'auteur de chaque relevé enregistrés sans saisie, des alertes quand un contrôle n'est pas fait ou qu'une température dérive, et un historique qu'on retrouve en quelques secondes le jour de l'inspection."},
+      {"p": "Les applications du marché se distinguent sur cinq fonctions :"},
+      {"ul": [
+        "<strong>Relevés de température</strong> : saisie manuelle sur tablette ou téléphone.",
+        "<strong>Sondes connectées</strong> : capteurs posés dans les frigos et chambres froides, relevé automatique et alerte en cas d'écart.",
+        "<strong>Étiquettes DLC</strong> : calcul et impression des dates sur les préparations, avec une imprimante d'étiquettes.",
+        "<strong>Traçabilité</strong> : photo des étiquettes fournisseurs à la réception, archivée et retrouvable.",
+        "<strong>Plan de nettoyage (PND)</strong> : tâches planifiées et cochées, parfois avec photo. Voir notre <a href=\"/plan-de-nettoyage-cuisine.html\">plan de nettoyage de cuisine</a>."
+      ]}
+    ]},
+    {"h2": "Tableau comparatif des logiciels HACCP", "blocks": [
+      {"table": {
+        "caption": "Informations publiques lues sur les sites officiels le 02/11/2026. « Non affiché » signifie que la page consultée ne le mentionne pas, pas que la fonction n'existe pas.",
+        "head": ["Solution", "Cible principale", "Sondes connectées", "Étiquettes DLC", "Matériel proposé", "Prix public"],
+        "rows": [
+          ["Octopus HACCP", "Restaurants, métiers de bouche, franchises, collectivités", "Oui, en location", "Oui, imprimante Brother", "Tablette, imprimante, capteurs, en location ou à l'achat", "À partir de 55 € par mois, essai 14 jours"],
+          ["Traqfood", "Restaurants, métiers de bouche, distribution, collectivités", "Oui", "Oui", "Tablette Samsung, enregistreur JRI, étiqueteuse Brother", "Starter dès 19,99 € HT par mois, Manager dès 39,99 € HT, essai 30 jours"],
+          ["HACCP Facile", "Restaurateurs, traiteurs, commerces, crèches, EHPAD", "Non affiché", "Non affiché", "Aucun, votre téléphone ou ordinateur", "Offre découverte gratuite, Pro à 16,90 € par mois"],
+          ["ePackPro", "Restaurants, hôtels, collectivités, groupes et franchises", "Oui, incluses en offre Sérénité", "Oui, imprimante en option", "Tablette ou écran mural inclus, PAD mobile, imprimante", "Essentiel dès 119 € HT par mois, Sérénité dès 154 € HT"],
+          ["Mitti (par SafetyCulture)", "Multisectoriel : hôtellerie, commerce, industrie", "Capteurs de température et d'humidité proposés", "Non affiché", "Votre téléphone ou tablette", "Gratuit jusqu'à 10 licences, Premium 24 $ par licence et par mois en annuel"],
+          ["Kooklin (Quality Guard)", "Boucheries, boulangeries, restaurants, hôtels, grandes surfaces", "Oui, sondes TempGuard", "Oui, imprimante incluse", "iPad avec coque et imprimante inclus", "Formule d'entrée à 97 € par mois, matériel compris"],
+          ["eEAT", "Restaurants, métiers de bouche, collectivités, multi-sites", "Oui", "Oui, imprimantes Brother QL", "Tablette IP68, sondes, imprimante, ou vos appareils", "Pack HACCP à 49 par mois, Intégral à 75"],
+          ["Staff Meal", "Restaurants de 15 employés et plus, multi-sites", "Non", "Non", "Aucun, téléphone des équipiers", "Non affiché"]
+        ]
+      }},
+      {"callout": "Les prix « à partir de » dépendent des modules et du matériel retenus. Avant de signer, demandez un devis écrit qui chiffre l'abonnement, le matériel (achat ou location), les frais de mise en service et la durée d'engagement."}
+    ]},
+    {"h2": "Les 8 solutions, une par une", "blocks": [
+      {"h3": "Octopus HACCP"},
+      {"p": "<strong>Cible</strong> : restaurants, boulangeries, boucheries, franchises et réseaux, hôtels et campings, cuisines centrales, restauration collective, EHPAD, crèches, commerces. L'éditeur revendique plus de 20 000 professionnels utilisateurs."},
+      {"p": "<strong>Fonctions</strong> : relevés manuels ou automatiques avec alertes, refroidissement rapide et remise en température, traçabilité par photo de l'étiquette avec lecture automatique du nom, de la DLC et du numéro de lot, impression des DLC secondaires, contrôle à réception, plan de nettoyage avec photos, module d'audit qualité, pilotage multi-sites."},
+      {"p": "<strong>Matériel et prix</strong> : le site annonce un abonnement à partir de 55 € par mois selon les modules, le matériel et la formule, et un essai gratuit de 14 jours sans carte bancaire. Sur la page tarifs, la tablette se loue 12 € HT par mois (ou 299 € HT à l'achat), l'imprimante Brother 20 € HT par mois (ou 499 € HT), chaque capteur 6 € HT par mois avec un hub à 12 € HT par mois pour 5 capteurs. Le configurateur exige au moins 5 modules."},
+      {"p": "<strong>Points forts</strong> : couverture large du PMS, matériel au choix en location ou à l'achat. <strong>Limites</strong> : le prix final se construit dans un configurateur, il faut le faire tourner pour connaître son vrai tarif."},
+      {"h3": "Traqfood"},
+      {"p": "<strong>Cible</strong> : restaurants, boulangeries, boucheries et traiteurs, distribution, crèmeries, restauration collective, responsables qualité. Traqfood appartient à Mérieux NutriSciences."},
+      {"p": "<strong>Fonctions</strong> : 23 modules HACCP, dont relevés de température avec sondes et capteurs connectés, traçabilité, contrôle à réception, plan de nettoyage, étiquetage DLC."},
+      {"p": "<strong>Matériel et prix</strong> : tablette Samsung, enregistreur de température JRI, étiqueteuse Brother. L'offre Starter (un point de vente, 100 % en ligne, assistance dans l'application) coûte 19,99 € HT par mois en paiement annuel, soit 239,88 € HT par an, ou 24,99 € HT en mensuel, sans frais de démarrage. L'offre Manager coûte 39,99 € HT par mois en annuel (479,88 € HT) ou 44,99 € HT en mensuel : paramétrage selon votre PMS, formation, tableaux de bord multi-sites avec une licence par établissement, engagement d'un an. Essai gratuit de 30 jours."},
+      {"p": "<strong>Points forts</strong> : le prix d'entrée le plus clair du marché pour un outil complet. <strong>Limites</strong> : en Starter, vous paramétrez seul ; le multi-site passe par l'offre Manager, facturée par établissement."},
+      {"h3": "HACCP Facile"},
+      {"p": "<strong>Cible</strong> : restaurateurs, traiteurs, boulangers, bouchers, poissonniers, collectivités, crèches, écoles, EHPAD, transporteurs. Éditée par le groupe HySeQua."},
+      {"p": "<strong>Fonctions</strong> : températures des frigos, contrôle à réception, suivi de l'huile de cuisson, traçabilité par photo et par étiquette, export des documents pour un contrôle de la DDPP par jour, semaine ou mois. Le site ne mentionne ni sondes connectées, ni impression d'étiquettes DLC, ni plan de nettoyage."},
+      {"p": "<strong>Matériel et prix</strong> : aucun matériel, l'application tourne dans le navigateur du téléphone, de la tablette ou de l'ordinateur, sans passer par les stores. Une offre découverte gratuite limitée à 4 modules, et une offre Pro affichée à 16,90 € par mois (la page ne précise pas HT ou TTC)."},
+      {"p": "<strong>Points forts</strong> : le moins cher, avec une vraie version gratuite. <strong>Limites</strong> : pas d'automatisation des relevés ni d'étiquettes, le site annonce tantôt 14, tantôt 16 modules en Pro."},
+      {"h3": "ePackPro"},
+      {"p": "<strong>Cible</strong> : restaurants et hôtels indépendants, restauration collective, groupes et franchises, boulangers, bouchers, traiteurs, poissonniers. L'éditeur revendique plus de 200 000 professionnels et 40 pays."},
+      {"p": "<strong>Fonctions</strong> : traçabilité des livraisons et des DLC, relevés de température avec alertes, sondes connectées (ePackPro Connect), étiquettes DLC imprimées, planning du plan de maîtrise sanitaire, plan de nettoyage."},
+      {"p": "<strong>Matériel et prix</strong> : deux packs, hors options. Essentiel dès 119 € HT par mois, avec tablette ou écran mural en location, installation, formation et assistance. Sérénité dès 154 € HT par mois, avec en plus les sondes et relevés automatiques. Options : imprimante 20 € HT par mois, PAD mobile 29,90 € HT, sonde supplémentaire 5 € HT, extension ePackPro Mobile 9,90 € HT. Démonstration gratuite sur place, pas d'essai gratuit annoncé."},
+      {"p": "<strong>Points forts</strong> : tout est installé et suivi, matériel compris. <strong>Limites</strong> : le ticket d'entrée le plus élevé du comparatif, la durée d'engagement n'est pas indiquée sur la page tarifs."},
+      {"h3": "Mitti (par SafetyCulture)"},
+      {"p": "<strong>Cible</strong> : application d'inspections et de checklists multisectorielle (hôtellerie, commerce, industrie, construction). Ce n'est pas un logiciel HACCP dédié : vous construisez vos propres modèles de contrôle."},
+      {"p": "<strong>Fonctions</strong> : inspections et rapports, checklists reliées à des actions, formation, analyses. Une offre de capteurs de température et d'humidité avec alertes 24 h sur 24 existe, et des capteurs tiers peuvent s'y connecter. Aucune impression d'étiquettes DLC n'est mentionnée."},
+      {"p": "<strong>Prix</strong> : version gratuite jusqu'à 10 licences, avec 5 modèles d'inspection actifs et 30 jours d'historique dans les analyses. Premium à 24 $ par licence et par mois en annuel, 29 $ en mensuel, hors taxes. Offres Entreprise et par site sur devis."},
+      {"p": "<strong>Points forts</strong> : version gratuite réelle, puissant pour les audits multi-sites. <strong>Limites</strong> : prix par licence, donc par utilisateur, et toute la logique HACCP est à paramétrer vous-même."},
+      {"h3": "Kooklin"},
+      {"p": "<strong>Cible</strong> : boucheries-charcuteries, boulangeries-pâtisseries, restaurants et hôtels, grandes surfaces et réseaux. Kooklin a réuni son application avec celle de Quality Guard et revendique plus de 10 700 établissements."},
+      {"p": "<strong>Fonctions</strong> : traçabilité par photo de l'étiquette avec lecture automatique (produit, DLC, allergènes, lot), suivi des DLC et alertes de péremption, impression d'étiquettes, sondes TempGuard avec relevé toutes les 20 minutes, relevés manuels dictés à la voix, plan de nettoyage avec photos, fiches techniques et allergènes, audits d'hygiène."},
+      {"p": "<strong>Matériel et prix</strong> : formule d'entrée à 97 € par mois, matériel compris (iPad avec coque et imprimante d'étiquettes), installation sur place par un ingénieur qualité et formation de l'équipe. iPad supplémentaire à 9 € par mois. La page ne précise pas HT ou TTC, ni le prix des sondes. Les formules avec recettes, stocks et commandes sont sur devis."},
+      {"p": "<strong>Points forts</strong> : matériel et installation inclus, saisie rapide. <strong>Limites</strong> : prix des sondes et des formules supérieures non publiés."},
+      {"h3": "eEAT"},
+      {"p": "<strong>Cible</strong> : restaurants, métiers de bouche, traiteurs, restauration collective, distribution, multi-sites et franchises, laboratoires. Support et hébergement des données en Suisse."},
+      {"p": "<strong>Fonctions</strong> : capteurs connectés avec relevé toutes les 20 minutes et alertes SMS et e-mail, calcul et impression automatique des DLC, photo des étiquettes fournisseurs, QR code pour l'inspecteur, relevés, nettoyage et réceptions, multi-sites natif, fonctionnement hors connexion avec synchronisation au retour du réseau."},
+      {"p": "<strong>Matériel et prix</strong> : packs mensuels HACCP 49, Capteurs 45, Capteurs + HACCP 60, Imprimante + HACCP 60, Intégral 75 (la grille ne précise pas la devise, le simulateur affiche des euros). Imprimante à 150 l'unité, imprimantes Brother QL existantes compatibles. Configuration, formation, multi-sites et utilisateurs illimités inclus dans tous les packs. Avec ou sans engagement, résiliable en fin de mois, engagement de 24 mois pour réduire la mensualité. Pas d'essai gratuit, mais remboursement du matériel le premier mois s'il ne convient pas."},
+      {"p": "<strong>Points forts</strong> : grille de prix publique et lisible, sans engagement possible. <strong>Limites</strong> : prix des capteurs à l'unité non affiché."},
+      {"h3": "Staff Meal"},
+      {"p": "Staff Meal n'est pas un logiciel de relevés automatiques : il ne pose pas de sondes et n'imprime pas d'étiquettes DLC. C'est une application d'exploitation pour les restaurants d'environ 15 employés et plus. Sa place dans ce comparatif est détaillée en fin de page."}
+    ]},
+    {"h2": "Quel logiciel selon votre établissement", "blocks": [
+      {"table": {
+        "head": ["Votre situation", "Ce qui compte", "Solutions à regarder"],
+        "rows": [
+          ["Restaurant indépendant, petite équipe, budget serré", "Relevés et traçabilité sur téléphone, pas de matériel", "HACCP Facile, Traqfood Starter, ou le papier"],
+          ["Restaurant avec plusieurs chambres froides", "Relevés automatiques la nuit et le week-end, alerte en cas de panne", "Octopus, Traqfood, ePackPro Sérénité, Kooklin, eEAT"],
+          ["Boucherie, traiteur, production de préparations", "Étiquettes DLC imprimées, traçabilité des lots", "Kooklin, ePackPro, Octopus, eEAT, Traqfood"],
+          ["Établissement saisonnier", "Payer seulement les mois d'ouverture", "eEAT (minimum 5 mois, payés d'avance)"],
+          ["Groupe ou franchise de plusieurs sites", "Même grille partout, comparaison des sites, audits notés", "Traqfood Manager, eEAT, Mitti, Staff Meal"],
+          ["Équipe de 15 personnes et plus qui tourne", "Bonne tâche au bon poste, preuve photo, procédures et formation", "Staff Meal, Mitti"]
+        ]
+      }},
+      {"p": "Cinq questions à poser avant de signer :"},
+      {"ol": [
+        "Le prix affiché est-il HT ou TTC, et comprend-il le matériel ? Plusieurs pages ne le précisent pas.",
+        "Le matériel est-il loué ou acheté, et que devient-il si vous résiliez ?",
+        "Quelle est la durée d'engagement, et quels frais de mise en service ?",
+        "Combien de temps l'historique est-il conservé, et pouvez-vous l'exporter en PDF pour un contrôle ?",
+        "Qui paramètre votre PMS dans l'outil : vous, ou l'éditeur ?"
+      ]},
+      {"p": "Pour le choix du support lui-même (tablette fixe en cuisine ou téléphone des équipiers), voir notre page <a href=\"/tablette-haccp.html\">tablette HACCP</a>. Pour le suivi des lots, la page <a href=\"/logiciel-tracabilite-alimentaire.html\">logiciel de traçabilité alimentaire</a>."}
+    ]},
+    {"h2": "Application HACCP gratuite : ce que vous obtenez vraiment", "blocks": [
+      {"p": "Sur les huit solutions de ce comparatif, deux ont une version gratuite sans limite de durée :"},
+      {"ul": [
+        "<strong>HACCP Facile, offre découverte</strong> : 4 modules gratuits, sans matériel, dans le navigateur. Pour l'ensemble des modules, il faut passer en Pro à 16,90 € par mois.",
+        "<strong>Mitti, version gratuite</strong> : jusqu'à 10 licences et 5 modèles d'inspection actifs, avec 30 jours d'historique dans les analyses. Suffisant pour quelques checklists HACCP, à construire vous-même."
+      ]},
+      {"p": "Les autres proposent un essai limité dans le temps : 30 jours chez Traqfood, 14 jours sans carte bancaire chez Octopus HACCP. ePackPro et Kooklin proposent une démonstration gratuite, eEAT rembourse le matériel le premier mois. Aucune version gratuite ne fournit de sondes ni d'imprimante."},
+      {"callout": "Si votre équipe tient déjà ses relevés, un modèle papier gratuit reste recevable : le règlement n'impose pas de support numérique. Commencez par notre <a href=\"/modele-plan-maitrise-sanitaire.html\">modèle de plan de maîtrise sanitaire</a> et notre <a href=\"/fiche-releve-temperature.html\">fiche de relevé de température</a>."}
+    ]},
+    {"h2": "Où se place Staff Meal", "blocks": [
+      {"p": "Staff Meal ne remplace pas une sonde ni une étiqueteuse. Si votre besoin est de relever la température des chambres froides la nuit ou d'imprimer des DLC sur vos préparations, prenez un des outils ci-dessus. Si votre équipe est petite et stable, le papier ou une application gratuite suffit."},
+      {"p": "Le terrain de Staff Meal, c'est l'exécution dans une équipe de 15 personnes et plus, souvent sur plusieurs sites :"},
+      {"ul": [
+        "<strong>Checklists par poste et par horaire</strong> : chaque équipier ouvre celle de son créneau sur son téléphone, coche, prend la photo du thermomètre, laisse un commentaire. Chaque validation porte son nom et l'heure. Ce qui n'est pas fait à la fin du créneau remonte en retard. Voir le <a href=\"/module-checklists-haccp.html\">module checklists HACCP</a>.",
+        "<strong>Audits d'hygiène notés</strong> : grilles personnalisées par section, écart documenté obligatoire, note globale et par section, rapport détaillé. Voir le <a href=\"/module-audit-haccp.html\">module audit HACCP</a>.",
+        "<strong>Multi-site</strong> : contenus créés une fois et déployés partout, vue consolidée des tâches faites, des retards et de la note d'hygiène par établissement, quatre rôles du propriétaire à l'équipier. Voir le <a href=\"/module-multi-site.html\">module multi-site</a>.",
+        "<strong>Les standards autour</strong> : manuel opératoire, formations avec quiz et certificat, maintenance des équipements, fiches techniques avec allergènes et consignes de conservation."
+      ]},
+      {"p": "Les équipiers ajoutent l'application à l'écran d'accueil depuis le navigateur, sans store. Vous pouvez importer une checklist existante. Staff Meal est en bêta : le paramétrage se fait avec vous, sur place. Il peut aussi compléter un outil à sondes : les capteurs gardent la chambre froide, Staff Meal fait faire et prouve tout le reste."}
+    ]}
+  ],
+  "faq": [
+    {"q": "Quel est le meilleur logiciel HACCP pour un restaurant ?", "a": "Celui qui couvre votre besoin principal. Relevés simples à petit prix : HACCP Facile ou Traqfood Starter. Sondes connectées et étiquettes DLC avec matériel installé : ePackPro, Kooklin, Octopus HACCP ou eEAT. Checklists prouvées par photo et audits sur plusieurs sites : Mitti ou Staff Meal."},
+    {"q": "Existe-t-il une application HACCP gratuite ?", "a": "Oui. HACCP Facile propose une offre découverte gratuite limitée à 4 modules, et Mitti une version gratuite jusqu'à 10 licences et 5 modèles d'inspection actifs. Aucune n'inclut de sondes ni d'imprimante. Traqfood et Octopus HACCP proposent des essais de 30 et 14 jours."},
+    {"q": "Combien coûte un logiciel HACCP ?", "a": "D'après les prix publics relevés le 02/11/2026 : de 16,90 € par mois (HACCP Facile Pro) à 154 € HT par mois et plus (ePackPro Sérénité, sondes comprises). Traqfood démarre à 19,99 € HT par mois, eEAT à 49 par mois, Octopus HACCP à 55 € par mois, Kooklin à 97 € par mois matériel compris."},
+    {"q": "Un logiciel HACCP est-il obligatoire ?", "a": "Non. L'article 5 du règlement (CE) n° 852/2004 impose une procédure fondée sur les principes HACCP et des documents qui prouvent son application, adaptés à la taille de l'entreprise, sans imposer de support. Le papier reste recevable."},
+    {"q": "Quelle application HACCP avec sondes de température ?", "a": "Parmi les solutions comparées, Octopus HACCP, Traqfood, ePackPro (offre Sérénité), Kooklin (sondes TempGuard) et eEAT proposent des capteurs connectés avec alertes. Mitti propose aussi des capteurs de température et d'humidité. Staff Meal n'en propose pas."},
+    {"q": "Quel logiciel HACCP pour plusieurs restaurants ?", "a": "Cherchez un tableau de bord consolidé et une même grille déployée sur tous les sites. Traqfood le fait en offre Manager, avec une licence par établissement, eEAT inclut le multi-sites dans tous ses packs, Mitti et Staff Meal sont construits pour les audits et les checklists comparés entre sites."}
+  ],
+  "related": [
+    {"href": "/haccp-restaurant.html", "title": "HACCP en restaurant : du classeur à la preuve", "desc": "Le cadre du plan de maîtrise sanitaire et ce que la digitalisation change."},
+    {"href": "/module-checklists-haccp.html", "title": "Checklists HACCP avec preuve photo", "desc": "Le module Staff Meal pour les relevés par poste et par horaire."},
+    {"href": "/module-audit-haccp.html", "title": "Audit d'hygiène noté sur mobile", "desc": "La même grille et le même barème sur tous vos sites."},
+    {"href": "/checklist-haccp-inspection.html", "title": "Inspection HACCP : la checklist pour être prêt", "desc": "Ce que l'inspecteur regarde, dans l'ordre."},
+    {"href": "/logiciel-haccp-restauration-rapide.html", "title": "Logiciel PMS pour la restauration rapide", "desc": "Tenir l'HACCP avec une équipe qui tourne."}
+  ],
+  "sources": [
+    {"label": "Règlement (CE) n° 852/2004 relatif à l'hygiène des denrées alimentaires, article 5 (copie publiée par la préfecture de l'Ardèche)", "url": "https://www.ardeche.gouv.fr/contenu/telechargement/20587/172385/file/Regl_852_2004_cle03fa7b.pdf"},
+    {"label": "Octopus HACCP : page d'accueil (fonctions, cibles, prix d'entrée, essai), consultée le 02/11/2026", "url": "https://octopus-haccp.com/"},
+    {"label": "Octopus HACCP : tarifs et matériel, consultée le 02/11/2026", "url": "https://octopus-haccp.com/tarifs-application-haccp/"},
+    {"label": "Traqfood : offres Starter et Manager, fonctions, matériel, consultée le 02/11/2026", "url": "https://www.traqfood.com/fr/"},
+    {"label": "HACCP Facile : fonctions et offres, consultée le 02/11/2026", "url": "https://www.haccp-facile.com/"},
+    {"label": "HACCP Facile : nos offres, consultée le 02/11/2026", "url": "https://www.haccp-facile.com/nos-offres/"},
+    {"label": "ePackPro : fonctions et cibles, consultée le 02/11/2026", "url": "https://www.epackpro.com/fr/"},
+    {"label": "ePackPro : tarifs, consultée le 02/11/2026", "url": "https://epackpro.com/fr/tarifs/"},
+    {"label": "Mitti (par SafetyCulture) : tarifs, consultée le 02/11/2026", "url": "https://mitti.com/fr/pricing"},
+    {"label": "Mitti : capteurs et IoT, consultée le 02/11/2026", "url": "https://mitti.com/fr/themes/internet-des-objets/capteurs-iot"},
+    {"label": "Kooklin : fonctions et matériel, consultée le 02/11/2026", "url": "https://www.kooklin.fr/"},
+    {"label": "Kooklin : pack hygiène et tarif d'entrée, consultée le 02/11/2026", "url": "https://www.kooklin.fr/meilleur-logiciel-haccp-paquet-hygiene/"},
+    {"label": "eEAT : fonctions et matériel, consultée le 02/11/2026", "url": "https://eeat-haccp.io/"},
+    {"label": "eEAT : tarifs, consultée le 02/11/2026", "url": "https://eeat-haccp.io/tarifs"}
+  ]
+}

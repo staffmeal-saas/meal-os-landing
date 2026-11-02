@@ -1,6 +1,22 @@
 [build]
   publish = "."
 
+# --- Ancien domaine staff-meal.fr (vieux site Lovable) -> staff-meal.com ---
+# Le .fr sortait mieux que le .com sur « staff meal » : la 301 transfère ce signal.
+# Les anciennes URL Lovable n'existent pas ici, tout part sur l'accueil.
+# Actif dès que le DNS du .fr pointe sur Netlify (alias ajoutés au site le 02/11/2026).
+[[redirects]]
+  from = "https://staff-meal.fr/*"
+  to = "https://staff-meal.com/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.staff-meal.fr/*"
+  to = "https://staff-meal.com/"
+  status = 301
+  force = true
+
 # --- Redirections de marque : Meal OS -> Staff Meal ---------------------
 # L'ordre compte : Netlify applique la première règle qui correspond.
 
@@ -442,3 +458,51 @@
   for = "/assets/*"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
+
+[[redirects]]
+  from = "/plan-de-nettoyage-cuisine"
+  to = "/plan-de-nettoyage-cuisine.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/modele-plan-maitrise-sanitaire"
+  to = "/modele-plan-maitrise-sanitaire.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fiche-technique-cuisine-vierge"
+  to = "/fiche-technique-cuisine-vierge.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fiche-releve-temperature"
+  to = "/fiche-releve-temperature.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/affichage-obligatoire-restaurant"
+  to = "/affichage-obligatoire-restaurant.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/meilleur-logiciel-haccp"
+  to = "/meilleur-logiciel-haccp.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/tablette-haccp"
+  to = "/tablette-haccp.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/logiciel-tracabilite-alimentaire"
+  to = "/logiciel-tracabilite-alimentaire.html"
+  status = 301
+  force = true

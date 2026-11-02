@@ -1,0 +1,379 @@
+{
+  "slug": "fiche-releve-temperature",
+  "title": "Relevé de température frigo : fiche HACCP gratuite (PDF)",
+  "description": "Fiche de relevé de température frigo à imprimer (PDF, Excel, Word) : seuils par denrée, deux relevés par jour, écarts, refroidissement rapide.",
+  "kicker": "matin, soir, et ce qu'on écrit quand ça dérape",
+  "h1": "Relevé de température frigo : la fiche HACCP et les seuils à respecter",
+  "lede": "Le relevé de température d'un frigo de restaurant se fait sur une fiche par enceinte, fixée sur la porte : date, heure, température lue, nom ou visa de la personne, et action corrective en cas d'écart. Le guide du ministère de l'Agriculture recommande deux relevés par jour, le matin à la prise de service et le soir avant la fermeture. La température-cible de chaque frigo se règle sur la denrée la plus exigeante qu'il contient : + 3 °C pour des préparations élaborées à l'avance, + 2 °C pour de la viande hachée ou du poisson frais. Le modèle gratuit ci-dessous couvre le mois complet et le refroidissement rapide.",
+  "breadcrumb": [
+    [
+      "Hygiène et conformité",
+      "/haccp-restaurant.html"
+    ],
+    [
+      "Fiche relevé de température",
+      null
+    ]
+  ],
+  "datePublished": "2026-11-02",
+  "sections": [
+    {
+      "h2": "Les températures à respecter, denrée par denrée",
+      "blocks": [
+        {
+          "p": "Les températures maximales de conservation sont fixées par l'<strong>annexe I de l'arrêté du 21 décembre 2009</strong>. La colonne qui vous concerne est celle des établissements de remise directe et de restauration collective. Un frigo qui mélange plusieurs familles se règle sur la plus basse : un frigo saladette qui contient du haché et des sauces maison se pilote à + 2 °C, pas à + 4 °C."
+        },
+        {
+          "table": {
+            "caption": "Températures maximales en restaurant (arrêté du 21 décembre 2009, annexe I)",
+            "head": [
+              "Denrée",
+              "Température maximale"
+            ],
+            "rows": [
+              [
+                "Viandes hachées, viandes séparées mécaniquement",
+                "+ 2 °C"
+              ],
+              [
+                "Produits de la pêche frais, décongelés non transformés, crustacés et mollusques cuits réfrigérés",
+                "+ 2 °C (glace fondante entre 0 et + 2 °C)"
+              ],
+              [
+                "Abats d'ongulés domestiques et de gibier",
+                "+ 3 °C"
+              ],
+              [
+                "Préparations culinaires élaborées à l'avance",
+                "+ 3 °C"
+              ],
+              [
+                "Préparations de viandes, volailles, lapins, petit gibier",
+                "+ 4 °C"
+              ],
+              [
+                "Viandes d'ongulés et de gibier : morceaux découpés",
+                "+ 4 °C (+ 7 °C pour carcasses entières et pièces de gros)"
+              ],
+              [
+                "Ovoproduits (hors UHT), lait cru de consommation",
+                "+ 4 °C"
+              ],
+              [
+                "Autres denrées très périssables",
+                "+ 4 °C"
+              ],
+              [
+                "Autres denrées périssables",
+                "+ 8 °C"
+              ],
+              [
+                "Glaces, viandes hachées congelées, produits de la pêche congelés",
+                "- 18 °C"
+              ],
+              [
+                "Autres denrées congelées",
+                "- 12 °C"
+              ],
+              [
+                "Plats livrés chauds ou remis chauds au consommateur (liaison chaude)",
+                "+ 63 °C minimum"
+              ]
+            ]
+          }
+        },
+        {
+          "p": "Pour le lait pasteurisé, les fromages affinés et les produits dont l'étiquette porte une consigne, c'est la température fixée par le fabricant qui s'applique. La limite basse d'un produit réfrigéré est son point de congélation : un frigo réglé trop froid qui fait geler les salades n'est pas « plus conforme »."
+        },
+        {
+          "p": "Au-dessus de ces chiffres, le <strong>règlement (CE) n° 852/2004</strong> pose le principe : les denrées sensibles ne doivent pas être conservées à des températures qui présentent un risque, et la chaîne du froid ne doit pas être interrompue. Une sortie courte pour la manutention, le service ou la mise en place est admise si elle ne crée pas de risque."
+        },
+        {
+          "html": "<div class=\"card-retro bg-paper p-6 my-6\"><p class=\"font-sans font-bold text-lg mb-3\">Télécharger le modèle gratuit</p><p class=\"flex flex-wrap gap-3\"><a href=\"/modeles/fiche-releve-temperature.pdf\" class=\"btn-retro\" download>PDF à imprimer</a> <a href=\"/modeles/fiche-releve-temperature.xlsx\" class=\"btn-retro\" download>Excel modifiable</a> <a href=\"/modeles/fiche-releve-temperature.docx\" class=\"btn-retro\" download>Word modifiable</a></p><p class=\"font-sans text-sm text-ink-faint mt-3\">Sans inscription. Format A4.</p></div>"
+        }
+      ]
+    },
+    {
+      "h2": "Ce que contient le modèle et comment le remplir",
+      "blocks": [
+        {
+          "p": "Le modèle est en A4 paysage. Il contient trois fiches et une page de repères :"
+        },
+        {
+          "ul": [
+            "<strong>Le relevé mensuel par enceinte</strong> : une ligne par jour, du 1 au 31, avec pour le matin et pour le soir l'heure, la température lue et le visa, puis une colonne « écart et action corrective ». En tête : l'établissement, le mois, le nom de l'enceinte, les denrées stockées et la température-cible.",
+            "<strong>La fiche de refroidissement rapide</strong> : une ligne par cycle, avec la préparation, l'heure et la température à cœur au début, l'heure et la température à cœur à la fin, la durée, la conformité et la suite donnée.",
+            "<strong>La fiche de remise en température</strong> : même logique, avec un début sous + 10 °C et une fin à + 63 °C ou plus.",
+            "<strong>Une page de repères</strong> : les seuils de l'arrêté, la conduite à tenir en cas d'écart et la vérification du thermomètre."
+          ]
+        },
+        {
+          "p": "Chaque fiche commence par des lignes d'exemple remplies, pour montrer le niveau de détail attendu, puis des lignes vides. Pour l'utiliser :"
+        },
+        {
+          "ol": [
+            "Numérotez vos enceintes une fois pour toutes (« CF1 chambre froide viandes », « F3 saladette chaude ») et collez le numéro sur la porte. Le même nom apparaît sur la fiche.",
+            "Écrivez la température-cible en tête de fiche, celle de la denrée la plus exigeante stockée dedans.",
+            "Imprimez une fiche par enceinte et par mois, et fixez-la sur la porte ou juste à côté.",
+            "À chaque relevé, notez l'heure réelle et la valeur lue, au dixième si l'afficheur le permet. Pas de « RAS » à la place du chiffre.",
+            "En cas d'écart, remplissez la dernière colonne : ce que vous avez constaté, ce que vous avez fait des denrées, ce que vous avez fait de l'appareil.",
+            "En fin de mois, le responsable vise la fiche et la range avec les autres enregistrements du plan de maîtrise sanitaire."
+          ]
+        },
+        {
+          "p": "Pour les cellules de refroidissement et les fours de remise en température, la fiche se remplit à chaque cycle, pas deux fois par jour."
+        }
+      ]
+    },
+    {
+      "h2": "Combien de relevés par jour, et où mesurer",
+      "blocks": [
+        {
+          "p": "Aucun texte réglementaire ne fixe un nombre de relevés pour les frigos d'un restaurant. C'est votre plan de maîtrise sanitaire qui le fixe. Le guide de mise en place du PMS publié par le ministère de l'Agriculture pour la restauration collective donne un repère que la plupart des cuisines peuvent reprendre : <strong>deux relevés par jour</strong>, le matin à la prise de service et le soir (ou l'après-midi) juste avant la fermeture."
+        },
+        {
+          "p": "Le même guide précise les conditions d'un relevé utile :"
+        },
+        {
+          "ul": [
+            "<strong>Enceinte stabilisée.</strong> Mesurez en dehors du rangement d'une livraison ou d'un coup de feu : les ouvertures répétées font monter la température de l'air et donnent une valeur sans signification.",
+            "<strong>Une enceinte, un identifiant.</strong> Le même numéro figure sur la porte, sur la fiche et, le cas échéant, dans le logiciel ou sur le disque du thermographe.",
+            "<strong>Un afficheur à lecture directe dans chaque enceinte</strong>, dont la justesse est vérifiée régulièrement, avec la sonde placée au point le plus chaud de l'enceinte.",
+            "<strong>Un thermomètre mini/maxi</strong> pour savoir ce qui s'est passé pendant une fermeture, un week-end ou des congés. Notez le maxi à la réouverture, puis remettez-le à zéro."
+          ]
+        },
+        {
+          "p": "Le relevé d'ambiance ne remplace pas la mesure à cœur. Quand l'afficheur indique un écart, ou à la réception d'une livraison, c'est la température du produit qui décide. Pour la réception, voir aussi notre <a href=\"/checklist-haccp-inspection.html\">checklist d'inspection HACCP</a>."
+        }
+      ]
+    },
+    {
+      "h2": "Que faire quand la température dépasse le seuil",
+      "blocks": [
+        {
+          "p": "Une valeur hors seuil sur la fiche, sans rien à côté, est le pire cas en contrôle : elle prouve que vous avez vu le problème et que personne n'a agi. Le guide du ministère demande deux choses face à une valeur non conforme : <strong>une analyse des causes</strong> et <strong>une décision sur les denrées</strong>, toutes deux résumées sur la fiche de relevé."
+        },
+        {
+          "p": "Pour les denrées, le guide retient trois issues : les utiliser comme prévu, les jeter, ou les utiliser avec des précautions particulières (mise en œuvre rapide, cuisson). Il distingue trois cas :"
+        },
+        {
+          "ul": [
+            "<strong>La température à cœur des produits est conforme</strong> : les denrées restent utilisables, vous traitez l'appareil.",
+            "<strong>La température à cœur n'est pas conforme</strong> : les denrées sont détruites, sauf analyse des dangers spécifique qui démontre le contraire. Le guide range d'office dans ce cas les viandes hachées, les poissons et les fromages au lait cru.",
+            "<strong>L'écart est faible et exceptionnel</strong> : les denrées encore en bon état peuvent être proposées au service qui suit immédiatement le constat."
+          ]
+        },
+        {
+          "p": "Pour estimer l'incident, le guide conseille de prendre le pire scénario : il démarre au dernier relevé conforme, et la température atteinte est celle du thermomètre mini/maxi. Une coupure de courant ponctuelle est encaissée quelques heures par une chambre froide fermée ; un joint de porte défectueux dure beaucoup plus longtemps. Quelques incidents par an restent tolérables selon le guide, un incident par semaine impose de revoir l'appareil ou la manière de stocker."
+        },
+        {
+          "p": "Une action corrective bien écrite tient en une ligne et répond à trois questions. Exemples :"
+        },
+        {
+          "ul": [
+            "« 7 h 50 : 6,2 °C. Porte restée entrouverte depuis la livraison de 6 h 30. Haché à cœur 3,5 °C : jeté (seuil + 2 °C). Joint signalé au frigoriste. Contrôle 9 h 30 : 3,1 °C. »",
+            "« 22 h 15 : 4,8 °C après rangement. Recontrôle 22 h 45 : 2,9 °C. Aucune denrée concernée. »",
+            "« Lundi 7 h : mini/maxi à 11 °C, coupure de courant dimanche. Préparations à l'avance jetées, produits laitiers sous + 4 °C à cœur conservés. »"
+          ]
+        },
+        {
+          "p": "Si l'appareil est en cause, ouvrez un suivi de réparation et gardez la trace de l'intervention : la page <a href=\"/maintenance-equipement-restaurant.html\">maintenance du matériel de restauration</a> détaille comment tenir ce suivi."
+        }
+      ]
+    },
+    {
+      "h2": "Refroidissement rapide : de + 63 °C à + 10 °C en moins de 2 heures",
+      "blocks": [
+        {
+          "p": "La règle est écrite au point 1 de l'<strong>annexe IV de l'arrêté du 21 décembre 2009</strong> : la température à cœur d'une préparation ne doit pas rester entre + 63 °C et + 10 °C pendant plus de deux heures. Après refroidissement, la préparation est conservée dans une enceinte entre 0 °C et + 3 °C. Une analyse des dangers validée peut justifier une autre durée."
+        },
+        {
+          "p": "Point de précision honnête : l'annexe IV vise la restauration collective (article 6 de l'arrêté). Pour un restaurant commercial, le texte qui s'applique directement est le règlement 852/2004, qui impose de réfrigérer dès que possible après la cuisson à une température sans risque. Votre PMS doit fixer un couple temps et température ; reprendre + 63 °C vers + 10 °C en moins de 2 heures est le repère le plus simple à défendre, puisqu'il est déjà écrit dans l'arrêté."
+        },
+        {
+          "p": "Ce que la fiche de refroidissement doit contenir, à chaque cycle, d'après le guide du ministère :"
+        },
+        {
+          "ul": [
+            "l'heure de démarrage (entrée en cellule, ou fin de cuisson en cas de pré-refroidissement à l'eau froide) et la température à cœur à ce moment ;",
+            "l'heure de fin, quand le cœur passe sous + 10 °C, et la température à ce moment ;",
+            "la durée calculée, comparée aux 2 heures, et la conformité."
+          ]
+        },
+        {
+          "p": "Si la durée dépasse 2 heures ou si le cœur est encore au-dessus de + 10 °C en fin de cycle, la préparation est jetée. Une cellule de refroidissement n'est pas exigée si un autre moyen est efficace : bain d'eau glacée pour le riz, les pâtes ou des produits conditionnés, portions plus petites, bacs moins épais. Ce qui est à éviter, c'est le plat encore chaud posé dans un frigo plein de denrées déjà froides. Quand la cellule a une sonde à cœur, elle peut enregistrer elle-même la durée de + 63 °C à + 10 °C."
+        }
+      ]
+    },
+    {
+      "h2": "Remise en température et liaison chaude",
+      "blocks": [
+        {
+          "p": "Le point 3 de la même annexe IV fixe la remise en température : la préparation ne doit pas rester plus d'une heure entre + 10 °C et sa température de service, qui ne peut pas être inférieure à + 63 °C. Une préparation remise en température se consomme le jour même."
+        },
+        {
+          "p": "Sur la fiche, notez l'heure et la température à cœur à l'entrée dans l'appareil, puis à la fin. Si le cœur n'atteint pas + 63 °C, le guide du ministère admet de prolonger le chauffage tant que la durée totale ne dépasse pas une heure ; au-delà, la préparation est jetée et le mode opératoire revu (charge du four, épaisseur des bacs)."
+        },
+        {
+          "p": "En liaison chaude, l'annexe I fixe <strong>+ 63 °C minimum</strong> pour les plats livrés chauds ou remis chauds au consommateur. Le maintien au chaud (bain-marie, étuve, saladette chaude) se relève donc comme un frigo, avec une valeur-cible inversée : un relevé à 58 °C est un écart et appelle une action."
+        }
+      ]
+    },
+    {
+      "h2": "Le thermomètre : lequel, et comment le vérifier",
+      "blocks": [
+        {
+          "p": "Le guide du ministère distingue deux outils. Le <strong>thermomètre à sonde</strong> mesure à cœur, avec une précision typique de 0,5 °C. Le <strong>thermomètre infrarouge</strong> ne mesure que la surface, avec une précision souvent autour de 2 °C ; il n'est pas interdit, mais un accord interprofessionnel recommande de ne pas l'utiliser pour juger la conformité d'un produit à réception. Pour une livraison contestée, seule la mesure à la sonde fait foi."
+        },
+        {
+          "p": "Vérifier un thermomètre à sonde prend deux minutes :"
+        },
+        {
+          "ol": [
+            "Remplissez un récipient de glaçons, sans ajouter d'eau.",
+            "Attendez que 2 à 3 cm d'eau de fonte se forment : elle se stabilise à 0 °C tant qu'il reste de la glace.",
+            "Plongez la sonde et lisez la valeur après quelques secondes.",
+            "Pour les afficheurs des frigos, comparez avec votre sonde de référence placée au même endroit, de préférence au fond de l'enceinte.",
+            "Au-delà d'un écart de ± 1 °C, le guide recommande de changer l'appareil. Notez la date et le résultat de chaque vérification."
+          ]
+        },
+        {
+          "p": "Le guide recommande une vérification au moins annuelle, et une vérification initiale si l'appareil neuf n'a pas été étalonné individuellement. Pour les chambres froides, la vérification de l'afficheur se fait avec la maintenance périodique."
+        }
+      ]
+    },
+    {
+      "h2": "Combien de temps garder les fiches de relevé",
+      "blocks": [
+        {
+          "p": "Le règlement 852/2004 (article 5) demande de conserver les documents et dossiers du système HACCP pendant une « période appropriée », sans chiffre. Le guide du ministère pour la restauration collective fixe, lui, une durée sur chaque modèle de fiche : <strong>3 ans</strong> pour le suivi des températures de stockage, le refroidissement rapide et la remise en température. En restaurant commercial, aucun texte ne vous impose ces 3 ans ; c'est une durée prudente à inscrire dans votre PMS, et c'est celle que reprend notre modèle."
+        },
+        {
+          "p": "Rangez les fiches par mois et par enceinte, avec les fiches de non-conformité et les bons d'intervention du frigoriste. Une photo ou un scan est accepté par le guide comme mode d'archivage."
+        }
+      ]
+    },
+    {
+      "h2": "Relevé manuel ou sondes automatiques",
+      "blocks": [
+        {
+          "p": "Le relevé manuel prouve qu'une personne a regardé l'enceinte à une heure donnée. Il ne dit rien de ce qui s'est passé la nuit. Une sonde connectée enregistre en continu et peut déclencher une alarme ; le guide du ministère souligne qu'un enregistrement continu est utile pour connaître la durée d'un incident, et indique que pour le stockage de denrées surgelées un tel enregistrement est obligatoire."
+        },
+        {
+          "p": "Ce qu'il faut savoir avant de choisir :"
+        },
+        {
+          "ul": [
+            "<strong>Les seuils d'alarme se règlent.</strong> Le guide demande de définir les seuils et leur temporisation pour éviter une alarme à chaque ouverture de porte, et de prévoir un report d'alarme pour les heures de fermeture. Une alarme qui sonne dix fois par service finit coupée.",
+            "<strong>Une sonde ne fait pas l'action corrective.</strong> Elle signale l'écart, quelqu'un doit encore mesurer à cœur, décider du sort des denrées et appeler le frigoriste. Cette partie s'écrit toujours.",
+            "<strong>La sonde se vérifie aussi</strong>, comme n'importe quel thermomètre."
+          ]
+        },
+        {
+          "p": "Pour un restaurant avec deux ou trois frigos, une chambre froide fermée la nuit et une équipe stable, la fiche papier, un thermomètre mini/maxi et une sonde de référence suffisent. Les sondes deviennent utiles quand vous avez beaucoup d'enceintes, des fermetures longues ou des surgelés stockés en volume."
+        }
+      ]
+    },
+    {
+      "h2": "Quelle température pour un frigo à la maison",
+      "blocks": [
+        {
+          "p": "L'Anses recommande une température <strong>entre 0 °C et + 4 °C au point le plus froid</strong> du réfrigérateur domestique. La raison : c'est juste en dessous de la température minimale de croissance des salmonelles, autour de 5 °C, et les bactéries qui se multiplient au froid y sont fortement ralenties. Les réfrigérateurs achetés après 2002 ont une pastille qui indique si la zone froide est à la bonne température ; sinon, un thermomètre posé dans cette zone suffit. Rangez-y les viandes et poissons crus. Les seuils professionnels du tableau plus haut, eux, s'appliquent aux restaurants et commerces, pas à la cuisine familiale."
+        }
+      ]
+    },
+    {
+      "h2": "Et avec Staff Meal",
+      "blocks": [
+        {
+          "p": "Si votre fiche papier est remplie à l'heure et que les écarts ont tous leur ligne d'action, gardez-la : elle est recevable. Le problème commence quand la fiche est remplie en fin de semaine, de mémoire, ou quand personne ne voit qu'un relevé manque."
+        },
+        {
+          "p": "Staff Meal ne pose pas de sonde dans vos frigos. Le module <a href=\"/module-checklists-haccp.html\">Checklists HACCP</a> remplace la fiche sur la porte : l'équipier ouvre la checklist de son créneau sur son téléphone, prend la photo du thermomètre et laisse un commentaire quand il y a un écart. Chaque validation porte son nom et l'heure, et un relevé non fait à la fin du créneau apparaît en retard sur le tableau de bord du responsable. Quand c'est l'appareil qui lâche, l'équipier ouvre un ticket dans le module <a href=\"/module-maintenance.html\">Maintenance</a>, avec photo et priorité, et l'historique de la machine se remplit."
+        },
+        {
+          "p": "Pour le cadre complet, voir notre page <a href=\"/haccp-restaurant.html\">HACCP en restaurant</a>. Pour les autres documents du PMS : <a href=\"/plan-de-nettoyage-cuisine.html\">plan de nettoyage</a>, <a href=\"/modele-plan-maitrise-sanitaire.html\">modèle de plan de maîtrise sanitaire</a> et <a href=\"/logiciel-tracabilite-alimentaire.html\">traçabilité alimentaire</a>."
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "Combien de fois par jour faut-il relever la température d'un frigo ?",
+      "a": "Aucun texte ne fixe de nombre, c'est votre plan de maîtrise sanitaire qui le décide. Le guide du ministère de l'Agriculture recommande deux relevés par jour : le matin à la prise de service et le soir avant la fermeture, enceinte stabilisée."
+    },
+    {
+      "q": "Quelle température pour un frigo de restaurant ?",
+      "a": "Celle de la denrée la plus exigeante qu'il contient, d'après l'annexe I de l'arrêté du 21 décembre 2009 : + 2 °C pour viande hachée et poisson frais, + 3 °C pour les préparations élaborées à l'avance, + 4 °C pour volailles et denrées très périssables, + 8 °C pour les autres denrées périssables."
+    },
+    {
+      "q": "Combien de temps garder les relevés de température HACCP ?",
+      "a": "Le règlement 852/2004 parle d'une « période appropriée » sans chiffre. Le guide du ministère pour la restauration collective retient 3 ans pour les fiches de températures, de refroidissement et de remise en température. C'est une durée prudente à inscrire dans votre PMS."
+    },
+    {
+      "q": "Quelle est la règle du refroidissement rapide en HACCP ?",
+      "a": "La température à cœur ne doit pas rester entre + 63 °C et + 10 °C plus de 2 heures, puis la préparation est stockée entre 0 °C et + 3 °C (arrêté du 21 décembre 2009, annexe IV). Au-delà de 2 heures, ou au-dessus de + 10 °C en fin de cycle, la préparation est jetée."
+    },
+    {
+      "q": "Que faire si le frigo est à 8 °C le matin ?",
+      "a": "Mesurez à cœur les denrées les plus sensibles. Si elles dépassent leur seuil, elles sont jetées ; le haché, le poisson et les fromages au lait cru ne se rattrapent pas. Cherchez la cause (porte, joint, panne), appelez le frigoriste si besoin, et écrivez constat, décision et suite sur la fiche."
+    },
+    {
+      "q": "Le relevé de température automatique est-il obligatoire ?",
+      "a": "Non pour les frigos d'un restaurant : la fiche papier tenue à l'heure est recevable. Le guide du ministère indique toutefois qu'un enregistrement continu est obligatoire pour le stockage de denrées surgelées, et qu'il reste utile partout pour connaître la durée d'un incident."
+    }
+  ],
+  "related": [
+    {
+      "href": "/module-checklists-haccp.html",
+      "title": "Checklists HACCP avec preuve photo",
+      "desc": "Le relevé fait au bon créneau, avec la photo du thermomètre, le nom et l'heure."
+    },
+    {
+      "href": "/haccp-restaurant.html",
+      "title": "HACCP en restaurant : du classeur à la preuve",
+      "desc": "Le cadre général du plan de maîtrise sanitaire."
+    },
+    {
+      "href": "/checklist-haccp-inspection.html",
+      "title": "Inspection HACCP : la checklist pour être prêt",
+      "desc": "Ce que l'inspecteur regarde, relevés de température compris."
+    },
+    {
+      "href": "/maintenance-equipement-restaurant.html",
+      "title": "Maintenance du matériel de restauration",
+      "desc": "Chambres froides et frigos : suivre les pannes avant qu'elles coûtent un stock."
+    },
+    {
+      "href": "/module-maintenance.html",
+      "title": "Module Maintenance",
+      "desc": "Chaque panne a un ticket, une priorité et un responsable."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Arrêté du 21 décembre 2009 relatif aux règles sanitaires applicables aux activités de commerce de détail (Légifrance), articles 6 à 8 et annexe IV",
+      "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000021573483"
+    },
+    {
+      "label": "Arrêté du 21 décembre 2009, annexe I : températures de conservation (Légifrance)",
+      "url": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000041864893"
+    },
+    {
+      "label": "Règlement (CE) n° 852/2004, article 5 et annexe II, chapitre IX (copie publiée par la préfecture de l'Ardèche)",
+      "url": "https://www.ardeche.gouv.fr/contenu/telechargement/20587/172385/file/Regl_852_2004_cle03fa7b.pdf"
+    },
+    {
+      "label": "Mise en place d'un plan de maîtrise sanitaire : guide pour les petits établissements de restauration collective, ministère de l'Agriculture, septembre 2021 (fiches stockage, refroidissement, remise en température, thermomètres, modèles 5.5 à 5.8)",
+      "url": "https://agriculture.gouv.fr/telecharger/127673"
+    },
+    {
+      "label": "Anses : bien utiliser son réfrigérateur (0 à + 4 °C au point le plus froid)",
+      "url": "https://www.anses.fr/fr/system/files/ANSES-12-DocLt-Refri.pdf?download=1"
+    },
+    {
+      "label": "Santé.fr : comment garantir l'hygiène des aliments dans son réfrigérateur",
+      "url": "https://sante.fr/refrigerateur-et-hygiene-des-aliments"
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "slug": "plan-de-nettoyage-cuisine",
+  "title": "Plan de nettoyage cuisine : modèle gratuit PDF, Excel, Word",
+  "description": "Plan de nettoyage et de désinfection pour cuisine pro : quoi, quand, comment, avec quoi, qui. Fréquences par zone et modèle gratuit à imprimer ou modifier.",
+  "kicker": "hygiène en cuisine",
+  "h1": "Plan de nettoyage cuisine : la méthode et le modèle gratuit",
+  "lede": "Un plan de nettoyage de cuisine est un tableau qui dit, pour chaque surface et chaque équipement, quoi nettoyer, à quelle fréquence, avec quel produit et quelle méthode, et qui s'en charge. Il fait partie de votre plan de maîtrise sanitaire : l'inspecteur vérifie qu'il existe, puis qu'il est appliqué, en regardant la cuisine et les enregistrements. Le modèle gratuit de cette page est déjà rempli avec des lignes types, classées par fréquence, avec une case par jour de la semaine.",
+  "breadcrumb": [["Hygiène et conformité", "/haccp-restaurant.html"], ["Plan de nettoyage cuisine", null]],
+  "datePublished": "2026-11-02",
+  "sections": [
+    {"h2": "Ce qu'est le plan de nettoyage et pourquoi il est dans votre PMS", "blocks": [
+      {"p": "On l'appelle plan de nettoyage, plan de nettoyage et de désinfection (PND) ou planning de nettoyage : c'est le même document. Il traduit en tâches concrètes une obligation du règlement (CE) n° 852/2004. L'annexe II, chapitre V, impose que tous les articles, installations et équipements en contact avec les denrées soient « effectivement nettoyés et, le cas échéant, désinfectés », à une « fréquence suffisante pour éviter tout risque de contamination ». Le chapitre I ajoute que les locaux où circulent les denrées doivent être « propres et en bon état d'entretien »."},
+      {"p": "Le texte européen ne fixe ni liste de tâches ni fréquence. C'est à vous de les décider et de les écrire. La note de service de la DGAL du 24 juillet 2012 sur l'inspection du plan de maîtrise sanitaire classe le <strong>plan de nettoyage et désinfection</strong> parmi les mesures de maîtrise « imposées réglementairement », au même titre que la formation du personnel, la qualité de l'eau et la lutte contre les nuisibles. Elles font l'objet d'items spécifiques dans la grille d'inspection."},
+      {"callout": "Le plan de nettoyage répond à « qui fait quoi, quand et comment ». La fiche d'enregistrement répond à « est-ce que ça a été fait ». Il faut les deux. Le modèle de cette page combine les deux sur une feuille."}
+    ]},
+    {"h2": "Télécharger le modèle", "blocks": [
+      {"html": "<div class=\"card-retro bg-paper p-6 my-6\"><p class=\"font-sans font-bold text-lg mb-3\">Télécharger le modèle gratuit</p><p class=\"flex flex-wrap gap-3\"><a href=\"/modeles/plan-de-nettoyage-cuisine.pdf\" class=\"btn-retro\" download>PDF à imprimer</a> <a href=\"/modeles/plan-de-nettoyage-cuisine.xlsx\" class=\"btn-retro\" download>Excel modifiable</a> <a href=\"/modeles/plan-de-nettoyage-cuisine.docx\" class=\"btn-retro\" download>Word modifiable</a></p><p class=\"font-sans text-sm text-ink-faint mt-3\">Sans inscription. Format A4.</p></div>"},
+      {"p": "Le modèle est en A4 paysage, pour être affiché en plonge ou rangé dans le classeur hygiène. Il contient :"},
+      {"ul": [
+        "<strong>Un en-tête</strong> : établissement, semaine du, responsable hygiène, visa du responsable en fin de semaine.",
+        "<strong>Quatre tableaux par fréquence</strong> : après chaque utilisation, tous les jours, chaque semaine, chaque mois. Les tâches à faire plusieurs fois par jour sont regroupées pour ne pas se perdre dans la liste quotidienne.",
+        "<strong>Pour chaque ligne</strong> : la zone ou l'équipement, le produit, la méthode, le poste responsable, puis une case par jour du lundi au dimanche (L à D) pour les initiales de la personne qui a fait la tâche. Les tâches mensuelles ont une case « fait le » avec la date.",
+        "<strong>Des lignes d'exemple</strong> réalistes (plans de travail, planches, trancheuse, sols, chambres froides, hotte, réserve sèche) et des lignes vides pour vos équipements.",
+        "<strong>Un tableau des écarts</strong> : date, tâche non faite ou mal faite, action corrective, initiales."
+      ]},
+      {"p": "La version Excel et la version Word se modifient : remplacez les produits d'exemple par ceux que vous avez réellement en cuisine, avec leur dilution et leur temps de contact lus sur la fiche technique."}
+    ]},
+    {"h2": "La méthode des 5 questions : quoi, quand, comment, avec quoi, qui", "blocks": [
+      {"p": "Chaque ligne d'un plan de nettoyage répond à cinq questions. Si une seule manque, la tâche sera faite de façon différente par chaque équipier."},
+      {"table": {"caption": "Les cinq questions d'une ligne de plan de nettoyage", "head": ["Question", "Ce qu'on écrit", "Exemple"], "rows": [
+        ["Quoi", "La surface ou l'équipement, précis et localisé", "Trancheuse du poste froid"],
+        ["Quand", "La fréquence et le moment", "Après chaque utilisation et en fin de service"],
+        ["Comment", "Les étapes dans l'ordre", "Débrancher, démonter, racler, laver, rincer, désinfecter, rincer si la fiche l'exige, sécher, remonter"],
+        ["Avec quoi", "Le produit, sa dilution, son temps de contact, le matériel", "Détergent désinfectant dilué selon la fiche, lavette à usage unique, gants anti-coupure"],
+        ["Qui", "Le poste ou la fonction, pas le prénom", "Commis du poste froid"]
+      ]}},
+      {"p": "Écrivez le poste plutôt que le prénom : le plan reste juste quand l'équipe change. Pour « quoi », partez du plan de la cuisine et faites le tour dans le sens de la marche en avant : réception, réserves, chambres froides, préparation froide, cuisson, dressage, plonge, locaux du personnel, poubelles."}
+    ]},
+    {"h2": "Nettoyage et désinfection : deux opérations différentes", "blocks": [
+      {"p": "Le <strong>nettoyage</strong> enlève les salissures visibles : gras, restes d'aliments, dépôts. Il se fait avec un détergent et une action mécanique (frotter, brosser). La <strong>désinfection</strong> réduit les micro-organismes sur une surface déjà propre. Le règlement 852/2004 les distingue : il demande de nettoyer les équipements en contact avec les denrées et de les désinfecter « le cas échéant ». Une surface encore grasse ne se désinfecte pas correctement, c'est pour cela que le nettoyage passe toujours en premier."},
+      {"p": "La méthode classique sur une surface en contact avec les aliments se déroule en six temps :"},
+      {"ol": [
+        "Débarrasser et racler : retirer les denrées, les déchets et les restes.",
+        "Laver avec le détergent dilué, en frottant.",
+        "Rincer à l'eau potable.",
+        "Appliquer le désinfectant et respecter le temps de contact indiqué sur sa fiche technique.",
+        "Rincer à l'eau potable si la fiche technique du produit le demande.",
+        "Laisser sécher à l'air ou essuyer avec un papier à usage unique."
+      ]},
+      {"p": "Un <strong>détergent désinfectant</strong> fait les deux en un passage sur une surface peu sale. Sur une surface très grasse (plaque, friteuse, hotte), un dégraissage préalable reste nécessaire. Les sols, murs et plafonds de la plupart des zones demandent un nettoyage, et une désinfection là où les denrées sont manipulées à nu."}
+    ]},
+    {"h2": "Fréquences par zone : quotidien, hebdomadaire, mensuel", "blocks": [
+      {"p": "Aucun texte ne fixe de fréquence par équipement : la règle est une fréquence « suffisante pour éviter tout risque de contamination ». Les fréquences ci-dessous sont des repères de départ, à ajuster à votre activité, à votre volume et à ce que montrent vos contrôles. Une cuisine qui tourne en continu nettoie plus souvent qu'une cuisine qui fait un service par jour."},
+      {"table": {"caption": "Repères de fréquence pour une cuisine de restaurant", "head": ["Fréquence", "Zones et équipements", "Opération"], "rows": [
+        ["Après chaque utilisation", "Plans de travail, planches à découper, couteaux, trancheuse, robot, balance, thermomètre sonde", "Nettoyage et désinfection"],
+        ["Plusieurs fois par jour", "Poignées de portes, de frigos et de chambres froides, interrupteurs, lave-mains", "Nettoyage et désinfection"],
+        ["Tous les jours, en fin de service", "Sols de cuisine et de plonge, éviers, plaques, grill, friteuse (extérieur), feux, piano, intérieur des frigos du service, poubelles et leur support", "Nettoyage, désinfection des surfaces en contact"],
+        ["Chaque semaine", "Chambres froides (sol, étagères, joints), filtres de hotte, four en profondeur, murs carrelés de la zone chaude, réserve sèche, siphons de sol", "Nettoyage approfondi, désinfection des étagères et des joints"],
+        ["Chaque mois", "Murs hors zone chaude, plafonds accessibles, luminaires, dessus des meubles hauts, grilles de ventilation, congélateurs selon dégivrage", "Nettoyage, désinfection si contact possible"]
+      ]}},
+      {"p": "Deux règles évitent les recontaminations. Ne nettoyez pas en présence de denrées non protégées : les projections retombent sur les aliments. Commencez par le haut et finissez par le sol, et du plus propre vers le plus sale. Les conduits d'extraction et la ventilation relèvent souvent d'une entreprise spécialisée : notez leur date de passage sur votre plan, et rangez le rapport avec le suivi de <a href=\"/maintenance-equipement-restaurant.html\">maintenance du matériel</a>."}
+    ]},
+    {"h2": "Quels produits et quelles normes", "blocks": [
+      {"p": "Trois familles couvrent une cuisine : le <strong>détergent</strong> (dont le dégraissant), le <strong>désinfectant</strong> et le <strong>détergent désinfectant</strong>. Un détartrant s'ajoute pour la plonge et le lave-vaisselle selon la dureté de l'eau. Sur chaque produit, lisez la fiche technique et reportez dans le plan trois informations : la dilution, le temps de contact, et s'il faut rincer ou non."},
+      {"ul": [
+        "<strong>Contact alimentaire.</strong> En France, les produits de nettoyage des matériaux et objets en contact avec les denrées relèvent de l'arrêté du 8 septembre 1999, qui fixe la liste des constituants autorisés. Les autorisations distinguent l'usage « avec rinçage » et « sans rinçage » : un produit prévu avec rinçage doit être rincé à l'eau potable.",
+        "<strong>EN 1276.</strong> Cette norme fixe la méthode d'essai et les exigences minimales d'activité bactéricide des désinfectants utilisés dans les domaines alimentaire, industriel, domestique et des collectivités. Elle se teste en suspension.",
+        "<strong>EN 13697.</strong> Cette norme évalue l'activité bactéricide et, selon le cas, fongicide ou levuricide d'un désinfectant sur une surface non poreuse. Elle se rapproche davantage des conditions d'usage sur un plan de travail.",
+        "<strong>Les conditions d'essai comptent.</strong> Une norme est validée pour une concentration et un temps de contact donnés. La fiche technique précise la dilution et le temps de contact pour lesquels la norme est atteinte : ce sont ces valeurs qu'il faut appliquer et écrire dans votre plan."
+      ]},
+      {"p": "Rangement : le règlement 852/2004 interdit d'entreposer les produits de nettoyage et de désinfection dans les zones où les denrées sont manipulées. Prévoyez un placard ou un local dédié, et gardez les fiches techniques et les fiches de données de sécurité à portée de main."}
+    ]},
+    {"h2": "Enregistrer le nettoyage : ce qu'il faut garder", "blocks": [
+      {"p": "L'article 5 du règlement 852/2004 demande d'établir « des documents et des dossiers en fonction de la nature et de la taille de l'entreprise » pour prouver que les mesures sont appliquées, et de les conserver « pendant une période appropriée ». La note DGAL de 2012 cite le nettoyage et la désinfection comme exemple de bonne pratique d'hygiène à documenter : enregistrement de la mise en œuvre, surveillance régulière, enregistrement des actions correctives."},
+      {"p": "Concrètement, gardez trois choses :"},
+      {"ul": [
+        "<strong>Le plan lui-même</strong>, daté, avec sa version en cours. Quand vous changez de produit ou d'équipement, mettez-le à jour.",
+        "<strong>Les fiches d'enregistrement</strong> remplies : chaque case porte les initiales de la personne qui a fait la tâche. Une case vide est un écart, pas un oubli à rattraper en fin de semaine.",
+        "<strong>Les actions correctives</strong> : ce qui n'a pas été fait ou a été mal fait, et ce que vous avez fait ensuite (tâche refaite, rappel à l'équipe, produit changé)."
+      ]},
+      {"p": "Le règlement ne fixe pas de durée de conservation pour ces fiches. Fixez-en une dans votre <a href=\"/modele-plan-maitrise-sanitaire.html\">plan de maîtrise sanitaire</a> et appliquez-la à tous vos enregistrements, y compris la <a href=\"/fiche-releve-temperature.html\">fiche de relevé de température</a>."}
+    ]},
+    {"h2": "Comment remplir le modèle, ligne par ligne", "blocks": [
+      {"ol": [
+        "Faites le tour de la cuisine avec le modèle imprimé et listez chaque surface et chaque équipement, zone par zone.",
+        "Rangez chaque ligne dans le bon tableau de fréquence. Supprimez les lignes d'exemple qui ne vous concernent pas.",
+        "Pour chaque ligne, remplacez le produit d'exemple par le nom commercial du vôtre, avec sa dilution et son temps de contact.",
+        "Indiquez le poste responsable dans la colonne prévue : plonge, commis, chef de partie, fermeture.",
+        "Affichez la feuille de la semaine dans la zone concernée. Chaque personne inscrit ses initiales dans la case du jour une fois la tâche faite.",
+        "En fin de semaine, le responsable vérifie les cases, note les écarts dans le tableau prévu, signe et archive la feuille."
+      ]},
+      {"p": "Pour les grandes cuisines, faites une feuille par zone plutôt qu'une feuille unique : la plonge, la zone chaude et la zone froide n'ont pas les mêmes tâches ni les mêmes équipiers."}
+    ]},
+    {"h2": "Ce que regarde l'inspecteur", "blocks": [
+      {"p": "Selon la note DGAL du 24 juillet 2012, l'inspecteur fait deux choses : il vérifie que le plan de maîtrise sanitaire contient bien les éléments exigés, dont le plan de nettoyage et désinfection, puis il vérifie que vous l'appliquez, en réalisant un audit sur place. Côté nettoyage, attendez-vous à ce qu'il regarde :"},
+      {"ul": [
+        "l'état réel des surfaces, des sols, des joints de chambre froide, de la hotte et des zones difficiles d'accès, qui doit correspondre à ce que dit le plan ;",
+        "le plan écrit, à jour, avec des produits qui sont bien ceux présents dans la réserve ;",
+        "les fiches d'enregistrement remplies au fil des jours, et les actions correctives quand une tâche a sauté ;",
+        "l'emplacement des produits, hors des zones de manipulation des denrées ;",
+        "la connaissance du plan par l'équipe : un équipier doit savoir quel produit utiliser et à quelle dilution."
+      ]},
+      {"p": "La même note cite les contrôles microbiologiques défavorables sur le nettoyage comme un motif de revoir son plan : des prélèvements de surface, réalisés par un laboratoire, permettent de vérifier que la méthode fonctionne. Le résultat d'une inspection est publié sur Alim'confiance selon quatre niveaux, de « très satisfaisant » à « à corriger de manière urgente ». Pour préparer la visite dans son ensemble, voir notre <a href=\"/checklist-haccp-inspection.html\">checklist d'inspection HACCP</a>."}
+    ]},
+    {"h2": "Papier, Excel ou application", "blocks": [
+      {"p": "Pour une petite équipe stable, le modèle imprimé suffit : une feuille par semaine affichée en plonge, signée et rangée le dimanche. Le fichier Excel sert à adapter le plan à votre cuisine et à le réimprimer quand il change."},
+      {"p": "Le papier montre ses limites quand l'équipe dépasse une quinzaine de personnes, tourne beaucoup ou travaille sur plusieurs sites : les cases se remplissent en fin de semaine, de mémoire, et personne ne voit qu'une tâche a sauté avant la fin de la semaine. C'est le cas où une application apporte quelque chose."},
+      {"p": "Dans Staff Meal, le plan de nettoyage devient des <a href=\"/module-checklists-haccp.html\">checklists HACCP</a> par poste et par créneau horaire : l'équipier coche, prend une photo ou laisse un commentaire, et chaque validation porte son nom et l'heure. Ce qui n'est pas fait à la fin du créneau apparaît en retard sur le tableau de bord du responsable. Une checklist existante peut être importée. Pour vérifier le résultat, le module <a href=\"/module-audit-haccp.html\">audit HACCP</a> permet de dérouler une grille notée avec photo, où un écart doit être documenté. Staff Meal ne fournit pas de produit, ne fait pas de prélèvement et ne remplace pas votre plan de maîtrise sanitaire : il tient les relevés qu'il prévoit."}
+    ]}
+  ],
+  "faq": [
+    {"q": "Le plan de nettoyage est-il obligatoire en restaurant ?", "a": "Le règlement (CE) n° 852/2004 impose de nettoyer et, le cas échéant, de désinfecter les équipements à une fréquence suffisante, et de tenir des documents qui prouvent l'application des mesures d'hygiène. La DGAL classe le plan de nettoyage et désinfection parmi les mesures imposées réglementairement, qui font l'objet d'items spécifiques dans la grille d'inspection."},
+    {"q": "Que doit contenir un plan de nettoyage et de désinfection ?", "a": "Pour chaque surface ou équipement : ce qu'on nettoie, la fréquence, la méthode étape par étape, le produit avec sa dilution et son temps de contact, et le poste responsable. Il s'accompagne d'une fiche d'enregistrement et d'un suivi des actions correctives."},
+    {"q": "Quelle est la différence entre nettoyage et désinfection ?", "a": "Le nettoyage enlève les salissures visibles avec un détergent et une action mécanique. La désinfection réduit les micro-organismes sur une surface déjà propre, avec un désinfectant appliqué pendant le temps de contact indiqué. Le nettoyage passe toujours en premier."},
+    {"q": "Quelle norme pour un désinfectant de cuisine ?", "a": "La norme EN 1276 fixe les exigences d'activité bactéricide des désinfectants pour le domaine alimentaire, et l'EN 13697 évalue l'activité sur une surface non poreuse. Appliquez la dilution et le temps de contact pour lesquels la fiche technique annonce la norme, et vérifiez que le produit est utilisable sur des surfaces en contact avec les denrées."},
+    {"q": "Où trouver un planning de nettoyage cuisine Excel gratuit ?", "a": "Le modèle de cette page existe en Excel, en Word et en PDF, sans inscription. Il est classé par fréquence, avec une case par jour du lundi au dimanche et des lignes d'exemple à adapter à vos équipements."},
+    {"q": "Combien de temps garder les fiches de nettoyage ?", "a": "Le règlement 852/2004 parle d'une « période appropriée » sans fixer de durée. Fixez une durée dans votre plan de maîtrise sanitaire et appliquez-la à tous vos enregistrements d'hygiène."}
+  ],
+  "related": [
+    {"href": "/module-checklists-haccp.html", "title": "Checklists HACCP avec preuve photo", "desc": "Le plan de nettoyage par poste et par créneau, validé avec le nom et l'heure."},
+    {"href": "/haccp-restaurant.html", "title": "HACCP en restaurant : du classeur à la preuve", "desc": "Le cadre général du plan de maîtrise sanitaire."},
+    {"href": "/checklist-haccp-inspection.html", "title": "Inspection HACCP : la checklist pour être prêt", "desc": "Ce que l'inspecteur regarde, dans l'ordre."},
+    {"href": "/module-audit-haccp.html", "title": "Audit HACCP noté", "desc": "Vérifier sur place que le plan est appliqué, avec photo et écarts documentés."},
+    {"href": "/maintenance-equipement-restaurant.html", "title": "Maintenance du matériel de restauration", "desc": "Hotte, chambres froides, lave-vaisselle : suivre l'entretien et les pannes."}
+  ],
+  "sources": [
+    {"label": "Règlement (CE) n° 852/2004 relatif à l'hygiène des denrées alimentaires, article 5 et annexe II (version diffusée par la préfecture de l'Ardèche)", "url": "https://www.ardeche.gouv.fr/contenu/telechargement/20587/172385/file/Regl_852_2004_cle03fa7b.pdf"},
+    {"label": "Note de service DGAL/SDSSA/N2012-8156 du 24 juillet 2012 : inspection du plan de maîtrise sanitaire (agriculture.gouv.fr)", "url": "https://info.agriculture.gouv.fr/boagri/instruction-N2012-8156/telechargement"},
+    {"label": "Avis de l'Anses 2012-SA-0229 sur l'arrêté du 8 septembre 1999 relatif aux produits de nettoyage des matériaux au contact des denrées", "url": "https://www.anses.fr/fr/system/files/ESPA2012sa0229.pdf"},
+    {"label": "EN 1276:2019, activité bactéricide des désinfectants chimiques (fiche EVS)", "url": "https://www.evs.ee/en/evs-en-1276-2019"},
+    {"label": "NF EN 13697, essai quantitatif de surface non poreuse (boutique AFNOR)", "url": "https://www.boutique.afnor.org/en-gb/standard/nf-en-13697/chemical-disinfectants-and-antiseptics-quantitative-nonporous-surface-test-/fa166320/45486"},
+    {"label": "Alim'confiance : les résultats des contrôles sanitaires (agriculture.gouv.fr)", "url": "https://agriculture.gouv.fr/alimconfiance-les-resultats-des-controles-sanitaires-accessibles-tous/"},
+    {"label": "Contrôles d'hygiène : points de vigilance (GHR)", "url": "https://www.ghr.fr/reglementation-fiscalite/controles-d-hygiene-points-de-vigilance"}
+  ]
+}

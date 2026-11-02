@@ -1,0 +1,157 @@
+{
+  "slug": "modele-plan-maitrise-sanitaire",
+  "title": "Plan de maîtrise sanitaire : modèle PMS gratuit (Word, PDF)",
+  "description": "Trame de PMS vierge en Word et PDF, avec exemples pour restaurant : bonnes pratiques d'hygiène, analyse des dangers, traçabilité, retrait et TIAC.",
+  "kicker": "la trame à compléter, partie par partie",
+  "h1": "Plan de maîtrise sanitaire : le modèle de PMS à compléter pour votre restaurant",
+  "lede": "Le plan de maîtrise sanitaire (PMS) est le dossier qui décrit comment votre établissement maîtrise l'hygiène et la sécurité de ce qu'il sert. Il tient en trois volets : les bonnes pratiques d'hygiène, le plan HACCP, et les procédures de traçabilité et de gestion des produits non conformes. Ci-dessous, une trame gratuite en Word et en PDF, déjà découpée selon ces trois volets, avec des lignes d'exemple pour un restaurant et la marche à suivre pour la remplir.",
+  "breadcrumb": [["Hygiène et conformité", "/haccp-restaurant.html"], ["Modèle de plan de maîtrise sanitaire", null]],
+  "datePublished": "2026-11-02",
+  "sections": [
+    {"h2": "Le plan de maîtrise sanitaire, ce que disent les textes", "blocks": [
+      {"p": "Le point de départ est l'article 5 du <strong>règlement (CE) n° 852/2004</strong> : tout exploitant du secteur alimentaire met en place, applique et maintient une ou plusieurs procédures permanentes fondées sur les sept principes HACCP. Le point g) de cet article lui demande d'établir des documents et des dossiers, « en fonction de la nature et de la taille de l'entreprise », pour prouver que ces mesures sont réellement appliquées. Le texte ajoute que les procédures écrites doivent être à jour à tout moment."},
+      {"p": "Le mot « plan de maîtrise sanitaire » vient du droit français. L'annexe II de l'<strong>arrêté du 8 juin 2006</strong>, écrite pour les dossiers d'agrément, le définit comme le document qui « décrit les mesures prises par l'établissement pour assurer l'hygiène et la sécurité sanitaire de ses productions ». Elle le découpe en trois parties :"},
+      {"ol": [
+        "<strong>les bonnes pratiques d'hygiène, ou prérequis</strong> : formation et hygiène du personnel, maintenance, nettoyage et désinfection, lutte contre les nuisibles, eau, maîtrise des températures, contrôles à réception ;",
+        "<strong>le plan HACCP</strong> : l'analyse des dangers et des points critiques pour leur maîtrise, fondée sur les sept principes du règlement 852/2004 ;",
+        "<strong>les procédures de traçabilité et de gestion des produits non conformes</strong> : retrait, rappel, et pour un restaurant, la conduite à tenir en cas de toxi-infection alimentaire collective (TIAC)."
+      ]},
+      {"p": "Le guide de bonnes pratiques d'hygiène (GBPH) du restaurateur, rédigé par les organisations professionnelles CPIH, Synhorcat et UMIH et publié aux éditions des Journaux officiels, reprend exactement cette définition dans son glossaire. Aucun texte n'impose de modèle ni de support : un classeur, un fichier Word ou une application conviennent, à condition que le contenu corresponde à ce que vous faites en cuisine et que les enregistrements existent."}
+    ]},
+    {"h2": "Télécharger le modèle", "blocks": [
+      {"html": "<div class=\"card-retro bg-paper p-6 my-6\"><p class=\"font-sans font-bold text-lg mb-3\">Télécharger le modèle gratuit</p><p class=\"flex flex-wrap gap-3\"><a href=\"/modeles/modele-plan-maitrise-sanitaire.pdf\" class=\"btn-retro\" download>PDF à imprimer</a> <a href=\"/modeles/modele-plan-maitrise-sanitaire.docx\" class=\"btn-retro\" download>Word modifiable</a></p><p class=\"font-sans text-sm text-ink-faint mt-3\">Sans inscription. Format A4.</p></div>"},
+      {"p": "Le modèle est une trame en format A4 portrait, en 14 parties. Chaque partie contient un court rappel de ce qu'il faut écrire, un tableau avec une ou deux lignes d'exemple (préfixées « Ex. : ») et des lignes vides à compléter. La version Word se modifie directement, la version PDF s'imprime pour être remplie à la main."},
+      {"ul": [
+        "<strong>Partie 1, l'établissement</strong> : raison sociale, adresse, activité, nombre de couverts, effectif, date de la déclaration à la DDPP, responsable du PMS.",
+        "<strong>Partie 2, le personnel</strong> : qui a suivi quelle formation, à quelle date, où est rangée l'attestation, et les règles de tenue et de lavage des mains.",
+        "<strong>Parties 3 à 8, les bonnes pratiques d'hygiène</strong> : renvoi au plan de nettoyage, lutte contre les nuisibles, maintenance, eau, températures, déchets.",
+        "<strong>Partie 9, l'analyse des dangers par étape</strong> : de la réception au service, avec danger, mesure de maîtrise, limite, surveillance et action corrective.",
+        "<strong>Parties 10 à 13, traçabilité et non-conformités</strong> : documents conservés et durée, registre des non-conformités, procédure de retrait et de rappel, conduite à tenir en cas de TIAC.",
+        "<strong>Partie 14, la vérification</strong> : qui relit le PMS, à quelle fréquence, avec quel résultat."
+      ]},
+      {"h3": "Comment le remplir, dans l'ordre"},
+      {"ol": [
+        "Remplissez la partie 1 en premier : l'activité réelle (sur place, emporter, livraison, préparations à l'avance) décide des étapes à analyser ensuite.",
+        "Ouvrez le GBPH du restaurateur à côté. Pour chaque thème, recopiez la pratique du guide qui correspond à votre cuisine, ou écrivez la vôtre si vous faites autrement.",
+        "Remplacez chaque ligne « Ex. : » par votre matériel, vos produits, vos fournisseurs, vos noms. Supprimez les lignes qui ne vous concernent pas.",
+        "Faites relire les parties 3 à 9 par le chef ou la personne formée à l'hygiène : c'est elle qui sait ce qui se fait vraiment au poste.",
+        "Datez la version en page de garde. Chaque changement de carte, de matériel ou de mode de production entraîne une relecture, comme l'exige l'article 5 du règlement 852/2004."
+      ]}
+    ]},
+    {"h2": "Volet 1 : les bonnes pratiques d'hygiène", "blocks": [
+      {"p": "Les bonnes pratiques d'hygiène, aussi appelées prérequis, sont les règles qui valent quel que soit le plat : elles ne visent pas un danger précis mais l'environnement de travail. C'est la partie la plus longue du PMS et celle que l'inspecteur confronte le plus vite à ce qu'il voit en cuisine. Pour chaque thème, écrivez trois choses : ce que vous faites, qui le fait, et la trace qui le prouve."},
+      {"table": {"caption": "Ce qu'on écrit dans chaque thème des bonnes pratiques d'hygiène", "head": ["Thème", "Ce que vous décrivez", "Trace à garder"], "rows": [
+        ["Personnel", "Formation, tenue, lavage des mains, conduite à tenir quand un salarié est malade ou blessé", "Attestations de formation, liste du personnel formé"],
+        ["Nettoyage et désinfection", "Quoi, quand, avec quel produit, par qui", "Plan de nettoyage signé ou coché"],
+        ["Nuisibles", "Prestataire ou méthode, emplacement des appâts, fréquence des passages", "Contrat, plan des appâts, rapports de passage"],
+        ["Maintenance", "Liste du matériel, entretien préventif, gestion des pannes", "Cahier de maintenance, interventions"],
+        ["Eau", "Origine de l'eau (réseau public ou non), production de glace", "Facture du réseau, analyses si eau non publique"],
+        ["Températures", "Consigne de chaque enceinte, fréquence des relevés, vérification des thermomètres", "Relevés de température"],
+        ["Réception", "Contrôles à la livraison : température, état, dates, étiquetage", "Bons de livraison annotés, refus notés"],
+        ["Déchets", "Tri, stockage, fréquence d'enlèvement, huiles usagées", "Contrat de collecte"]
+      ]}},
+      {"p": "Trois fiches de ce volet ont déjà leur modèle sur notre site : le <a href=\"/plan-de-nettoyage-cuisine.html\">plan de nettoyage de cuisine</a>, la <a href=\"/fiche-releve-temperature.html\">fiche de relevé de température</a> et le suivi du matériel, détaillé dans notre page sur la <a href=\"/maintenance-equipement-restaurant.html\">maintenance du matériel de restauration</a>. Dans le PMS, il suffit d'y renvoyer et d'indiquer où ces fiches sont rangées."},
+      {"p": "Côté personnel, le GBPH ne remplace pas l'obligation de formation propre à la restauration commerciale. Au moins une personne de l'établissement doit avoir suivi la formation spécifique en hygiène alimentaire, d'une durée minimale de 14 heures, dont le cahier des charges est fixé par l'arrêté du 12 février 2024. Une personne qui justifie de trois ans d'expérience comme gestionnaire ou exploitant dans le secteur alimentaire en est dispensée. Notez son nom et rangez l'attestation dans la partie 2 du modèle."}
+    ]},
+    {"h2": "Volet 2 : le plan HACCP, sans tout réinventer", "blocks": [
+      {"p": "Le plan HACCP applique les sept principes du règlement 852/2004 : identifier les dangers, repérer les points critiques, fixer des limites critiques, surveiller, prévoir les actions correctives, vérifier que le dispositif fonctionne, et documenter le tout. Dans un restaurant, ce travail se fait étape par étape, de la réception au service."},
+      {"p": "Vous n'avez pas à tout construire seul. Le GBPH du restaurateur indique que le professionnel qui applique ses recommandations répond aux exigences réglementaires, et qu'il fait office de base au PMS. Si vous choisissez de procéder autrement, vous devez réaliser votre propre analyse des dangers pour la pratique concernée. Le guide applique aussi la flexibilité prévue par le règlement pour les petites entreprises : surveillance visuelle régulière, en particulier des enceintes froides, et enregistrement centré sur les non-conformités."},
+      {"p": "La partie 9 du modèle est un tableau à remplir pour chaque étape. Voici les repères chiffrés que vous y retrouverez, tous issus de l'arrêté du 21 décembre 2009 :"},
+      {"table": {"caption": "Exemples de lignes pour l'analyse des dangers d'un restaurant", "head": ["Étape", "Danger principal", "Mesure de maîtrise", "Limite", "Si la limite est dépassée"], "rows": [
+        ["Réception", "Rupture de la chaîne du froid", "Contrôle de la température à la livraison", "Viandes hachées + 2 °C, volailles + 4 °C", "Refus du produit, noté sur le bon"],
+        ["Stockage réfrigéré", "Multiplication microbienne", "Relevé des enceintes", "Préparations élaborées à l'avance + 3 °C", "Transfert, évaluation des produits, appel au technicien"],
+        ["Stockage congelé", "Remontée en température", "Relevé des congélateurs", "Glaces, viandes hachées congelées - 18 °C ; autres denrées congelées - 12 °C", "Évaluation des produits, intervention"],
+        ["Refroidissement", "Multiplication microbienne", "Cellule de refroidissement", "De + 63 °C à + 10 °C en moins de 2 heures en restauration collective", "Produit écarté, cause recherchée"],
+        ["Service chaud", "Multiplication microbienne", "Maintien au chaud", "+ 63 °C minimum en liaison chaude", "Réchauffage ou produit écarté"],
+        ["Préparation", "Allergènes", "Fiches techniques à jour, information du client", "Les 14 allergènes à déclaration obligatoire", "Plat retiré, information corrigée"]
+      ]}},
+      {"p": "Une précision sur le refroidissement : la règle des deux heures entre + 63 °C et + 10 °C figure dans l'annexe IV de l'arrêté, qui vise la restauration collective. Pour la restauration commerciale, le GBPH du restaurateur désigne cette même zone de températures comme particulièrement critique et demande de la traverser le plus vite possible. Rien ne vous empêche de retenir la même limite dans votre PMS. Si vous servez une préparation élaborée à l'avance, vos fiches techniques doivent porter la méthode de refroidissement : notre page sur la <a href=\"/fiche-technique-cuisine-vierge.html\">fiche technique de cuisine</a> montre comment."}
+    ]},
+    {"h2": "Volet 3 : traçabilité, non-conformités, retrait et TIAC", "blocks": [
+      {"p": "La traçabilité est une obligation de résultat, pas de moyens : le GBPH rappelle que vous choisissez votre système, du document manuscrit au logiciel. Il faut pouvoir répondre à trois questions : d'où vient ce produit (traçabilité amont), dans quels plats il est passé (traçabilité interne), à qui il a été remis quand ce n'est pas le consommateur final (traçabilité aval). Pour l'amont, les bons de livraison et les factures suffisent s'ils portent le fournisseur, le produit, la quantité, la date et le numéro de lot. Le détail est sur notre page consacrée au <a href=\"/logiciel-tracabilite-alimentaire.html\">suivi de la traçabilité alimentaire</a>."},
+      {"p": "La gestion des non-conformités tient en un registre : date, ce qui a été constaté, ce qui a été fait, par qui. Une chambre froide à + 7 °C le matin, une livraison refusée, un bocal bombé, un corps étranger trouvé au déconditionnement : chaque cas y figure avec son action corrective."},
+      {"h3": "La procédure de retrait et de rappel"},
+      {"p": "Quand un fournisseur ou les services de contrôle vous signalent un lot dangereux, le guide de la DGAL pour la restauration collective décrit une démarche que le modèle reprend telle quelle :"},
+      {"ol": [
+        "vérifier si vous avez reçu le lot concerné, à partir des bons de livraison ;",
+        "isoler ce qui reste en stock, avec une mention du type « ne pas consommer », pour retour au fournisseur ;",
+        "retrouver les plats préparés avec ce lot et les isoler s'ils sont encore en stock ;",
+        "établir si ces plats ont déjà été servis et à quel service, puis voir avec la DD(ETS)PP s'il faut informer les clients ;",
+        "informer les services de contrôle des mesures prises."
+      ]},
+      {"h3": "La conduite à tenir en cas de TIAC"},
+      {"p": "Une toxi-infection alimentaire collective, c'est au moins deux cas similaires de symptômes, en général digestifs, dont la cause peut être rapportée à une même origine alimentaire. Toute suspicion se déclare sans délai à l'agence régionale de santé et à la DD(ETS)PP. Le PMS doit contenir les coordonnées à appeler : ARS, DD(ETS)PP, SAMU, médecin. Le guide de la DGAL recommande ensuite de garder les excédents encore disponibles, de recenser les matières premières et les menus des cinq derniers jours, et de vérifier que les enregistrements de ces cinq jours sont bien archivés. En restauration collective, l'arrêté de 2009 impose en plus de conserver des plats témoins au moins cinq jours entre 0 et + 3 °C."}
+    ]},
+    {"h2": "Qui doit avoir un plan de maîtrise sanitaire", "blocks": [
+      {"p": "Tout exploitant qui prépare, transforme, entrepose ou sert des denrées après la production primaire est soumis à l'article 5 du règlement 852/2004. Restaurant traditionnel, restauration rapide, cafétéria, traiteur, cuisine centrale, restaurant d'entreprise : tous doivent pouvoir présenter leur PMS. Ce qui change d'un établissement à l'autre, c'est le niveau de détail, que l'article 5 lie à la nature et à la taille de l'entreprise."},
+      {"ul": [
+        "<strong>Restaurant qui sert le consommateur final</strong> : pas d'agrément sanitaire. Il fait une déclaration de manipulation de denrées d'origine animale auprès de la DDPP avant d'ouvrir (formulaire Cerfa 13984, en ligne ou par courrier), et la renouvelle en cas de changement d'exploitant, d'adresse ou d'activité. Le PMS, lui, est vérifié lors de l'inspection.",
+        "<strong>Établissement agréé</strong> (qui vend des denrées animales à d'autres professionnels, hors dérogation) : le PMS fait partie du dossier d'agrément, selon le contenu fixé par l'annexe II de l'arrêté du 8 juin 2006.",
+        "<strong>Petit établissement de restauration collective</strong> : la DGAL a publié en 2021 un guide de rédaction du PMS. Appliqué intégralement, il permet à un restaurant satellite ou à une cuisine servant moins de 1 000 repas par semaine de se passer d'une analyse des dangers formalisée."
+      ]},
+      {"p": "Lors du contrôle, l'inspecteur de la DDPP vérifie que le PMS est appliqué, pas seulement qu'il existe. Pour savoir dans quel ordre il regarde les choses, voir notre <a href=\"/checklist-haccp-inspection.html\">checklist d'inspection HACCP</a>. Les affiches qui doivent être visibles en salle et en cuisine font l'objet d'une page à part : <a href=\"/affichage-obligatoire-restaurant.html\">l'affichage obligatoire en restaurant</a>."}
+    ]},
+    {"h2": "Combien de temps garder les enregistrements", "blocks": [
+      {"p": "Le règlement 852/2004 ne fixe pas de durée unique : il demande de conserver les documents et dossiers « pendant une période appropriée ». Les durées utilisées en pratique viennent des guides officiels et du code de commerce."},
+      {"table": {"caption": "Durées de conservation repères", "head": ["Document", "Durée", "Source"], "rows": [
+        ["Informations de traçabilité amont, cas général", "5 ans à compter de la livraison ou de la fabrication", "GBPH restaurateur"],
+        ["Traçabilité des produits périssables (DLC de moins de 3 mois ou sans date)", "6 mois à compter de la livraison ou de la fabrication", "GBPH restaurateur"],
+        ["Bons de livraison et factures", "10 ans", "Code de commerce, cité par le guide DGAL"],
+        ["Relevés de températures, plan de nettoyage, maintenance, non-conformités", "3 ans", "Guide DGAL restauration collective"],
+        ["Historique des menus servis, fiche de présence des allergènes", "6 mois", "Guide DGAL restauration collective"],
+        ["Étiquettes ou photos d'étiquettes des produits utilisés", "10 à 15 jours, recommandé", "Guide DGAL restauration collective"]
+      ]}},
+      {"p": "Les durées du guide DGAL sont écrites pour la restauration collective. Un restaurant commercial qui les applique se met à l'abri, et la règle la plus simple reste de garder trois ans tout ce qui prouve un contrôle. Le guide accepte aussi l'archivage numérique, une photo ou un scan d'étiquette par exemple, à condition que la photo montre bien le lot et la date."}
+    ]},
+    {"h2": "Les erreurs qui reviennent dans les PMS de restaurant", "blocks": [
+      {"ul": [
+        "<strong>Le PMS acheté tout fait et jamais adapté.</strong> Il décrit une cellule de refroidissement que vous n'avez pas, ou oublie la friteuse. L'inspecteur compare le document à la cuisine, ligne par ligne.",
+        "<strong>Des procédures écrites, aucun enregistrement.</strong> L'article 5 demande de prouver l'application. Un plan de nettoyage sans aucune case cochée ne prouve rien.",
+        "<strong>Des relevés trop parfaits.</strong> Une colonne de « 3 °C » remplie à la même heure, de la même écriture, pendant un mois attire l'attention. Un relevé à + 6 °C suivi de son action corrective montre au contraire que le système fonctionne.",
+        "<strong>Les actions correctives absentes.</strong> Noter une température hors limite sans écrire ce qui a été fait revient à documenter le problème sans le traiter.",
+        "<strong>Aucune procédure de retrait ni de TIAC.</strong> Ce sont souvent les deux pages manquantes. Le modèle les contient déjà : il reste à y inscrire vos fournisseurs et les numéros à appeler.",
+        "<strong>Un document jamais daté ni relu.</strong> Nouvelle carte, nouveau four, livraison ajoutée : le règlement demande de revoir la procédure à chaque modification.",
+        "<strong>Le personnel ne sait pas que le PMS existe.</strong> Les consignes du PMS doivent arriver au poste : affichées, expliquées à l'arrivée, rappelées quand elles changent."
+      ]}
+    ]},
+    {"h2": "Papier ou application : ce que Staff Meal change, et ce qu'il ne change pas", "blocks": [
+      {"p": "Pour un restaurant avec une équipe stable et un chef présent à chaque service, le modèle imprimé et un classeur bien rangé suffisent. Le PMS reste un document que vous écrivez une fois et relisez à chaque changement, et Staff Meal ne l'écrit pas à votre place."},
+      {"p": "Le papier montre ses limites sur les enregistrements, à partir d'une quinzaine de personnes ou de plusieurs sites : les relevés se font en fin de service, de mémoire, et personne ne voit ce qui manque avant le contrôle. C'est sur cette partie que Staff Meal intervient :"},
+      {"ul": [
+        "les <a href=\"/module-checklists-haccp.html\">checklists HACCP</a> prévues par votre PMS arrivent sur le téléphone de l'équipier, par poste et par créneau, avec photo du thermomètre, son nom et l'heure ; ce qui n'est pas fait remonte en retard ;",
+        "les <a href=\"/module-audit-haccp.html\">audits d'hygiène</a> suivent votre grille, avec un écart à documenter avant de passer à la question suivante ;",
+        "la <a href=\"/module-maintenance.html\">maintenance</a> donne un ticket et un responsable à chaque panne, et garde l'historique de chaque équipement ;",
+        "le <a href=\"/module-manuel-operatoire.html\">manuel opératoire</a> range vos procédures d'hygiène en étapes courtes, avec une révision datée, et les <a href=\"/module-formations.html\">formations</a> vérifient par un quiz que l'équipe les connaît."
+      ]},
+      {"p": "Pour le cadre général et ce que le numérique apporte au jour du contrôle, lisez notre guide <a href=\"/haccp-restaurant.html\">HACCP en restaurant</a>."}
+    ]}
+  ],
+  "faq": [
+    {"q": "Qu'est-ce qu'un plan de maîtrise sanitaire ?", "a": "C'est le dossier qui décrit les mesures prises par un établissement pour assurer l'hygiène et la sécurité sanitaire de ce qu'il produit. Il comprend les bonnes pratiques d'hygiène, le plan HACCP, et les procédures de traçabilité et de gestion des produits non conformes, accompagnés des enregistrements qui prouvent leur application."},
+    {"q": "Le PMS est-il obligatoire pour un restaurant ?", "a": "Oui. L'article 5 du règlement (CE) n° 852/2004 impose à tout exploitant des procédures fondées sur les principes HACCP et des documents qui prouvent leur application. Un restaurant n'a pas besoin d'agrément, mais il doit présenter son PMS et ses enregistrements lors d'un contrôle de la DDPP."},
+    {"q": "Où trouver un PMS vierge gratuit en Word ?", "a": "Le modèle de cette page est gratuit, sans inscription, en Word modifiable et en PDF à imprimer. Il suit les trois volets du PMS et contient des lignes d'exemple pour un restaurant. Complétez-le avec le GBPH du restaurateur, qui sert de base à la plupart des PMS du secteur."},
+    {"q": "Quelle différence entre PMS et HACCP ?", "a": "L'HACCP est une méthode en sept principes pour analyser et maîtriser les dangers. Le PMS est plus large : il contient le plan HACCP, mais aussi les bonnes pratiques d'hygiène (nettoyage, nuisibles, maintenance, personnel) et la traçabilité avec la gestion des non-conformités."},
+    {"q": "Combien de temps garder les documents du PMS ?", "a": "Le règlement 852/2004 parle d'une « période appropriée ». Le GBPH du restaurateur retient 5 ans pour la traçabilité, ou 6 mois pour les produits périssables, et le guide DGAL pour la restauration collective retient 3 ans pour les relevés et 10 ans pour les factures."},
+    {"q": "Peut-on tenir son PMS sur une application ?", "a": "Oui. Aucun texte n'impose de support, et le GBPH précise que la traçabilité peut reposer sur un document manuscrit ou sur un support informatique. Ce qui compte, c'est que le document soit à jour et que les enregistrements soient consultables lors du contrôle."}
+  ],
+  "related": [
+    {"href": "/haccp-restaurant.html", "title": "HACCP en restaurant : du classeur à la preuve", "desc": "Le cadre général du plan de maîtrise sanitaire et ce que la digitalisation change."},
+    {"href": "/checklist-haccp-inspection.html", "title": "Inspection HACCP : la checklist pour être prêt", "desc": "Ce que l'inspecteur de la DDPP regarde, dans l'ordre."},
+    {"href": "/module-checklists-haccp.html", "title": "Checklists HACCP avec preuve photo", "desc": "Les relevés prévus par votre PMS, faits au poste, avec le nom et l'heure."},
+    {"href": "/module-audit-haccp.html", "title": "Audits d'hygiène notés", "desc": "Vérifier que le PMS est appliqué, section par section."},
+    {"href": "/maintenance-equipement-restaurant.html", "title": "Maintenance du matériel de restauration", "desc": "Le plan de maintenance du PMS, tenu au quotidien."}
+  ],
+  "sources": [
+    {"label": "Règlement (CE) n° 852/2004 relatif à l'hygiène des denrées alimentaires, articles 5 et 6 (copie publiée par la préfecture de l'Ardèche)", "url": "https://www.ardeche.gouv.fr/contenu/telechargement/20587/172385/file/Regl_852_2004_cle03fa7b.pdf"},
+    {"label": "Arrêté du 8 juin 2006 relatif à l'agrément sanitaire, annexe II : contenu du plan de maîtrise sanitaire (Légifrance)", "url": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000047124126"},
+    {"label": "Arrêté du 21 décembre 2009 relatif aux règles sanitaires applicables aux activités de commerce de détail (Légifrance)", "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000021573483"},
+    {"label": "Arrêté du 21 décembre 2009, annexe I : températures de conservation (Légifrance)", "url": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000041864893"},
+    {"label": "Guide de bonnes pratiques d'hygiène et d'application de l'HACCP : Restaurateur, version novembre 2015 (ministère de l'Agriculture)", "url": "https://agriculture.gouv.fr/sites/default/files/gph_20165905_0001_p000.pdf"},
+    {"label": "Instruction technique DGAL/SDSSA/2021-753 : guide de rédaction du plan de maîtrise sanitaire d'un petit établissement de restauration collective (ministère de l'Agriculture)", "url": "https://info.agriculture.gouv.fr/boagri/instruction-2021-753/telechargement"},
+    {"label": "Déclaration de manipulation de denrées animales et agrément sanitaire (Entreprendre Service-Public)", "url": "https://entreprendre.service-public.gouv.fr/vosdroits/F33822?profil=societe"},
+    {"label": "Règles d'hygiène dans la restauration et les commerces alimentaires, formation de 14 heures (Entreprendre Service-Public)", "url": "https://entreprendre.service-public.gouv.fr/vosdroits/F32189"},
+    {"label": "Le plan de maîtrise sanitaire, fiche Questions sur… n° 08.07.Q06 (Académie d'Agriculture de France)", "url": "https://www.academie-agriculture.fr/sites/default/files/publications/encyclopedie/le_plan_de_maitrise_sanitaire.pdf"}
+  ],
+  "cta_kicker": "le PMS écrit, puis le PMS tenu",
+  "cta_text": "Staff Meal s'adresse aux restaurants de 15 personnes et plus. Bêta privée, 50 établissements accompagnés sur place."
+}

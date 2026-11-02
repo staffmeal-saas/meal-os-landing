@@ -1,0 +1,119 @@
+{
+  "slug": "fiche-technique-cuisine-vierge",
+  "title": "Fiche technique de cuisine",
+  "subtitle": "Une fiche par recette. Exemple pré-rempli : bœuf bourguignon, 10 portions",
+  "orientation": "portrait",
+  "formats": ["pdf", "xlsx", "docx"],
+  "fields": ["Nom de la recette", "Catégorie (entrée, plat, dessert, mise en place)", "Nombre de portions", "Poids d'une portion", "Version et date", "Rédigée par", "Validée par"],
+  "sections": [
+    {
+      "h": "Ingrédients",
+      "p": ["Coût de la ligne = quantité brute × prix unitaire HT. Quantité nette = quantité brute × rendement. Prix de la dernière facture, hors taxes."],
+      "head": ["Ingrédient", "Unité", "Qté brute", "Rendement %", "Qté nette", "Prix unitaire HT (€)", "Coût HT (€)", "Allergène"],
+      "widths": [4, 1.5, 1.5, 1.5, 1.5, 2, 1.8, 2.2],
+      "rows": [
+        ["Paleron de bœuf", "kg", "2,000", "90", "1,800", "14,50", "29,00", ""],
+        ["Lardons fumés", "kg", "0,300", "100", "0,300", "9,80", "2,94", ""],
+        ["Carottes", "kg", "0,800", "85", "0,680", "1,40", "1,12", ""],
+        ["Oignons", "kg", "0,500", "90", "0,450", "1,20", "0,60", ""],
+        ["Champignons de Paris", "kg", "0,500", "90", "0,450", "3,90", "1,95", ""],
+        ["Vin rouge", "l", "1,500", "100", "1,500", "4,20", "6,30", "Sulfites"],
+        ["Fond brun (fiche de base)", "l", "1,000", "100", "1,000", "2,50", "2,50", ""],
+        ["Farine T55", "kg", "0,060", "100", "0,060", "1,00", "0,06", "Gluten"],
+        ["Beurre", "kg", "0,080", "100", "0,080", "9,50", "0,76", "Lait"],
+        ["Ail, thym, laurier (forfait)", "forfait", "1", "100", "1", "0,40", "0,40", ""]
+      ],
+      "blank_rows": 6,
+      "formulas": {
+        "Qté nette": "= Qté brute × Rendement % / 100",
+        "Coût HT (€)": "= Qté brute × Prix unitaire HT (€)"
+      },
+      "total_row": ["Total recette", "", "", "", "", "", "45,63", ""]
+    },
+    {
+      "h": "Calcul du coût",
+      "head": ["Indicateur", "Formule", "Exemple", "Votre recette"],
+      "widths": [3, 4, 2, 2],
+      "rows": [
+        ["Coût total de la recette", "Somme de la colonne Coût HT", "45,63 €"],
+        ["Coût par portion", "Coût total ÷ nombre de portions", "4,56 €"],
+        ["Prix de vente TTC", "Prix de la carte", "19,50 €"],
+        ["Prix de vente HT", "Prix TTC ÷ 1,10 (repas sur place, TVA 10 %)", "17,73 €"],
+        ["Food cost (ratio matière)", "Coût par portion ÷ prix HT × 100", "25,7 %"],
+        ["Coefficient multiplicateur", "Prix HT ÷ coût par portion", "3,89"],
+        ["Marge brute par portion", "Prix HT - coût par portion", "13,17 €"],
+        ["Prix HT pour un food cost cible", "Coût par portion ÷ cible (ex. 0,30)", "15,21 €"]
+      ],
+      "blank_rows": 0
+    },
+    {
+      "h": "Progression",
+      "head": ["N°", "Opération", "Temps", "Température / contrôle"],
+      "widths": [0.8, 7, 1.5, 3],
+      "rows": [
+        ["1", "Parer le paleron, tailler en cubes de 50 g environ", "15 min", "Viande sortie au dernier moment"],
+        ["2", "Saisir la viande par petites quantités, 3 à 4 min par face, réserver", "20 min", ""],
+        ["3", "Faire revenir lardons, oignons et carottes, singer avec la farine", "10 min", ""],
+        ["4", "Remettre la viande, mouiller au vin rouge et au fond brun, ajouter ail, thym, laurier", "5 min", ""],
+        ["5", "Cuire à couvert à frémissement jusqu'à ce que la viande soit fondante", "2 h 30", ""],
+        ["6", "Ajouter les champignons sautés au beurre, rectifier l'assaisonnement", "10 min", ""],
+        ["7", "Refroidir en cellule si production à l'avance", "", "De + 63 °C à + 10 °C à cœur en moins de 2 h"]
+      ],
+      "blank_rows": 4
+    },
+    {
+      "h": "Allergènes (annexe II du règlement UE 1169/2011)",
+      "p": ["Cochez chaque allergène présent et notez l'ingrédient qui l'apporte. Vérifiez les fiches fournisseurs des produits transformés (fonds, sauces, charcuteries)."],
+      "head": ["Présent", "Allergène", "Ingrédient concerné"],
+      "widths": [1.2, 5, 5],
+      "rows": [
+        ["[ ]", "Céréales contenant du gluten (blé, seigle, orge, avoine)", "Farine T55"],
+        ["[ ]", "Crustacés", ""],
+        ["[ ]", "Œufs", ""],
+        ["[ ]", "Poissons", ""],
+        ["[ ]", "Arachides", ""],
+        ["[ ]", "Soja", ""],
+        ["[ ]", "Lait (y compris lactose)", "Beurre"],
+        ["[ ]", "Fruits à coque", ""],
+        ["[ ]", "Céleri", ""],
+        ["[ ]", "Moutarde", ""],
+        ["[ ]", "Graines de sésame", ""],
+        ["[ ]", "Anhydride sulfureux et sulfites (plus de 10 mg/kg ou 10 mg/l)", "Vin rouge"],
+        ["[ ]", "Lupin", ""],
+        ["[ ]", "Mollusques", ""]
+      ],
+      "blank_rows": 0
+    },
+    {
+      "h": "Dressage",
+      "head": ["Élément", "Consigne"],
+      "widths": [3, 8],
+      "rows": [
+        ["Contenant", "Assiette creuse chaude, diamètre 26 cm"],
+        ["Portion", "250 g (viande et garniture), pesée au service"],
+        ["Disposition", "Viande au centre, garniture champignons et lardons dessus, sauce nappée"],
+        ["Accompagnement", "Selon fiche dédiée (pommes vapeur, pâtes fraîches)"],
+        ["Décor", "Persil plat ciselé"],
+        ["Photo de référence", "Coller ou insérer la photo validée par le chef"]
+      ],
+      "blank_rows": 1
+    },
+    {
+      "h": "Conservation",
+      "head": ["Étape", "Consigne"],
+      "widths": [3, 8],
+      "rows": [
+        ["Refroidissement", "De + 63 °C à + 10 °C à cœur en moins de 2 h, puis stockage entre 0 °C et + 3 °C"],
+        ["Stockage", "+ 3 °C maximum, bac filmé et étiqueté (nom, date de fabrication, date limite)"],
+        ["Durée de vie", "Selon votre plan de maîtrise sanitaire"],
+        ["Remise en température", "De + 10 °C à la température de service en moins d'1 h, + 63 °C minimum, à consommer le jour même"],
+        ["Maintien au chaud", "+ 63 °C minimum"]
+      ],
+      "blank_rows": 0
+    }
+  ],
+  "notes": [
+    "Températures : arrêté du 21 décembre 2009, annexes I et IV, sauf analyse des dangers validée. Allergènes : règlement (UE) n° 1169/2011, annexe II, et décret n° 2015-447. TVA sur place : 10 %, boissons alcoolisées 20 %.",
+    "Prix de l'exemple donnés à titre indicatif, à remplacer par vos prix d'achat HT. Modèle gratuit staff-meal.com"
+  ]
+}
