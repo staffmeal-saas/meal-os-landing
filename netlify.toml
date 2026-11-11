@@ -1,5 +1,6 @@
 [build]
-  publish = "."
+  # Site v3 (refonte Damien, 11/11/2026) : build statique dans public/
+  publish = "public"
 
 # --- Ancien domaine staff-meal.fr (vieux site Lovable) -> staff-meal.com ---
 # Le .fr sortait mieux que le .com sur « staff meal » : la 301 transfère ce signal.
@@ -101,7 +102,7 @@
 
 [[redirects]]
   from = "/module-audit-haccp"
-  to = "/module-audit-haccp.html"
+  to = "/module-audit-interne.html"
   status = 301
   force = true
 
@@ -143,13 +144,13 @@
 
 [[redirects]]
   from = "/boite-a-outils-dashboard"
-  to = "/boite-a-outils-dashboard.html"
+  to = "/bibliotheque.html"
   status = 301
   force = true
 
 [[redirects]]
   from = "/boite-a-outils-login"
-  to = "/boite-a-outils-login.html"
+  to = "/bibliotheque.html"
   status = 301
   force = true
 
@@ -191,7 +192,7 @@
 
 [[redirects]]
   from = "/evenements"
-  to = "/evenements.html"
+  to = "/ressources.html"
   status = 301
   force = true
 
@@ -315,7 +316,7 @@
 
 [[redirects]]
   from = "/resources"
-  to = "/resources.html"
+  to = "/ressources.html"
   status = 301
   force = true
 
@@ -351,37 +352,37 @@
 
 [[redirects]]
   from = "/outils/fiche-technique"
-  to = "/outils/fiche-technique.html"
+  to = "/generateur-fiche-technique.html"
   status = 301
   force = true
 
 [[redirects]]
   from = "/outils/food-cost"
-  to = "/outils/food-cost.html"
+  to = "/food-cost-calculator.html"
   status = 301
   force = true
 
 [[redirects]]
   from = "/outils/gaspillage"
-  to = "/outils/gaspillage.html"
+  to = "/calculateur-gaspillage-alimentaire.html"
   status = 301
   force = true
 
 [[redirects]]
   from = "/outils/menu-engineering"
-  to = "/outils/menu-engineering.html"
+  to = "/matrice-menu-engineering.html"
   status = 301
   force = true
 
 [[redirects]]
   from = "/outils/prime-cost"
-  to = "/outils/prime-cost.html"
+  to = "/prime-cost-calculator.html"
   status = 301
   force = true
 
 [[redirects]]
   from = "/outils/reponse-avis"
-  to = "/outils/reponse-avis.html"
+  to = "/generateur-reponse-avis-google.html"
   status = 301
   force = true
 
@@ -504,5 +505,403 @@
 [[redirects]]
   from = "/logiciel-tracabilite-alimentaire"
   to = "/logiciel-tracabilite-alimentaire.html"
+  status = 301
+  force = true
+
+# --- Site v3 : anciennes pages et pages de redirection GitHub Pages -> vraies 301 ---
+[[redirects]]
+  from = "/boite-a-outils-dashboard.html"
+  to = "/bibliotheque.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/boite-a-outils-login.html"
+  to = "/bibliotheque.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/outils/fiche-technique.html"
+  to = "/generateur-fiche-technique.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/outils/food-cost.html"
+  to = "/food-cost-calculator.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/outils/gaspillage.html"
+  to = "/calculateur-gaspillage-alimentaire.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/outils/menu-engineering.html"
+  to = "/matrice-menu-engineering.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/outils/prime-cost.html"
+  to = "/prime-cost-calculator.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/outils/reponse-avis.html"
+  to = "/generateur-reponse-avis-google.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/evenements/index.html"
+  to = "/ressources.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/evenements.html"
+  to = "/ressources.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/module-audit-haccp/index.html"
+  to = "/module-audit-interne.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/module-audit-haccp.html"
+  to = "/module-audit-interne.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/resources/index.html"
+  to = "/ressources.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/resources.html"
+  to = "/ressources.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/evenements/"
+  to = "/ressources.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/module-audit-haccp/"
+  to = "/module-audit-interne.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/resources/"
+  to = "/ressources.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/evenements/index"
+  to = "/ressources.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/module-audit-haccp/index"
+  to = "/module-audit-interne.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/resources/index"
+  to = "/ressources.html"
+  status = 301
+  force = true
+
+# --- Site v3 : URL sans extension -> .html canonique (cf. pretty_urls = false) ---
+[[redirects]]
+  from = "/absence-remplacement-poste-restaurant"
+  to = "/absence-remplacement-poste-restaurant.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/bibliotheque"
+  to = "/bibliotheque.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/brief-avant-service"
+  to = "/brief-avant-service.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/chef-qui-part-savoir-faire"
+  to = "/chef-qui-part-savoir-faire.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/comment-ca-marche"
+  to = "/comment-ca-marche.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/confidentialite"
+  to = "/confidentialite.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/cout-cache-recrutement-restaurant"
+  to = "/cout-cache-recrutement-restaurant.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/cout-turnover-restauration"
+  to = "/cout-turnover-restauration.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/demander-une-demo"
+  to = "/demander-une-demo.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/essai-qui-ne-revient-pas"
+  to = "/essai-qui-ne-revient-pas.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/estimer-temps-gagne"
+  to = "/estimer-temps-gagne.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fiche-technique-regularite-assiette"
+  to = "/fiche-technique-regularite-assiette.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/formation-en-doublure-limites"
+  to = "/formation-en-doublure-limites.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/formation-fidelisation-restaurant"
+  to = "/formation-fidelisation-restaurant.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/former-managers-restaurant"
+  to = "/former-managers-restaurant.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/meilleur-element-forme-les-nouveaux"
+  to = "/meilleur-element-forme-les-nouveaux.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/mentions-legales"
+  to = "/mentions-legales.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/micro-management-restaurant"
+  to = "/micro-management-restaurant.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/mise-en-place"
+  to = "/mise-en-place.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/module-audit-interne"
+  to = "/module-audit-interne.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/module-hygiene-haccp"
+  to = "/module-hygiene-haccp.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/module-onboarding"
+  to = "/module-onboarding.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/modules"
+  to = "/modules.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/ouvrir-deuxieme-restaurant-equipe"
+  to = "/ouvrir-deuxieme-restaurant-equipe.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/polyvalence-equipe-restaurant"
+  to = "/polyvalence-equipe-restaurant.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pour-qui-boulangeries"
+  to = "/pour-qui-boulangeries.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pour-qui-former-nouveaux-arrivants"
+  to = "/pour-qui-former-nouveaux-arrivants.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pour-qui-franchises-concepts"
+  to = "/pour-qui-franchises-concepts.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pour-qui-groupes-multi-sites"
+  to = "/pour-qui-groupes-multi-sites.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pour-qui-hotels"
+  to = "/pour-qui-hotels.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pour-qui-hygiene-au-quotidien"
+  to = "/pour-qui-hygiene-au-quotidien.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pour-qui-maitriser-cout-matiere"
+  to = "/pour-qui-maitriser-cout-matiere.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pour-qui-piloter-plusieurs-sites"
+  to = "/pour-qui-piloter-plusieurs-sites.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pour-qui-restaurants-independants"
+  to = "/pour-qui-restaurants-independants.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pourquoi-bons-elements-partent"
+  to = "/pourquoi-bons-elements-partent.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/premier-jour-nouvel-employe-restaurant"
+  to = "/premier-jour-nouvel-employe-restaurant.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/questions-frequentes"
+  to = "/questions-frequentes.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/recruter-ou-fideliser-restaurant"
+  to = "/recruter-ou-fideliser-restaurant.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/regularite-service-restaurant"
+  to = "/regularite-service-restaurant.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/ressources"
+  to = "/ressources.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/restaurant-tourne-sans-patron"
+  to = "/restaurant-tourne-sans-patron.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/securite-des-donnees"
+  to = "/securite-des-donnees.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/solutions"
+  to = "/solutions.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/standards-clairs-avant-exigence"
+  to = "/standards-clairs-avant-exigence.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/tarifs"
+  to = "/tarifs.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/toutes-les-ressources"
+  to = "/toutes-les-ressources.html"
   status = 301
   force = true
