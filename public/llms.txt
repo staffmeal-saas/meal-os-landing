@@ -1,10 +1,10 @@
 # Staff Meal
 
-> Procédures, tâches et formations réunies pour des équipes autonomes en restaurant, boulangerie et hôtel. Découvrez Staff Meal et son manuel collaboratif.
+> Staff Meal, le logiciel pour gérer les opérations de vos restaurants, boulangeries et hôtels : tâches, procédures, hygiène et formations dans un seul outil.
 
 ## Pages
 
-- [Logiciel de gestion de restaurant multi-site](https://staff-meal.com/): Procédures, tâches et formations réunies pour des équipes autonomes en restaurant, boulangerie et hôtel. Découvrez Staff Meal et son manuel collaboratif.
+- [Logiciel de gestion de restaurant multi-site](https://staff-meal.com/): Staff Meal, le logiciel pour gérer les opérations de vos restaurants, boulangeries et hôtels : tâches, procédures, hygiène et formations dans un seul outil.
 - [À propos de Staff Meal : notre histoire](https://staff-meal.com/a-propos.html): Pourquoi Staff Meal existe, et pour qui : une application pensée sur le terrain, pour aider votre équipe à tenir le même service, à chaque service.
 - [Un absent, deux postes mal tenus.](https://staff-meal.com/absence-remplacement-poste-restaurant.html): En restauration, une absence ne vide pas un poste : elle en désorganise deux. Ce que coûte un remplaçant non formé, et comment faire pour qu’un poste ne dépende plus de son titulaire.
 - [Affichage obligatoire restaurant : la checklist sourcée](https://staff-meal.com/affichage-obligatoire-restaurant.html): Prix, origine des viandes, allergènes, licence, tabac, inspection du travail : chaque affichage obligatoire de votre restaurant, son texte, sa sanction.
